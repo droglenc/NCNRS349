@@ -1,3 +1,9 @@
-.Rproj.user
+## Stuff that should not be public
+Year_Specific/
+
+## R History files
 .Rhistory
-.RData
+.Rapp.history
+
+## R project info
+.Rproj.user

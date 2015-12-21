@@ -5,7 +5,7 @@ title: Resources
 
 1. [Feedback / Suggestions](https://www.suggestionox.com/r/W16-349){:target="_blank"}
 1. [fishR Website](http://derekogle.com/fishR/){:target="_blank"}
-1. [**Data Files** (on fishR)](http://derekogle.com/fishR/data/){:target="_blank"}
+1. [Data Files (on fishR)](http://derekogle.com/fishR/data/){:target="_blank"}
 1. **Homework Answer Keys**
     * XXX
 1. **Software Installation Links**

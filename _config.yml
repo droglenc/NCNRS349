@@ -1,9 +1,9 @@
 # --- Serving options --- #
 # If you are building a GitHub project page then use these settings:
 # url is the full website URL
-url: "http://droglenc.github.io/NRS349"
+url: "http://droglenc.github.io/NCNRS349"
 # baseurl is the website's URL without the hostname
-baseurl: "/NRS349"
+baseurl: "/NCNRS349"
 
 # Name of website
 title: NRS349
@@ -36,7 +36,7 @@ footer-links-active:
   stackoverflow: false
 
 # How to display the link to the website in the footer
-url-pretty: "derekogle.com/NRS349/"
+url-pretty: "derekogle.com/NCNRS349/"
 
 # --- Pagination options --- #
 paginate: 6

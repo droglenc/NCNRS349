@@ -1,0 +1,144 @@
+% setwd('C:/aaaWork/Class Materials/MTH207/Year_Specific/W11/Assessments/')
+% Sweave("Quiz2_Results.Rnw",stylepath=TRUE)
+
+\documentclass[a4paper]{article}
+\input{c:/aaaWork/zGnrlLatex/GnrlPreamble}
+
+\begin{document}
+\SweaveOpts{prefix.string=figs/q2,eps=FALSE,keep.source=TRUE}
+
+\title{Quiz 2 Handout}
+\date{}  % makes date blank -- title will only have the title above then
+\maketitle
+\vspace{-36pt}
+
+<<echo=false,results=hide>>=
+options(width=90,"show.signif.stars"=FALSE,continue="  ") # these are R options
+rqrd <- c("NCStats","multcomp")
+need <- rqrd[!paste("package:",rqrd,sep="") %in% search()]
+if (length(need)>0) for (i in 1:length(need)) library(need[i],character.only=TRUE)
+if (!is.null(attached())) detachAll()
+@
+
+\vspace{-36pt}
+\section*{Background}
+Sanz (2001)  examined the nesting behavior and success for male and female pied flycatchers (\textit{Ficedula hypoleuca}).  He hypothesized that males would be more involved in nesting activities as the level of brood demand increased and as the ``attractiveness'' of the male decreased.  The author manipulated brood demand by removing two eggs from randomly selected nests and placing these eggs into other randomly selected nests.  This created two levels for a ``clutch-size manipulation'' factor - reduced and enlarged clutch sizes.  A third level consisted of nests where the number of eggs was not manipulated (called the ``control'' level).  The author manipulated the ``attractiveness'' of the male by reducing the size of the white patch on the forehead.  The forehead patch was reduced in size on randomly selected males by clipping approximately two-thirds of the white feathers.  Thus, the experiment consisted of two levels of the ``forehead patch'' factor - ``unmanipulated'' and ``reduced.''  In one aspect of the experiment, Sanz recorded the feeding rate of the male flycatchers on the 13th day post-hatch.  The feeding rate was recorded as the number of times the male fed the hatchlings per hour.  The author tested his hypotheses by examining the data for clutch-size manipulation (\var{csm}), forehead manipulation (\var{fh}), and interaction effects on feeding rates (\var{mfr}).
+
+\section*{R Results}
+<<eval=FALSE>>=
+library(NCStats)
+library(multcomp)
+@
+
+\vspace{-18pt}
+\SweaveOpts{width=6,height=3}
+<<echo=FALSE,results=hide>>=
+options(SweaveHooks = list(fig = function() par(mar=c(3.5,3.5,1,1),mgp=c(2,0.75,0),mfrow=c(1,2))))
+@
+<<label=untrResids,fig=TRUE,include=FALSE>>=
+pfc <- read.table("PiedFlycatcher1.txt",head=TRUE)
+str(pfc)
+pfc$csm <- factor(pfc$csm,levels=c("reduced","control","enlarged"))
+lm1 <- lm(mfr~csm*fh,data=pfc)
+leveneTest(lm1)
+adTest(lm1$residuals)
+outlierTest(lm1)
+hist(lm1$residuals,main="",xlab="Residuals")
+residualPlot(lm1,main="")
+@
+\includegraphics[width=4.5in]{Figs/q2-untrResids.PDF}
+
+<<eval=FALSE>>=
+anova(lm1)
+@
+<<echo=FALSE>>=
+swvANOVA(lm1)
+@
+
+\SweaveOpts{width=9,height=3}
+<<echo=FALSE,results=hide>>=
+options(SweaveHooks = list(fig = function() par(mar=c(3.5,3.5,1,1),mgp=c(2,0.75,0),mfrow=c(1,3))))
+@
+<<label=untrFits,fig=TRUE,include=FALSE>>=
+fitPlot(lm1,legend="topleft",ylim=c(9,26),main="",interval=FALSE)
+fitPlot(lm1,which="csm",ylim=c(9,26),main="")
+fitPlot(lm1,which="fh",ylim=c(9,26),main="")
+@
+\includegraphics[width=7in]{Figs/q2-untrFits.PDF}
+
+<<echo=FALSE,results=hide>>=
+# remove the interaction term
+lm1 <- lm(mfr~csm+fh,data=pfc)
+@
+<<results=hide>>=
+mc1 <- glht(lm1,mcp(csm="Tukey"))
+summary(mc1)
+@
+<<echo=FALSE>>=
+swvGLHT(mc1)
+@
+<<results=hide>>=
+pfc$comb <- pfc$csm:pfc$fh
+lm1a <- lm(mfr~comb,data=pfc)
+mc1a <- glht(lm1a,mcp(comb="Tukey"))
+summary(mc1a)
+@
+<<echo=FALSE>>=
+swvGLHT(mc1a)
+@
+\SweaveOpts{width=6,height=3}
+<<echo=FALSE,results=hide>>=
+options(SweaveHooks = list(fig = function() par(mar=c(3.5,3.5,1,1),mgp=c(2,0.75,0),mfrow=c(1,2))))
+@
+<<label=trResids,fig=TRUE,include=FALSE>>=
+pfc$logmfr <- log(pfc$mfr+0.01)
+lm2 <- lm(logmfr~csm*fh,data=pfc)
+leveneTest(lm2)
+adTest(lm2$residuals)
+hist(lm2$residuals,main="")
+residualPlot(lm2,main="")
+@
+\includegraphics[width=4.5in]{Figs/q2-trResids.PDF}
+
+<<eval=FALSE>>=
+anova(lm2)
+@
+<<echo=FALSE>>=
+swvANOVA(lm2)
+@
+
+\SweaveOpts{width=9,height=3}
+<<echo=FALSE,results=hide>>=
+options(SweaveHooks = list(fig = function() par(mar=c(3.5,3.5,1,1),mgp=c(2,0.75,0),mfrow=c(1,3))))
+@
+<<label=trFits,fig=TRUE,include=FALSE>>=
+fitPlot(lm2,legend="topleft",ylim=c(1.2,3.4),main="",interval=FALSE)
+fitPlot(lm2,which="csm",ylim=c(1.2,3.4),main="")
+fitPlot(lm2,which="fh",ylim=c(1.2,3.4),main="")
+@
+\includegraphics[width=7in]{Figs/q2-trFits.PDF}
+
+<<results=hide>>=
+mc2a <- glht(lm2,mcp(csm="Tukey"))
+summary(mc2a)
+@
+<<echo=FALSE>>=
+swvGLHT(mc2a)
+@
+<<results=hide>>=
+mc2b <- glht(lm2,mcp(fh="Tukey"))
+summary(mc2b)
+@
+<<echo=FALSE>>=
+swvGLHT(mc2b)
+@
+<<results=hide>>=
+lm2a <- lm(logmfr~comb,data=pfc)
+mc2c <- glht(lm2a,mcp(comb="Tukey"))
+summary(mc2c)
+@   
+<<echo=FALSE>>=
+swvGLHT(mc2c)
+@
+
+\end{document}

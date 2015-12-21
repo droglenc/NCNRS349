@@ -12,9 +12,9 @@ function roundDec(x, dcml)  {
 //**  Sets weights for assessment components                                      **
 //**********************************************************************************
 function get_wghts() {
-  HW_WT = 0.25;
-  MT1_WT = 0.15;	MT2_WT = 0.15;	FNL_WT = 0.15;
-  PROJ_WT = 0.30;
+  HW_WT = 0.30;
+  MT1_WT = 0.15;	MT2_WT = 0.15;	FNL_WT = 0.20;
+  REFL_CFOOD_WT = 0.10;  REFL_SPEAK_WT = 0.10;
 }
 
 //**********************************************************************************
@@ -58,10 +58,15 @@ function calc_grade(form) {
 		if (temp > 1) {temp=temp/100};
 		pts += FNL_WT*temp;	outof += FNL_WT;
 	}
-	temp = form.PROJ_SC.value;
+	temp = form.REFL_CFOOD_SC.value;
 	if (temp!=="") {
 		if (temp > 1) {temp=temp/100};
-		pts += PROJ_WT*temp;	outof += PROJ_WT;
+		pts += REFL_CFOOD_WT*temp;	outof += REFL_CFOOD_WT;
+	}
+	temp = form.REFL_SPEAK_SC.value;
+	if (temp!=="") {
+		if (temp > 1) {temp=temp/100};
+		pts += REFL_SPEAK_WT*temp;	outof += REFL_SPEAK_WT;
 	}
 	find_grade(form, pts, outof);
 }

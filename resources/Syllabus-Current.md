@@ -1,40 +1,42 @@
 ---
 layout: page
-title: Biometry
-subtitle: MTH207
+title: Fisheries Science & Management
+subtitle: NRS349 Syllabus
 css: /css/syllabus.css
 ---
 
 <SCRIPT SRC="../js/grader.js"></SCRIPT>
 
-* Class [Description](#description), [Importance](#importance), and [Learning Outcomes](#learning-outcomes)
+* Class [Description](#description) and [Learning Outcomes](#learning-outcomes)
 * [Instructor](#instructor) and [Tutors](#tutors)
-* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Final Portfolio](#final-portfolio)
-* [Participation and Conduct](#participation-and-conduct)
+* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-CFOOD Myths](#reflections-cfood-myths), [Reflections-Speakers](#reflections-speakers)
+* [Professionalism](#professionalism) -- [Attendance](#attendance), [Participation](#participation), [Expectations](#expectations), [Conduct](#conduct)
 * [Accomodations](#accomodations)
 
 ----
 
 ## Description
 
-Linear models including one- and two-way ANOVA with post-hoc multiple comparisons and transformations, simple and multiple linear regression including transformations and indicator variables, and logistic regression; and basic principles of sample and experimental design.  The theoretical constructs of all topics will be developed and applied to real-life or realistic situations in the life and natural sciences.  Pre-requisite: [MTH107](http://derekogle.com/NCMTH107/).  4 Credits.
+A study of exploited populations of fish and other aquatic organisms.  Theory and methods of defining fish growth, survival, mortality, abundance, and community interactions will be emphasized.  Wisconsin, Great Lakes, and marine fisheries will be addressed.  Pre-requisite BIO234, BIO242, [MTH107](http://derekogle.com/NCMTH107/).  4 Credits.
 
-## Importance
-
-Statistics is central to scientific inquiry because hypotheses are generated from exploratory data analyses of existing or preliminary data and hypotheses are objectively tested with inferential statistical methods.  As such, understanding statistics is a major component of understanding how to conduct and interpret scientific research.  Understanding statistics includes knowing how to properly collect data ("design") and how to properly analyze data so that appropriate conclusions can be made ("analysis").  In this course you will learn (1) how to properly design a variety of studies that are commonly used in natural and social science fields and (2) how to properly analyze the data collected from those studies.  Throughout the course you will focus on the generalities of major concepts so that your knowledge will extend beyond the specific situations examined in class.  In addition, because the communication of results is critical to success as a researcher, you will also focus on correct report writing.
 
 ## Learning Outcomes
 
 At the end of this class you will be able to ...
 
-1. explain why statistics is central to scientific inquiry (& your field of interest);
-1. perform, including assumption checks, and interpret the results from one-way and two-way analysis of variances;
-1. perform appropriate multiple comparisons following a significant analysis of variance result;
-1. perform, including assumption checks, and interpret the results from simple and indicator variable regressions;
-1. perform, including assumption checks, and interpret the results from simple logistic regression;
-1. use variable transformations and interaction terms where appropriate, 
-1. compare and contrast the advantages and limitations of one-factor and two-factor experimental designs; and
-1. write a concise, detailed, accurate, and interesting paper explaining the design and interpreting the results of a statistical analysis.
+1. Explain a conceptual model for the population dynamics of a stock.
+1. Estimate abundance from mark-recapture and depletion data.
+1. Implement an age-length key.
+1. Estimate mortality from catch-at-age data.
+1. Estimate growth from length-at-age data.
+1. Fit and interpret stock-recruitment curves.
+1. Compute and interpret length frequency summaries and size structure indices.
+1. Compute and interpret condition indices.
+1. Describe the components of the fisheries management environment and the relationships between those components.
+1. Describe the steps in and components of the fisheries management process.
+1. Describe how the concept of common property influences the behavior of fishers.
+1. Explain the purposes, strengths and limitations for a variety of management tools (including length limits, bag limits, closed seasons, refuges, stocking, ITQs, and catch shares).
+1. Make management recommendations that are founded on sound ecological reasoning and knowledge of fish biology, fisheries science, and adaptive management results. 
 
 ## Instructor
 
@@ -43,7 +45,7 @@ At the end of this class you will be able to ...
 <ul>
   <li><a href="http://derekogle.com" target="_blank">Dr. Derek H. Ogle</a><br>Professor of Mathematical Sciences<br> & Natural Resources</li>
   <li>CSE239; 682-1300; <a href="mailto:dogle@northland.edu">dogle@northland.edu</a><br>
-<a href="https://www.suggestionox.com/r/W16-207">Feedback / Suggestions</a></li>
+<a href="https://www.suggestionox.com/r/W16-349">Feedback / Suggestions</a></li>
   <li>Office Hours: Tues 12-1p; Thurs 10-11a; Fri 3-4p</li>
 </ul>
 
@@ -61,22 +63,24 @@ An overall percentage score will be computed from the items and associated weigh
 <table class="grader">
 <tr><th></th>
 <th><a href="#homework">HW</a></th>
-<th><a href="#exams">MT1</A></th>
-<th><a href="#exams">MT2</A></th>
-<th><a href="#exams">Final</A></th>
-<th><a href="#final-portfolio">Portfolio</A></th></tr>
+<th><a href="#exams">MT1</a></th>
+<th><a href="#exams">MT2</a></th>
+<th><a href="#exams">Final</a></th>
+<th><a href="#reflect-cfood-myths">Reflection-CFOOD</a></th>
+<th><a href="#reflect-speakers">Reflection-Speakers</a></th></tr>
 
 <tr><th>Weight</th>
-<th>25%</th><th>15%</th><th>15%</th><th>15%</th><th>30%</th></tr>
+<th>300%</th><th>15%</th><th>15%</th><th>20%</th><th>10%</th><th>10%</th></tr>
 
 <tr><th>Percent</th>
 <td><input type="text" name="HW_SC" size="3" tabindex="2" onchange="calc_grade(this.form)"></td>
-<td><input type="text" name="MT1_SC" size="3" tabindex="4" onchange="calc_grade(this.form)"></td>
-<td><input type="text" name="MT2_SC" size="3" tabindex="5" onchange="calc_grade(this.form)"></td>
-<td><input type="text" name="FNL_SC" size="3" tabindex="6" onchange="calc_grade(this.form)"></td>
-<td><input type="text" name="PROJ_SC" size="3" tabindex="7" onchange="calc_grade(this.form)"></td></tr>
+<td><input type="text" name="MT1_SC" size="3" tabindex="3" onchange="calc_grade(this.form)"></td>
+<td><input type="text" name="MT2_SC" size="3" tabindex="4" onchange="calc_grade(this.form)"></td>
+<td><input type="text" name="FNL_SC" size="3" tabindex="5" onchange="calc_grade(this.form)"></td>
+<td><input type="text" name="REFL_CFOOD_SC" size="3" tabindex="6" onchange="calc_grade(this.form)"></td>
+<td><input type="text" name="REFL_SPEAK_SC" size="3" tabindex="7" onchange="calc_grade(this.form)"></td></tr>
 
-<tr><th colspan="3">Overall Percentage: <input type="text" name="SCORE" size="4"></th>
+<tr><th colspan="4">Overall Percentage: <input type="text" name="SCORE" size="4"></th>
 <th colspan="3">Projected Grade: <input type="text" name="GRADE" size="2"></th></tr>
 </table>
 </form>
@@ -101,36 +105,32 @@ Several homework assignments will be assigned per major course topic.  Grading o
 
 Exams dates are shown on the [Dates page](calendar.html){:target="_blank"}.  Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition.  You will not be allowed to make up an exam missed without my prior approval.  The final exam will not be given early.
 
-### Final Portfolio
+### Reflection - CFOOD Myths
 
-The portfolio project serves as the capstone experience for the course and allows you flexibility to demonstrate working knowledge of the major topics of the course.  In general, the portfolio will consist of a thorough analysis of data using four (cannot use any topic more than once) of the following major topics in the course: (I) One-Way ANOVA (*must have more than two groups and cannot be a subset of your Two-Way ANOVA*), (II) Two-Way ANOVA, (III) Simple Linear Regression (*cannot be a subset of your Indicator Variable Regression*), (IV) Indicator Variable Regression, or (V) Logistic Regression.  You can also propose an alternative topic for my approval.
 
-For each topic you must gather and appropriately analyze data.  The data can originate from your original research, another class (but cannot be exactly like an assignment for the other class), journal articles (you may have to recreate the data from a graphic or table – see me for help with this), reputable internet sources, or any other reliable source.  The data should be real, should be able to be analyzed with one of the five topics from this class, and should be interesting to you.  **Finding appropriate data may be the hardest part of the portfolio.**  Thus, you must submit an initial proposal to me in the eighth week (see [Dates page](calendar.html){:target="_blank"}) that briefly describes the data that you will use, the types (i.e., quantitative or categorical) of response and explanatory variable(s), the question to be asked or hypotheses to be tested with the data, and which topic you will use to answer the question.  The initial proposal is worth an **all-or-nothing 10%** of the overall grade for the portfolio.  *I strongly urge you to discuss your initial proposal with me before turning it in.*
+### Reflection - Speakers
 
-For each topic you will write a report with the following sections:
 
-* Introduction: describe any background information needed to understand the data, why the data are important, why you were interested in the data, and what the objectives of the study were (i.e., the research hypothesis).
-* Methods: describe the methodology you (or the authors) used to collect and you used to analyze the data.
-* Assumptions: describe all assumption checking and data transformations.
-* Results: describe the results of your analysis.
-* Discussion: describe what you found and how it relates to your reasoning from the introduction.
-* Works cited: list of references (if any) used to support your project.
-
-It is possible that all four analyses can be conducted from the same large data set.  Thus, it is possible to have a single introduction and single methods section describing the data collection, but separate methods for analysis, assumption checking, results, and discussion.  Alternatively, if different data sets are used for each topic, then separate introductions, methods, assumption checking, results, and discussion will be required.  The final portfolio should be typed, grammatically correct, and refer to supporting graphics and tables.  The final portfolio is due during the last week of classes (see [Dates page](calendar.html){:target="_blank"}).
 
 ### Incomplete Grades
 
 Under Northland College policy, an incomplete grade will be given ONLY under extreme circumstances beyond your control, such as a major illness.  An incomplete grade will be given ONLY if you have successfully completed the entire course except for the final exam.
 
-## Participation and Conduct
+## Professionalism
+### Attendance
 For most students, achievement is strongly positively related to attendance.  I will take attendance each day but attendance will not factor into your final grade with the following exception.  At the end of the semester I may, at my discretion, decide to eliminate one or more of your homework or exam grades.  Your attendance record will be one item considered when I make this decision.
 
 <img class="img-right" src="../img/studying.jpg">
 
+### Participation
 As a general rule-of-thumb ([here](http://www.collegeparents.org/members/resources/articles/your-college-student-investing-enough-time-studying){:target="_blank"}, [here](http://classroom.synonym.com/ratio-studying-class-time-college-1075.html){:target="_blank"}, [here](https://www.usu.edu/asc/idea_sheets/pdf/estimate_study_hours.pdf){:target="_blank"}, and [here](http://collegelife.about.com/od/academiclife/f/How-Much-Time-Should-I-Spend-Studying-In-College.htm){:target="_blank"}, among many), students are expected to spend between 2-3 hours of time outside of class for each hour in class.  This course meets for 5 hours per week and, thus, I expect between 10 and 15 hours of time outside of class will be dedicated to preparing for class, completing homework and other assessments, and studying for exams.  I fully believe that the work required for this course can be completed within this expected amount of time, **if that time is quality-time** (i.e., without distraction).
 
 If you feel that you are spending an inordinate amount of time on some assignments because you are "stuck," then start your assignments early so that you can stop (and do other things) and make plans to see [me](#instructor) for help.
 
+### Expectations
+This is a 300-level science course that is required in only one major; thus, you either selected that major or this course and I assume then that this subject is of great interest to you.  This course is intense (both in quantity and quality of work) and I expect that you will appreciate that and honor that with considerable effort.  I expect that you are conversant with topics from the three pre-requisite courses (Ecology, Ichthyology, and Introductory Statistics).  Additionally, I expect that you have reached a high-level of intellectual maturity by this stage of your academic career and, thus, will act professionally at all times, ask good and synthesizing questions, and communicate effectively, both orally and [in writing](writing-tips.html).  Finally, I expect you to work hard, but have fun doing that work.
+
+### Conduct
 Your conduct in class should revolve around the idea of being respectful of all others in the class.  Adhering to the following policies should be considered the minimum requirements to being respectful of others:
 
 * Arrive to class on time.  If you arrive late, then take the first available seat as quietly as possible.

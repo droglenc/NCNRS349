@@ -9,7 +9,7 @@ css: /css/syllabus.css
 
 * Class [Description](#description) and [Learning Outcomes](#learning-outcomes)
 * [Instructor](#instructor) and [Tutors](#tutors)
-* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-Fisheries Debates](#reflections-fisheries-debates), [Reflections-Speakers](#reflections-speakers)
+* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-Fisheries Debates](#reflections---fisheries-debates), [Reflections-Speakers](#reflections---speakers)
 * [Professionalism](#professionalism) -- [Attendance](#attendance), [Participation](#participation), [Expectations](#expectations), [Conduct](#conduct)
 * [Accomodations](#accomodations)
 

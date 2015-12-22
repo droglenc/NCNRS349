@@ -94,19 +94,19 @@ Lowest possible final letter grades will be assigned by comparing your overall p
   <tr><td>D+ 67-69</td><td>D  60-66</td><td>F   0-59</td></tr>
 </table>
 
-### Homework
+#### Homework
 
 Several homework assignments will be assigned per major course topic.  Grading of each assignment will be described on the assignment sheet.  Completed homework assignments will be due at the beginning of the class period on dates announced when the homework was assigned.  Assignments will be accepted up to one day late but will be reduced by 50% of the worth of the assignment.  Assignments not handed in at the beginning of the class period will be considered one day late.  **If there is any indication, whether I can confirm it or not, that you have not worked alone on your homework, then you will receive a 0 for that homework and will be warned of further penalties for subsequent offenses.**
 
-### Exams
+#### Exams
 
 Exams dates are shown on the [Dates page](calendar.html){:target="_blank"}.  Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition.  You will not be allowed to make up an exam missed without my prior approval.  The final exam will not be given early.
 
-### Reflections - CFOOD Myths
+#### Reflections - CFOOD Myths
 
 
 
-### Reflections - Speakers
+#### Reflections - Speakers
 
 Several guest speakers will visit our class during the semester.  I expect that you will be attentive to each of these speakers, including asking relevant questions.  At the beginning of the first class period following each speaker, you will hand in a completed "reflection" regarding the guest speakers visit.  That reflections should contain *at least* the following information.
 
@@ -118,11 +118,11 @@ Several guest speakers will visit our class during the semester.  I expect that 
 1. What questions do you wish you would have asaked the speaker?
 1. What other thoughts do you have?
 
-### Extra Credit
+#### Extra Credit
 
 I will offer some opportunities for extra credit throughout the semester.  Generally these opportunities will be related to your reflections from attending presentations, meetings, etc. related to fisheries science and management that are outside of the class.  Examples would be attending the AFS Conference in late Feb and attending the Conservation Congress hearings in early April.
 
-### Incomplete Grades
+#### Incomplete Grades
 
 Under Northland College policy, an incomplete grade will be given ONLY under extreme circumstances beyond your control, such as a major illness.  An incomplete grade will be given ONLY if you have successfully completed the entire course except for the final exam.
 

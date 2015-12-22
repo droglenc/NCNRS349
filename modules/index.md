@@ -14,9 +14,17 @@ title: Lecture Materials
     <div id="cClassIntro" class="panel-collapse collapse">
       <div class="panel-body">
       <ul>
-        <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
-        <li><a href="ClassIntro/CE1.html">Class Exercise</a></li>
-        <li><a href="ClassIntro/CE2.html">Class Exercise</a></li>
+        <li>General Introduction</li>
+          <ul>
+            <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
+            <li><a href="ClassIntro/CE1.html">Assignment</li>
+            <li><a href="ClassIntro/CE2.html">Class Exercise</a></li>
+            <li><a href="ClassIntro/PPT_Stock.pptx">Lecture Slides</a></li>
+          </ul>
+        <li>Foundational Models</li>
+          <ul>
+            <li><a href="ClassIntro/PPT_Models.pptx">Lecture Slides</a></li>
+          </ul>
       </ul>
       </div>
     </div>

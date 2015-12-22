@@ -66,7 +66,7 @@ An overall percentage score will be computed from the items and associated weigh
 <th><a href="#exams">MT1</a></th>
 <th><a href="#exams">MT2</a></th>
 <th><a href="#exams">Final</a></th>
-<th><a href="#reflections---cfood-myths">Myths</a></th>
+<th><a href="#reflections---fisheries-myths">Myths</a></th>
 <th><a href="#reflections---speakers">Speakers</a></th></tr>
 
 <tr><th>Weight</th>
@@ -102,9 +102,14 @@ Several homework assignments will be assigned per major course topic.  Grading o
 
 Exams dates are shown on the [Dates page](calendar.html){:target="_blank"}.  Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition.  You will not be allowed to make up an exam missed without my prior approval.  The final exam will not be given early.
 
-#### Reflections - CFOOD Myths
+#### Reflections - Fisheries Myths
 
+Provide a written reflection on your reading related to two common myths in fisheries science and management.  Those myths and specific directions are provided at the following links:
 
+1. [All Fish Gone by 2048.](myths/myth-all-gone-2048)
+1. [We Are Fishing Down the Food Chain.](myths/myth-down-food-chain)
+
+Some descriptions for these and other myths can be found at the [cfooduw.org website](http://cfooduw.org/myths/) and [in this article](http://www.atsea.org/doc/Hilborn%202010%20Science%20Chronicles%202010-11-1.pdf).
 
 #### Reflections - Speakers
 

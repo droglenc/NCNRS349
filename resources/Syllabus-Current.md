@@ -107,9 +107,9 @@ Exams dates are shown on the [Dates page](calendar.html){:target="_blank"}.  Mak
 Provide a written reflection on your reading related to two common myths in fisheries science and management.  Those myths and specific directions are provided at the following links:
 
 1. [All Fish Gone by 2048.](myths/myth-all-gone-2048)
-1. [We Are Fishing Down the Food Chain.](myths/myth-down-food-chain)
+1. [Fishing Down the Food Chain.](myths/myth-down-food-chain)
 
-Some descriptions for these and other myths can be found at the [cfooduw.org website](http://cfooduw.org/myths/) and [in this article](http://www.atsea.org/doc/Hilborn%202010%20Science%20Chronicles%202010-11-1.pdf).
+These issues are hotly debated and internet searchs on the two titles above will lead to a variety of thoughts.
 
 #### Reflections - Speakers
 

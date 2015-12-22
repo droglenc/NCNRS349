@@ -66,11 +66,11 @@ An overall percentage score will be computed from the items and associated weigh
 <th><a href="#exams">MT1</a></th>
 <th><a href="#exams">MT2</a></th>
 <th><a href="#exams">Final</a></th>
-<th><a href="#reflections---fisheries-myths">Myths</a></th>
+<th><a href="#reflections---fisheries-debates">Debates</a></th>
 <th><a href="#reflections---speakers">Speakers</a></th></tr>
 
 <tr><th>Weight</th>
-<th>300%</th><th>15%</th><th>15%</th><th>20%</th><th>10%</th><th>10%</th></tr>
+<th>30%</th><th>15%</th><th>15%</th><th>20%</th><th>10%</th><th>10%</th></tr>
 
 <tr><th>Percent</th>
 <td><input type="text" name="HW_SC" size="3" tabindex="2" onchange="calc_grade(this.form)"></td>

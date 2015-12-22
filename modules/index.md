@@ -17,7 +17,7 @@ title: Lecture Materials
         <li>General Introduction</li>
           <ul>
             <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
-            <li><a href="ClassIntro/CE1.html">Assignment</li>
+            <li><a href="ClassIntro/CE1.html">Assignment</a></li>
             <li><a href="ClassIntro/CE2.html">Class Exercise</a></li>
             <li><a href="ClassIntro/PPT_Stock.pptx">Lecture Slides</a></li>
           </ul>

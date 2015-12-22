@@ -39,16 +39,10 @@ title: Lecture Materials
     <div id="cAbundance" class="panel-collapse collapse">
       <div class="panel-body">
       <ul>
+        <li>CPUE</li>
+        <li>Mark-Recapture -- Capture Histories</li>
         <li>Mark-Recapture (Single Census, Closed Population)</li>
         <li>Mark-Recapture (Multiple Censuses, Closed Population)</li>
-        
-        <li>Readings</li>
-        <ul>
-          <li><a href="">Exponential Growth (VALUE)</a></li>
-          <li><a href="">Logistic Growth (VALUE)</a></li>
-          <li><a href="">Exponetial & Logistic Growth (SHAROV)</a></li>
-        </ul>
-        <li><a href="PopnEcologyIntro/PPT.pptx">Lecture Slides</a></li>
       </ul>
       </div>
     </div>

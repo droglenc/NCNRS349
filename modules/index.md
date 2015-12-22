@@ -4,6 +4,22 @@ title: Lecture Materials
 ---
 
 <div class="panel-group" id="accordion">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#cClassIntro">Class Introduction</a>
+      </h4>
+    </div>
+    <div id="cClassIntro" class="panel-collapse collapse">
+      <div class="panel-body">
+      <ul>
+        <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
+        <li><a href="ClassIntro/CE.html">Class Exercise</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
  
   <div class="panel panel-default">
     <div class="panel-heading">

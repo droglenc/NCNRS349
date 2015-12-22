@@ -115,13 +115,15 @@ Some descriptions for these and other myths can be found at the [cfooduw.org web
 
 Several guest speakers will visit our class during the semester.  I expect that you will be attentive to each of these speakers, including asking relevant questions.  At the beginning of the first class period following each speaker, you will hand in a completed "reflection" regarding the guest speakers visit.  That reflections should contain *at least* the following information.
 
-1. What was the speaker's name, title, and affiliation (i.e., where they work)?
+1. What was the speaker's name, title, and affiliation (i.e., where he/she works)?
 1. What was the title of the speaker's presentation?
-1. What is your summary of the speaker's presentation, including your list of the speaker's three main points?
+1. What is your summary of the speaker's presentation, including your list of the speaker's three main points?  [*Provide specific details from the speaker's presentation*.]
 1. How did the speaker's presentation pertain to our class?  [*Be specific*]
 1. What questions did you ask the speaker and what were his/her answers?  [*Required*]
 1. What questions do you wish you would have asaked the speaker?
 1. What other thoughts do you have?
+
+This reflection should be about the substance of the speaker's presentation and not them or the presentation style or performance.
 
 #### Extra Credit
 

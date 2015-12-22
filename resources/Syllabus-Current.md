@@ -9,7 +9,7 @@ css: /css/syllabus.css
 
 * Class [Description](#description) and [Learning Outcomes](#learning-outcomes)
 * [Instructor](#instructor) and [Tutors](#tutors)
-* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-CFOOD Myths](#reflections-cfood-myths), [Reflections-Speakers](#reflections-speakers)
+* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-Fisheries Debates](#reflections-fisheries-debates), [Reflections-Speakers](#reflections-speakers)
 * [Professionalism](#professionalism) -- [Attendance](#attendance), [Participation](#participation), [Expectations](#expectations), [Conduct](#conduct)
 * [Accomodations](#accomodations)
 
@@ -102,12 +102,12 @@ Several homework assignments will be assigned per major course topic.  Grading o
 
 Exams dates are shown on the [Dates page](calendar.html){:target="_blank"}.  Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition.  You will not be allowed to make up an exam missed without my prior approval.  The final exam will not be given early.
 
-#### Reflections - Fisheries Myths
+#### Reflections - Fisheries Debates
 
-Provide a written reflection on your reading related to two common myths in fisheries science and management.  Those myths and specific directions are provided at the following links:
+Provide a written reflection on your reading related to two common debates in fisheries science and management.  Background for those debates and specific directions for the assignment are provided at the following links:
 
-1. [All Fish Gone by 2048.](myths/myth-all-gone-2048)
-1. [Fishing Down the Food Chain.](myths/myth-down-food-chain)
+1. [All Fish Gone by 2048.](debates/all-gone-2048)
+1. [Fishing Down the Food Chain.](debates/down-food-chain)
 
 These issues are hotly debated and internet searchs on the two titles above will lead to a variety of thoughts.
 

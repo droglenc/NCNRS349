@@ -15,7 +15,8 @@ title: Lecture Materials
       <div class="panel-body">
       <ul>
         <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
-        <li><a href="ClassIntro/CE.html">Class Exercise</a></li>
+        <li><a href="ClassIntro/CE1.html">Class Exercise</a></li>
+        <li><a href="ClassIntro/CE2.html">Class Exercise</a></li>
       </ul>
       </div>
     </div>
@@ -24,24 +25,27 @@ title: Lecture Materials
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#cPopnEcolIntro">(Brief) Population Ecology Review</a>
+        <a data-toggle="collapse" data-parent="#accordion" href="#cAbundance">(Brief) Population Abundance</a>
       </h4>
     </div>
-    <div id="cPopnEcolIntro" class="panel-collapse collapse">
+    <div id="cAbundance" class="panel-collapse collapse">
       <div class="panel-body">
       <ul>
+        <li>Mark-Recapture (Single Census, Closed Population)</li>
+        <li>Mark-Recapture (Multiple Censuses, Closed Population)</li>
+        
         <li>Readings</li>
         <ul>
-          <li><a href="http://vlab.amrita.edu/?sub=3&brch=65&sim=174&cnt=6">Exponential Growth (VALUE)</a></li>
-          <li><a href="http://vlab.amrita.edu/?sub=3&brch=65&sim=1110&cnt=1">Logistic Growth (VALUE)</a></li>
-          <li><a href="http://alexei.nfshost.com/PopEcol/lec5/explog.html">Exponetial & Logistic Growth (SHAROV)</a></li>
+          <li><a href="">Exponential Growth (VALUE)</a></li>
+          <li><a href="">Logistic Growth (VALUE)</a></li>
+          <li><a href="">Exponetial & Logistic Growth (SHAROV)</a></li>
         </ul>
-        <li><a href="PopnEcologyIntro/PPT.pptx">Class Exercise</a></li>
+        <li><a href="PopnEcologyIntro/PPT.pptx">Lecture Slides</a></li>
       </ul>
       </div>
     </div>
   </div>
- 
+
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">

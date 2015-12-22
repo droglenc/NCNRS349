@@ -1,0 +1,59 @@
+\documentclass{article}
+\input{c:/aaaWork/zGnrlLatex/GnrlPreamble}
+\input{c:/aaaWork/zGnrlLatex/justRPreamble}
+\hypersetup{pdftitle = NRS349 HO - Abundance}
+\newif\ifmakekey
+\renewcommand{\theenumi}{\alph{enumi}}  % changes questions to letters
+
+\begin{document}
+<<setup, echo=FALSE, include=FALSE, warning=FALSE, message=FALSE>>=
+source("c:/aaaWork/zGnrlLatex/knitr_setup.R")
+library(FSA)
+makekey <- TRUE     # change to TRUE to show answer key
+makekeyres <- ifelse(makekey,"markup","hide")
+@
+\makekeytrue         % uncomment to show answer key
+
+\section*{Leslie Model HW}
+Maceina \textit{et al.} (1995) examined the population of harvestable largemouth bass (\textit{Micropterus salmoides}) in Connor Cove of Lake Guntersville, Alabama, a 28,000-ha impoundment of the Tennessee River in March, 1992.  Their objective was to estimate the abundance of harvestable bass through the depletion of catches due to electrofishing.  In their study, they electrofished for 15 minutes at each of four depth strata.  The total number of bass captured, and removed, from the population from the full hour of electrofishing in the four depths was recorded.  Thus, a total of one hour of electrofishing constituted one unit of effort.  Six one-hour periods were used to deplete the population of bass in this cove. The number of bass caught in each period was 23, 12, 13, 14, 9, and 7.  Use these data to answer the following questions.
+\begin{enumerate}
+  \item Enter the catch and effort data into separate vectors in R using \R{c()}.  Then calculate a vector that represents the CPE for these data.  Carefully interpret the first CPE value.
+<<echo=makekey, results=makekeyres>>=
+ct <- c(23,12,13,14,9,7)
+ft <- rep(1,6)
+( cpe <- ct/ft )
+@
+\ifmakekey
+The first CPE value shows that an average of \Sexpr{cpe[1]} fish were captured in one unit of effort (one hour of electrofishing).
+\fi
+  \item What is the best estimate and 95\% confidence interval for the catchability coefficient?  Very carefully interpret what this (the best estimate) means relative to Connor Cover largemouth bass.  How does your estimate compare to the estimate published in Maceina \emph{et al.} (1995)?
+<<echo=makekey, results=makekeyres>>=
+dep <- depletion(ct,ft)
+coef(dep)
+confint(dep)
+@
+\ifmakekey
+The catchability coefficient ($q$) is estimated to be \Sexpr{formatC(coef(dep)[,"q"],format="f",digits=3)} with a 95\% confidence interval between \Sexpr{formatC(confint(dep)["q",1],format="f",digits=3)} and \Sexpr{formatC(confint(dep)["q",2],format="f",digits=3)}.  This catchability indicates that \Sexpr{formatC(coef(dep)[,"q"]*100,format="f",digits=1)}\% of the population is captured with one unit of effort (one hour of electrofishing).  This estimate matches the published estimate.
+\fi
+  \item What is the best estimate and 95\% confidence interval for the population size?  How does your estimate compare to the estimate published in Maceina \emph{et al.} (1995)?
+\ifmakekey
+\\ The initial population size ($N_{0}$) is estimated to be \Sexpr{formatC(coef(dep)[,"No"],format="f",digits=1)} with a 95\% confidence interval between \Sexpr{formatC(confint(dep)["No",1],format="f",digits=1)} and \Sexpr{formatC(confint(dep)["No",2],format="f",digits=1)}.  This estimate matches the published estimate.
+\fi
+  \item Given the best estimates of $q$ and $N_{0}$ and the amount of effort used in one period/sample, estimate how many bass you would expect to catch in the first period/sample?
+<<echo=makekey, results=makekeyres>>=
+cf <- coef(dep)
+1*cf[,"q"]*cf[,"No"]
+@
+\ifmakekey
+The first unit of fishing effort is estimated to have caught \Sexpr{formatC(cf[,"q"]*cf[,"No"],format="f",digits=1)} fish.
+\fi
+  \item With the same assumptions as the previous question, estimate how many bass you would expect to catch in the second period/sample?
+<<echo=makekey, results=makekeyres>>=
+1*cf[,"q"]*(1-cf[,"q"])*cf[,"No"]
+@
+\ifmakekey
+The second unit of fishing effort is estimated to have caught \Sexpr{formatC(cf[,"q"]*(1-cf[,"q"])*cf[,"No"],format="f",digits=1)} fish.
+\fi
+\end{enumerate}
+
+\end{document}

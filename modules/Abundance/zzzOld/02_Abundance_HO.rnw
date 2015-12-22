@@ -1,0 +1,81 @@
+\documentclass{article}
+\input{c:/aaaWork/zGnrlLatex/GnrlPreamble}
+\input{c:/aaaWork/zGnrlLatex/justRPreamble}
+\hypersetup{pdftitle = NRS349 HO - Abundance}
+
+\begin{document}
+  \titleRHO{Abundance}{NRS349 Fisheries Science Management}{Winter}
+
+<<setup,echo=FALSE,include=FALSE>>=
+source("c:/aaaWork/zGnrlLatex/knitr_setup.R")
+@
+<<results='hide', warning=FALSE, message=FALSE>>=
+library(FSA)
+library(FSAdata)
+@
+
+\section*{Leslie Model Computations}
+Catch and effort (number of nets set per day) data for smallmouth bass (\emph{Micropterus dolomieu}) in Little Silver Lake, ONT.
+<<fig.show='asis'>>=
+data(SMBassLS)
+str(SMBassLS)
+res1 <- depletion(SMBassLS$catch,SMBassLS$effort)
+plot(res1)
+coef(res1)
+summary(res1)
+confint(res1)
+@
+
+\newpage
+\section*{K-Pass Removal Computations (Demo Only)}
+The catch of brown (\emph{Salmo trutta}) and rainbow trout (\emph{Oncorhynchus mykiss}) in consecutive removal events at various locations.
+<<>>=
+data(JonesStockwell)
+str(JonesStockwell)
+JonesStockwell[3,]   # look at just one species/location
+res2 <- removal(c(25,10,8),type="CarleStrub")
+summary(res2)
+confint(res2)
+@
+
+\newpage
+\section*{Single-Census Mark-Recapture -- Summaries Provided}
+<<>>=
+mr1 <- mrClosed(M=16,n=19,m=7)
+summary(mr1)
+confint(mr1)
+@
+
+<<>>=
+mr2 <- mrClosed(M=16,n=19,m=7,type="Chapman")
+summary(mr2)
+confint(mr2)
+@
+
+\section*{Single-Census Mark-Recapture -- Capture Histories (Demo Only)}
+<<>>=
+data(PikeHL)
+view(PikeHL)
+pch <- capHistSum(PikeHL,cols=-1)
+pch$sum
+mr3 <- mrClosed(pch,type="Chapman")
+summary(mr3)
+confint(mr3)
+@
+
+
+\newpage
+\section*{Multiple-Census Mark-Recapture -- Using Capture Histories}
+<<>>=
+data(PikeNYPartial1)
+view(PikeNYPartial1)
+pikech <- capHistSum(PikeNYPartial1,cols=-1)
+pikech$caphist
+pikech$sum
+mr4 <- mrClosed(pikech,type="Schnabel")
+summary(mr4)
+confint(mr4)
+plot(mr4)
+@
+
+\end{document}

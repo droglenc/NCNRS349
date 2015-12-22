@@ -67,3 +67,7 @@ There are many formats for making a reference list. Each journal often has its o
 Differences include: 1) “and” between authors in former but not in latter; 2) a comma between the second author and the year in latter but not former; 3) journal title is spelled out in former but abbreviated in latter; 4) comma after the journal title in former; 5) colon after the volume number of former but a comma after the volume number in latter.
 
 Note that there are different formats within a journal for different types of reference materials (e.g., journal articles, books, chapters in books, personal communications).  Although this may appear to be minutiae, it is important when writing documents for work reports, for research publications, and job applications. One of the quickest ways to not get an interview for a job is to not pay attention to details in your application.
+
+### Releated Resources
+
+* [Techniques for Clear Scientific Writing and Editing](http://www.jneurosci.org/site/misc/publishingpointers.xhtml) -- The Journal of Neuroscience

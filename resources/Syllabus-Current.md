@@ -66,8 +66,8 @@ An overall percentage score will be computed from the items and associated weigh
 <th><a href="#exams">MT1</a></th>
 <th><a href="#exams">MT2</a></th>
 <th><a href="#exams">Final</a></th>
-<th><a href="#reflect-cfood-myths">Reflection-CFOOD</a></th>
-<th><a href="#reflect-speakers">Reflection-Speakers</a></th></tr>
+<th><a href="#reflections---cfood-myths">Myths</a></th>
+<th><a href="#reflections---speakers">Speakers</a></th></tr>
 
 <tr><th>Weight</th>
 <th>300%</th><th>15%</th><th>15%</th><th>20%</th><th>10%</th><th>10%</th></tr>
@@ -94,29 +94,40 @@ Lowest possible final letter grades will be assigned by comparing your overall p
   <tr><td>D+ 67-69</td><td>D  60-66</td><td>F   0-59</td></tr>
 </table>
 
-
 ### Homework
 
 Several homework assignments will be assigned per major course topic.  Grading of each assignment will be described on the assignment sheet.  Completed homework assignments will be due at the beginning of the class period on dates announced when the homework was assigned.  Assignments will be accepted up to one day late but will be reduced by 50% of the worth of the assignment.  Assignments not handed in at the beginning of the class period will be considered one day late.  **If there is any indication, whether I can confirm it or not, that you have not worked alone on your homework, then you will receive a 0 for that homework and will be warned of further penalties for subsequent offenses.**
-
-*Not all homework problems will be graded for content, some will be graded only for completeness (you will be responsible for checking content with an [on-line answer key](index.html)).*
 
 ### Exams
 
 Exams dates are shown on the [Dates page](calendar.html){:target="_blank"}.  Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition.  You will not be allowed to make up an exam missed without my prior approval.  The final exam will not be given early.
 
-### Reflection - CFOOD Myths
+### Reflections - CFOOD Myths
 
 
-### Reflection - Speakers
 
+### Reflections - Speakers
 
+Several guest speakers will visit our class during the semester.  I expect that you will be attentive to each of these speakers, including asking relevant questions.  At the beginning of the first class period following each speaker, you will hand in a completed "reflection" regarding the guest speakers visit.  That reflections should contain *at least* the following information.
+
+1. What was the speaker's name, title, and affiliation (i.e., where they work)?
+1. What was the title of the speaker's presentation?
+1. What is your summary of the speaker's presentation, including your list of the speaker's three main points?
+1. How did the speaker's presentation pertain to our class?  [*Be specific*]
+1. What questions did you ask the speaker and what were his/her answers?  [*Required*]
+1. What questions do you wish you would have asaked the speaker?
+1. What other thoughts do you have?
+
+### Extra Credit
+
+I will offer some opportunities for extra credit throughout the semester.  Generally these opportunities will be related to your reflections from attending presentations, meetings, etc. related to fisheries science and management that are outside of the class.  Examples would be attending the AFS Conference in late Feb and attending the Conservation Congress hearings in early April.
 
 ### Incomplete Grades
 
 Under Northland College policy, an incomplete grade will be given ONLY under extreme circumstances beyond your control, such as a major illness.  An incomplete grade will be given ONLY if you have successfully completed the entire course except for the final exam.
 
 ## Professionalism
+
 ### Attendance
 For most students, achievement is strongly positively related to attendance.  I will take attendance each day but attendance will not factor into your final grade with the following exception.  At the end of the semester I may, at my discretion, decide to eliminate one or more of your homework or exam grades.  Your attendance record will be one item considered when I make this decision.
 

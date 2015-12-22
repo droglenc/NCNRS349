@@ -20,6 +20,27 @@ title: Lecture Materials
       </div>
     </div>
   </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#cPopnEcolIntro">(Brief) Population Ecology Review</a>
+      </h4>
+    </div>
+    <div id="cPopnEcolIntro" class="panel-collapse collapse">
+      <div class="panel-body">
+      <ul>
+        <li>Readings</li>
+        <ul>
+          <li><a href="http://vlab.amrita.edu/?sub=3&brch=65&sim=174&cnt=6">Exponential Growth (VALUE)</a></li>
+          <li><a href="http://vlab.amrita.edu/?sub=3&brch=65&sim=1110&cnt=1">Logistic Growth (VALUE)</a></li>
+          <li><a href="http://alexei.nfshost.com/PopEcol/lec5/explog.html">Exponetial & Logistic Growth (SHAROV)</a></li>
+        </ul>
+        <li><a href="PopnEcologyIntro/PPT.pptx">Class Exercise</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
  
   <div class="panel panel-default">
     <div class="panel-heading">

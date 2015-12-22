@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fisheries Myth Assignment II
+title: Fisheries Debate II
 subtitle: "Fishing Down The Food Chain"
 ---
 

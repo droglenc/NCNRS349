@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fisheries Myth Assignment I
+title: Fisheries Debate I
 subtitle: "All Fish Gone by 2048"
 ---
 

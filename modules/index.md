@@ -47,7 +47,7 @@ title: Lecture Materials
           </ul>
         <li><strong>Depletion Estimates</strong></li>
           <ul>
-            <li>Pre-Readings -- [Ogle Notes](Abundance/Depletion/BKG.html), <a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 10</li>
+            <li>Pre-Readings -- <a href="Abundance/Depletion/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 10</li>
             <li><a href="Abundance/Depletion/PPT.pptx">Lecture Slides</a></li>
             <li>Post-Reading -- <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf">Rosenberger (Box 11.1) in Pope <emph>et al.</emph> (2010)</a></li>
           </ul>

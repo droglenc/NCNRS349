@@ -14,14 +14,14 @@ title: Lecture Materials
     <div id="cClassIntro" class="panel-collapse collapse">
       <div class="panel-body">
       <ul>
-        <li>**General Introduction**</li>
+        <li><strong>General Introduction</strong></li>
           <ul>
             <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
             <li><a href="ClassIntro/CE1.html">Assignment</a></li>
             <li><a href="ClassIntro/CE2.html">Class Exercise</a></li>
             <li><a href="ClassIntro/PPT_Stock.pptx">Lecture Slides</a></li>
           </ul>
-        <li>**Foundational Models**</li>
+        <li><strong>Foundational Models</strong></li>
           <ul>
             <li><a href="ClassIntro/PPT_Models.pptx">Lecture Slides</a></li>
           </ul>
@@ -39,10 +39,10 @@ title: Lecture Materials
     <div id="cAbundance" class="panel-collapse collapse">
       <div class="panel-body">
       <ul>
-        <li>**CPUE**</li>
-        <li>**Mark-Recapture -- Capture Histories**</li>
-        <li>**Mark-Recapture (Single Census, Closed Population)**</li>
-        <li>**Mark-Recapture (Multiple Censuses, Closed Population)**</li>
+        <li><strong>CPUE</strong></li>
+        <li><strong>Mark-Recapture -- Capture Histories</strong></li>
+        <li><strong>Mark-Recapture (Single Census, Closed Population)</strong></li>
+        <li><strong>Mark-Recapture (Multiple Censuses, Closed Population)</strong></li>
       </ul>
       </div>
     </div>

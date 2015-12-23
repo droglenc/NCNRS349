@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Depletion
+subtitle: Ogle's Notes
 author: Derek H. Ogle
 css: /css/codebox.css
 csl: ../../../rhelpers/american-fisheries-society.csl

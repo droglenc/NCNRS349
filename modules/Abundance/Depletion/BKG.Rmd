@@ -17,8 +17,8 @@ output:
 # RUN BOTH MANUALLY (following using Knit HTML button)
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Abundance/Depletion/")
 source("../../../rhelpers/Rhelpers.R")
-modHTML("Depletion-BKG",need2render=FALSE)
-if (require(FSA)) purl2("Depletion-BKG.Rmd",topnotes="User must set working directory appropriately.")
+modHTML("BKG",need2render=FALSE)
+if (require(FSA)) purl2("BKG.Rmd",topnotes="User must set working directory appropriately.")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE, warnings=FALSE}
@@ -143,7 +143,7 @@ and $q$, $qN_{0}$, and $N_{0}$ are estimated with regression methods as with `r 
 --------------------------------------------------------------
 
 ```{r echo=FALSE, results='asis'}
-reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="Depletion-BKG.R",RMarkdown="Depletion-BKG.Rmd"))
+reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="BKG.R",RMarkdown="BKG.Rmd"))
 ```
 
 --------------------------------------------------------------

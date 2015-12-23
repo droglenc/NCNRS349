@@ -1,0 +1,153 @@
+---
+layout: page
+title: Depletion
+author: Derek H. Ogle
+css: /css/codebox.css
+csl: ../../../rhelpers/american-fisheries-society.csl
+bibliography: ../../../rhelpers/NRS349.bib
+output: 
+  html_document: 
+    fig_width: 3.5
+    fig_height: 3.5
+    self_contained: no
+---
+```{r echo=FALSE, eval=FALSE}
+# First line renders an appropriate HTML file for the webpage
+# Second line makes the script file
+# RUN BOTH MANUALLY (following using Knit HTML button)
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Abundance/Depletion/")
+source("../../../rhelpers/Rhelpers.R")
+modHTML("Depletion-BKG",need2render=FALSE)
+if (require(FSA)) purl2("Depletion-BKG.Rmd",topnotes="User must set working directory appropriately.")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE, warnings=FALSE}
+##############################################################
+# ===== BEGIN -- THIS CAN BE IGNORED =========================
+# Setup of knitr
+source("../../../rhelpers/knitr_setup.R")
+# declare packages used
+rqrd <- c("FSA","captioner","knitr")
+library(FSA)
+# setup figure, table, and equation captioning
+library(captioner)
+
+figcaps <- captioner(prefix="Figure")
+figcaps("LeslieModelFig","Idealized plot of the decline in the index of abundance with increasing cumulative catch.  Visual representations of the catchability coefficient, $q$, and initial population size, $N_{0}$ are shown.")
+
+eqncaps <- captioner(prefix="Equation")
+eqncaps("LesliePopnModel")
+eqncaps("DepletionCPEDefn")
+eqncaps("LeslieModel1")
+eqncaps("LeslieNOSE")
+eqncaps("LeslieModel2")
+
+# ===== END -- THIS CAN BE IGNORED ===========================
+##############################################################
+```
+
+
+The number of individuals in a population at some initial time, called *initial population size*, can be estimated by the sum of sequential catches required to remove all fish from the population.  However, the removal of all fish from a population is costly, in monetary, human, and natural resource terms.  Fortunately, estimates of the initial population size can be made by examining how the removals of fish, either through the catch of a fishery or by experimental monitoring, affect the relative abundance of fish remaining in the population [@HilbornWalters2001].  These methods are generally called depletion or removal methods as they rely on observing populations where the stock of fish is being depleted by removals of fish.  In this vignette, three depletion methods used for estimating the population size are developed for a **closed population** with no mortality, recruitment, immigration, or emigration.
+
+\ 
+
+# Leslie Method
+
+The initial number of fish in a population is denoted by $N_{0}$.  The number of fish remaining in the closed population at the start of the $t$th removal is the initial population size minus the cumulative catch prior to the $t$th removal, $K_{t-1}$.  Thus,
+
+$$ N_{t} = N_{0} - K_{t-1} \quad \quad \text{`r paste0("(",eqncaps("LesliePopnModel",display="num"),")")`} $$
+
+where $K_{t-1}$ is
+
+$$ K_{t-1} = C_{1} + C_{2} + \ldots + C_{t-1} = \sum_{i=1}^{t-1} C_{i}, $$
+
+$C_{i}$ is the catch for the $i$th removal, and $t>1$ and $K_{0}=0$.  In addition, assume that catch-per-unit-effort (CPUE or CPE) in the $t$th removal event, $\frac{C_{t}}{f_{t}}$, is proportional to the extant population at the time of the $t$th removal event, $N_{t}$, i.e., 
+
+$$ \frac{C_{t}}{f_{t}} = qN_{t} \quad \quad \text{`r paste0("(",eqncaps("DepletionCPEDefn",display="num"),")")`} $$
+
+where $f_{t}$ is the level of effort for the $t$th removal and $q$ is a proportionality constant typically defined as the *catchability coefficient*.  The catchability coefficent represents the fraction of the population that is removed by one unit of fishing effort.  The Leslie method model is derived by substituting `r eqncaps("LesliePopnModel",display="cite")` into `r eqncaps("DepletionCPEDefn",display="cite")` for $N_{t}$ and simplifying,
+
+$$ \frac{C_{t}}{f_{t}} = q(N_{0} - K_{t-1}) \quad \quad \text{    } $$
+
+$$ \frac{C_{t}}{f_{t}} = qN_{0} - qK_{t-1} \quad \quad \text{`r paste0("(",eqncaps("LeslieModel1",display="num"),")")`} $$
+
+The last expression of `r eqncaps("LeslieModel1",display="cite")` is in the form of a linear model (`r figcaps("LeslieModelFig",display="cite")`) where $\frac{C_{t}}{f_{t}}$ is the response variable, $K_{t-1}$ is the explanatory variable, $q$ is a constant (i.e., the slope), and $qN_{0}$ is a constant (i.e., the intercept) because it is the product of two constants.  Thus, the *negative of the slope* of this model is an estimate of the catchability coefficient, $\hat{q}$.  The estimated initial population size, $\hat{N_{0}}$, is found by dividing the estimated intercept by  $\hat{q}$.  Visually, $\hat{N_{0}}$ is the intercept of the regression line with the *x-axis*, or in words, the total cumulative catch such that the CPE is equal to zero (`r figcaps("LeslieModelFig",display="cite")`).
+
+```{r, echo=FALSE, par1=TRUE}
+##############################################################
+# ===== BEGIN -- LESLIE MODEL FIGURE =========================
+par(xaxs="i",yaxs="i")
+t <- seq(1:10)                                          # number of sampling times
+q <- 0.1                                                # catchability coefficient
+f <- rnorm(10,1,0.05)                                   # effort per sampling times -- slightly random for now
+E <- rep(0,length(t))                                   # cumulative effort
+N <- rep(10,length(t))                                  # population size
+K <- rep(0,length(t))                                   # cumulative catch
+C <- rep(q*f[1]*N[1],length(t))                         # catch in the time period
+K1 <- rep(C[1]/2,length(t))                             # modified cumulative catch
+
+for (i in 2:length(t)) {                                # fill the vectors
+  N[i] <- N[i-1] - C[i-1]                               # population declines by catch
+  K[i] <- K[i-1] + C[i-1]                               # cum catch increases by catch
+  E[i] <- E[i-1] + f[i-1]                               # cum effort increases by effort
+  C[i] <- q*f[i]*N[i]                                   # catch for period i
+  K1[i] <- K[i] + C[i]/2                                # modified cum catch increaase by half of current catch
+  df <- data.frame(N=N,C=C,f=f,CPE=C/f,K=K,K1=K1,E=E)   # make a conglomerative data.frame
+}
+rm(N); rm(C); rm(f); rm(K); rm(K1); rm(E); rm(t); rm(q)
+lm.leslie1 <- lm(CPE~K,data=df)  # Traditional Method
+q <- -coef(lm.leslie1)[2]
+qN0 <- coef(lm.leslie1)[1]
+N0 <- qN0/q
+# Raw plot
+plot(CPE~K,data=df,ylim=c(0,1.1*max(df$CPE)),xlim=c(0,1.1*N0),ylab="CPE",
+     xlab=expression(Cumulative~~Catch~~(K[t-1])),pch=16,cex=1.2,xaxt="n",yaxt="n",xpd=TRUE)
+# Add axis labels
+axis(2,c(0,max(df$CPE)),c(0,expression(qN[0])),col.axis="red")
+axis(1,c(0,N0),c(0,expression(N[0])),col.axis="red")
+# Add fitted line
+abline(lm.leslie1,lwd=2,col="gray50")
+# Add demo of q
+p <- predict(lm.leslie1,data.frame(K=c(3,4)))
+lines(c(3,4,4),c(p[1],p[1],p[2]),lwd=2,col="red")
+text(3.5,p[1],"1",col="red",pos=3)
+text(4,p[1]+(p[2]-p[1])/2,"q",col="red",pos=4)
+# ===== END -- LESLIE MODEL FIGURE ===========================
+##############################################################
+```
+
+`r figcaps("LeslieModelFig")`
+
+\ 
+
+@HilbornWalters2001 noted that the index of abundance for the Leslie method can be either catch or CPE.  Furthermore, they note that the data used as an index of abundance in the Leslie method can be independent of the data used to measure cumulative catch.  Thus, for example, the index of abundance could be derived from acoustic surveys whereas the cumulative catch could be recorded from fishing trapnets.
+
+Confidence intervals for $q$ and $N_{0}$ can be derived from the regression results.  The confidence interval for $q$ is a straightforward calculation of the confidence interval for the slope.  However, the confidence interval for $N_{0}$ is not straightforward as it is estimated by the ratio of two random variables.  However, @Krebs1999 [p.82] provides a formula for computing the standard error of $\hat{N_{0}}$,
+
+$$ SE(\hat{N_{0}}) = \frac{s_{y|x}}{\hat{q}}\sqrt{\left[\frac{1}{n}+\frac{(\hat{N_{0}}-\bar{K})^2}{(n-1)s^{2}_{K}}\right]} \quad \quad \text{`r paste0("(",eqncaps("LeslieNOSE",display="num"),")")`} $$
+
+where $\bar{K}$ is the mean cumulative catch, $s^{2}_{K}$ is the variance of the cumulative catch, and $s_{y|x}$ is the standard deviation about the regression line.  Thus, with these standard error formulas, confidence intervals for $q$ and $N_{0}$ are computed in the standard way assuming normal distributions.
+
+@Ricker1975 suggested a modification to `r eqncaps("LeslieModel1",display="cite")` such that $K_{t-1}$ is replaced with $K_{t}$, where $K_{t}$ is equal to $K_{t-1}$ plus half of the current catch, $C_{t}$, or
+
+$$ K_{t} = K_{t-1} + \frac{C_{t}}{2} $$
+
+Thus, `r eqncaps("LeslieModel1",display="cite")` becomes
+
+$$ \frac{C_{t}}{f_{t}} = qN_{0} - qK_{t} \quad \quad \text{`r paste0("(",eqncaps("LeslieModel2",display="num"),")")`} $$
+
+and $q$, $qN_{0}$, and $N_{0}$ are estimated with regression methods as with `r eqncaps("LeslieModel1",display="cite")`.  This modification will typically (but not always) result in slightly higher estimates of $N_{0}$.
+
+\ 
+
+--------------------------------------------------------------
+
+```{r echo=FALSE, results='asis'}
+reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="Depletion-BKG.R",RMarkdown="Depletion-BKG.Rmd"))
+```
+
+--------------------------------------------------------------
+
+\ 
+
+## References

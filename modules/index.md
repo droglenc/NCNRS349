@@ -33,7 +33,7 @@ title: Lecture Materials
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#cAbundance">(Brief) Population Abundance</a>
+        <a data-toggle="collapse" data-parent="#accordion" href="#cAbundance">Population Abundance</a>
       </h4>
     </div>
     <div id="cAbundance" class="panel-collapse collapse">
@@ -41,13 +41,14 @@ title: Lecture Materials
       <ul>
         <li><strong>CPE/CPUE</strong></li>
           <ul>
-            <li>Pre-Readings -- <a href="HubertFabrizio2007.pdf">Hubert & Fabrizio (2007)</a>, <a href="http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff">Hubert <emph>et al.</emph> (2012) (Boxes 6.3 & 6.4)</a></li>
-            <li><a href="Abundance/CPE.pptx">Lecture Slides</a></li>
+            <li>Pre-Readings -- <a href="Abundance/CPE/HubertFabrizio2007.pdf">Hubert & Fabrizio (2007)</a>, <a href="http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff">Hubert <emph>et al.</emph> (2012) (Boxes 6.3 & 6.4)</a></li>
+            <li><a href="Abundance/CPE/CPE.pptx">Lecture Slides</a></li>
             <li>Post-Reading -- <a href="http://icesjms.oxfordjournals.org/content/63/8/1373.full">Maunder <emph>et al.</emph> (2006)</a></li>
           </ul>
         <li><strong>Depletion Estimates</strong></li>
           <ul>
-            <li><a href="Abundance/Depletion.pptx">Lecture Slides</a></li>
+            <li>Pre-Readings -- Ogle Notes, <a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 10</li>
+            <li><a href="Abundance/Depletion/Depletion.pptx">Lecture Slides</a></li>
             <li>Post-Reading -- <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf">Rosenberger (Box 11.1) in Pope <emph>et al.</emph> (2010)</a></li>
           </ul>
         <li><strong>Mark-Recapture -- Capture Histories</strong></li>

@@ -1,0 +1,84 @@
+---
+layout: page
+title: Depletion
+author: Derek H. Ogle
+css: /css/codebox.css
+---
+
+
+<p>The number of individuals in a population at some initial time, called <em>initial population size</em>, can be estimated by the sum of sequential catches required to remove all fish from the population. However, the removal of all fish from a population is costly, in monetary, human, and natural resource terms. Fortunately, estimates of the initial population size can be made by examining how the removals of fish, either through the catch of a fishery or by experimental monitoring, affect the relative abundance of fish remaining in the population <span class="citation">(Hilborn and Walters 2001)</span>. These methods are generally called depletion or removal methods as they rely on observing populations where the stock of fish is being depleted by removals of fish. In this vignette, three depletion methods used for estimating the population size are developed for a <strong>closed population</strong> with no mortality, recruitment, immigration, or emigration.</p>
+<p> </p>
+<div id="leslie-method" class="section level1">
+<h1>Leslie Method</h1>
+<p>The initial number of fish in a population is denoted by <span class="math">\(N_{0}\)</span>. The number of fish remaining in the closed population at the start of the <span class="math">\(t\)</span>th removal is the initial population size minus the cumulative catch prior to the <span class="math">\(t\)</span>th removal, <span class="math">\(K_{t-1}\)</span>. Thus,</p>
+<p><span class="math">\[ N_{t} = N_{0} - K_{t-1} \quad \quad \text{(1)} \]</span></p>
+<p>where <span class="math">\(K_{t-1}\)</span> is</p>
+<p><span class="math">\[ K_{t-1} = C_{1} + C_{2} + \ldots + C_{t-1} = \sum_{i=1}^{t-1} C_{i}, \]</span></p>
+<p><span class="math">\(C_{i}\)</span> is the catch for the <span class="math">\(i\)</span>th removal, and <span class="math">\(t&gt;1\)</span> and <span class="math">\(K_{0}=0\)</span>. In addition, assume that catch-per-unit-effort (CPUE or CPE) in the <span class="math">\(t\)</span>th removal event, <span class="math">\(\frac{C_{t}}{f_{t}}\)</span>, is proportional to the extant population at the time of the <span class="math">\(t\)</span>th removal event, <span class="math">\(N_{t}\)</span>, i.e.,</p>
+<p><span class="math">\[ \frac{C_{t}}{f_{t}} = qN_{t} \quad \quad \text{(2)} \]</span></p>
+<p>where <span class="math">\(f_{t}\)</span> is the level of effort for the <span class="math">\(t\)</span>th removal and <span class="math">\(q\)</span> is a proportionality constant typically defined as the <em>catchability coefficient</em>. The catchability coefficent represents the fraction of the population that is removed by one unit of fishing effort. The Leslie method model is derived by substituting Equation 1 into Equation 2 for <span class="math">\(N_{t}\)</span> and simplifying,</p>
+<p><span class="math">\[ \frac{C_{t}}{f_{t}} = q(N_{0} - K_{t-1}) \quad \quad \text{    } \]</span></p>
+<p><span class="math">\[ \frac{C_{t}}{f_{t}} = qN_{0} - qK_{t-1} \quad \quad \text{(3)} \]</span></p>
+<p>The last expression of Equation 3 is in the form of a linear model (Figure 1) where <span class="math">\(\frac{C_{t}}{f_{t}}\)</span> is the response variable, <span class="math">\(K_{t-1}\)</span> is the explanatory variable, <span class="math">\(q\)</span> is a constant (i.e., the slope), and <span class="math">\(qN_{0}\)</span> is a constant (i.e., the intercept) because it is the product of two constants. Thus, the <em>negative of the slope</em> of this model is an estimate of the catchability coefficient, <span class="math">\(\hat{q}\)</span>. The estimated initial population size, <span class="math">\(\hat{N_{0}}\)</span>, is found by dividing the estimated intercept by <span class="math">\(\hat{q}\)</span>. Visually, <span class="math">\(\hat{N_{0}}\)</span> is the intercept of the regression line with the <em>x-axis</em>, or in words, the total cumulative catch such that the CPE is equal to zero (Figure 1).</p>
+<p><img src="Depletion-BKG_files/figure-html/unnamed-chunk-3-1.png" title="" alt="" width="336" /></p>
+<p>Figure 1: Idealized plot of the decline in the index of abundance with increasing cumulative catch. Visual representations of the catchability coefficient, <span class="math">\(q\)</span>, and initial population size, <span class="math">\(N_{0}\)</span> are shown.</p>
+<p> </p>
+<p><span class="citation">Hilborn and Walters (2001)</span> noted that the index of abundance for the Leslie method can be either catch or CPE. Furthermore, they note that the data used as an index of abundance in the Leslie method can be independent of the data used to measure cumulative catch. Thus, for example, the index of abundance could be derived from acoustic surveys whereas the cumulative catch could be recorded from fishing trapnets.</p>
+<p>Confidence intervals for <span class="math">\(q\)</span> and <span class="math">\(N_{0}\)</span> can be derived from the regression results. The confidence interval for <span class="math">\(q\)</span> is a straightforward calculation of the confidence interval for the slope. However, the confidence interval for <span class="math">\(N_{0}\)</span> is not straightforward as it is estimated by the ratio of two random variables. However, <span class="citation">Krebs (1999 p. 82)</span> provides a formula for computing the standard error of <span class="math">\(\hat{N_{0}}\)</span>,</p>
+<p><span class="math">\[ SE(\hat{N_{0}}) = \frac{s_{y|x}}{\hat{q}}\sqrt{\left[\frac{1}{n}+\frac{(\hat{N_{0}}-\bar{K})^2}{(n-1)s^{2}_{K}}\right]} \quad \quad \text{(4)} \]</span></p>
+<p>where <span class="math">\(\bar{K}\)</span> is the mean cumulative catch, <span class="math">\(s^{2}_{K}\)</span> is the variance of the cumulative catch, and <span class="math">\(s_{y|x}\)</span> is the standard deviation about the regression line. Thus, with these standard error formulas, confidence intervals for <span class="math">\(q\)</span> and <span class="math">\(N_{0}\)</span> are computed in the standard way assuming normal distributions.</p>
+<p><span class="citation">Ricker (1975)</span> suggested a modification to Equation 3 such that <span class="math">\(K_{t-1}\)</span> is replaced with <span class="math">\(K_{t}\)</span>, where <span class="math">\(K_{t}\)</span> is equal to <span class="math">\(K_{t-1}\)</span> plus half of the current catch, <span class="math">\(C_{t}\)</span>, or</p>
+<p><span class="math">\[ K_{t} = K_{t-1} + \frac{C_{t}}{2} \]</span></p>
+<p>Thus, Equation 3 becomes</p>
+<p><span class="math">\[ \frac{C_{t}}{f_{t}} = qN_{0} - qK_{t} \quad \quad \text{(5)} \]</span></p>
+<p>and <span class="math">\(q\)</span>, <span class="math">\(qN_{0}\)</span>, and <span class="math">\(N_{0}\)</span> are estimated with regression methods as with Equation 3. This modification will typically (but not always) result in slightly higher estimates of <span class="math">\(N_{0}\)</span>.</p>
+<p> </p>
+<hr />
+<div id="reproducibility-information" class="section level2">
+<h2>Reproducibility Information</h2>
+<ul>
+<li><strong>Compiled Date:</strong> Wed Dec 23 2015</li>
+<li><strong>Compiled Time:</strong> 10:18:26 AM</li>
+<li><strong>R Version:</strong> R version 3.2.3 (2015-12-10)</li>
+<li><strong>System:</strong> Windows, i386-w64-mingw32/i386 (32-bit)</li>
+<li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>
+<li><strong>Required Packages:</strong> FSA, captioner, knitr and their dependencies (car, digest, dplyr, evaluate, formatR, gdata, gplots, graphics, grDevices, highr, Hmisc, markdown, methods, plotrix, plyr, sciplot, stats, stringr, tools, utils, yaml)</li>
+<li><strong>Other Packages:</strong> captioner_2.2.3, FSA_0.8.4, knitr_1.11</li>
+<li><strong>Loaded-Only Packages:</strong> digest_0.6.8, evaluate_0.8, formatR_1.2.1, htmltools_0.2.6, magrittr_1.5, plyr_1.8.3, Rcpp_0.12.2, rmarkdown_0.8.1, stringi_1.0-1, stringr_1.0.0, tools_3.2.3, yaml_2.1.13</li>
+<li><strong>Links:</strong> <a href="Depletion-BKG.R">Script</a> / <a href="Depletion-BKG.Rmd">RMarkdown</a></li>
+</ul>
+<hr />
+<p> </p>
+<div class="references">
+<h2>References</h2>
+<p>Hilborn, R., and C. J. Walters. 2001. Quantitative fisheries stock assessment: Choice, dynamics, &amp; uncertainty. Page 570Second. Chapman &amp; Hall, New York, NY.</p>
+<p>Krebs, C. J. 1999. Ecological methodologySecond. Addison-Welsey Educational Publishing, Menlo Park, CA.</p>
+<p>Ricker, W. E. 1975. Computation and interpretation of biological statistics of fish populations. Bulletin of the Fisheries Research Board of Canada.</p>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -53,7 +53,15 @@ title: Lecture Materials
             <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Homework</a></li>
           </ul>
         <li><strong>Mark-Recapture -- Capture Histories</strong></li>
+          <ul>
+            <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.1</li>
+            <li><a href="Abundace/MarkRecap/CE1.html">Class Exercise</a></li>
+          </ul>
         <li><strong>Mark-Recapture (Single Census, Closed Population)</strong></li>
+          <ul>
+            <li>Pre-Readings -- <a href="Abundance/MarkRecap/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.2</li>
+            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html">XC</a></li>
+          </ul>
       </ul>
       </div>
     </div>

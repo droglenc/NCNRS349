@@ -59,7 +59,7 @@ title: Lecture Materials
           </ul>
         <li><strong>Mark-Recapture -- Single Census, Closed Population</strong></li>
           <ul>
-            <li>Pre-Readings -- <a href="Abundance/MarkRecap/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.2</li>
+            <li>Pre-Readings -- <a href="Abundance/MarkRecap/BKG.html">Ogle Notes</a>, <a href="http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf">Section 8.3.1 in Hayes <emph>et al.</emph></a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.2</li>
             <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html">XC</a></li>
           </ul>
       </ul>

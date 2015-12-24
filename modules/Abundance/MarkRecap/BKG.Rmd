@@ -64,6 +64,9 @@ The discusson below requires counting the frequency of individuals with each cap
 
 This terminology is extended to represent other frequencies by including a "dot" (i.e., $\cdot$) in the place of any part of the subscript that is "summed across."  For example, $n_{\cdot\cdot1\cdot\cdot}$ represents the frequency of fish that were captured in the third sample (i.e., a "1" in the third sample position) and either were or were not captured in any of the other samples.  In other words, $n_{\cdot\cdot1\cdot\cdot}$ represents the total number of fish captured in the third sample.  Traditionally, this value would also be referred to as $n_{3}$, where the subscript now represents the sample number and not a capture history type.  As another example, $n_{\cdot101\cdot}$ represents the number of fish captured in the fourth sample that were *last* captured in the second sample.  These and other counts will have specific symbols when used in the context of the specific methods below.
 
+\ 
+
+----
 
 # Single Census Mark-Recapture Methods
 

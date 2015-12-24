@@ -302,8 +302,6 @@ reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="BKG.R",RMarkdown="BKG.Rmd
 
 ## References
 
-\ 
-
 [^IFARScripts]: Scripts for these calculations [are here](http://derekogle.com/IFAR/scripts/).
 [^DeLury1]: This equation is derived from a continuous exponential population growth model where $rt$ in the exponent is actually a mortality rate (due to the closed population assumption and the extraction of fish by the catches) that is related to the catchability $q$ and amount of effort expended $E_{t=1}$.
 [^kPassk]: This should not be confused with $K$, the cumulative catch, in the Leslie method.

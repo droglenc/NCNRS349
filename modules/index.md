@@ -43,13 +43,14 @@ title: Lecture Materials
           <ul>
             <li>Pre-Readings -- <a href="Abundance/CPE/HubertFabrizio2007.pdf">Hubert & Fabrizio (2007)</a>, <a href="http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff">Hubert <emph>et al.</emph> (2012) (Boxes 6.3 & 6.4)</a></li>
             <li><a href="Abundance/CPE/PPT.pptx">Lecture Slides</a></li>
-            <li>Post-Reading -- <a href="http://icesjms.oxfordjournals.org/content/63/8/1373.full">Maunder <emph>et al.</emph> (2006)</a></li>
+            <li>Post-Reading -- <a href="http://icesjms.oxfordjournals.org/content/63/8/1373.full.pdf">Maunder <emph>et al.</emph> (2006)</a></li>
           </ul>
         <li><strong>Depletion Estimates</strong></li>
           <ul>
             <li>Pre-Readings -- <a href="Abundance/Depletion/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 10</li>
             <li><a href="Abundance/Depletion/PPT.pptx">Lecture Slides</a></li>
             <li>Post-Reading -- <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf">Rosenberger (Box 11.1) in Pope <emph>et al.</emph> (2010)</a></li>
+            <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Homework</a>
           </ul>
         <li><strong>Mark-Recapture -- Capture Histories</strong></li>
         <li><strong>Mark-Recapture (Single Census, Closed Population)</strong></li>

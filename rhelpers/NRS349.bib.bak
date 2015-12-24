@@ -44,19 +44,6 @@
   Timestamp                = {2008.03.30}
 }
 
-@Book{Ogle2016,
-  Title                    = {Introductory Fisheries Analyses with {R}},
-  Author                   = {Derek H. Ogle},
-  Publisher                = {Chapman \& Hall/CRC},
-  Year                     = {2016},
-
-  Address                  = {Boca Raton, FL},
-  Series                   = {The R Series},
-
-  Owner                    = {dogle},
-  Timestamp                = {2015.10.23}
-}
-
 @TechReport{Ricker1975,
   Title                    = {Computation and Interpretation of Biological Statistics of Fish Populations},
   Author                   = {Ricker, W. E.},

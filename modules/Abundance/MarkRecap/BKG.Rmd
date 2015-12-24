@@ -1,0 +1,294 @@
+---
+layout: page
+title: Mark-Recapture I
+subtitle: Ogle's Notes
+author: Derek H. Ogle
+css: /css/codebox.css
+csl: ../../../rhelpers/american-fisheries-society.csl
+bibliography: ../../../rhelpers/NRS349.bib
+output: 
+  html_document: 
+    fig_width: 3.5
+    fig_height: 3.5
+    self_contained: no
+---
+```{r echo=FALSE, eval=FALSE}
+# First line renders an appropriate HTML file for the webpage
+# Second line makes the script file
+# RUN BOTH MANUALLY (following using Knit HTML button)
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Abundance/MarkRecap/")
+source("../../../rhelpers/Rhelpers.R")
+modHTML("BKG",need2render=FALSE)
+if (require(FSA)) purl2("BKG.Rmd",topnotes="")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE, warnings=FALSE}
+#### #### #### #### #### #### #### #### #### #### #### #### #### #### #### ##
+# ===== BEGIN -- THIS CAN BE IGNORED =========================
+# Setup of knitr
+source("../../../rhelpers/knitr_setup.R")
+# declare packages used
+rqrd <- c("FSA","captioner","knitr")
+library(FSA)
+# setup figure, table, and equation captioning
+library(captioner)
+
+tblcaps <- captioner(prefix="Table")
+tblcaps("PetersenDataMatrix","Summary data matrix for the two samples in a Petersen mark-recapture framework.  Note that a zero indicates the fish were not captured in that sample and a one indicates that the fish were captured in that sample.")
+tblcaps("PetersenNotation","Summary of notation used in the Petersen method.")
+tblcaps("SchnabelNotation","Summary of notation used in the Schnabel and Schumacher-Eschmeyer methods.")
+
+figcaps <- captioner(prefix="Figure")
+figcaps("PetersenScheme","Schematic representation of the two samples ($i=1,2$) in a Petersen mark-recapture study.  See the text for detailed description and Table 2 for definitions of notation.")
+figcaps("SchnabelScheme","Schematic representation of a hypothetical four samples ($i=1,2,3,4$) in a Schnabel or Shumacher-Eschmeyer mark-recapture study.  See the text for detailed description and Table 3 for definitions of notation.")
+
+eqncaps <- captioner(prefix="Equation")
+eqncaps("Petersen")
+eqncaps("Chapman")
+eqncaps("Bailey")
+eqncaps("Schnabel")
+eqncaps("SchnabelChapman")
+eqncaps("SchumacherEschmeyer")
+
+# ===== END -- THIS CAN BE IGNORED ===========================
+#### #### #### #### #### #### #### #### #### #### #### #### #### #### #### ##
+```
+
+The size of a population can be estimated by capturing and marking individuals from the population, extracting another sample from the population at a later time, and determining the fraction of individuals in the second sample that had the mark from the first sample.  This idea was first used to estimate the population of humans in London in 1662 [@Krebs1999], but was popularized in fisheries examinations by C.G.J. Petersen in 1896 [@Ricker1975].  The method was used by @Lincoln1930 for estimating duck populations and by @Jackson1933 for estimating tsetse fly populations.  Thus, this method is variously referred to as the Petersen method, the Lincoln-Petersen method, or the Lincoln-Petersen-Jackson method. The "Petersen method" will be used in this vignette.
+
+The Petersen single-census method, which relies on only one sample of potentially marked fish, can be extended to a series of samples.  These extended methods, called the Schnabel and Schumacker-Eschmeyer methods, require at least one sample where fish are marked and then multiple samples of potentially marked fish.  However, these methods are most often used when the unmarked fish in the subsequent samples are marked and returned, along with the previously marked fish, to the population.  Thus, these methods can be used with multiple marking and multiple "recapturing" samples.
+
+#### Some Notational Conventions
+
+The discusson below requires counting the frequency of individuals with each capture history.  These frequencies are typically symbolized with a lower-case "n" with the capture history string as a subscript.  For example, $n_{10100}$ represents the number of fish captured in the first and third sample periods but not in any other sample period.
+
+This terminology is extended to represent other frequencies by including a "dot" (i.e., $\cdot$) in the place of any part of the subscript that is "summed across."  For example, $n_{\cdot\cdot1\cdot\cdot}$ represents the frequency of fish that were captured in the third sample (i.e., a "1" in the third sample position) and either were or were not captured in any of the other samples.  In other words, $n_{\cdot\cdot1\cdot\cdot}$ represents the total number of fish captured in the third sample.  Traditionally, this value would also be referred to as $n_{3}$, where the subscript now represents the sample number and not a capture history type.  As another example, $n_{\cdot101\cdot}$ represents the number of fish captured in the fourth sample that were *last* captured in the second sample.  These and other counts will have specific symbols when used in the context of the specific methods below.
+
+
+## Single Census Mark-Recapture Methods
+
+#### Petersen Method
+The Petersen method consists of two samples from a closed population and is, thus, the simplest of the broad array of mark-recapture techniques for estimating animal abundance.  The population and sampling scheme for the two samples ($i=1,2$) of the Petersen method are represented in `r figcaps("PetersenScheme",display="cite")`.  The large squares just to the left of the "i=" vertical lines represent the population just before the $i$th sample is taken.  The large square just after the "i=1" vertical line represents the population just after the first sample was taken.  Thus, under the assumption that the population is closed, the population immediately after the first sample is the same as the population immediately before the second sample.  The samples are represented by the small grey boxes just above each "i=" vertical line.
+
+![Petersen Scheme](Petersen_Scheme.jpg)
+
+`r figcaps("PetersenScheme")`
+
+\ 
+
+The population initially consists of all unmarked animals.  All fish in the first sample are then marked and returned to the population.  The first sample does not necessarily need to be a random sample of the population although the assumptions for the second sample are more likely to be met if it is.  In addition, the fish can receive a batch mark, i.e., each fish does not need to be uniquely identified[^1].  The second sample must be a random sample from the entire population of marked and unmarked  individuals such that each fish, whether marked or unmarked, has the same chance of being captured.  This also implies that the marked fish mix randomly with the unmarked fish in the population `r figcaps("PetersenScheme",display="cite")`.  Each fish in this second sample is examined to determine if it has the mark from the first sample or not.
+
+The summary data for a Petersen estimate can be shown in the format of capture histories `r tblcaps("PetersenDataMatrix",display="cite")`.  However, the more traditional notation of $N=n_{\cdot\cdot}$, $M=n_{1\cdot}$, $n=n_{\cdot 1}$, and $m=n_{11}$ for ease of comparison to other sources will be used throughout this vignette[^2].  Remember that the capitalized symbols refer to the population (i.e., $N$ is number of fish in the population, $M$ is the number of marked fish in the population) whereas the lower-case letters refer to the second sample (i.e., $n$ is the number of fish captured in the second sample, $m$ is the number of marked fish captured in the second sample).  The meaning of the symbols used in the Petersen method are shown in `r tblcaps("PetersenNotation",display="cite")`.
+
+\ 
+
+`r tblcaps("PetersenDataMatrix")`
+
+![Petersen Data Matrix](Petersen_Data_Matrix.png)
+
+\ 
+
+`r tblcaps("PetersenNotation")`
+
+Symbol | Meaning
+------ | -------
+$N$    | The unknown size of the population just prior to the first sample.
+$M$    | The number of fish from the first sample that were marked and returned to the population.
+$n$    | The number of fish in the second sample.
+$m$    | The number of marked fish in the second sample.
+$\widehat{N}$ | The estimated size of the population just prior to the first sample.
+
+\ 
+
+The Petersen estimate of abundance can be derived from the initial assumption that if the second sample is a random sample of the population of marked and unmarked animals, then the proportion of marked animals in the second sample should equal the proportion of marked animals in the population, i.e.,
+
+\[ \frac{m}{n} = \frac{M}{N} \]
+
+A rearrangement of this equality gives an estimate of the size of the population, i.e.,
+
+$$ \hat{N} = \frac{Mn}{m} \quad \quad \text{`r paste0("(",eqncaps("Petersen",display="num"),")")`} $$
+
+Thus, the total population size can be estimated from the number of marked animals, the number of animals observed in the second sample, and the number of animals in the second sample that had the mark.
+
+Approximate confidence intervals for $N$ are often used,[^3] with the specific form of the approximation depending on characteristics of the number of marked and recaptured fish.  @Seber1982 suggests the following sequential "rules" (i.e., stop at the step where you answer "yes") for choosing the method for approximating the confidence interval for $N$ in the Petersen method when sampling without replacement:
+
+* Is the fraction of marked fish in the second sample "large" (i.e., $\frac{m}{n}>0.10$)? -- Use the **binomial** approximation?
+* Is the number of marked fish in the second sample "large" (i.e., $m>50$)? -- Use the **normal** approximation?
+* Use the **Poisson** approximation.
+
+Both the binomial and normal approximation methods identify a confidence interval for the ratio of marked fish in the second sample (i.e., $\frac{m}{n}$) and then the endpoints of these intervals are substituted into the modified Petersen equation,
+
+$$ \hat{N} = \frac{Mn}{m} = \frac{M}{\frac{m}{n}} $$
+
+to derive endpoints of the confidence interval for $N$.  The binomial approximation method constructs the interval for $\frac{m}{n}$ with computer algorithms of the binomial distribution.  The normal approximation is considered a large-sample method where the standard error for $\frac{m}{n}$ is estimated with
+
+$$ SE_{\frac{m}{n}} = \sqrt{\left(1-\frac{m}{M}\right)\frac{\frac{m}{n}\left(1-\frac{m}{n}\right)}{n-1}} + \frac{1}{2n} $$
+
+The confidence interval is then constructed in the usual way with $\frac{m}{n}\pm Z^{*}SE_{\frac{m}{n}}$.
+
+The Poisson approximation operates similarly, except that it uses computer algorithms of the Poisson distribution to construct a confidence interval for $m$, the endpoints of which are then substituted back into `r eqncaps("Petersen",display="cite")` to derive the confidence interval for $N$.
+
+#### Modifications of the Petersen Method
+The Petersen method of estimating abundance is the best asymptotically normal estimator as $N$ approaches infinity but, unfortunately, it is biased, especially for small samples.  @Chapman1951 showed that when $M+n \geq N$ that
+
+$$  \hat{N} = \frac{(M+1)(n+1)}{(m+1)}-1 \quad \quad \text{`r paste0("(",eqncaps("Chapman",display="num"),")")`} $$
+
+is an exactly unbiased estimator of $N$.[^4]  If $M+n < N$, then @RobsonRegier1964 showed that the bias of `r eqncaps("Chapman",display="cite")` is less than 2\% if $\frac{Mn}{N}>4$.  Unfortunately, $N$ is usually unknown.  However, @RobsonRegier1964 note that if $m\geq7$ then there is a 95\% chance that $\frac{Mn}{N}>4$ and the bias of `r eqncaps("Chapman",display="cite")` can be considered negligible [@Seber1982].  Thus, a given study should be designed so that enough fish are marked and the second sample is large enough to ensure that more than seven marked fish are recaptured.
+
+A final modification was proposed by @Bailey1951 and @Bailey1952.  Bailey's method is appropriate if the second sample of fish is collected with replacement (i.e., an individual may be counted more than once).  This type of sampling happens most often if the tagged fish are simply observed rather than captured.  Bailey showed that `r eqncaps("Petersen",display="cite")` is biased under these conditions and that his modified estimator,
+
+$$ \hat{N} = \frac{(M)(n+1)}{(m+1)} \quad \quad \text{`r paste0("(",eqncaps("Bailey",display="num"),")")`} $$
+
+is nearly unbiased if $m\geq7$.
+
+Confidence intervals for $N$ from these modified estimators use techniques similar to those described for the Petersen method.  However, the binomial and normal confidence intervals for the ratio $\frac{m}{n}$ must be converted to a confidence interval for $m$ by multiplying the endpoints by $n$.  The endpoints of the confidence interval for $m$ are then substituted into `r eqncaps("Chapman",display="cite")` or `r eqncaps("Bailey",display="cite")` to obtain confidence intervals for $N$.
+
+
+
+#### Assumptions of Petersen & Related Methods
+
+Before specifically adressing the assumptions of the Petersen and related methods it is important to note that these estimates refer only to the catchable portion or the portion of the population fully recruited to the gear.  For example, if the population of northern pike studied was restricted to that part of the population longer than 450 mm because of the gear used to capture the samples, then the estimates of abundance refer only to that part of the population larger than 450 mm.  In general, the population estimate only refers to the population extant at the time of the first sample, except under very specific conditions which are outlined below.
+
+The Petersen and related methods depend on meeting five assumptions [@Seber1982]:
+
+* The population is closed (so that $N$ is constant).
+* All fish have the same chance of being caught in the second sample.
+* Tagging individuals does not affect their catchability.
+* Fish do not lose their tags between the first and second sample.
+* All tags are reported upon discovery in the second sample.
+
+Fisheries personnel attempt to control the first assumption by having a very short period between the first and second samples.  However, there are several ways in which the first assumption can be violated without adversely affecting the usability of the Petersen estimate [@Seber1982].  If fish die while being marked and before being released, then the Petersen estimate will refer to the size of the population **after** the marked fish from the first sample are released.  Mortality between the first and second sample will not affect the Petersen estimate of initial population size if the rate of mortality is the **same** for both marked and unmarked individuals (i.e., so the proportion of marked animals in the population is not affected).  Recruitment of new individuals to the population will completely invalidate the Petersen method as an estimator of the initial population size.  However, if there is no mortality along with the recruitment, then the Petersen method will provide a valid estimate of the population size at the time of the **second** sample.  @Seber1982 [p.73] provides a statistical test to detect recruitment between the two samples.
+
+The second assumption is difficult to assure because it is impossible to take a strict random sample in most real situations.  If all fish are equally catchable then a random sample can be approximated by sampling areas at random with constant effort [@Krebs1999].  Systematic sampling is often used to select animals but this relies on the assumption that marked and unmarked animals mix uniformly through the population.
+
+Unequal catchability between marked and unmarked fish may arise from three general causes [@Eberhardt1969]:
+
+* The behavior of individuals in the vicinity of the trap.
+* Learning by animals already caught (i.e., trap-shy or trap-happiness).
+* Unequal opportunity to be caught because of trap positions.
+
+Statistical tests exist (see @Krebs1999) to identify certain forms of unequal catchability, but all of these tests rely on more than two samples from the population.  Thus, in a Petersen type study, the biologist must take care to design fish collections that minimize these difficulties.
+
+Finally, violations of the last two assumptions result in the possible underestimation of the proportion of marked animals in the second sample which leads to overestimation of the population size.  The fourth assumption can be tested by "double-marking" a portion of the marked animals.  For example, the northern pike in Harding Lake were marked with a numbered floy tag and a partial fin-clip.  The proportion of lost-tags can be estimated from the recaptured fish and a correction applied to the population estimate.
+
+
+----
+
+## Multiple Census Closed Population Mark-Recapture
+
+#### Background
+
+The population and sampling scheme for multiple sample methods on a closed population is shown in  `r figcaps("SchnabelScheme",display="cite")`.  The setup of this figure is the same as that for the Petersen method `r figcaps("PetersenScheme",display="cite")`, except that it is extended for more than two samples.  Note in this scheme that the population immediately after the $i$th sample is the same as the population immediately before the $(i+1)$th sample because the population is assumed closed.
+
+For each sample period ($i$) a total of $n_{i}$ fish are captured.  Each of the captured fish must be observed to have a mark or not.  The total number of marked fish in the $i$th sample is denoted with $m_{i}$, whereas the number of unmarked fish is $u_{i}$.  Immediately following the extraction of the $i$th sample, a total of $R_{i}$ marked fish are returned to the population.  The $R_{i}$ marked fish consists of the $m_{i}$ previously marked fish plus the $u_{i}$ previously unmarked but now newly marked fish, minus any accidental deaths of fish captured in the $i$th sample.  The accidental deaths should be kept negligible as it is assumed, with these methods, that the population is closed.  Thus, $R_{i}$ is typically equal to $m_{i}+u_{i}$.  A summary of the notation used in these methods is shown in `r tblcaps("SchnabelNotation",display="cite")`.
+
+\ 
+
+![Schabel Scheme](Schnabel_Scheme.jpg)
+
+`r figcaps("PetersenScheme")`
+
+\ 
+
+`r tblcaps("SchnabelNotation")`
+
+Symbol | Meaning
+------ | -------
+$N$     | The unknown size of the population just prior to the first sample.
+$k$}    | The number of samples in the entire study (i.e., $i=1\ldots k$)
+$n_{i}$ | The number of fish captured in the $i$th sample.
+$m_{i}$ | The number of marked fish in the $i$th sample.  $m_{1}=0$
+$u_{i}$ | The number of unmarked fish in the $i$th sample. \\
+$R_{i}$ | The number of marked fish returned to the population after the $i$th sample.  $R_{k}=0$
+$M_{i}$ | The number of marked fish in the population just prior to the $i$th sample.  $M_{1}=0$
+$\widehat{N}$ | The estimated size of the population just prior to the first sample.
+
+\ 
+
+The two multiple-sample closed population methods to be discussed also rely on determining the number of marked fish extant in the population just prior to taking the $i$th sample, $M_{i}$.  Because these methods assume a closed population, this task is as simple as accumulating the number of previously unmarked fish returned to the population as marked fish prior to the $i$th sample.  Thus, $M_{i}=\sum_{j=1}^{i-1}u_{j}$, or if there is the possibility of some accidental deaths, $M_{i}=\sum_{j=1}^{i-1}\left(R_{j}-m_{j}\right)$.  By definition, $M_{1}=0$ because there are no marked fish in the population just prior to the first sample, .
+
+These summary values -- $n_{i}$, $m_{i}$, $u_{i}$, $R_{i}$, and $M_{i}$ -- may be recorded directly from each sample or they may be deciphered from summaries of individual capture histories.  For example, suppose that the frequencies of fish in each possible capture history is,
+
+<pre>
+Capture history  001 010 011 100 101 110 111
+Number of Fish   198 171  73  54   4  15   2
+</pre>
+
+and there were no recorded accidental deaths.  From this summary of capture histories, the required summary statistics can be calculated.  For example,
+
+* the number of fish captured in the first sample is $n_{1} = n_{1\cdot\cdot} = n_{100}+n_{101}+n_{110}+n_{111} = 54+4+15+2 = 75$
+* the number of fish captured in the second sample is $n_{2} = n_{\cdot 1\cdot} = n_{010}+n_{011}+n_{110}+n_{111} = 171+73+15+2 = 261$
+* the number of already marked fish captured in the second sample is $m_{2} = n_{11\cdot} = n_{110}+n_{111} = 15+2 = 17$
+* the total number of marked fish released immediately after the first sample is $R_{1} = m_{1}+u_{1}-\text{"accidental deaths"} = 0+75-0 = 75$
+* the total number of marked fish released immediately after the second sample is $R_{2} = m_{2}+u_{2}-\text{"accidental deaths"} = 17+244-0 = 261$
+* the number of marked fish just before the second sample is taken $M_{2} = M_{1}+\left(R_{1}-m_{1}\right) = 0+(75-0) = 75$
+* the number of marked fish just before the third sample is taken $M_{3} = M_{2}+\left(R_{2}-m_{2}\right) = 75+(261-17) = 319$
+
+These calculations, along with the remaining calculations not shown (i.e., $n_{3}$ and $m_{3}$) and the default values ($m_{1}=0$, $R_{3}=0$, and $M_{1}=0$), can be summarized in the following table,
+
+<pre>
+        ni mi  Ri  Mi
+first   75  0  75   0
+second 261 17 261  75
+third  277 79 277 319
+</pre>
+
+It should be noted that $R_{i}=n_{i}$ only if there are no accidental deaths reported as was the case with this example. Again, it is possible for $R_{i} < n_{i}$, but $R_{i}$ should not be substantially lower than $n_{i}$.
+
+#### Schnabel Method
+The Schnabel equation for estimating $N$ is 
+
+$$ \hat{N} = \frac{\sum_{i=1}^{k}n_{i}M_{i}}{\sum_{i=1}^{k}m_{i}} \quad \quad \text{`r paste0("(",eqncaps("Schnabel",display="num"),")")`} $$
+
+The Schnabel estimation formula is very similar in form to `r eqncaps("Petersen",display="cite")`.  In fact, @Krebs1999 noted that `r eqncaps("Schnabel",display="cite")` is basically a weighted average of individual Petersen estimates.
+
+@Chapman1954 noted that `r eqncaps("Schnabel",display="cite")` provides a slightly biased estimate of $N$.  Therefore, he suggested that `r eqncaps("Schnabel",display="cite")` be modified with the inclusion of a 1 in the denominator,
+
+$$ \hat{N} = \frac{\sum_{i=1}^{k}n_{i}M_{i}}{\left(\sum_{i=1}^{k}m_{i}\right)+1} \quad \quad \text{`r paste0("(",eqncaps("SchnabelChapman",display="num"),")")`} $$
+
+@Krebs1999 suggested that the Chapman modification of the Schnabel method should be used if the proportion of the total population caught in each sample (i.e., $\frac{n_{i}}{\hat{N}}$) is less than 0.1 and if the proportion of the population that is marked ($\frac{M_{i}}{\hat{N}}$) is always less than 0.1.  As a default, we suggest that the Chapman modification should be used at all times.
+
+@Ricker1975 and @Krebs1999 suggest two possible methods for constructing confidence intervals for $N$ with the Schnabel method.  First, if $\sum m_{i}$ is small (i.e., $<50$) then a Poisson approximation for constructing a confidence interval for $\sum m_{i}$ is used and the endpoints substituted into `r eqncaps("Schnabel",display="cite")` or `r eqncaps("SchnabelChapman",display="cite")` to construct confidence endpoints for $N$ (note that the confidence interval for $\sum m_{i}$ is constructed in the same manner as the confidence interval for $m$ in the Petersen method).  Alternatively, when $\sum m_{i}$ is large then a confidence interval is constructed for $\frac{1}{N}$ using standard confidence interval methods and
+
+$$ SE_{\frac{1}{\hat{N}}} = \sqrt{\frac{\sum_{i=1}^{k}m_{i}}{\left(\sum_{i=1}^{k}n_{i}M_{i}\right)^{2}}} $$
+
+with $df=n-2$.
+
+
+#### Schumacher-Eschmeyer Method
+
+@SchumacherEschmeyer1943 provided a separate estimation function for $N$,
+
+$$ \hat{N} = \frac{\sum_{i=1}^{k}n_{i}M_{i}^{2}}{\sum_{i=1}^{k}m_{i}M_{i}} \quad \quad \text{`r paste0("(",eqncaps("SchumacherEschmeyer",display="num"),")")`} $$
+
+that is based on minimizing the weighted sum-of-squares between the the proportion of marked animals in a sample (i.e., $\frac{m_{i}}{n_{i}}$) and the unknown proportion of marked animals in the population.
+
+The standard error of the reciprocal of this estimate is
+
+$$ SE_{\frac{1}{\hat{N}}} = \sqrt{\frac{\sum\frac{m_{i}^{2}}{n_{i}}-\frac{\left(\sum m_{i}M_{i}\right)^{2}}{\sum n_{i}M_{i}^{2}}}{(k-2)\sum n_{i}M_{i}^{2}}}  $$
+
+where all of the summations extend from $i=1$ to $i=k$ and $k$ is the number of samples.  The confidence interval for $N$ is constructed by inverting the endpoints of the confidence interval for $\frac{1}{N}$ computed as usual with the standard error shown here.
+
+
+#### Assumptions of Schnabel & Schumacher-Eschmeyer Methods
+
+The Schnabel and Schumacher-Eschmeyer methods rest on the same assumptions as the Petersen method.  Thus, the discussion of the effect of violating assumptions of the Petersen method pertains also to the Schnabel and Schumacher-Eschmeyer methods.  One advantage of these multiple census methods is that violations of the assumptions are more easily detected because of the multiple samples.  The primary diagnostic tool for these methods is the plot of $\frac{m_{i}}{n_{i}}$ against $M_{i}$.  If this plot is not linear then one or more of the assumptions of the Schnabel and Schumacher-Eschmeyer methods has been violated.  Unfortunately, the shape of the graph is not an indication of which assumption is violated (thus, the conclusion is that an assumption has been violated but it is not clear which one).
+
+\ 
+
+--------------------------------------------------------------
+
+```{r echo=FALSE, results='asis'}
+reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="BKG.R",RMarkdown="BKG.Rmd"))
+```
+
+--------------------------------------------------------------
+
+\ 
+
+## References
+
+[^1]: However, it is generally beneficial to uniquely tag each fish.
+[^2]: The most traditional notation uses $C=n_{\cdot 1}$, and $R=n_{11}$.  We do not use this notation in order to maintain continuity with subsequent mark-recapture methods.
+[^3]: Exact confidence intervals for $N$ can generally be derived from the hypergeometric distribution underlying the likelihood function.  Unfortunately, there is no simple cumulative distribution for the hypergeometric distribution.
+[^4]: @Ricker1975 modified the Chapman estimator by ignoring the "-1" at the end of the right-hand-side of `r eqncaps("Chapman",display="cite")`.  His argument was that subtracting one is of no practical importance in the estimate.  While this argument is understandable, subtracting one to get the exact result proposed by Chapman is not onerous.  Therefore, I suggest using the full estimator as proposed by @Chapman1951.

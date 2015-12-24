@@ -31,6 +31,18 @@
   Url                      = {http://books.google.com/books/about/Quantitative_Fisheries_Stock_Assessment.html?id=24l7B4NIy54C}
 }
 
+@Article{Jackson1933,
+  Title                    = {On the true density of tsetse flies.},
+  Author                   = {Jackson, C. H. N.},
+  Journal                  = {Journal of Animal Ecology},
+  Year                     = {1933},
+  Pages                    = {204-209},
+  Volume                   = {2},
+
+  Owner                    = {dogle},
+  Timestamp                = {2015.12.24}
+}
+
 @Book{Krebs1999,
   Title                    = {Ecological Methodology},
   Author                   = {Krebs, C. J.},
@@ -42,6 +54,56 @@
 
   Owner                    = {dogle},
   Timestamp                = {2008.03.30}
+}
+
+@Book{Krebs1999,
+  Title                    = {Ecological Methodology},
+  Author                   = {Krebs, C. J.},
+  Publisher                = {Addison-Welsey Educational Publishing},
+  Year                     = {1999},
+
+  Address                  = {Menlo Park, CA},
+  Edition                  = {Second},
+
+  Owner                    = {dogle},
+  Timestamp                = {2008.03.30}
+}
+
+@Article{Lincoln1930,
+  Title                    = {Calculating waterfowl abundance on the basis of banding returns.},
+  Author                   = {Lincoln, F. C.},
+  Journal                  = {U.S. Department of Agriculture Circular},
+  Year                     = {1930},
+  Pages                    = {1-4},
+  Volume                   = {118},
+
+  Owner                    = {dogle},
+  Timestamp                = {2015.12.24}
+}
+
+@Book{Ogle2016,
+  Title                    = {Introductory Fisheries Analyses with {R}},
+  Author                   = {Derek H. Ogle},
+  Publisher                = {Chapman \& Hall/CRC},
+  Year                     = {2016},
+
+  Address                  = {Boca Raton, FL},
+  Series                   = {The R Series},
+
+  Owner                    = {dogle},
+  Timestamp                = {2015.10.23}
+}
+
+@Article{Philcoxetal1999,
+  Title                    = {Patterns of otter \emph{{L}utra lutra} road mortaility in {B}ritain},
+  Author                   = {Philcox, C.K. and A.L. Grogan and D.W. MacDonald},
+  Journal                  = {Journal of Applied Ecology},
+  Year                     = {1999},
+  Pages                    = {748-762},
+  Volume                   = {36},
+
+  Owner                    = {dogle},
+  Timestamp                = {2008.07.17}
 }
 
 @TechReport{Ricker1975,

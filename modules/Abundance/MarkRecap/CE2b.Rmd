@@ -9,10 +9,18 @@ output:
     self_contained: no
 ---
 
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Abundance/MarkRecap/")
+source("../../../rhelpers/rhelpers.R")
+fnm <- "CE2b"
+modHTML(fnm)
+```
+
 ----
 
 ## Understanding Assumption Violations in Mark-Recapture Analyses
-<img src="../../../imgs/computer-1.jpg" alt="Simulations" class="img-right">
+<img src="../../../img/computer-1.jpg" alt="Simulations" class="img-right">
 The analytical methodology for the Petersen family of mark-recapture methods for estimating population abundance is based on the following five assumptions:
 
 * The population is physically (i.e., no immigration or emigration) and demographically (i.e., no recruitment or mortality) closed (so that $N$ is constant over the time of sampling).

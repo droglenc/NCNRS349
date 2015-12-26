@@ -27,7 +27,7 @@ set.seed(13797834)
 ----
 
 ## Understanding the Bias of Petersen Estimates
-<img src="../../../imgs/computer-1.jpg" alt="Simulations" class="img-right">
+<img src="../../../img/computer-1.jpg" alt="Simulations" class="img-right">
 In this exercise, you will simulate violations of assumptions for the Petersen family of mark-recapture methods to determine if your expectations from the previous page are met.
 
 #### Simulation Description
@@ -78,6 +78,7 @@ For the questions below use the Chapman modification of the Petersen method (the
 1. Which assumption violoations allow the biologist to still reliably estimate the *final* population abundance?
 1. Which assumption violoations allow the biologist to still reliably estimate *both* the initial and final population abundances?
 1. Which assumption violations does the initial population abundance seem most sensitive to?
+
 ----
 
 <div class="text-center">

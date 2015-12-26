@@ -27,7 +27,7 @@ set.seed(13797834)
 ----
 
 ## Understanding the Bias of Petersen Estimates
-<img src="../../../imgs/computer-1.jpg" alt="Simulations" class="img-right">
+<img src="../../../img/computer-1.jpg" alt="Simulations" class="img-right">
 Estimating the number of fish in a fish population is one of the most common tasks facing a fisheries biologist.  One common method for estimating fish abundance is to sample the population, mark (or tag) and return the sampled fish to the population, take a second sample from the population, and use the ratio of number of marked to unmarked fish to estimate the population size.  The most common formula for estimating abundance was derived nearly simultaneously by Petersen and Lincoln, though slight modifications to the formulas were derived by Chapman and Bailey.  Taken together, these methods are called the "Petersen family" of mark-recapture methods.  In this exercise, you will use simulations to assess how accurately the original Petersen and the Chapman modification estimate population abundance.
 
 #### Simulation Description

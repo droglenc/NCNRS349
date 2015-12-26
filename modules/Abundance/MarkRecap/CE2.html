@@ -25,6 +25,8 @@ css: /css/modules.css
 <p><img src="CE2_files/figure-html/unnamed-chunk-3-1.png" title="" alt="" width="576" /></p>
 <p>For example, the plot above shows that the sampling distribution for the population abundance estimates is right-skewed. In addition, the population abundance estimate is biased because the mean population abundance estimate is greater than the initial population abundance (the green line is greater than the red line2). The bias is an overestimate by 2.2%. In addition, an approximate 95% confidence interval for the population estimate is from 784 to 1379.</p>
 <p>In RStudio, this plot will have a gear icon in the upper-left corner that will open a dialog box that allows you to change the estimation method (default is Petersen), expected number of fish to tag on the first sample (<code>Marked (M)</code> slider), and the expected number of fish to capture on the second sample (<code>Captured (n)</code> slider). Moving a slider or pressing the <code>Rerandomnize</code> button will force another set of <code>rsmpls</code> to be constructed.</p>
+<p> </p>
+<hr />
 </div>
 <div id="questions-i" class="section level4">
 <h4>Questions I</h4>
@@ -35,29 +37,19 @@ css: /css/modules.css
 <li>Do your answers to the previous two questions change with (a variety of) other expected number of tagged fish and second sample sample sizes.</li>
 <li>What conclusion can you draw from your answers to these two questions?</li>
 </ol>
+<p> </p>
+<hr />
 </div>
 <div id="questions-ii" class="section level4">
 <h4>Questions II</h4>
-<p>Each simulation below should be based on a known population size of <code>N=1000</code> individuals (the default), should use at least <code>rsmpls=2000</code> simulation runs (the default), and should use the Chapman modification. Each questions should begin with an expected number of tags of 100 and an expected number in the second sample of 100.</p>
+<p>Describe the shape of the sampling distribution of the population estimate, bias percentage, and width of the approximate confidence interval for each combination of the expected number of marks and the expected number of in the second sample between 100 and 400 in increments of 50. Each simulation below should be based on a known population size of <code>N=1000</code> individuals (the default), use at least <code>rsmpls=2000</code> simulation runs (the default), and use the Chapman modification method. Use your results to answer the questions below. [<strong>Hint: You might want to make a two-way table to record your observations.</strong>]</p>
 <ol>
-<li>Increase the expected number of marks (in increments of 50).
-<ol>
-<li>What happens to bias percentage?</li>
-<li>What happens to shape of the sampling distribution?</li>
-<li>What happens to the width of the approximate confidence interval?</li>
-</ol></li>
-<li>Increase the expected number in the second sample (in increments of 50).
-<ol>
-<li>What happens to bias percentage?</li>
-<li>What happens to shape of the sampling distribution?</li>
-<li>What happens to the width of the approximate confidence interval?</li>
-</ol></li>
-<li>What happened to the bias percentage with increasing values of the these two parameters?</li>
-<li>What happened to the shape of the sampling distribution with increasing values of the these two parameters?</li>
-<li>What happened to the width of the confidence interval with increasing values of the these two parameters?
-<ol>
-<li>Does increasing one or the other have a larger impact?</li>
-</ol></li>
+<li>Describe any obvious patterns in your observations of the percentage bias.</li>
+<li>Were there any combinations of values that produced an approximately normal sampling distribution? How does this relate to the general rules for computing confidence intervals for population abundance?</li>
+<li>What happened to the width of the confidence interval as the size of the first sample increased (and the size of the second sample was held constant)?</li>
+<li>What happened to the width of the confidence interval as the size of the second sample increased (and the size of the first sample was held constant)?</li>
+<li>Suppose that you could only handle a total of 500 fish in the two days of sampling. How should you apportion your effort (what expected numbers of fish on the two days) to obtain the most precise (narrowest confidence interval) estimates of population abundance? Does this conclusion generalize to other total sample sizes?</li>
+<li>What assumption about field work is being made in the previous question? Is this realistic? Explain. How would you incorporate a more realistic scenario into determining how to apportion your effort.</li>
 </ol>
 <hr />
 <div class="text-center">
@@ -72,7 +64,7 @@ css: /css/modules.css
 <a href="CE2b.html">2</a>
 </li>
 <li>
-<a href="CE2c.html">2</a>
+<a href="CE2c.html">3</a>
 </li>
 </ul>
 </div>

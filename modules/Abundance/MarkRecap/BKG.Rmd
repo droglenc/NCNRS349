@@ -147,11 +147,11 @@ Before specifically adressing the assumptions of the Petersen and related method
 
 The Petersen and related methods depend on meeting five assumptions [@Seber1982]:
 
-* The population is closed (so that $N$ is constant).
-* All fish have the same chance of being caught in the second sample.
-* Tagging individuals does not affect their catchability.
-* Fish do not lose their tags between the first and second sample.
-* All tags are reported upon discovery in the second sample.
+* The population is physically (i.e., no immigration or emigration) and demographically (i.e., no recruitment or mortality) closed (so that $N$ is constant over the time of sampling).
+* Marked individuals returned to the population mix randomly with unmarked individuals.
+* All individuals within a sample have an equal probability of capture.
+* Marks are neither lost no missed
+* Individual behavior or vulnerability does not change after being marked.
 
 Fisheries personnel attempt to control the first assumption by having a very short period between the first and second samples.  However, there are several ways in which the first assumption can be violated without adversely affecting the usability of the Petersen estimate [@Seber1982].  If fish die while being marked and before being released, then the Petersen estimate will refer to the size of the population **after** the marked fish from the first sample are released.  Mortality between the first and second sample will not affect the Petersen estimate of initial population size if the rate of mortality is the **same** for both marked and unmarked individuals (i.e., so the proportion of marked animals in the population is not affected).  Recruitment of new individuals to the population will completely invalidate the Petersen method as an estimator of the initial population size.  However, if there is no mortality along with the recruitment, then the Petersen method will provide a valid estimate of the population size at the time of the **second** sample.  @Seber1982 [p.73] provides a statistical test to detect recruitment between the two samples.
 

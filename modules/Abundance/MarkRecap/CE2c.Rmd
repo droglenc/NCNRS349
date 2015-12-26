@@ -1,0 +1,89 @@
+---
+layout: page
+title: Mark-Recapture
+subtitle: Class Exercise
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: no
+---
+
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Abundance/MarkRecap/")
+source("../../../rhelpers/rhelpers.R")
+fnm <- "CE2c"
+modHTML(fnm)
+```
+
+```{r echo=FALSE, results='hide', message=FALSE}
+library(FSAsim)
+fnm <- "CE2c"
+source("../../../rhelpers/knitr_setup.R")
+set.seed(13797834)
+```
+
+----
+
+## Understanding the Bias of Petersen Estimates
+<img src="../../../imgs/computer-1.jpg" alt="Simulations" class="img-right">
+In this exercise, you will simulate violations of assumptions for the Petersen family of mark-recapture methods to determine if your expectations from the previous page are met.
+
+#### Simulation Description
+
+The `mrClosed1Sim()` function in the \R{FSAsims} package was introduced on the first page of this exercise.  That function can also be used to assess assumption violations by using `sim="assumptions"` as an argument.
+
+The same type of histogram will be produced as described earlier.  However, in some simulations the population will not be closed and thus a final population size will exist and may be different than the initial population size.  Thus, this histogram will be further augmented with a blue vertical line at the mean final population abundance and the percentage error of the population abundance estimated from this value will be computed and printed on the graph.
+
+```{r fig.width=6,fig.height=4}
+mrClosed1Sim(sim="distribution")
+```
+
+As before, this plot will have a gear icon in the upper-left corner that will open a dialog box that allows you to change the estimation method (default is Chapman) and several population values as described below.
+
+* `PR(Mark Loss)` is the probability of losing the mark between the first and second samples.  A value of zero (the default) indicates no tag loss.
+* `PR(Surv Tagged)` is the probability of survival for marked fish between the first and second samples.  A value of one (the default) indicates no mortality.
+* `PR(Surv UNtagged)` is the probability of survival for unmarked fish between the first and second samples.  If this value is the same as `PR(Surv Marked)`, then survival/mortality does not differ between marked and unmarked fish.
+* `Proportion Recruit` is the proportion of the population alive after the first sample that will recruit to the population prior to the second sample.  A value of zero (the default) indicates no recruitment.
+* `Ratio PR(Capture)` is the ratio of the probability of capture of marked fish to the probability of capture of unmarkd fish for the second sample.  Values greater than one indicate that marked fish are more likely to be captured than unmarked fish, whereas values less than one indicate that marked fish are less likely to be captured than unmarked fish.  A value of one (the default) indicates that the probabilities of capture are the same between marked and unmarked fish.
+
+Note that the title to the plot will describe the type of assumption violation (if any) being simulated.
+
+\ 
+
+----
+
+#### Questions IV
+
+For the questions below use the Chapman modification of the Petersen method (the default) to estimate abundance, an expected number of tags of 200 (the default), an expected number in the final sample of 200 (the default), an initial population abundance of 1000 (the default), and 2000 resamples (the default) [*Return the slider to the default value after each question.*].  For each situation, identify (with a supporting graphic) whether the population estimate is an over-, under-, or unbiased estimate of the initial **AND** final population sizes and identify whether your expectations for the initial population size from the previous page were met.  
+
+1. Simulate tag loss by increasing the probability of losing a tag.
+1. Simulate mortality between the first and second sample by decreasing the probability of survival for both tagged and untagged fish to the same value.
+1. Simulate mortality of just tagged fish by decreasing the probability of survival for tagged fish (i.e., leave the probability of survival of untagged fish at the default value of 1).
+1. Simulate mortality of just untagged fish by decreasing the probability of survival for untagged fish (i.e., leave the probability of survival of tagged fish at the default value of 1).
+1. Simulate recruitment to the population by increasing the proportion of the initial population to recruit.
+1. Simulate increased catchability of tagged fish in the final sample (i.e., ``trap-happy'') by increasing the ratio of probability of capture.
+1. Simulate decreased catchability of tagged fish in the final sample (i.e., ``trap-shy'') by decreasing the ratio of probability of capture.
+1. Which scenario above would be the same as having the technician miss marked fish in the second sample.
+1. Which scenario above would be the same as releasing marked fish next to the nets used to collect fish for the second sample.
+
+\ 
+
+----
+
+#### Questions V
+
+1. Which assumption violoations allow the biologist to still reliably estimate the *initial* population abundance?
+1. Which assumption violoations allow the biologist to still reliably estimate the *final* population abundance?
+1. Which assumption violoations allow the biologist to still reliably estimate *both* the initial and final population abundances?
+1. Which assumption violations does the initial population abundance seem most sensitive to?
+----
+
+<div class="text-center">
+<ul class="pagination pagination-lg">
+  <li><a href="index.html">^</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="CE2b.html">2</a></li>
+  <li class="active"><a href="CE2c.html">3</a></li>
+</ul>

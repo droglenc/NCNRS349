@@ -37,7 +37,7 @@ The `mrClosed1Sim()` function in the \R{FSAsims} package was introduced on the f
 The same type of histogram will be produced as described earlier.  However, in some simulations the population will not be closed and thus a final population size will exist and may be different than the initial population size.  Thus, this histogram will be further augmented with a blue vertical line at the mean final population abundance and the percentage error of the population abundance estimated from this value will be computed and printed on the graph.
 
 ```{r fig.width=6,fig.height=4}
-mrClosed1Sim(sim="distribution")
+mrClosed1Sim(sim="assumptions")
 ```
 
 As before, this plot will have a gear icon in the upper-left corner that will open a dialog box that allows you to change the estimation method (default is Chapman) and several population values as described below.
@@ -46,7 +46,7 @@ As before, this plot will have a gear icon in the upper-left corner that will op
 * `PR(Surv Tagged)` is the probability of survival for marked fish between the first and second samples.  A value of one (the default) indicates no mortality.
 * `PR(Surv UNtagged)` is the probability of survival for unmarked fish between the first and second samples.  If this value is the same as `PR(Surv Marked)`, then survival/mortality does not differ between marked and unmarked fish.
 * `Proportion Recruit` is the proportion of the population alive after the first sample that will recruit to the population prior to the second sample.  A value of zero (the default) indicates no recruitment.
-* `Ratio PR(Capture)` is the ratio of the probability of capture of marked fish to the probability of capture of unmarkd fish for the second sample.  Values greater than one indicate that marked fish are more likely to be captured than unmarked fish, whereas values less than one indicate that marked fish are less likely to be captured than unmarked fish.  A value of one (the default) indicates that the probabilities of capture are the same between marked and unmarked fish.
+* `PR(Capture) Ratio (M/U)` is the ratio of the probability of capture of marked fish to the probability of capture of unmarkd fish for the second sample.  Values greater than one indicate that marked fish are more likely to be captured than unmarked fish, whereas values less than one indicate that marked fish are less likely to be captured than unmarked fish.  A value of one (the default) indicates that the probabilities of capture are the same between marked and unmarked fish.
 
 Note that the title to the plot will describe the type of assumption violation (if any) being simulated.
 

@@ -28,27 +28,27 @@ set.seed(13797834)
 
 ## Understanding the Bias of Petersen Estimates
 <img src="../../../img/computer-1.jpg" alt="Simulations" class="img-right">
-Estimating the number of fish in a fish population is one of the most common tasks facing a fisheries biologist.  One common method for estimating fish abundance is to sample the population, mark (or tag) and return the sampled fish to the population, take a second sample from the population, and use the ratio of number of marked to unmarked fish to estimate the population size.  The most common formula for estimating abundance was derived nearly simultaneously by Petersen and Lincoln, though slight modifications to the formulas were derived by Chapman and Bailey.  Taken together, these methods are called the "Petersen family" of mark-recapture methods.  In this exercise, you will use simulations to assess how accurately the original Petersen and the Chapman modification estimate population abundance.
+Estimating the number of fish in a population is one of the most common tasks facing a fisheries biologist.  One common method for estimating fish abundance is to sample the population, mark (or tag) and return the sampled fish to the population, take a second sample from the population, and use the ratio of number of marked to unmarked fish to estimate the population size.  The most common formula for estimating abundance was derived nearly simultaneously by Petersen and Lincoln, though slight modifications to the formulas were derived by Chapman and Bailey.  Taken together, these methods are called the "Petersen family" of mark-recapture methods.  In this exercise, you will use simulations to assess how accurately the original Petersen and the Chapman modification estimate population abundance.
 
 #### Simulation Description
 
-The `mrClosed1Sim()` function in the \R{FSAsims} package may be used to evaluate the performance of the Petersen family of mark-recapture methods to estimate population abundance.  This function works by creating an initial population for which the size is chosen, and thus known, by the user.  The function will then take a sample of fish according to a choice made by the user (discussed below).  The individuals in this sample are then "marked" and returned to the population.  A second sample from this population is then taken and the number of previously marked fish is counted.  From these results an estimate of population abundance is computed according to the Petersen family method selected by the user.  This process is then repeated a large number of times.
+The `mrClosed1Sim()` function in the `FSAsims` package may be used to evaluate the performance of the Petersen family of mark-recapture methods to estimate population abundance.  This function works by creating an initial population for which the size is chosen, and thus known, by the user.  A sample of fish is then taken from this population according to choices made by the user (discussed below).  The individuals in this sample are then "marked" and returned to the population.  A second sample is then taken and the number of previously marked fish is counted.  From these results an estimate of population abundance is computed according to the Petersen family method selected by the user.  This process is then repeated a large number of times so that the sampling distribution of the population abundance estimate can be visualized.
 
 The `mrClosed1Sim()` function takes three arguments:
 
-* `sim=` is used to select the type of simulation to be used.  Use `sim="distribution"` (use on this page) for simple simulations to assess characteristics of the sampling distribution of the population abundance estimate.  Use `sim="assumptions"` (use on the next pages) to assess the effect of assumptions violations on the population abundance estimated.
+* `sim=` is used to select the type of simulation to be used.  Use `sim="distribution"` (used on this page) for simple simulations to assess characteristics of the sampling distribution of the population abundance estimate.  Use `sim="assumptions"` (used on the next pages) to assess the effect of assumptions violations on the population abundance estimate.
 * `N=` is the known initial population size (default is `N=1000`).
 * `rsmpls=` is the number of simulations to run for each set of parameters (default is `rsmpls=2000`).
 
-After calling the function with `sim="distribution"` a plot will appear with a histogram of the estimated population abundance for each `rsmpls`.  The histogram is augmented with a red vertical line at the true known initial population size (`N`) and a green vertical line at the mean estimated population abundance from all `rsmpls` runs.  The histogram is also labeled with the percentage error of the mean population size from the known true population size (positive numbers mean that the known population abundance was over-estimated, on average).
+After calling the function with `sim="distribution"` a plot will appear with a histogram of the estimated population abundance for each of the `rsmpls` simulations.  The histogram is augmented with a red vertical line at the known initial population size (`N`) and a green vertical line at the mean estimated population abundance from all `rsmpls` runs.  The histogram is also labeled with the percentage error of the mean population abundace estimate from the known population abundance (positive numbers mean that the known population abundance was overestimated, on average).
 
 ```{r fig.width=6,fig.height=4}
 mrClosed1Sim(sim="distribution")
 ```
 
-For example, the plot above shows that the sampling distribution for the population abundance estimates is right-skewed.  In addition, the population abundance estimate is biased because the mean population abundance estimate is greater than the initial population abundance (the green line is greater than the red line2).  The bias is an overestimate by 2.2%.  In addition, an approximate 95% confidence interval for the population estimate is from 784 to 1379.
+For example, the plot above shows that the sampling distribution for the population abundance estimates is right-skewed.  In addition, the population abundance estimate is biased because the mean population abundance estimate is greater than the initial population abundance (the green line is greater than the red line).  The bias is an overestimate by 2.2%.  In addition, an approximate 95% confidence interval for the population abundance estimate is from 784 to 1379.
 
-In RStudio, this plot will have a gear icon in the upper-left corner that will open a dialog box that allows you to change the estimation method (default is Petersen), expected number of fish to tag on the first sample (`Marked (M)` slider), and the expected number of fish to capture on the second sample (`Captured (n)` slider).  Moving a slider or pressing the `Rerandomnize` button will force another set of `rsmpls` to be constructed.
+In RStudio, this plot will have a gear icon in the upper-left corner that will open a dialog box that allows you to change the estimation `Method` (default is `Petersen`), expected number of fish to tag on the first sample (`Marked (M)` slider), and the expected number of fish to capture on the second sample (`Captured (n)` slider).  Moving a slider or pressing the `Rerandomize` button will force another set of `rsmpls` to be constructed.
 
 \ 
 
@@ -60,8 +60,8 @@ Each simulation below should be based on a known population size of `N=1000` ind
 
 1. Does the Petersen method under, over, or accurately estimate the initial population abundance?
 1. Does the Chapman modification method under, over, or accurately estimate the initial population abundance?
-1. Do your answers to the previous two questions change with (a variety of) other expected number of tagged fish and second sample sample sizes.
-1. What conclusion can you draw from your answers to these two questions?
+1. Do your answers to the previous two questions change with (a variety of) other expected number of marked fish and second sample sample sizes.
+1. What main conclusion do you make from your answers to these two questions?
 
 \ 
 
@@ -69,7 +69,7 @@ Each simulation below should be based on a known population size of `N=1000` ind
 
 #### Questions II
 
-Describe the shape of the sampling distribution of the population estimate, bias percentage, and width of the approximate confidence interval for each combination of the expected number of marks and the expected number of in the second sample between 100 and 400 in increments of 50.  Each simulation below should be based on a known population size of `N=1000` individuals (the default), use at least `rsmpls=2000` simulation runs (the default), and use the Chapman modification method.  Use your results to answer the questions below.  [**Hint: You might want to make a two-way table to record your observations.**]
+Describe the shape of the sampling distribution of the population estimate, bias percentage, and width of the approximate confidence interval for each combination of the expected number of marks and the expected number in the second sample between 100 and 400 in increments of 50.  Each simulation below should be based on a known population size of `N=1000` individuals (the default), use at least `rsmpls=2000` simulation runs (the default), and use the **Chapman modification method** (not the default).  Use your results to answer the questions below.  [**Hint: You might want to make a two-way table to record your observations.**]
 
 1. Describe any obvious patterns in your observations of the percentage bias.
 1. Were there any combinations of values that produced an approximately normal sampling distribution?  How does this relate to the general rules for computing confidence intervals for population abundance?
@@ -82,7 +82,7 @@ Describe the shape of the sampling distribution of the population estimate, bias
 
 <div class="text-center">
 <ul class="pagination pagination-lg">
-  <li><a href="index.html">^</a></li>
+  <li><a href="../../index.html">^</a></li>
   <li class="active"><a href="#">1</a></li>
   <li><a href="CE2b.html">2</a></li>
   <li><a href="CE2c.html">3</a></li>

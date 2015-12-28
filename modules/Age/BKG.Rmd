@@ -36,6 +36,8 @@ library(FSA)
 
 The assessment of ages for a large number of fish is very time-consuming, whereas measuring the length of a large number of fish is relatively easy.  The age structure for a large number of fish can be estimated by summarizing the relationship between age and length for a relatively small subsample of fish and then applying this summary to the entire sample of fish.  This summary is called an *age-length key*.  The construction and application of an age-length key and the use of this key to assign ages to individual fish as described in @IsermannKnight2005 is the focus of these notes.
 
+\ 
+
 # Constructing Age-Length Keys
 A subsample of $n$ fish to be aged is selected from the entire sample of fish by randomly selecting fish *from each length interval* (rather than a simple random selection of all fish).  The number of fish in each interval can either be fixed at a constant number or proportional to the total number of fish in that length interval. @Kimura1977 notes that proportional selection produces statistically "better" results.  However, proportional selection is uncommon in the field as the length of all fish must be known before taking the subsample.  Thus, it is much more common, in practice, to subsample a set number of fish per length interval.  More importantly, the range of lengths in the subsample must cover the entire range of lengths in the original sample.  This subsample of fish is called the *age sample*, because the relationship between age and length will be determined from this group of fish only.
 
@@ -80,6 +82,8 @@ Thus, assignment of ages to fish in the length sample is based on the "probabili
 </div>
 
 This row-proportions table is the so-called *age-length key*, because it relates the conditional probability of an age given a particular length category.
+
+\ 
 
 # Age Assignment to Individuals
 An age-length key can be used to develop a summary frequency of ages for the length sample.  In addition, methods have been developed to find the mean length-at-age for the length sample or the CPE for each age from fish in the length sample [@BettoliMiranda2001].  However, these methods cannot be used to calculate measures of variability for these summaries [@IsermannKnight2005].  Thus, it is beneficial to use the age-length key to assign an age to each fish in the length sample and then to summarize those results [@IsermannKnight2005].  There are two methods for using the age-length key to assign ages to specific fish in the length sample: semi-random and completely random methods.  The semi-random method is discussed in this section and the completely random method is shown in [the section below](#completely-random-age-assignment).

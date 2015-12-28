@@ -78,7 +78,7 @@ title: Lecture Materials
       <div class="panel-body">
         <ul>
           <li>Pre-Readings -- <a href="Age/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 5.1-5.4</li>
-          <li>Lecture Slides</li>
+          <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
           <li>Post-Reading -- <a href="http://qfc.fw.msu.edu/Publications/Publication%20List/2008/How%20Systematic%20Age%20Underestimation%20can%20Impede%20Understanding_Yule.pdf">Yule <i>et al.</i> (2008)</a></li>
           <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_B.html">#2</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_C.html">XC</a></li>
         </ul>

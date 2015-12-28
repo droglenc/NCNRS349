@@ -47,7 +47,7 @@ The assigned length category and the assessed age for the fish in the age sample
 <div class="table-responsive">          
 <table class="table table-bordered table-condensed table-hover">
 <thead>
-<tr style="text-align: center;"><th>&nbsp;</th><th>$A_{1}$</th><th>$A_{2}$</th></tr>
+<tr><th>&nbsp;</th><th>$A_{1}$</th><th>$A_{2}$</th></tr>
 </thead>
 <tbody>
 <tr style="text-align: center;"><td>$L_{1}$</td><td>6</td><td>2</td></tr>
@@ -68,7 +68,7 @@ Thus, assignment of ages to fish in the length sample is based on the "probabili
 <div class="table-responsive">          
 <table class="table table-bordered table-condensed table-hover">
 <thead>
-<tr style="text-align: center;"><th>&nbsp;</th><th>$A_{1}$</th><th>$A_{2}$</th></tr>
+<tr><th>&nbsp;</th><th>$A_{1}$</th><th>$A_{2}$</th></tr>
 </thead>
 <tbody>
 <tr style="text-align: center;"><td>$L_{1}$</td><td>0.75</td><td>0.25</td></tr>

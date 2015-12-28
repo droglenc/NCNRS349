@@ -13,7 +13,7 @@ css: /css/codebox.css
 <p>A subsample of <span class="math">\(n\)</span> fish to be aged is selected from the entire sample of fish by randomly selecting fish <em>from each length interval</em> (rather than a simple random selection of all fish). The number of fish in each interval can either be fixed at a constant number or proportional to the total number of fish in that length interval. <span class="citation">Kimura (1977)</span> notes that proportional selection produces statistically “better” results. However, proportional selection is uncommon in the field as the length of all fish must be known before taking the subsample. Thus, it is much more common, in practice, to subsample a set number of fish per length interval. More importantly, the range of lengths in the subsample must cover the entire range of lengths in the original sample. This subsample of fish is called the <em>age sample</em>, because the relationship between age and length will be determined from this group of fish only.</p>
 <p>The measured length and assessed age is recorded for all fish in the age sample. In addition, the length category to which each fish belongs is also recorded. For example, if 5-mm length categories are created that begin on the “0” and “5” units, then a 117 mm fish will be recorded as being in the 115-119 mm length category. Generally, all length categories are of the same width; thus, for simplicity, only the beginning length in the length category is recorded (e.g., “115” mm).</p>
 <p>The assigned length category and the assessed age for the fish in the age sample is summarized with a two-way contingency table where the length categories form the rows and age categories form the columns. In other words, the number of fish in the age sample in each length category and age combination is determined. An example of this summary is shown below (with row and column labels to aid interpretation).</p>
-<div class="container">
+<div class="container" style="max-width: 400px">
 <div class="table-responsive">
 <table class="table table-bordered table-condensed table-hover">
 <thead>
@@ -30,7 +30,7 @@ css: /css/codebox.css
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr style="text-align: center;">
 <td>
 <span class="math">\(L_{1}\)</span>
 </td>
@@ -41,7 +41,7 @@ css: /css/codebox.css
 2
 </td>
 </tr>
-<tr>
+<tr style="text-align: center;">
 <td>
 <span class="math">\(L_{2}\)</span>
 </td>
@@ -52,7 +52,7 @@ css: /css/codebox.css
 3
 </td>
 </tr>
-<tr>
+<tr style="text-align: center;">
 <td>
 <span class="math">\(L_{3}\)</span>
 </td>
@@ -70,32 +70,60 @@ css: /css/codebox.css
 <p>In this example, six fish in the age sample belong to the first length category and the first age. Similarly, one fish belongs to the last length category and the first age.</p>
 <p>The portion of the entire sample of fish that was not part of the age sample (i.e., fish for which only a length measurement was obtained) is called the <em>length sample</em>. Age is “assigned” to fish in the length sample based on the fish’s length category and the proportion of fish of that length category of each age as determined by the fish in the age sample. For example, a fish in the length sample that belongs to the first length category has, based on the summary from the age sample, a 75% chance (i.e., <span class="math">\(\frac{6}{8}\)</span>) of being of the first age and a 25% chance of being of the second age. Furthermore, if there were 20 fish in the length sample in the first length category, then we would expect 15 (i.e., <span class="math">\(20\times0.75\)</span>) to be of the first age and five (i.e., <span class="math">\(20\times0.25\)</span>) to be of the second age.</p>
 <p>Thus, assignment of ages to fish in the length sample is based on the “probability” of each age given the length category that the fish belongs to, as derived from the age-sample. The required conditional probabilities from the age sample are derived from the summary contingency table by dividing each cell of the table by the total number of fish in that length cateogry (i.e., each cell is divided by the sum of its row; thus, a “row-proportions” table is computed). The row-proportions table derived from the summary contingency table shown above is shown below.</p>
-<table>
+<div class="container" style="max-width: 400px;">
+<div class="table-responsive">
+<table class="table table-bordered table-condensed table-hover">
 <thead>
-<tr class="header">
-<th align="left"> </th>
-<th align="left"><span class="math">\(A_{1}\)</span></th>
-<th align="left"><span class="math">\(A_{2}\)</span></th>
+<tr>
+<th>
+ 
+</th>
+<th>
+<span class="math">\(A_{1}\)</span>
+</th>
+<th>
+<span class="math">\(A_{2}\)</span>
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><span class="math">\(L_{1}\)</span></td>
-<td align="left">0.75</td>
-<td align="left">0.25</td>
+<tr style="text-align: center;">
+<td>
+<span class="math">\(L_{1}\)</span>
+</td>
+<td>
+0.75
+</td>
+<td>
+0.25
+</td>
 </tr>
-<tr class="even">
-<td align="left"><span class="math">\(L_{2}\)</span></td>
-<td align="left">0.50</td>
-<td align="left">0.50</td>
+<tr style="text-align: center;">
+<td>
+<span class="math">\(L_{2}\)</span>
+</td>
+<td>
+0.50
+</td>
+<td>
+0.50
+</td>
 </tr>
-<tr class="odd">
-<td align="left"><span class="math">\(L_{3}\)</span></td>
-<td align="left">0.20</td>
-<td align="left">0.80</td>
+<tr style="text-align: center;">
+<td>
+<span class="math">\(L_{3}\)</span>
+</td>
+<td>
+0.20
+</td>
+<td>
+0.80
+</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>This row-proportions table is the so-called <em>age-length key</em>, because it relates the conditional probability of an age given a particular length category.</p>
 </div>
 <div id="age-assignment-to-individuals" class="section level1">
@@ -122,7 +150,7 @@ css: /css/codebox.css
 <h2>Reproducibility Information</h2>
 <ul>
 <li><strong>Compiled Date:</strong> Mon Dec 28 2015</li>
-<li><strong>Compiled Time:</strong> 3:24:09 PM</li>
+<li><strong>Compiled Time:</strong> 3:31:49 PM</li>
 <li><strong>R Version:</strong> R version 3.2.3 (2015-12-10)</li>
 <li><strong>System:</strong> Windows, i386-w64-mingw32/i386 (32-bit)</li>
 <li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>

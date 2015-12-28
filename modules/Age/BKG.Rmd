@@ -43,16 +43,16 @@ The measured length and assessed age is recorded for all fish in the age sample.
 
 The assigned length category and the assessed age for the fish in the age sample is summarized with a two-way contingency table where the length categories form the rows and age categories form the columns.  In other words, the number of fish in the age sample in each length category and age combination is determined.  An example of this summary is shown below (with row and column labels to aid interpretation).
 
-<div class="container">
+<div class="container" style="max-width: 400px">
 <div class="table-responsive">          
 <table class="table table-bordered table-condensed table-hover">
 <thead>
 <tr><th>&nbsp;</th><th>$A_{1}$</th><th>$A_{2}$</th></tr>
 </thead>
 <tbody>
-<tr><td>$L_{1}$</td><td>6</td><td>2</td></tr>
-<tr><td>$L_{2}$</td><td>3</td><td>3</td></tr>
-<tr><td>$L_{3}$</td><td>1</td><td>4</td></tr>
+<tr style="text-align: center;"><td>$L_{1}$</td><td>6</td><td>2</td></tr>
+<tr style="text-align: center;"><td>$L_{2}$</td><td>3</td><td>3</td></tr>
+<tr style="text-align: center;"><td>$L_{3}$</td><td>1</td><td>4</td></tr>
 </tbody>
 </table>
 </div>
@@ -64,11 +64,20 @@ The portion of the entire sample of fish that was not part of the age sample (i.
 
 Thus, assignment of ages to fish in the length sample is based on the "probability" of each age given the length category that the fish belongs to, as derived from the age-sample.  The required conditional probabilities from the age sample are derived from the summary contingency table by dividing each cell of the table by the total number of fish in that length cateogry (i.e., each cell is divided by the sum of its row; thus, a "row-proportions" table is computed).  The row-proportions table derived from the summary contingency table shown above is shown below.
 
-&nbsp; | $A_{1}$ | $A_{2}$
--------|---------|--------
-$L_{1}$ | 0.75 | 0.25
-$L_{2}$ | 0.50 | 0.50
-$L_{3}$ | 0.20 | 0.80
+<div class="container" style="max-width: 400px;">
+<div class="table-responsive">          
+<table class="table table-bordered table-condensed table-hover">
+<thead>
+<tr><th>&nbsp;</th><th>$A_{1}$</th><th>$A_{2}$</th></tr>
+</thead>
+<tbody>
+<tr style="text-align: center;"><td>$L_{1}$</td><td>0.75</td><td>0.25</td></tr>
+<tr style="text-align: center;"><td>$L_{2}$</td><td>0.50</td><td>0.50</td></tr>
+<tr style="text-align: center;"><td>$L_{3}$</td><td>0.20</td><td>0.80</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 
 This row-proportions table is the so-called *age-length key*, because it relates the conditional probability of an age given a particular length category.
 

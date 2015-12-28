@@ -2,6 +2,32 @@
 % Encoding: Cp1252
 
 
+@Article{Bailey1952,
+  Title                    = {Improvements in the interpretation of recapture data.},
+  Author                   = {Bailey, N. T. J.},
+  Journal                  = {Journal of Animal Ecology},
+  Year                     = {1952},
+  Pages                    = {120-127},
+  Volume                   = {21},
+
+  File                     = {:C\:\\aaaWork\\aaaPDF_Library\\aaaJabRef\\MR_Bailey_JAnimEcol_1952.pdf:PDF},
+  Owner                    = {dogle},
+  Timestamp                = {2014.08.16}
+}
+
+@Article{Bailey1951,
+  Title                    = {On estimating the size of mobile populations from capture-recapture data.},
+  Author                   = {Bailey, N. T. J.},
+  Journal                  = {Biometrika},
+  Year                     = {1951},
+  Pages                    = {293-306},
+  Volume                   = {38},
+
+  File                     = {:C\:\\aaaWork\\aaaPDF_Library\\aaaJabRef\\MR_Bailey_Biometrika_1951.pdf:PDF},
+  Owner                    = {dogle},
+  Timestamp                = {2014.08.16}
+}
+
 @Article{CarleStrub1978,
   Title                    = {A new method for estimating population size from removal data.},
   Author                   = {Carle, F. L. and M. R. Strub},
@@ -13,6 +39,42 @@
   File                     = {:C\:\\aaaWork\\aaaPDF_Library\\aaaJabRef\\Depletion_Carle_Strub_1978.pdf:PDF},
   Owner                    = {dogle},
   Timestamp                = {2014.07.23}
+}
+
+@Article{Chapman1954,
+  Title                    = {The estimation of biological populations},
+  Author                   = {Chapman, D. G.},
+  Journal                  = {Annals of Mathematics and Statistics},
+  Year                     = {1954},
+  Pages                    = {1-15},
+  Volume                   = {25},
+
+  Owner                    = {dogle},
+  Timestamp                = {2015.12.24}
+}
+
+@Article{Chapman1951,
+  Title                    = {Some properties of the hypergeometric distribution with applications to zoological censuses.},
+  Author                   = {Chapman, D. G.},
+  Journal                  = {University of California Publications on Statistics},
+  Year                     = {1951},
+  Pages                    = {131-160},
+  Volume                   = {1},
+
+  Owner                    = {dogle},
+  Timestamp                = {2014.07.16}
+}
+
+@Article{Eberhardt1969,
+  Title                    = {Population estimates from recapture frequencies},
+  Author                   = {Eberhardt, L. L.},
+  Journal                  = {Journal of Wildlife Management},
+  Year                     = {1969},
+  Pages                    = {28-39},
+  Volume                   = {33},
+
+  Owner                    = {dogle},
+  Timestamp                = {2015.12.24}
 }
 
 @Book{HilbornWalters2001,
@@ -41,19 +103,6 @@
 
   Owner                    = {dogle},
   Timestamp                = {2015.12.24}
-}
-
-@Book{Krebs1999,
-  Title                    = {Ecological Methodology},
-  Author                   = {Krebs, C. J.},
-  Publisher                = {Addison-Welsey Educational Publishing},
-  Year                     = {1999},
-
-  Address                  = {Menlo Park, CA},
-  Edition                  = {Second},
-
-  Owner                    = {dogle},
-  Timestamp                = {2008.03.30}
 }
 
 @Book{Krebs1999,
@@ -115,6 +164,31 @@
 
   Owner                    = {dogle},
   Timestamp                = {2008.03.30}
+}
+
+@Article{RobsonRegier1964,
+  Title                    = {Sample size in {P}etersen mark-recapture experiments},
+  Author                   = {Robson, D. S. and H. A. Regier},
+  Journal                  = {Transactions of the American Fisheries Society},
+  Year                     = {1964},
+  Pages                    = {215-226},
+  Volume                   = {93},
+
+  Owner                    = {dogle},
+  Timestamp                = {2015.12.24}
+}
+
+@Article{SchumacherEschmeyer1943,
+  Title                    = {The estimation of fish populations in lakes and ponds},
+  Author                   = {Schumacher, F. X. and R. W. Eschmeyer},
+  Journal                  = {Journal of the Tennessee Academy of Sciences},
+  Year                     = {1943},
+  Pages                    = {228-249},
+  Volume                   = {18},
+
+  File                     = {:C\:\\aaaWork\\aaaPDF_Library\\aaaJabRef\\MR_SchumacherEschmeyer_1943.pdf:PDF},
+  Owner                    = {dogle},
+  Timestamp                = {2014.07.16}
 }
 
 @Book{Seber1982,

@@ -43,41 +43,20 @@ The measured length and assessed age is recorded for all fish in the age sample.
 
 The assigned length category and the assessed age for the fish in the age sample is summarized with a two-way contingency table where the length categories form the rows and age categories form the columns.  In other words, the number of fish in the age sample in each length category and age combination is determined.  An example of this summary is shown below (with row and column labels to aid interpretation).
 
-&nbsp; | $A_{1}$ | $A_{2}$
--------|---------|--------
-$L_{1}$ | 6 | 2
-$L_{2}$ | 3 | 3
-$L_{3}$ | 1 | 4
-
 <div class="container">
-  <h2>Table</h2>
-  <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                      
-  <div class="table-responsive">          
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Age</th>
-        <th>City</th>
-        <th>Country</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Anna</td>
-        <td>Pitt</td>
-        <td>35</td>
-        <td>New York</td>
-        <td>USA</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+<div class="table-responsive">          
+<table class="table table-bordered table-condensed table-hover">
+<thead>
+<tr><th>&nbsp;</th><th>$A_{1}$</th><th>$A_{2}$</th></tr>
+</thead>
+<tbody>
+<tr><td>$L_{1}$</td><td>6</td><td>2</td></tr>
+<tr><td>$L_{2}$</td><td>3</td><td>3</td></tr>
+<tr><td>$L_{3}$</td><td>1</td><td>4</td></tr>
+</tbody>
+</table>
 </div>
-
+</div>
 
 In this example, six fish in the age sample belong to the first length category and the first age.  Similarly, one fish belongs to the last length category and the first age.
 

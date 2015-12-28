@@ -13,61 +13,57 @@ css: /css/codebox.css
 <p>A subsample of <span class="math">\(n\)</span> fish to be aged is selected from the entire sample of fish by randomly selecting fish <em>from each length interval</em> (rather than a simple random selection of all fish). The number of fish in each interval can either be fixed at a constant number or proportional to the total number of fish in that length interval. <span class="citation">Kimura (1977)</span> notes that proportional selection produces statistically “better” results. However, proportional selection is uncommon in the field as the length of all fish must be known before taking the subsample. Thus, it is much more common, in practice, to subsample a set number of fish per length interval. More importantly, the range of lengths in the subsample must cover the entire range of lengths in the original sample. This subsample of fish is called the <em>age sample</em>, because the relationship between age and length will be determined from this group of fish only.</p>
 <p>The measured length and assessed age is recorded for all fish in the age sample. In addition, the length category to which each fish belongs is also recorded. For example, if 5-mm length categories are created that begin on the “0” and “5” units, then a 117 mm fish will be recorded as being in the 115-119 mm length category. Generally, all length categories are of the same width; thus, for simplicity, only the beginning length in the length category is recorded (e.g., “115” mm).</p>
 <p>The assigned length category and the assessed age for the fish in the age sample is summarized with a two-way contingency table where the length categories form the rows and age categories form the columns. In other words, the number of fish in the age sample in each length category and age combination is determined. An example of this summary is shown below (with row and column labels to aid interpretation).</p>
-<table>
+<div class="container">
+<div class="table-responsive">
+<table class="table table-bordered table-condensed table-hover">
 <thead>
-<tr class="header">
-<th align="left"> </th>
-<th align="left"><span class="math">\(A_{1}\)</span></th>
-<th align="left"><span class="math">\(A_{2}\)</span></th>
+<tr>
+<th>
+ 
+</th>
+<th>
+<span class="math">\(A_{1}\)</span>
+</th>
+<th>
+<span class="math">\(A_{2}\)</span>
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><span class="math">\(L_{1}\)</span></td>
-<td align="left">6</td>
-<td align="left">2</td>
+<tr>
+<td>
+<span class="math">\(L_{1}\)</span>
+</td>
+<td>
+6
+</td>
+<td>
+2
+</td>
 </tr>
-<tr class="even">
-<td align="left"><span class="math">\(L_{2}\)</span></td>
-<td align="left">3</td>
-<td align="left">3</td>
+<tr>
+<td>
+<span class="math">\(L_{2}\)</span>
+</td>
+<td>
+3
+</td>
+<td>
+3
+</td>
 </tr>
-<tr class="odd">
-<td align="left"><span class="math">\(L_{3}\)</span></td>
-<td align="left">1</td>
-<td align="left">4</td>
+<tr>
+<td>
+<span class="math">\(L_{3}\)</span>
+</td>
+<td>
+1
+</td>
+<td>
+4
+</td>
 </tr>
 </tbody>
-</table>
-<div class="container">
-<h2>
-Table
-</h2>
-<p>
-The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:
-</p>
-<div class="table-responsive">
-<table class="table">
-<pre><code>&lt;thead&gt;
-  &lt;tr&gt;
-    &lt;th&gt;#&lt;/th&gt;
-    &lt;th&gt;Firstname&lt;/th&gt;
-    &lt;th&gt;Lastname&lt;/th&gt;
-    &lt;th&gt;Age&lt;/th&gt;
-    &lt;th&gt;City&lt;/th&gt;
-    &lt;th&gt;Country&lt;/th&gt;
-  &lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;Anna&lt;/td&gt;
-    &lt;td&gt;Pitt&lt;/td&gt;
-    &lt;td&gt;35&lt;/td&gt;
-    &lt;td&gt;New York&lt;/td&gt;
-    &lt;td&gt;USA&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;</code></pre>
 </table>
 </div>
 </div>
@@ -126,7 +122,7 @@ The .table-responsive class creates a responsive table which will scroll horizon
 <h2>Reproducibility Information</h2>
 <ul>
 <li><strong>Compiled Date:</strong> Mon Dec 28 2015</li>
-<li><strong>Compiled Time:</strong> 3:15:30 PM</li>
+<li><strong>Compiled Time:</strong> 3:24:09 PM</li>
 <li><strong>R Version:</strong> R version 3.2.3 (2015-12-10)</li>
 <li><strong>System:</strong> Windows, i386-w64-mingw32/i386 (32-bit)</li>
 <li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>

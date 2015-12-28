@@ -49,6 +49,36 @@ $L_{1}$ | 6 | 2
 $L_{2}$ | 3 | 3
 $L_{3}$ | 1 | 4
 
+<div class="container">
+  <h2>Table</h2>
+  <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                      
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>Pitt</td>
+        <td>35</td>
+        <td>New York</td>
+        <td>USA</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+
 In this example, six fish in the age sample belong to the first length category and the first age.  Similarly, one fish belongs to the last length category and the first age.
 
 The portion of the entire sample of fish that was not part of the age sample (i.e., fish for which only a length measurement was obtained) is called the *length sample*.  Age is "assigned" to fish in the length sample based on the fish's length category and the proportion of fish of that length category of each age as determined by the fish in the age sample.  For example, a fish in the length sample that belongs to the first length category has, based on the summary from the age sample, a 75% chance (i.e., $\frac{6}{8}$) of being of the first age and a 25% chance of being of the second age.  Furthermore, if there were 20 fish in the length sample in the first length category, then we would expect 15 (i.e., $20\times0.75$) to be of the first age and five (i.e., $20\times0.25$) to be of the second age.
@@ -78,8 +108,6 @@ To complete the example, suppose that fourteen fish in the length sample are in 
 ### Completely Random Age Assignment
 
 In the completely random method of assigning ages to individual fish, the age assigned to a fish is randomly assigned with probabilistic weights proportional to the proportion of fish in each age for fish on the age-length key of the same length category.  This is essentially the same rule used to assign age to the "exra" fish (from fractionality) in the semi-random method.  For example, suppose that 50% of the fish in a length interval in the age-sample were age-1, 25% were age-2, and 25% were age-3.  A single fish in the same length interval in the length sample would then have a 50% chance of being assigned an age of 1, a 25% chance of being assigned an age of 2, and a 25% chance of being assigned an age of 3.  The specific age it is assigned depends completely on randomness.  Thus, in this example, we would expect 11 of 22 fish in this length category in the length-sample to be assigned an age of 1 but in actuality it could be more or it could be less.  In the semi-random method, which fish get which age is random but the number of fish that get each age is (primarily) not random.  In the completely random method, both the number of fish that get each age and which fish get each age is random.
-
-\ 
 
 ### Calculations in R
 

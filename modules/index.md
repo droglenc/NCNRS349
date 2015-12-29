@@ -85,5 +85,29 @@ title: Lecture Materials
       </div>
     </div>
   </div>
-  
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#cMortality">Mortality</a>
+      </h4>
+    </div>
+    <div id="cMortality" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Total Mortality</li>
+            <ul>
+              <li>Pre-Readings -- <a href="Age/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
+              <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
+              <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a></li>
+            </ul>
+          <li>Mortality Components</li>
+            <ul>
+              <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.3</li>
+              <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
+            </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div> 

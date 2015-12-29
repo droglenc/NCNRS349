@@ -97,13 +97,13 @@ title: Lecture Materials
         <ul>
           <li>Total Mortality</li>
             <ul>
-              <li>Pre-Readings -- <a href="Mortality/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
+              <li>Pre-Readings -- <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2007) Sections 6.1-6.3, 6.8-6.10</a>, <a href="Mortality/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
               <li><a href="Mortality/PPT.pptx">Lecture Slides</a></li>
               <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a></li>
             </ul>
           <li>Mortality Components</li>
             <ul>
-              <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.3</li>
+              <li>Pre-Readings --  <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2007) Section 6.6</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.3</li>
               <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
             </ul>
         </ul>

@@ -1,6 +1,9 @@
 ## Stuff that should not be public
 Year_Specific/
 
+## Backup files
+rhelpers/NRS349.bib.bak
+
 ## R History files
 .Rhistory
 .Rapp.history

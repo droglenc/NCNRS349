@@ -17,7 +17,7 @@ css: /css/syllabus.css
 
 ## Description
 
-A study of exploited populations of fish and other aquatic organisms.  Theory and methods of defining fish growth, survival, mortality, abundance, and community interactions will be emphasized.  Wisconsin, Great Lakes, and marine fisheries will be addressed.  Prerequisites: BIO234, BIO242, [MTH107](http://derekogle.com/NCMTH107/).  4 Credits.
+A study of exploited populations of fish and other aquatic organisms.  Theory and methods of defining fish growth, survival, mortality, abundance, and community interactions will be emphasized.  Wisconsin, Great Lakes, and marine fisheries will be addressed.  Pre-requisite BIO234, BIO242, [MTH107](http://derekogle.com/NCMTH107/).  4 Credits.
 
 
 ## Learning Outcomes
@@ -55,7 +55,7 @@ At the end of this class you will be able to ...
 
 ## Grading
 
-An overall percentage score will be computed from the items and associated weights listed in the table below.  A specific description for each item is given further below.  You can also use this table to compute your current or projected future grade.  To compute your current grade, enter your percentage scores in the boxes for assessments that have been completed.  To project your future grade, also include percentages for future assessments.  [*It is your responsibility to track your scores on the individual assessments.*]
+An overall percentage score will be computed from the items and associated weights listed in the table below.  A specific description for each item is given further below.  You can also use this table to compute your current or projected future grade.  To compute your current grade, enter your percentage scores in the boxes for assessments that have been completed.  To project your future grade, also include percentages for future assessements.  [*It is your responsibility to track your scores on the individual assessments.*]
 
 <!-- if the assessment weights change then you must change the values in get_wghts() in the grader.js file -->
 
@@ -102,14 +102,14 @@ Several homework assignments will be assigned per major course topic.  Grading o
 
 Exams dates are shown on the [Dates page](calendar.html){:target="_blank"}.  Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition.  You will not be allowed to make up an exam missed without my prior approval.  The final exam will not be given early.
 
-#### Reflections - Papers
+#### Reflections - Fisheries Debates
 
-In fisheries, as in other scientific disciplines, it is important to read the literature to remain current about scientific information and debates.  To promote this, you will provide a written reflection of your reading of two scientific articles from lists compiled by Trevor Branch at the University of Washington -- one from Branch's ["must-read" papers from 2014-2016](https://sites.google.com/a/uw.edu/most-cited-fisheries/annual-best-papers) and one from his "most cited" lists ([link to 2011](https://sites.google.com/a/uw.edu/most-cited-fisheries/home/most-cited-in-2011), but notice links on left to other years).
+Provide a written reflection on your reading related to two common debates in fisheries science and management.  Background for those debates and specific directions for the assignment are provided at the following links:
 
+1. [All Fish Gone by 2048.](debates/all-gone-2048)
+1. [Fishing Down the Food Chain.](debates/down-food-chain)
 
-
-
-
+These issues are hotly debated and internet searchs on the two titles above will lead to a variety of thoughts.
 
 #### Reflections - Speakers
 
@@ -120,14 +120,14 @@ Several guest speakers will visit our class during the semester.  I expect that 
 1. What is your summary of the speaker's presentation, including your list of the speaker's three main points?  [*Provide specific details from the speaker's presentation*.]
 1. How did the speaker's presentation pertain to our class?  [*Be specific*]
 1. What questions did you ask the speaker and what were his/her answers?  [*Required*]
-1. What questions do you wish you would have asked the speaker?
+1. What questions do you wish you would have asaked the speaker?
 1. What other thoughts do you have?
 
-This reflection should be about the substance of the speaker's presentation and not them or the presentation style or performance.  [Here is an example reflection](ex-reflection-speaker.html).
+This reflection should be about the substance of the speaker's presentation and not them or the presentation style or performance.
 
 #### Extra Credit
 
-I will offer limited opportunities for extra credit throughout the semester.  Generally these opportunities will be related to your reflections from attending presentations, meetings, etc. related to fisheries science and management that are outside of the class.  Examples would be attending the AFS Conference in late Feb and attending the Conservation Congress hearings in early April.
+I will offer some opportunities for extra credit throughout the semester.  Generally these opportunities will be related to your reflections from attending presentations, meetings, etc. related to fisheries science and management that are outside of the class.  Examples would be attending the AFS Conference in late Feb and attending the Conservation Congress hearings in early April.
 
 #### Incomplete Grades
 
@@ -146,7 +146,7 @@ As a general rule-of-thumb ([here](http://www.collegeparents.org/members/resourc
 If you feel that you are spending an inordinate amount of time on some assignments because you are "stuck," then start your assignments early so that you can stop (and do other things) and make plans to see [me](#instructor) for help.
 
 #### Expectations
-This is a 300-level science course that is required in only one major; thus, you either selected that major or this course and I assume then that this subject is of great interest to you.  This course is intense (both in quantity and quality of work) and I expect that you will appreciate that and honor that with considerable effort.  I expect that you are conversant with topics from the three prerequisite courses (Ecology, Ichthyology, and Introductory Statistics).  Additionally, I expect that you have reached a high-level of intellectual maturity by this stage of your academic career and, thus, will act professionally at all times, ask good and synthesizing questions, and communicate effectively, both orally and [in writing](writing-tips.html).  Finally, I expect you to work hard, but have fun doing that work.
+This is a 300-level science course that is required in only one major; thus, you either selected that major or this course and I assume then that this subject is of great interest to you.  This course is intense (both in quantity and quality of work) and I expect that you will appreciate that and honor that with considerable effort.  I expect that you are conversant with topics from the three pre-requisite courses (Ecology, Ichthyology, and Introductory Statistics).  Additionally, I expect that you have reached a high-level of intellectual maturity by this stage of your academic career and, thus, will act professionally at all times, ask good and synthesizing questions, and communicate effectively, both orally and [in writing](writing-tips.html).  Finally, I expect you to work hard, but have fun doing that work.
 
 #### Conduct
 Your conduct in class should revolve around the idea of being respectful of all others in the class.  Adhering to the following policies should be considered the minimum requirements to being respectful of others:

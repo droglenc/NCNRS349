@@ -1,0 +1,41 @@
+---
+layout: page
+title: Example Speaker Reflection
+---
+
+<dl class="dl-horizontal">
+<dt>Speaker:</dt>
+<dd>Dr. Gretchen Hansen, Research Scientist, Wisconsin DNR</dd>
+<dt>Presentation Title:</dt>
+<dd>What's the Deal with Wisconsin's Walleye?</dd>
+</dl>
+
+<ul class="list-unstyled">
+<li>Summary (3 Main Points):</li>
+<ol>
+<li>Largemouth bass populations have been increasing at the same time that Walleye populations have been declining (similar to other states and provinces in the upper Midwest).  Some thought that the two trends were directly (inversely) related.  Walleye are the most recreationally important fish in Wisconsin and, thus, this was concerning.  The DNR took some actions (liberalized regulations for Largemouth Bass and stocked Walleye).</li>
+<li>Developed a collaborative and integrative research program in an attempt to identify factors related to this relationship.</li>
+<li>Statewide recruitment of Walleye (to age-0) has declined by 6.6%/year since 1989.  Walleye recruitment declined in the vast majority of individual lakes, though there was considerable spatial heterogeneity.  Statewide abundance of adult Walleye had declined by 2%/year since 1989 (and similar patterns for individual lakes).  Statewide abundance of Largemouth Bass generally increased.</li>
+<li>Walleye recruitment could be predicted by lake area (larger surface areas lead to higher recruitment) and four measures of water temperature (variability in temp early in life and GDD result in lower recruitment).  These effects were highly nonlinear and interactions were present.</li>
+<li>Largemouth Bass abundance is higher with higher GDD.  Three other lake morphometry measures are also somewhat important.</li>
+</ol>
+<li>Questions I Asked:</li>
+<dl class="dl-horizontal">
+<dt>Q:</dt>
+<dd>If Largemouth Bass don't prey on young Walleye and there is little direct competition between the two species, then why would increasing harvest of Largemouth Bass positively effect Walleye?</dd>
+<dt>A:</dt>
+<dd>We are also trying to change the size structure of Largemouth Bass as the size structure has declined due to the increased density of Largemouth Bass.</dd>
+</dl>
+<li>Questions I Should Have Asked:</li>
+<ul>
+<li>What do you think is the mechanistic explanation for the interaction between variability in temperatures and GDD?</li>
+</ul>
+<li>Other Thoughts:</li>
+<ul>
+<li>It was amazing to see the amount and quality of data that Dr. Hansen summarized for this research (e.g., daily temperatures at depth for 2400 lakes across 30 years).</li>
+</ul>
+</ul>
+
+----
+
+This example is based on [this presentation](http://gallery.usgs.gov/videos/972).

@@ -104,7 +104,7 @@ title: Lecture Materials
             </ul>
           <li><b>Mortality Components</b></li>
             <ul>
-              <li>Pre-Readings --  <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Section 6.6</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.3</li>
+              <li>Pre-Readings --  <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Section 6.6</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.4</li>
               <li><a href="Age/PPT_Components.pptx">Lecture Slides</a></li>
             </ul>
         </ul>

@@ -14,7 +14,7 @@ css: "/css/modules.css"
 The catch-curve method for estimating total morality rates ($Z$) is based on the following assumptions:
 
 * **Closed Population}** -- There is no immigration or emigration to the population.
-* **Constant Mortality** -- $Z$ is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).
+* **Constant Mortality** -- $$Z$$ is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).
 * **Constant Recruitment** -- The initial number of individuals is the same for each year-class of fish.
 * **Constant Vulnerability** -- The vulnerability (*if catch data is used*) or catchability (*if CPUE data is used*) of fish to the gear is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).
 * **Unbiased Sample** -- The sample is not biased regarding any specific age-group(s).

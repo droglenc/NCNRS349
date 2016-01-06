@@ -116,11 +116,7 @@ Your reflection should contain *at least* the following information.
 1. A brief summary of how the findings relate to the objectives and the background information.
 1. Brief personal comments on what you learned from this study, what questions you still have about the study (though I expect that you will come to me with major questions before you finish your reflection), how this relates to class, etc.
 
-[Here is an example reflection](ex-reflection-paper.html).
-
-You might consider these resources for ideas on how to read and summarize your papers ([1](http://violentmetaphors.com/2013/08/25/how-to-read-and-understand-a-scientific-paper-2/), [2](http://journalaccess.aspb.org/CaseStudy/CaseStudy%20for%20How%20to%20Read%20a%20Sci%20Paper%20M%20Williams%20Mar%202013.pdf), [3](http://journalaccess.aspb.org/ReadaSciPaper/How%20to%20Read%20a%20Scientific%20Paper%20M%20Williams%20Mar%202013.pdf), [4](http://twp.duke.edu/uploads/media_items/scientificarticlereview.original.pdf)).
-
-
+[Here is an example reflection](ex-reflection-paper.html).  Also, read [these writing tips](writing-tips.html) and you might consider these resources for ideas on how to read and summarize your papers ([1](http://violentmetaphors.com/2013/08/25/how-to-read-and-understand-a-scientific-paper-2/), [2](http://journalaccess.aspb.org/CaseStudy/CaseStudy%20for%20How%20to%20Read%20a%20Sci%20Paper%20M%20Williams%20Mar%202013.pdf), [3](http://journalaccess.aspb.org/ReadaSciPaper/How%20to%20Read%20a%20Scientific%20Paper%20M%20Williams%20Mar%202013.pdf), [4](http://twp.duke.edu/uploads/media_items/scientificarticlereview.original.pdf)).
 
 
 #### Reflections - Speakers
@@ -135,7 +131,7 @@ Several guest speakers will visit our class during the semester.  I expect that 
 1. What questions do you wish you would have asked the speaker?
 1. What other thoughts do you have?
 
-This reflection should be about the substance of the speaker's presentation and not them or the presentation style or performance.  [Here is an example reflection](ex-reflection-speaker.html).
+This reflection should be about the substance of the speaker's presentation and not them or the presentation style or performance.  [Here is an example reflection](ex-reflection-speaker.html).  Also, read [these writing tips](writing-tips.html).
 
 #### Extra Credit
 

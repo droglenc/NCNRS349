@@ -9,7 +9,7 @@ css: /css/syllabus.css
 
 * Class [Description](#description) and [Learning Outcomes](#learning-outcomes)
 * [Instructor](#instructor) and [Tutors](#tutors)
-* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-Fisheries Debates](#reflections---fisheries-debates), [Reflections-Speakers](#reflections---speakers)
+* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-Papers](#reflections---papers), [Reflections-Speakers](#reflections---speakers)
 * [Professionalism](#professionalism) -- [Attendance](#attendance), [Participation](#participation), [Expectations](#expectations), [Conduct](#conduct)
 * [Accomodations](#accomodations)
 
@@ -66,7 +66,7 @@ An overall percentage score will be computed from the items and associated weigh
 <th><a href="#exams">MT1</a></th>
 <th><a href="#exams">MT2</a></th>
 <th><a href="#exams">Final</a></th>
-<th><a href="#reflections---fisheries-debates">Debates</a></th>
+<th><a href="#reflections---papers">Papers</a></th>
 <th><a href="#reflections---speakers">Speakers</a></th></tr>
 
 <tr><th>Weight</th>

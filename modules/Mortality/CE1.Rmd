@@ -30,16 +30,7 @@ set.seed(13797834)
 
 #### Background
 
-Estimating the mortality rate for a population of fish is a key component to estimating safe harvest levels for many fisheries.  Mortality rates can be estimated with a variety of analytical methods but a very common method is the "catch curve" method.  In its simplest form, the catch curve method uses the descending trend in log abundance-at-age versus age to estimate the instantaneous mortality rate ($Z$).  This method is based on the following assumptions:
-
-* **Closed Population}** -- There is no immigration or emigration to the population.
-* **Constant Mortality** -- $Z$ is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).
-* **Constant Recruitment** -- The initial number of individuals is the same for each year-class of fish.
-* **Constant Vulnerability** -- The vulnerability (*if catch data is used*) or catchability (*if CPUE data is used*) of fish to the gear is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).
-* **Unbiased Sample** -- The sample is not biased regarding any specific age-group(s).
-* **Accurate Ages** -- The fish in a sample can be accurately assigned an age.
-
-Violations of these assumptions result in catch curves that are "bumpy", convex, concave, or offset rather than linear in the descending limb and may result in biased estimates of mortality rates.  Fisheries managers need to understand these biases in order to actively guard against them and to inform careful interpretations of results.  The effect of assumption violations on the "shape" of the catch curve and the resultant mortality estimates is the focus of this exercise.
+Estimating the mortality rate for a population of fish is a key component to estimating safe harvest levels for many fisheries.  Mortality rates can be estimated with a variety of analytical methods but a very common method is the "catch curve" method.  In its simplest form, the catch curve method uses the descending trend in log abundance-at-age versus age to estimate the instantaneous mortality rate ($Z$).
   
 #### Simulation Description
 

@@ -1,0 +1,96 @@
+---
+layout: page
+title: Mortality
+subtitle: Class Exercise
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<hr />
+<div id="understanding-the-shape-of-catch-curves" class="section level2">
+<h2>Understanding the Shape of Catch Curves</h2>
+<div id="background" class="section level4">
+<h4>Background</h4>
+<p>Estimating the mortality rate for a population of fish is a key component to estimating safe harvest levels for many fisheries. Mortality rates can be estimated with a variety of analytical methods but a very common method is the “catch curve” method. In its simplest form, the catch curve method uses the descending trend in log abundance-at-age versus age to estimate the instantaneous mortality rate (<span class="math">\(Z\)</span>). This method is based on the following assumptions:</p>
+<ul>
+<li><strong>Closed Population}</strong> – There is no immigration or emigration to the population.</li>
+<li><strong>Constant Mortality</strong> – <span class="math">\(Z\)</span> is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).</li>
+<li><strong>Constant Recruitment</strong> – The initial number of individuals is the same for each year-class of fish.</li>
+<li><strong>Constant Vulnerability</strong> – The vulnerability (<em>if catch data is used</em>) or catchability (<em>if CPUE data is used</em>) of fish to the gear is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).</li>
+<li><strong>Unbiased Sample</strong> – The sample is not biased regarding any specific age-group(s).</li>
+<li><strong>Accurate Ages</strong> – The fish in a sample can be accurately assigned an age.</li>
+</ul>
+<p>Violations of these assumptions result in catch curves that are “bumpy”, convex, concave, or offset rather than linear in the descending limb and may result in biased estimates of mortality rates. Fisheries managers need to understand these biases in order to actively guard against them and to inform careful interpretations of results. The effect of assumption violations on the “shape” of the catch curve and the resultant mortality estimates is the focus of this exercise.</p>
+</div>
+<div id="simulation-description" class="section level4">
+<h4>Simulation Description</h4>
+<p>The <code>catchCurveSim()</code> function in the <code>FSAsim</code> package can be used to evaluate the effect of parameter values and assumption violations on the “shape” of the catch curve. This function works by creating several cohorts of fish with values of <span class="math">\(N_{0}\)</span> and <span class="math">\(Z\)</span> that are supplied by the user. These cohorts are then projected into the future (i.e., the <span class="math">\(Z\)</span> is applied to <span class="math">\(N_0\)</span> for a certain age) and a sample of the population in a given year is taken. The user can make choices to modify aspects of the simulation to understand how the catch-curve plot and the estimate of <span class="math">\(Z\)</span> are effected.</p>
+<p>The <code>catchCurveSim()</code> function has the following arguments:</p>
+<ul>
+<li><code>max.age=</code> the maximum age to model in the simulation (default is 15).</li>
+<li><code>deltaAge=</code> the age at which the the mortality rate and initial population size multiplier takes effect (see below).</li>
+<li><code>recruit.age=</code> the age for which the population of fish is fully recruited to the gear. This will correspond to the age at the peak log abundance of the catch curve.</li>
+</ul>
+<p>After calling the function, a plot will appear with three lines that connect points of log catch at age data. Three lines may not be apparent as they may be plotted on top of each other. The gray line is the catch curve at the initial or default values of the simulation (<span class="math">\(Z=0.4\)</span> and <span class="math">\(N_{0}\)</span>=700 with no assumption violations). This line is provided simply as a reference. The red line is the catch curve for the current values of <span class="math">\(Z\)</span> and <span class="math">\(N_{0}\)</span> selected by the user (see below) but ignoring any assumption violations modeled by the user. Finally, the blue line is the catch curve created by all choices made by the user, including changes to <span class="math">\(Z\)</span> and <span class="math">\(N_{0}\)</span> and any values that simulate assumption violations. The blue line is plotted after (or on top) of the red line which is after the gray line.</p>
+<pre class="r"><code>&gt; catchCurveSim()</code></pre>
+<p><img src="CE1_files/figure-html/unnamed-chunk-3-1.png" title="" alt="" width="576" /></p>
+<p>In RStudio, this plot will have a gear icon in the upper-left corner that will open a dialog box that allows you to change the following items in the simulation.</p>
+<ul>
+<li><code>Z mean</code> - the mean <span class="math">\(Z\)</span> to use in the simulations. If <code>Z CV</code> (see below) is set to 0, then this is the exact <span class="math">\(Z\)</span> used in the simulations.</li>
+<li><code>No mean</code> - the mean <span class="math">\(N_{0}\)</span> to use in the simulations. If `No CV’ (see below) is set to 0 then this is the exact <span class="math">\(N_{0}\)</span> used in the simulations.</li>
+</ul>
+<p>Changing these two values allows the user to see the effect of increasing or decreasing values of <span class="math">\(Z\)</span> or <span class="math">\(N_{0}\)</span> on the shape of the catch curve. Changing only these two sliders does not model assumption violations.</p>
+<hr />
+</div>
+<div id="questions-i" class="section level4">
+<h4>Questions I</h4>
+<ol>
+<li>How does the descending limb of the catch curve change in each situation below.
+<ol>
+<li>Increase mean <span class="math">\(Z\)</span>.</li>
+<li>Decrease mean <span class="math">\(Z\)</span>.</li>
+<li>Increase mean <span class="math">\(N_{0}\)</span>.</li>
+<li>Decrease mean <span class="math">\(N_{0}\)</span>.</li>
+</ol></li>
+</ol>
+<hr />
+<div class="text-center">
+<ul class="pagination pagination-lg">
+<li>
+<a href="../index.html">^</a>
+</li>
+<li class="active">
+<a href="#">1</a>
+</li>
+<li>
+<a href="CE1b.html">2</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

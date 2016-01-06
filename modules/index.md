@@ -38,7 +38,7 @@ title: Lecture Materials
     </div>
     <div id="cAbundance" class="panel-collapse collapse">
       <div class="panel-body">
-      <ul>
+      <ul class="list-unstyled">
         <li><strong>CPE/CPUE</strong></li>
           <ul>
             <li>Pre-Readings -- <a href="Abundance/CPE/HubertFabrizio-2007.pdf">Hubert & Fabrizio (2007)</a>, <a href="http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff">Boxes 6.3 & 6.4 in Hubert <i>et al.</i> (2012)</a></li>
@@ -94,15 +94,15 @@ title: Lecture Materials
     </div>
     <div id="cMortality" class="panel-collapse collapse">
       <div class="panel-body">
-        <ul>
-          <li>Total Mortality</li>
+        <ul class="list-unstyled">
+          <li><b>Total Mortality</b></li>
             <ul>
               <li>Pre-Readings -- <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Sections 6.1-6.3, 6.8-6.10</a>, <a href="Mortality/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
               <li><a href="Mortality/PPT_Total.pptx">Lecture Slides</a></li>
               <li><a href="Mortality/CE1.html">Class Exercise</a></li>
               <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a></li>
             </ul>
-          <li>Mortality Components</li>
+          <li><b>Mortality Components</b></li>
             <ul>
               <li>Pre-Readings --  <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Section 6.6</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.3</li>
               <li><a href="Age/PPT_Components.pptx">Lecture Slides</a></li>

@@ -13,7 +13,7 @@ title: Lecture Materials
     </div>
     <div id="cClassIntro" class="panel-collapse collapse">
       <div class="panel-body">
-      <ul>
+      <ul class="list-unstyled">
         <li><strong>General Introduction</strong></li>
           <ul>
             <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>

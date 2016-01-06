@@ -34,7 +34,7 @@ Estimating the mortality rate for a population of fish is a key component to est
   
 #### Simulation Description
 
-The `catchCurveSim()` function in the `FSAsim` package can be used to evaluate the effect of parameter values and assumption violations on the "shape" of the catch curve.  This function works by creating several cohorts of fish with values of $N_{0}$ and $Z$ that are supplied by the user.  These cohorts are then projected into the future (i.e., the $Z$ is applied to $N_0$ for a certain age) and a sample of the population in a given year is taken.  The user can make choices to modify aspects of the simulation to understand how the catch-curve plot and the estimate of $Z$ are effected.
+The `catchCurveSim()` function in the `FSAsim` package can be used to evaluate the effect of parameter values and assumption violations on the "shape" of the catch curve.  This function works by creating several cohorts of fish with values of $N_{0}$ (initial cohort size) and $Z$ that are supplied by the user.  These cohorts are then projected into the future (i.e., the $Z$ is applied to $N_0$ for a certain age) and a sample of the population in a given year is taken.  The user can make choices to modify aspects of the simulation to understand how the catch-curve plot and the estimate of $Z$ are effected.
 
 The `catchCurveSim()` function has the following arguments:
 
@@ -42,7 +42,7 @@ The `catchCurveSim()` function has the following arguments:
 * `deltaAge=` the age at which the the mortality rate and initial population size multiplier takes effect (see below).
 * `recruit.age=` the age for which the population of fish is fully recruited to the gear.  This will correspond to the age at the peak log abundance of the catch curve.
 
-After calling the function, a plot will appear with three lines that connect points of log catch at age data.  Three lines may not be apparent as they may be plotted on top of each other.  The gray line is the catch curve at the initial or default values of the simulation ($Z=0.4$ and $N_{0}$=700 with no assumption violations).  This line is provided simply as a reference.  The red line is the catch curve for the current values of $Z$ and $N_{0}$ selected by the user (see below) but ignoring any assumption violations modeled by the user.  Finally, the blue line is the catch curve created by all choices made by the user, including changes to $Z$ and $N_{0}$ and any values that simulate assumption violations.  The blue line is plotted after (or on top) of the red line which is after the gray line.
+After calling the function, a plot will appear with three lines that connect points of log catch at age data.  Three lines may not be apparent as they may be plotted on top of each other.  The gray line is the catch curve at the initial or default values of the simulation ($Z=0.4$ and $N_{0}$=700 with no assumption violations).  This line is provided simply as a reference.  The red line is the catch curve for the current values of $Z$ and $N_{0}$ selected by the user (see below) but ignoring any assumption violations modeled by the user.  Finally, the blue line is the catch curve created by all choices made by the user, including changes to $Z$ and $N_{0}$ and any values that simulate assumption violations (see next page).  The blue line is plotted after (or on top) of the red line which is after the gray line.
 
 
 ```{r fig.width=5,fig.height=4}
@@ -51,8 +51,8 @@ catchCurveSim()
 
 In RStudio, this plot will have a gear icon in the upper-left corner that will open a dialog box that allows you to change the following items in the simulation.
 
-* `Z mean` - the mean $Z$ to use in the simulations.  If `Z CV` (see below) is set to 0, then this is the exact $Z$ used in the simulations.
-* `No mean` - the mean $N_{0}$ to use in the simulations.  If `No CV' (see below) is set to 0 then this is the exact $N_{0}$ used in the simulations.
+* `Z mean` - the mean $Z$ to use in the simulations.  If `Z CV` (see next page) is set to 0 (the default), then this is the exact $Z$ used in the simulations.
+* `No mean` - the mean $N_{0}$ to use in the simulations.  If `No CV` (see next page) is set to 0 (the default), then this is the exact $N_{0}$ used in the simulations.
 
 Changing these two values allows the user to see the effect of increasing or decreasing values of $Z$ or $N_{0}$ on the shape of the catch curve.  Changing only these two sliders does not model assumption violations.
 
@@ -60,7 +60,7 @@ Changing these two values allows the user to see the effect of increasing or dec
 
 #### Questions I
 
-1. How does the descending limb of the catch curve change in each situation below.
+1. How does the descending limb of the catch curve change (relative to the catch curve at the default values) in each situation below.  Convince yourself that your observations make biological sense.
     1. Increase mean $Z$.
     1. Decrease mean $Z$.
     1. Increase mean $N_{0}$.

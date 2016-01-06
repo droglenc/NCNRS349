@@ -25,11 +25,11 @@ source("../../rhelpers/knitr_setup.R")
 
 ----
 
-## Assumptions Violations in Catch Curve Mortality Estimates
+## Catch Curve Assumption Violations
 
 #### Background
 
-The catch-curve method for estimating total morality rates ($Z$) is based on the following assumptions:
+The catch-curve method for estimating total instantaneous mortality rates ($Z$) is based on the following assumptions:
 
 * **Closed Population** -- There is no immigration or emigration to the population.
 * **Constant Mortality** -- $Z$ is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).
@@ -38,23 +38,23 @@ The catch-curve method for estimating total morality rates ($Z$) is based on the
 * **Unbiased Sample** -- The sample is not biased regarding any specific age-group(s).
 * **Accurate Ages** -- The fish in a sample can be accurately assigned an age.
 
-Violations of these assumptions result in catch curves that are "bumpy", convex, concave, or offset rather than linear in the descending limb and may result in biased estimates of mortality rates.  Fisheries managers need to understand these biases in order to actively guard against them and to inform careful interpretations of results.  The effect of assumption violations on the "shape" of the catch curve and the resultant mortality estimates is the focus of this exercise.
+Violations of these assumptions result in catch curves that are "bumpy", convex, concave, or offset rather than linear in the descending limb and may result in biased estimates of $Z$.  Fisheries managers need to understand these biases in order to actively guard against them and to inform careful interpretations of results.  The effect of assumption violations on the "shape" of the catch curve and the resultant mortality estimates is the focus of this exercise.
   
 #### Simulation Description
 
-Other slide bars in the gear icon for `catchCurveSim()` allow the user to model violations of these assumptions to see how they alter the shape of the catch curve.  These sliders are descrbed below.
+Slider bars (other than those discussed on the previous page) in the gear icon for `catchCurveSim()` allow the user to model violations of these assumptions to see how they alter the shape of the catch curve.  These sliders are descrbed below.
 
-* `Z CV` - models random variation in $Z$; the larger the value, the more variable the $Z$
-* `No CV` - models random variation in the $N_{0}$.
-* `Steady` -- the `Z delta` and `No delta` multipliers (below) are constant for all ages if checked or change geometrically if unchecked -- i.e., if unchecked then the values increase or decrease by the multiple for each age after `deltaAge`.
-* `Z delta` - a multiplier used to model a *systematic* (i.e., not random) non-constant $Z$.  Values greater than 1 indicate an increasing mean $Z$ for ages after the value given in `deltaAge` (see previous).  Values less than 1 indicate a decreasing mean $Z$ after `deltaAge`.  A value of 1 indicates a constant mean $Z$ across all ages.
-* `No delta` - a multiplier used to model a *systematic* (i.e., not random) non-constant $N_{0}$.  See `Z delta` above for a description of its use.
+* `Z CV` - models random variation in $Z$ (larger values mean a more variable $Z$).
+* `No CV` - models random variation in $N_{0}$.
+* `Steady` -- the `Z delta` and `No delta` multipliers (below) are constant for all ages if `Steady` is checked or changes geometrically if `Steady` is unchecked -- i.e., if `Steady` is unchecked, then the values increase or decrease by the multiple for each age after the age given in the `deltaAge=` argument (which was 8 by default).
+* `Z delta` - a multiplier used to model *systematic* (i.e., not random) non-constant values of $Z$.  Values greater than 1 indicate an increasing mean $Z$ for ages after the `deltaAge=` age (see previous).  Values less than 1 indicate a decreasing mean $Z$ after `deltaAge`.  A value of 1 indicates a constant mean $Z$ for all ages.
+* `No delta` - a multiplier used to model *systematic* (i.e., not random) non-constant values of $N_{0}$.  See `Z delta` above for a description of its use.
 
 ----
 
 #### Questions II
 
-Each simulation below should use a maximum age of 15, a starting age for the change of 8, and $Z=0.4$ and $N_{0}=700$ (all are the defaults).  Before starting each simulation, return all values to the defaults and then change only those values noted in the question.  For each simulation, describe (with a supporting graphic) the shape of the descending limb of the catch curve using terms like "linear", "bumpy", "concave" (upward parabola-like), "convex" (downward parabola-like), "upward v-shape", "downward v-shape", "offset up", or "offset down". 
+Each simulation below should use a maximum age of 15, a starting age for the change of the parameters of 8, $Z=0.4$, and $N_{0}=700$ (all are the defaults).  Before starting each simulation, return all values for the sliders to the defaults and then change only those values noted in the question.  For each simulation, describe (with a supporting graphic) the shape of the descending limb of the catch curve using terms like "linear", "bumpy", "concave" (upward parabola-like), "convex" (downward parabola-like), "upward v-shape", "downward v-shape", "offset up", or "offset down". 
 
 1. Model random variability (i.e., CV) in $Z$.
 1. Model random variability in $N_{0}$.

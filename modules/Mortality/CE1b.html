@@ -1,0 +1,104 @@
+---
+layout: page
+title: Mortality
+subtitle: Class Exercise
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<hr />
+<div id="assumptions-violations-in-catch-curve-mortality-estimates" class="section level2">
+<h2>Assumptions Violations in Catch Curve Mortality Estimates</h2>
+<div id="background" class="section level4">
+<h4>Background</h4>
+<p>The catch-curve method for estimating total morality rates (<span class="math">\(Z\)</span>) is based on the following assumptions:</p>
+<ul>
+<li><strong>Closed Population</strong> – There is no immigration or emigration to the population.</li>
+<li><strong>Constant Mortality</strong> – <span class="math">\(Z\)</span> is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).</li>
+<li><strong>Constant Recruitment</strong> – The initial number of individuals is the same for each year-class of fish.</li>
+<li><strong>Constant Vulnerability</strong> – The vulnerability (<em>if catch data is used</em>) or catchability (<em>if CPUE data is used</em>) of fish to the gear is constant (i.e., independent of age and year for ages on the descending limb of the catch curve).</li>
+<li><strong>Unbiased Sample</strong> – The sample is not biased regarding any specific age-group(s).</li>
+<li><strong>Accurate Ages</strong> – The fish in a sample can be accurately assigned an age.</li>
+</ul>
+<p>Violations of these assumptions result in catch curves that are “bumpy”, convex, concave, or offset rather than linear in the descending limb and may result in biased estimates of mortality rates. Fisheries managers need to understand these biases in order to actively guard against them and to inform careful interpretations of results. The effect of assumption violations on the “shape” of the catch curve and the resultant mortality estimates is the focus of this exercise.</p>
+</div>
+<div id="simulation-description" class="section level4">
+<h4>Simulation Description</h4>
+<p>Other slide bars in the gear icon for <code>catchCurveSim()</code> allow the user to model violations of these assumptions to see how they alter the shape of the catch curve. These sliders are descrbed below.</p>
+<ul>
+<li><code>Z CV</code> - models random variation in <span class="math">\(Z\)</span>; the larger the value, the more variable the <span class="math">\(Z\)</span></li>
+<li><code>No CV</code> - models random variation in the <span class="math">\(N_{0}\)</span>.</li>
+<li><code>Steady</code> – the <code>Z delta</code> and <code>No delta</code> multipliers (below) are constant for all ages if checked or change geometrically if unchecked – i.e., if unchecked then the values increase or decrease by the multiple for each age after <code>deltaAge</code>.</li>
+<li><code>Z delta</code> - a multiplier used to model a <em>systematic</em> (i.e., not random) non-constant <span class="math">\(Z\)</span>. Values greater than 1 indicate an increasing mean <span class="math">\(Z\)</span> for ages after the value given in <code>deltaAge</code> (see previous). Values less than 1 indicate a decreasing mean <span class="math">\(Z\)</span> after <code>deltaAge</code>. A value of 1 indicates a constant mean <span class="math">\(Z\)</span> across all ages.</li>
+<li><code>No delta</code> - a multiplier used to model a <em>systematic</em> (i.e., not random) non-constant <span class="math">\(N_{0}\)</span>. See <code>Z delta</code> above for a description of its use.</li>
+</ul>
+<hr />
+</div>
+<div id="questions-ii" class="section level4">
+<h4>Questions II</h4>
+<p>Each simulation below should use a maximum age of 15, a starting age for the change of 8, and <span class="math">\(Z=0.4\)</span> and <span class="math">\(N_{0}=700\)</span> (all are the defaults). Before starting each simulation, return all values to the defaults and then change only those values noted in the question. For each simulation, describe (with a supporting graphic) the shape of the descending limb of the catch curve using terms like “linear”, “bumpy”, “concave” (upward parabola-like), “convex” (downward parabola-like), “upward v-shape”, “downward v-shape”, “offset up”, or “offset down”.</p>
+<ol>
+<li>Model random variability (i.e., CV) in <span class="math">\(Z\)</span>.</li>
+<li>Model random variability in <span class="math">\(N_{0}\)</span>.</li>
+<li>Model a steady increase in <span class="math">\(Z\)</span>.</li>
+<li>Model a steady decrease in <span class="math">\(Z\)</span>.</li>
+<li>Model a steady increase in <span class="math">\(N_{0}\)</span>.</li>
+<li>Model a steady decrease in <span class="math">\(N_{0}\)</span>.</li>
+<li>Model a non-steady increase in <span class="math">\(Z\)</span>.</li>
+<li>Model a non-steady decrease in <span class="math">\(Z\)</span>.</li>
+<li>Model a non-steady increase in <span class="math">\(N_{0}\)</span>.</li>
+<li>Model a non-steady decrease in <span class="math">\(N_{0}\)</span>.</li>
+</ol>
+<hr />
+</div>
+<div id="questions-iii" class="section level4">
+<h4>Questions III</h4>
+<ol>
+<li>What could cause a catch curve constructed from real catch-at-age data to be “bumpy”?</li>
+<li>What could cause a catch curve constructed from real catch-at-age data to be concave?</li>
+<li>What could cause a catch curve constructed from real catch-at-age data to be v-shaped upward?</li>
+<li>What could cause a catch curve constructed from real catch-at-age data to be offset a constant amount upward?</li>
+<li>Construct the following two situations – (i) a steady 50% greater <span class="math">\(Z\)</span> and (ii) the same but including a 10% CV for the <span class="math">\(Z\)</span>. Do you observe the same “shape” in the descending limbs of the catch curve in both of these simulations? Explain any differences that you observe.</li>
+<li>How easy do you think it would be to diagnose the specific assumption violation given a non-linear descending limb on a catch curve constructed from real catch-at-age data? Explain.</li>
+</ol>
+<hr />
+<div class="text-center">
+<ul class="pagination pagination-lg">
+<li>
+<a href="../../index.html">^</a>
+</li>
+<li>
+<a href="CE1.html">1</a>
+</li>
+<li class="active">
+<a href="#">2</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

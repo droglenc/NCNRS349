@@ -54,7 +54,7 @@ The `catchCurveSim()` function has the following arguments:
 After calling the function, a plot will appear with three lines that connect points of log catch at age data.  Three lines may not be apparent as they may be plotted on top of each other.  The gray line is the catch curve at the initial or default values of the simulation ($Z=0.4$ and $N_{0}$=700 with no assumption violations).  This line is provided simply as a reference.  The red line is the catch curve for the current values of $Z$ and $N_{0}$ selected by the user (see below) but ignoring any assumption violations modeled by the user.  Finally, the blue line is the catch curve created by all choices made by the user, including changes to $Z$ and $N_{0}$ and any values that simulate assumption violations.  The blue line is plotted after (or on top) of the red line which is after the gray line.
 
 
-```{r fig.width=6,fig.height=4}
+```{r fig.width=5,fig.height=4}
 catchCurveSim()
 ```
 

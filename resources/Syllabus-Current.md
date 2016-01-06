@@ -104,22 +104,34 @@ Exams dates are shown on the [Dates page](calendar.html){:target="_blank"}.  Mak
 
 #### Reflections - Papers
 
-In fisheries, as in other scientific disciplines, it is important to read the literature to remain current about scientific information and debates.  To promote this, you will provide a written reflection of your reading of two scientific articles from lists compiled by Trevor Branch at the University of Washington -- one from Branch's ["must-read" papers from 2014-2016](https://sites.google.com/a/uw.edu/most-cited-fisheries/annual-best-papers) and one from his "most cited" lists ([link to 2011](https://sites.google.com/a/uw.edu/most-cited-fisheries/home/most-cited-in-2011), but notice links on left to other years).
+In fisheries, as in other scientific disciplines, it is important to read the literature to remain current about scientific information and debates.  To promote this, you will provide a written reflection of your reading of two scientific articles from lists compiled by Trevor Branch at the University of Washington -- one from Branch's ["must-read" papers from 2014-2016](https://sites.google.com/a/uw.edu/most-cited-fisheries/annual-best-papers) and one from his "most cited" lists ([link to 2011](https://sites.google.com/a/uw.edu/most-cited-fisheries/home/most-cited-in-2011), but notice links on left to other years).  [*I may be able to help you get a PDF of your choice of article.  However, I don't have access to all articles so you may need to use the inter-library loan service or choose a different article.*]
 
+Your reflection should contain *at least* the following information.
 
+1. Article citation (in [American Fisheries Society journal format](http://fisheries.org/docs/pub_style9.pdf)).
+1. A brief description of the study objective(s).
+1. A brief description (1-3 sentences) of the necessary background required to understand why this study was conducted and why it was important.
+1. A brief description of the sampling or experimental design for the study (very briefly, what was done in the study).
+1. A brief description of the major findings of the study.
+1. A brief summary of how the findings relate to the objectives and the background information.
+1. Brief personal comments on what you learned from this study, what questions you still have about the study (though I expect that you will come to me with major questions before you finish your reflection), how this relates to class, etc.
+
+[Here is an example reflection](ex-reflection-paper.html).
+
+You might consider these resources for ideas on how to read and summarize your papers ([1](http://violentmetaphors.com/2013/08/25/how-to-read-and-understand-a-scientific-paper-2/), [2](http://journalaccess.aspb.org/CaseStudy/CaseStudy%20for%20How%20to%20Read%20a%20Sci%20Paper%20M%20Williams%20Mar%202013.pdf), [3](http://journalaccess.aspb.org/ReadaSciPaper/How%20to%20Read%20a%20Scientific%20Paper%20M%20Williams%20Mar%202013.pdf), [4](http://twp.duke.edu/uploads/media_items/scientificarticlereview.original.pdf)).
 
 
 
 
 #### Reflections - Speakers
 
-Several guest speakers will visit our class during the semester.  I expect that you will be attentive to each of these speakers, including asking relevant questions.  At the beginning of the first class period following each speaker, you will hand in a completed "reflection" regarding the guest speakers visit.  That reflections should contain *at least* the following information.
+Several guest speakers will visit our class during the semester.  I expect that you will be attentive to each of these speakers, including asking relevant questions.  At the beginning of the first class period following each speaker, you will hand in a completed "reflection" regarding the guest speakers visit.  That reflection should contain *at least* the following information.
 
 1. What was the speaker's name, title, and affiliation (i.e., where he/she works)?
 1. What was the title of the speaker's presentation?
 1. What is your summary of the speaker's presentation, including your list of the speaker's three main points?  [*Provide specific details from the speaker's presentation*.]
 1. How did the speaker's presentation pertain to our class?  [*Be specific*]
-1. What questions did you ask the speaker and what were his/her answers?  [*Required*]
+1. What questions did you ask the speaker and what were his/her answers?  [*Bonus Points*]
 1. What questions do you wish you would have asked the speaker?
 1. What other thoughts do you have?
 

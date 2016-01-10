@@ -111,4 +111,119 @@ title: Lecture Materials
       </div>
     </div>
   </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#cGrowth">Growth</a>
+      </h4>
+    </div>
+    <div id="cGrowth" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 12.1-12.3</li>
+          <li>Lecture Slides</li>
+          <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_B.html">#2</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#cSizeStrux">Size Structure</a>
+      </h4>
+    </div>
+    <div id="cSizeStrux" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section XXX</li>
+          <li>Lecture Slides</li>
+          <li>Homework</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#cCondition">Condition</a>
+      </h4>
+    </div>
+    <div id="cCondition" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section XXX</li>
+          <li>Lecture Slides</li>
+          <li>Homework</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#cRecruitment">Stock-Recruitment</a>
+      </h4>
+    </div>
+    <div id="cRecruitment" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section XXX</li>
+          <li>Lecture Slides</li>
+          <li>Homework</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#cMgmtIntro">Management Introduction</a>
+      </h4>
+    </div>
+    <div id="cMgmtIntro" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Pre-Readings -- 
+          <li>Lecture Slides</li>
+          <li>Case Studies</li>
+          <ul>
+            <li></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#cMgmtTools">Management Tools</a>
+      </h4>
+    </div>
+    <div id="cMgmtTools" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Pre-Readings -- 
+          <li>Lecture Slides</li>
+          <li>Case Studies</li>
+          <ul>
+            <li></li>
+          </ul>
+          <li>Discussion Readings</li>
+          <ul>
+            <li></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+  
 </div> 

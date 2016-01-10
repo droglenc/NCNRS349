@@ -157,7 +157,7 @@ title: Lecture Materials
             <ul>
               <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 12.1-12.3</li>
             </ul>
-          <li>Lecture Slides</li>
+          <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
           <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_B.html">#2</a></li>
         </ul>
       </div>

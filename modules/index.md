@@ -93,7 +93,11 @@ title: Lecture Materials
     <div id="cAge" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="Age/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 5.1-5.4</li>
+          <li>Pre-Readings</li>
+            <ul>
+              <li><a href="Age/BKG.html">Ogle Notes</a></li>
+              <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 5.1-5.4</li>
+            </ul>
           <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
           <li>Post-Reading -- <a href="http://qfc.fw.msu.edu/Publications/Publication%20List/2008/How%20Systematic%20Age%20Underestimation%20can%20Impede%20Understanding_Yule.pdf">Yule <i>et al.</i> (2008)</a></li>
           <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_B.html">#2</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_C.html">XC</a></li>
@@ -114,14 +118,24 @@ title: Lecture Materials
         <ul class="list-unstyled">
           <li><b>Total Mortality</b></li>
             <ul>
-              <li>Pre-Readings -- <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Sections 6.1-6.3, 6.8-6.10</a>, <a href="Mortality/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
+              <li>Pre-Readings</li>
+              <ul>
+                <li><a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Sections 6.1-6.3, 6.8-6.10</a></li>
+                <li><a href="Mortality/BKG.html">Ogle Notes</a></li>
+                <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
+              </ul>
               <li><a href="Mortality/PPT_Total.pptx">Lecture Slides</a></li>
               <li><a href="Mortality/CE1.html">Class Exercise</a></li>
               <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a></li>
             </ul>
           <li><b>Mortality Components</b></li>
             <ul>
-              <li>Pre-Readings --  <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Section 6.6</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.4</li>
+              <li>Pre-Readings</li>
+              <ul>
+                <li><a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Section 6.6</a></li>
+                <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.4</li>
+              </ul>
+            </ul>
               <li><a href="Age/PPT_Components.pptx">Lecture Slides</a></li>
             </ul>
         </ul>
@@ -139,7 +153,10 @@ title: Lecture Materials
     <div id="cGrowth" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 12.1-12.3</li>
+          <li>Pre-Readings</li>
+            <ul>
+              <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 12.1-12.3</li>
+            </ul>
           <li>Lecture Slides</li>
           <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_B.html">#2</a></li>
         </ul>
@@ -157,7 +174,10 @@ title: Lecture Materials
     <div id="cSizeStrux" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 6</li>
+          <li>Pre-Readings</li>
+            <ul>
+              <li><a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 6</li>
+            </ul>
           <li>Lecture Slides</li>
           <li>Homework</li>
         </ul>
@@ -175,7 +195,11 @@ title: Lecture Materials
     <div id="cCondition" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="http://snr.unl.edu/necoopunit/downloads/Publications/Kevin%20Pope%20publ/chapter10.pdf">Pope and Kruse (2007) 10.1-10.3, 10.6 & 10.7 (<i>not the boxes</i>)</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 7.1-7.4, Chapter 8</li>
+          <li>Pre-Readings</li>
+            <ul>
+              <li><a href="http://snr.unl.edu/necoopunit/downloads/Publications/Kevin%20Pope%20publ/chapter10.pdf">Pope and Kruse (2007) 10.1-10.3, 10.6 & 10.7 (<i>not the boxes</i>)</a></li>
+              <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 7.1-7.4, Chapter 8</li>
+            </ul>
           <li>Lecture Slides</li>
           <li>Homework</li>
         </ul>
@@ -193,7 +217,11 @@ title: Lecture Materials
     <div id="cRecruitment" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
+          <li>Pre-Readings</li>
+            <ul>
+              <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a></li>
+              <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
+            </ul>
           <li>Lecture Slides</li>
           <li>Homework</li>
         </ul>
@@ -211,7 +239,10 @@ title: Lecture Materials
     <div id="cMgmtIntro" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- </li>
+          <li>Pre-Readings</li>
+            <ul>
+              <li></li>
+            </ul>
           <li>Lecture Slides</li>
           <li>Case Studies</li>
           <ul>
@@ -232,7 +263,10 @@ title: Lecture Materials
     <div id="cMgmtTools" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- 
+          <li>Pre-Readings</li>
+            <ul>
+              <li>
+            </ul>
           <li>Lecture Slides</li>
           <li>Case Studies</li>
           <ul>
@@ -246,7 +280,5 @@ title: Lecture Materials
       </div>
     </div>
   </div>
-  
-
   
 </div> 

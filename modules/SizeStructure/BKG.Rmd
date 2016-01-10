@@ -1,0 +1,151 @@
+---
+layout: page
+title: Size Structure
+subtitle: Ogle's Notes
+author: Derek H. Ogle
+css: /css/codebox.css
+csl: ../../rhelpers/american-fisheries-society.csl
+bibliography: ../../rhelpers/NRS349.bib
+output: 
+  html_document: 
+    fig_width: 3.5
+    fig_height: 3.5
+    self_contained: no
+---
+```{r echo=FALSE, eval=FALSE}
+# First line renders an appropriate HTML file for the webpage
+# Second line makes the script file
+# RUN BOTH MANUALLY (following using Knit HTML button)
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/SizeStructure/")
+source("../../rhelpers/Rhelpers.R")
+modHTML("BKG",need2render=FALSE)
+if (require(FSA)) purl2("BKG.Rmd",topnotes="")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE, warnings=FALSE}
+# ===== BEGIN -- THIS CAN BE IGNORED =========================
+# Setup of knitr
+source("../../rhelpers/knitr_setup.R")
+# declare packages used
+rqrd <- c("FSA","captioner","knitr")
+library(FSA)
+library(FSAdata)
+# setup figure, table, and equation captioning
+library(captioner)
+
+figcaps <- captioner(prefix="Figure")
+figcaps("","")
+
+tblcaps <- captioner(prefix="Table")
+tblcaps("PSDRanges","Suggested target ranges for size structure indices for a variety of species.  From @Willisetal1993.")
+tblcaps("MgmtOpts","Suggested target ranges for size structure indices for Largemouth Bass and Bluegill under three different management options.  From @Willisetal1993.")
+
+eqncaps <- captioner(prefix="Equation")
+eqncaps("")
+# ===== END -- THIS CAN BE IGNORED ===========================
+```
+
+@NeumannAllen2007 noted that
+
+> Size structure is one of the most commonly used fisheries assessment tools.  The size structure of a fish population at any point in time can be considered a snapshot that reflects the interactions of the dynamic rates of recruitment, growth, and mortality.  Thus, length-frequency data provide valuable insight into the dynamics of fish populations and help identify problems such as inconsistent year-class strength, slow growth, or excessive mortality.
+
+This module will focus on the two most common methods of assessing the size structure of a fish population: length frequency histograms and size structure indices.
+
+\ 
+
+## Length Frequencies
+
+A length frequency shows the number (i.e., frequency) of fish in each of several length categories that cover the range of observed lengths.  The width of the length categories is important, as too few intervals may mask important information in the length frequency, whereas too many intervals does not provide a useful summary.  @AndersonNeumann1996 suggested 1-cm (0.5-in) intervals for fish that reach 30 cm (12 in), 2-cm (1-in) intervals for fish that reach 60 cm (24 in), and 5-cm (2-in) intervals for fish that reach 150 cm (60 in) maximum length.  Of course, these are suggestions and you should use your best judgment when constructing the intervals.
+
+\ 
+
+## Proportional Size Distribution ($PSD$)
+
+@Gabelhouse1984 introduced the "five-cell length categorization system" that defines lengths for so-called "stock", "quality", "preferred", "memorable", and "tropy" size individuals of a wide variety of species.[^1]  For example, stock-sized fish are at least 20\% of the world-record length with the idea that fish smaller than this size have very little recreational value and that fish larger than this size are generally mature and available to most gears [@Gabelhouse1984].  Additionally, quality-sized fish are at least 36% of world-record length and are generally fish that most anglers would like to catch [@Gabelhouse1984].  It should be noted that all quality-sized fish are also stock-sized fish -- i.e., the quality-sized fish are a subset of the stock-sized fish.  Indeed, all fish in the "higher" categories also belong to the previous categories.
+
+The minimum lengths for the five-cells in Gabelhouse's system can be obtained with `psdVal()` from `FSA`.  This function requires the name of the species, contained in quotes and spelled correctly,[^2] as its first argument.  There are two other optional arguments to `psdVal()`.  The `units=` argument controls whether the results are returned in millimeters (`="mm"`; default), centimeters (`="cm"`), or inches (`="in"`).  Finally, `incl.zero=` controls whether the list of values returned will include a zero as the first value in the vector (`=TRUE`; default) or not (`=FALSE`).  Including a zero in the vector is particularly useful in the common situation where the data set contains fish that are smaller then the stock size.  Thus, a vector containing the five-cell length, in inches, categories (and zero) for Bluegills is obtained with
+
+```{r}
+( bg.cuts <- psdVal("Bluegill",units="in") )
+```
+
+Length frequency data can be summarized into a few useful statistics called proportional size distribution indices ($PSD-X$; @Guyetal2007).[^3]  A $PSD-X$ index is defined as the proportion of stock-sized fish that are also greater than some other larger size category.  Specifically,
+
+$$ PSD-X = \frac{\text{Number of fish $\geq$ specified length}}{\text{Number of fish $\geq$ stock length}}*100 $$
+
+The $X$ in this formula is replaced with a letter or descriptor specific to the length specification in the numerator.  For example, $PSD-Q$ would have a numerator that is the "number of fish greater than or equal to `quality' size" and would be interpreted as the proportion of stock-sized fish that are also quality-sized fish.  $PSD-Q$ is the most common calculation and is often just referred to as $PSD$ [@Guyetal2007].  Similarly, $PSD-P$ would use the preferred-size length in the numerator and is the proportion of stock-sized fish that are also preferred-size.  Finally, $PSD-7$ would use 7 inches in the numerator and is the proportion of stock-sized fish that are greater than or equal to 7 inches.  The $PSD-X$ is a percentage but it is commonly referred to as a proportion and shown without the percentage sign.
+
+A confidence interval for the $PSD-X$ value is computed using binomial distribution theory.  The binomial distribution theory is appropriate in this case because each fish of at least stock-size is recorded as to having also been of the specific size in the numerator or not (i.e., two choices) and the number of "successes" (i.e., of the specific size) is of interest to the biologist.
+
+\ 
+
+## $PSD-X$ Interpretation
+As a **very general** rule-of-thumb, a population of fish is said to be "in balance" if the $PSD$  value is between 30 and 70.  Different ranges have been proposed for different species (`r tblcaps("PSDRanges",display="cite")`).  The idea behind these target ranges is that if the $PSD$  value is very low then there are few large fish in the population, whereas a very large $PSD$  indicates that there are few small fish in the population.  These target ranges should be used with caution, though, as an "in balance" $PSD$  can be produced from a wide variety of size structures.  For example, three populations of Bluegills may have the same $PSD$  (and number of quality fish) but one population may have all quality fish between 6 and 7 inches, one population may have all quality fish greater than 9 inches (with fish between 6 and 9 inches absent), and the third population may have all quality fish spread more evenly between 6 and 9 inches.  The reaction of the fish manager will likely be different for these three populations, but a simple look at the $PSD$  would not detect the differences.  Thus, the $PSD$  is a useful summary, but it should not be used without also examining length frequency histograms or other $PSD-X$ values.
+
+\ 
+
+`r tblcaps("PSDRanges")`
+
+<table class="table" style="width:75%">
+<thead>
+<tr><td>Species</td><td>$PSD$</td><td>$PSD-P$</td><td>$PSD-M$</td><td>References</td></tr>
+</thead>
+<tbody>
+<tr><td>Largemouth Bass</td><td>40-70</td><td>10-40</td><td>0-10</td><td>@Gabelhouse1984</td></tr> 
+<tr><td>Bluegill</td><td>20-60</td><td>5-20</td><td>0-10</td><td>@Anderson1985</td></tr> 
+<tr><td>Crappies (midwestern ponds)</td><td>30-60</td><td>$>$10</td><td>--</td><td>@Gabelhouse1984b</td></tr> 
+<tr><td>Crappies (Kansas reservoirs)</td><td>40-70</td><td>10-40</td><td>0-10</td><td>@Willis1984</td></tr> 
+<tr><td>White bass</td><td>40-70</td><td>10-40</td><td>0-10</td><td>@Willis1984</td></tr> 
+<tr><td>Walleye</td><td>30-60</td><td>--</td><td>--</td><td>@AndersonWeithman1978</td></tr>
+<tr><td>Northern pike</td><td>30-60</td><td>--</td><td>--</td><td>@AndersonWeithman1978</td></tr> 
+<tr><td>Yellow perch</td><td>30-60</td><td>--</td><td>--</td><td>@AndersonWeithman1978</td></tr> 
+</tbody>
+</table>
+
+A $PSD$  value should also not be interpreted without considering other species and specific management goals.  For example, @Willisetal1993} proposed target $PSD$  and $PSD-P$ values for Bluegills and Largemouth Bass under three different management scenarios  (`r tblcaps("MgmtOpts",display="cite")`).
+
+\ 
+
+`r tblcaps("MgmtOpts")`
+
+<table class="table" style="width:75%">
+<thead>
+<tr><td><td></td><td colspan=3><b>Largemouth Bass</b></td><td></td><td colspan=2><b>Bluegill</b></td></tr>
+<tr><td>Option</td><td>$PSD$</td><td>$PSD-P$</td><td>$PSD-M$</td><td></td><td>$PSD$</td><td>$PSD-P$</td></tr>
+</thead>
+<tbody>
+<tr><td>Panfish</td><td>20-40</td><td>0-10</td><td>--</td><td></td><td>50-80</td><td>10-30</td></tr>
+<tr><td>Balance</td><td>40-70</td><td>10-40</td><td>0-10</td><td></td><td>20-60</td><td>5-20</td></tr>
+<tr><td>Big bass</td><td>50-80</td><td>30-60</td><td>10-25</td><td></td><td>10-50</td><td>0-10</td></tr>
+</tbody>
+</table>
+
+A so-called "tic-tac-toe" graph is one method of visually representing size structure indices for a predator and a prey.  A tic-tac-toe graph plots the $PSD-X$ value for the predator on the x-axis and the prey on the y-axis.  Target ranges are highlighted on each axis with shading such that there are vertical and horizontal stripes that "cut" the graph into nine squares.  The "center square" is where the predator and the prey would both fall into their respective target ranges.
+
+\ 
+
+# Calculations in R
+
+Methods for performing these calculations in R are described in Chapter 6 of @Ogle2016.[^IFARScripts]
+
+\ 
+
+--------------------------------------------------------------
+
+```{r echo=FALSE, results='asis'}
+reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="BKG.R",RMarkdown="BKG.Rmd"))
+```
+
+--------------------------------------------------------------
+
+\ 
+
+## References
+
+[^IFARScripts]: Scripts for these calculations [are here](http://derekogle.com/IFAR/scripts/).
+
+[^1]: The list of known species for which length categories have been defined can be seen with `psdVal(`.
+
+[^2]: Spelled correctly means spelled as it appears in the function.  You can see a list of all species stored in the function by typing `psdVal()`, without any arguments.
+
+[^3]: These indices were formerly called the proportional stock density and relative stock density (RSD).

@@ -158,7 +158,7 @@ title: Lecture Materials
               <li><a href="Growth/BKG.html">Ogle Notes</a></li>
               <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 12.1-12.3</li>
             </ul>
-          <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
+          <li><a href="Growth/PPT.pptx">Lecture Slides</a></li>
           <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_B.html">#2</a></li>
         </ul>
       </div>
@@ -177,10 +177,18 @@ title: Lecture Materials
         <ul>
           <li>Pre-Readings</li>
             <ul>
+              <li><a href="SizeStructure/BKG.html">Ogle Notes</a></li>
+              <li><a href="http://www.bassresource.com/fish_biology/catch_release.html">Anderson's "Catch & Release or Selective Harvest"</a></li>
               <li><a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 6</li>
             </ul>
-          <li>Lecture Slides</li>
+          <li><a href="SizeStructure/PPT.pptx">Lecture Slides</a></li>
           <li><a href="http://derekogle.com/IFAR/exercises/SizeStrux_SaginawYP.html">Homework</a></li>
+          <li>Case Studies</li>
+          <ul>
+            <li>Whittlesey Creek Catches -- <a href="SizeStructure/Cases/Whittlesey2011.xlsx">Data</a></li>
+            <li>Bluegill Catch and Gear Bias -- <a href="SizeStructure/Cases/LakeLouiseBG.xlsx">Data</a>, <a href="SizeStructure/Cases/Laarman_Ryckman_1982.pdf">L&R</a>, <a href="SizeStructure/Cases/Schultz_Haines_2005.pdf">S&H</a></li>
+            <li>Goedde-Coble -- <a href="SizeStructure/Cases/GoeddeCobleData.xlsx">Data</a></li>
+          </ul>
         </ul>
       </div>
     </div>

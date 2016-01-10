@@ -179,7 +179,7 @@ title: Lecture Materials
               <li><a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 6</li>
             </ul>
           <li>Lecture Slides</li>
-          <li>Homework</li>
+          <li><a href="http://derekogle.com/IFAR/exercises/SizeStrux_SaginawYP.html">Homework</a></li>
         </ul>
       </div>
     </div>
@@ -201,7 +201,7 @@ title: Lecture Materials
               <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 7.1-7.4, Chapter 8</li>
             </ul>
           <li>Lecture Slides</li>
-          <li>Homework</li>
+          <li><a href="http://derekogle.com/IFAR/exercises/Inch_ConditionBluegill.html">Homework</a></li>
         </ul>
       </div>
     </div>
@@ -223,7 +223,7 @@ title: Lecture Materials
               <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
             </ul>
           <li>Lecture Slides</li>
-          <li>Homework</li>
+          <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_B.html">XC</a></li>
         </ul>
       </div>
     </div>
@@ -265,7 +265,7 @@ title: Lecture Materials
         <ul>
           <li>Pre-Readings</li>
             <ul>
-              <li>
+              <li></li>
             </ul>
           <li>Lecture Slides</li>
           <li>Case Studies</li>

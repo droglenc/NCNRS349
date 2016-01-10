@@ -39,7 +39,11 @@ css: /css/codebox.css
 <li><span class="math">\(K\)</span> is <em>not</em> a growth rate <span class="citation">(Ricker 1975)</span>. The units of <span class="math">\(K\)</span> can be seen by algebraically solving Equation 1 for <span class="math">\(K\)</span>,</li>
 </ul>
 <p><span class="math">\[ 1-\frac{E[L|t]}{L_{\infty}} = -e^{-K(t-t_{o})} \]</span> <span class="math">\[ log\left(\frac{1-E[L|t]}{L_{\infty}}\right) = -K(t-t_{o}) \]</span> <span class="math">\[ K = \frac{log\left(\frac{L_{\infty}-E[L|t]}{L_{\infty}}\right)}{t-t_{o}} \]</span></p>
-<p>to notice that the units in the numerator disappear. Thus, the units of <span class="math">\(K\)</span> are in <span class="math">\(time^{-1}\)</span> rather than a change in length for a unit time as required by a growth rate.</p>
+<ul style="list-style-type:disc">
+<li>
+to notice that the units in the numerator disappear. Thus, the units of <span class="math">\(K\)</span> are in <span class="math">\(time^{-1}\)</span> rather than a change in length for a unit time as required by a growth rate.
+</li>
+</ul>
 <ul>
 <li><span class="citation">Schnute and Fournier (1980)</span> offer two related interpretations of the meaning of <span class="math">\(K\)</span>. First, <span class="math">\(K\)</span> “measures the exponential rate of approach to the asymptotic size.” Second, the value <span class="math">\(e^{-K}\)</span> is “the fixed fraction by which the annual growth increment is multiplied each year.” This last definition is seen by the relation</li>
 </ul>
@@ -111,7 +115,7 @@ css: /css/codebox.css
 <h2>Parameterization Comparisons</h2>
 <p>As noted previously, the different parameterizations of the VBGF are the same model with different parameters (Figure 6). Estimates of parameters that appear in more than one of the parameterizations will be the same among the parameterizations (Table 2). The parameterizations based on expected values (i.e., Schnute and Francis) will generally require fewer iterations to converge when fitting and will result in lower correlations among parameter estimates (Table 2).</p>
 <p>Table 2: Parameter estimates and model results from fitting different parameterizations of the VBGF to the male Atlantic Croaker data. Note that <span class="math">\(L_{1}\)</span>, <span class="math">\(L_{2}\)</span>, and <span class="math">\(L_{3}\)</span> are not comparable between parmaterizations; <span class="math">\(L_{1}\)</span>, <span class="math">\(L_{2}\)</span>, and <span class="math">\(L_{3}\)</span> correspond to ages 2, 5.5, and 9 in the Francis parameterization; “iters” is the number of iterations to convergence; and <span class="math">\(r_{max}\)</span> and <span class="math">\(r_{mean}\)</span> are the maximum and average absolute value of correlation coefficients among the three parameters.</p>
-% latex table generated in R 3.2.3 by xtable 1.8-0 package % Sun Jan 10 12:41:28 2016
+% latex table generated in R 3.2.3 by xtable 1.8-0 package % Sun Jan 10 12:44:50 2016
 
 <p><img src="BKG_files/figure-html/unnamed-chunk-11-1.png" title="" alt="" width="336" /></p>
 <p>Figure 6: Fits of the typical (blue), Schnute (red), and Francis (green) parameterizations of the VBGF to size-at-age Atlantic Croaker data (auto-generated starting values were used for all parameterizations). Note that the results of all fits are identical and, thus, the fitted lines are directly on top of each other. Different colors and different line widths were used to illustrate this point but may not be readily apparent on the screen or printed page.</p>
@@ -127,7 +131,7 @@ css: /css/codebox.css
 <h2>Reproducibility Information</h2>
 <ul>
 <li><strong>Compiled Date:</strong> Sun Jan 10 2016</li>
-<li><strong>Compiled Time:</strong> 12:41:28 PM</li>
+<li><strong>Compiled Time:</strong> 12:44:50 PM</li>
 <li><strong>R Version:</strong> R version 3.2.3 (2015-12-10)</li>
 <li><strong>System:</strong> Windows, i386-w64-mingw32/i386 (32-bit)</li>
 <li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>

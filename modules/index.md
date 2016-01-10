@@ -155,7 +155,7 @@ title: Lecture Materials
     <div id="cCondition" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 7.1-7.4, Chapter 8</li>
+          <li>Pre-Readings -- <a href="http://snr.unl.edu/necoopunit/downloads/Publications/Kevin%20Pope%20publ/chapter10.pdf">Pope and Kruse (2007) 10.1-10.3, 10.6 & 10.7 (<i>not the boxes</i>)</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 7.1-7.4, Chapter 8</li>
           <li>Lecture Slides</li>
           <li>Homework</li>
         </ul>
@@ -172,7 +172,7 @@ title: Lecture Materials
     <div id="cRecruitment" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
+          <li>Pre-Readings -- <a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
           <li>Lecture Slides</li>
           <li>Homework</li>
         </ul>

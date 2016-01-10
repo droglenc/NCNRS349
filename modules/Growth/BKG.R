@@ -206,4 +206,4 @@ curve(vb4(x,L1=coef(fit4)[1],L2=coef(fit4)[2],L3=coef(fit4)[3],t1=t1,t3=t3),
       from=0,to=10,lwd=2,col="green",add=TRUE)
 
 
-# Script created at 2016-01-10 12:39:39
+# Script created at 2016-01-10 12:41:54

@@ -137,7 +137,7 @@ $$ 1-\frac{E[L|t]}{L_{\infty}} = -e^{-K(t-t_{o})} $$
 $$ log\left(\frac{1-E[L|t]}{L_{\infty}}\right) = -K(t-t_{o}) $$
 $$ K = \frac{log\left(\frac{L_{\infty}-E[L|t]}{L_{\infty}}\right)}{t-t_{o}} $$
 
-to notice that the units in the numerator disappear.  Thus, the units of $K$ are in $time^{-1}$ rather than a change in length for a unit time as required by a growth rate.
+\indent to notice that the units in the numerator disappear.  Thus, the units of $K$ are in $time^{-1}$ rather than a change in length for a unit time as required by a growth rate.
 
 * @SchnuteFournier1980 offer two related interpretations of the meaning of $K$.  First, $K$ "measures the exponential rate of approach to the asymptotic size."  Second, the value $e^{-K}$ is "the fixed fraction by which the annual growth increment is multiplied each year."  This last definition is seen by the relation
 

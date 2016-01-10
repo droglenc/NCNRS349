@@ -138,7 +138,7 @@ title: Lecture Materials
     <div id="cSizeStrux" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section XXX</li>
+          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 6</li>
           <li>Lecture Slides</li>
           <li>Homework</li>
         </ul>
@@ -155,7 +155,7 @@ title: Lecture Materials
     <div id="cCondition" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section XXX</li>
+          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Sections 7.1-7.4, Chapter 8</li>
           <li>Lecture Slides</li>
           <li>Homework</li>
         </ul>
@@ -172,7 +172,7 @@ title: Lecture Materials
     <div id="cRecruitment" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section XXX</li>
+          <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
           <li>Lecture Slides</li>
           <li>Homework</li>
         </ul>
@@ -193,7 +193,7 @@ title: Lecture Materials
           <li>Lecture Slides</li>
           <li>Case Studies</li>
           <ul>
-            <li></li>
+            <li>X</li>
           </ul>
         </ul>
       </div>

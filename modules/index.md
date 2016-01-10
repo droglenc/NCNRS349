@@ -189,7 +189,7 @@ title: Lecture Materials
     <div id="cMgmtIntro" class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Pre-Readings -- 
+          <li>Pre-Readings -- </li>
           <li>Lecture Slides</li>
           <li>Case Studies</li>
           <ul>

@@ -5,6 +5,7 @@ title: Lecture Materials
 
 <div class="panel-group" id="accordion">
 
+<!-- #### CLASS INTRODUCTION #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -30,6 +31,7 @@ title: Lecture Materials
     </div>
   </div>
 
+<!-- #### ABUNDANCE #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -41,13 +43,21 @@ title: Lecture Materials
       <ul class="list-unstyled">
         <li><strong>CPE/CPUE</strong></li>
           <ul>
-            <li>Pre-Readings -- <a href="Abundance/CPE/HubertFabrizio-2007.pdf">Hubert & Fabrizio (2007)</a>, <a href="http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff">Boxes 6.3 & 6.4 in Hubert <i>et al.</i> (2012)</a></li>
+            <li>Pre-Readings</li>
+            <ul>
+              <li><a href="Abundance/CPE/HubertFabrizio-2007.pdf">Hubert & Fabrizio (2007)</a></li>
+              <li><a href="http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff">Boxes 6.3 & 6.4 in Hubert <i>et al.</i> (2012)</a></li>
+            </ul>
             <li><a href="Abundance/CPE/PPT.pptx">Lecture Slides</a></li>
             <li>Post-Reading -- <a href="http://icesjms.oxfordjournals.org/content/63/8/1373.full.pdf">Maunder <i>et al.</i> (2006)</a></li>
           </ul>
         <li><strong>Depletion Estimates</strong></li>
           <ul>
-            <li>Pre-Readings -- <a href="Abundance/Depletion/BKG.html">Ogle Notes</a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 10</li>
+            <li>Pre-Readings</li>
+            <ul>
+              <li><a href="Abundance/Depletion/BKG.html">Ogle Notes</a></li>
+              <li><a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 10</li>
+            </ul>
             <li><a href="Abundance/Depletion/PPT.pptx">Lecture Slides</a></li>
             <li>Post-Reading -- <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf">Rosenberger (Box 11.1) in Pope <i>et al.</i> (2010)</a></li>
             <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Homework</a></li>
@@ -59,7 +69,12 @@ title: Lecture Materials
           </ul>
         <li><strong>Mark-Recapture -- Single Census, Closed Population</strong></li>
           <ul>
-            <li>Pre-Readings -- <a href="Abundance/MarkRecap/BKG.html">Ogle Notes</a>, <a href="http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf">Section 8.3.1 in Hayes <i>et al.</i></a>, <a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.2</li>
+            <li>Pre-Readings</li>
+            <ul>
+              <li><a href="Abundance/MarkRecap/BKG.html">Ogle Notes</a></li>
+              <li><a href="http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf">Section 8.3.1 in Hayes <i>et al.</i></a></li>
+              <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.2</li>
+            </ul>
             <li><a href="Abundance/MarkRecap/CE2.html">Class Exercise</a></li>
             <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html">XC</a></li>
           </ul>
@@ -68,6 +83,7 @@ title: Lecture Materials
     </div>
   </div>
 
+<!-- #### AGE #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -86,6 +102,7 @@ title: Lecture Materials
     </div>
   </div>
 
+<!-- #### MORTALITY #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -112,6 +129,7 @@ title: Lecture Materials
     </div>
   </div>
 
+<!-- #### GROWTH #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -129,6 +147,7 @@ title: Lecture Materials
     </div>
   </div>
 
+<!-- #### SIZE STRUCTURE #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -146,6 +165,7 @@ title: Lecture Materials
     </div>
   </div>
 
+<!-- #### CONDITION #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -163,6 +183,7 @@ title: Lecture Materials
     </div>
   </div>
 
+<!-- #### RECRUITMENT #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -180,6 +201,7 @@ title: Lecture Materials
     </div>
   </div>
 
+<!-- #### MANAGEMENT INTRODUCTION #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -200,6 +222,7 @@ title: Lecture Materials
     </div>
   </div>
 
+<!-- #### MANAGEMENT TOOLS #### -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">

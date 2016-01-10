@@ -132,7 +132,9 @@ where
 The parameters of `r eqncaps("VBModelTypicalLength",display="cite")` have strict meanings that have been misunderstood in past work.  The following items address some of these misunderstandings.
 
 * $L_{\infty}$ is *not* the maximum length of the animal.  Rather $L_{\infty}$ is the asymptote for the model of *average* length-at-age [@Francis1988].  As with any average, some individuals will be larger than average; thus, some animals will be larger than $L_{\infty}$.  This is illustrated in `r figcaps("VBModelTypicalEx",display="cite")`.
+
 * Furthermore, @Francis1988 argues that $L_{\infty}$ only has meaning in fish populations where "mortality is low enough to allow fish to reach an age at which the mean length (virtually) ceases to increase."
+
 * $K$ is *not* a growth rate [@Ricker1975].  The units of $K$ can be seen by algebraically solving `r eqncaps("VBModelTypicalLength",display="cite")` for $K$,
 
 $$ 1-\frac{E[L|t]}{L_{\infty}} = -e^{-K(t-t_{o})} $$
@@ -147,7 +149,9 @@ $$ K = \frac{log\left(\frac{L_{\infty}-E[L|t]}{L_{\infty}}\right)}{t-t_{o}} $$
 
 $$ E[L|t=i+2]-E[L|t=i+1] = e^{-K}(E[L|t=i+1]-E[L|t=i]) \quad \quad \text{`r paste0("(",eqncaps("VBKdefn",display="num"),")")`}  $$
 
-where, because $K>0$, the quantity $e^{-K}$ is a decimal.  Thus, each succeeding growth increment is a constant fraction of the current growth increment indicating that growth slows as the fish gets older.
+<ul style="list-style-type:none">
+  <li>where, because $K>0$, the quantity $e^{-K}$ is a decimal.  Thus, each succeeding growth increment is a constant fraction of the current growth increment indicating that growth slows as the fish gets older.</li>
+</ul>
 
 * $t_{0}$, despite its definition above, is a modeling artifact and not a biological parameter [@SchnuteFournier1980].  The $t_{0}$ parameter is included in `r eqncaps("VBModelTypicalLength",display="cite")` to adjust or "correct" the model for the initial size of the animal as most of the models do not pass through the origin.  This is illustrated in `r figcaps("VBModelTypicalEx",display="cite")`.  @Beverton1954 said "It must be remembered that the constant $t_{0}$ is largely artificial, insofar as it defines the age at which the organism would be of zero length if it grew throughout life with the same pattern of growth as in the post-larval stage."  In addition, @BevertonHolt1957 stated that "in practice, the constant $t_{0}$ must be regarded as quite artificial."
 
@@ -352,10 +356,11 @@ $$ L_{\infty} = L_{1} + \frac{L_{3}-L_{1}}{1-r^{2}} $$
 $$ K = \frac{-2log(r)}{t_{3}-t_{1}} $$
 $$ t_{0} = t_{1} + \frac{1}{K}log\left(\frac{L_{\infty}-L_{1}}{L_{\infty}}\right) $$
 
+\ 
 
 ## Parameterization Comparisons
 
-```{r echo=FALSE, results='hide'}
+```{r echo=FALSE, results='markup'}
 ## Calculations required to produce the parameter comparison table
 ## vb1, fit1 ==> typical
 ## vb2, fit2 ==> original

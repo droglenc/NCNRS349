@@ -463,7 +463,7 @@ curve(vb4(x,L1=coef(fit4)[1],L2=coef(fit4)[2],L3=coef(fit4)[3],t1=t1,t3=t3),
 
 # Calculations in R
 
-Methods for performing these calculations in R are described in Sections 11.1 and 11.2 of @Ogle2016.[^IFARScripts]
+Methods for performing these calculations in R are described in Sections 12.1-12.3 of @Ogle2016.[^IFARScripts]
 
 \ 
 

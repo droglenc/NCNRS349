@@ -76,29 +76,25 @@ In the statistical literature, longitudinal data is data that occurs when multip
 
 Catch data from a single year across many cohorts of fish will be identical to longitudinal data of a single cohort if each cohort sampled began with the same number of fish (i.e., recruitment is constant) and if the mortality rate is constant across all ages and years.  For example, the catches-at-age of the hypothetical 2002 and 2006 cohorts is shown on diagonals in `r tblcaps("CatchCurveCross",display="cite")` and are equal to the catch-at-age for fish in the 2009 capture year.  The catch in a single year is called cross-sectional data because it "crosses" several cohorts of fish.
 
+\ 
+
 `r tblcaps("CatchCurveCross")`
  
-\begin{table}[h]
-\centering
-\begin{tabular}{c|ccccccc>{\columncolor[gray]{0.8}}ccccc|}
-\multicolumn{1}{c}{\widen{-2}{7}{}} & \multicolumn{12}{c}{Capture Year} \\
-\cline{2-13}
-Age & 2002 & 2003 & 2004 & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 2013 \\
-\hline
-0 & 50.0 & 50.0 & 50.0 & 50.0 & 50.0 & 50.0 & 50.0 & 50.0 & 50.0 & 50.0 & 50.0 & 50.0 \\
-1 & 35.0 & 35.0 & 35.0 & 35.0 & 35.0 & 35.0 & 35.0 & 35.0 & 35.0 & 35.0 & 35.0 & 35.0 \\
-2 & 24.5 & 24.5 & 24.5 & 24.5 & 24.5 & 24.5 & 24.5 & 24.5 & 24.5 & 24.5 & 24.5 & 24.5 \\
-3 & 17.1 & 17.1 & 17.1 & 17.1 & 17.1 & 17.1 & 17.1 & 17.1 & 17.1 & 17.1 & 17.1 & 17.1 \\
-4 & 12.0 & 12.0 & 12.0 & 12.0 & 12.0 & 12.0 & 12.0 & 12.0 & 12.0 & 12.0 & 12.0 & 12.0 \\
-5 &  8.4 &  8.4 &  8.4 &  8.4 &  8.4 &  8.4 &  8.4 &  8.4 &  8.4 &  8.4 &  8.4 &  8.4 \\
-6 &  5.9 &  5.9 &  5.9 &  5.9 &  5.9 &  5.9 &  5.9 &  5.9 &  5.9 &  5.9 &  5.9 &  5.9 \\
-7 &  4.1 &  4.1 &  4.1 &  4.1 &  4.1 &  4.1 &  4.1 &  4.1 &  4.1 &  4.1 &  4.1 &  4.1 \\
-8 &  2.9 &  2.9 &  2.9 &  2.9 &  2.9 &  2.9 &  2.9 &  2.9 &  2.9 &  2.9 &  2.9 &  2.9 \\
-9 &  2.0 &  2.0 &  2.0 &  2.0 &  2.0 &  2.0 &  2.0 &  2.0 &  2.0 &  2.0 &  2.0 &  2.0 \\
-10 & 1.4 &  1.4 &  1.4 &  1.4 &  1.4 &  1.4 &  1.4 &  1.4 &  1.4 &  1.4 &  1.4 &  1.4 \\
-\cline{2-13}
-\end{tabular}
-\end{table}
+<table style="width:80%">
+<tr><th></th><th colspan="12"><b>Capture Year</b></th></tr>
+<tr><td><b>Age</b></td><td><b>2002</b></td><td><b>2003</b></td><td><b>2004</b></td><td><b>2005</b></td><td><b>2006</b></td><td><b>2007</b></td><td><b>2008</b></td><td><b>2009</b></td><td><b>2010</b></td><td><b>2011</b></td><td><b>2012</b></td><td><b>2013</b></td></tr>
+<tr><td>0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td></tr>
+<tr><td>1</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td></tr>
+<tr><td>2</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td></tr>
+<tr><td>3</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td></tr>
+<tr><td>4</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td></tr>
+<tr><td>5</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td></tr>
+<tr><td>6</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td></tr>
+<tr><td>7</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td></tr>
+<tr><td>8</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td></tr>
+<tr><td>9</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td></tr>
+<tr><td>10</td><td>1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td></tr>
+</table>
 
 \ 
 
@@ -418,24 +414,19 @@ $$ SE_{\hat{Z}} = \frac{1-e^{-0.7018264}}{\sqrt{235*e^{-0.7018264}}} = 0.0467275
 
 An approximate 95% confidence interval for $Z$ is $0.7018\pm1.96(0.0467)$ or (0.6102,0.7934).
 
+\ 
+
 `r tblcaps("BrkTrtDataCR")`
 
-\begin{table}[h]
-\centering
-\begin{tabular}{c|ccc}
-\hline\hline
-Age & Recoded Age & Catch & Recode*Catch\\
-\hline
-2 & 0 & 112 & 0 \\
-3 & 1 & 45 & 45 \\
-4 & 2 & 58 & 116 \\
-5 & 3 & 12 & 36 \\
-6 & 4 & 8 & 32 \\
-\hline
-sum & & 235 & 229\\
-\hline\hline
-\end{tabular}
-\end{table}
+<table style="width:40%">
+<tr><td><b>Age</b></td><td><b>Recoded Age</b></td><td><b>Catch</b></td><td><b>Recode*Catch</b></td></tr>
+<tr><td>2</td><td>0</td><td>112</td><td>0</td></tr>
+<tr><td>3</td><td>1</td><td>45</td><td>45</td></tr>
+<tr><td>4</td><td>2</td><td>58</td><td>116</td></tr>
+<tr><td>5</td><td>3</td><td>12</td><td>36</td></tr>
+<tr><td>6</td><td>4</td><td>8</td><td>32</td></tr>
+<tr><td><b>sum</b></td><td></td><td><b>235</b></td><td><b>229</b></td></tr>
+<table>
 
 ### Which Ages?
 

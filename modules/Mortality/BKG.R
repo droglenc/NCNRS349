@@ -220,4 +220,4 @@ matplot(Ages,log(cc.4),type=c("l",rep("b",2)),cex=0.75,lwd=c(2,rep(1,2)),lty=1,p
 text(max(Ages)-1,max(log(cc.4))-0.5,"IV",cex=1.5)
 
 
-# Script created at 2015-12-29 12:26:33
+# Script created at 2016-01-10 13:42:17

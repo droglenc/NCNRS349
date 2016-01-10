@@ -191,8 +191,9 @@ d <- data.frame(mdls,sL0,sLinf,sK,st0,somega,sL1,sL2,sL3,SE,its,r.max,r.mean)
 d <- d[c(1,2,5,6,3,4),]
 
 names(d) <- c("Models","$L_{0}$","$L_{\\infty}$","$K$","$t_{0}$","$\\omega$","$L_{1}$","$L_{2}$","$L_{3}$","SE","iters","$r_{max}$","$r_{mean}$")
-xtbl.d <- xtable(d,digits=c(NA,NA,0,0,2,2,1,0,0,0,0,0,2,2),align="llrrrrrrrrrrrr")
-print(xtbl.d,include.rownames=FALSE,NA.string="-",
+xtbl.d <- xtable(d,digits=c(NA,NA,0,0,2,2,1,0,0,0,0,0,2,2),align=rep("c",14))
+print(xtbl.d,type="html",include.rownames=FALSE,NA.string="-",
+      html.table.attributes = getOption("xtable.html.table.attributes","border='0' style='width:80%'"),
       sanitize.colnames.function=function(x){x})
 
 # Plot the data
@@ -206,4 +207,4 @@ curve(vb4(x,L1=coef(fit4)[1],L2=coef(fit4)[2],L3=coef(fit4)[3],t1=t1,t3=t3),
       from=0,to=10,lwd=2,col="green",add=TRUE)
 
 
-# Script created at 2016-01-10 12:50:50
+# Script created at 2016-01-10 13:26:34

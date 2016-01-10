@@ -12,8 +12,267 @@ css: /css/codebox.css
 <div id="size-at-age-data" class="section level1">
 <h1>Size-at-Age Data</h1>
 <p>The raw data for size-at-age modeling consists of the measurement of size, either length or weight, and the assignment of age to individual fish at the time the fish was captured. This is called <em>length-at-capture</em>, <em>weight-at-capture</em>, and <em>age-at-capture</em> data. An example<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> of this type of data for length and age is shown in Table 1-Left and in Figure 1.</p>
+<p> </p>
 <p>Table 1: Length-at-age for a portion of a sample of male Atlantic Croakers (left) and average length-at-age (right) for all male Atlantic Croakers in 1999.</p>
-
+<div class="row">
+<div class="col-sm-4">
+<table class="table" style="width:75%">
+<thead>
+<tr>
+<th colspan="3">
+Individual Data
+</th>
+</tr>
+<tr>
+<td>
+Indiv
+</td>
+<td>
+Age
+</td>
+<td>
+Length
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+1
+</td>
+<td>
+248
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+2
+</td>
+<td>
+210
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+2
+</td>
+<td>
+225
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+2
+</td>
+<td>
+236
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+2
+</td>
+<td>
+240
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+2
+</td>
+<td>
+245
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+2
+</td>
+<td>
+255
+</td>
+</tr>
+<tr>
+<td>
+8
+</td>
+<td>
+2
+</td>
+<td>
+258
+</td>
+</tr>
+<tr>
+<td>
+9
+</td>
+<td>
+2
+</td>
+<td>
+263
+</td>
+</tr>
+<tr>
+<td>
+10
+</td>
+<td>
+2
+</td>
+<td>
+270
+</td>
+</tr>
+<tr>
+<td>
+11
+</td>
+<td>
+2
+</td>
+<td>
+292
+</td>
+</tr>
+<tr>
+<td>
+<span class="math">\(\vdots\)</span>
+</td>
+<td>
+<span class="math">\(\vdots\)</span>
+</td>
+<td>
+<span class="math">\(\vdots\)</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-sm-4">
+<table class="table" style="width:75%">
+<thead>
+<tr>
+<th colspan="2">
+Summarized Data
+</th>
+</tr>
+<tr>
+<td>
+Avg Age
+</td>
+<td>
+Avg Length
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+248.0
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+248.4
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+281.8
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+298.3
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+328.2
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+345.9
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+332.5
+</td>
+</tr>
+<tr>
+<td>
+8
+</td>
+<td>
+344.3
+</td>
+</tr>
+<tr>
+<td>
+9
+</td>
+<td>
+370.8
+</td>
+</tr>
+<tr>
+<td>
+10
+</td>
+<td>
+327.0
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p><img src="BKG_files/figure-html/unnamed-chunk-4-1.png" title="" alt="" width="336" /></p>
 <p>Figure 1: Length-at-age of male Atlantic Croaker. Red lines are the average length-at-age.</p>
 <p> </p>
@@ -121,9 +380,329 @@ where, because <span class="math">\(K&gt;0\)</span>, the quantity <span class="m
 <div id="parameterization-comparisons" class="section level2">
 <h2>Parameterization Comparisons</h2>
 <p>As noted previously, the different parameterizations of the VBGF are the same model with different parameters (Figure 6). Estimates of parameters that appear in more than one of the parameterizations will be the same among the parameterizations (Table 2). The parameterizations based on expected values (i.e., Schnute and Francis) will generally require fewer iterations to converge when fitting and will result in lower correlations among parameter estimates (Table 2).</p>
+<p> </p>
 <p>Table 2: Parameter estimates and model results from fitting different parameterizations of the VBGF to the male Atlantic Croaker data. Note that <span class="math">\(L_{1}\)</span>, <span class="math">\(L_{2}\)</span>, and <span class="math">\(L_{3}\)</span> are not comparable between parmaterizations; <span class="math">\(L_{1}\)</span>, <span class="math">\(L_{2}\)</span>, and <span class="math">\(L_{3}\)</span> correspond to ages 2, 5.5, and 9 in the Francis parameterization; “iters” is the number of iterations to convergence; and <span class="math">\(r_{max}\)</span> and <span class="math">\(r_{mean}\)</span> are the maximum and average absolute value of correlation coefficients among the three parameters.</p>
-% latex table generated in R 3.2.3 by xtable 1.8-0 package % Sun Jan 10 12:50:44 2016
-
+<!-- html table generated in R 3.2.3 by xtable 1.8-0 package -->
+<!-- Sun Jan 10 13:26:25 2016 -->
+<table border='0' style='width:80%'>
+<tr>
+<th>
+Models
+</th>
+<th>
+<span class="math">\(L_{0}\)</span>
+</th>
+<th>
+<span class="math">\(L_{\infty}\)</span>
+</th>
+<th>
+<span class="math">\(K\)</span>
+</th>
+<th>
+<span class="math">\(t_{0}\)</span>
+</th>
+<th>
+<span class="math">\(\omega\)</span>
+</th>
+<th>
+<span class="math">\(L_{1}\)</span>
+</th>
+<th>
+<span class="math">\(L_{2}\)</span>
+</th>
+<th>
+<span class="math">\(L_{3}\)</span>
+</th>
+<th>
+SE
+</th>
+<th>
+iters
+</th>
+<th>
+<span class="math">\(r_{max}\)</span>
+</th>
+<th>
+<span class="math">\(r_{mean}\)</span>
+</th>
+</tr>
+<tr>
+<td align="center">
+Typical
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+366
+</td>
+<td align="center">
+0.31
+</td>
+<td align="center">
+-1.71
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.97
+</td>
+<td align="center">
+0.93
+</td>
+</tr>
+<tr>
+<td align="center">
+Original
+</td>
+<td align="center">
+153
+</td>
+<td align="center">
+366
+</td>
+<td align="center">
+0.31
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.95
+</td>
+<td align="center">
+0.89
+</td>
+</tr>
+<tr>
+<td align="center">
+Gallucci Quinn
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+0.31
+</td>
+<td align="center">
+-1.71
+</td>
+<td align="center">
+115.3
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+1.00
+</td>
+<td align="center">
+0.98
+</td>
+</tr>
+<tr>
+<td align="center">
+Mooij
+</td>
+<td align="center">
+153
+</td>
+<td align="center">
+366
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+115.3
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.93
+</td>
+<td align="center">
+0.89
+</td>
+</tr>
+<tr>
+<td align="center">
+Schnute
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+0.31
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+210
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+357
+</td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.83
+</td>
+<td align="center">
+0.71
+</td>
+</tr>
+<tr>
+<td align="center">
+Francis
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+253
+</td>
+<td align="center">
+329
+</td>
+<td align="center">
+354
+</td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.08
+</td>
+<td align="center">
+0.05
+</td>
+</tr>
+</table></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
 <p><img src="BKG_files/figure-html/unnamed-chunk-11-1.png" title="" alt="" width="336" /></p>
 <p>Figure 6: Fits of the typical (blue), Schnute (red), and Francis (green) parameterizations of the VBGF to size-at-age Atlantic Croaker data (auto-generated starting values were used for all parameterizations). Note that the results of all fits are identical and, thus, the fitted lines are directly on top of each other. Different colors and different line widths were used to illustrate this point but may not be readily apparent on the screen or printed page.</p>
 <p> </p>
@@ -138,7 +717,7 @@ where, because <span class="math">\(K&gt;0\)</span>, the quantity <span class="m
 <h2>Reproducibility Information</h2>
 <ul>
 <li><strong>Compiled Date:</strong> Sun Jan 10 2016</li>
-<li><strong>Compiled Time:</strong> 12:50:44 PM</li>
+<li><strong>Compiled Time:</strong> 1:26:25 PM</li>
 <li><strong>R Version:</strong> R version 3.2.3 (2015-12-10)</li>
 <li><strong>System:</strong> Windows, i386-w64-mingw32/i386 (32-bit)</li>
 <li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>

@@ -155,6 +155,7 @@ title: Lecture Materials
         <ul>
           <li>Pre-Readings</li>
             <ul>
+              <li><a href="Growth/BKG.html">Ogle Notes</a></li>
               <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 12.1-12.3</li>
             </ul>
           <li><a href="Age/PPT.pptx">Lecture Slides</a></li>

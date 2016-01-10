@@ -73,29 +73,54 @@ Growth of individual organisms within a population is generally characterized by
 # Size-at-Age Data
 The raw data for size-at-age modeling consists of the measurement of size, either length or weight, and the assignment of age to individual fish at the time the fish was captured.  This is called *length-at-capture*, *weight-at-capture*, and *age-at-capture* data.  An example[^1] of this type of data for length and age is shown in `r tblcaps("GrowthDataEx",display="cite")`-Left and in `r figcaps("GrowthDataEx",display="cite")`.
 
+\ 
+
 `r tblcaps("GrowthDataEx")`
 
-\begin{table}[h]
-\centering
-\begin{tabular}{||rrr||rr||}
-\hline\hline
-Indiv & Age & Length & Avg Age & Avg Length \\ 
-\hline
-1 & 1 & 248 & 1 & 248.0 \\ 
-2 & 2 & 210 & 2 & 248.4 \\ 
-3 & 2 & 225 & 3 & 281.8 \\ 
-4 & 2 & 236 & 4 & 298.3 \\ 
-5 & 2 & 240 & 5 & 328.2 \\ 
-6 & 2 & 245 & 6 & 345.9 \\ 
-7 & 2 & 255 & 7 & 332.5 \\ 
-8 & 2 & 258 & 8 & 344.3 \\ 
-9 & 2 & 263 & 9 & 370.8 \\ 
-10 & 2 & 270 & 10 & 327.0 \\ 
-11 & 2 & 292 &  &  \\ 
-$\vdots$ & $\vdots$ & $\vdots$ & & \\
-\hline
-\end{tabular}
-\end{table}
+<div class="row">
+<div class="col-sm-4">
+<table class="table" style="width:75%">
+<thead>
+<tr><th colspan=3>Individual Data</th></tr>
+<tr><td>Indiv</td><td>Age</td><td>Length</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>1</td><td>248</td></tr> 
+<tr><td>2</td><td>2</td><td>210</td></tr> 
+<tr><td>3</td><td>2</td><td>225</td></tr> 
+<tr><td>4</td><td>2</td><td>236</td></tr> 
+<tr><td>5</td><td>2</td><td>240</td></tr> 
+<tr><td>6</td><td>2</td><td>245</td></tr> 
+<tr><td>7</td><td>2</td><td>255</td></tr> 
+<tr><td>8</td><td>2</td><td>258</td></tr> 
+<tr><td>9</td><td>2</td><td>263</td></tr> 
+<tr><td>10</td><td>2</td><td>270</td></tr> 
+<tr><td>11</td><td>2</td><td>292</td></tr> 
+<tr><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td></tr>
+</tbody>
+</table>
+</div>
+<div class="col-sm-4">
+<table class="table" style="width:75%">
+<thead>
+<tr><th colspan=2>Summarized Data</th></tr>
+<tr><td>Avg Age</td><td>Avg Length</td></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>248.0</td></tr> 
+<tr><td>2</td><td>248.4</td></tr> 
+<tr><td>3</td><td>281.8</td></tr> 
+<tr><td>4</td><td>298.3</td></tr> 
+<tr><td>5</td><td>328.2</td></tr> 
+<tr><td>6</td><td>345.9</td></tr> 
+<tr><td>7</td><td>332.5</td></tr> 
+<tr><td>8</td><td>344.3</td></tr> 
+<tr><td>9</td><td>370.8</td></tr> 
+<tr><td>10</td><td>327.0</td></tr> 
+</tbody>
+</table>
+</div>
+</div>
 
 ```{r echo=FALSE, par1=TRUE}
 plot(tl~age,data=crm,ylab="Total Length (mm)",pch=19)
@@ -360,7 +385,7 @@ $$ t_{0} = t_{1} + \frac{1}{K}log\left(\frac{L_{\infty}-L_{1}}{L_{\infty}}\right
 
 ## Parameterization Comparisons
 
-```{r echo=FALSE, results='markup'}
+```{r echo=FALSE}
 ## Calculations required to produce the parameter comparison table
 ## vb1, fit1 ==> typical
 ## vb2, fit2 ==> original
@@ -407,12 +432,15 @@ d <- d[c(1,2,5,6,3,4),]
 
 As noted previously, the different parameterizations of the VBGF are the same model with different parameters (`r figcaps("VBModelParamComp",display="cite")`).  Estimates of parameters that appear in more than one of the parameterizations will be the same among the parameterizations (`r tblcaps("VBModelParamComp",display="cite")`).  The parameterizations based on expected values (i.e., Schnute and Francis) will generally require fewer iterations to converge when fitting and will result in lower correlations among parameter estimates (`r tblcaps("VBModelParamComp",display="cite")`).
 
+\ 
+
 `r tblcaps("VBModelParamComp")`
 
 ```{r echo=FALSE, results='asis'}
 names(d) <- c("Models","$L_{0}$","$L_{\\infty}$","$K$","$t_{0}$","$\\omega$","$L_{1}$","$L_{2}$","$L_{3}$","SE","iters","$r_{max}$","$r_{mean}$")
-xtbl.d <- xtable(d,digits=c(NA,NA,0,0,2,2,1,0,0,0,0,0,2,2),align="llrrrrrrrrrrrr")
-print(xtbl.d,include.rownames=FALSE,NA.string="-",
+xtbl.d <- xtable(d,digits=c(NA,NA,0,0,2,2,1,0,0,0,0,0,2,2),align=rep("c",14))
+print(xtbl.d,type="html",include.rownames=FALSE,NA.string="-",
+      html.table.attributes = getOption("xtable.html.table.attributes","border='0' style='width:80%'"),
       sanitize.colnames.function=function(x){x})
 ```
 

@@ -8,6 +8,7 @@ css: /css/codebox.css
 
 
 <p>Growth of individual organisms within a population is generally characterized by an expression which is representative of individual growth of an “average” animal in the population. Individual growth is treated as an increase in either length or weight with increasing age. Several functions (or models) have been used to model the mean length or weight of fishes. One function, the von Bertalanffy growth function (VBGF), is the most popular and is the focus of this module.</p>
+<p> </p>
 <div id="size-at-age-data" class="section level1">
 <h1>Size-at-Age Data</h1>
 <p>The raw data for size-at-age modeling consists of the measurement of size, either length or weight, and the assignment of age to individual fish at the time the fish was captured. This is called <em>length-at-capture</em>, <em>weight-at-capture</em>, and <em>age-at-capture</em> data. An example<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> of this type of data for length and age is shown in Table 1-Left and in Figure 1.</p>
@@ -18,6 +19,7 @@ css: /css/codebox.css
 <p> </p>
 <p>Historical methods for estimating the parameters of growth models used the <em>average</em> length or weight at each observed age for the sample (Table 1-Right) rather than the original data recorded for each individual. The historical methods should no longer be used because high-speed computers can easily perform the calculations or iterations necessary for fitting the growth models to individual at-capture data. In addition, the historical methods lost important information about individual variability. The historical method is carefully discussed in <span class="citation">Ricker (1975)</span>.</p>
 <p>It is also common to use “back-calculation” techniques to reconstruct data for growth analyses. This type of data is called <em>retrospective size-at-age data</em> <span class="citation">(Jones 2000)</span>. Growth data generated in this way is generally inappropriate for the simple modeling techniques developed in this vignette because the back-calculated measurements are serially correlated (i.e., the techniques described here require independent observations). The problems created by serially-correlated data and techniques for handling serially-correlated data are described in <span class="citation">Jones (2000)</span>.</p>
+<p> </p>
 </div>
 <div id="typical-von-bertalanffy-growth-model" class="section level1">
 <h1>“Typical” von Bertalanffy Growth Model</h1>
@@ -39,7 +41,7 @@ css: /css/codebox.css
 <li><span class="math">\(K\)</span> is <em>not</em> a growth rate <span class="citation">(Ricker 1975)</span>. The units of <span class="math">\(K\)</span> can be seen by algebraically solving Equation 1 for <span class="math">\(K\)</span>,</li>
 </ul>
 <p><span class="math">\[ 1-\frac{E[L|t]}{L_{\infty}} = -e^{-K(t-t_{o})} \]</span> <span class="math">\[ log\left(\frac{1-E[L|t]}{L_{\infty}}\right) = -K(t-t_{o}) \]</span> <span class="math">\[ K = \frac{log\left(\frac{L_{\infty}-E[L|t]}{L_{\infty}}\right)}{t-t_{o}} \]</span></p>
-<ul style="list-style-type:disc">
+<ul style="list-style-type:none">
 <li>
 to notice that the units in the numerator disappear. Thus, the units of <span class="math">\(K\)</span> are in <span class="math">\(time^{-1}\)</span> rather than a change in length for a unit time as required by a growth rate.
 </li>
@@ -115,7 +117,7 @@ to notice that the units in the numerator disappear. Thus, the units of <span cl
 <h2>Parameterization Comparisons</h2>
 <p>As noted previously, the different parameterizations of the VBGF are the same model with different parameters (Figure 6). Estimates of parameters that appear in more than one of the parameterizations will be the same among the parameterizations (Table 2). The parameterizations based on expected values (i.e., Schnute and Francis) will generally require fewer iterations to converge when fitting and will result in lower correlations among parameter estimates (Table 2).</p>
 <p>Table 2: Parameter estimates and model results from fitting different parameterizations of the VBGF to the male Atlantic Croaker data. Note that <span class="math">\(L_{1}\)</span>, <span class="math">\(L_{2}\)</span>, and <span class="math">\(L_{3}\)</span> are not comparable between parmaterizations; <span class="math">\(L_{1}\)</span>, <span class="math">\(L_{2}\)</span>, and <span class="math">\(L_{3}\)</span> correspond to ages 2, 5.5, and 9 in the Francis parameterization; “iters” is the number of iterations to convergence; and <span class="math">\(r_{max}\)</span> and <span class="math">\(r_{mean}\)</span> are the maximum and average absolute value of correlation coefficients among the three parameters.</p>
-% latex table generated in R 3.2.3 by xtable 1.8-0 package % Sun Jan 10 12:44:50 2016
+% latex table generated in R 3.2.3 by xtable 1.8-0 package % Sun Jan 10 12:46:52 2016
 
 <p><img src="BKG_files/figure-html/unnamed-chunk-11-1.png" title="" alt="" width="336" /></p>
 <p>Figure 6: Fits of the typical (blue), Schnute (red), and Francis (green) parameterizations of the VBGF to size-at-age Atlantic Croaker data (auto-generated starting values were used for all parameterizations). Note that the results of all fits are identical and, thus, the fitted lines are directly on top of each other. Different colors and different line widths were used to illustrate this point but may not be readily apparent on the screen or printed page.</p>
@@ -131,7 +133,7 @@ to notice that the units in the numerator disappear. Thus, the units of <span cl
 <h2>Reproducibility Information</h2>
 <ul>
 <li><strong>Compiled Date:</strong> Sun Jan 10 2016</li>
-<li><strong>Compiled Time:</strong> 12:44:50 PM</li>
+<li><strong>Compiled Time:</strong> 12:46:52 PM</li>
 <li><strong>R Version:</strong> R version 3.2.3 (2015-12-10)</li>
 <li><strong>System:</strong> Windows, i386-w64-mingw32/i386 (32-bit)</li>
 <li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>

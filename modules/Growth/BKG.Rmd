@@ -68,6 +68,7 @@ crm <- Subset(Croaker2,sex=="M")
 
 Growth of individual organisms within a population is generally characterized by an expression which is representative of individual growth of an "average" animal in the population.  Individual growth is treated as an increase in either length or weight with increasing age.  Several functions (or models) have been used to model the mean length or weight of fishes.  One function, the von Bertalanffy growth function (VBGF), is the most popular and is the focus of this module.
 
+\ 
 
 # Size-at-Age Data
 The raw data for size-at-age modeling consists of the measurement of size, either length or weight, and the assignment of age to individual fish at the time the fish was captured.  This is called *length-at-capture*, *weight-at-capture*, and *age-at-capture* data.  An example[^1] of this type of data for length and age is shown in `r tblcaps("GrowthDataEx",display="cite")`-Left and in `r figcaps("GrowthDataEx",display="cite")`.
@@ -111,6 +112,7 @@ Historical methods for estimating the parameters of growth models used the *aver
 
 It is also common to use "back-calculation" techniques to reconstruct data for growth analyses.  This type of data is called *retrospective size-at-age data* [@Jones2000].  Growth data generated in this way is generally inappropriate for the simple modeling techniques developed in this vignette because the back-calculated measurements are serially correlated (i.e., the techniques described here require independent observations).  The problems created by serially-correlated data and techniques for handling serially-correlated data are described in @Jones2000.
 
+\ 
 
 # "Typical" von Bertalanffy Growth Model
 
@@ -137,7 +139,7 @@ $$ 1-\frac{E[L|t]}{L_{\infty}} = -e^{-K(t-t_{o})} $$
 $$ log\left(\frac{1-E[L|t]}{L_{\infty}}\right) = -K(t-t_{o}) $$
 $$ K = \frac{log\left(\frac{L_{\infty}-E[L|t]}{L_{\infty}}\right)}{t-t_{o}} $$
 
-<ul style="list-style-type:disc">
+<ul style="list-style-type:none">
   <li>to notice that the units in the numerator disappear.  Thus, the units of $K$ are in $time^{-1}$ rather than a change in length for a unit time as required by a growth rate.</li>
 </ul> 
 

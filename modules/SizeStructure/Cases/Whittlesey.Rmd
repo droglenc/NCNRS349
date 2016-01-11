@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Case Study
+title: Size Structure Analysis for Species in a Cold-Water Wisconsin Stream
+subtitle: A Case Study
 author: Derek H. Ogle
 css: /css/modules.css
 output:
@@ -19,14 +20,6 @@ modHTML(fnm)
 ```{r echo=FALSE, results='hide', message=FALSE}
 source("../../../rhelpers/knitr_setup.R")
 ```
-
-----
-
-\ 
-
-# Size Structure Analysis for Species in a Cold-Water Wisconsin Stream
-
-\ 
 
 ----
 

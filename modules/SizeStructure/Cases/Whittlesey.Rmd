@@ -48,6 +48,13 @@ Prior to beginning this case study you should:
 
 ![Electrofishing](EFish.jpg)
 
+<style>
+img[alt="Electrofishing"] { 
+  max-width: 200px; 
+  display: block;
+}
+</style>
+
 \ 
 
 #### Data

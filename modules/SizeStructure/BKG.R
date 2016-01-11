@@ -24,4 +24,4 @@ eqncaps("")
 ( bg.cuts <- psdVal("Bluegill",units="in") )
 
 
-# Script created at 2016-01-10 17:09:07
+# Script created at 2016-01-10 18:06:57

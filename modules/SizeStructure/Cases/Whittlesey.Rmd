@@ -31,7 +31,7 @@ source("../../../rhelpers/knitr_setup.R")
 
 Fish length is likely the information most commonly collected by fisheries biologists and managers.  While length is usually not the only information collected by a fisheries biologist, summaries of length information can provide the biologist with a wealth of information.  For example, sample summaries of length information can provide insight on population parameters such as age distributions, growth rates, and mortality rates; the basic biology of the animal; and the effect of management regulations on the fish population.  Thus, summarizing length data and then interpreting those summaries is an important task performed by fisheries biologists.
 
-![Measuring Length](Measure.jpg)
+![Measuring](Measure.jpg)
 
 \ 
 
@@ -47,13 +47,6 @@ Prior to beginning this case study you should:
 * Be familiar with interpretations of length frequency histograms.
 
 ![Electrofishing](EFish.jpg)
-
-<style>
-img[alt="Electrofishing"] { 
-  max-width: 200px; 
-  display: block;
-}
-</style>
 
 \ 
 
@@ -93,3 +86,12 @@ You should open the file, save `Sheet1` as a CSV file, read the CSV file into an
 </ol>
 
 ----
+
+
+<style>
+img[alt="Electrofishing"], img[alt="Measuring"] { 
+  max-width: 400px; 
+  display: block;
+  margin: 0 auto;
+}
+</style>

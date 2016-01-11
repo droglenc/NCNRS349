@@ -84,13 +84,12 @@ The initial analysis requires constructing length- and age-frequency plots for B
 
 The code below is an example for Bluegill from the "pre-angling" period.
 
-```{r echo=FALSE}
+```{r fig.width=3.75, fig.height=3.75, fig.show="hold", echo=-c(1:5)}
 library(readxl)
 d <- read_excel("GoeddeCobleData.xlsx",sheet=2) %>%
   mutate(period=factor(period),species=factor(species)) %>%
   as.data.frame()
-```
-```{r fig.width=4, fig.height=4, fig.show="hold", par1=TRUE}
+par(mar=c(3,3,1,1),mgp=c(1.9,0.5,0),tcl=-0.2)
 blg.pre <- filterD(d,species=="BLG",period=="pre")
 psdPlot(~len,data=blg.pre,species="Bluegill",units="mm",w=10,xlab="Total Length (mm)")
 hist(~age,data=blg.pre,breaks=1:10,xlab="Age (years)")

@@ -68,10 +68,8 @@ This Case is a modification of Case 4 by <a href="http://www.sdstate.edu/nrm/peo
 <li>Create a (neat) summary table of PSD and PSD-P values (columns) for each species (rows).</li>
 </ol>
 <p>The code below is an example for Bluegill from the “pre-angling” period.</p>
-<pre class="r"><code>&gt; blg.pre &lt;- filterD(d,species==&quot;BLG&quot;,period==&quot;pre&quot;)
-&gt; psdPlot(~len,data=blg.pre,species=&quot;Bluegill&quot;,units=&quot;mm&quot;,w=10,xlab=&quot;Total Length (mm)&quot;)
-&gt; hist(~age,data=blg.pre,breaks=1:10,xlab=&quot;Age (years)&quot;)</code></pre>
-<p><img src="GoeddeCoble_files/figure-html/unnamed-chunk-4-1.png" title="" alt="" width="384" /><img src="GoeddeCoble_files/figure-html/unnamed-chunk-4-2.png" title="" alt="" width="384" /></p>
+<pre class="r"><code>&gt; hist(~age,data=blg.pre,breaks=1:10,xlab=&quot;Age (years)&quot;)</code></pre>
+<p><img src="GoeddeCoble_files/figure-html/unnamed-chunk-3-1.png" title="" alt="" width="360" /><img src="GoeddeCoble_files/figure-html/unnamed-chunk-3-2.png" title="" alt="" width="360" /></p>
 <p>Use these results to answer the following questions.</p>
 <ol>
 <li>

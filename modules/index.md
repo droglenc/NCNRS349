@@ -186,7 +186,7 @@ title: Lecture Materials
           <li>Case Studies</li>
           <ul>
             <li><a href="SizeStructure/Cases/Whittlesey.html">Whittlesey Creek Catches</a></li>
-            <li>Bluegill Catch and Gear Bias -- <a href="SizeStructure/Cases/LakeLouiseBG.xlsx">Data</a>, <a href="SizeStructure/Cases/Laarman_Ryckman_1982.pdf">L&R</a>, <a href="SizeStructure/Cases/Schultz_Haines_2005.pdf">S&H</a></li>
+            <li><a href="SizeStructure/Cases/LakeLouiseBG.html">Bluegill Catch and Gear Bias</a></li>
             <li>Goedde-Coble -- <a href="SizeStructure/Cases/GoeddeCobleData.xlsx">Data</a></li>
           </ul>
         </ul>

@@ -90,7 +90,7 @@ d <- read_excel("GoeddeCobleData.xlsx",sheet=2) %>%
   mutate(period=factor(period),species=factor(species)) %>%
   as.data.frame()
 ```
-```{r fig.width=3, fig.height=3, fig.show="hold"}
+```{r fig.width=4, fig.height=4, fig.show="hold", par1=TRUE}
 blg.pre <- filterD(d,species=="BLG",period=="pre")
 psdPlot(~len,data=blg.pre,species="Bluegill",units="mm",w=10,xlab="Total Length (mm)")
 hist(~age,data=blg.pre,breaks=1:10,xlab="Age (years)")

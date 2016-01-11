@@ -1,0 +1,103 @@
+---
+layout: page
+title: Size Structure
+subtitle: Case Study
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<hr />
+<div id="size-structure-analysis-for-species-in-a-cold-water-wisconsin-stream" class="section level1">
+<h1>Size Structure Analysis for Species in a Cold-Water Wisconsin Stream</h1>
+<div id="background" class="section level2">
+<h2>Background</h2>
+<div id="motivation" class="section level4">
+<h4>Motivation</h4>
+<p>Fish length is likely the information most commonly collected by fisheries biologists and managers. While length is usually not the only information collected by a fisheries biologist, summaries of length information can provide the biologist with a wealth of information. For example, sample summaries of length information can provide insight on population parameters such as age distributions, growth rates, and mortality rates; the basic biology of the animal; and the effect of management regulations on the fish population. Thus, summarizing length data and then interpreting those summaries is an important task performed by fisheries biologists.</p>
+<p><img src="Measure.jpg" alt="Measuring Length" /></p>
+<p> </p>
+</div>
+<div id="setting" class="section level4">
+<h4>Setting</h4>
+<p>Whittlesey Creek is a tributary to Chequamegon Bay of Lake Superior. This stream has been severely degraded by past land use practices including clear-cut logging and channelization to drain wetlands for farming. The “Coaster” Brook Trout (<em>Salvelinus fontinalis</em>), a lake-dwelling stream-spawning form of Brook Trout, was largely extirpated from southern Lake Superior and the Whittlesey Creek watershed due to over-fishing and habitat degradation. In 1999, the U.S., Fish and Wildlife Service established the Whittlesey Creek National Wildlife Refuge (see <a href="http://www.fws.gov/refuge/whittlesey_creek/">this website</a>) with a primary goal of reestablishing a population of Coaster Brook Trout in Whittlesey Creek. That effort has included experimental introductions of Brook Trout at various life stages and much work to restore habitat.</p>
+<p>In July, 2011 a quarter-mile stretch of the lower Whittlesey Creek was modified with the addition of large woody debris with attached ``root balls.’’ The goal of this project was to alter the morphology of this section of the stream to provide better habitat and water conditions for Brook Trout. In May, 2011 a group of Northland College students conducted two days of sampling with electrofishing gear in order to provide baseline information about the fish populations in this section of the stream. Their sampling yielded eight total Brook Trout but relatively larger numbers of Coho Salmon (<em>Oncorhynchus kisutch</em>), Rainbow Trout (<em>Oncorhynchus mykiss</em>), and sculpins (primarily Slimy Sculpin (<em>Cottus cognatus</em>), but some Mottled Sculpin (<em>Cottus bairdii</em>)). Data from the catches of Coho Salmon, Rainbow Trout, and sculpins will be analyzed in this case study.</p>
+<p>Prior to beginning this case study you should:</p>
+<ul>
+<li>Research basic life history characteristics – especially growth (length-at-age), reproduction and spawning characteristics, and obligation of migratory patterns – of Coho Salmon, Rainbow Trout, and Slimy Sculpin. A good source is <a href="http://digital.library.wisc.edu/1711.dl/EcoNatRes.FishesWI"><em>Fishes of Wisconsin</em></a>.</li>
+<li>Be familiar with interpretations of length frequency histograms.</li>
+</ul>
+<p><img src="EFish.jpg" alt="Electrofishing" /></p>
+<p> </p>
+</div>
+<div id="data" class="section level4">
+<h4>Data</h4>
+<p>Data from the sampling collected by the students were stored in <code>Sheet1</code> of the <code>Whittlesey2011.xlsx</code> Excel 2007 file (<a href="Whittlesey2011.xlsx">available from here</a>). The variables in this data frame are defined as follows,</p>
+<ul>
+<li><code>study</code>: The name of the study.</li>
+<li><code>netID</code>: A unique label for each day of sampling.</li>
+<li><code>sDate</code>: The date of sampling.</li>
+<li><code>run</code>: A factor indicating if the sample was the <code>mark</code>ing or <code>recap</code>ture run.</li>
+<li><code>species</code>: A factor indicating the species captured. Options are <code>Species1</code>, <code>Species2</code>, or <code>Species3</code>. This variable will be discussed in more detail later.</li>
+<li><code>length</code>: The total length of the sampled fish to the nearest mm.</li>
+<li><code>clipped</code>: Indicates if the fish was clipped (=1) or not. All fish in the recapture run were not clipped.</li>
+<li><code>recap</code>: Indicates if the fish was previously clipped (i.e., a “recapture”“; =1) or not. All fish in the marking run could not possibly be a recaptured fish.</li>
+<li><code>notes</code>: Any specific notes about that particular fish.</li>
+</ul>
+<p>You should open the file, save <code>Sheet1</code> as a CSV file, read the CSV file into an object in R, and examine the structure and a random six rows of the data.frame.</p>
+<p> </p>
+</div>
+</div>
+<div id="analysis-questions" class="section level2">
+<h2>Analysis Questions</h2>
+<ol>
+<li>
+What would you expect a length frequency histogram to look like for a fish that reproduced only once per year during a very narrow range of time, shows exceptional growth throughout life, and has a maximum age of 5 years? You should provide a rough drawing and short paragraph of explanation.
+</li>
+<li>
+Construct separate length frequency histograms for each species (combine data from both days). Make sure to choose bin widths that make sense for each species and to properly label all axes.
+</li>
+</ol>
+<p> </p>
+</div>
+<div id="interpretation-questions" class="section level2">
+<h2>Interpretation Questions</h2>
+<ol start="3">
+<li>
+How many <strong>distinct</strong> age-classes do you see for each species? Provide approximate length ranges for each distinct age-class that you observe.
+</li>
+<li>
+Which species (Coho Salmon, Rainbow Trout, sculpin) corresponds to each of the length frequency histograms that you constructed? Explain your reasoning with specific references to what you know about the life history characteristics of these species.
+</li>
+<li>
+What ages would you assign to the first two distinct age-classes observed for Coho Salmon and for Rainbow Trout? Explain your reasoning with specific references to what you know about the life history characteristics of these species.
+</li>
+</ol>
+<hr />
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

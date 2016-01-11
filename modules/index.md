@@ -187,7 +187,7 @@ title: Lecture Materials
           <ul>
             <li><a href="SizeStructure/Cases/Whittlesey.html">Whittlesey Creek Catches</a></li>
             <li><a href="SizeStructure/Cases/LakeLouiseBG.html">Bluegill Catch and Gear Bias</a></li>
-            <li>Goedde-Coble -- <a href="SizeStructure/Cases/GoeddeCobleData.xlsx">Data</a></li>
+            <li><a href="SizeStructure/Cases/GoeddeCoble.html">Goedde & Coble</a></li>
           </ul>
         </ul>
       </div>

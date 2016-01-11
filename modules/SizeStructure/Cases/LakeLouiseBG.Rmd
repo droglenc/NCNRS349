@@ -78,7 +78,7 @@ Use thes results to answer the following questions.
 ----
 
 <style>
-img[alt="Fykenet"], img[alt="Measuring"] { 
+img[alt="Fykenet"] { 
   max-width: 400px; 
   display: block;
   margin: 0 auto;

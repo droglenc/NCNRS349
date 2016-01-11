@@ -48,7 +48,7 @@ In this case study, you will explore the differential size structure of Bluegill
 
 [Lake Louise](http://gfp.sd.gov/state-parks/directory/lake-louise/) is a 45-ha impoundment located in Hand County, South Dakota.  The maximum depth is 6.5 m with a mean depth of 2.7 m.  Fish were sampled with trap nets that had 1.2- X 1.5-m frames, dual throats, and 19-mm bar mesh.  Night electrofishing was undertaken with pulsed DC electricity at approximately 250 V and 8 A.  Samples were collected in late May at a water temperature of 23$^{o}$C.
 
-The total length (TL; mm) of each Bluegill was recorded for fish captured in both gears in the `LenData` sheet of the `LakeLouiseBG.xlsx` Excel 2007 file ([available from here](LakeLouisBG.xlsx)).    The variables in this data frame are defined as follows,
+The total length (TL; mm) of each Bluegill was recorded for fish captured in both gears in the `LenData` sheet of the `LakeLouiseBG.xlsx` Excel 2007 file ([available from here](LakeLouiseBG.xlsx)).    The variables in this data frame are defined as follows,
 
 * `len`: The TL (mm) of the sampled fish.
 * `gear`: A factor indicating the gear used to capture the fish.  Choices are `A` and `B` (described later).

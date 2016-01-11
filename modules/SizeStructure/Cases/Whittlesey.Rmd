@@ -13,13 +13,11 @@ output:
 # Renders an appropriate HTML file for the webpage
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/SizeStructure/Cases/")
 source("../../../rhelpers/rhelpers.R")
-fnm <- "CASE-Whittlesey"
+fnm <- "Whittlesey"
 modHTML(fnm)
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}
-library(FSAsim)
-fnm <- "CASE-Whittlesey"
 source("../../../rhelpers/knitr_setup.R")
 ```
 

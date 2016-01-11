@@ -22,7 +22,11 @@ source("../../../rhelpers/knitr_setup.R")
 
 ----
 
+\ 
+
 # Size Structure Analysis for Species in a Cold-Water Wisconsin Stream
+
+\ 
 
 ----
 

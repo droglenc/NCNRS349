@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Size Structure
-subtitle: Case Study
+title: Case Study
 author: Derek H. Ogle
 css: /css/modules.css
 ---
@@ -10,6 +9,7 @@ css: /css/modules.css
 <hr />
 <div id="size-structure-analysis-for-species-in-a-cold-water-wisconsin-stream" class="section level1">
 <h1>Size Structure Analysis for Species in a Cold-Water Wisconsin Stream</h1>
+<hr />
 <div id="background" class="section level2">
 <h2>Background</h2>
 <div id="motivation" class="section level4">
@@ -20,8 +20,8 @@ css: /css/modules.css
 </div>
 <div id="setting" class="section level4">
 <h4>Setting</h4>
-<p>Whittlesey Creek is a tributary to Chequamegon Bay of Lake Superior. This stream has been severely degraded by past land use practices including clear-cut logging and channelization to drain wetlands for farming. The “Coaster” Brook Trout (<em>Salvelinus fontinalis</em>), a lake-dwelling stream-spawning form of Brook Trout, was largely extirpated from southern Lake Superior and the Whittlesey Creek watershed due to over-fishing and habitat degradation. In 1999, the U.S., Fish and Wildlife Service established the Whittlesey Creek National Wildlife Refuge (see <a href="http://www.fws.gov/refuge/whittlesey_creek/">this website</a>) with a primary goal of reestablishing a population of Coaster Brook Trout in Whittlesey Creek. That effort has included experimental introductions of Brook Trout at various life stages and much work to restore habitat.</p>
-<p>In July, 2011 a quarter-mile stretch of the lower Whittlesey Creek was modified with the addition of large woody debris with attached ``root balls.’’ The goal of this project was to alter the morphology of this section of the stream to provide better habitat and water conditions for Brook Trout. In May, 2011 a group of Northland College students conducted two days of sampling with electrofishing gear in order to provide baseline information about the fish populations in this section of the stream. Their sampling yielded eight total Brook Trout but relatively larger numbers of Coho Salmon (<em>Oncorhynchus kisutch</em>), Rainbow Trout (<em>Oncorhynchus mykiss</em>), and sculpins (primarily Slimy Sculpin (<em>Cottus cognatus</em>), but some Mottled Sculpin (<em>Cottus bairdii</em>)). Data from the catches of Coho Salmon, Rainbow Trout, and sculpins will be analyzed in this case study.</p>
+<p>Whittlesey Creek is a tributary to Chequamegon Bay of Lake Superior. This stream has been severely degraded by past land use practices including clear-cut logging and channelization to drain wetlands for farming. The “Coaster” Brook Trout (<em>Salvelinus fontinalis</em>), a lake-dwelling stream-spawning form of Brook Trout, was largely extirpated from southern Lake Superior and the Whittlesey Creek watershed due to over-fishing and habitat degradation. In 1999, the U.S., Fish and Wildlife Service established the <a href="http://www.fws.gov/refuge/whittlesey_creek/">Whittlesey Creek National Wildlife Refuge</a>) with a primary goal of reestablishing a population of Coaster Brook Trout in Whittlesey Creek. That effort has included experimental introductions of Brook Trout at various life stages and much work to restore habitat.</p>
+<p>In July, 2011 a quarter-mile stretch of the lower Whittlesey Creek was modified with the addition of <a href="http://www.fondriest.com/news/natural-stream-restoration-rebuilds-habitats-in-great-lakes-basin.htm">large woody debris with attached “root balls.”</a> The goal of this project was to alter the morphology of this section of the stream to provide better habitat and water conditions for Brook Trout. In May, 2011 a group of Northland College students conducted two days of sampling with electrofishing gear in order to provide baseline information about the fish populations in this section of the stream. Their sampling yielded eight total Brook Trout but relatively larger numbers of Coho Salmon (<em>Oncorhynchus kisutch</em>), Rainbow Trout (<em>Oncorhynchus mykiss</em>), and sculpins (primarily Slimy Sculpin (<em>Cottus cognatus</em>), but some Mottled Sculpin (<em>Cottus bairdii</em>)). Data from the catches of Coho Salmon, Rainbow Trout, and sculpins will be analyzed in this case study.</p>
 <p>Prior to beginning this case study you should:</p>
 <ul>
 <li>Research basic life history characteristics – especially growth (length-at-age), reproduction and spawning characteristics, and obligation of migratory patterns – of Coho Salmon, Rainbow Trout, and Slimy Sculpin. A good source is <a href="http://digital.library.wisc.edu/1711.dl/EcoNatRes.FishesWI"><em>Fishes of Wisconsin</em></a>.</li>
@@ -41,7 +41,7 @@ css: /css/modules.css
 <li><code>species</code>: A factor indicating the species captured. Options are <code>Species1</code>, <code>Species2</code>, or <code>Species3</code>. This variable will be discussed in more detail later.</li>
 <li><code>length</code>: The total length of the sampled fish to the nearest mm.</li>
 <li><code>clipped</code>: Indicates if the fish was clipped (=1) or not. All fish in the recapture run were not clipped.</li>
-<li><code>recap</code>: Indicates if the fish was previously clipped (i.e., a “recapture”“; =1) or not. All fish in the marking run could not possibly be a recaptured fish.</li>
+<li><code>recap</code>: Indicates if the fish was previously clipped (i.e., a “recapture”; =1) or not. All fish in the marking run could not possibly be a recaptured fish.</li>
 <li><code>notes</code>: Any specific notes about that particular fish.</li>
 </ul>
 <p>You should open the file, save <code>Sheet1</code> as a CSV file, read the CSV file into an object in R, and examine the structure and a random six rows of the data.frame.</p>

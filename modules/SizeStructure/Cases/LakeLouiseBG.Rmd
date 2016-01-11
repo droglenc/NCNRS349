@@ -13,7 +13,7 @@ output:
 # Renders an appropriate HTML file for the webpage
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/SizeStructure/Cases/")
 source("../../../rhelpers/rhelpers.R")
-fnm <- "LakeLouisBG"
+fnm <- "LakeLouiseBG"
 modHTML(fnm)
 ```
 
@@ -44,7 +44,7 @@ In this case study, you will explore the differential size structure of Bluegill
 
 #### Data
 
-Lake Louise is a 45-ha impoundment located in Hand County, South Dakota.  The maximum depth is 6.5 m with a mean depth of 2.7 m.  Fish were sampled with trap nets that had 1.2- X 1.5-m frames, dual throats, and 19-mm bar mesh.  Night electrofishing was undertaken with pulsed DC electricity at approximately 250 V and 8 A.  Samples were collected in late May at a water temperature of 23$^{o}$C.
+[Lake Louise](http://gfp.sd.gov/state-parks/directory/lake-louise/) is a 45-ha impoundment located in Hand County, South Dakota.  The maximum depth is 6.5 m with a mean depth of 2.7 m.  Fish were sampled with trap nets that had 1.2- X 1.5-m frames, dual throats, and 19-mm bar mesh.  Night electrofishing was undertaken with pulsed DC electricity at approximately 250 V and 8 A.  Samples were collected in late May at a water temperature of 23$^{o}$C.
 
 The total length (TL; mm) of each Bluegill was recorded for fish captured in both gears in the `LenData` sheet of the `LakeLouiseBG.xlsx` Excel 2007 file ([available from here](LakeLouisBG.xlsx)).    The variables in this data frame are defined as follows,
 
@@ -52,6 +52,7 @@ The total length (TL; mm) of each Bluegill was recorded for fish captured in bot
 * `gear`: A factor indicating the gear used to capture the fish.  Choices are `A` and `B` (described later).
 
 ## Preparation
+
 * Read [Laarman and Ryckman (1982)](Laarman_Ryckman_1982.pdf) and [Schultz and Haines (2005)](Schultz_Haines_2005.pdf).  Both of these papers deal with length-related biases for sampling Bluegills (the latter article deals with other species as well).  As you read these articles, concentrate on the gear bias for 8-cm and longer Bluegills (Bluegills smaller than this length are not reliably sampled by these gears).
 * Be familiar with methods of comparing distributions of fish length (e.g., see Section 6.4.1 of the [IFAR book](http://derekogle.com/IFAR/)).
 * You should open the Excel file described above and save `LenData` as a CSV file.  Then create a script that reads the CSV file into an object in R and displays the structure and a random six rows of the data.frame.

@@ -206,7 +206,7 @@ title: Lecture Materials
         <ul>
           <li>Pre-Readings</li>
             <ul>
-              <li><a href="SizeStructure/BKG.html">Ogle's Notes</a></li>
+              <li><a href="Condition/BKG.html">Ogle's Notes</a></li>
               <li><a href="http://snr.unl.edu/necoopunit/downloads/Publications/Kevin%20Pope%20publ/chapter10.pdf">Pope and Kruse (2007) 10.1-10.3, 10.6 & 10.7 (<i>not the boxes</i>)</a></li>
               <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 7.1-7.4, Chapter 8</li>
             </ul>

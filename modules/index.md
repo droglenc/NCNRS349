@@ -65,12 +65,12 @@ title: Lecture Materials
   <div id="cMarkRecap" class="panel-collapse collapse">
     <div class="panel-body">
       <ul class="list-unstyled">
-        <li><strong>Mark-Recapture -- Capture Histories</strong></li>
+        <li><strong>Capture Histories</strong></li>
           <ul>
             <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.1</li>
             <li><a href="Abundace/MarkRecap/CE1.html">Class Exercise</a></li>
           </ul>
-        <li><strong>Mark-Recapture -- Single Census, Closed Population</strong></li>
+        <li><strong>Single Census, Closed Population</strong></li>
           <ul>
             <li>Pre-Readings</li>
               <ul>

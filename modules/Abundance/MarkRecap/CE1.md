@@ -23,7 +23,7 @@ Suppose that a researcher captured and individually marked 75 fish on day 1.  Tw
 
 ## Example #2
 
-A researcher samples a stream weekly for 8 weeks.
+A researcher sampled a stream weekly for 8 weeks.
 
 1. How many columns in the capture history matrix?
 1. How many rows in the capture history matrix?
@@ -47,7 +47,11 @@ Frequency of fish   17  20   4  19   5   8   2
 1. How many captured fish?
 1. How many fish were captured in the first sample and then not seen again?
 1. How many fish were captured in the first sample and seen again?
-1. How many fish were captured twice?
+1. How many fish were captured in the first sample?
+1. How many fish were captured in the third sample?
+1. How many fish in the second sample were recaptures (i.e., previously marked)?
+1. How many fish in the third sample were recaptures?
+1. How many fish were captured exactly twice?
 1. How many fish were never captured?
 
 ----

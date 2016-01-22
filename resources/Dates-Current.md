@@ -7,7 +7,7 @@ css: /css/syllabus.css
 ## Homework Due Dates
 <dl class="dl-horizontal">
 <dt>25-Jan</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Abundance/MarkRecap/CE2.html">Mark-Recap Class Exercise</a></dd>
-<dt>27-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
+<dt>25-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
 </dl>
 
 ---- 
@@ -18,7 +18,7 @@ css: /css/syllabus.css
 <dt>24-Feb</dt><dd>AFS (<a href="http://www.wi-afs.org/AnnualMeetings.aspx">info</a>) XC Reflections</a></dd>
 <dt>25-Feb</dt><dd>First Exam</dd>
 <dt>29-Feb</dt><dd><a href="Syllabus-Current.html#reflections---papers">First Paper Reflection</a></dd>
-<dt>4-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Wolter Reflection</a></dd>
+<dt>7-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Wolter Reflection</a></dd>
 <dt>18-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Bethke Reflection</a></dd>
 <dt>24-Mar</dt><dd>Second Exam</dd>
 <dt>1-Apr</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Seider Reflection</a></dd>

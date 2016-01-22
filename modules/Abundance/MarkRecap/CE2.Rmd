@@ -54,7 +54,7 @@ In RStudio, this plot will have a gear icon in the upper-left corner that will o
 
 ----
 
-#### Questions I
+#### Questions I -- Biases?
 
 Each simulation below should be based on a known population size of `N=1000` individuals (the default) and should use at least `rsmpls=2000` simulation runs (the default), an expected number of marks of 100, and an expected number in the second sample of 100.  Once the sliders have been set at the requested levels, the `Rerandomize` button should be pressed several times to ensure that any conclusions that you draw are not based on the results of a single set of random simulation runs.
 
@@ -67,7 +67,7 @@ Each simulation below should be based on a known population size of `N=1000` ind
 
 ----
 
-#### Questions II
+#### Questions II -- Sampling Distribution
 
 Describe the shape of the sampling distribution of the population estimate, bias percentage, and width of the approximate confidence interval for each combination of the expected number of marks and the expected number in the second sample between 100 and 400 in increments of 50.  Each simulation below should be based on a known population size of `N=1000` individuals (the default), use at least `rsmpls=2000` simulation runs (the default), and use the **Chapman modification method** (not the default).  Use your results to answer the questions below.  [**Hint: You might want to make a two-way table to record your observations.**]
 

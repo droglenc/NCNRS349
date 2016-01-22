@@ -52,7 +52,7 @@ Note that the title to the plot will describe the type of assumption violation (
 
 ----
 
-#### Questions IV
+#### Questions IV-- Observations from Violated Assumptions
 
 For the questions below use the Chapman modification of the Petersen method (the default) to estimate abundance, an expected number of tags of 200 (the default), an expected number in the final sample of 200 (the default), an initial population abundance of 1000 (the default), and 2000 resamples (the default). [*Remember to return the sliders to these default value after each situation.*]  For each situation, identify (with a supporting graphic) whether the population estimate is an over, under, or unbiased estimate of the initial **AND** final population sizes and identify whether your expectations for the initial population size from the [previous page](CE2b.html) were met.  
 
@@ -68,7 +68,7 @@ For the questions below use the Chapman modification of the Petersen method (the
 
 ----
 
-#### Questions V
+#### Questions V -- Summarizing Effects of Violated Assumptions
 
 1. Which assumption violations allow the biologist to still reliably estimate the *initial* population abundance?
 1. Which assumption violations allow the biologist to still reliably estimate the *final* population abundance?

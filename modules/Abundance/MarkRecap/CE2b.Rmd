@@ -51,7 +51,7 @@ So, assessing the effect of assumption violations on the estimate of $N$ reduces
 
 ----
 
-#### Questions III
+#### Questions III -- Expectations from Violated Assumptions
 
 For each situation below, identify whether you think that the population abundance will be over, under, or accurately estimated by the Chapman modification method.  Provide a reasoning for each of your answers.
 

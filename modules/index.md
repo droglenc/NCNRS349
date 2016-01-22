@@ -68,7 +68,7 @@ title: Lecture Materials
         <li><strong>Capture Histories</strong></li>
           <ul>
             <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.1</li>
-            <li><a href="Abundace/MarkRecap/CE1.html">Class Exercise</a></li>
+            <li><a href="Abundance/MarkRecap/CE1.html">Class Exercise</a></li>
           </ul>
         <li><strong>Single Census, Closed Population</strong></li>
           <ul>

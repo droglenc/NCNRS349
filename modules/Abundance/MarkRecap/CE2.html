@@ -10,7 +10,7 @@ css: /css/modules.css
 <hr />
 <div id="understanding-the-bias-of-petersen-estimates" class="section level2">
 <h2>Understanding the Bias of Petersen Estimates</h2>
-<p><img src="../../../img/computer-1.jpg" alt="Simulations" class="img-right"> Estimating the number of fish in a population is one of the most common tasks facing a fisheries biologist. One common method for estimating fish abundance is to sample the population, mark (or tag) and return the sampled fish to the population, take a second sample from the population, and use the ratio of number of marked to unmarked fish to estimate the population size. The most common formula for estimating abundance was derived nearly simultaneously by Petersen and Lincoln, though slight modifications to the formulas were derived by Chapman and Bailey. Taken together, these methods are called the “Petersen family” of mark-recapture methods. In this exercise, you will use simulations to assess how accurately the original Petersen and the Chapman modification estimate population abundance.</p>
+<p><img src="C:/aaaWork/Web/GitHub/NCNRS349/img/computer-1.jpg" alt="Simulations" class="img-right"> Estimating the number of fish in a population is one of the most common tasks facing a fisheries biologist. One common method for estimating fish abundance is to sample the population, mark (or tag) and return the sampled fish to the population, take a second sample from the population, and use the ratio of number of marked to unmarked fish to estimate the population size. The most common formula for estimating abundance was derived nearly simultaneously by Petersen and Lincoln, though slight modifications to the formulas were derived by Chapman and Bailey. Taken together, these methods are called the “Petersen family” of mark-recapture methods. In this exercise, you will use simulations to assess how accurately the original Petersen and the Chapman modification estimate population abundance.</p>
 <div id="simulation-description" class="section level4">
 <h4>Simulation Description</h4>
 <p>The <code>mrClosed1Sim()</code> function in the <code>FSAsims</code> package may be used to evaluate the performance of the Petersen family of mark-recapture methods to estimate population abundance. This function works by creating an initial population for which the size is chosen, and thus known, by the user. A sample of fish is then taken from this population according to choices made by the user (discussed below). The individuals in this sample are then “marked” and returned to the population. A second sample is then taken and the number of previously marked fish is counted. From these results an estimate of population abundance is computed according to the Petersen family method selected by the user. This process is then repeated a large number of times so that the sampling distribution of the population abundance estimate can be visualized.</p>
@@ -28,8 +28,8 @@ css: /css/modules.css
 <p> </p>
 <hr />
 </div>
-<div id="questions-i" class="section level4">
-<h4>Questions I</h4>
+<div id="questions-i-biases" class="section level4">
+<h4>Questions I – Biases?</h4>
 <p>Each simulation below should be based on a known population size of <code>N=1000</code> individuals (the default) and should use at least <code>rsmpls=2000</code> simulation runs (the default), an expected number of marks of 100, and an expected number in the second sample of 100. Once the sliders have been set at the requested levels, the <code>Rerandomize</code> button should be pressed several times to ensure that any conclusions that you draw are not based on the results of a single set of random simulation runs.</p>
 <ol>
 <li>Does the Petersen method under, over, or accurately estimate the initial population abundance?</li>
@@ -40,8 +40,8 @@ css: /css/modules.css
 <p> </p>
 <hr />
 </div>
-<div id="questions-ii" class="section level4">
-<h4>Questions II</h4>
+<div id="questions-ii-sampling-distribution" class="section level4">
+<h4>Questions II – Sampling Distribution</h4>
 <p>Describe the shape of the sampling distribution of the population estimate, bias percentage, and width of the approximate confidence interval for each combination of the expected number of marks and the expected number in the second sample between 100 and 400 in increments of 50. Each simulation below should be based on a known population size of <code>N=1000</code> individuals (the default), use at least <code>rsmpls=2000</code> simulation runs (the default), and use the <strong>Chapman modification method</strong> (not the default). Use your results to answer the questions below. [<strong>Hint: You might want to make a two-way table to record your observations.</strong>]</p>
 <ol>
 <li>Describe any obvious patterns in your observations of the percentage bias.</li>

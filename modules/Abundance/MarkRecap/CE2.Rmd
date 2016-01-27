@@ -27,7 +27,7 @@ set.seed(13797834)
 ----
 
 ## Understanding the Bias of Petersen Estimates
-<img src="../../../img/computer-1.jpg" alt="Simulations" class="img-right">
+<img src="http://derekogle.com/NCNRS349//img/computer-1.jpg" alt="Simulations" class="img-right">
 Estimating the number of fish in a population is one of the most common tasks facing a fisheries biologist.  One common method for estimating fish abundance is to sample the population, mark (or tag) and return the sampled fish to the population, take a second sample from the population, and use the ratio of number of marked to unmarked fish to estimate the population size.  The most common formula for estimating abundance was derived nearly simultaneously by Petersen and Lincoln, though slight modifications to the formulas were derived by Chapman and Bailey.  Taken together, these methods are called the "Petersen family" of mark-recapture methods.  In this exercise, you will use simulations to assess how accurately the original Petersen and the Chapman modification estimate population abundance.
 
 #### Simulation Description
@@ -60,8 +60,8 @@ Each simulation below should be based on a known population size of `N=1000` ind
 
 1. Does the Petersen method under, over, or accurately estimate the initial population abundance?
 1. Does the Chapman modification method under, over, or accurately estimate the initial population abundance?
-1. Do your answers to the previous two questions change with (a variety of) other expected number of marked fish and second sample sample sizes.
-1. What main conclusion do you make from your answers to these two questions?
+1. Do your answers to the previous two questions change with (a variety of) other expected number of marked fish and second sample sample sizes? [i.e., do your conclusions about the Petersen and Chapman methods generalize to all sample sizes?]
+1. What main conclusion do you make from your answers to these three questions?
 
 \ 
 
@@ -69,14 +69,14 @@ Each simulation below should be based on a known population size of `N=1000` ind
 
 #### Questions II -- Sampling Distribution
 
-Describe the shape of the sampling distribution of the population estimate, bias percentage, and width of the approximate confidence interval for each combination of the expected number of marks and the expected number in the second sample between 100 and 400 in increments of 50.  Each simulation below should be based on a known population size of `N=1000` individuals (the default), use at least `rsmpls=2000` simulation runs (the default), and use the **Chapman modification method** (not the default).  Use your results to answer the questions below.  [**Hint: You might want to make a two-way table to record your observations.**]
+Describe the shape of the sampling distribution of the population estimate, bias percentage, and *width* of the approximate confidence interval for each combination of the expected number of marks and the expected number in the second sample between 100 and 400 in increments of 50.  Each simulation below should be based on a known population size of `N=1000` individuals (the default), use at least `rsmpls=2000` simulation runs (the default), and use the **Chapman modification method** (not the default).  Make sure to rerandomize and record a general results (especially for percentage bias).  Use your results to answer the questions below.  [**Hint: You might want to make a two-way table to record your observations.**]
 
 1. Describe any obvious patterns in your observations of the percentage bias.
-1. Were there any combinations of values that produced an approximately normal sampling distribution?  How does this relate to the general rules for computing confidence intervals for population abundance?
+1. Were there any combinations of values that produced an approximately normal sampling distribution?  How does this relate to the general rules for computing confidence intervals for population abundance discussed in the readings?
 1. What happened to the width of the confidence interval as the size of the first sample increased (and the size of the second sample was held constant)?
 1. What happened to the width of the confidence interval as the size of the second sample increased (and the size of the first sample was held constant)?
-1. Suppose that you could only handle a total of 500 fish in the two days of sampling.  How should you apportion your effort (what expected numbers of fish on the two days) to obtain the most precise (narrowest confidence interval) estimates of population abundance?  Does this conclusion generalize to other total sample sizes?
-1. What assumption about field work is being made in the previous question?  Is this realistic?  Explain.  How would you incorporate a more realistic scenario into determining how to apportion your effort.
+1. Suppose that you could only handle a total of 500 fish in the two days of sampling.  How should you apportion your effort (what expected numbers of fish on the two days) to obtain the most precise (narrowest confidence interval) estimates of population abundance?  Does this conclusion generalize to other total sample sizes (e.g., 300 or 400 total fish on the two days)?
+1. What assumptions about field work (i.e., catching and tagging fish) is being made in the previous question?  Is this realistic?  Explain.  How would you incorporate a more realistic scenario into determining how to apportion your effort.
 
 ----
 

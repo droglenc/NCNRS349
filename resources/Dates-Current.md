@@ -6,11 +6,12 @@ css: /css/syllabus.css
 
 ## Homework Due Dates
 <dl class="dl-horizontal">
-<dt>29-Jan</dt><dd>Depletion HW</dd>
 <dt>1-Feb</dt><dd>Age-Length Key HW #1 and #2</dd>
+<dt>5-Feb</dt><dd>Mortality HW #1 & #2 (question 14 is XC)</dd>
 </dl>
 
 <!---
+<dt>29-Jan</dt><dd>Depletion HW</dd>
 <dt>27-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
 <dt>25-Jan</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Abundance/MarkRecap/CE2.html">Mark-Recap Class Exercise</a></dd>
 

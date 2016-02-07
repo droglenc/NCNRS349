@@ -6,10 +6,11 @@ css: /css/syllabus.css
 
 ## Homework Due Dates
 <dl class="dl-horizontal">
-<dt>5-Feb</dt><dd>Mortality HW #1 & #2 (question 14 is XC)</dd>
+<dt>5-Feb</dt><dd>Growth HW #1 & #2</dd>
 </dl>
 
 <!---
+<dt>5-Feb</dt><dd>Mortality HW #1 & #2 (question 4 is XC)</dd>
 <dt>1-Feb</dt><dd>Age-Length Key HW #1 and #2</dd>
 <dt>29-Jan</dt><dd>Depletion HW</dd>
 <dt>27-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>

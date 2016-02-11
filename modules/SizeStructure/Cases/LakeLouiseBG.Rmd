@@ -71,7 +71,7 @@ Construct length-frequency histograms and summary statistics separately for each
 
 Use thes results to answer the following questions.
 
-1. Is there a significant difference in the distribution of lengths between the two gears?  If so, describe the difference.
+1. Is there a significant difference in the distribution of lengths between the two gears?  If so, describe the difference.  Use two different types of graphics to present your results.
 1. Identify which gear -- trap nets or electrofishing -- that corresponds to gear `A` and gear `B`, respectively.  Explain your reasoning for your choices.
 1. Explain at least two different conclusions you might have made if you had used one gear exclusively over the other.  How might this have impacted a management decision.
 

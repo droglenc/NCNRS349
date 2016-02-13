@@ -26,6 +26,7 @@ css: /css/syllabus.css
 <dt>12-Feb</dt><dd>Panfish Management Plan Meeting Reflection</dd>
 <dt>24-Feb</dt><dd>AFS (<a href="http://www.wi-afs.org/AnnualMeetings.aspx">info</a>) XC Reflections</a></dd>
 <dt>25-Feb</dt><dd>First Exam</dd>
+<dt>26-Feb</dt><dd>Lake Trout Emergency Rule Meeting Reflection</dd>
 <dt>29-Feb</dt><dd><a href="Syllabus-Current.html#reflections---papers">First Paper Reflection</a></dd>
 <dt>7-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Wolter Reflection</a></dd>
 <dt>18-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Bethke Reflection</a></dd>

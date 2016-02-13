@@ -33,7 +33,7 @@ This Case is a modification of Case 4 by <a href="http://www.sdstate.edu/nrm/peo
 <div id="data" class="section level4">
 <h4>Data</h4>
 <p>Fish populations were surveyed over a 6-year period. Samples in 1974-1976 represented unfished populations (i.e,. “pre-angling”“), whereas samples in 1977-1979 were from fished populations (i.e.,”post-angling“”). Electrofishing samples were collected every spring and fyke nets were set in 1976 and 1979. Electrofishing was carried out at night with a 230-volt direct- or alternating-current shocker with the entire perimeter of the lake traversed each time. The six fyke nets (856 to 1,000 net-hours in each sampling year) were of 5-cm stretched mesh with leads of 12 to 18 m. Captured fish were measured (total length (TL), mm), weighed (g), and finclipped; scale samples were collected, and the fish were released. Ages were determined for Bluegills, Pumpkinseeds, Yellow Perch, and Largemouth Bass from 1974 through 1978 and from Yellow Perch in 1979.</p>
-<p>Data from before and after the regulation change were stored in the <code>LenAge</code> sheet of the <code>GoeddeCobleData.xlsx</code> Excel 2007 file (<a href="GoeddeCoble.xlsx">available from here</a>). The variables in this data frame are defined as follows,</p>
+<p>Data from before and after the regulation change were stored in the <code>LenAge</code> sheet of the <code>GoeddeCobleData.xlsx</code> Excel 2007 file (<a href="GoeddeCobleData.xlsx">available from here</a>). The variables in this data frame are defined as follows,</p>
 <ul>
 <li><code>len</code>: The TL (mm) of the sampled fish.</li>
 <li><code>age</code>: The assessed scale age (years) of a subsample of the sampled fish.</li>
@@ -68,7 +68,32 @@ This Case is a modification of Case 4 by <a href="http://www.sdstate.edu/nrm/peo
 <li>Create a (neat) summary table of PSD and PSD-P values (columns) for each species (rows).</li>
 </ol>
 <p>The code below is an example for Bluegill from the “pre-angling” period.</p>
-<pre class="r"><code>&gt; blg.pre &lt;- filterD(d,species==&quot;BLG&quot;,period==&quot;pre&quot;)
+<pre><code>
+Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>The following objects are masked from &#39;package:stats&#39;:
+
+    filter, lag</code></pre>
+<pre><code>The following objects are masked from &#39;package:base&#39;:
+
+    intersect, setdiff, setequal, union</code></pre>
+<pre><code>
+
+ ############################################
+ ##      FSA package, version 0.8.5        ##
+ ##    Derek H. Ogle, Northland College    ##
+ ##                                        ##
+ ## Run ?FSA for documentation.            ##
+ ## Run citation(&#39;FSA&#39;) for citation ...   ##
+ ##   please cite if used in publication.  ##
+ ##                                        ##
+ ## See derekogle.com/fishR/ for more      ##
+ ##   thorough analytical vignettes.       ##
+ ############################################</code></pre>
+<pre class="r"><code>&gt; d &lt;- read_excel(&quot;GoeddeCobleData.xlsx&quot;,sheet=2) %&gt;%
+    mutate(period=factor(period),species=factor(species)) %&gt;%
+    as.data.frame()
+&gt; par(mar=c(3,3,1.5,1),mgp=c(1.9,0.5,0),tcl=-0.2)
+&gt; blg.pre &lt;- filterD(d,species==&quot;BLG&quot;,period==&quot;pre&quot;)
 &gt; psdPlot(~len,data=blg.pre,species=&quot;Bluegill&quot;,units=&quot;mm&quot;,w=10,xlab=&quot;Total Length (mm)&quot;)
 &gt; hist(~age,data=blg.pre,breaks=1:10,xlab=&quot;Age (years)&quot;)</code></pre>
 <p><img src="GoeddeCoble_files/figure-html/unnamed-chunk-3-1.png" title="" alt="" width="360" /><img src="GoeddeCoble_files/figure-html/unnamed-chunk-3-2.png" title="" alt="" width="360" /></p>

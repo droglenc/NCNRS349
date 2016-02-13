@@ -50,7 +50,7 @@ The lake was closed to all fishing from 1938 to 1976.  On 1-May-1976, anglers we
 
 Fish populations were surveyed over a 6-year period.  Samples in 1974-1976 represented unfished populations (i.e,. "pre-angling""), whereas samples in 1977-1979 were from fished populations (i.e., "post-angling"").  Electrofishing samples were collected every spring and fyke nets were set in 1976 and 1979.  Electrofishing was carried out at night with a 230-volt direct- or alternating-current shocker with the entire perimeter of the lake traversed each time.  The six fyke nets (856 to 1,000 net-hours in each sampling year) were of 5-cm stretched mesh with leads of 12 to 18 m.  Captured fish were measured (total length (TL), mm), weighed (g), and finclipped; scale samples were collected, and the fish were released.  Ages were determined for Bluegills, Pumpkinseeds, Yellow Perch, and Largemouth Bass from 1974 through 1978 and from Yellow Perch in 1979.
 
-Data from before and after the regulation change were stored in the `LenAge` sheet of the `GoeddeCobleData.xlsx` Excel 2007 file  ([available from here](GoeddeCoble.xlsx)).    The variables in this data frame are defined as follows,
+Data from before and after the regulation change were stored in the `LenAge` sheet of the `GoeddeCobleData.xlsx` Excel 2007 file  ([available from here](GoeddeCobleData.xlsx)).    The variables in this data frame are defined as follows,
 
 * `len`: The TL (mm) of the sampled fish.
 * `age`: The assessed scale age (years) of a subsample of the sampled fish.
@@ -86,6 +86,8 @@ The code below is an example for Bluegill from the "pre-angling" period.
 
 ```{r fig.width=3.75, fig.height=3.75, fig.show="hold", echo=-c(1:3)}
 library(readxl)
+library(dplyr)
+library(FSA)
 d <- read_excel("GoeddeCobleData.xlsx",sheet=2) %>%
   mutate(period=factor(period),species=factor(species)) %>%
   as.data.frame()

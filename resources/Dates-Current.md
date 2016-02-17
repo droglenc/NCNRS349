@@ -6,7 +6,7 @@ css: /css/syllabus.css
 
 ## Homework Due Dates
 <dl class="dl-horizontal">
-<dt>22-Feb</dt><dd>Size Structure HW</dd>
+<dt>24-Feb</dt><dd>Size Structure HW</dd>
 </dl>
 
 <!---
@@ -23,7 +23,6 @@ css: /css/syllabus.css
 
 ## Exam or Other Due Dates
 <dl class="dl-horizontal">
-<dt>12-Feb</dt><dd>Panfish Management Plan Meeting XC Reflection</dd>
 <dt>24-Feb</dt><dd>AFS (<a href="http://www.wi-afs.org/AnnualMeetings.aspx">info</a>) XC Reflections</a></dd>
 <dt>25-Feb</dt><dd>First Exam</dd>
 <dt>26-Feb</dt><dd>Lake Trout Emergency Rule Meeting XC Reflection</dd>
@@ -39,6 +38,7 @@ css: /css/syllabus.css
 
 
 <!---
+<dt>12-Feb</dt><dd>Panfish Management Plan Meeting XC Reflection</dd>
 <dt>25-Jan</dt><dd>Quinlan (<a href="https://nglvc.org/events/event.php?s=2016-01-21-all-about-brook-trout">info</a>) <a href="Syllabus-Current.html#reflections---papers">XC Reflection</a></dd>
 
 --->

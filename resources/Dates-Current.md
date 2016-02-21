@@ -47,11 +47,14 @@ css: /css/syllabus.css
 
 ## Cancelled Classes
 <dl class="dl-horizontal">
-<dt>18-Jan</dt><dd>NO CLASS (Please participate in Martin Luther King, Jr. Day Activities)</dd>
-<dt>17-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
-<dt>18-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
-<dt>19-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
 <dt>9-Mar</dt><dd>NO CLASS (Midterm Break)</dd>
 <dt>11-Mar</dt><dd>NO CLASS (Midterm Break)</dd>
 <dt>25-Mar</dt><dd>NO CLASS (Good Friday)</dd>
 </dl>
+
+<!---
+<dt>18-Jan</dt><dd>NO CLASS (Please participate in Martin Luther King, Jr. Day Activities)</dd>
+<dt>17-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
+<dt>18-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
+<dt>19-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
+--->

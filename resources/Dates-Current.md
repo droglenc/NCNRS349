@@ -6,10 +6,10 @@ css: /css/syllabus.css
 
 ## Homework Due Dates
 <dl class="dl-horizontal">
-<dt>24-Feb</dt><dd>Size Structure HW</dd>
 </dl>
 
 <!---
+<dt>22-Feb</dt><dd>Size Structure HW</dd>
 <dt>12-Feb</dt><dd>Growth HW #1 & #2</dd>
 <dt>5-Feb</dt><dd>Mortality HW #1 & #2 (question 4 is XC)</dd>
 <dt>1-Feb</dt><dd>Age-Length Key HW #1 and #2</dd>

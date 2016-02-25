@@ -38,6 +38,7 @@ css: /css/syllabus.css
 
 
 <!---
+<dt>24-Feb</dt><dd>AFS (<a href="http://www.wi-afs.org/AnnualMeetings.aspx">info</a>) XC Reflections</a></dd>
 <dt>12-Feb</dt><dd>Panfish Management Plan Meeting XC Reflection</dd>
 <dt>25-Jan</dt><dd>Quinlan (<a href="https://nglvc.org/events/event.php?s=2016-01-21-all-about-brook-trout">info</a>) <a href="Syllabus-Current.html#reflections---papers">XC Reflection</a></dd>
 

@@ -61,6 +61,8 @@ Data from before and after the regulation change were stored in the `LenAge` she
 
 \ 
 
+----
+
 ## Preparation
 
 Prior to beginning this case study you should:
@@ -70,6 +72,8 @@ Prior to beginning this case study you should:
 * You should open the Excel file described above and save `LenAge` as a CSV file.  Then create a script that reads the CSV file into an object in R and displays the structure and a random six rows of the data.frame.
 
 \ 
+
+----
 
 ## Analysis & Interpretation Questions I
 
@@ -117,6 +121,14 @@ Construct similar length- and age-frequency histograms and PSD and PSD-P calcula
 
 ----
 
+<div class="text-center">
+<ul class="pagination pagination-lg">
+  <li><a href="index.html">^</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="GoeddeCoble2.html">2</a></li>
+</ul>
+
+
 <style>
 img[alt="Bluegill"], img[alt="Largemouth"] { 
   max-width: 400px; 
@@ -124,3 +136,4 @@ img[alt="Bluegill"], img[alt="Largemouth"] {
   margin: 0 auto;
 }
 </style>
+

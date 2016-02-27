@@ -193,6 +193,41 @@ title: Lecture Materials
   </div>
 </div>
 
+<!-- #### RECRUITMENT #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#cRecruitment">Stock-Recruitment</a>
+    </h4>
+  </div>
+  <div id="cRecruitment" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><b>Stock-Recruitment Relationships</b></li>
+          <ul>
+            <li>Pre-Readings</li>
+              <ul>
+                <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a></li>
+                <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
+              </ul>
+            <li><a href="PPT-SR.pptx">Lecture Slides</a></li>
+            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_B.html">XC</a></li>
+          </ul>
+        <li><b>Spawning Potential Ratio</b></li>
+          <ul>
+            <li>Pre-Readings</li>
+              <ul>
+                <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.5 (<i>not the boxes</i>)</a></li>
+                <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.2</li>
+              </ul>
+            <li><a href="PPT-SPR.pptx">Lecture Slides</a></li>
+            <li>Class Exercise</li>
+          </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <!-- #### SIZE STRUCTURE #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -240,28 +275,6 @@ title: Lecture Materials
           </ul>
         <li><a href="SizeStructure/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/Inch_ConditionBluegill.html">Homework</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- #### RECRUITMENT #### -->
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cRecruitment">Stock-Recruitment</a>
-    </h4>
-  </div>
-  <div id="cRecruitment" class="panel-collapse collapse">
-    <div class="panel-body">
-      <ul>
-        <li>Pre-Readings</li>
-          <ul>
-            <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a></li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
-          </ul>
-        <li>Lecture Slides</li>
-        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_B.html">XC</a></li>
       </ul>
     </div>
   </div>

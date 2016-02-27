@@ -221,7 +221,7 @@ title: Lecture Materials
                 <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.2</li>
               </ul>
             <li><a href="PPT-SPR.pptx">Lecture Slides</a></li>
-            <li><a href="Cases/SPR.html">Class Exercise</a></li>
+            <li><a href="Recruitment/Cases/SPR.html">Class Exercise</a></li>
           </ul>
       </ul>
     </div>

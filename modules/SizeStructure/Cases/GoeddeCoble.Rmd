@@ -13,8 +13,7 @@ output:
 # Renders an appropriate HTML file for the webpage
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/SizeStructure/Cases/")
 source("../../../rhelpers/rhelpers.R")
-fnm <- "GoeddeCoble"
-modHTML(fnm)
+modHTML("GoeddeCoble")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}
@@ -107,17 +106,6 @@ Use these results to answer the following questions.
 </ol>
 
 \ 
-
-## Analysis & Interpretation Questions II
-
-Construct similar length- and age-frequency histograms and PSD and PSD-P calculations for each species from the **POST-ANGLING** period.  Use this information to answer the following questions.
-
-<ol start="5">
-  <li>Assess the length- and age-frequency histograms for Bluegill, Pumpkinseed, Yellow Perch, and Largemouth Bass from Mid Lake after angler exploitation was allowed.</li>
-  <li>Write a clear paragraph, for each species, that compares the pre- and post-angling size- and age-structure results.</li>
-  <li>How did your summaries from the previous question compare to your expectations from before seeing the post-angling results?  Suggest possible reasons for any differences.</li>
-  <li>How do you suppose the annual mortality rate differed between the two periods for each species?  Use specific evidence to support your supposition.</li>
-</ol>
 
 ----
 

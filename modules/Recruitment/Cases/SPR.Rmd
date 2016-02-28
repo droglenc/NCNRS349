@@ -95,8 +95,14 @@ Use your spreadsheet model from above to answer the following questions.  All an
 ----
 
 <style>
-img[alt="SilverCarp"], img[alt="AsianCarp"], img[alt="ExExcel"] { 
+img[alt="SilverCarp"], img[alt="AsianCarp"] { 
   max-width: 400px; 
+  display: block;
+  margin: 0 auto;
+}
+
+img[alt="ExExcel"] { 
+  max-width: 700px; 
   display: block;
   margin: 0 auto;
 }

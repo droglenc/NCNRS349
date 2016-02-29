@@ -294,10 +294,11 @@ title: Lecture Materials
           <ul>
             <li><a href="MgmntIntro/KruegerDecker_2010_Process.pdf">Krueger and Decker (2010) The Process of Fisheries Management</a></li>
             <li>Watch these videos -- <a href="https://www.youtube.com/v/QovhSVEDGEY?version=3&autoplay=1" TARGET="_blank">I</a>, <a href="https://www.youtube.com/v/kM_SQo7EC50?version=3&autoplay=1" TARGET="_blank">II</a>, and <a href="https://www.youtube.com/v/kYwzgGdbTvw?version=3&autoplay=1" TARGET="_blank">III</a>.</li>
-            <li>Adaptive Management</li>
+            <li><a href="MgmntIntro/Allenetal_2011_AdaptiveManagement.pdf"></a></li>
+            <li><a href="MgmntIntro/Walters_2007_AdaptiveManagement.pdf">Walters (2007) Is Adaptive Management Helping to Solve Fisheries Problems?</a></li>
           </ul>
-        <li><a href="PPT.pptx">Lecture Slides</a></li>
-        <li><a href="HW.html">Homework</a></li>
+        <li><a href="MgmntIntro/PPT.pptx">Lecture Slides</a></li>
+        <li><a href="MgmntIntro/HW.html">Homework</a></li>
       </ul>
     </div>
   </div>

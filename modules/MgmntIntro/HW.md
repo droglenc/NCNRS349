@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Lecture Materials
+title: Homework
+subtitle: Management Introduction
 ---
 
 [Krueger and Decker (2010)](KruegerDecker_2010_Process.pdf) outlined the fisheries management process.  You will be assigned to read one (or part of one) of the following recent fisheries management plans.

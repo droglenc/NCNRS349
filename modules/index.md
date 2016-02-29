@@ -217,7 +217,7 @@ title: Lecture Materials
           <ul>
             <li>Pre-Readings</li>
               <ul>
-                <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.5 (<i>not the boxes</i>)</a></li>
+                <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Section 4.5 (<i>not the boxes</i>)</a></li>
                 <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.2</li>
               </ul>
             <li><a href="PPT-SPR.pptx">Lecture Slides</a></li>
@@ -290,15 +290,14 @@ title: Lecture Materials
   <div id="cMgmtIntro" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Pre-Readings</li>
+        <li>Pre-Readings and Videos</li>
           <ul>
-            <li></li>
+            <li><a href="MgmntIntro/KruegerDecker_2010_Process.pdf">Krueger and Decker (2010) The Process of Fisheries Management</a></li>
+            <li>Watch these videos -- <a href="https://www.youtube.com/v/QovhSVEDGEY?version=3&autoplay=1" TARGET="_blank">I</a>, <a href="https://www.youtube.com/v/kM_SQo7EC50?version=3&autoplay=1" TARGET="_blank">II</a>, and <a href="https://www.youtube.com/v/kYwzgGdbTvw?version=3&autoplay=1" TARGET="_blank">III</a>.</li>
+            <li>Adaptive Management</li>
           </ul>
-        <li>Lecture Slides</li>
-        <li>Case Studies</li>
-        <ul>
-          <li>X</li>
-        </ul>
+        <li><a href="PPT.pptx">Lecture Slides</a></li>
+        <li><a href="HW.html">Homework</a></li>
       </ul>
     </div>
   </div>
@@ -316,7 +315,7 @@ title: Lecture Materials
       <ul>
         <li>Pre-Readings</li>
           <ul>
-            <li></li>
+            <li><a href="MgmntTools/IsermannPaukert_2010_HarvestRegulations.pdf">Isermann and Paukert (2010) Regulating Harvest</a></li>
           </ul>
         <li>Lecture Slides</li>
         <li>Case Studies</li>

@@ -210,7 +210,7 @@ title: Lecture Materials
                 <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a></li>
                 <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
               </ul>
-            <li><a href="PPT-SR.pptx">Lecture Slides</a></li>
+            <li><a href="Recruitment/PPT-SR.pptx">Lecture Slides</a></li>
             <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_B.html">XC</a></li>
           </ul>
         <li><b>Spawning Potential Ratio</b></li>
@@ -220,7 +220,7 @@ title: Lecture Materials
                 <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Section 4.5 (<i>not the boxes</i>)</a></li>
                 <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.2</li>
               </ul>
-            <li><a href="PPT-SPR.pptx">Lecture Slides</a></li>
+            <li><a href="Recruitment/PPT-SPR.pptx">Lecture Slides</a></li>
             <li><a href="Recruitment/Cases/SPR.html">Class Exercise</a></li>
           </ul>
       </ul>

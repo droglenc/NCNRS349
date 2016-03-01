@@ -6,6 +6,7 @@ css: /css/syllabus.css
 
 ## Homework Due Dates
 <dl class="dl-horizontal">
+<dt>7-Mar</dt><dd>Stock-Recruitment HW</dd>
 </dl>
 
 <!---
@@ -23,7 +24,6 @@ css: /css/syllabus.css
 
 ## Exam or Other Due Dates
 <dl class="dl-horizontal">
-<dt>29-Feb</dt><dd><a href="Syllabus-Current.html#reflections---papers">First Paper Reflection</a></dd>
 <dt>7-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Wolter Reflection</a></dd>
 <dt>18-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Bethke Reflection</a></dd>
 <dt>24-Mar</dt><dd>Second Exam</dd>
@@ -35,6 +35,7 @@ css: /css/syllabus.css
 
 
 <!---
+<dt>29-Feb</dt><dd><a href="Syllabus-Current.html#reflections---papers">First Paper Reflection</a></dd>
 <dt>26-Feb</dt><dd>Lake Trout Emergency Rule Meeting XC Reflection</dd>
 <dt>25-Feb</dt><dd>First Exam</dd>
 <dt>24-Feb</dt><dd>AFS (<a href="http://www.wi-afs.org/AnnualMeetings.aspx">info</a>) XC Reflections</a></dd>

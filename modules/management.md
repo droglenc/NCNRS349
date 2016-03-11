@@ -42,22 +42,36 @@ title: Management Modules
   </div>
 </div>
 
-
-<!-- #### MANAGEMENT TOOLS #### -->
+<!-- #### MANAGEMENT TOOLS INTRODUCTION #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtTools">Management Tools</a>
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtTools">Management Tools Introduction</a>
     </h4>
   </div>
   <div id="cMgmtTools" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Pre-Readings</li>
-          <ul>
-            <li><a href="MgmntTools/IsermannPaukert_2010_HarvestRegulations.pdf">Isermann and Paukert (2010) Regulating Harvest</a></li>
-          </ul>
-        <li>Lecture Slides</li>
+        <li><a href="MgmntTools/RG_IsermannPaukert_2010">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntTools/PPT.PPTX">Lecture Slides</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- #### MANAGEMENT TOOLS INTRODUCTION #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtTools">Management Tools Introduction</a>
+    </h4>
+  </div>
+  <div id="cMgmtTools" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="MgmntTools/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntTools/PPT.PPTX">Lecture Slides</a></li>
         <li>Case Studies</li>
         <ul>
           <li></li>
@@ -69,4 +83,9 @@ title: Management Modules
       </ul>
     </div>
   </div>
+</div>
+
+
+
+
 </div>

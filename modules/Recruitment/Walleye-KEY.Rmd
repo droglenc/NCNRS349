@@ -10,24 +10,37 @@ library(nlstools)
 
 ```{r}
 data(WalleyeEL)
+WalleyeEL$logage0 <- log(WalleyeEL$age0)
 rckr <- srFuns(type="Ricker")
 svR <- srStarts(age0~age5,data=WalleyeEL,type="Ricker")
+## Additive
 srR <- nls(age0~rckr(age5,a,b),data=WalleyeEL,start=svR)
-cbind(estimates=coef(srR),confint(srR))
-
 bootR <- nlsBoot(srR)
-cbind(estimates=coef(srR),confint(bootR))
+cbind(estimates=coef(srR),confint(srR),confint(bootR))
+## Multiplicative
+srR2 <- nls(logage0~log(rckr(age5,a,b)),data=WalleyeEL,start=svR)
+bootR2 <- nlsBoot(srR2)
+cbind(estimates=coef(srR2),confint(srR2),confint(bootR2))
+
+mnS <- mean(WalleyeEL$age5)
+rckr(mnS,a=coef(srR))
+rckr(mnS,a=coef(srR2))
+
 ```
 
 ```{r}
 ind <- srFuns(type="independence")
 svI <- srStarts(age0~age5,data=WalleyeEL,type="independence")
 srI <- nls(age0~ind(age5,a),data=WalleyeEL,start=svI)
+srI2 <- nls(logage0~log(ind(age5,a)),data=WalleyeEL,start=svI)
 c(estimates=coef(srI),confint(srI))
+c(estimates=coef(srI2),confint(srI2))
 
 lmI <- lm(age0~0+age5,data=WalleyeEL)
 c(estimates=coef(lmI),confint(lmI))
 
+ind(mnS,a=coef(srI))
+ind(mnS,a=coef(srI2))
 #bootI <- nlsBoot(srI)
 ```
 
@@ -67,5 +80,6 @@ predict(lmI,data.frame(age5=meanS),interval="confidence")
 
 ```{r}
 extraSS(srI,com=srR)
+extraSS(srI2,com=srR2)
 ```
 

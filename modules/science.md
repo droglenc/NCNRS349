@@ -147,38 +147,47 @@ title: Science Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion1" href="#cMortality">Mortality</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMortalityTotal">Mortality - Total</a>
     </h4>
   </div>
-  <div id="cMortality" class="panel-collapse collapse">
+  <div id="cMortalityTotal" class="panel-collapse collapse">
     <div class="panel-body">
-      <ul class="list-unstyled">
-        <li><b>Total Mortality</b></li>
+      <ul>
+        <li>Pre-Readings</li>
           <ul>
-            <li>Pre-Readings</li>
-            <ul>
-              <li><a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Sections 6.1-6.3, 6.8-6.10</a></li>
-              <li><a href="Mortality/BKG.html">Ogle Notes</a></li>
-              <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
-            </ul>
-            <li><a href="Mortality/PPT_Total.pptx">Lecture Slides</a></li>
-            <li><a href="Mortality/CE1.html">Class Exercise</a></li>
-            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a></li>
+            <li><a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Sections 6.1-6.3, 6.8-6.10</a></li>
+            <li><a href="Mortality/BKG.html">Ogle Notes</a></li>
+            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
           </ul>
-        <li><b>Mortality Components</b></li>
-          <ul>
-            <li>Pre-Readings</li>
-            <ul>
-              <li><a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Section 6.6</a></li>
-              <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.4</li>
-            </ul>
-          </ul>
-            <li><a href="Age/PPT_Components.pptx">Lecture Slides</a></li>
-          </ul>
+        <li><a href="Mortality/PPT_Total.pptx">Lecture Slides</a></li>
+        <li><a href="Mortality/CE1.html">Class Exercise</a></li>
+        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a></li>
       </ul>
     </div>
   </div>
 </div>
+
+<!-- #### MORTALITY COMPONENTS #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMortalityComponents">Mortality - Components</a>
+    </h4>
+  </div>
+  <div id="cMortalityComponents" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li>Pre-Readings</li>
+          <ul>
+            <li><a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Section 6.6</a></li>
+            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.4</li>
+          </ul>
+        <li><a href="Age/PPT_Components.pptx">Lecture Slides</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 
 <!-- #### GROWTH #### -->
 <div class="panel panel-default">
@@ -212,26 +221,35 @@ title: Science Modules
   <div id="cRecruitment" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><b>Stock-Recruitment Relationships</b></li>
+        <li>Pre-Readings</li>
           <ul>
-            <li>Pre-Readings</li>
-              <ul>
-                <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a></li>
-                <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
-              </ul>
-            <li><a href="Recruitment/PPT-SR.pptx">Lecture Slides</a></li>
-            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_B.html">XC</a></li>
+            <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a></li>
+            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
           </ul>
-        <li><b>Spawning Potential Ratio</b></li>
+        <li><a href="Recruitment/PPT-SR.pptx">Lecture Slides</a></li>
+        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_B.html">XC</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- #### SPAWNING POTENTIAL RATIO #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cSPR">Spawning Potential Ratio</a>
+    </h4>
+  </div>
+  <div id="cSPR" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li>Pre-Readings</li>
           <ul>
-            <li>Pre-Readings</li>
-              <ul>
-                <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Section 4.5 (<i>not the boxes</i>)</a></li>
-                <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.2</li>
-              </ul>
-            <li><a href="Recruitment/PPT-SPR.pptx">Lecture Slides</a></li>
-            <li><a href="Recruitment/Cases/SPR.html">Class Exercise</a></li>
+            <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Section 4.5 (<i>not the boxes</i>)</a></li>
+            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.2</li>
           </ul>
+        <li><a href="Recruitment/PPT-SPR.pptx">Lecture Slides</a></li>
+        <li><a href="Recruitment/Cases/SPR.html">Class Exercise</a></li>
       </ul>
     </div>
   </div>

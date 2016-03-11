@@ -159,7 +159,7 @@ title: Science Modules
             <li><a href="Mortality/BKG.html">Ogle Notes</a></li>
             <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
           </ul>
-        <li><a href="Mortality/PPT_Total.pptx">Lecture Slides</a></li>
+        <li><a href="Mortality/PPT.pptx">Lecture Slides</a></li>
         <li><a href="Mortality/CE1.html">Class Exercise</a></li>
         <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a></li>
       </ul>
@@ -182,7 +182,7 @@ title: Science Modules
             <li><a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf">Miranda and Bettolli (2006) Section 6.6</a></li>
             <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.4</li>
           </ul>
-        <li><a href="Age/PPT_Components.pptx">Lecture Slides</a></li>
+        <li><a href="MortalityComponents/PPT.pptx">Lecture Slides</a></li>
       </ul>
     </div>
   </div>
@@ -226,7 +226,7 @@ title: Science Modules
             <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a></li>
             <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
           </ul>
-        <li><a href="Recruitment/PPT-SR.pptx">Lecture Slides</a></li>
+        <li><a href="Recruitment/PPT.pptx">Lecture Slides</a></li>
         <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_B.html">XC</a></li>
       </ul>
     </div>
@@ -248,8 +248,8 @@ title: Science Modules
             <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Section 4.5 (<i>not the boxes</i>)</a></li>
             <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.2</li>
           </ul>
-        <li><a href="Recruitment/PPT-SPR.pptx">Lecture Slides</a></li>
-        <li><a href="Recruitment/Cases/SPR.html">Class Exercise</a></li>
+        <li><a href="SPR/PPT.pptx">Lecture Slides</a></li>
+        <li><a href="SPR/Cases/SPR.html">Class Exercise</a></li>
       </ul>
     </div>
   </div>

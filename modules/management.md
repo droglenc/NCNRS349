@@ -54,24 +54,25 @@ title: Management Modules
       <ul>
         <li><a href="MgmntTools/RG_IsermannPaukert_2010">Pre-Lecture Reading</a></li>
         <li><a href="MgmntTools/PPT.PPTX">Lecture Slides</a></li>
+        <li><a href="">Class Exercise<a></li>
       </ul>
     </div>
   </div>
 </div>
 
 
-<!-- #### MANAGEMENT TOOLS INTRODUCTION #### -->
+<!-- #### MANAGEMENT BAG LIMITS #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtTools">Management Tools Introduction</a>
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtBagLimits">Bag/Creel Limits</a>
     </h4>
   </div>
-  <div id="cMgmtTools" class="panel-collapse collapse">
+  <div id="cMgmtBagLimits" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="MgmntTools/">Pre-Lecture Reading</a></li>
-        <li><a href="MgmntTools/PPT.PPTX">Lecture Slides</a></li>
+        <li><a href="MgmntBagLimits/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntBagLimits/PPT.PPTX">Lecture Slides</a></li>
         <li>Case Studies</li>
         <ul>
           <li></li>
@@ -85,6 +86,105 @@ title: Management Modules
   </div>
 </div>
 
+<!-- #### MANAGEMENT SIZE LIMITS #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtSizeLimits">Size Limits</a>
+    </h4>
+  </div>
+  <div id="cMgmtSizeLimits" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="MgmntSizeLimits/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntSizeLimits/PPT.PPTX">Lecture Slides</a></li>
+        <li>Case Studies</li>
+        <ul>
+          <li></li>
+        </ul>
+        <li>Discussion Readings</li>
+        <ul>
+          <li></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- #### CLOSURES #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtClosures">Closures</a>
+    </h4>
+  </div>
+  <div id="cMgmtClosures" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="MgmntClosures/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntClosures/PPT.PPTX">Lecture Slides</a></li>
+        <li>Case Studies</li>
+        <ul>
+          <li></li>
+        </ul>
+        <li>Discussion Readings</li>
+        <ul>
+          <li></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- #### COARSE WOODY HABITAT #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtCWH">Coarse Woody Habitat</a>
+    </h4>
+  </div>
+  <div id="cMgmtCWH" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="MgmntCWH/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntCWH/PPT.PPTX">Lecture Slides</a></li>
+        <li>Case Studies</li>
+        <ul>
+          <li></li>
+        </ul>
+        <li>Discussion Readings</li>
+        <ul>
+          <li></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- #### INDIVIDUAL QUOTAS #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtIQs">Individual Quotas</a>
+    </h4>
+  </div>
+  <div id="cMgmtIQs" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="MgmntIQs/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntIQs/PPT.PPTX">Lecture Slides</a></li>
+        <li>Case Studies</li>
+        <ul>
+          <li></li>
+        </ul>
+        <li>Discussion Readings</li>
+        <ul>
+          <li></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
 
 
 

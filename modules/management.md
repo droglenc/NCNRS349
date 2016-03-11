@@ -59,6 +59,7 @@ title: Management Modules
     </div>
   </div>
 </div>
+</div>
 
 
 <!-- #### MANAGEMENT BAG LIMITS #### -->

@@ -61,7 +61,7 @@ title: Management Modules
 </div>
 
 
-<!-- #### MANAGEMENT BAG LIMITS #### -->
+<!-- #### BAG LIMITS #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
@@ -86,7 +86,7 @@ title: Management Modules
   </div>
 </div>
 
-<!-- #### MANAGEMENT SIZE LIMITS #### -->
+<!-- #### SIZE LIMITS #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
@@ -171,7 +171,7 @@ title: Management Modules
   <div id="cMgmtIQs" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="MgmntIQs/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntIQs/RG_IQs">Pre-Lecture Reading</a></li>
         <li><a href="MgmntIQs/PPT.PPTX">Lecture Slides</a></li>
         <li>Case Studies</li>
         <ul>

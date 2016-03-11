@@ -14,19 +14,28 @@ title: Science Modules
   </div>
   <div id="cClassIntro" class="panel-collapse collapse">
     <div class="panel-body">
-    <ul class="list-unstyled">
-      <li><strong>General Introduction</strong></li>
-        <ul>
-          <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
-          <li><a href="ClassIntro/CE1.html">Assignment</a></li>
-          <li><a href="ClassIntro/CE2.html">Class Exercise</a></li>
-          <li><a href="ClassIntro/PPT_Stock.pptx">Lecture Slides</a></li>
-        </ul>
-      <li><strong>Foundational Models</strong></li>
-        <ul>
-          <li><a href="ClassIntro/PPT_Models.pptx">Lecture Slides</a></li>
-        </ul>
-    </ul>
+      <ul>
+        <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
+        <li><a href="ClassIntro/CE1.html">Assignment</a></li>
+        <li><a href="ClassIntro/CE2.html">Class Exercise</a></li>
+        <li><a href="ClassIntro/PPT_Stock.pptx">Lecture Slides</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- #### FOUNDATIONAL MODELS #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cFoundationalModels">Foundational Models</a>
+    </h4>
+  </div>
+  <div id="cFoundationalModels" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="ClassIntro/PPT_Models.pptx">Lecture Slides</a></li>
+      </ul>
     </div>
   </div>
 </div>

@@ -1,15 +1,16 @@
 ---
 layout: page
-title: Lecture Materials
 ---
 
-<div class="panel-group" id="accordion">
+# Science Modules
+
+<div class="panel-group" id="accordion1">
 
 <!-- #### CLASS INTRODUCTION #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cClassIntro">Class Introduction</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cClassIntro">Class Introduction</a>
     </h4>
   </div>
   <div id="cClassIntro" class="panel-collapse collapse">
@@ -35,7 +36,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cCPUE">Abundance - CPUE</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cCPUE">Abundance - CPUE</a>
     </h4>
   </div>
   <div id="cCPUE" class="panel-collapse collapse">
@@ -59,7 +60,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cMarkRecap">Abundance - Mark-Recapture</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMarkRecap">Abundance - Mark-Recapture</a>
     </h4>
   </div>
   <div id="cMarkRecap" class="panel-collapse collapse">
@@ -91,7 +92,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cDepletion">Abundance - Depletion</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cDepletion">Abundance - Depletion</a>
     </h4>
   </div>
   <div id="cDepletion" class="panel-collapse collapse">
@@ -115,7 +116,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cAge">Age</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cAge">Age</a>
     </h4>
   </div>
   <div id="cAge" class="panel-collapse collapse">
@@ -138,7 +139,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cMortality">Mortality</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMortality">Mortality</a>
     </h4>
   </div>
   <div id="cMortality" class="panel-collapse collapse">
@@ -175,7 +176,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cGrowth">Growth</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cGrowth">Growth</a>
     </h4>
   </div>
   <div id="cGrowth" class="panel-collapse collapse">
@@ -197,7 +198,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cRecruitment">Stock-Recruitment</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cRecruitment">Stock-Recruitment</a>
     </h4>
   </div>
   <div id="cRecruitment" class="panel-collapse collapse">
@@ -232,7 +233,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cSizeStrux">Size Structure</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cSizeStrux">Size Structure</a>
     </h4>
   </div>
   <div id="cSizeStrux" class="panel-collapse collapse">
@@ -261,7 +262,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cCondition">Condition</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cCondition">Condition</a>
     </h4>
   </div>
   <div id="cCondition" class="panel-collapse collapse">
@@ -279,12 +280,19 @@ title: Lecture Materials
     </div>
   </div>
 </div>
+</div>
+
+
+# Management Modules
+
+
+<div class="panel-group" id="accordion2">
 
 <!-- #### MANAGEMENT INTRODUCTION #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cMgmtIntro">Management Introduction</a>
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtIntro">Management Introduction</a>
     </h4>
   </div>
   <div id="cMgmtIntro" class="panel-collapse collapse">
@@ -308,7 +316,7 @@ title: Lecture Materials
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#cMgmtTools">Management Tools</a>
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtTools">Management Tools</a>
     </h4>
   </div>
   <div id="cMgmtTools" class="panel-collapse collapse">

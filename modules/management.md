@@ -71,7 +71,7 @@ title: Management Modules
   <div id="cMgmtBagLimits" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="MgmntBagLimits/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntBagLimits/RG_BagLimits">Pre-Lecture Reading</a></li>
         <li><a href="MgmntBagLimits/PPT.PPTX">Lecture Slides</a></li>
         <li>Case Studies</li>
         <ul>
@@ -96,7 +96,7 @@ title: Management Modules
   <div id="cMgmtSizeLimits" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="MgmntSizeLimits/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntSizeLimits/RG_SizeLimits">Pre-Lecture Reading</a></li>
         <li><a href="MgmntSizeLimits/PPT.PPTX">Lecture Slides</a></li>
         <li>Case Studies</li>
         <ul>

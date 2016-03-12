@@ -25,7 +25,6 @@ css: /css/syllabus.css
 
 ## Exam or Other Due Dates
 <dl class="dl-horizontal">
-<dt>7-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Wolter Reflection</a></dd>
 <dt>18-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Bethke Reflection</a></dd>
 <dt>24-Mar</dt><dd>Second Exam</dd>
 <dt>1-Apr</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Seider Reflection</a></dd>
@@ -36,6 +35,7 @@ css: /css/syllabus.css
 
 
 <!---
+<dt>7-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Wolter Reflection</a></dd>
 <dt>29-Feb</dt><dd><a href="Syllabus-Current.html#reflections---papers">First Paper Reflection</a></dd>
 <dt>26-Feb</dt><dd>Lake Trout Emergency Rule Meeting XC Reflection</dd>
 <dt>25-Feb</dt><dd>First Exam</dd>

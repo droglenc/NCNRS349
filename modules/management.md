@@ -37,7 +37,8 @@ title: Management Modules
       <ul>
         <li><a href="MgmntTools/RG_IsermannPaukert_2010">Pre-Lecture Reading</a></li>
         <li><a href="MgmntTools/PPT.PPTX">Lecture Slides</a></li>
-        <li><a href="MgmntTools">Class Exercise</a></li>
+        <li><a href="MgmntTools/CE">Class Exercise</a></li>
+        <li><a href="MgmntTools/HW">Homework</a></li>
       </ul>
     </div>
   </div>

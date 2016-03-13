@@ -36,7 +36,7 @@ title: Management Modules
     <div class="panel-body">
       <ul>
         <li><a href="MgmntTools/RG_IsermannPaukert_2010">Pre-Lecture Reading</a></li>
-        <li><a href="MgmntTools/PPT.PPTX">Lecture Slides</a></li>
+        <li><a href="MgmntTools/PPT.pptx">Lecture Slides</a></li>
         <li><a href="MgmntTools/CE">Class Exercise</a></li>
         <li><a href="MgmntTools/HW">Homework</a></li>
       </ul>
@@ -79,6 +79,11 @@ title: Management Modules
       <ul>
         <li><a href="MgmntSizeLimits/RG_SizeLimits">Pre-Lecture Reading</a></li>
         <li><a href="MgmntSizeLimits/PPT.pptx">Lecture Slides</a></li>
+        <li>Class Exercise</li>
+        <ul>
+          <li><a href="MgmntSizeLimits/CE_MinimumLimitEffectiveness.pptx">Minimum Length Limit</a></li>
+          <li><a href="MgmntSizeLimits/CE_SlotLimitEffectiveness.pptx">Protected Slot Limit</a></li>
+        </ul>
         <li>Discussion Readings</li>
         <ul>
           <li><a href="MgmntSizeLimits/RG_Paukeretal2002.html">Bluegill Length Limits in Nebraska.</a></li>

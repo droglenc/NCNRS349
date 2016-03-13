@@ -19,6 +19,7 @@ title: Management Modules
         <li>Pre-Lecture Videos -- <a href="https://www.youtube.com/v/QovhSVEDGEY?version=3&autoplay=1" TARGET="_blank">I</a>, <a href="https://www.youtube.com/v/kM_SQo7EC50?version=3&autoplay=1" TARGET="_blank">II</a>, and <a href="https://www.youtube.com/v/kYwzgGdbTvw?version=3&autoplay=1" TARGET="_blank">III</a>.</li>
         <li><a href="MgmntProcess/PPT.pptx">Lecture Slides</a></li>
         <li><a href="MgmntProcess/HW.html">Homework</a></li>
+        <li><a href="MgmntProcess/Cases/NOPInvasion">Case Study</a></li>
       </ul>
     </div>
   </div>
@@ -54,7 +55,7 @@ title: Management Modules
       <ul>
         <li><a href="MgmntTools/RG_IsermannPaukert_2010">Pre-Lecture Reading</a></li>
         <li><a href="MgmntTools/PPT.PPTX">Lecture Slides</a></li>
-        <li><a href="">Class Exercise</a></li>
+        <li><a href="MgmntTools">Class Exercise</a></li>
       </ul>
     </div>
   </div>

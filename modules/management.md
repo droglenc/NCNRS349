@@ -61,7 +61,7 @@ title: Management Modules
         <ul>
           <li><a href="MgmntBagLimits/RG_Jacobson2005.html">Bluegill Bag Limits in Minnesota</a></li>
           <li><a href="MgmntBagLimits/RG_Rypel2015.html">Bluegill Bag Limits in Wisconsin</a></li>
-        <ul>
+        </ul>
       </ul>
     </div>
   </div>

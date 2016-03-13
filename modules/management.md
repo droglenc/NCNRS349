@@ -55,7 +55,7 @@ title: Management Modules
     <div class="panel-body">
       <ul>
         <li><a href="MgmntBagLimits/RG_BagLimits">Pre-Lecture Reading</a></li>
-        <li><a href="MgmntBagLimits/PPT.PPTX">Lecture Slides</a></li>
+        <li><a href="MgmntBagLimits/PPT.pptx">Lecture Slides</a></li>
         <li><a href="MgmntBagLimits/CE_BagLimitsReductions.pptx">Class Exercise</a></li>
         <li>Discussion Readings</li>
         <ul>

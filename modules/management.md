@@ -25,24 +25,6 @@ title: Management Modules
   </div>
 </div>
 
-
-<!-- #### ADAPTIVE MANAGEMENT #### -->
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtAdaptive">Adaptive Management</a>
-    </h4>
-  </div>
-  <div id="cMgmtAdaptive" class="panel-collapse collapse">
-    <div class="panel-body">
-      <ul>
-        <li><a href="MgmntAdaptive/RG_Allen_Walters">Pre-Lecture Reading</a></li>
-        <li><a href="MgmntAdaptive/PPT.pptx">Lecture Slides</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
 <!-- #### MANAGEMENT TOOLS INTRODUCTION #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -60,7 +42,6 @@ title: Management Modules
     </div>
   </div>
 </div>
-
 
 <!-- #### BAG LIMITS #### -->
 <div class="panel panel-default">
@@ -182,6 +163,23 @@ title: Management Modules
         <ul>
           <li></li>
         </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- #### ADAPTIVE MANAGEMENT #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtAdaptive">Adaptive Management</a>
+    </h4>
+  </div>
+  <div id="cMgmtAdaptive" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="MgmntAdaptive/RG_Allen_Walters">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntAdaptive/PPT.pptx">Lecture Slides</a></li>
       </ul>
     </div>
   </div>

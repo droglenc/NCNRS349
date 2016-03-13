@@ -7,6 +7,7 @@ css: /css/syllabus.css
 ## Homework Due Dates
 <dl class="dl-horizontal">
 <dt>16-Mar</dt><dd>Condition HW</dd>
+<dt>21-Mar</dt><dd>Management Process HW</dd>
 </dl>
 
 <!---
@@ -49,8 +50,6 @@ css: /css/syllabus.css
 
 ## Cancelled Classes
 <dl class="dl-horizontal">
-<dt>9-Mar</dt><dd>NO CLASS (Midterm Break)</dd>
-<dt>11-Mar</dt><dd>NO CLASS (Midterm Break)</dd>
 <dt>25-Mar</dt><dd>NO CLASS (Good Friday)</dd>
 </dl>
 
@@ -59,4 +58,6 @@ css: /css/syllabus.css
 <dt>17-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
 <dt>18-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
 <dt>19-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
+<dt>9-Mar</dt><dd>NO CLASS (Midterm Break)</dd>
+<dt>11-Mar</dt><dd>NO CLASS (Midterm Break)</dd>
 --->

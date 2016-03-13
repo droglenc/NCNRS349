@@ -56,14 +56,8 @@ title: Management Modules
       <ul>
         <li><a href="MgmntBagLimits/RG_BagLimits">Pre-Lecture Reading</a></li>
         <li><a href="MgmntBagLimits/PPT.PPTX">Lecture Slides</a></li>
-        <li>Case Studies</li>
-        <ul>
-          <li></li>
-        </ul>
-        <li>Discussion Readings</li>
-        <ul>
-          <li></li>
-        </ul>
+        <li><a href="MgmntBagLimits/CE_BagLimitsReduction.pptx">Class Exercise</a></li>
+        <li><a href="MgmntBagLimits/RG_Jacobson2005.html">Discussion Readings</a></li>
       </ul>
     </div>
   </div>

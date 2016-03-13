@@ -19,7 +19,7 @@ title: Management Modules
         <li>Pre-Lecture Videos -- <a href="https://www.youtube.com/v/QovhSVEDGEY?version=3&autoplay=1" TARGET="_blank">I</a>, <a href="https://www.youtube.com/v/kM_SQo7EC50?version=3&autoplay=1" TARGET="_blank">II</a>, and <a href="https://www.youtube.com/v/kYwzgGdbTvw?version=3&autoplay=1" TARGET="_blank">III</a>.</li>
         <li><a href="MgmntProcess/PPT.pptx">Lecture Slides</a></li>
         <li><a href="MgmntProcess/HW.html">Homework</a></li>
-        <li><a href="MgmntProcess/Cases/NOPInvasion">Case Study</a></li>
+        <li><a href="MgmntProcess/Cases/NOPInvasion">Class Exercise</a></li>
       </ul>
     </div>
   </div>

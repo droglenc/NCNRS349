@@ -4,7 +4,7 @@ title: Homework
 subtitle: Management Introduction
 ---
 
-[Krueger and Decker (2010)](KruegerDecker_2010_Process.pdf) outlined the fisheries management process.  You will be assigned to read one (or part of one) of the following recent fisheries management plans.
+[Krueger and Decker (2010)](KruegerDecker_2010_Process.pdf) outlined the fisheries management process.  You will be assigned ([here are the assignments](HW_assignments)) to read one (or part of one) of the following recent fisheries management plans.
 
 * [Leech Lake Management Plan, 2011-15](http://files.dnr.state.mn.us/recreation/fishing/largelakes/leech/leechlakemp.pdf).
 * [Fisheries Management Plan for the Minnesota Waters of Lake Superior (2006)](http://files.dnr.state.mn.us/publications/fisheries/special_reports/163.pdf).

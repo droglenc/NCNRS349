@@ -57,7 +57,11 @@ title: Management Modules
         <li><a href="MgmntBagLimits/RG_BagLimits">Pre-Lecture Reading</a></li>
         <li><a href="MgmntBagLimits/PPT.PPTX">Lecture Slides</a></li>
         <li><a href="MgmntBagLimits/CE_BagLimitsReductions.pptx">Class Exercise</a></li>
-        <li><a href="MgmntBagLimits/RG_Jacobson2005.html">Discussion Readings</a></li>
+        <li>Discussion Readings</li>
+        <ul>
+          <li><a href="MgmntBagLimits/RG_Jacobson2005.html">Bluegill Bag Limits in Minnesota</a></li>
+          <li><a href="MgmntBagLimits/RG_Rypel2015.html">Bluegill Bag Limits in Wisconsin</a></li>
+        <ul>
       </ul>
     </div>
   </div>
@@ -75,9 +79,11 @@ title: Management Modules
       <ul>
         <li><a href="MgmntSizeLimits/RG_SizeLimits">Pre-Lecture Reading</a></li>
         <li><a href="MgmntSizeLimits/PPT.PPTX">Lecture Slides</a></li>
-        <li>Discussion Readings
+        <li>Discussion Readings</li>
         <ul>
-          <li><a href="MgmntSizeLimits/RG_.html"></a></li>
+          <li><a href="MgmntSizeLimits/RG_Paukeretal2002.html"></a>Bluegill Length Limits in Nebraska.</li>
+          <li><a href="MgmntSizeLimits/RG_Boxrucker2002.html">Crappie Length Limits in Oklahoma</a></li>
+          <li><a href="MgmntSizeLimits/RG_Isermannetal2007.html">Yellow Perch Bag and Length Limits in South Dakota</a></li>
         </ul>
       </ul>
     </div>

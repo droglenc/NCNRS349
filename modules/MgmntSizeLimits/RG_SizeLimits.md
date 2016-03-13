@@ -10,7 +10,7 @@ subtitle: Size/Length Limits
     * Differentiate between minimum, maximum, protected slot, and harvest slot length limits.
     * What are typical possible responses of a fishery to the implementation of length limits?
     * Describe population characteristics (density, growth, etc.) for when a protected slot or a harvest slot should be implemented.
-1. Read [The Role of Size Limits in Walleye Management (Brousseau and Armstrong (1987))](BrousseauArmstrong_1987_WAELengthLimits.pdf) and consider the following items.
+1. Read [The Role of Size Limits in Walleye Management (Brousseau and Armstrong (1987)](BrousseauArmstrong_1987_WAELengthLimits.pdf) and consider the following items.
     * What are five potential objectives for implementing size limits on Walleye fisheries?  Which is most common?
     * Describe population characteristics (density, growth, etc.) for when a minimum, protected slot, or maximum length limit should be implemented.
     * Explain why the author suggests that length limits should be applied on a lake-specific rather than state-wide basis.  Why is this seldom followed in practice?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reading Guide
-subtitle: Paukert *et al.* (2002)
+subtitle: Paukert et al. (2002)
 ---
 
 ----

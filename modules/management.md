@@ -78,10 +78,10 @@ title: Management Modules
     <div class="panel-body">
       <ul>
         <li><a href="MgmntSizeLimits/RG_SizeLimits">Pre-Lecture Reading</a></li>
-        <li><a href="MgmntSizeLimits/PPT.PPTX">Lecture Slides</a></li>
+        <li><a href="MgmntSizeLimits/PPT.pptx">Lecture Slides</a></li>
         <li>Discussion Readings</li>
         <ul>
-          <li><a href="MgmntSizeLimits/RG_Paukeretal2002.html"></a>Bluegill Length Limits in Nebraska.</li>
+          <li><a href="MgmntSizeLimits/RG_Paukeretal2002.html">Bluegill Length Limits in Nebraska.</a></li>
           <li><a href="MgmntSizeLimits/RG_Boxrucker2002.html">Crappie Length Limits in Oklahoma</a></li>
           <li><a href="MgmntSizeLimits/RG_Isermannetal2007.html">Yellow Perch Bag and Length Limits in South Dakota</a></li>
         </ul>

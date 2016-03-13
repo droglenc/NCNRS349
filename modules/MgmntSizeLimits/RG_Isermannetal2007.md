@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reading Guide
-subtitle: Isermann *et al.* (2007)
+subtitle: Isermann et al. (2007)
 ---
 
 ----

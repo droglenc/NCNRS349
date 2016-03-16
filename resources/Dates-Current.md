@@ -8,6 +8,7 @@ css: /css/syllabus.css
 <dl class="dl-horizontal">
 <dt>16-Mar</dt><dd>Condition HW</dd>
 <dt>21-Mar</dt><dd>Management Process HW</dd>
+<dt>23-Mar</dt><dd>Management Tools HW</dd>
 </dl>
 
 <!---
@@ -26,7 +27,7 @@ css: /css/syllabus.css
 
 ## Exam or Other Due Dates
 <dl class="dl-horizontal">
-<dt>18-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Bethke Reflection</a></dd>
+<dt>23-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Bethke Reflection</a></dd>
 <dt>24-Mar</dt><dd>Second Exam</dd>
 <dt>1-Apr</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Seider Reflection</a></dd>
 <dt>4-Apr</dt><dd><a href="Syllabus-Current.html#reflections---papers">Second Paper Reflection</a></dd>

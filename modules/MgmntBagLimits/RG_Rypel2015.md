@@ -12,7 +12,7 @@ subtitle: Rypel (2015)
     * What were the objectives of this study?
     * Describe the "before-after control-impact" (BACI) design used in this study.
     * Explain why the interaction term in the two-way ANOVA analysis is the effect of interest in this study.
-    * Be prepared to discuss Figure 2 and Table 2.
+    * Be prepared to discuss Figures 2 and 3, and Table 2.
     * Be prepared to explain Figure 4.
     * Do you think that an increase of 20 mm in mean length is "important" (see author's discussion of why he used "modest" in his descriptions)?
     * What was a major shortcoming of this study?

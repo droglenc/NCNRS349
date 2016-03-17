@@ -6,12 +6,12 @@ css: /css/syllabus.css
 
 ## Homework Due Dates
 <dl class="dl-horizontal">
-<dt>16-Mar</dt><dd>Condition HW</dd>
 <dt>21-Mar</dt><dd>Management Process HW</dd>
-<dt>23-Mar</dt><dd>Management Tools HW</dd>
 </dl>
 
 <!---
+<dt>23-Mar</dt><dd>Management Tools HW</dd>
+<dt>16-Mar</dt><dd>Condition HW</dd>
 <dt>7-Mar</dt><dd>Stock-Recruitment HW</dd>
 <dt>22-Feb</dt><dd>Size Structure HW</dd>
 <dt>12-Feb</dt><dd>Growth HW #1 & #2</dd>

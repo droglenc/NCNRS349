@@ -81,8 +81,8 @@ title: Management Modules
         <li><a href="MgmntSizeLimits/PPT.pptx">Lecture Slides</a></li>
         <li>Class Exercise</li>
         <ul>
-          <li><a href="MgmntSizeLimits/CE_MinimumLimitEffectiveness.pptx">Minimum Length Limit</a></li>
-          <li><a href="MgmntSizeLimits/CE_SlotLimitEffectiveness.pptx">Protected Slot Limit</a></li>
+          <li>Minimum Length Limit</li>
+          <li>Protected Slot Limit</li>
         </ul>
         <li>Discussion Readings</li>
         <ul>

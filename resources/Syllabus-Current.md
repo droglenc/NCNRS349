@@ -27,8 +27,8 @@ At the end of this class you will be able to ...
 1. Explain a conceptual model for the population dynamics of a stock.
 1. Estimate abundance from mark-recapture and depletion data.
 1. Implement an age-length key.
-1. Estimate mortality from catch-at-age data.
-1. Estimate growth from length-at-age data.
+1. Estimate and interpret mortality from catch-at-age data.
+1. Estimate and interpret growth from length-at-age data.
 1. Fit and interpret stock-recruitment curves.
 1. Compute and interpret length frequency summaries and size structure indices.
 1. Compute and interpret condition indices.
@@ -36,7 +36,7 @@ At the end of this class you will be able to ...
 1. Describe the steps in and components of the fisheries management process.
 1. Describe how the concept of common property influences the behavior of fishers.
 1. Explain the purposes, strengths and limitations for a variety of management tools (including length limits, bag limits, closed seasons, refuges, stocking, ITQs, and catch shares).
-1. Make management recommendations that are founded on sound ecological reasoning and knowledge of fish biology, fisheries science, and adaptive management results. 
+1. Make management recommendations that are founded on sound ecological reasoning and knowledge of fish biology, fisheries science results, and adaptive management principles. 
 
 ## Instructor
 

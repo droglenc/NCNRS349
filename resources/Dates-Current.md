@@ -6,11 +6,11 @@ css: /css/syllabus.css
 
 ## Homework Due Dates
 <dl class="dl-horizontal">
-<dt>21-Mar</dt><dd>Management Process HW</dd>
 </dl>
 
 <!---
 <dt>23-Mar</dt><dd>Management Tools HW</dd>
+<dt>21-Mar</dt><dd>Management Process HW</dd>
 <dt>16-Mar</dt><dd>Condition HW</dd>
 <dt>7-Mar</dt><dd>Stock-Recruitment HW</dd>
 <dt>22-Feb</dt><dd>Size Structure HW</dd>
@@ -27,8 +27,6 @@ css: /css/syllabus.css
 
 ## Exam or Other Due Dates
 <dl class="dl-horizontal">
-<dt>23-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Bethke Reflection</a></dd>
-<dt>24-Mar</dt><dd>Second Exam</dd>
 <dt>1-Apr</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Seider Reflection</a></dd>
 <dt>4-Apr</dt><dd><a href="Syllabus-Current.html#reflections---papers">Second Paper Reflection</a></dd>
 <dt>13-Apr</dt><dd>Spring Hearings (11-Apr) Reflection</a></dd>
@@ -37,6 +35,8 @@ css: /css/syllabus.css
 
 
 <!---
+<dt>24-Mar</dt><dd>Second Exam</dd>
+<dt>23-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Bethke Reflection</a></dd>
 <dt>7-Mar</dt><dd><a href="Syllabus-Current.html#reflections---speakers">Wolter Reflection</a></dd>
 <dt>29-Feb</dt><dd><a href="Syllabus-Current.html#reflections---papers">First Paper Reflection</a></dd>
 <dt>26-Feb</dt><dd>Lake Trout Emergency Rule Meeting XC Reflection</dd>
@@ -51,7 +51,6 @@ css: /css/syllabus.css
 
 ## Cancelled Classes
 <dl class="dl-horizontal">
-<dt>25-Mar</dt><dd>NO CLASS (Good Friday)</dd>
 </dl>
 
 <!---
@@ -61,4 +60,5 @@ css: /css/syllabus.css
 <dt>19-Feb</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
 <dt>9-Mar</dt><dd>NO CLASS (Midterm Break)</dd>
 <dt>11-Mar</dt><dd>NO CLASS (Midterm Break)</dd>
+<dt>25-Mar</dt><dd>NO CLASS (Good Friday)</dd>
 --->

@@ -13,8 +13,7 @@ output:
 # Renders an appropriate HTML file for the webpage
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Abundance/MarkRecap/")
 source("../../../rhelpers/rhelpers.R")
-fnm <- "CE2c"
-modHTML(fnm)
+modHTML("CE2c")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}
@@ -27,7 +26,7 @@ set.seed(13797834)
 ----
 
 ## Understanding the Bias of Petersen Estimates
-<img src="../../../img/computer-1.jpg" alt="Simulations" class="img-right">
+<img src="http://derekogle.com/NCNRS349/img/computer-1.jpg" alt="Simulations" class="img-right">
 In this exercise, you will simulate violations of assumptions for the Petersen family of mark-recapture methods to determine if your expectations from the [previous page](CE2b.html) are met.
 
 #### Simulation Description

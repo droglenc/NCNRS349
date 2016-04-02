@@ -86,9 +86,15 @@ title: Management Modules
         </ul>
         <li>Discussion Readings</li>
         <ul>
-          <li><a href="MgmntSizeLimits/RG_Paukeretal2002.html">Bluegill Length Limits in Nebraska.</a></li>
-          <li><a href="MgmntSizeLimits/RG_Boxrucker2002.html">Crappie Length Limits in Oklahoma</a></li>
-          <li><a href="MgmntSizeLimits/RG_Isermannetal2007.html">Yellow Perch Bag and Length Limits in South Dakota</a></li>
+          <li><a href="MgmntSizeLimits/RG_Paukeretal2002.html">Bluegill Minimum Length Limits in Nebraska.</a></li>
+          <li><a href="MgmntSizeLimits/RG_Boxrucker2002.html">Crappie Minimum Length Limits in Oklahoma</a></li>
+          <li><a href="MgmntSizeLimits/RG_Isermannetal2007.html">Yellow Perch Bag and Protected Slot Length Limits in South Dakota</a></li>
+          <li><a href="MgmntSizeLimits/RG_Isermannetal2009">Smallmouth Bass Maximum Length Limit in Minnesota</a></li>
+
+<!---
+          <li><a href="MgmntSizeLimits/RG_BrousseauArmstrong1987.html">Walleye Size Limits Summary</a></li>
+          <li><a href="MgmntSizeLimits/RG_">Largemouth Bass Size Limits Summary</a></li>
+--->
         </ul>
       </ul>
     </div>

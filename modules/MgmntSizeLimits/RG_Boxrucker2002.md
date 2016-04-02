@@ -7,7 +7,7 @@ subtitle: Boxrucker (2002)
 ----
 
 1. Read [Rescinding a 254-mm Minimum Length Limit on White Crappies at Ft. Supply Reservoir, Oklahoma: The Influence of Variable Recruitment, Compensatory Mortality, and Angler Dissatisfaction (Boxrucker, 2002)](Boxrucker_2002_CrappieLengthLimit.pdf) and be prepared to discuss the following items in class.
-    * What management "tools"" were used in this study?
+    * What management "tools" were used in this study?
     * Who requested the bag limit reduction?
     * What were the objectives of the regulation change?
     * Summarize the Crappie population (growth, size structure, age structure, mortality, and exploitation) both before and after the regulation.

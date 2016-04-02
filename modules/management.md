@@ -101,31 +101,6 @@ title: Management Modules
   </div>
 </div>
 
-<!-- #### CLOSURES #### -->
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtClosures">Closures</a>
-    </h4>
-  </div>
-  <div id="cMgmtClosures" class="panel-collapse collapse">
-    <div class="panel-body">
-      <ul>
-        <li><a href="MgmntClosures/">Pre-Lecture Reading</a></li>
-        <li><a href="MgmntClosures/PPT.PPTX">Lecture Slides</a></li>
-        <li>Case Studies</li>
-        <ul>
-          <li></li>
-        </ul>
-        <li>Discussion Readings</li>
-        <ul>
-          <li></li>
-        </ul>
-      </ul>
-    </div>
-  </div>
-</div>
-
 <!-- #### COARSE WOODY HABITAT #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -136,15 +111,18 @@ title: Management Modules
   <div id="cMgmtCWH" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="MgmntCWH/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntCWH/Wolter_2012_CWHreview.pdf">Pre-Lecture Reading</a></li>
+<!---
         <li><a href="MgmntCWH/PPT.PPTX">Lecture Slides</a></li>
         <li>Case Studies</li>
         <ul>
           <li></li>
         </ul>
+--->
         <li>Discussion Readings</li>
         <ul>
-          <li></li>
+          <li><a href="MgmntCWH/RG_Sassetal_2006.html">Removal of CWH in a Wisconsin Lake</a></li>
+          <li><a href="MgmntCWH/RG_Christensenetal_1996.html">Impact of Development on CWH in Wisconsin</a></li>
         </ul>
       </ul>
     </div>
@@ -163,6 +141,31 @@ title: Management Modules
       <ul>
         <li><a href="MgmntIQs/RG_IQs">Pre-Lecture Reading</a></li>
         <li><a href="MgmntIQs/PPT.PPTX">Lecture Slides</a></li>
+        <li>Case Studies</li>
+        <ul>
+          <li></li>
+        </ul>
+        <li>Discussion Readings</li>
+        <ul>
+          <li></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- #### CLOSURES #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtClosures">Closures</a>
+    </h4>
+  </div>
+  <div id="cMgmtClosures" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="MgmntClosures/">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntClosures/PPT.PPTX">Lecture Slides</a></li>
         <li>Case Studies</li>
         <ul>
           <li></li>

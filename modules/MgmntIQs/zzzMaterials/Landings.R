@@ -1,0 +1,6 @@
+setwd("C:/aaaWork/Class Materials/NRS349/Materials/Slides/Related_R_Code")
+df <- read.csv("Landings.csv")
+par(mar=c(3,3,0.5,0.5),mgp=c(1.7,0.5,0),tcl=-0.25)
+plot(metricTons~year,data=subset(df,species=="ATLANTIC_COD"),xlab="Year",ylab="Landings (Metric Tons)",type="l",lwd=3)
+plot(metricTons~year,data=subset(df,species=="ATLANTIC_HALIBUT"),xlab="Year",ylab="Landings (Metric Tons)",type="l",lwd=3)
+plot(metricTons~year,data=subset(df,species=="STRIPED_BASS"),xlab="Year",ylab="Landings (Metric Tons)",type="l",lwd=3)

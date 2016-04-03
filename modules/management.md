@@ -139,15 +139,19 @@ title: Management Modules
   <div id="cMgmtIQs" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
+<!---
         <li><a href="MgmntIQs/RG_IQs">Pre-Lecture Reading</a></li>
         <li><a href="MgmntIQs/PPT.PPTX">Lecture Slides</a></li>
         <li>Case Studies</li>
         <ul>
           <li></li>
         </ul>
+--->
         <li>Discussion Readings</li>
         <ul>
-          <li></li>
+          <li><a href="MgmntClosures/RG_Geoduck.html">Geoduck Case Study</a></li>
+          <li><a href="MgmntClosures/RG_Halibut.html">Halibut Case Study</a></li>
+          <li><a href="http://money.cnn.com/2012/07/27/pf/jobs/crab-fishing-dangerous-jobs/"></a>'Deadliest Catch' Not So Deadly Anymore</li>.
         </ul>
       </ul>
     </div>

@@ -127,8 +127,8 @@ Several guest speakers will visit our class during the semester.  I expect that 
 1. What was the title of the speaker's presentation?
 1. What is your summary of the speaker's presentation, including your list of the speaker's three main points?  [*Provide specific details from the speaker's presentation*.]
 1. How did the speaker's presentation pertain to our class?  [*Be specific*]
-1. What questions did you ask the speaker and what were his/her answers?  [*Bonus Points*]
-1. What questions do you wish you would have asked the speaker?
+1. What questions did you ask the speaker and what were his/her answers? [*&ge;5% deduction for not asking a question.*]
+1. What questions do you wish you would have asked the speaker? [*Must be related to the presentation!*]
 1. What other thoughts do you have?
 
 This reflection should be about the substance of the speaker's presentation and not them or the presentation style or performance.  [Here is an example reflection](ex-reflection-speaker.html).  Also, read [these writing tips](writing-tips.html).

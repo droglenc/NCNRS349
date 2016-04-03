@@ -149,9 +149,9 @@ title: Management Modules
 --->
         <li>Discussion Readings</li>
         <ul>
-          <li><a href="MgmntClosures/RG_Geoduck.html">Geoduck Case Study</a></li>
-          <li><a href="MgmntClosures/RG_Halibut.html">Halibut Case Study</a></li>
-          <li><a href="http://money.cnn.com/2012/07/27/pf/jobs/crab-fishing-dangerous-jobs/"></a>'Deadliest Catch' Not So Deadly Anymore</li>.
+          <li><a href="MgmntIQs/RG_Geoduck.html">Geoduck Case Study</a></li>
+          <li><a href="MgmntIQs/RG_Halibut.html">Halibut Case Study</a></li>
+          <li><a href="http://money.cnn.com/2012/07/27/pf/jobs/crab-fishing-dangerous-jobs/"></a>'Deadliest Catch' Not So Deadly Anymore</li>
         </ul>
       </ul>
     </div>

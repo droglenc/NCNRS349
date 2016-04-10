@@ -169,7 +169,7 @@ title: Management Modules
   <div id="cMgmtClosures" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="MgmntClosures/PPT.PPTX">Lecture Slides</a></li>
+        <li><a href="MgmntClosures/PPT.pptx">Lecture Slides</a></li>
 <!----
         <li>Case Studies</li>
         <ul>

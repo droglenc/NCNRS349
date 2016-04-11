@@ -13,7 +13,7 @@ subtitle: Adaptive Management Readings
     * What is a key focus of adaptive management?
         * What are four sources of this (what the key focus is)?
     * What are the five challenges to implementing adaptive management?
-        * How doe laws affect our ability to implement adaptive management?
+        * How do laws affect our ability to implement adaptive management?
     * Describe (in your own words) what "structured decision making" is.
     * Explain Figure 3.
         * Why is adapative management only useful when there is both high uncertainty and high controllability?

@@ -9,15 +9,15 @@ css: /css/syllabus.css
 
 * Class [Description](#description) and [Learning Outcomes](#learning-outcomes)
 * [Instructor](#instructor) and [Tutors](#tutors)
-* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-Papers](#reflections---papers), [Reflections-Speakers](#reflections---speakers)
-* [Professionalism](#professionalism) -- [Attendance](#attendance), [Participation](#participation), [Expectations](#expectations), [Conduct](#conduct)
-* [Accomodations](#accomodations)
+* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-Papers](#reflections---papers)
+* [Professionalism](#professionalism) -- [Attendance](#attendance), [Participation](#participation), [Expectations](#expectations), [Conduct & Integrity](#classroom-conduct-and-academic-integrity)
+* [Accommodations](#accommodations)
 
 ----
 
 ## Description
 
-A study of exploited populations of fish and other aquatic organisms.  Theory and methods of defining fish growth, survival, mortality, abundance, and community interactions will be emphasized.  Wisconsin, Great Lakes, and marine fisheries will be addressed.  Prerequisites: BIO234, BIO242, [MTH107](http://derekogle.com/NCMTH107/).  4 Credits.
+A study of exploited populations of fish and other aquatic organisms.  Theory and methods of defining fish growth, survival, mortality, abundance, and community interactions will be emphasized.  Wisconsin, Great Lakes, and marine fisheries will be addressed.  Prerequisites: BIO234, BIO242, [MTH107](http://derekogle.com/NCMTH107/){:target="_blank"}.  4 Credits.
 
 
 ## Learning Outcomes
@@ -43,9 +43,8 @@ At the end of this class you will be able to ...
 <table class="tutors" width="60%">
 <tr><th><a href="http://derekogle.com" target="_blank">Dr. Derek H. Ogle</a><br>Professor of Mathematical Sciences<br> & Natural Resources</th></tr>
 <tr><th><img src="../img/DerekOgle1.jpg"></th></tr>
-<tr><td>10-1130 Section</td></tr>
 <tr style="vertical-align:top"><td>CSE228; 682-1300<br><a href="mailto:dogle@northland.edu">dogle@northland.edu</a><br>
-<a href="https://www.suggestionox.com/r/W17-349">Feedback / Suggestions</a></td></tr>
+<a href="https://www.suggestionox.com/r/W17-349" target="_blank">Feedback / Suggestions</a></td></tr>
 <tr style="vertical-align:top"><td>Office Hours:<br>
 Mon, Wed, Fri 900-950; Thurs 1200-1300<br>By Appointment</td></tr>
 </table>
@@ -55,7 +54,6 @@ Mon, Wed, Fri 900-950; Thurs 1200-1300<br>By Appointment</td></tr>
 * None.
 
 ## Grading
-
 An overall percentage score will be computed from the items and associated weights listed in the table below. To compute your current grade, enter your percentage scores in the boxes for assessments that have been completed. To project your future grade, also include percentages for future assessments. Put your highest midterm grade in MT1. [*It is your responsibility to track your scores on the individual assessments.*]
 
 <!-- if the assessment weights change then you must change the values in get_wghts() in the grader.js file -->
@@ -94,10 +92,9 @@ Lowest possible final letter grades will be assigned by comparing your overall p
 </table>
 
 #### Homework
+Several homework assignments will be assigned per major course topic. **PRINTED** assignments are **due at the beginning of the class period on the assigned due date** (announced in class and on the [Dates page](Dates-Current)). Assignments not handed in at the beginning of the class period will be considered late. Late assignments will not be accepted. The lowest approximately 20% of homework grades will be excluded when computing your overall grade.
 
-Several homework assignments will be assigned per major course topic. **PRINTED** assignments are **due at the beginning of the class period on the assigned due date** (announced in class and on the [Dates page](Dates-Current){:target="_blank"}). Assignments not handed in at the beginning of the class period will be considered late. Late assignments will not be accepted. The lowest approximately 20% of homework grades will be excluded when computing your overall grade.
-
-Each homework assigment is worth 10 points and will be graded in two parts.  The first part is an assessment of completeness and formatting (each assignment should follow [the expectations outlined here](hwformat){:target="_blank"}) according to the following rubric.
+Each homework assigment is worth 10 points and will be graded in two parts.  The first part is an assessment of completeness and formatting (each assignment should follow [the expectations outlined here](hwformat)) according to the following rubric.
 
 <div class="container-fluid">
   <table class="table table-bordered">
@@ -114,14 +111,10 @@ The second part, also worth 5 points, is an assessment of the quality of the wor
 
 **If there is any indication, whether I can confirm it or not, that you have not worked alone on your homework, then you will receive a 0 for that homework and will be warned of further penalties for subsequent offenses.**
 
-
 #### Exams
-
-Exams dates are shown on the [Dates page](Dates-Current.html){:target="_blank"}.  Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition.  You will not be allowed to make up an exam missed without my prior approval.  The final exam will not be given early.
-
+Exams dates are shown on the [Dates page](Dates-Current.html).  Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition.  You will not be allowed to make up an exam missed without my prior approval.  The final exam will not be given early.
 
 #### Reflections - Papers
-
 In fisheries, as in other scientific disciplines, it is important to be abreast of current news in the field. To promote this, you will provide a written reflection of your reading of a current (*within the last six months*) news item. Your reflection should contain *at least* the following information.
 
 1. A viable link or printed copy of the news item.
@@ -134,15 +127,12 @@ Your reflection should be 1-2 pages long (12 pt Times New Roman font, single-spa
 
 
 #### Extra Credit
-
 I will offer limited opportunities for extra credit throughout the semester.  Generally these opportunities will be related to your reflections from attending presentations, meetings, etc. related to fisheries science and management that are outside of the class.  Examples would be attending the AFS Conference in late Feb and attending the Conservation Congress hearings in early April.
 
-#### Incomplete Grades
-
-Under Northland College policy, an incomplete grade will be given ONLY under extreme circumstances beyond your control, such as a major illness.  An incomplete grade will be given ONLY if you have successfully completed the entire course except for the final exam.
+### Incomplete Grades
+Under [Northland College policy](https://my.northland.edu/student-policies/academic-policies/#grades){:target="_blank"} (scroll down to "Incomplete Grades"), an incomplete grade will be given ONLY under extreme circumstances beyond your control, such as a major illness.  An incomplete grade will be given ONLY if you have successfully completed the entire course except for the final exam.
 
 ## Professionalism
-
 #### Attendance
 For most students, achievement is strongly positively related to attendance.  I will take attendance each day but attendance will not factor into your final grade with the following exception.  At the end of the semester I may, at my discretion, decide to eliminate one or more of your homework or exam grades.  Your attendance record will be one item considered when I make this decision.
 
@@ -156,17 +146,22 @@ If you feel that you are spending an inordinate amount of time on some assignmen
 #### Expectations
 This is a 300-level science course that is required in only one major; thus, you either selected that major or this course and I assume then that this subject is of great interest to you.  This course is intense (both in quantity and quality of work) and I expect that you will appreciate that and honor that with considerable effort.  I expect that you are conversant with topics from the three prerequisite courses (Ecology, Ichthyology, and Introductory Statistics).  Additionally, I expect that you have reached a high-level of intellectual maturity by this stage of your academic career and, thus, will act professionally at all times, ask good and synthesizing questions, and communicate effectively, both orally and [in writing](writing-tips.html).  Finally, I expect you to work hard, but have fun doing that work.
 
-#### Conduct
-Your conduct in class should revolve around the idea of being respectful of all others in the class.  Adhering to the following policies should be considered the minimum requirements to being respectful of others:
+## Classroom Conduct and Academic Integrity
 
-* Arrive to class on time.  If you arrive late, then take the first available seat as quietly as possible.
-* Do not bring friends, children, pets, meals, or anything else to class that should not be there.
-* Turn off and store out-of-sight cell phones and other electronic devices (use of a personal laptop for work related to class is permitted).
-* Do not use the college or personal computers for other than assigned tasks.
+Your conduct in class should revolve around the idea of being respectful of all others in the class.  Adhering to the following behaviors should be considered the minimum requirements to being respectful of others:
+
+* Arrive to class on time.  If you arrive late, then take the first available seat as quietly as possible.  If you need to leave early, then please sit near the exit.
+* You are expected to attend the entire class period.  Leaving class early defeats the purpose of the class period, does not take advantage of resources (i.e., the professor) that can significantly help your learning, and does not build statistical stamina.
+* Turn off and store out-of-sight cell phones and other electronic devices
+* Turn your computer on immediately so that you can promptly begin the daily quiz.
+* Computer use is limited to class work.
+* If you choose to use your own computer, then please sit as far forward in class as possible.
 * Do not engage in side discussions while I or others are speaking to the entire class.
+*	Do not sleep in class -- this behavior is rude and distracting to others (especially the professor).
+* Unpack before and pack after class -- opening and closing  backpacks, rustling of papers or jackets is disruptive and disrespectful to others.
 * Do not use disrespectful language when addressing others.
 
-You will be asked to leave class if your behavior is disrespectful of others. 
+Finally, note that the [College's Academic Integrity Statement & Policy](https://my.northland.edu/student-policies/academic-policies/#academic-integrity){:target="_blank"} will be followed in this course.  Please make sure that you are familiar with its content.
 
-## Accomodations
-Students in need of academic accommodation should contact [Kathleen Skoraczewski](mailto:kskoraczewski@northland.edu), Campus Counselor	and Disabilities Service Coordinator, ext. 1369, Ponzio Center Rm. 232.
+## Accommodations
+It is the policy and practice of Northland College to create inclusive and accessible learning environments consistent with federal and state law.  *If you have already established accommodations* with the Office of Accessibility Resources (OAR), please communicate your approved accommodations to me as soon as possible so that we can discuss your needs in this course.  *If you have not yet established services* through OAR, but have a condition that requires accommodations (e.g., attention, learning, vision, hearing, mental, physical, or other health related concern), you should contact OAR (Ponzio 231 or 715-682-1387) or [Donna Jones-Ilsley, Coordinator of Student Accessibility Resources](mailto:djones-ilsley@northland.edu).

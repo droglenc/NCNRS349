@@ -40,14 +40,15 @@ At the end of this class you will be able to ...
 
 ## Instructor
 
-<img class="img-right" src="../img/DerekOgle1.jpg">
-
-<ul>
-  <li><a href="http://derekogle.com" target="_blank">Dr. Derek H. Ogle</a><br>Professor of Mathematical Sciences<br> & Natural Resources</li>
-  <li>CSE239; 682-1300; <a href="mailto:dogle@northland.edu">dogle@northland.edu</a><br>
-<a href="https://www.suggestionox.com/r/W16-349">Feedback / Suggestions</a></li>
-  <li>Office Hours: Tues 12-1p; Thurs 10-11a; Fri 3-4p</li>
-</ul>
+<table class="tutors" width="60%">
+<tr><th><a href="http://derekogle.com" target="_blank">Dr. Derek H. Ogle</a><br>Professor of Mathematical Sciences<br> & Natural Resources</th></tr>
+<tr><th><img src="../img/DerekOgle1.jpg"></th></tr>
+<tr><td>10-1130 Section</td></tr>
+<tr style="vertical-align:top"><td>CSE228; 682-1300<br><a href="mailto:dogle@northland.edu">dogle@northland.edu</a><br>
+<a href="https://www.suggestionox.com/r/W17-349">Feedback / Suggestions</a></td></tr>
+<tr style="vertical-align:top"><td>Office Hours:<br>
+Mon, Wed, Fri 900-950; Thurs 1200-1300<br>By Appointment</td></tr>
+</table>
 
 ## Tutors
 
@@ -55,7 +56,7 @@ At the end of this class you will be able to ...
 
 ## Grading
 
-An overall percentage score will be computed from the items and associated weights listed in the table below.  A specific description for each item is given further below.  You can also use this table to compute your current or projected future grade.  To compute your current grade, enter your percentage scores in the boxes for assessments that have been completed.  To project your future grade, also include percentages for future assessments.  [*It is your responsibility to track your scores on the individual assessments.*]
+An overall percentage score will be computed from the items and associated weights listed in the table below. To compute your current grade, enter your percentage scores in the boxes for assessments that have been completed. To project your future grade, also include percentages for future assessments. Put your highest midterm grade in MT1. [*It is your responsibility to track your scores on the individual assessments.*]
 
 <!-- if the assessment weights change then you must change the values in get_wghts() in the grader.js file -->
 
@@ -66,21 +67,19 @@ An overall percentage score will be computed from the items and associated weigh
 <th><a href="#exams">MT1</a></th>
 <th><a href="#exams">MT2</a></th>
 <th><a href="#exams">Final</a></th>
-<th><a href="#reflections---papers">Papers</a></th>
-<th><a href="#reflections---speakers">Speakers</a></th></tr>
+<th><a href="#reflections---papers">Papers</a></th></tr>
 
 <tr><th>Weight</th>
-<th>30%</th><th>15%</th><th>15%</th><th>20%</th><th>10%</th><th>10%</th></tr>
+<th>30%</th><th>20%</th><th>15%</th><th>25%</th><th>10%</th></tr>
 
 <tr><th>Percent</th>
 <td><input type="text" name="HW_SC" size="3" tabindex="2" onchange="calc_grade(this.form)"></td>
 <td><input type="text" name="MT1_SC" size="3" tabindex="3" onchange="calc_grade(this.form)"></td>
 <td><input type="text" name="MT2_SC" size="3" tabindex="4" onchange="calc_grade(this.form)"></td>
 <td><input type="text" name="FNL_SC" size="3" tabindex="5" onchange="calc_grade(this.form)"></td>
-<td><input type="text" name="REFL_CFOOD_SC" size="3" tabindex="6" onchange="calc_grade(this.form)"></td>
-<td><input type="text" name="REFL_SPEAK_SC" size="3" tabindex="7" onchange="calc_grade(this.form)"></td></tr>
+<td><input type="text" name="REFL_PAPERS_SC" size="3" tabindex="6" onchange="calc_grade(this.form)"></td></tr>
 
-<tr><th colspan="4">Overall Percentage: <input type="text" name="SCORE" size="4"></th>
+<tr><th colspan="3">Overall Percentage: <input type="text" name="SCORE" size="4"></th>
 <th colspan="3">Projected Grade: <input type="text" name="GRADE" size="2"></th></tr>
 </table>
 </form>
@@ -96,42 +95,43 @@ Lowest possible final letter grades will be assigned by comparing your overall p
 
 #### Homework
 
-Several homework assignments will be assigned per major course topic.  Grading of each assignment will be described on the assignment sheet.  Completed homework assignments will be due at the beginning of the class period on dates announced when the homework was assigned.  Assignments will be accepted up to one day late but will be reduced by 50% of the worth of the assignment.  Assignments not handed in at the beginning of the class period will be considered one day late.  **If there is any indication, whether I can confirm it or not, that you have not worked alone on your homework, then you will receive a 0 for that homework and will be warned of further penalties for subsequent offenses.**
+Several homework assignments will be assigned per major course topic. **PRINTED** assignments are **due at the beginning of the class period on the assigned due date** (announced in class and on the [Dates page](Dates-Current){:target="_blank"}). Assignments not handed in at the beginning of the class period will be considered late. Late assignments will not be accepted. The lowest approximately 20% of homework grades will be excluded when computing your overall grade.
+
+Each homework assigment is worth 10 points and will be graded in two parts.  The first part is an assessment of completeness and formatting (each assignment should follow [the expectations outlined here](hwformat){:target="_blank"}) according to the following rubric.
+
+<div class="container-fluid">
+  <table class="table table-bordered">
+  <thead>
+    <tr class="info"><th>0-1 points</th><th>2-4 points</th><th>5 points</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Very few questions answered completely.</td><td>Most questions answered completely. <a href="hwformat.html" target="_blank">Format for homework</a> may not have been followed.</td><td>All questions answered completely. <a href="hwformat.html" target="_blank">Format for homework</a> followed exactly.</td></tr>
+  </tbody>
+  </table>
+</div>
+
+The second part, also worth 5 points, is an assessment of the quality of the work.  In this part, only some (approximately half) of the questions will be assessed.  Answer keys will be [posted online](homework-keys) so that you may check your work.
+
+**If there is any indication, whether I can confirm it or not, that you have not worked alone on your homework, then you will receive a 0 for that homework and will be warned of further penalties for subsequent offenses.**
+
 
 #### Exams
 
 Exams dates are shown on the [Dates page](Dates-Current.html){:target="_blank"}.  Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition.  You will not be allowed to make up an exam missed without my prior approval.  The final exam will not be given early.
 
+
 #### Reflections - Papers
 
-In fisheries, as in other scientific disciplines, it is important to read the literature to remain current about scientific information and debates.  To promote this, you will provide a written reflection of your reading of two scientific articles from lists compiled by Trevor Branch at the University of Washington -- one from Branch's ["must-read" papers from 2014-2016](https://sites.google.com/a/uw.edu/most-cited-fisheries/annual-best-papers) and one from his "most cited" lists ([link to 2011](https://sites.google.com/a/uw.edu/most-cited-fisheries/home/most-cited-in-2011), but notice links on left to other years).  [*I may be able to help you get a PDF of your choice of article.  However, I don't have access to all articles so you may need to use the inter-library loan service or choose a different article.*]
+In fisheries, as in other scientific disciplines, it is important to be abreast of current news in the field. To promote this, you will provide a written reflection of your reading of a current (*within the last six months*) news item. Your reflection should contain *at least* the following information.
 
-Your reflection should contain *at least* the following information.
+1. A viable link or printed copy of the news item.
+1. A one paragraph thorough summary (*in your own words*) of the article.
+1. A one paragraph thoughtful reaction or reflection to the article. [*Do you agree or disagree with the main premise of the article? How do you feel about the event or issue in the article? How does the event or issue in the article affect you?*]
+1. A one paragraph thoughtful description of how the topic of the article relates to class? [*What course topics does the article relate to? How did the article inform your understanding of a class topic? What questions about a class topic did this article raise for you?*]
 
-1. Article citation (in [American Fisheries Society journal format](http://fisheries.org/docs/pub_style9.pdf)).
-1. A brief description of the study objective(s).
-1. A brief description (1-3 sentences) of the necessary background required to understand why this study was conducted and why it was important.
-1. A brief description of the sampling or experimental design for the study (very briefly, what was done in the study).
-1. A brief description of the major findings of the study.
-1. A brief summary of how the findings relate to the objectives and the background information.
-1. Brief personal comments on what you learned from this study, what questions you still have about the study (though I expect that you will come to me with major questions before you finish your reflection), how this relates to class, etc.
-
-[Here is an example reflection](ex-reflection-paper.html).  Also, read [these writing tips](writing-tips.html) and you might consider these resources for ideas on how to read and summarize your papers ([1](http://violentmetaphors.com/2013/08/25/how-to-read-and-understand-a-scientific-paper-2/), [2](http://journalaccess.aspb.org/CaseStudy/CaseStudy%20for%20How%20to%20Read%20a%20Sci%20Paper%20M%20Williams%20Mar%202013.pdf), [3](http://journalaccess.aspb.org/ReadaSciPaper/How%20to%20Read%20a%20Scientific%20Paper%20M%20Williams%20Mar%202013.pdf), [4](http://twp.duke.edu/uploads/media_items/scientificarticlereview.original.pdf)).
+Your reflection should be 1-2 pages long (12 pt Times New Roman font, single-spaced, 1-in margins, <3 lines of title), typed, and printed to hand in. While it is a bit cheesy, [this resource](http://www.wikihow.com/Write-a-Current-Events-Summary){:target="_blank"} provides good general guidelines for preparing your reflection. [Here is an example reflection](ex-reflection-paper){:target="_blank"}.  Also, read [these writing tips](writing-tips){:target="_blank"}.
 
 
-#### Reflections - Speakers
-
-Several guest speakers will visit our class during the semester.  I expect that you will be attentive to each of these speakers, including asking relevant questions.  At the beginning of the first class period following each speaker, you will hand in a completed "reflection" regarding the guest speakers visit.  That reflection should contain *at least* the following information.
-
-1. What was the speaker's name, title, and affiliation (i.e., where he/she works)?
-1. What was the title of the speaker's presentation?
-1. What is your summary of the speaker's presentation, including your list of the speaker's three main points?  [*Provide specific details from the speaker's presentation*.]
-1. How did the speaker's presentation pertain to our class?  [*Be specific*]
-1. What questions did you ask the speaker and what were his/her answers? [*&ge;5% deduction for not asking a question.*]
-1. What questions do you wish you would have asked the speaker? [*Must be related to the presentation!*]
-1. What other thoughts do you have?
-
-This reflection should be about the substance of the speaker's presentation and not them or the presentation style or performance.  [Here is an example reflection](ex-reflection-speaker.html).  Also, read [these writing tips](writing-tips.html).
 
 #### Extra Credit
 

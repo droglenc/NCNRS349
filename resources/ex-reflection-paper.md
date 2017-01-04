@@ -1,18 +1,15 @@
 ---
 layout: page
-title: Example Paper Reflection
+title: Example Article Reflection
 ---
 
 <ul class="list-unstyled">
-<li><b>Citation:</b> Ogle, D.H. and K.F. Schanning.  2012.  Usage of "Sex" and "Gender".  Fisheries.  37:271-272.</li>
+<li><b>Title:</b> Fish Seek Cooler Waters, Leaving Some Fishermen’s Nets Empty</li>
+<li><b>Link:</b> http://www.nytimes.com/2016/12/30/science/fish-climate-change-northeast.html </li>
 <br>
-<li><b>Objectives:</b> The objectives of Ogle and Schanning (2012) was to describe that "gender" is misused for "sex" in fisheries articles and show that this mistake is prevalent.</li>
-<li><b>Background:</b> Ogle and Schanning describe how "gender" and "sex" were once synonyms but that "sex" now has a strict biological meaning (based on reproductive organs) and "gender" is constructed by a society.  Thus, "gender" and "sex" are not synonyms and should <b>not</b> be used interchangeably.</li>
-<li><b>Findings:</b> Nearly all uses of "gender" in the sample of fisheries articles was classified as a misues.  The prevalence of "gender" has increased in three of the four fisheries journal sampled.  Misuses also occurred in fisheries textbooks.</li>
-<li><b>Summary:</b> This research shows that "gender" is commonly misused in the fisheries literature.  The authors argue that these misuses stem from authors and editors attempting to be politically correct or to provide variety in their prose.  The authors argue, though, that the continued misuse of "gender" runs the risk of eroding respest for the science.</li>
-<li><b>Comments:</b> I found the author's arguments and findings compelling.  There is simply no reason for a fisheries scientist to use "gender" in place of "sex" when referring to the biology of fishes.  I will actively avoid making this mistake in my writing and speaking.</li>
+<li><b>Summary:</b> The New York Times articles recounts anecdotal evidence through the eyes of commercial fisherman for the northward or outward (offshore) movement of many fish stocks (e.g., Lobster, Black Sea Bass, Yellowtail Flounder) due to warming ocean waters. The author also notes that regulations, often based on artificial state lines, have not been updated to reflect these migrations, leading to waste and lack of efficiency in the fishery. The lack of congruency between current stock locations and management regulations has led to increased tensions among constituent groups, scientists, fisheries managers, and politicians. Researchers and policy makers are working on new methods to address these issues.</li>
+<li><b>Reaction:</b> Four aspects of this article were interesting to me. First, warming ocean waters have an impact on the behavior of fish and the dynamics of fish populations. Changes in behavior and population dynamics will (likely) in turn have an impact on the soceioeconomic components of a fishery. Second, models, fisheries or otherwise, are abstractions of reality that need to be updated to reflect changes in reality. In this example, fisheries scientists updated stock assessment models to include data regarding the migration of fish stocks relative to changing water temperatures. Third, our procedures for changing poplicy (laws that govern fisheries and the allocation of harvest limits) need to be more flexible to allow more timely updates in the face of new information. Fourth, fisheries scientists and managers can (should or need?) to take into account the observations of fisherman. All too often, the voice of fisherman is discounted as being biased; however, it can be a useful data point.</li>
+<li><b>Relation to Class:</b> This article directly relates to the "management environment" discussion as it clearly shows the ecological (e.g., behavioral migration of fish), sociocultural (e.g., commercial fishery dependence on these stocks), economic (e.g., economic inefficiencies stemming from the mismatch between stock location and management regulations), and policy (e.g., management regulations, involvement of politicians) aspects of a fishery. In addition, though the article did not address them specifically, there is mention of the use of stock assessment models to estimate harvest levels. These models undoubtedly use the concepts of abundance, growth, mortality, and recruitment and were modified to consider migrations. These same concepts were discussed in the "science" portion of this course. Finally, the article discussed the "uncertainty" with regard to population assessments. This relates to the constant use of standard errors and confidence intervals for parameter estimates in this class.</li>
 </ul>
 
 ----
-
-This example is based on [this article](http://derekogle.com/resources/pubs/OgleSchanning_2012.pdf).  Note that your reflection should be brief but it will likely be longer than this example because this article was simpler and shorter than the ones that you will review.

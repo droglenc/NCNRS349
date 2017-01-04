@@ -6,6 +6,9 @@ css: /css/syllabus.css
 
 ## Assignment Due Dates
 <dl class="dl-horizontal">
+<dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---papers">News Item Reflection</a></dd>
+<dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---papers">News Item Reflection</a></dd>
+<dt>12-Apr</dt><dd>Third <a href="Syllabus-Current.html#reflections---papers">News Item Reflection</a></dd>
 </dl>
 
 <!---
@@ -25,7 +28,7 @@ css: /css/syllabus.css
 
 ---- 
 
-## Exam or Other Due Dates
+## Exam Dates
 <dl class="dl-horizontal">
 <dt>17-Feb</dt><dd>First Exam</dd>
 <dt>24-Mar</dt><dd>Second Exam</dd>

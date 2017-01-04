@@ -16,8 +16,8 @@ title: Science Modules
     <div class="panel-body">
       <ul>
         <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
-        <li><a href="ClassIntro/CE1.html">Assignment</a></li>
-        <li><a href="ClassIntro/CE2.html">Class Exercise</a></li>
+        <li><a href="ClassIntro/HW.html">Assignment</a></li>
+        <li><a href="ClassIntro/CE1.html">Class Exercise</a></li>
         <li><a href="ClassIntro/PPT_Stock.pptx">Lecture Slides</a></li>
       </ul>
     </div>
@@ -34,7 +34,7 @@ title: Science Modules
   <div id="cFoundationalModels" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="ClassIntro/PPT_Models.pptx">Lecture Slides</a></li>
+        <li><a href="FoundationalModels/PPT_Models.pptx">Lecture Slides</a></li>
       </ul>
     </div>
   </div>

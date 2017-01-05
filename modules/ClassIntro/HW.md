@@ -1,21 +1,21 @@
 ---
 layout: page
-title: Class Introduction
-subtitle: Class Exercise 1
+title: Homework Assignment
+subtitle: Class Pre-Requisites
 css: "/css/modules.css"
 ---
 
 ----
 
 <div class="alert alert-warning">
-  <strong>Note</strong> Your answers to the questions below should follow the <a href="../../resources/hwformat" target="_blank">expectations for homework found here</a>. <a href="../../resources/Dates-Current" target="_blank">Date due shown here</a>.
+  <strong>Note</strong> Your answers to the questions below should follow the <a href="../../resources/hwformat" target="_blank">expectations for homework found here</a>. Date due <a href="../../resources/Dates-Current" target="_blank">shown here</a>.
 </div>
 
 ----
 
 ## Concepts from Class Pre-Requisites
 
-Answer each question below to your fullest ability.  You may use your notes.
+Answer each question below to your fullest ability.
 
 1. Write the equation of a line and fully interpret the meanings of the slope and intercept.
 1. Sketch exponential and logistic population growth over time (suppose that the population starts at very low numbers in year 1 and there is a positive growth rate).

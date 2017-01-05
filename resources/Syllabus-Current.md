@@ -9,7 +9,7 @@ css: /css/syllabus.css
 
 * Class [Description](#description) and [Learning Outcomes](#learning-outcomes)
 * [Instructor](#instructor) and [Tutors](#tutors)
-* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-Papers](#reflections---news-item)
+* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-News Item](#reflections---news-item)
 * [Professionalism](#professionalism) -- [Attendance](#attendance), [Participation](#participation), [Expectations](#expectations), [Conduct & Integrity](#classroom-conduct-and-academic-integrity)
 * [Accommodations](#accommodations)
 
@@ -65,7 +65,7 @@ An overall percentage score will be computed from the items and associated weigh
 <th><a href="#exams">MT1</a></th>
 <th><a href="#exams">MT2</a></th>
 <th><a href="#exams">Final</a></th>
-<th><a href="#reflections---news-item">News Item</a></th></tr>
+<th><a href="#reflections---news-item">News Items</a></th></tr>
 
 <tr><th>Weight</th>
 <th>30%</th><th>20%</th><th>15%</th><th>25%</th><th>10%</th></tr>

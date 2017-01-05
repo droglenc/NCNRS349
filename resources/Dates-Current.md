@@ -7,9 +7,9 @@ css: /css/syllabus.css
 ## Assignment Due Dates
 <dl class="dl-horizontal">
 <dt>11-Jan</dt><dd><a href="../modules/ClassIntro/HW.html">Class Pre-Requisite HW</a></dd>
-<dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---papers">News Item Reflection</a></dd>
-<dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---papers">News Item Reflection</a></dd>
-<dt>12-Apr</dt><dd>Third <a href="Syllabus-Current.html#reflections---papers">News Item Reflection</a></dd>
+<dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
+<dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
+<dt>12-Apr</dt><dd>Third <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 </dl>
 
 <!---

@@ -52,11 +52,11 @@ title: Science Modules
       <ul>
         <li>Pre-Readings</li>
         <ul>
-          <li><a href="Abundance/CPE/HubertFabrizio-2007.pdf">Hubert & Fabrizio (2007)</a></li>
-          <li><a href="http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff">Boxes 6.3 & 6.4 in Hubert <i>et al.</i> (2012)</a></li>
+          <li><a href="Hubertetal-2012-BOXES.pdf" target="_blank">Boxes 6.3 & 6.4 in Hubert <i>et al.</i> (2012)</a> (<a href="http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff" target="_blank">complete chapter</a>)</li>
+          <li><a href="CPE/HubertFabrizio-2007-Sect7-1.pdf" target="_blank">Section 7.1 in Hubert & Fabrizio (2007)</a> (<a href="CPE/HubertFabrizio-2007.pdf" target="_blank">complete chapter</a>)</li>
+          <li><a href="http://icesjms.oxfordjournals.org/content/63/8/1373.full.pdf" target="_blank">"Problems with cpue data" section in Maunder <i>et al.</i> (2006)</a></li>
         </ul>
-        <li><a href="Abundance/CPE/PPT.pptx">Lecture Slides</a></li>
-        <li>Post-Reading -- <a href="http://icesjms.oxfordjournals.org/content/63/8/1373.full.pdf">Maunder <i>et al.</i> (2006)</a></li>
+        <li><a href="CPE/PPT.pptx">Lecture Slides</a></li>
       </ul>
     </div>
   </div>
@@ -77,17 +77,17 @@ title: Science Modules
         <li><strong>Capture Histories</strong></li>
           <ul>
             <li>Pre-Readings -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.1</li>
-            <li><a href="Abundance/MarkRecap/CE1.html">Class Exercise</a></li>
+            <li><a href="MarkRecap/CE1.html">Class Exercise</a></li>
           </ul>
         <li><strong>Single Census, Closed Population</strong></li>
           <ul>
             <li>Pre-Readings</li>
               <ul>
-                <li><a href="Abundance/MarkRecap/BKG.html">Ogle Notes</a></li>
+                <li><a href="MarkRecap/BKG.html">Ogle Notes</a></li>
                 <li><a href="http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf">Section 8.3.1 in Hayes <i>et al.</i></a></li>
                 <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.2</li>
               </ul>
-            <li><a href="Abundance/MarkRecap/CE2.html">Class Exercise</a></li>
+            <li><a href="MarkRecap/CE2.html">Class Exercise</a></li>
             <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html">XC</a></li>
           </ul>
       </ul>
@@ -108,10 +108,10 @@ title: Science Modules
       <ul>
         <li>Pre-Readings</li>
           <ul>
-            <li><a href="Abundance/Depletion/BKG.html">Ogle Notes</a></li>
+            <li><a href="Depletion/BKG.html">Ogle Notes</a></li>
             <li><a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 10</li>
           </ul>
-        <li><a href="Abundance/Depletion/PPT.pptx">Lecture Slides</a></li>
+        <li><a href="Depletion/PPT.pptx">Lecture Slides</a></li>
         <li>Post-Reading -- <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf">Rosenberger (Box 11.1) in Pope <i>et al.</i> (2010)</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Homework</a></li>
       </ul>

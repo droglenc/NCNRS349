@@ -21,7 +21,7 @@ css: "/css/modules.css"
 1. How many news item reflection papers will you write this semester?
 1. Describe how your homework assignments will be graded?
 
-\  
+<br>
 
 ## Concepts from Class Pre-Requisites
 
@@ -31,7 +31,7 @@ css: "/css/modules.css"
 1. Define intra-specific and inter-specific competition.
 1. Give examples of three abiotic and three biotic factors that may impact fish or fish populations.
 
-&nbsp;
+<br>
 
 ## Getting Started
 

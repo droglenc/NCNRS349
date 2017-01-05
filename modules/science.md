@@ -15,7 +15,6 @@ title: Science Modules
   <div id="cClassIntro" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="../resources/Syllabus-Current.html">Review Syllabus</a></li>
         <li><a href="ClassIntro/HW.html">Assignment</a></li>
         <li><a href="ClassIntro/CE1.html">Class Exercise</a></li>
         <li><a href="ClassIntro/PPT_Stock.pptx">Lecture Slides</a></li>

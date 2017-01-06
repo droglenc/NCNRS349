@@ -110,7 +110,7 @@ title: Science Modules
           <ul>
             <li><a href="Depletion/BKG.html" target="_blank">Ogle Notes</a></li>
             <li><a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Chapter 10</li>
-            <li><a href="Popeetal-2010-Box11-1.pdf" target="_blank">Rosenberger (Box 11.1) in Pope <i>et al.</i> (2010)</a> (the <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf" target="_blank">complete chapter</a>)</li>
+            <li><a href="Depletion/Popeetal-2010-Box11-1.pdf" target="_blank">Rosenberger (Box 11.1)</a> in Pope <i>et al.</i> (2010) (the <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf" target="_blank">complete chapter</a>)</li>
           </ul>
         <li><a href="Depletion/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html" target="_blank">Homework</a></li>
@@ -124,20 +124,19 @@ title: Science Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion1" href="#cAge">Age</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cAge">Age-Length Key</a>
     </h4>
   </div>
   <div id="cAge" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Pre-Readings</li>
+        <li>Readings</li>
           <ul>
-            <li><a href="Age/BKG.html">Ogle Notes</a></li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 5.1-5.4</li>
+            <li><a href="Age/BKG.html" target="_blank">Ogle Notes</a></li>
+            <li><a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Sections 5.1-5.4</li>
           </ul>
         <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
-        <li>Post-Reading -- <a href="http://qfc.fw.msu.edu/Publications/Publication%20List/2008/How%20Systematic%20Age%20Underestimation%20can%20Impede%20Understanding_Yule.pdf">Yule <i>et al.</i> (2008)</a></li>
-        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_B.html">#2</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_C.html">XC</a></li>
+        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_B.html" target="_blank">#2</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_C.html" target="_blank">XC</a></li>
       </ul>
     </div>
   </div>

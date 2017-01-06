@@ -11,9 +11,9 @@ css: /css/codebox.css
 <p> </p>
 <div id="constructing-age-length-keys" class="section level1">
 <h1>Constructing Age-Length Keys</h1>
-<p>A subsample of <span class="math">\(n\)</span> fish to be aged is selected from the entire sample of fish by randomly selecting fish <em>from each length interval</em> (rather than a simple random selection of all fish). The number of fish in each interval can either be fixed at a constant number or proportional to the total number of fish in that length interval. <span class="citation">Kimura (1977)</span> notes that proportional selection produces statistically “better” results. However, proportional selection is uncommon in the field as the length of all fish must be known before taking the subsample. Thus, it is much more common, in practice, to subsample a set number of fish per length interval. More importantly, the range of lengths in the subsample must cover the entire range of lengths in the original sample. This subsample of fish is called the <em>age sample</em>, because the relationship between age and length will be determined from this group of fish only.</p>
+<p>A subsample of <span class="math inline">\(n\)</span> fish to be aged is selected from the entire sample of fish by randomly selecting fish <em>from each length interval</em> (rather than a simple random selection of all fish). The number of fish in each interval can either be fixed at a constant number or proportional to the total number of fish in that length interval. <span class="citation">Kimura (1977)</span> notes that proportional selection produces statistically “better” results. However, proportional selection is uncommon in the field as the length of all fish must be known before taking the subsample. Thus, it is much more common, in practice, to subsample a set number of fish per length interval. More importantly, the range of lengths in the subsample must cover the entire range of lengths in the original sample. This subsample of fish is called the <em>age sample</em>, because the relationship between age and length will be determined from this group of fish only.</p>
 <p>The measured length and assessed age is recorded for all fish in the age sample. In addition, the length category to which each fish belongs is also recorded. For example, if 5-mm length categories are created that begin on the “0” and “5” units, then a 117 mm fish will be recorded as being in the 115-119 mm length category. Generally, all length categories are of the same width; thus, for simplicity, only the beginning length in the length category is recorded (e.g., “115” mm).</p>
-<p>The assigned length category and the assessed age for the fish in the age sample is summarized with a two-way contingency table where the length categories form the rows and age categories form the columns. In other words, the number of fish in the age sample in each length category and age combination is determined. An example of this summary is shown below (with row and column labels to aid interpretation).</p>
+<p>The length category and the assessed age for the fish in the age sample is summarized with a two-way contingency table where the length categories form the rows and age categories form the columns. In other words, the number of fish in the age sample in each length category and age combination is determined. An example of this summary is shown below (with row and column labels to aid interpretation).</p>
 <div class="container" style="max-width: 400px">
 <div class="table-responsive">
 <table class="table table-bordered table-condensed table-hover">
@@ -23,17 +23,17 @@ css: /css/codebox.css
  
 </th>
 <th>
-<span class="math">\(A_{1}\)</span>
+<span class="math inline">\(A_{1}\)</span>
 </th>
 <th>
-<span class="math">\(A_{2}\)</span>
+<span class="math inline">\(A_{2}\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr style="text-align: center;">
 <td>
-<span class="math">\(L_{1}\)</span>
+<span class="math inline">\(L_{1}\)</span>
 </td>
 <td>
 6
@@ -44,7 +44,7 @@ css: /css/codebox.css
 </tr>
 <tr style="text-align: center;">
 <td>
-<span class="math">\(L_{2}\)</span>
+<span class="math inline">\(L_{2}\)</span>
 </td>
 <td>
 3
@@ -55,7 +55,7 @@ css: /css/codebox.css
 </tr>
 <tr style="text-align: center;">
 <td>
-<span class="math">\(L_{3}\)</span>
+<span class="math inline">\(L_{3}\)</span>
 </td>
 <td>
 1
@@ -69,8 +69,8 @@ css: /css/codebox.css
 </div>
 </div>
 <p>In this example, six fish in the age sample belong to the first length category and the first age. Similarly, one fish belongs to the last length category and the first age.</p>
-<p>The portion of the entire sample of fish that was not part of the age sample (i.e., fish for which only a length measurement was obtained) is called the <em>length sample</em>. Age is “assigned” to fish in the length sample based on the fish’s length category and the proportion of fish of that length category of each age as determined by the fish in the age sample. For example, a fish in the length sample that belongs to the first length category has, based on the summary from the age sample, a 75% chance (i.e., <span class="math">\(\frac{6}{8}\)</span>) of being of the first age and a 25% chance of being of the second age. Furthermore, if there were 20 fish in the length sample in the first length category, then we would expect 15 (i.e., <span class="math">\(20\times0.75\)</span>) to be of the first age and five (i.e., <span class="math">\(20\times0.25\)</span>) to be of the second age.</p>
-<p>Thus, assignment of ages to fish in the length sample is based on the “probability” of each age given the length category that the fish belongs to, as derived from the age-sample. The required conditional probabilities from the age sample are derived from the summary contingency table by dividing each cell of the table by the total number of fish in that length cateogry (i.e., each cell is divided by the sum of its row; thus, a “row-proportions” table is computed). The row-proportions table derived from the summary contingency table shown above is shown below.</p>
+<p>The portion of the entire sample of fish that was not part of the age sample (i.e., fish for which only a length measurement was obtained) is called the <em>length sample</em>. Age is “assigned” to fish in the length sample based on the fish’s length category and the proportion of fish of that length category of each age in the age sample. For example, a fish in the length sample that belongs to the first length category has, based on the summary from the age sample, a 75% chance (i.e., <span class="math inline">\(\frac{6}{8}\)</span>) of being the first age and a 25% chance of being the second age. Furthermore, if there were 20 fish in the length sample in the first length category, then 15 (i.e., <span class="math inline">\(20\times0.75\)</span>) would be expected to be the first age and five (i.e., <span class="math inline">\(20\times0.25\)</span>) would be expected to be the second age.</p>
+<p>Thus, assignment of ages to fish in the length sample is based on the “probability” of each age given the length category that the fish belongs to, as derived from the age sample. The required conditional probabilities from the age sample are derived from the summary contingency table by dividing each cell of the table by the total number of fish in that length cateogry (i.e., each cell is divided by the sum of its row; thus, a “row-proportions” table is computed). The row-proportions table derived from the summary contingency table shown above is below.</p>
 <div class="container" style="max-width: 400px;">
 <div class="table-responsive">
 <table class="table table-bordered table-condensed table-hover">
@@ -80,17 +80,17 @@ css: /css/codebox.css
  
 </th>
 <th>
-<span class="math">\(A_{1}\)</span>
+<span class="math inline">\(A_{1}\)</span>
 </th>
 <th>
-<span class="math">\(A_{2}\)</span>
+<span class="math inline">\(A_{2}\)</span>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr style="text-align: center;">
 <td>
-<span class="math">\(L_{1}\)</span>
+<span class="math inline">\(L_{1}\)</span>
 </td>
 <td>
 0.75
@@ -101,7 +101,7 @@ css: /css/codebox.css
 </tr>
 <tr style="text-align: center;">
 <td>
-<span class="math">\(L_{2}\)</span>
+<span class="math inline">\(L_{2}\)</span>
 </td>
 <td>
 0.50
@@ -112,7 +112,7 @@ css: /css/codebox.css
 </tr>
 <tr style="text-align: center;">
 <td>
-<span class="math">\(L_{3}\)</span>
+<span class="math inline">\(L_{3}\)</span>
 </td>
 <td>
 0.20
@@ -130,18 +130,11 @@ css: /css/codebox.css
 </div>
 <div id="age-assignment-to-individuals" class="section level1">
 <h1>Age Assignment to Individuals</h1>
-<p>An age-length key can be used to develop a summary frequency of ages for the length sample. In addition, methods have been developed to find the mean length-at-age for the length sample or the CPE for each age from fish in the length sample <span class="citation">(Bettoli and Miranda 2001)</span>. However, these methods cannot be used to calculate measures of variability for these summaries <span class="citation">(Isermann and Knight 2005)</span>. Thus, it is beneficial to use the age-length key to assign an age to each fish in the length sample and then to summarize those results <span class="citation">(Isermann and Knight 2005)</span>. There are two methods for using the age-length key to assign ages to specific fish in the length sample: semi-random and completely random methods. The semi-random method is discussed in this section and the completely random method is shown in <a href="#completely-random-age-assignment">the section below</a>.</p>
-<div id="semi-random-age-assignment" class="section level3">
-<h3>Semi-Random Age Assignment</h3>
-<p>In the semi-random method of assigning ages to individual fish, the exact expected number of fish with a given length interval of a given age will be assigned that age, with exceptions for fractionality discussed below. For example, given the age-length key from above, assume that there are 24 fish in the length sample that are in the first length category. In this case, 75% or eighteen (i.e., <span class="math">\(24\times0.75\)</span>) would be assigned the first age and six (i.e., <span class="math">\(24\times0.25\)</span>) would be assigned the second age. Which of the 24 fish would be assigned the specific ages is determined randomly, but the number to be assigned each age is set at eighteen and six, respectively.</p>
-<p>One difficulty that is soon apparent is that the expected number of individuals in a given length interval assigned a certain age may contain a fraction. For example, supposed that 23 fish in the length sample are in the second length category. In this case, the expected number of fish for each age is 11.5 (i.e., <span class="math">\(23\times0.5\)</span> for each age). Clearly, a half of a fish cannot be assigned to a given age category. This difficulty was called <em>fractionality</em> by <span class="citation">Isermann and Knight (2005)</span>.</p>
+<p>An age-length key can be used to develop a summary frequency of ages for the length sample. In addition, methods have been developed to find the mean length-at-age for the length sample or the CPE for each age from fish in the length sample <span class="citation">(Bettoli and Miranda 2001)</span>. However, these methods cannot be used to calculate measures of variability for these summaries <span class="citation">(Isermann and Knight 2005)</span>. Thus, it is beneficial to use the age-length key to assign an age to each fish in the length sample and then to summarize those results <span class="citation">(Isermann and Knight 2005)</span>.</p>
+<p>In the <span class="citation">Isermann and Knight (2005)</span> method, the exact expected number of fish with a given length interval of a given age will be assigned that age, with exceptions for fractionality discussed below. For example, given the age-length key from above, assume that there are 24 fish in the length sample that are in the first length category. In this case, 75% or eighteen (i.e., <span class="math inline">\(24\times0.75\)</span>) would be assigned the first age and six (i.e., <span class="math inline">\(24\times0.25\)</span>) would be assigned the second age. Which of the 24 fish would be assigned the specific ages is determined randomly, but the number to be assigned each age is set at eighteen and six, respectively.</p>
+<p>One difficulty that is soon apparent is that the expected number of individuals in a given length interval assigned a certain age may contain a fraction. For example, suppose that 23 fish in the length sample were in the SECOND length category. In this case, the expected number of fish for each age is 11.5 (i.e., <span class="math inline">\(23\times0.5\)</span> for each age). Clearly, a half of a fish cannot be assigned to a given age category. This difficulty was called <em>fractionality</em> by <span class="citation">Isermann and Knight (2005)</span>.</p>
 <p>Fractionality is handled by first assigning the closest integer <strong>smaller</strong> then the expected number of fish to the age-group. In the example above, eleven fish would be assigned each of the two ages. The remaining fish is then randomly assigned an age with a probabilistic weight equal to the expected proportion of fish in each age category. For example, the fish would be assigned the first age with a probability of 0.50 and would be assigned the second age with a probability of 0.50. In other words, in this example, it is essentially a coin-flip which age the “extra” fish is assigned. If the coin flip determines that the “extra” fish should be in the second age, then eleven fish would be assigned the first age and twelve would be assigned the second age. Again, the specific age to be assigned to each individual fish is determined randomly; but eleven fish would be assigned the first age and twelve would be assigned the second age as determined above.</p>
-<p>To complete the example, suppose that fourteen fish in the length sample are in the third length category. Given the age-length key above, two fish will be assigned the first age (i.e., <span class="math">\(14\times0.2\)</span>) and eleven fish will be assigned the second age (i.e., <span class="math">\(14\times0.8\)</span>). The “extra” fish (i.e., <span class="math">\(14-2-11\)</span>) will be assigned an age with a probability of being the first age of 0.2 and a probability of being the second age of 0.8. Thus, it is four times more likely that the “extra” fish will be assigned the second age than the first age.</p>
-</div>
-<div id="completely-random-age-assignment" class="section level3">
-<h3>Completely Random Age Assignment</h3>
-<p>In the completely random method of assigning ages to individual fish, the age assigned to a fish is randomly assigned with probabilistic weights proportional to the proportion of fish in each age for fish on the age-length key of the same length category. This is essentially the same rule used to assign age to the “exra” fish (from fractionality) in the semi-random method. For example, suppose that 50% of the fish in a length interval in the age-sample were age-1, 25% were age-2, and 25% were age-3. A single fish in the same length interval in the length sample would then have a 50% chance of being assigned an age of 1, a 25% chance of being assigned an age of 2, and a 25% chance of being assigned an age of 3. The specific age it is assigned depends completely on randomness. Thus, in this example, we would expect 11 of 22 fish in this length category in the length-sample to be assigned an age of 1 but in actuality it could be more or it could be less. In the semi-random method, which fish get which age is random but the number of fish that get each age is (primarily) not random. In the completely random method, both the number of fish that get each age and which fish get each age is random.</p>
-</div>
+<p>To complete the example, suppose that fourteen fish in the length sample are in the third length category. Given the age-length key above, two fish will be assigned the first age (i.e., <span class="math inline">\(14\times0.2\)</span>) and eleven fish will be assigned the second age (i.e., <span class="math inline">\(14\times0.8\)</span>). The “extra” fish (i.e., <span class="math inline">\(14-2-11\)</span>) will be assigned an age with a probability of being the first age of 0.2 and a probability of being the second age of 0.8. Thus, it is four times more likely that the “extra” fish will be assigned the second age than the first age.</p>
 <div id="calculations-in-r" class="section level3">
 <h3>Calculations in R</h3>
 <p>Methods for performing these methods in R are described in Section 5.4.4 of <span class="citation">Ogle (2016)</span>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
@@ -151,24 +144,34 @@ css: /css/codebox.css
 <div id="reproducibility-information" class="section level2">
 <h2>Reproducibility Information</h2>
 <ul>
-<li><strong>Compiled Date:</strong> Mon Dec 28 2015</li>
-<li><strong>Compiled Time:</strong> 3:57:02 PM</li>
-<li><strong>R Version:</strong> R version 3.2.3 (2015-12-10)</li>
+<li><strong>Compiled Date:</strong> Fri Jan 06 2017</li>
+<li><strong>Compiled Time:</strong> 4:15:02 PM</li>
+<li><strong>R Version:</strong> R version 3.3.2 (2016-10-31)</li>
 <li><strong>System:</strong> Windows, i386-w64-mingw32/i386 (32-bit)</li>
 <li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>
-<li><strong>Required Packages:</strong> FSA, knitr and their dependencies (car, digest, dplyr, evaluate, formatR, gdata, gplots, graphics, grDevices, highr, Hmisc, markdown, methods, plotrix, plyr, sciplot, stats, stringr, tools, utils, yaml)</li>
-<li><strong>Other Packages:</strong> FSA_0.8.4, knitr_1.11</li>
-<li><strong>Loaded-Only Packages:</strong> digest_0.6.8, evaluate_0.8, formatR_1.2.1, htmltools_0.2.6, magrittr_1.5, plyr_1.8.3, Rcpp_0.12.2, rmarkdown_0.8.1, stringi_1.0-1, stringr_1.0.0, tools_3.2.3, yaml_2.1.13</li>
+<li><strong>Required Packages:</strong> FSA, knitr and their dependencies (car, digest, dplyr, epitools, evaluate, gplots, graphics, grDevices, highr, markdown, methods, plotrix, plyr, sciplot, stats, stringr, tools, utils, yaml)</li>
+<li><strong>Other Packages:</strong> FSA_0.8.12, knitr_1.15.1</li>
+<li><strong>Loaded-Only Packages:</strong> backports_1.0.4, digest_0.6.11, evaluate_0.10, htmltools_0.3.5, magrittr_1.5, plyr_1.8.4, Rcpp_0.12.8, rmarkdown_1.3, rprojroot_1.1, stringi_1.1.2, stringr_1.1.0, tools_3.3.2, yaml_2.1.14</li>
 <li><strong>Links:</strong> <a href="BKG.R">Script</a> / <a href="BKG.Rmd">RMarkdown</a></li>
 </ul>
 <hr />
 <p> </p>
-<div class="references">
+</div>
+<div id="references" class="section level2 unnumbered">
 <h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-BettoliMiranda2001">
 <p>Bettoli, P. W., and L. E. Miranda. 2001. A cautionary note about estimating mean length at age with subsampled data. North American Journal of Fisheries Management 21:425–428.</p>
+</div>
+<div id="ref-IsermannKnight2005">
 <p>Isermann, D. A., and C. T. Knight. 2005. A computer program for age-length keys incorporating age assignment to individual fish. North American Journal of Fisheries Management 25:1153–1160.</p>
+</div>
+<div id="ref-Kimura1977">
 <p>Kimura, D. K. 1977. Statistical assessment of the age-length key. Journal of the Fisheries Research Board of Canada 34:317–324.</p>
+</div>
+<div id="ref-Ogle2016">
 <p>Ogle, D. H. 2016. Introductory fisheries analyses with R. Chapman &amp; Hall/CRC, Boca Raton, FL.</p>
+</div>
 </div>
 </div>
 </div>
@@ -180,14 +183,20 @@ css: /css/codebox.css
 </div>
 
 
+
+
 </div>
 
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
+
 
 </script>
 

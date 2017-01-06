@@ -89,7 +89,7 @@ The summary data for a Petersen estimate can be shown in the format of capture h
 `r tblcaps("PetersenNotation")`
 
 Symbol   | Meaning
--------- | -------
+-------- | ---------------------------------------------------------------------
 $N$      | The unknown size of the population just prior to the first sample.
 $M$      | The number of fish from the first sample that were marked and returned to the population.
 $n$      | The number of fish in the second sample.

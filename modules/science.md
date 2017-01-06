@@ -136,7 +136,7 @@ title: Science Modules
             <li><a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Sections 5.1-5.4</li>
           </ul>
         <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
-        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_B.html" target="_blank">#2</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_C.html" target="_blank">XC</a></li>
+        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html" target="_blank">#1</a> (<i>don't do Question 4</i>), <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_B.html" target="_blank">#2</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_C.html" target="_blank">XC</a></li>
       </ul>
     </div>
   </div>

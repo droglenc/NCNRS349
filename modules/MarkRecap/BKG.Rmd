@@ -176,7 +176,6 @@ Methods for performing the Petersen and related methods in R are described in Se
 --------------------------------------------------------------
 
 ```{r echo=FALSE, results='asis'}
-chooseCRANmirror(ind=1)
 reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="BKG.R",RMarkdown="BKG.Rmd"))
 ```
 

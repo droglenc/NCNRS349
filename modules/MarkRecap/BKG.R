@@ -23,7 +23,5 @@ eqncaps("Bailey")
 
 # ===== END -- THIS CAN BE IGNORED ===========================
 
-chooseCRANmirror(ind=1)
 
-
-# Script created at 2017-01-05 19:03:15
+# Script created at 2017-01-05 19:26:55

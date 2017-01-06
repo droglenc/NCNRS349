@@ -11,8 +11,8 @@ output:
 
 ```{r echo=FALSE, eval=FALSE}
 # Renders an appropriate HTML file for the webpage
-setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Abundance/MarkRecap/")
-source("../../../rhelpers/rhelpers.R")
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/Abundance/MarkRecap/")
+source("../../rhelpers/rhelpers.R")
 modHTML("CE2b")
 ```
 

@@ -26,4 +26,4 @@ eqncaps("Bailey")
 chooseCRANmirror(ind=1)
 
 
-# Script created at 2017-01-05 18:13:53
+# Script created at 2017-01-05 18:58:25

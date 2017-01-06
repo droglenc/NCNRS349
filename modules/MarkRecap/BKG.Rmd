@@ -17,7 +17,7 @@ output:
 # Second line makes the script file
 # RUN BOTH MANUALLY (following using Knit HTML button)
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/MarkRecap/")
-source("../../../rhelpers/Rhelpers.R")
+source("../../rhelpers/Rhelpers.R")
 modHTML("BKG",need2render=FALSE)
 if (require(FSA)) purl2("BKG.Rmd",topnotes="")
 ```

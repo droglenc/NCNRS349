@@ -1,9 +1,15 @@
 # 
+# First line renders an appropriate HTML file for the webpage
+# Second line makes the script file
+# RUN BOTH MANUALLY (following using Knit HTML button)
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Depletion/")
+source("../../rhelpers/Rhelpers.R")
+modHTML("BKG",need2render=FALSE)
 
 ##############################################################
 # ===== BEGIN -- THIS CAN BE IGNORED =========================
 # Setup of knitr
-source("../../../rhelpers/knitr_setup.R")
+source("../../rhelpers/knitr_setup.R")
 # declare packages used
 rqrd <- c("FSA","captioner","knitr")
 library(FSA)
@@ -94,4 +100,4 @@ text(4,p[1]+(p[2]-p[1])/2,"q",col="red",pos=4)
 ##############################################################
 
 
-# Script created at 2015-12-28 15:09:35
+# Script created at 2017-01-06 12:58:52

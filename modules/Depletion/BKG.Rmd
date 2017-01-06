@@ -4,8 +4,8 @@ title: Depletion
 subtitle: Ogle's Notes
 author: Derek H. Ogle
 css: /css/codebox.css
-csl: ../../../rhelpers/american-fisheries-society.csl
-bibliography: ../../../rhelpers/NRS349.bib
+csl: ../../rhelpers/american-fisheries-society.csl
+bibliography: ../../rhelpers/NRS349.bib
 output: 
   html_document: 
     fig_width: 3.5
@@ -16,8 +16,8 @@ output:
 # First line renders an appropriate HTML file for the webpage
 # Second line makes the script file
 # RUN BOTH MANUALLY (following using Knit HTML button)
-setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Abundance/Depletion/")
-source("../../../rhelpers/Rhelpers.R")
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Depletion/")
+source("../../rhelpers/Rhelpers.R")
 modHTML("BKG",need2render=FALSE)
 if (require(FSA)) purl2("BKG.Rmd",topnotes="")
 ```
@@ -26,7 +26,7 @@ if (require(FSA)) purl2("BKG.Rmd",topnotes="")
 ##############################################################
 # ===== BEGIN -- THIS CAN BE IGNORED =========================
 # Setup of knitr
-source("../../../rhelpers/knitr_setup.R")
+source("../../rhelpers/knitr_setup.R")
 # declare packages used
 rqrd <- c("FSA","captioner","knitr")
 library(FSA)
@@ -55,7 +55,7 @@ eqncaps("KPassIterationCS")
 ```
 
 
-The number of individuals in a population at some initial time, called *initial population size*, can be estimated by the sum of sequential catches required to remove all fish from the population.  However, the removal of all fish from a population is costly, in monetary, human, and natural resource terms.  Fortunately, estimates of the initial population size can be made by examining how the removals of fish, either through the catch of a fishery or by experimental monitoring, affect the relative abundance of fish remaining in the population [@HilbornWalters2001].  These methods are generally called depletion or removal methods as they rely on observing populations where the stock of fish is being depleted by removals of fish.  In this vignette, three depletion methods ([Leslie](#leslie-method), [DeLury](#delury-method), [k-Pass](#k-pass-methods)) used for estimating the population size are developed for a **closed population** with no mortality, recruitment, immigration, or emigration.
+The number of individuals in a population at some initial time, called *initial population size*, can be estimated by the sum of sequential catches required to remove all fish from the population.  However, the removal of all fish from a population is costly, in monetary, human, and natural resource terms.  Fortunately, estimates of the initial population size can be made by examining how the removals of fish, either through the catch of a fishery or by experimental monitoring, affect the relative abundance of fish remaining in the population [@HilbornWalters2001].  These methods are generally called depletion or removal methods as they rely on observing populations where the stock of fish is being depleted by removals of fish.  In this reading, three depletion methods ([Leslie](#leslie-method), [DeLury](#delury-method), [k-Pass](#k-pass-methods)) used for estimating the population size are developed for a **closed population** with no mortality, recruitment, immigration, or emigration.
 
 \ 
 
@@ -69,17 +69,17 @@ where $K_{t-1}$ is
 
 $$ K_{t-1} = C_{1} + C_{2} + \ldots + C_{t-1} = \sum_{i=1}^{t-1} C_{i}, $$
 
-$C_{i}$ is the catch for the $i$th removal, and $t>1$ and $K_{0}=0$.  In addition, assume that catch-per-unit-effort (CPUE or CPE) in the $t$th removal event, $\frac{C_{t}}{f_{t}}$, is proportional to the extant population at the time of the $t$th removal event, $N_{t}$, i.e., 
+$C_{i}$ is the catch for the $i$th removal, $t>1$, and $K_{0}=0$.  In addition, assume that catch-per-unit-effort (CPE) in the $t$th removal event, $\frac{C_{t}}{f_{t}}$, is proportional to the extant population at the time of the $t$th removal event, $N_{t}$, i.e., 
 
 $$ \frac{C_{t}}{f_{t}} = qN_{t} \quad \quad \text{`r paste0("(",eqncaps("CPEDefn",display="num"),")")`} $$
 
-where $f_{t}$ is the level of effort for the $t$th removal and $q$ is a proportionality constant typically defined as the *catchability coefficient*.  The catchability coefficent represents the fraction of the population that is removed by one unit of fishing effort.  The Leslie method model is derived by substituting `r eqncaps("LesliePopnModel",display="cite")` into `r eqncaps("CPEDefn",display="cite")` for $N_{t}$ and simplifying,
+where $f_{t}$ is the level of effort for the $t$th removal and $q$ is the constant *catchability coefficient*.  The catchability coefficent represents the fraction of the population that is removed by one unit of fishing effort.  The Leslie method model is derived by substituting `r eqncaps("LesliePopnModel",display="cite")` into `r eqncaps("CPEDefn",display="cite")` for $N_{t}$ and simplifying,
 
 $$ \frac{C_{t}}{f_{t}} = q(N_{0} - K_{t-1}) \quad \quad \text{    } $$
 
 $$ \frac{C_{t}}{f_{t}} = qN_{0} - qK_{t-1} \quad \quad \text{`r paste0("(",eqncaps("LeslieModel1",display="num"),")")`} $$
 
-The last expression of `r eqncaps("LeslieModel1",display="cite")` is in the form of a linear model (`r figcaps("LeslieModelFig",display="cite")`) where $\frac{C_{t}}{f_{t}}$ is the response variable, $K_{t-1}$ is the explanatory variable, $q$ is a constant (i.e., the slope), and $qN_{0}$ is a constant (i.e., the intercept) because it is the product of two constants.  Thus, the *negative of the slope* of this model is an estimate of the catchability coefficient, $\hat{q}$.  The estimated initial population size, $\hat{N_{0}}$, is found by dividing the estimated intercept by  $\hat{q}$.  Visually, $\hat{N_{0}}$ is the intercept of the regression line with the *x-axis*, or in words, the total cumulative catch such that the CPE is equal to zero (`r figcaps("LeslieModelFig",display="cite")`).
+The last expression of `r eqncaps("LeslieModel1",display="cite")` is in the form of a linear model (`r figcaps("LeslieModelFig",display="cite")`) where $\frac{C_{t}}{f_{t}}$ is the response variable, $K_{t-1}$ is the explanatory variable, $-q$ is the slope, and $qN_{0}$ is the intercept.  Thus, the *negative of the slope* of this model is $\hat{q}$, an estimate of the catchability coefficient.  The estimated initial population size, $\hat{N_{0}}$, is found by dividing the estimated intercept by $\hat{q}$.  Visually, $\hat{N_{0}}$ is the intercept of the regression line with the *x-axis*, or in words, the total cumulative catch such that the CPE is equal to zero (`r figcaps("LeslieModelFig",display="cite")`).
 
 ```{r, echo=FALSE, par1=TRUE}
 ##############################################################
@@ -197,7 +197,7 @@ $$ log\left(\frac{C_{t}}{f_{t}}\right) = log(qN_{0}) + log\left(e^{-qE_{t-1}}\ri
 
 $$ \left(\frac{C_{t}}{f_{t}}\right) = log(qN_{0}) - qE_{t-1}  \quad \quad \text{`r paste0("(",eqncaps("DeLuryModel2",display="num"),")")`} $$
 
-The last expression of `r eqncaps("DeLuryModel2",display="cite")` is in the form of a linear model \figrefp{fig:DeLuryModel} where $log\left(\frac{C_{t}}{f_{t}}\right)$ is the response variable, $E_{t-1}$ is the explanatory variable, $-q$ is a constant (i.e., the slope), and $log(qN_{0})$ is the log of the product of two constants and, thus, is a constant (i.e., the intercept).  Thus, the *negative of the slope* of this model is an estimate of the catchability coefficient, $\hat{q}$.  The estimated initial population size, $\hat{N_{0}}$, is derived by using the intercept as the power of $e$ (i.e., $e^{intercept}$) and dividing by $\hat{q}$.
+The last expression of `r eqncaps("DeLuryModel2",display="cite")` is in the form of a linear model \figrefp{fig:DeLuryModel} where $log\left(\frac{C_{t}}{f_{t}}\right)$ is the response variable, $E_{t-1}$ is the explanatory variable, $-q$ is the slope, and $log(qN_{0})$ is the intercept.  Thus, the *negative of the slope* of this model is $\hat{q}$.  The $\hat{N_{0}}$ is derived by using the intercept as the power of $e$ (i.e., $e^{intercept}$) and dividing by $\hat{q}$.
 
 
 ```{r, echo=FALSE, par1=TRUE}
@@ -226,6 +226,10 @@ text(4,p[1]+(p[2]-p[1])/2,"q",col="red",pos=4)
 ##############################################################
 ```
 
+`r figcaps("DeLuryModelFig")`
+
+\ 
+
 As with the Leslie method, @Ricker1975 suggested a modification to `r eqncaps("DeLuryModel2",display="cite")`, namely that $E_{t-1}$ be replaced with $E_{t}$, where $E_{t}$ is equal to $E_{t-1}$ plus half of the effort expended at time $t$, $f_{t}$, or
 
 $$ E_{t} = E_{t-1} + \frac{f_{t}}{2} $$
@@ -238,9 +242,6 @@ Ricker's correction usually results in slightly higher estimates of $N_{0}$.
 
 The assumptions of the DeLury method are the same as the assumptions for the Leslie method except that the DeLury method is used when the removals are less than 2% of the population.  If the catches remove more that 2% of the population, then it is best to use the Leslie method as it is more flexible (e.g., CPE estimates need not be from the same fishing gear as the cumulative catches).
 
-`r figcaps("DeLuryModelFig")`
-
-\ 
 
 ### Calculations in R
 
@@ -250,7 +251,7 @@ Methods for performing the DeLury method in R are described in Section 10.1 of @
 
 # k-Pass Methods
 
-Another depletion method for estimating population size is the k-Pass removal methods.  In this method, a closed population is repeatedly sampled $k$ times[^kPassk] with the same amount of effort.  On each sampling "pass," the number of individuals captured are recorded, and the individuals are physically removed from the population.  With certain assumptions, the overall population size can be estimated from the number of animals successively removed.
+Another depletion method for estimating population size is the k-Pass removal method.  In this method, a closed population is repeatedly sampled $k$ times[^kPassk] with the same amount of effort.  On each sampling "pass," the number of individuals captured are recorded, and the individuals are physically removed from the population.  With certain assumptions, the overall population size can be estimated from the number of animals successively removed.
 
 Under the assumptions that the population is closed (except for the removal of animals at each pass) and that the probability of capture for an animal (defined as $p$) is constant for all animals and from sample to sample, then the likelihood function for the vector of successive catches, $\vec{C}$, given the population size, $N_{0}$, and probability of capture is
 
@@ -258,7 +259,7 @@ $$ L(\vec{C}|N_{0},p) = \frac{N_{0}!p^{T}q^{kN_{0}-X-T}}{(N_{0}-T)!\prod_{i=1}^{
 
 where $q=1-p$ is the probability of escape, $C_{i}$ is the number of animals captured in the $i$th removal period, $k$ is the total number of removal periods, $T=\sum_{i=1}^{k}C_{i}$ is the total number of individuals captured, and $X=\sum_{i=1}^{k}(k-i)C_{i}$ \citep{CarleStrub1978}.  Unfortunately, the maximization of this likelihood function is not "neat" and is beyond the scope of this vignette.  Fortunately, @Zippin1956 and @Zippin1958 showed a method for iteratively solving for $q$ and $N_{0}$.  @CarleStrub1978 later showed a slight modification of Zippin's method where the smallest $N_{0}\geq T$ that solves
 
-$$ \left(N_{0}+\frac{1}{2}\right)\left(kN_{0}-X-T\right)^{k} - \left(N_{0}-T+\frac{1}{2}\right)\left(kN_{0}-X\right)^{k} \geq 0 \quad \quad \text{`r paste0("(",eqncaps("KPassIteration",display="num"),")")`} 
+$$ \left(N_{0}+\frac{1}{2}\right)\left(kN_{0}-X-T\right)^{k} - \left(N_{0}-T+\frac{1}{2}\right)\left(kN_{0}-X\right)^{k} \geq 0 \quad \quad \text{`r paste0("(",eqncaps("KPassIteration",display="num"),")")`} $$
 
 is the maximum likelihood estimate.
 

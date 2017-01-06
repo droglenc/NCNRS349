@@ -76,19 +76,19 @@ title: Science Modules
       <ul class="list-unstyled">
         <li><strong>Capture Histories</strong></li>
           <ul>
-            <li>Reading -- <a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.1</li>
-            <li><a href="MarkRecap/CE1.html">Class Exercise</a></li>
+            <li>Reading -- <a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Section 9.1</li>
+            <li><a href="MarkRecap/CE1.html" target="_blank">Class Exercise</a></li>
           </ul>
         <li><strong>Single Census, Closed Population</strong></li>
           <ul>
             <li>Readings</li>
               <ul>
-                <li><a href="MarkRecap/BKG.html">Ogle Notes</a></li>
-                <li><a href="MarkRecap/Hayes_et_al_2007-Sect8-3part.pdf">Section 8.3.1 in Hayes <i>et al.</i></a> (the <a href="http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf">complete reading</a>)</li>
-                <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 9.2</li>
+                <li><a href="MarkRecap/BKG.html" target="_blank">Ogle Notes</a></li>
+                <li><a href="MarkRecap/Hayes_et_al_2007-Sect8-3part.pdf" target="_blank">Section 8.3.1 in Hayes <i>et al.</i></a> (the <a href="http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf" target="_blank">complete reading</a>)</li>
+                <li><a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Section 9.2</li>
               </ul>
             <li><a href="MarkRecap/CE2.html">Class Exercise</a></li>
-            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html">XC</a></li>
+            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html" target="_blank">#2</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html" target="_blank">XC</a></li>
           </ul>
       </ul>
     </div>
@@ -106,14 +106,14 @@ title: Science Modules
   <div id="cDepletion" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Pre-Readings</li>
+        <li>Readings</li>
           <ul>
-            <li><a href="Depletion/BKG.html">Ogle Notes</a></li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 10</li>
+            <li><a href="Depletion/BKG.html" target="_blank">Ogle Notes</a></li>
+            <li><a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Chapter 10</li>
+            <li><a href="Popeetal-2010-Box11-1.pdf" target="_blank">Rosenberger (Box 11.1) in Pope <i>et al.</i> (2010)</a> (the <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf" target="_blank">complete chapter</a>)</li>
           </ul>
         <li><a href="Depletion/PPT.pptx">Lecture Slides</a></li>
-        <li>Post-Reading -- <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf">Rosenberger (Box 11.1) in Pope <i>et al.</i> (2010)</a></li>
-        <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Homework</a></li>
+        <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html" target="_blank">Homework</a></li>
       </ul>
     </div>
   </div>

@@ -11,8 +11,8 @@ output:
 
 ```{r echo=FALSE, eval=FALSE}
 # Renders an appropriate HTML file for the webpage
-setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Abundance/MarkRecap/")
-source("../../../rhelpers/rhelpers.R")
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/MarkRecap/")
+source("../../rhelpers/rhelpers.R")
 fnm <- "CE2"
 modHTML(fnm)
 ```
@@ -20,19 +20,19 @@ modHTML(fnm)
 ```{r echo=FALSE, results='hide', message=FALSE}
 library(FSAsim)
 fnm <- "CE2"
-source("../../../rhelpers/knitr_setup.R")
+source("../../rhelpers/knitr_setup.R")
 set.seed(13797834)
 ```
 
 ----
 
 ## Understanding the Bias of Petersen Estimates
-<img src="http://derekogle.com/NCNRS349//img/computer-1.jpg" alt="Simulations" class="img-right">
-Estimating the number of fish in a population is one of the most common tasks facing a fisheries biologist.  One common method for estimating fish abundance is to sample the population, mark (or tag) and return the sampled fish to the population, take a second sample from the population, and use the ratio of number of marked to unmarked fish to estimate the population size.  The most common formula for estimating abundance was derived nearly simultaneously by Petersen and Lincoln, though slight modifications to the formulas were derived by Chapman and Bailey.  Taken together, these methods are called the "Petersen family" of mark-recapture methods.  In this exercise, you will use simulations to assess how accurately the original Petersen and the Chapman modification estimate population abundance.
+<img src="http://derekogle.com/NCNRS349/img/computer-1.jpg" alt="Simulations" class="img-right">
+Estimating the number of fish in a population is one of the most common tasks facing a fisheries biologist.  One common method for estimating fish abundance is to sample the population, mark (or tag) and return the sampled fish to the population, take a second sample from the population, and use the ratio of number of marked to unmarked fish to estimate the population size.  The most common formula for estimating abundance in this situation was derived nearly simultaneously by Petersen and Lincoln, though slight modifications to the formulas were derived by Chapman and Bailey.  Taken together, these methods are called the "Petersen family" of mark-recapture methods.  In this exercise, you will use simulations to assess how accurately the original Petersen and the Chapman modification estimate population abundance.
 
 #### Simulation Description
 
-The `mrClosed1Sim()` function in the `FSAsims` package may be used to evaluate the performance of the Petersen family of mark-recapture methods to estimate population abundance.  This function works by creating an initial population for which the size is chosen, and thus known, by the user.  A sample of fish is then taken from this population according to choices made by the user (discussed below).  The individuals in this sample are then "marked" and returned to the population.  A second sample is then taken and the number of previously marked fish is counted.  From these results an estimate of population abundance is computed according to the Petersen family method selected by the user.  This process is then repeated a large number of times so that the sampling distribution of the population abundance estimate can be visualized.
+The `mrClosed1Sim()` function in the `FSAsim` package may be used to evaluate the performance of the Petersen family of mark-recapture methods to estimate population abundance.  This function works by creating an initial population for which the size is chosen, and thus known, by the user.  A sample of fish is then taken from this population according to choices made by the user (discussed below).  The individuals in this sample are then "marked" and returned to the population.  A second sample is then taken and the number of previously marked fish is counted.  From these results an estimate of population abundance is computed according to the Petersen family method selected by the user.  This process is then repeated a large number of times so that the sampling distribution of the population abundance estimate can be visualized.
 
 The `mrClosed1Sim()` function takes three arguments:
 

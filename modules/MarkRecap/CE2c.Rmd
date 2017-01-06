@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mark-Recapture
-subtitle: Class Exercise
+title: Class Exercise
+subtitle: Mark-Recapture
 author: Derek H. Ogle
 css: /css/modules.css
 output:
@@ -19,7 +19,7 @@ modHTML("CE2c")
 ```{r echo=FALSE, results='hide', message=FALSE}
 library(FSAsim)
 fnm <- "CE2c"
-source("../../../rhelpers/knitr_setup.R")
+source("../../rhelpers/knitr_setup.R")
 set.seed(13797834)
 ```
 
@@ -31,7 +31,7 @@ In this exercise, you will simulate violations of assumptions for the Petersen f
 
 #### Simulation Description
 
-The `mrClosed1Sim()` function in the \R{FSAsims} package was introduced on the first page of this exercise.  That function can also be used to assess assumption violations by using `sim="assumptions"` as an argument.
+The `mrClosed1Sim()` function in the `FSAsim` package was introduced on the [first page of this exercise](CE2.html).  That function can also be used to assess assumption violations by including the `sim="assumptions"` argument.
 
 The same type of histogram will be produced as described earlier.  However, in some simulations the population will not be closed and thus a final population size will exist and may be different than the initial population size.  Thus, this histogram will be further augmented with a blue vertical line at the mean final population abundance and the percentage error of the population abundance estimated from this value will be computed and printed on the graph.
 
@@ -47,18 +47,18 @@ As before, this plot will have a gear icon in the upper-left corner that will op
 * `Proportion Recruit` is the proportion of the population alive after the first sample that will recruit to the population prior to the second sample.  A value of zero (the default) indicates no recruitment.
 * `PR(Capture) Ratio (M/U)` is the ratio of the probability of capture of marked fish to the probability of capture of unmarkd fish for the second sample.  Values greater than one indicate that marked fish are more likely to be captured than unmarked fish, whereas values less than one indicate that marked fish are less likely to be captured than unmarked fish.  A value of one (the default) indicates that the probabilities of capture are the same between marked and unmarked fish.
 
-Note that the title to the plot will describe the type of assumption violation (if any) being simulated.
+Note that the title to the plot will describe the type of assumption violation (if any) being simulated. You also may need to make the plot pane larger to see the entire set of gear options.
 
 ----
 
 #### Questions IV-- Observations from Violated Assumptions
 
-For the questions below use the Chapman modification of the Petersen method (the default) to estimate abundance, an expected number of tags of 200 (the default), an expected number in the final sample of 200 (the default), an initial population abundance of 1000 (the default), and 2000 resamples (the default). [*Remember to return the sliders to these default value after each situation.*]  For each situation, identify (with a supporting graphic) whether the population estimate is an over, under, or unbiased estimate of the initial **AND** final population sizes and identify whether your expectations for the initial population size from the [previous page](CE2b.html) were met.  
+For the questions below use the Chapman modification of the Petersen method (the default) to estimate abundance, an expected number of tags of 200 (the default), an expected number in the final sample of 200 (the default), and an initial population abundance of 1000 (the default). [*Remember to return the sliders to these default value after each situation.*]  For each situation, identify (with a supporting graphic) whether the population estimate is an over, under, or unbiased estimate of the initial **AND** final population sizes and identify whether your expectations for the initial population size from the [previous page](CE2b.html) were met.  
 
 1. Simulate tag loss by increasing the probability of losing a tag.
 1. Simulate mortality between the first and second sample by decreasing the probability of survival for both tagged and untagged fish to the same value.
 1. Simulate mortality of just tagged fish by decreasing the probability of survival for tagged fish (i.e., leave the probability of survival of untagged fish at the default value of 1).
-1. Simulate mortality of just untagged fish by decreasing the probability of survival for untagged fish (i.e., leave the probability of survival of tagged fish at the default value of 1).
+1. Simulate mortality of just untagged fish by decreasing the probability of survival for untagged fish (i.e., leave the probability of survival of tagged fish at 1).
 1. Simulate recruitment to the population by increasing the proportion of the initial population to recruit.
 1. Simulate increased catchability of tagged fish in the final sample (i.e., "trap-happy") by increasing the ratio of probability of capture.
 1. Simulate decreased catchability of tagged fish in the final sample (i.e., "trap-shy") by decreasing the ratio of probability of capture.

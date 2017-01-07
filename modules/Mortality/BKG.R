@@ -218,4 +218,4 @@ matplot(Ages,log(cc.4),type=c("l",rep("b",2)),cex=0.75,lwd=c(2,rep(1,2)),lty=1,p
 text(max(Ages)-1,max(log(cc.4))-0.5,"IV",cex=1.5)
 
 
-# Script created at 2017-01-06 18:33:27
+# Script created at 2017-01-06 18:52:51

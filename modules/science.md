@@ -155,7 +155,7 @@ title: Science Modules
         <li>Readings</li>
           <ul>
             <li><a href="Mortality/BKG.html" target="_blank">Ogle Notes</a></li>
-            <li><a href="Mortality/Miranda-Bettolli-2006-Sect6-1-3.pdf" target="_blank">Miranda and Bettolli (2006) Sections 6.1-6.3</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a></li>
+            <li><a href="Mortality/Miranda-Bettolli-2006-Sect6-1-3.pdf" target="_blank">Miranda and Bettolli (2006) Sections 6.1-6.3</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a>)</li>
             <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
           </ul>
         <li><a href="Mortality/PPT.pptx">Lecture Slides</a></li>
@@ -178,8 +178,8 @@ title: Science Modules
       <ul>
         <li>Readings</li>
           <ul>
-            <li><a href="MortalityComponents/Miranda-Bettolli-2006-Sect6-6.pdf" target="_blank">Miranda and Bettolli (2006) Section 6.6</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a></li>
-            <li><a href="MortalityComponents/Miranda-Bettolli-2006-Sect6-8-10.pdf" target="_blank">Miranda and Bettolli (2006) Sections 6.8-6.10</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a></li>
+            <li><a href="MortalityComponents/Miranda-Bettolli-2006-Sect6-6.pdf" target="_blank">Miranda and Bettolli (2006) Section 6.6</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a>)</li>
+            <li><a href="MortalityComponents/Miranda-Bettolli-2006-Sect6-8-10.pdf" target="_blank">Miranda and Bettolli (2006) Sections 6.8-6.10</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a>)</li>
             <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.4</li>
           </ul>
         <li><a href="MortalityComponents/PPT.pptx">Lecture Slides</a></li>

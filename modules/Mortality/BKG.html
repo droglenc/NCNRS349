@@ -11,15 +11,15 @@ css: /css/codebox.css
 <p> </p>
 <div id="data-requirements" class="section level1">
 <h1>Data Requirements</h1>
-<p>In a population that is closed to emigration or immigration, the annual mortality rate (<span class="math">\(A\)</span>) between two times is equal to the number of deaths during the time period divided by the population size at the start of the time period, or</p>
-<p><span class="math">\[ A = \frac{N_{t}-N_{t+1}}{N_{t}} = 1-\frac{N_{t+1}}{N_{t}} \]</span></p>
-<p>Unfortunately, it is usually not possible to know the number of fish in a population. However, if the catch of fish (<span class="math">\(C\)</span>) is proportional to the size of the population, i.e., <span class="math">\(C_{t}=vN_{t}\)</span>, then algebra quickly shows that</p>
-<p><span class="math">\[ A = \frac{C_{t}-C_{t+1}}{C_{t}} = 1-\frac{C_{t+1}}{C_{t}} \]</span></p>
+<p>In a population that is closed to emigration or immigration, the annual mortality rate (<span class="math inline">\(A\)</span>) between two times is equal to the number of deaths during the time period divided by the population size at the start of the time period, or</p>
+<p><span class="math display">\[ A = \frac{N_{t}-N_{t+1}}{N_{t}} = 1-\frac{N_{t+1}}{N_{t}} \]</span></p>
+<p>Unfortunately, it is usually not possible to know the number of fish in a population. However, if the catch of fish (<span class="math inline">\(C\)</span>) is proportional to the size of the population, i.e., <span class="math inline">\(C_{t}=vN_{t}\)</span>, then algebra quickly shows that</p>
+<p><span class="math display">\[ A = \frac{C_{t}-C_{t+1}}{C_{t}} = 1-\frac{C_{t+1}}{C_{t}} \]</span></p>
 <p>Thus, the mortality of a cohort of fish can be estimated from knowing the catches of fish at various times. In many fisheries, fisheries scientists “record time” by estimating the age of fish. Thus, the number of fish captured at varous ages, i.e., catch-at-age data, can be used to estimate mortality rates of fish populations.</p>
 <p>In the statistical literature, longitudinal data is data that occurs when multiple samples are taken from the same group of individuals over time. The catches of fish from the same cohort over time is an example of longitudinal data. Longitudinal fisheries data takes many years to collect, which can be very costly and impart a long time-lag in management decisions.</p>
 <p>Catch data from a single year across many cohorts of fish will be identical to longitudinal data of a single cohort if each cohort sampled began with the same number of fish (i.e., recruitment is constant) and if the mortality rate is constant across all ages and years. For example, the catches-at-age of the hypothetical 2002 and 2006 cohorts is shown on diagonals in Table 1 and are equal to the catch-at-age for fish in the 2009 capture year. The catch in a single year is called cross-sectional data because it “crosses” several cohorts of fish.</p>
 <p> </p>
-<p>Table 1: The hypothetical catch of fish by age and capture year. The longitudinal catch of the 2002 and the partial 2006 year-classes of fish are shown by the two sets of diagonal cells highlighted in dark grey. The cross-sectional catch in the 2009 capture year is shown by the column of cells highlighted in light grey. All data were modeled with Equation 2 assuming that <span class="math">\(N_{0}=500\)</span>, <span class="math">\(Z=-log(0.7)\)</span>, and <span class="math">\(v=0.1\)</span>.</p>
+<p>Table 1: The hypothetical catch of fish by age and capture year. The longitudinal catch of the 2002 and the partial 2006 year-classes of fish are shown by the two sets of diagonal cells highlighted in dark grey. The cross-sectional catch in the 2009 capture year is shown by the column of cells highlighted in light grey. All data were modeled with Equation 2 assuming that <span class="math inline">\(N_{0}=500\)</span>, <span class="math inline">\(Z=-log(0.7)\)</span>, and <span class="math inline">\(v=0.1\)</span>.</p>
 <table style="width:80%">
 <tr>
 <th>
@@ -528,31 +528,31 @@ css: /css/codebox.css
 <p>Annual mortality can be estimated from catch data for two ages as shown above. However, fisheries scientists prefer estimates that are more synthetic, i.e., based on more ages. The two most common methods for computing synthetic estimates of mortality rates are the catch-curve regression and Chapman-Robson methods. The regression method is discussed in this section, whereas the Chapman-Robson method is discussed <a href="#chapman-robson">later</a>.</p>
 <div id="regression-model" class="section level3">
 <h3>Regression Model</h3>
-<p>The decline in individuals with age can be theoretically modeled with a modified continuous exponential population model. Because the population is closed with the exception of mortality, the instantaneous population growth rate parameter in the exponential population model is replaced with an instantaneous total mortality parameter (<span class="math">\(Z\)</span>). Thus, the modified model is</p>
-<p><span class="math">\[ N_{t} = N_{0}e^{-Zt} \quad \quad \text{(1)} \]</span></p>
-<p>where <span class="math">\(N_{t}\)</span> is the population size at time <span class="math">\(t\)</span> and <span class="math">\(N_{0}\)</span> is the initial population size.</p>
-<p>The catch of fish at age <span class="math">\(t\)</span> is proportional to the number of fish of age <span class="math">\(t\)</span>, or <span class="math">\(C_{t}=vN_{t}\)</span>, as mentioned previously<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>. This is rearranged to show that the relationship between population size and catch is <span class="math">\(N_{t}=\frac{C_{t}}{v}\)</span> and substituted into Equation 1 to reveal</p>
-<p><span class="math">\[ \frac{C_{t}}{v} = N_{0}e^{-Zt} \quad \quad \text{    }  \]</span> <span class="math">\[ C_{t} = vN_{0}e^{-Zt} \quad \quad \text{(2)}  \]</span></p>
-<p>In contrast to Equation 1 the variables in Equation 2 (catch-at-age, <span class="math">\(C_{t}\)</span>, and age, <span class="math">\(t\)</span>) are directly observable. The shape of Equation 2 (Figure 1-Left) follows the expected exponential decline. As is typical with exponential models, natural logarithms of both sides of Equation 2 yields</p>
-<p><span class="math">\[ log(C_{t}) = log(vN_{0})-Zt \quad \quad \text{(3)}  \]</span></p>
-<p>which is in the form of a linear equation with <span class="math">\(log(C_{t})\)</span> on the y-axis and <span class="math">\(t\)</span> on the x-axis (Figure 1-Right). Of great interest in Equation 3 is that the negative of the slope is <span class="math">\(Z\)</span>. Thus, the negative of the slope of the linear regression between <span class="math">\(log(C_{t})\)</span> and <span class="math">\(t\)</span> is an integrative measure of the instantaneous total mortality rate experienced by this cohort of fish over time.</p>
-<p><img src="BKG_files/figure-html/unnamed-chunk-3-1.png" title="" alt="" width="336" /><img src="BKG_files/figure-html/unnamed-chunk-3-2.png" title="" alt="" width="336" /></p>
-<p>Figure 1: Ideal plots of catch versus age (Left) and the natural log of catch versus age (Right) for a single cohort of fish. The right graph is called a longitudinal catch curve. The change in <span class="math">\(log(C_{t})\)</span> for a unit change in <span class="math">\(t\)</span> is emphasized on the catch curve to reinforce the idea that the slope of the idealized catch curve is <span class="math">\(Z\)</span>.</p>
+<p>The decline in individuals with age can be theoretically modeled with a modified continuous exponential population model. Because the population is closed with the exception of mortality, the instantaneous population growth rate parameter in the exponential population model is replaced with an instantaneous total mortality parameter (<span class="math inline">\(Z\)</span>). Thus, the modified model is</p>
+<p><span class="math display">\[ N_{t} = N_{0}e^{-Zt} \quad \quad \text{(1)} \]</span></p>
+<p>where <span class="math inline">\(N_{t}\)</span> is the population size at time <span class="math inline">\(t\)</span> and <span class="math inline">\(N_{0}\)</span> is the initial population size.</p>
+<p>The catch of fish at age <span class="math inline">\(t\)</span> is proportional to the number of fish of age <span class="math inline">\(t\)</span>, or <span class="math inline">\(C_{t}=vN_{t}\)</span>, as mentioned previously<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>. This is rearranged to show that the relationship between population size and catch is <span class="math inline">\(N_{t}=\frac{C_{t}}{v}\)</span> and substituted into Equation 1 to reveal</p>
+<p><span class="math display">\[ \frac{C_{t}}{v} = N_{0}e^{-Zt} \quad \quad \text{    }  \]</span> <span class="math display">\[ C_{t} = vN_{0}e^{-Zt} \quad \quad \text{(2)}  \]</span></p>
+<p>In contrast to Equation 1 the variables in Equation 2 (catch-at-age, <span class="math inline">\(C_{t}\)</span>, and age, <span class="math inline">\(t\)</span>) are directly observable. The shape of Equation 2 (Figure 1-Left) follows the expected exponential decline. As is typical with exponential models, natural logarithms of both sides of Equation 2 yields</p>
+<p><span class="math display">\[ log(C_{t}) = log(vN_{0})-Zt \quad \quad \text{(3)}  \]</span></p>
+<p>which is in the form of a linear equation with <span class="math inline">\(log(C_{t})\)</span> on the y-axis and <span class="math inline">\(t\)</span> on the x-axis (Figure 1-Right). Of great interest in Equation 3 is that the negative of the slope is <span class="math inline">\(Z\)</span>. Thus, the negative of the slope of the linear regression between <span class="math inline">\(log(C_{t})\)</span> and <span class="math inline">\(t\)</span> is an integrative measure of the instantaneous total mortality rate experienced by this cohort of fish over time.</p>
+<p><img src="BKG_files/figure-html/unnamed-chunk-3-1.png" width="336" /><img src="BKG_files/figure-html/unnamed-chunk-3-2.png" width="336" /></p>
+<p>Figure 1: Ideal plots of catch versus age (Left) and the natural log of catch versus age (Right) for a single cohort of fish. The right graph is called a longitudinal catch curve. The change in <span class="math inline">\(log(C_{t})\)</span> for a unit change in <span class="math inline">\(t\)</span> is emphasized on the catch curve to reinforce the idea that the slope of the idealized catch curve is <span class="math inline">\(Z\)</span>.</p>
 <p> </p>
-<p>The Equation 1 can also be recast by assuming that catch-at-age (<span class="math">\(C_{t}\)</span>) is proportionately related to the number-at-age and the amount of effort expended to catch those fish (i.e., <span class="math">\(E_{t}\)</span>). Thus, <span class="math">\(C_{t}=qE_{t}N_{t}\)</span>, where <span class="math">\(q\)</span> represents a constant proportion of the population captured by one unit of effort. This model can be rearranged to show that the relationship between population size and catch-per-unit-effort is <span class="math">\(N_{t}=\frac{1}{q}\frac{C_{t}}{E_{t}}\)</span>. This is substituted into Equation 1 and simplified to reveal</p>
-<p><span class="math">\[ \frac{1}{q}\frac{C_{t}}{E_{t}} = N_{0}e^{-Zt} \quad \quad \quad \quad \text{    } \]</span></p>
-<p><span class="math">\[ \frac{C_{t}}{E_{t}} = qN_{0}e^{-Zt} \quad \quad \text{(4)} \]</span></p>
-<p>Again, the variables in Equation 4 (catch-per-unit-effort, <span class="math">\(\frac{C_{t}}{E_{t}}\)</span>, and age, <span class="math">\(t\)</span>) are directly observable. Furthermore, natural logarithms of both sides of Equation 4 yields</p>
-<p><span class="math">\[ log(\frac{C_{t}}{E_{t}}) = log(qN_{0})-Zt \quad \quad \text{(5)} \]</span></p>
-<p>which again is in the form of a linear equation with <span class="math">\(log(\frac{C_{t}}{E_{t}})\)</span> on the y-axis and <span class="math">\(t\)</span> on the x-axis. Thus, the negative of the slope of the regression between <span class="math">\(log(\frac{C_{t}}{E_{t}})\)</span> and <span class="math">\(t\)</span> is also an integrative measure of the instantaneous total mortality rate experienced by this cohort of fish over time. In other words, the y-axis variable can be either catch or catch-per-unit-effort data. The specifics of this regression methodology are discussed in .</p>
+<p>The Equation 1 can also be recast by assuming that catch-at-age (<span class="math inline">\(C_{t}\)</span>) is proportionately related to the number-at-age and the amount of effort expended to catch those fish (i.e., <span class="math inline">\(E_{t}\)</span>). Thus, <span class="math inline">\(C_{t}=qE_{t}N_{t}\)</span>, where <span class="math inline">\(q\)</span> represents a constant proportion of the population captured by one unit of effort. This model can be rearranged to show that the relationship between population size and catch-per-unit-effort is <span class="math inline">\(N_{t}=\frac{1}{q}\frac{C_{t}}{E_{t}}\)</span>. This is substituted into Equation 1 and simplified to reveal</p>
+<p><span class="math display">\[ \frac{1}{q}\frac{C_{t}}{E_{t}} = N_{0}e^{-Zt} \quad \quad \quad \quad \text{    } \]</span></p>
+<p><span class="math display">\[ \frac{C_{t}}{E_{t}} = qN_{0}e^{-Zt} \quad \quad \text{(4)} \]</span></p>
+<p>Again, the variables in Equation 4 (catch-per-unit-effort, <span class="math inline">\(\frac{C_{t}}{E_{t}}\)</span>, and age, <span class="math inline">\(t\)</span>) are directly observable. Furthermore, natural logarithms of both sides of Equation 4 yields</p>
+<p><span class="math display">\[ log(\frac{C_{t}}{E_{t}}) = log(qN_{0})-Zt \quad \quad \text{(5)} \]</span></p>
+<p>which again is in the form of a linear equation with <span class="math inline">\(log(\frac{C_{t}}{E_{t}})\)</span> on the y-axis and <span class="math inline">\(t\)</span> on the x-axis. Thus, the negative of the slope of the regression between <span class="math inline">\(log(\frac{C_{t}}{E_{t}})\)</span> and <span class="math inline">\(t\)</span> is also an integrative measure of the instantaneous total mortality rate experienced by this cohort of fish over time. In other words, the y-axis variable can be either catch or catch-per-unit-effort data. The specifics of this regression methodology are discussed in .</p>
 </div>
 <div id="characteristics" class="section level3">
 <h3>Characteristics</h3>
 <p>All catch curves have three regions of interest: an ascending left limb, a domed middle portion, and a descending right limb Figure 2. The ascending left limb represents age-classes of fish that are not yet fully vulnerable to the gear used in the fishery. Fish in these age-classes are said to have “not fully recruited to the fishery.” The catches of fish in these age-classes are not useful for estimating the total mortality rate.</p>
-<p><img src="BKG_files/figure-html/unnamed-chunk-4-1.png" title="" alt="" width="336" /></p>
+<p><img src="BKG_files/figure-html/unnamed-chunk-4-1.png" width="336" /></p>
 <p>Figure 2: Idealized catch curve (plot of the natural log of catch versus age) illustrating the ascending, domed, and descending portions. The red dotted line represents the idealized catch curve if all age-classes were fully recruited to the fishery.</p>
-<p>The domed portion of the catch-curve generally consists of age-classes of fish that are nearly, but not completely, recruited to the fishery. The relative width of the domed portion provides some insight into the rate of recruitment. For example, a very sharply pointed dome indicates that the fish recruit rather “quickly.”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> In contrast, a relatively rounded dome shows that fish recruit to the exploited phase of the population more slowly, perhaps requiring several years before the mean size of fish in that year-class is sufficiently large to ensure capture upon encounter with the gear. Fish in age-classes in the domed portion of the catch curve are also excluded from use when estimating <span class="math">\(Z\)</span>. Despite the exclusion of age-classes in the ascending limb and domed portion of the catch curve it is, however, imperative to have some animals from these age-classes in your sample, so that you can identify the important descending limb of the catch curve.</p>
-<p>The descending left limb of the catch curve represents the regular decline of fully-recruited individuals in the fishery. Thus, <span class="math">\(Z\)</span> can be estimated by applying the concept of Equation 3 to the catches of fish in the ages corresponding only to the descending portion of the catch curve. There is some debate about how the descending limb is defined in practice. Additionally, the portion of the descending limb corresponding to the older ages is often poorly represented in the catch data because these individuals are relatively rare. At times, some catch data for older ages may be ignored. Specific guidelines for identifying the start of the descending limb and which, if any, older ages should be excluded will be given in  and .</p>
+<p>The domed portion of the catch-curve generally consists of age-classes of fish that are nearly, but not completely, recruited to the fishery. The relative width of the domed portion provides some insight into the rate of recruitment. For example, a very sharply pointed dome indicates that the fish recruit rather “quickly.”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> In contrast, a relatively rounded dome shows that fish recruit to the exploited phase of the population more slowly, perhaps requiring several years before the mean size of fish in that year-class is sufficiently large to ensure capture upon encounter with the gear. Fish in age-classes in the domed portion of the catch curve are also excluded from use when estimating <span class="math inline">\(Z\)</span>. Despite the exclusion of age-classes in the ascending limb and domed portion of the catch curve it is, however, imperative to have some animals from these age-classes in your sample, so that you can identify the important descending limb of the catch curve.</p>
+<p>The descending left limb of the catch curve represents the regular decline of fully-recruited individuals in the fishery. Thus, <span class="math inline">\(Z\)</span> can be estimated by applying the concept of Equation 3 to the catches of fish in the ages corresponding only to the descending portion of the catch curve. There is some debate about how the descending limb is defined in practice. Additionally, the portion of the descending limb corresponding to the older ages is often poorly represented in the catch data because these individuals are relatively rare. At times, some catch data for older ages may be ignored. Specific guidelines for identifying the start of the descending limb and which, if any, older ages should be excluded will be given in  and .</p>
 </div>
 <div id="assumptions" class="section level3">
 <h3>Assumptions</h3>
@@ -569,171 +569,19 @@ css: /css/codebox.css
 </ul>
 <p>Additionally, if cross-sectional data is being used then it is assumed that there is constant recruitment, i.e., the initial number of individuals is the same for each cohort of fish.</p>
 <p>Violations of these assumptions often lead to catch curves that are “bumpy”, convex, concave, or offset rather than linear in the right descending limb Figure 3.</p>
-<p><img src="BKG_files/figure-html/unnamed-chunk-5-1.png" title="" alt="" width="672" /></p>
-<p>Figure 3: Simulated catch curves to illustrate shapes when assumptions are violated. Each simulation (i.e., plot), unless otherwise, noted uses <span class="math">\(N_{0}=1000\)</span> for each year-class, <span class="math">\(Z=0.40\)</span>, and incomplete recruitment until age-4 and then constant recruitment for subsequent ages. In simulation I, a coefficient of variation for <span class="math">\(N_{0}\)</span> of 0.3 was used. In simulation II, constant multipliers of change in recruitment of 0.4, 0.7, 1.3, and 1.6 were applied at age-6. In simulation III, geometric multipliers of <span class="math">\(Z\)</span> by age of 0.8, 0.9, 1.1, and 1.2 were applied at age-6. In simulation IV, the vulnerability of age-10 and older fish was cut in half (in run 1) and decreased by 0.1 for each age (in run 2). In each plot, the catch curve with no assumption violations is shown as a solid black line. In simulation I, the average of the three runs is shown as a solid blue line.</p>
+<p><img src="BKG_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Figure 3: Simulated catch curves to illustrate shapes when assumptions are violated. Each simulation (i.e., plot), unless otherwise, noted uses <span class="math inline">\(N_{0}=1000\)</span> for each year-class, <span class="math inline">\(Z=0.40\)</span>, and incomplete recruitment until age-4 and then constant recruitment for subsequent ages. In simulation I, a coefficient of variation for <span class="math inline">\(N_{0}\)</span> of 0.3 was used. In simulation II, constant multipliers of change in recruitment of 0.4, 0.7, 1.3, and 1.6 were applied at age-6. In simulation III, geometric multipliers of <span class="math inline">\(Z\)</span> by age of 0.8, 0.9, 1.1, and 1.2 were applied at age-6. In simulation IV, the vulnerability of age-10 and older fish was cut in half (in run 1) and decreased by 0.1 for each age (in run 2). In each plot, the catch curve with no assumption violations is shown as a solid black line. In simulation I, the average of the three runs is shown as a solid blue line.</p>
 </div>
 <div id="instantaneous-vs.annual-mortality-rates" class="section level3">
 <h3>Instantaneous vs. Annual Mortality Rates</h3>
-<p>The instantaneous mortality rate (<span class="math">\(Z\)</span>) that is estimated via the catch curve method is a measure of (i) how much the natural log of number of individuals declines annually or (ii) how much the actual number of individuals declines in an imperceptibly short period of time (i.e., in an “instant”). The instantaneous mortality rate has some very useful mathematical properties, but providing a practical interpretation of its meaning is difficult – e.g., what does it mean if the log number of individuals declines by 0.693 or if the population changes by 0.693 in a “millisecond” of time? Fortunately, the instantanous mortality rate can be easily converted to an annual mortality rate (<span class="math">\(A\)</span>), the proportion of the population that suffers mortality in a given year, with</p>
-<p><span class="math">\[ A = 1-e^{-Z} \]</span></p>
-<p>Thus, a <span class="math">\(Z\)</span> of 0.693 corresponds to an <span class="math">\(A\)</span> of <span class="math">\(1-e^{-0.693}\)</span> or 0.500. Thus, this largely uninterpretable value of <span class="math">\(Z\)</span> corresponds to an annual mortality rate of 50.0%. In other words, an average of 50.0% of the population dies on an annual basis.</p>
+<p>The instantaneous mortality rate (<span class="math inline">\(Z\)</span>) that is estimated via the catch curve method is a measure of (i) how much the natural log of number of individuals declines annually or (ii) how much the actual number of individuals declines in an imperceptibly short period of time (i.e., in an “instant”). The instantaneous mortality rate has some very useful mathematical properties, but providing a practical interpretation of its meaning is difficult – e.g., what does it mean if the log number of individuals declines by 0.693 or if the population changes by 0.693 in a “millisecond” of time? Fortunately, the instantanous mortality rate can be easily converted to an annual mortality rate (<span class="math inline">\(A\)</span>), the proportion of the population that suffers mortality in a given year, with</p>
+<p><span class="math display">\[ A = 1-e^{-Z} \]</span></p>
+<p>Thus, a <span class="math inline">\(Z\)</span> of 0.693 corresponds to an <span class="math inline">\(A\)</span> of <span class="math inline">\(1-e^{-0.693}\)</span> or 0.500. Thus, this largely uninterpretable value of <span class="math inline">\(Z\)</span> corresponds to an annual mortality rate of 50.0%. In other words, an average of 50.0% of the population dies on an annual basis.</p>
 </div>
 <div id="which-ages" class="section level3">
 <h3>Which Ages?</h3>
 <p><span class="citation">Smith et al. (2012)</span>, in a simulation study, suggested that the first age to be included on the descending limb is the age where the peak catch occurred (in contrast to one year after the peak catch). <span class="citation">Chapman and Robson (1960)</span> proposed that the regression methods should exclude all age-classes above the age where the catches fall below five individuals. <span class="citation">Dunn et al. (2002)</span> considered a modification of this suggestion where the cutoff catch value is one individual. In their analyses, <span class="citation">Dunn et al. (2002)</span> found that their modified suggestion generally performed better than the regression using all available age-classes, but that the suggestion of <span class="citation">Chapman and Robson (1960)</span> actually performed worse. <span class="citation">Smith et al. (2012)</span>, however, showed that the weighted regression method was less biased than the unweighted regression method no matter what decision rule was used for the oldest age in the analysis. Thus, if the regression method is used it is suggested that a weighted regression that uses all age-classes older than and including the age with the maximum catch should be used.</p>
-<p> </p>
 </div>
-</div>
-<div id="chapman-robson-method" class="section level1">
-<h1>Chapman-Robson Method</h1>
-<div id="background" class="section level3">
-<h3>Background</h3>
-<p><span class="citation">Chapman and Robson (1960)</span> (and <span class="citation">Robson and Chapman (1961)</span>) provided an alternative method for estimating the total annual survival rate (<span class="math">\(S\)</span>), and thus the annual (<span class="math">\(A\)</span>) and instantaneous (<span class="math">\(Z\)</span>) total mortality rates, from catch curve data. Their method was based on understanding that the catches at each age on the descending limb of the catch curve followed a geometric probability distribution and using this to derive a maximum likelihood estimator for the survival parameter of the distribution. Their method, called the Chapman-Robson method, is outlined below.</p>
-<p>The Chapman-Robson estimate of the annual survival rate is</p>
-<p><span class="math">\[ \hat{S} = \frac{T}{n+T-1} = \frac{\bar{T}}{1+\bar{T}-\frac{1}{n}} \quad \quad \text{(6)} \]</span></p>
-<p>where <span class="math">\(n\)</span> is the total number of fish observed on the descending limb of the catch curve, <span class="math">\(T\)</span> is the total recoded age of fish on the descending limb of the catch curve, and <span class="math">\(\bar{T}\)</span> is the mean recoded age of fish on the descending limb of the catch curve (i.e., <span class="math">\(\bar{T}=\frac{T}{n}\)</span>). It should be noted that the ages are “recoded” such that the first fully-recruited age on the descending limb of the catch-curve is set to 0. The total recoded age is calculated as a weighted sum of the recoded ages where the weights are the catches at each age. The standard error of this estimate is</p>
-<p><span class="math">\[ SE_{\hat{S}} = \sqrt{\frac{T}{n+T-1}\left(\frac{T}{n+T-1}-\frac{T-1}{n+T-2}\right)} = \sqrt{\hat{S}\left(\hat{S}-\frac{T-1}{n+T-2}\right)} \quad \quad \text{(7)} \]</span></p>
-<p>If <span class="math">\(n\)</span> is large, as it often is in fisheries catch data, then <span class="math">\(SE_{\hat{S}}\)</span> can be estimated by</p>
-<p><span class="math">\[ SE_{\hat{S}} = \sqrt{\frac{\hat{S}(1-\hat{S})^{2}}{n}} \quad \quad \text{(8)} \]</span></p>
-<p>The Chapman-Robson estimate of <span class="math">\(S\)</span> can be transformed into an estimate of <span class="math">\(Z\)</span> through the relationship <span class="math">\(S=e^{-Z}\)</span>, i.e., <span class="math">\(\hat{Z} = -log(\hat{S})\)</span> with a large sample approximation of <span class="math">\(SE_{\hat{Z}}\)</span> <span class="citation">(Jensen 1985)</span> as</p>
-<p><span class="math">\[ SE_{\hat{Z}} = \frac{SE_{\hat{S}}}{\hat{S}} \quad \quad \text{(9)} \]</span></p>
-<p><span class="citation">Hoenig et al. (1983)</span>, however, have shown that these estimates are slightly biased and that an unbiased estimate of <span class="math">\(Z\)</span> is obtained with</p>
-<p><span class="math">\[ \hat{Z} = -log(\hat{S}) - \frac{(n-1)(n-2)}{n(T+1)(N+T-1)} \quad \quad \text{(10)} \]</span></p>
-<p>with the large sample approximation of <span class="math">\(SE_{\hat{Z}}\)</span> as</p>
-<p><span class="math">\[ SE_{\hat{Z}} = \frac{1-e^{-\hat{Z}}}{\sqrt{ne^{-\hat{Z}}}} \quad \quad \text{(11)} \]</span></p>
-<p>These calculations are illustrated below with the Tobin Harbor Brook Trout (assuming that the fish were fully recruited to the fyke nets at age-2). The original data were modified for calculation of the Chapman-Robson estimator of <span class="math">\(S\)</span> as shown in Table 2. From that, it is seen that <span class="math">\(n=235\)</span> and <span class="math">\(T=229\)</span>. Thus,</p>
-<p><span class="math">\[ \hat{S} = \frac{229}{235+229-1} = 0.4946004 \]</span></p>
-<p><span class="math">\[ SE_{\hat{S}} = \sqrt{0.4946004\left(0.4946004-\frac{229-1}{235+229-2}\right)} = 0.02326041 \]</span></p>
-<p>An approximate 95% confidence interval for <span class="math">\(S\)</span> is <span class="math">\(0.4946\pm1.96(0.0233)\)</span> or (0.4490,0.5402). Furthermore,</p>
-<p><span class="math">\[ \hat{Z} = -log(0.4946004) - \frac{(235-1)(235-2)}{235(229+1)(235+229-1)} = 0.7018264 \]</span></p>
-<p><span class="math">\[ SE_{\hat{Z}} = \frac{1-e^{-0.7018264}}{\sqrt{235*e^{-0.7018264}}} = 0.04672751 \]</span></p>
-<p>An approximate 95% confidence interval for <span class="math">\(Z\)</span> is <span class="math">\(0.7018\pm1.96(0.0467)\)</span> or (0.6102,0.7934).</p>
-<p> </p>
-<p>Table 2: Cross-sectional total catch-at-age of Tobin Harbor Brook Trout in fyke nets, 1996-1998, modified to illustrate the calculations of the Chapman-Robson method.</p>
-<table style="width:40%">
-<tr>
-<td>
-<b>Age</b>
-</td>
-<td>
-<b>Recoded Age</b>
-</td>
-<td>
-<b>Catch</b>
-</td>
-<td>
-<b>Recode*Catch</b>
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-0
-</td>
-<td>
-112
-</td>
-<td>
-0
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-1
-</td>
-<td>
-45
-</td>
-<td>
-45
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-2
-</td>
-<td>
-58
-</td>
-<td>
-116
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-3
-</td>
-<td>
-12
-</td>
-<td>
-36
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-4
-</td>
-<td>
-8
-</td>
-<td>
-32
-</td>
-</tr>
-<tr>
-<td>
-<b>sum</b>
-</td>
-<td>
-</td>
-<td>
-<b>235</b>
-</td>
-<td>
-<b>229</b>
-</td>
-</tr>
-<table>
-</div>
-<div id="which-ages-1" class="section level3">
-<h3>Which Ages?</h3>
-<p><span class="citation">Smith et al. (2012)</span> suggest that the Chapman-Robson method should use all ages after the age where the peak catch occurred (i.e., all ages beginning with the first age after the age with the peak catch).</p>
-<p> </p>
-</div>
-<div id="catch-curve-vs-chapman-robson" class="section level3">
-<h3>Catch Curve vs Chapman-Robson</h3>
-<p><span class="citation">Dunn et al. (2002)</span> provided an excellent review of past examinations of the regression and Chapman-Robson methods and their own examination of the precision and bias properties of these two methods in the face of stochastic errors related to <span class="math">\(Z\)</span>, number of fish at time of recruitment to the fishery, sampling, and ageing. Overall, they found that the Chapman-Robson estimator was most precise and least biased; however, the advantage over the regression method declined somewhat with increasing amounts of stochastic error and increasing values of <span class="math">\(Z\)</span>.</p>
-<p>The work of <span class="citation">Dunn et al. (2002)</span> also showed that, in the face of only stochastic sampling variability, the Chapman-Robson estimator was very slightly positively biased, primarily for larger values of <span class="math">\(Z\)</span>, but only on the order of approximately 2-3%. In contrast, the regression estimator had a strong negative bias on the order of 20%. The modified (excluding all age-classes beyond where one or fewer individuals were observed) regression estimator had a negative bias on the order of 2-5% with the larger values occurring when <span class="math">\(Z\)</span> was larger. These results suggest that estimates of <span class="math">\(Z\)</span> with the regression method may be serious underestimates.</p>
-<p><span class="citation">Smith et al. (2012)</span> provided another study of precision between the regression and Chapman-Robson methods with the addition of consideration of different definitions of the descending limb of the catch curve. They found that the Chapman-Robson method using all ages after the age with the peak catch and the weighted regression using all ages after and including the age with the peak catch performed similarly. However, they suggest using the Chapman-Robson method because it is based on a statistical foundation and has a generally smaller variance, whereas the weighting procedure in the regression method is <em>ad hoc</em>. Finally, <span class="citation">Smith et al. (2012)</span> conclude that the unweighted regression should not be used.</p>
-<p>Finally, other methods for estimating total mortality rates have been proposed (e.g., <span class="citation">Heincke (1913)</span>, <span class="citation">Jackson (1939)</span>, <span class="citation">Ssentengono and Larkin (1973)</span>). However, various studies (including <span class="citation">Smith et al. (2012)</span>) have shown that these methods perform less well than the Chapman-Robson and regression methods described here.</p>
-</div>
-<div id="which-ages-2" class="section level3">
-<h3>Which Ages?</h3>
-<p><span class="citation">Smith et al. (2012)</span> suggest that the Chapman-Robson method should use all ages after the age where the peak catch occurred (i.e., all ages beginning with the first age after the age with the peak catch).</p>
-<p> </p>
-</div>
-</div>
-<div id="catch-curve-vs-chapman-robson-1" class="section level1">
-<h1>Catch Curve vs Chapman-Robson</h1>
-<p><span class="citation">Dunn et al. (2002)</span> provided an excellent review of past examinations of the regression and Chapman-Robson methods and their own examination of the precision and bias properties of these two methods in the face of stochastic errors related to <span class="math">\(Z\)</span>, number of fish at time of recruitment to the fishery, sampling, and ageing. Overall, they found that the Chapman-Robson estimator was most precise and least biased; however, the advantage over the regression method declined somewhat with increasing amounts of stochastic error and increasing values of <span class="math">\(Z\)</span>.</p>
-<p>The work of <span class="citation">Dunn et al. (2002)</span> also showed that, in the face of only stochastic sampling variability, the Chapman-Robson estimator was very slightly positively biased, primarily for larger values of <span class="math">\(Z\)</span>, but only on the order of approximately 2-3%. In contrast, the regression estimator had a strong negative bias on the order of 20%. The modified (excluding all age-classes beyond where one or fewer individuals were observed) regression estimator had a negative bias on the order of 2-5% with the larger values occurring when <span class="math">\(Z\)</span> was larger. These results suggest that estimates of <span class="math">\(Z\)</span> with the regression method may be serious underestimates.</p>
-<p><span class="citation">Smith et al. (2012)</span> provided another study of precision between the regression and Chapman-Robson methods with the addition of consideration of different definitions of the descending limb of the catch curve. They found that the Chapman-Robson method using all ages after the age with the peak catch and the weighted regression using all ages after and including the age with the peak catch performed similarly. However, they suggest using the Chapman-Robson method because it is based on a statistical foundation and has a generally smaller variance, whereas the weighting procedure in the regression method is <em>ad hoc</em>. Finally, <span class="citation">Smith et al. (2012)</span> conclude that the unweighted regression should not be used.</p>
-<p>Finally, other methods for estimating total mortality rates have been proposed (e.g., <span class="citation">Heincke (1913)</span>, <span class="citation">Jackson (1939)</span>, <span class="citation">Ssentengono and Larkin (1973)</span>). However, various studies (including <span class="citation">Smith et al. (2012)</span>) have shown that these methods perform less well than the Chapman-Robson and regression methods described here.</p>
 </div>
 <div id="calculations-in-r" class="section level1">
 <h1>Calculations in R</h1>
@@ -743,41 +591,47 @@ css: /css/codebox.css
 <div id="reproducibility-information" class="section level2">
 <h2>Reproducibility Information</h2>
 <ul>
-<li><strong>Compiled Date:</strong> Sun Jan 10 2016</li>
-<li><strong>Compiled Time:</strong> 1:42:08 PM</li>
-<li><strong>R Version:</strong> R version 3.2.3 (2015-12-10)</li>
+<li><strong>Compiled Date:</strong> Fri Jan 06 2017</li>
+<li><strong>Compiled Time:</strong> 6:33:12 PM</li>
+<li><strong>R Version:</strong> R version 3.3.2 (2016-10-31)</li>
 <li><strong>System:</strong> Windows, i386-w64-mingw32/i386 (32-bit)</li>
 <li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>
-<li><strong>Required Packages:</strong> FSA, captioner, knitr and their dependencies (car, digest, dplyr, evaluate, formatR, gdata, gplots, graphics, grDevices, highr, Hmisc, markdown, methods, plotrix, plyr, sciplot, stats, stringr, tools, utils, yaml)</li>
-<li><strong>Other Packages:</strong> captioner_2.2.3, FSA_0.8.4, knitr_1.11</li>
-<li><strong>Loaded-Only Packages:</strong> digest_0.6.8, evaluate_0.8, formatR_1.2.1, htmltools_0.3, magrittr_1.5, plyr_1.8.3, Rcpp_0.12.2, rmarkdown_0.9.2, stringi_1.0-1, stringr_1.0.0, tools_3.2.3, yaml_2.1.13</li>
+<li><strong>Required Packages:</strong> FSA, captioner, knitr and their dependencies (car, digest, dplyr, epitools, evaluate, gplots, graphics, grDevices, highr, markdown, methods, plotrix, plyr, sciplot, stats, stringr, tools, utils, yaml)</li>
+<li><strong>Other Packages:</strong> captioner_2.2.3, FSA_0.8.12, knitr_1.15.1</li>
+<li><strong>Loaded-Only Packages:</strong> backports_1.0.4, digest_0.6.11, evaluate_0.10, htmltools_0.3.5, magrittr_1.5, plyr_1.8.4, Rcpp_0.12.8, rmarkdown_1.3, rprojroot_1.1, stringi_1.1.2, stringr_1.1.0, tools_3.3.2, yaml_2.1.14</li>
 <li><strong>Links:</strong> <a href="BKG.R">Script</a> / <a href="BKG.Rmd">RMarkdown</a></li>
 </ul>
 <hr />
 <p> </p>
-<div class="references">
+</div>
+<div id="references" class="section level2 unnumbered">
 <h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-ChapmanRobson1960">
 <p>Chapman, D. G., and D. S. Robson. 1960. The analysis of a catch curve. Biometrics 16:354–368.</p>
+</div>
+<div id="ref-Dunnetal2002">
 <p>Dunn, A., R. I. C. C. Francis, and I. J. Doonan. 2002. Comparison of the Chapman-Robson and regression estimators of Z from catch-curve data when non-sampling stochastic error is present. Fisheries Research 59:149–159.</p>
-<p>Heincke, F. 1913. Investigations on the plaice. General report 1: The plaice fishery and protective measures. Preliminary brief summary of the most important points of the report. Rapports et Proces-Verbaux des Reunions, Conseil International pour l’Exploration de la Mer. 16:1–67.</p>
-<p>Hoenig, J. M., W. D. Lawing, and N. A. Hoenig. 1983. Using mean age, mean length and median length data to estimate the total mortality rate. ICES-CM-1983/D:23, International Council for the Exploration of the Sea, Copenhagen, Denmark.</p>
-<p>Jackson, C. H. N. 1939. The analysis of an animal population. Journal of Animal Ecology 8:238–246.</p>
-<p>Jensen, A. L. 1985. Comparison of catch-curve methods for estimation of mortality. Transactions of the American Fisheries Society 114:743–747.</p>
+</div>
+<div id="ref-Ogle2016">
 <p>Ogle, D. H. 2016. Introductory fisheries analyses with R. Chapman &amp; Hall/CRC, Boca Raton, FL.</p>
-<p>Robson, D. S., and D. G. Chapman. 1961. Catch curves and mortality rates. Transactions of the American Fisheries Society 90:181–189.</p>
+</div>
+<div id="ref-Smithetal2012">
 <p>Smith, M. W., A. Y. Then, C. Wor, G. Ralph, K. H. Pollock, and J. M. Hoenig. 2012. Recommendations for catch-curve analysis. North American Journal of Fisheries Management 32:956–967.</p>
-<p>Ssentengono, G. W., and P. A. Larkin. 1973. Some simple methods of estimating mortality rates of exploited fish populations. Journal of the Fisheries Research Board of Canada 30:695–698.</p>
+</div>
 </div>
 </div>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>The <span class="math">\(v\)</span> represents a constant proportion of the population that is “vulnerable” to the fishery.<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p>The <span class="math inline">\(v\)</span> represents a constant proportion of the population that is “vulnerable” to the fishery.<a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p>This may be something similar to the specification of “knife-edge” selection that may suggest that the fish grow rapidly relative to the time or scale of the x-axis.<a href="#fnref2">↩</a></p></li>
 <li id="fn3"><p>Scripts for these calculations <a href="http://derekogle.com/IFAR/scripts/">are here</a>.<a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
+
+
 
 
 </div>
@@ -785,9 +639,13 @@ css: /css/codebox.css
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
+
 
 </script>
 

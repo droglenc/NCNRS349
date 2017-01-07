@@ -1,4 +1,10 @@
 # 
+# First line renders an appropriate HTML file for the webpage
+# Second line makes the script file
+# RUN BOTH MANUALLY (following using Knit HTML button)
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Mortality/")
+source("../../rhelpers/Rhelpers.R")
+modHTML("BKG",need2render=FALSE)
 
 # ===== BEGIN -- THIS CAN BE IGNORED =========================
 # Setup of knitr
@@ -16,7 +22,6 @@ figcaps("CatchCurveAssumptions","Simulated catch curves to illustrate shapes whe
 
 tblcaps <- captioner(prefix="Table")
 tblcaps("CatchCurveCross","The hypothetical catch of fish by age and capture year.  The longitudinal catch of the 2002 and the partial 2006 year-classes of fish are shown by the two sets of diagonal cells highlighted in dark grey.  The cross-sectional catch in the 2009 capture year is shown by the column of cells highlighted in light grey.  All data were modeled with Equation 2 assuming that $N_{0}=500$, $Z=-log(0.7)$, and $v=0.1$.")
-tblcaps("BrkTrtDataCR","Cross-sectional total catch-at-age of Tobin Harbor Brook Trout in fyke nets, 1996-1998, modified to illustrate the calculations of the Chapman-Robson method.")
 
 eqncaps <- captioner(prefix="Equation")
 eqncaps("ModExpModel")
@@ -24,13 +29,6 @@ eqncaps("CatchCurveExpModel")
 eqncaps("CatchCurveModel")
 eqncaps("CatchCurveExpModel2")
 eqncaps("CatchCurveModel2")
-eqncaps("ChapmanRobsonS")
-eqncaps("ChapmanRobsonSSE1")
-eqncaps("ChapmanRobsonSSE2")
-eqncaps("ChapmanRobsonZSE")
-eqncaps("ChapmanRobsonZ2")
-eqncaps("ChapmanRobsonZSE2")
-eqncaps("")
 # ===== END -- THIS CAN BE IGNORED ===========================
 
 No <- 500
@@ -220,4 +218,4 @@ matplot(Ages,log(cc.4),type=c("l",rep("b",2)),cex=0.75,lwd=c(2,rep(1,2)),lty=1,p
 text(max(Ages)-1,max(log(cc.4))-0.5,"IV",cex=1.5)
 
 
-# Script created at 2016-01-10 13:42:17
+# Script created at 2017-01-06 18:33:27

@@ -180,6 +180,7 @@ title: Science Modules
           <ul>
             <li><a href="MortalityComponents/Miranda-Bettolli-2006-Sect6-6.pdf" target="_blank">Miranda and Bettolli (2006) Section 6.6</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a>)</li>
             <li><a href="MortalityComponents/Miranda-Bettolli-2006-Sect6-8-10.pdf" target="_blank">Miranda and Bettolli (2006) Sections 6.8-6.10</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a>)</li>
+            <li><a href="MortalityComponents/Allen-Hightower-2010-Mortality.pdf" target="_blank">Allen and Hightower (2010) Mortality</a> (most of the <a href="http://www.webpages.uidaho.edu/fish510/PDF/Allen%20and%20Hightower%201.pdf" target="_blank">complete chapter</a>)</li>
             <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.4</li>
           </ul>
         <li><a href="MortalityComponents/PPT.pptx">Lecture Slides</a></li>

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mortality
-subtitle: Class Exercise
+title: Class Exercise
+subtitle: Mortality
 author: Derek H. Ogle
 css: /css/modules.css
 output:
@@ -13,13 +13,11 @@ output:
 # Renders an appropriate HTML file for the webpage
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Mortality/")
 source("../../rhelpers/rhelpers.R")
-fnm <- "CE1"
-modHTML(fnm)
+modHTML("CE1")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}
 library(FSAsim)
-fnm <- "CE1"
 source("../../rhelpers/knitr_setup.R")
 set.seed(13797834)
 ```
@@ -42,7 +40,7 @@ The `catchCurveSim()` function has the following arguments:
 * `deltaAge=` the age at which the the mortality rate and initial population size multiplier takes effect (see below).
 * `recruit.age=` the age for which the population of fish is fully recruited to the gear.  This will correspond to the age at the peak log abundance of the catch curve.
 
-After calling the function, a plot will appear with three lines that connect points of log catch at age data.  Three lines may not be apparent as they may be plotted on top of each other.  The gray line is the catch curve at the initial or default values of the simulation ($Z=0.4$ and $N_{0}$=700 with no assumption violations).  This line is provided simply as a reference.  The blue line is the catch curve for the current values of $Z$ and $N_{0}$ selected by the user (see below) but ignoring any assumption violations modeled by the user.  Finally, the red line is the catch curve created by all choices made by the user, including changes to $Z$ and $N_{0}$ and any values that simulate assumption violations (see next page).  The blue line is plotted after (or on top of) the red line which is after the gray line.
+After calling the function, a plot will appear with three lines that connect points of log catch-at-age data.  Three lines may not be apparent as they may be plotted on top of each other.  The gray line is the catch curve at the initial or default values of the simulation ($Z=0.4$ and $N_{0}$=700 with no assumption violations).  This line is provided simply as a reference.  The blue line is the catch curve for the current values of $Z$ and $N_{0}$ selected by the user (see below) but ignoring any assumption violations modeled by the user.  Finally, the red line is the catch curve created by all choices made by the user, including changes to $Z$ and $N_{0}$ and any values that simulate assumption violations (see next page).  The blue line is plotted after (or on top of) the red line which is after the gray line.
 
 
 ```{r fig.width=5,fig.height=4}
@@ -60,7 +58,7 @@ Changing these two values allows the user to see the effect of increasing or dec
 
 #### Questions I
 
-1. How does the descending limb of the catch curve change (relative to the catch curve at the default values) in each situation below.  Convince yourself that your observations make biological sense.
+1. How does the descending limb of the catch curve change (relative to the catch curve at the default values) in each situation below. Include a sentence that describes why your observations make biological sense.
     1. Increase mean $Z$.
     1. Decrease mean $Z$.
     1. Increase mean $N_{0}$.

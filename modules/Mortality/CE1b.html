@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mortality
-subtitle: Class Exercise
+title: Class Exercise
+subtitle: Mortality
 author: Derek H. Ogle
 css: /css/modules.css
 ---
@@ -25,7 +25,7 @@ css: /css/modules.css
 </div>
 <div id="simulation-description" class="section level4">
 <h4>Simulation Description</h4>
-<p>Slider bars (other than those discussed on the previous page) in the gear icon for <code>catchCurveSim()</code> allow the user to model violations of these assumptions to see how they alter the shape of the catch curve. These sliders are described below.</p>
+<p>Slider bars (other than those discussed on the previous page) in the gear icon for <code>catchCurveSim()</code> allow the user to model violations of these assumptions to see how they alter the shape of the catch curve. These sliders are described below. [<em>You may have to increase the size of the plot window to see all of these options … note that there is a “rerandomize” button at the bottom</em>.]</p>
 <ul>
 <li><code>Z CV</code> - models random variation in <span class="math inline">\(Z\)</span> (larger values mean a more variable <span class="math inline">\(Z\)</span>).</li>
 <li><code>No CV</code> - models random variation in <span class="math inline">\(N_{0}\)</span>.</li>
@@ -79,14 +79,20 @@ css: /css/modules.css
 </div>
 
 
+
+
 </div>
 
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
+
 
 </script>
 

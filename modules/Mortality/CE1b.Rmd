@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mortality
-subtitle: Class Exercise
+title: Class Exercise
+subtitle: Mortality
 author: Derek H. Ogle
 css: /css/modules.css
 output:
@@ -13,13 +13,11 @@ output:
 # Renders an appropriate HTML file for the webpage
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Mortality/")
 source("../../rhelpers/rhelpers.R")
-fnm <- "CE1b"
-modHTML(fnm)
+modHTML("CE1b")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}
 library(FSAsim)
-fnm <- "CE1b"
 source("../../rhelpers/knitr_setup.R")
 ```
 
@@ -42,7 +40,7 @@ Violations of these assumptions result in catch curves that are "bumpy", convex,
   
 #### Simulation Description
 
-Slider bars (other than those discussed on the previous page) in the gear icon for `catchCurveSim()` allow the user to model violations of these assumptions to see how they alter the shape of the catch curve.  These sliders are described below.
+Slider bars (other than those discussed on the previous page) in the gear icon for `catchCurveSim()` allow the user to model violations of these assumptions to see how they alter the shape of the catch curve.  These sliders are described below. [*You may have to increase the size of the plot window to see all of these options ... note that there is a "rerandomize" button at the bottom*.]
 
 * `Z CV` - models random variation in $Z$ (larger values mean a more variable $Z$).
 * `No CV` - models random variation in $N_{0}$.

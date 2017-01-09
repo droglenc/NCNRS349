@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mortality
-subtitle: Class Exercise
+title: Class Exercise
+subtitle: Mortality
 author: Derek H. Ogle
 css: /css/modules.css
 ---
@@ -23,9 +23,9 @@ css: /css/modules.css
 <li><code>deltaAge=</code> the age at which the the mortality rate and initial population size multiplier takes effect (see below).</li>
 <li><code>recruit.age=</code> the age for which the population of fish is fully recruited to the gear. This will correspond to the age at the peak log abundance of the catch curve.</li>
 </ul>
-<p>After calling the function, a plot will appear with three lines that connect points of log catch at age data. Three lines may not be apparent as they may be plotted on top of each other. The gray line is the catch curve at the initial or default values of the simulation (<span class="math inline">\(Z=0.4\)</span> and <span class="math inline">\(N_{0}\)</span>=700 with no assumption violations). This line is provided simply as a reference. The blue line is the catch curve for the current values of <span class="math inline">\(Z\)</span> and <span class="math inline">\(N_{0}\)</span> selected by the user (see below) but ignoring any assumption violations modeled by the user. Finally, the red line is the catch curve created by all choices made by the user, including changes to <span class="math inline">\(Z\)</span> and <span class="math inline">\(N_{0}\)</span> and any values that simulate assumption violations (see next page). The blue line is plotted after (or on top of) the red line which is after the gray line.</p>
+<p>After calling the function, a plot will appear with three lines that connect points of log catch-at-age data. Three lines may not be apparent as they may be plotted on top of each other. The gray line is the catch curve at the initial or default values of the simulation (<span class="math inline">\(Z=0.4\)</span> and <span class="math inline">\(N_{0}\)</span>=700 with no assumption violations). This line is provided simply as a reference. The blue line is the catch curve for the current values of <span class="math inline">\(Z\)</span> and <span class="math inline">\(N_{0}\)</span> selected by the user (see below) but ignoring any assumption violations modeled by the user. Finally, the red line is the catch curve created by all choices made by the user, including changes to <span class="math inline">\(Z\)</span> and <span class="math inline">\(N_{0}\)</span> and any values that simulate assumption violations (see next page). The blue line is plotted after (or on top of) the red line which is after the gray line.</p>
 <pre class="r"><code>&gt; catchCurveSim()</code></pre>
-<p><img src="CE1_files/figure-html/unnamed-chunk-3-1.png" title="" alt="" width="480" /></p>
+<p><img src="CE1_files/figure-html/unnamed-chunk-3-1.png" width="480" /></p>
 <p>In RStudio, this plot will have a gear icon in the upper-left corner that will open a dialog box that allows you to change the following items in the simulation.</p>
 <ul>
 <li><code>Z mean</code> - the mean <span class="math inline">\(Z\)</span> to use in the simulations. If <code>Z CV</code> (see next page) is set to 0 (the default), then this is the exact <span class="math inline">\(Z\)</span> used in the simulations.</li>
@@ -37,7 +37,7 @@ css: /css/modules.css
 <div id="questions-i" class="section level4">
 <h4>Questions I</h4>
 <ol>
-<li>How does the descending limb of the catch curve change (relative to the catch curve at the default values) in each situation below. Convince yourself that your observations make biological sense.
+<li>How does the descending limb of the catch curve change (relative to the catch curve at the default values) in each situation below. Include a sentence that describes why your observations make biological sense.
 <ol>
 <li>Increase mean <span class="math inline">\(Z\)</span>.</li>
 <li>Decrease mean <span class="math inline">\(Z\)</span>.</li>
@@ -62,14 +62,20 @@ css: /css/modules.css
 </div>
 
 
+
+
 </div>
 
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
+
 
 </script>
 

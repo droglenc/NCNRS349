@@ -6,6 +6,11 @@ css: /css/syllabus.css
 
 ## Assignment Due Dates
 <dl class="dl-horizontal">
+<dt>25-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
+<dt>25-Jan</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Abundance/MarkRecap/CE2.html">Mark-Recap Class Exercise</a></dd>
+
+
+
 <dt>11-Jan</dt><dd><a href="../modules/ClassIntro/HW.html">Class Pre-Requisite HW</a></dd>
 <dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
@@ -13,15 +18,8 @@ css: /css/syllabus.css
 </dl>
 
 <!---
-<dt>23-Mar</dt><dd>Management Tools HW</dd>
-<dt>21-Mar</dt><dd>Management Process HW</dd>
-<dt>16-Mar</dt><dd>Condition HW</dd>
-<dt>7-Mar</dt><dd>Stock-Recruitment HW</dd>
-<dt>22-Feb</dt><dd>Size Structure HW</dd>
-<dt>12-Feb</dt><dd>Growth HW #1 & #2</dd>
-<dt>5-Feb</dt><dd>Mortality HW #1 & #2 (question 4 is XC)</dd>
-<dt>1-Feb</dt><dd>Age-Length Key HW #1 and #2</dd>
-<dt>29-Jan</dt><dd>Depletion HW</dd>
+<dt>11-Jan</dt><dd><a href="../modules/ClassIntro/HW.html">Class Pre-Requisite HW</a></dd>
+
 <dt>27-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
 <dt>25-Jan</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Abundance/MarkRecap/CE2.html">Mark-Recap Class Exercise</a></dd>
 

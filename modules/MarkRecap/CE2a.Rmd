@@ -13,7 +13,7 @@ output:
 # Renders an appropriate HTML file for the webpage
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/MarkRecap/")
 source("../../rhelpers/rhelpers.R")
-modHTML("CE2")
+modHTML("CE2a")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}
@@ -36,7 +36,7 @@ The `mrClosed1Sim()` function takes three arguments:
 
 * `sim=` is used to select the type of simulation to use.  Use `sim="distribution"` (used on this page) to assess characteristics of the sampling distribution of the population abundance estimate.  Use `sim="assumptions"` (used on the next pages) to assess the effect of assumptions violations on the population abundance estimate.
 * `N=` is the known initial population size (default is `N=1000`).
-* `rsmpls=` is the number of simulations to run for each scenario (default is `rsmpls=5000`).
+* `rsmpls=` is the number of simulations to run for each scenario (default is `rsmpls=2000`).
 
 After calling the function with `sim="distribution"` a histogram will appear for the estimated population abundance for each of the `rsmpls` simulations.  The histogram is augmented with a red vertical line at the known initial population size (`N`) and a green vertical line at the mean estimated population abundance from all `rsmpls` runs.  The histogram is also labeled with the percentage error of the mean population abundace estimate from the known population abundance (positive numbers mean that the known population abundance was overestimated, on average).
 
@@ -54,7 +54,7 @@ In RStudio, this plot will have a gear icon in the upper-left corner that will o
 
 #### Questions I -- Biases?
 
-Each simulation scenario below should be based on a known population size of `N=1000` individuals (the default), an expected number of marks of 100, and an expected number in the second sample of 100.  Once the sliders have been set at the requested levels, the `Rerandomize` button should be pressed several times to ensure that any conclusions that you draw are not based on the results of a single set of random simulation runs.
+Each simulation scenario below should be based on a known population size of `N=1000` individuals (the default), an expected number of marks of 200, and an expected number in the second sample of 200.  Once the sliders have been set at the requested levels, the `Rerandomize` button should be pressed several times to ensure that any conclusions that you draw are not based on the results of a single set of random simulation runs.
 
 1. Does the Petersen method under, over, or accurately estimate the initial population abundance?
 1. Does the Chapman modification method (need to change the "Method" choice) under, over, or accurately estimate the initial population abundance?
@@ -73,7 +73,7 @@ Describe the shape of the sampling distribution of the population estimate, bias
 1. Were there any combinations of values that produced an approximately normal sampling distribution?  How does this relate to the general rules for computing confidence intervals for population abundance discussed in the readings?
 1. What happened to the width of the confidence interval as the size of the first sample increased (and the size of the second sample was held constant)?
 1. What happened to the width of the confidence interval as the size of the second sample increased (and the size of the first sample was held constant)?
-1. Suppose that you could only handle a total of 500 fish in the two days of sampling.  How should you apportion your effort (what expected numbers of fish on the two days) to obtain the most precise (narrowest confidence interval) estimates of population abundance?  Does this conclusion generalize to other total sample sizes (e.g., 300 or 400 total fish on the two days)?
+1. Suppose that you could only handle a total of 500 fish in the two days of sampling.  How should you apportion your effort (expected numbers of fish on the two days) to obtain the most precise (narrowest confidence interval) estimates of population abundance?  Does this conclusion generalize to other total sample sizes (e.g., 300 or 400 total fish on the two days)?
 1. What assumptions about field work (i.e., catching and tagging fish) is being made in the previous question?  Is this realistic?  Explain.  How would you incorporate a more realistic scenario into determining how to apportion your effort.
 
 ----

@@ -7,7 +7,7 @@ css: /css/syllabus.css
 ## Assignment Due Dates
 <dl class="dl-horizontal">
 <dt>25-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
-<dt>25-Jan</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Abundance/MarkRecap/CE2.html">Mark-Recap Class Exercise</a></dd>
+<dt>27-Jan</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Abundance/MarkRecap/CE2.html">Mark-Recap Class Exercise</a></dd>
 
 
 

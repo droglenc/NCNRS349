@@ -18,11 +18,11 @@ css: /css/modules.css
 <ul>
 <li><code>sim=</code> is used to select the type of simulation to use. Use <code>sim=&quot;distribution&quot;</code> (used on this page) to assess characteristics of the sampling distribution of the population abundance estimate. Use <code>sim=&quot;assumptions&quot;</code> (used on the next pages) to assess the effect of assumptions violations on the population abundance estimate.</li>
 <li><code>N=</code> is the known initial population size (default is <code>N=1000</code>).</li>
-<li><code>rsmpls=</code> is the number of simulations to run for each scenario (default is <code>rsmpls=5000</code>).</li>
+<li><code>rsmpls=</code> is the number of simulations to run for each scenario (default is <code>rsmpls=2000</code>).</li>
 </ul>
 <p>After calling the function with <code>sim=&quot;distribution&quot;</code> a histogram will appear for the estimated population abundance for each of the <code>rsmpls</code> simulations. The histogram is augmented with a red vertical line at the known initial population size (<code>N</code>) and a green vertical line at the mean estimated population abundance from all <code>rsmpls</code> runs. The histogram is also labeled with the percentage error of the mean population abundace estimate from the known population abundance (positive numbers mean that the known population abundance was overestimated, on average).</p>
 <pre class="r"><code>&gt; mrClosed1Sim(sim=&quot;distribution&quot;)</code></pre>
-<p><img src="CE2_files/figure-html/unnamed-chunk-3-1.png" width="576" /></p>
+<p><img src="CE2a_files/figure-html/unnamed-chunk-3-1.png" width="576" /></p>
 <p>For example, the plot above shows that the sampling distribution for the population abundance estimates is right-skewed. In addition, the population abundance estimate is biased because the mean population abundance estimate is greater than the known initial population abundance (the green line is greater than the red line). The bias is an overestimate by 2.2%. In addition, an approximate 95% confidence interval for the population abundance estimate is from 784 to 1379.</p>
 <p>In RStudio, this plot will have a gear icon in the upper-left corner that will open a dialog box that allows you to change the estimation <code>Method</code> (default is <code>Petersen</code>), expected number of fish to tag on the first sample (<code>Marked (M)</code> slider), and the expected number of fish to capture on the second sample (<code>Captured (n)</code> slider). Moving a slider or pressing the <code>Rerandomize</code> button will force another set of <code>rsmpls</code> to be constructed.</p>
 <p> </p>
@@ -30,7 +30,7 @@ css: /css/modules.css
 </div>
 <div id="questions-i-biases" class="section level4">
 <h4>Questions I – Biases?</h4>
-<p>Each simulation scenario below should be based on a known population size of <code>N=1000</code> individuals (the default), an expected number of marks of 100, and an expected number in the second sample of 100. Once the sliders have been set at the requested levels, the <code>Rerandomize</code> button should be pressed several times to ensure that any conclusions that you draw are not based on the results of a single set of random simulation runs.</p>
+<p>Each simulation scenario below should be based on a known population size of <code>N=1000</code> individuals (the default), an expected number of marks of 200, and an expected number in the second sample of 200. Once the sliders have been set at the requested levels, the <code>Rerandomize</code> button should be pressed several times to ensure that any conclusions that you draw are not based on the results of a single set of random simulation runs.</p>
 <ol>
 <li>Does the Petersen method under, over, or accurately estimate the initial population abundance?</li>
 <li>Does the Chapman modification method (need to change the “Method” choice) under, over, or accurately estimate the initial population abundance?</li>
@@ -48,7 +48,7 @@ css: /css/modules.css
 <li>Were there any combinations of values that produced an approximately normal sampling distribution? How does this relate to the general rules for computing confidence intervals for population abundance discussed in the readings?</li>
 <li>What happened to the width of the confidence interval as the size of the first sample increased (and the size of the second sample was held constant)?</li>
 <li>What happened to the width of the confidence interval as the size of the second sample increased (and the size of the first sample was held constant)?</li>
-<li>Suppose that you could only handle a total of 500 fish in the two days of sampling. How should you apportion your effort (what expected numbers of fish on the two days) to obtain the most precise (narrowest confidence interval) estimates of population abundance? Does this conclusion generalize to other total sample sizes (e.g., 300 or 400 total fish on the two days)?</li>
+<li>Suppose that you could only handle a total of 500 fish in the two days of sampling. How should you apportion your effort (expected numbers of fish on the two days) to obtain the most precise (narrowest confidence interval) estimates of population abundance? Does this conclusion generalize to other total sample sizes (e.g., 300 or 400 total fish on the two days)?</li>
 <li>What assumptions about field work (i.e., catching and tagging fish) is being made in the previous question? Is this realistic? Explain. How would you incorporate a more realistic scenario into determining how to apportion your effort.</li>
 </ol>
 <hr />

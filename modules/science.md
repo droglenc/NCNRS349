@@ -87,7 +87,7 @@ title: Science Modules
                 <li><a href="MarkRecap/Hayes_et_al_2007-Sect8-3part.pdf" target="_blank">Section 8.3.1 in Hayes <i>et al.</i></a> (the <a href="http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf" target="_blank">complete reading</a>)</li>
                 <li><a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Section 9.2</li>
               </ul>
-            <li><a href="MarkRecap/CE2.html">Class Exercise</a></li>
+            <li><a href="MarkRecap/CE2a.html">Class Exercise</a></li>
             <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html" target="_blank">#2</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html" target="_blank">XC</a></li>
           </ul>
       </ul>

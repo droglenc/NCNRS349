@@ -6,8 +6,8 @@ css: /css/syllabus.css
 
 ## Assignment Due Dates
 <dl class="dl-horizontal">
-<dt>3-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">Age-Length Key #1 & #2 HW</a></dd>
 <dt>30-Jan</dt><dd><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Depletion HW</a></dd>
+<dt>3-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">Age-Length Key #1 & #2 HW</a></dd>
 <dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>12-Apr</dt><dd>Third <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>

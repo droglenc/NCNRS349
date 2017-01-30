@@ -6,12 +6,8 @@ css: /css/syllabus.css
 
 ## Assignment Due Dates
 <dl class="dl-horizontal">
-<dt>25-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
-<dt>27-Jan</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Abundance/MarkRecap/CE2.html">Mark-Recap Class Exercise</a></dd>
-
-
-
-<dt>11-Jan</dt><dd><a href="../modules/ClassIntro/HW.html">Class Pre-Requisite HW</a></dd>
+<dt>3-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">Age-Length Key #1 & #2 HW</a></dd>
+<dt>30-Jan</dt><dd><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Depletion HW</a></dd>
 <dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>12-Apr</dt><dd>Third <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
@@ -19,9 +15,8 @@ css: /css/syllabus.css
 
 <!---
 <dt>11-Jan</dt><dd><a href="../modules/ClassIntro/HW.html">Class Pre-Requisite HW</a></dd>
-
-<dt>27-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
 <dt>25-Jan</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Abundance/MarkRecap/CE2.html">Mark-Recap Class Exercise</a></dd>
+<dt>27-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
 
 --->
 
@@ -45,7 +40,6 @@ css: /css/syllabus.css
 
 ## Cancelled Classes
 <dl class="dl-horizontal">
-<dt>16-Jan</dt><dd>NO CLASS (Please participate in <a href="https://www.northland.edu/event/martin-luther-king-jr-day-2017/" target="_blank">Martin Luther King, Jr. Day Activities</a>)</dd>
 <dt>1-Mar</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
 <dt>6-Mar</dt><dd>NO CLASS (Mid-Session Break)</dd>
 <dt>8-Mar</dt><dd>NO CLASS (Mid-Session Break)</dd>
@@ -54,4 +48,5 @@ css: /css/syllabus.css
 </dl>
 
 <!---
+<dt>16-Jan</dt><dd>NO CLASS (Please participate in <a href="https://www.northland.edu/event/martin-luther-king-jr-day-2017/" target="_blank">Martin Luther King, Jr. Day Activities</a>)</dd>
 --->

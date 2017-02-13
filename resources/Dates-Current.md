@@ -6,9 +6,8 @@ css: /css/syllabus.css
 
 ## Assignment Due Dates
 <dl class="dl-horizontal">
-<dt>6-Feb</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Mortality/CE1.html">Total Mortality CE</a></dd>
-<dt>8-Feb</dt><dd>Total Mortality <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a> & <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a> HW</a></dd>
 <dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
+<dt>15-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">Growth HW #1</a></dd>
 <dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>12-Apr</dt><dd>Third <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 </dl>
@@ -19,13 +18,15 @@ css: /css/syllabus.css
 <dt>27-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
 <dt>30-Jan</dt><dd><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Depletion HW</a></dd>
 <dt>3-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">Age-Length Key #1 & #2 HW</a></dd>
+<dt>6-Feb</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Mortality/CE1.html">Total Mortality CE</a></dd>
+<dt>8-Feb</dt><dd>Total Mortality <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a> & <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a> HW</a></dd>
 --->
 
 ---- 
 
 ## Exam Dates
 <dl class="dl-horizontal">
-<dt>17-Feb</dt><dd>First Exam</dd>
+<dt>20-Feb</dt><dd>First Exam</dd>
 <dt>24-Mar</dt><dd>Second Exam</dd>
 <dt>21-Apr (noon)</dt><dd>Final Exam</dd>
 </dl>

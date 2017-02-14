@@ -6,7 +6,6 @@ css: /css/syllabus.css
 
 ## Assignment Due Dates
 <dl class="dl-horizontal">
-<dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>15-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">Growth HW #1</a></dd>
 <dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>12-Apr</dt><dd>Third <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
@@ -20,6 +19,7 @@ css: /css/syllabus.css
 <dt>3-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">Age-Length Key #1 & #2 HW</a></dd>
 <dt>6-Feb</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Mortality/CE1.html">Total Mortality CE</a></dd>
 <dt>8-Feb</dt><dd>Total Mortality <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a> & <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a> HW</a></dd>
+<dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 --->
 
 ---- 

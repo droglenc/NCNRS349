@@ -7,7 +7,7 @@ subtitle: Paukert et al. (2002)
 ----
 
 1. Read [Effect and Acceptance of Bluegill Length Limits in Nebraska Natural Lakes (Paukert *et al.*, 2002)](Paukertetal_2002_BGLengthLimits.pdf) and be prepared to discuss the following items in class.
-    * What management "tools"" were used in this study?
+    * What management "tools" were used in this study?
     * What were the objectives of the regulation change?
     * Under what conditions should a minimum length limit be considered?[^1]
     * Why is it important to consider asymptotic mean length when setting a minimum length limit?[^1]

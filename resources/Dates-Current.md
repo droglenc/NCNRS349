@@ -6,7 +6,6 @@ css: /css/syllabus.css
 
 ## Assignment Due Dates
 <dl class="dl-horizontal">
-<dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>12-Apr</dt><dd>Third <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 </dl>
 
@@ -21,6 +20,7 @@ css: /css/syllabus.css
 <dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 <dt>15-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">Growth HW #1</a></dd>
 <dt>27-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">Stock-Recruitment HW #1</a></dd>
+<dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
 
 --->
 
@@ -28,16 +28,16 @@ css: /css/syllabus.css
 
 ## Exam Dates
 <dl class="dl-horizontal">
-<dt>20-Feb</dt><dd>First Exam</dd>
-<dt>24-Mar</dt><dd>Second Exam</dd>
 <dt>21-Apr (noon)</dt><dd>Final Exam</dd>
 </dl>
 
 
 <!---
+<dt>20-Feb</dt><dd>First Exam</dd>
 <dt>13-Apr</dt><dd>Spring Hearings (11-Apr) Reflection</a></dd>
 <dt>29-Feb</dt><dd><a href="Syllabus-Current.html#reflections---papers">First Paper Reflection</a></dd>
 <dt>24-Feb</dt><dd>AFS (<a href="http://www.wi-afs.org/AnnualMeetings.aspx">info</a>) XC Reflections</a></dd>
+<dt>24-Mar</dt><dd>Second Exam</dd>
 --->
 
 ---- 

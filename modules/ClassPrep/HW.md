@@ -49,6 +49,6 @@ Please answer the two questions below with thoughtful paragraphs.
 ## Setting the Stage
 Please answer the two questions below with well-written paragraphs.
 
-1. Briefly describe the "Four Fs of Fish" [according to Lynch and Taylor (2013)](FourFsOfFish.pdf). [**The password is "FSM", without the quotes.**]
+1. Briefly describe the "Four Fs of Fish" [according to Lynch and Taylor (2013)](FourFsOfFish.pdf). [*The password is "FSM", without the quotes.*]
 
 ----

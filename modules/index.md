@@ -32,7 +32,8 @@ title: Modules
     <div class="panel-body">
       <ul>
         <li><a href="ClassIntro/CE1.html">Class Exercise</a></li>
-        <li><a href="ClassIntro/PPT_Stock.pptx">Lecture Slides</a></li>
+        <li><a href="ClassIntro/PPT_Stock.pptx">Lecture</a></li>
+        <li><a href="ClassIntro/HW.html">Assignment</a></li>
       </ul>
     </div>
   </div>

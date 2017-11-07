@@ -1,9 +1,25 @@
 ---
 layout: page
-title: Science Modules
+title: Modules
 ---
 
 <div class="panel-group" id="accordion1">
+
+<!-- #### CLASS PREPARATION #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cClassPrep">Class Preparation</a>
+    </h4>
+  </div>
+  <div id="cClassPrep" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="ClassPrep/HW.html">Assignment</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <!-- #### CLASS INTRODUCTION #### -->
 <div class="panel panel-default">
@@ -15,7 +31,6 @@ title: Science Modules
   <div id="cClassIntro" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="ClassIntro/HW.html">Assignment</a></li>
         <li><a href="ClassIntro/CE1.html">Class Exercise</a></li>
         <li><a href="ClassIntro/PPT_Stock.pptx">Lecture Slides</a></li>
       </ul>

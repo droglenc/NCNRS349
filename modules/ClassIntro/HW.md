@@ -15,7 +15,7 @@ css: "/css/modules.css"
 
 <br>
 
-## Follow-Up to Class Exercise
+## Lake Mille Lacs Walleye
 
 The Minnesota DNR convened a blue-ribbon panel to determine whether the data available from Lake Mille Lacs supported a variety of hypotheses about why the fish population declined. The report from the blue-ribbon panel is available [here in long form](MilleLacs_Report.pdf) or here as a [summarized set of presentation slides](MilleLacs_Report_Presentation.pdf). Use these resources to answer the questions below.
 
@@ -26,6 +26,12 @@ The Minnesota DNR convened a blue-ribbon panel to determine whether the data ava
 1. What recommendations did the panel make for data collection?
 1. What recommendations did the panel make for fisheries management?
 1. Thoroughly explain the results in one of the figures.
+
+----
+
+<br>
+
+## Bluefin Tuna
 
 
 ----

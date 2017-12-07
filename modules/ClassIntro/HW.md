@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Homework Assignment
-subtitle: Class Pre-Requisites
+subtitle: Class Introduction
 css: "/css/modules.css"
 ---
 

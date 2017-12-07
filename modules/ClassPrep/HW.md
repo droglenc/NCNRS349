@@ -15,16 +15,6 @@ css: "/css/modules.css"
 
 <br>
 
-## Syllabus
-
-Please read the syllabus and answer the following questions.
-
-1. How many exams will there be this semester?
-1. Describe how your homework assignments will be graded.
-1. Describe three **KEY** considerations for formatting your homework.
-
-<br>
-
 ## Concepts from Class Pre-Requisites
 
 This course has three pre-requisities -- Ecology, Ichthyology, and Statistics. The items below are key concepts from these courses. Please provide complete answers to each of items.
@@ -50,5 +40,15 @@ Please answer the two questions below with thoughtful paragraphs.
 Please answer the two questions below with well-written paragraphs.
 
 1. Briefly describe the "Four Fs of Fish" [according to Lynch and Taylor (2013)](FourFsOfFish.pdf). [*The password is "FSM", without the quotes.*]
+
+<br>
+
+## Syllabus
+
+Please read the syllabus and answer the following questions.
+
+1. How many exams will there be this semester?
+1. Describe how your homework assignments will be graded.
+1. Describe three **KEY** considerations for formatting your homework.
 
 ----

@@ -11,7 +11,7 @@ subtitle: Krueger and Decker (2010)
     * What is a stakeholder?
     * What are the components of the "Management Environment"?
         * Describe each component in detail.
-        * Discuss "limits", if any, that each component may assert of possible management actions.
+        * Discuss "limits", if any, that each component may assert on possible management actions.
         * The author's use management of Chinook Salmon (*Oncorhynchus tshawytscha*) in the Pacific Northwest to illustrate a common mistake made by fish managers.  Describe that mistake?
     * What are the steps of the "Fisheries Management Process"?
         * Describe each step in detail.

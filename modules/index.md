@@ -50,10 +50,10 @@ title: Modules
     <div class="panel-body">
       <ul>
         <li><a href="MgmntProcess/RG_KruegerDecker_2010">Pre-Lecture Reading</a></li>
-        <li>Pre-Lecture Videos -- <a href="https://www.youtube.com/v/QovhSVEDGEY?version=3&autoplay=1" TARGET="_blank">I</a>, <a href="https://www.youtube.com/v/kM_SQo7EC50?version=3&autoplay=1" TARGET="_blank">II</a>, and <a href="https://www.youtube.com/v/kYwzgGdbTvw?version=3&autoplay=1" TARGET="_blank">III</a>.</li>
+        <li>Pre-Lecture Videos -- <a href="https://www.youtube.com/watch?v=QovhSVEDGEY" TARGET="_blank">I</a>, <a href="https://www.youtube.com/watch?v=kYwzgGdbTvw" TARGET="_blank">II</a>, and <a href="https://www.youtube.com/watch?v=kM_SQo7EC50" TARGET="_blank">III</a>.</li>
         <li><a href="MgmntProcess/PPT.pptx">Lecture Slides</a></li>
-        <li><a href="MgmntProcess/HW.html">Homework</a></li>
         <li><a href="MgmntProcess/Cases/NOPInvasion">Class Exercise</a></li>
+        <li><a href="MgmntProcess/HW.html">Homework</a></li>
       </ul>
     </div>
   </div>

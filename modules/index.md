@@ -78,63 +78,6 @@ title: Modules
   </div>
 </div>
 
-<!-- #### BAG LIMITS #### -->
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtBagLimits">Bag/Creel Limits</a>
-    </h4>
-  </div>
-  <div id="cMgmtBagLimits" class="panel-collapse collapse">
-    <div class="panel-body">
-      <ul>
-        <li><a href="MgmntBagLimits/RG_BagLimits">Pre-Lecture Reading</a></li>
-        <li><a href="MgmntBagLimits/PPT.pptx">Lecture Slides</a></li>
-        <li><a href="MgmntBagLimits/CE_BagLimitsReductions.pptx">Class Exercise</a></li>
-        <li>Discussion Readings</li>
-        <ul>
-          <li><a href="MgmntBagLimits/RG_Jacobson2005.html">Bluegill Bag Limits in Minnesota</a></li>
-          <li><a href="MgmntBagLimits/RG_Rypel2015.html">Bluegill Bag Limits in Wisconsin</a></li>
-        </ul>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- #### SIZE LIMITS #### -->
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtSizeLimits">Size Limits</a>
-    </h4>
-  </div>
-  <div id="cMgmtSizeLimits" class="panel-collapse collapse">
-    <div class="panel-body">
-      <ul>
-        <li><a href="MgmntSizeLimits/RG_SizeLimits">Pre-Lecture Reading</a></li>
-        <li><a href="MgmntSizeLimits/PPT.pptx">Lecture Slides</a></li>
-        <li>Class Exercise</li>
-        <ul>
-          <li>Minimum Length Limit</li>
-          <li>Protected Slot Limit</li>
-        </ul>
-        <li>Discussion Readings</li>
-        <ul>
-          <li><a href="MgmntSizeLimits/RG_Paukeretal2002.html">Bluegill Minimum Length Limits in Nebraska.</a></li>
-          <li><a href="MgmntSizeLimits/RG_Boxrucker2002.html">Crappie Minimum Length Limits in Oklahoma</a></li>
-          <li><a href="MgmntSizeLimits/RG_Isermannetal2007.html">Yellow Perch Bag and Protected Slot Length Limits in South Dakota</a></li>
-          <li><a href="MgmntSizeLimits/RG_Isermannetal2009">Smallmouth Bass Maximum Length Limit in Minnesota</a></li>
-
-<!---
-          <li><a href="MgmntSizeLimits/RG_BrousseauArmstrong1987.html">Walleye Size Limits Summary</a></li>
-          <li><a href="MgmntSizeLimits/RG_">Largemouth Bass Size Limits Summary</a></li>
---->
-        </ul>
-      </ul>
-    </div>
-  </div>
-</div>
-
 <!-- #### FOUNDATIONAL MODELS #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -415,6 +358,63 @@ title: Modules
           </ul>
         <li><a href="Condition/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/Inch_ConditionBluegill.html">Homework</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- #### BAG LIMITS #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtBagLimits">Bag/Creel Limits</a>
+    </h4>
+  </div>
+  <div id="cMgmtBagLimits" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="MgmntBagLimits/RG_BagLimits">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntBagLimits/PPT.pptx">Lecture Slides</a></li>
+        <li><a href="MgmntBagLimits/CE_BagLimitsReductions.pptx">Class Exercise</a></li>
+        <li>Discussion Readings</li>
+        <ul>
+          <li><a href="MgmntBagLimits/RG_Jacobson2005.html">Bluegill Bag Limits in Minnesota</a></li>
+          <li><a href="MgmntBagLimits/RG_Rypel2015.html">Bluegill Bag Limits in Wisconsin</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- #### SIZE LIMITS #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtSizeLimits">Size Limits</a>
+    </h4>
+  </div>
+  <div id="cMgmtSizeLimits" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="MgmntSizeLimits/RG_SizeLimits">Pre-Lecture Reading</a></li>
+        <li><a href="MgmntSizeLimits/PPT.pptx">Lecture Slides</a></li>
+        <li>Class Exercise</li>
+        <ul>
+          <li>Minimum Length Limit</li>
+          <li>Protected Slot Limit</li>
+        </ul>
+        <li>Discussion Readings</li>
+        <ul>
+          <li><a href="MgmntSizeLimits/RG_Paukeretal2002.html">Bluegill Minimum Length Limits in Nebraska.</a></li>
+          <li><a href="MgmntSizeLimits/RG_Boxrucker2002.html">Crappie Minimum Length Limits in Oklahoma</a></li>
+          <li><a href="MgmntSizeLimits/RG_Isermannetal2007.html">Yellow Perch Bag and Protected Slot Length Limits in South Dakota</a></li>
+          <li><a href="MgmntSizeLimits/RG_Isermannetal2009">Smallmouth Bass Maximum Length Limit in Minnesota</a></li>
+
+<!---
+          <li><a href="MgmntSizeLimits/RG_BrousseauArmstrong1987.html">Walleye Size Limits Summary</a></li>
+          <li><a href="MgmntSizeLimits/RG_">Largemouth Bass Size Limits Summary</a></li>
+--->
+        </ul>
       </ul>
     </div>
   </div>

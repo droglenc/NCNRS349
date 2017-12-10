@@ -87,7 +87,7 @@ title: Modules
   <div id="cFoundationalModels" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Readings -- <a href="http://vlab.amrita.edu/?sub=3&brch=65&sim=174&cnt=1" target="_blank">here</a>, <a href="https://www.boundless.com/biology/textbooks/boundless-biology-textbook/population-and-community-ecology-45/environmental-limits-to-population-growth-251/exponential-population-growth-929-12185/" target="_blank">here</a>, <a href="http://vlab.amrita.edu/?sub=3&brch=65&sim=1110&cnt=1" target="_blank">here</a>, and <a href="http://alexei.nfshost.com/PopEcol/lec5/explog.html" target="_blank">here</a>.</li>
+        <li><a href="FoundationalModels/RG_Models">Pre-Lecture Readings</a></li>
         <li><a href="FoundationalModels/PPT_Models.pptx">Lecture Slides</a></li>
       </ul>
     </div>

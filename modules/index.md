@@ -104,7 +104,7 @@ title: Modules
   <div id="cCPUE" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="CPE/RG_CPE">Readings</a></li>
+        <li><a href="CPE/RG_CPE">Pre-Lecture Readings</a></li>
         <li><a href="CPE/PPT.pptx">Lecture Slides</a></li>
       </ul>
     </div>

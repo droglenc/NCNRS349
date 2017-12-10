@@ -104,12 +104,7 @@ title: Modules
   <div id="cCPUE" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Readings</li>
-        <ul>
-          <li><a href="CPE/Hubertetal-2012-BOXES.pdf" target="_blank">Boxes 6.3 & 6.4 in Hubert <i>et al.</i> (2012)</a> (the <a href="http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff" target="_blank">complete chapter</a>)</li>
-          <li><a href="CPE/HubertFabrizio-2007-Sect7-1.pdf" target="_blank">Section 7.1 in Hubert & Fabrizio (2007)</a> (the <a href="CPE/HubertFabrizio-2007.pdf" target="_blank">complete chapter</a>)</li>
-          <li><a href="http://icesjms.oxfordjournals.org/content/63/8/1373.full.pdf" target="_blank">"Problems with cpue data" section in Maunder <i>et al.</i> (2006)</a></li>
-        </ul>
+        <li><a href="CPE/RG_CPE">Readings</a></li>
         <li><a href="CPE/PPT.pptx">Lecture Slides</a></li>
       </ul>
     </div>

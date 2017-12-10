@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reading Guide
-subtitle:CPUE
+subtitle: CPUE
 ---
 
 ----

@@ -87,7 +87,7 @@ title: Modules
   <div id="cFoundationalModels" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="FoundationalModels/RG_Models">Pre-Lecture Readings</a></li>
+        <li><a href="FoundationalModels/RG">Pre-Lecture Readings</a></li>
         <li><a href="FoundationalModels/PPT_Models.pptx">Lecture Slides</a></li>
       </ul>
     </div>
@@ -104,7 +104,7 @@ title: Modules
   <div id="cCPUE" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="CPE/RG_CPE">Pre-Lecture Readings</a></li>
+        <li><a href="CPE/RG">Pre-Lecture Readings</a></li>
         <li><a href="CPE/PPT.pptx">Lecture Slides</a></li>
       </ul>
     </div>

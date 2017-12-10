@@ -71,7 +71,6 @@ title: Modules
         <li><a href="MgmntTools/RG_IsermannPaukert_2010">Pre-Lecture Reading</a></li>
         <li><a href="MgmntTools/PPT.pptx">Lecture Slides</a></li>
         <li><a href="MgmntTools/CE">Class Exercise</a></li>
-        <li>Class Exercise -- <a href="MgmntTools/CE2A">Spread Eagle Chain</a>, <a href="MgmntTools/CE2B.html">Keyes Lake</a></li>
         <li><a href="MgmntTools/HW">Homework</a></li>
       </ul>
     </div>

@@ -21,4 +21,4 @@ Find an example of each regulation type below in one of the regional (Northern, 
 1. Fishery closure.
 1. Gear restriction (recreational).
 
-In addition, specifically make a comparison between the level of complexity for the Alaskan and Wisconsin regulations.
+In addition, specifically make a comparison between the level of complexity for the Alaskan and Wisconsin (from the [class exercise](CE.md)) regulations.

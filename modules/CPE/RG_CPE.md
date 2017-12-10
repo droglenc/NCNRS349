@@ -30,4 +30,4 @@ subtitle: Foundational Models
 
 
 ----
-[^1] This is a critically important reading. Please pay close attention to the details here.
+[^1]: This is a critically important reading. Please pay close attention to the details here.

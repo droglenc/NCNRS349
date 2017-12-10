@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reading Guide
-subtitle: Foundational Models
+subtitle:CPUE
 ---
 
 ----

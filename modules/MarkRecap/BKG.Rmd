@@ -83,7 +83,7 @@ The summary data for a Petersen estimate can be shown in the format of capture h
 
 `r tblcaps("PetersenDataMatrix")`
 
-![Petersen Data Matrix](Petersen_Data_Matrix.png)
+![](Petersen_Data_Matrix.png)
 
 \ 
 

@@ -50,7 +50,7 @@ title: Modules
     <div class="panel-body">
       <ul>
         <li><a href="MgmntProcess/RG_KruegerDecker_2010">Pre-Lecture Reading</a></li>
-        <li>Pre-Lecture Videos -- <a href="https://www.youtube.com/watch?v=QovhSVEDGEY" TARGET="_blank">I</a>, <a href="https://www.youtube.com/watch?v=kYwzgGdbTvw" TARGET="_blank">II</a>, and <a href="https://www.youtube.com/watch?v=kM_SQo7EC50" TARGET="_blank">III</a>.</li>
+        <li>Pre-Lecture Videos -- <a href="https://www.youtube.com/watch?v=QovhSVEDGEY">I</a>, <a href="https://www.youtube.com/watch?v=kYwzgGdbTvw">II</a>, and <a href="https://www.youtube.com/watch?v=kM_SQo7EC50">III</a>.</li>
         <li><a href="MgmntProcess/PPT.pptx">Lecture Slides</a></li>
         <li><a href="MgmntProcess/HW.html">Homework</a></li>
       </ul>
@@ -125,14 +125,14 @@ title: Modules
       <ul class="list-unstyled">
         <li><strong>Capture Histories</strong></li>
           <ul>
-            <li><a href="MarkRecap/RG1.html" target="_blank">Pre-Lecture Reading</a></li>
-            <li><a href="MarkRecap/CE1.html" target="_blank">Class Exercise</a></li>
+            <li><a href="MarkRecap/RG1.html">Pre-Lecture Reading</a></li>
+            <li><a href="MarkRecap/CE1.html">Class Exercise</a></li>
           </ul>
         <li><strong>Single Census, Closed Population</strong></li>
           <ul>
-            <li><a href="MarkRecap/RG2.html" target="_blank">Pre-Lecture Readings</a></li>
-            <li><a href="MarkRecap/CE2a.html" target="_blank">Class Exercise</a></li>
-            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html" target="_blank">#2</a> (data also availale <a href="http://derekogle.com/fishR/data/byTopic#capture-recapture" target="_blank">here</a>), <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html" target="_blank">XC</a></li>
+            <li><a href="MarkRecap/RG2.html">Pre-Lecture Readings</a></li>
+            <li><a href="MarkRecap/CE2a.html">Class Exercise</a></li>
+            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a> (data also availale <a href="http://derekogle.com/fishR/data/byTopic#capture-recapture">here</a>), <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html">XC</a></li>
           </ul>
       </ul>
     </div>
@@ -150,9 +150,9 @@ title: Modules
   <div id="cDepletion" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="Depletions/RG.html" target="_blank">Pre-Lecture Readings</a></li>
+        <li><a href="Depletions/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="Depletion/PPT.pptx">Lecture Slides</a></li>
-        <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html" target="_blank">Homework</a></li>
+        <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Homework</a></li>
       </ul>
     </div>
   </div>
@@ -169,9 +169,9 @@ title: Modules
   <div id="cAge" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="Age/RG.html" target="_blank">Pre-Lecture Readings</a></li>
+        <li><a href="Age/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
-        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html" target="_blank">#1</a> (<i>don't do Question 4</i>), <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_B.html" target="_blank">#2</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_C.html" target="_blank">XC</a></li>
+        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">#1</a> (<i>don't do Question 4</i>), <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_B.html">#2</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_C.html">XC</a></li>
       </ul>
     </div>
   </div>
@@ -187,10 +187,10 @@ title: Modules
   <div id="cMortalityTotal" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="Mortality/RG.html" target="_blank">Pre-Lecture Readings</a></li>
+        <li><a href="Mortality/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="Mortality/PPT.pptx">Lecture Slides</a></li>
-        <li><a href="Mortality/CE1.html" target="_blank">Class Exercise</a></li>
-        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html" target="_blank">#2</a></li>
+        <li><a href="Mortality/CE1.html">Class Exercise</a></li>
+        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a></li>
       </ul>
     </div>
   </div>
@@ -206,7 +206,7 @@ title: Modules
   <div id="cMortalityComponents" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="MortalityComponents/RG.html" target="_blank">Pre-Lecture Readings</a></li>
+        <li><a href="MortalityComponents/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="MortalityComponents/PPT.pptx">Lecture Slides</a></li>
       </ul>
     </div>
@@ -224,7 +224,7 @@ title: Modules
   <div id="cGrowth" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="Growth/RG.html" target="_blank">Pre-Lecture Readings</a></li>
+        <li><a href="Growth/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="Growth/PPT.pptx">Lecture Slides</a></li>
         <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_B.html">#2</a></li>
       </ul>
@@ -242,7 +242,7 @@ title: Modules
   <div id="cRecruitment" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="Recruitment/RG.html" target="_blank">Pre-Lecture Readings</a></li>
+        <li><a href="Recruitment/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="Recruitment/PPT.pptx">Lecture Slides</a></li>
         <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_B.html">XC</a></li>
       </ul>
@@ -260,7 +260,7 @@ title: Modules
   <div id="cSPR" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="SPR/RG.html" target="_blank">Pre-Lecture Readings</a></li>
+        <li><a href="SPR/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="SPR/PPT.pptx">Lecture Slides</a></li>
         <li><a href="SPR/Cases/SPR.html">Class Exercise</a></li>
       </ul>
@@ -278,7 +278,7 @@ title: Modules
   <div id="cSizeStrux" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="SizeStructure/RG.html" target="_blank">Pre-Lecture Readings</a></li>
+        <li><a href="SizeStructure/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="SizeStructure/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/SizeStrux_SaginawYP.html">Homework</a></li>
         <li>Case Studies</li>
@@ -302,7 +302,7 @@ title: Modules
   <div id="cCondition" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="SizeStructure/RG.html" target="_blank">Pre-Lecture Readings</a></li>
+        <li><a href="SizeStructure/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="Condition/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/Inch_ConditionBluegill.html">Homework</a></li>
       </ul>

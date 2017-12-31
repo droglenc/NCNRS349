@@ -6,7 +6,7 @@ subtitle: Depletion Estimates
 
 ----
 
-1. Read [these notes](BKG.html) and Chapter 10 in *Introductory Fisheries Analyses with R* and consider the items below.
+1. Read Chapter 10 in *Introductory Fisheries Analyses with R* and [these notes](BKG.html) and consider the items below.
     * Define N<sub>0</sub>, K<sub>t-1</sub>, N<sub>t</sub>, C<sub>t</sub>, f<sub>t</sub>, q, and E<sub>t-1</sub>
     * What is the equation for the Leslie model? What type of equation is this?
     * How is q estimated from the Leslie model?
@@ -25,7 +25,7 @@ subtitle: Depletion Estimates
     * What R function is used to perform a K-pass removal estimate?
     * How is the population abundance and probability of capture estimates extracted from the results of this function.
     * How are confidence intervals for the population abundance and probability of capture estimates extracted from the results of this function.
-1. Read [Rosenberger (2010)](Popeetal-2010-Box11-1.pdf) Box 11.1 in Pope *et al.* the complete chapter [is here](http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf)) and consider the items below.
+1. Read [Rosenberger's Box 11.1](Popeetal-2010-Box11-1.pdf) in Pope *et al.* (2010) (the complete chapter [is here](http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf)) and consider the items below.
     * What is a primary assumption of the removal method?
     * Describe a common behavior of fish that leads to a violation of this assumption?
     * What does this particular assumption violation mean for the estimates of abundance and catchability from the removal method?

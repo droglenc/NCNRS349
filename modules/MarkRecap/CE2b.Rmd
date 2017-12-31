@@ -6,7 +6,8 @@ author: Derek H. Ogle
 css: /css/modules.css
 output:
   html_document:
-    self_contained: no
+    self_contained: false
+    lib_dir: zlibs
 ---
 
 ```{r echo=FALSE, eval=FALSE}
@@ -28,7 +29,7 @@ The analytical methodology for the Petersen family of mark-recapture methods for
 * All individuals within a sample have an equal probability of capture.
 * Individual behavior or vulnerability does not change after being marked.
 
-Violations of these assumptions may result in biased estimates of population abundance.  The degree and direction of these biases vary depending on the type and degree of violation.  An understanding of these biases is needed to actively guard against them and to inform careful interpretations of results.  The effects of assumption violations on the estimates of abundance are the focus of this exercise.
+Violations of these assumptions may result in biased estimates of population abundance. The degree and direction of these biases vary depending on the type and degree of violation. An understanding of these biases is needed to actively guard against them and to inform careful interpretations of results. The effects of assumption violations on the estimates of abundance are the focus of this exercise.
 
 ----
 
@@ -38,13 +39,13 @@ The formula for the Petersen estimate of population abundance is
 
 $$ \widehat{N} = \frac{Mn}{m} $$
 
-where $\widehat{N}$ is the estimated size of the population just prior to the first sample, $M$ is the number of fish from the first sample that were marked and returned to the population, $n$ is the number of fish in the second sample, and $m$ is the number of marked fish in the second sample.  This formula can be rewrriten as
+where $\widehat{N}$ is the estimated size of the population just prior to the first sample, $M$ is the number of fish from the first sample that were marked and returned to the population, $n$ is the number of fish in the second sample, and $m$ is the number of marked fish in the second sample. This formula can be rewrriten as
 
 $$ \widehat{N} = \frac{M}{\frac{m}{n}} $$
 
 where $\frac{m}{n}$ is the proportion of fish in the second sample that were previously marked.
 
-The reason for rewriting this formula in this way is that it can be seen that if $\frac{m}{n}$ is larger than it should be, then $\widehat{N}$ will be lower than it should be; i.e., $N$ is underestimated.  Thus, if more marked fish appear in the second sample than expected, then $\frac{m}{n}$ will be too large and $N$ will be underestimated.  Of course, the opposite is also true -- if fewer marked fish appear in the second sample than expected, then $\frac{m}{n}$ will be too small and $N$ will be overestimated
+The reason for rewriting this formula in this way is that it can be seen that if $\frac{m}{n}$ is larger than it should be, then $\widehat{N}$ will be lower than it should be; i.e., $N$ is underestimated. Thus, if more marked fish appear in the second sample than expected, then $\frac{m}{n}$ will be too large and $N$ will be underestimated. Of course, the opposite is also true -- if fewer marked fish appear in the second sample than expected, then $\frac{m}{n}$ will be too small and $N$ will be overestimated
 
 So, assessing the effect of assumption violations on the estimate of $N$ reduces to determining if the violation would result in more or fewer marked fish in the second sample than would be expected.
 
@@ -52,7 +53,7 @@ So, assessing the effect of assumption violations on the estimate of $N$ reduces
 
 #### Questions III -- Expectations from Violated Assumptions
 
-For each situation below, identify whether you think that the population abundance will be over, under, or accurately estimated by the Chapman modification method.  Provide a reasoning for each of your answers.
+For each situation below, identify whether you think that the population abundance will be over, under, or accurately estimated by the Chapman modification method. Provide a reasoning for each of your answers.
 
 1. Marked individuals lose their mark (or tag) before the second sample.
 1. Marked and unmarked individuals suffer mortality (at the same rate) before the second sample.

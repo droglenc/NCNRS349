@@ -125,17 +125,12 @@ title: Modules
       <ul class="list-unstyled">
         <li><strong>Capture Histories</strong></li>
           <ul>
-            <li>Reading -- <a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Section 9.1</li>
+            <li><a href="MarkRecap/RG1.html>Pre-Lecture Reading</a></li>
             <li><a href="MarkRecap/CE1.html" target="_blank">Class Exercise</a></li>
           </ul>
         <li><strong>Single Census, Closed Population</strong></li>
           <ul>
-            <li>Readings</li>
-              <ul>
-                <li><a href="MarkRecap/BKG.html" target="_blank">Ogle Notes</a></li>
-                <li><a href="MarkRecap/Hayes_et_al_2007-Sect8-3part.pdf" target="_blank">Section 8.3.1 in Hayes <i>et al.</i></a> (the <a href="http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf" target="_blank">complete reading</a>)</li>
-                <li><a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Section 9.2</li>
-              </ul>
+            <li><a href="MarkRecap/RG2.html">Pre-Lecture Readings</a></li>
             <li><a href="MarkRecap/CE2a.html">Class Exercise</a></li>
             <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html" target="_blank">#2</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html" target="_blank">XC</a></li>
           </ul>

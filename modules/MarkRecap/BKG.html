@@ -22,8 +22,8 @@ css: /css/codebox.css
 <h3>Petersen Method</h3>
 <p>The Petersen method consists of two samples from a closed population and is, thus, the simplest of the broad array of mark-recapture techniques for estimating animal abundance. The population and sampling scheme for the two samples (<span class="math inline">\(i=1,2\)</span>) of the Petersen method are represented in Figure 1. The large squares just to the left of the “i=” vertical lines represent the population just before the <span class="math inline">\(i\)</span>th sample is taken. The large square just after the “i=1” vertical line represents the population just after the first sample was taken. Thus, under the assumption that the population is closed, the population immediately after the first sample is the same as the population immediately before the second sample. The samples are represented by the small grey boxes just above each “i=” vertical line.</p>
 <div class="figure">
-<img src="Petersen_Scheme.jpg" alt="Petersen Scheme" />
-<p class="caption">Petersen Scheme</p>
+<img src="Petersen_Scheme.jpg" />
+
 </div>
 <p>Figure 1: Schematic representation of the two samples (<span class="math inline">\(i=1,2\)</span>) in a Petersen mark-recapture study. See the text for detailed description and Table 2 for definitions of notation.</p>
 <p> </p>
@@ -131,14 +131,14 @@ css: /css/codebox.css
 <div id="reproducibility-information" class="section level2">
 <h2>Reproducibility Information</h2>
 <ul>
-<li><strong>Compiled Date:</strong> Thu Jan 05 2017</li>
-<li><strong>Compiled Time:</strong> 7:26:42 PM</li>
-<li><strong>R Version:</strong> R version 3.3.2 (2016-10-31)</li>
+<li><strong>Compiled Date:</strong> Sat Dec 30 2017</li>
+<li><strong>Compiled Time:</strong> 8:00:42 PM</li>
+<li><strong>R Version:</strong> R version 3.4.3 (2017-11-30)</li>
 <li><strong>System:</strong> Windows, i386-w64-mingw32/i386 (32-bit)</li>
 <li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>
-<li><strong>Required Packages:</strong> FSA, captioner, knitr and their dependencies (car, digest, dplyr, epitools, evaluate, gplots, graphics, grDevices, highr, markdown, methods, plotrix, plyr, sciplot, stats, stringr, tools, utils, yaml)</li>
-<li><strong>Other Packages:</strong> captioner_2.2.3, FSA_0.8.12, knitr_1.15.1</li>
-<li><strong>Loaded-Only Packages:</strong> backports_1.0.4, digest_0.6.10, evaluate_0.10, htmltools_0.3.5, magrittr_1.5, plyr_1.8.4, Rcpp_0.12.8, rmarkdown_1.3, rprojroot_1.1, stringi_1.1.2, stringr_1.1.0, tools_3.3.2, yaml_2.1.14</li>
+<li><strong>Required Packages:</strong> FSA, captioner, knitr and their dependencies (car, digest, dplyr, dunn.test, epitools, evaluate, gplots, graphics, grDevices, highr, lmtest, markdown, methods, plotrix, plyr, sciplot, stats, stringr, tools, utils, yaml)</li>
+<li><strong>Other Packages:</strong> captioner_2.2.3, FSA_0.8.18, knitr_1.17</li>
+<li><strong>Loaded-Only Packages:</strong> backports_1.1.2, compiler_3.4.3, digest_0.6.13, evaluate_0.10.1, htmltools_0.3.6, magrittr_1.5, plyr_1.8.4, Rcpp_0.12.14, rmarkdown_1.8, rprojroot_1.3-1, stringi_1.1.6, stringr_1.2.0, tools_3.4.3, yaml_2.1.16</li>
 <li><strong>Links:</strong> <a href="BKG.R">Script</a> / <a href="BKG.Rmd">RMarkdown</a></li>
 </ul>
 <hr />
@@ -217,7 +217,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

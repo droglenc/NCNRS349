@@ -68,7 +68,7 @@ This terminology is extended to represent other frequencies by including a "dot"
 ### Petersen Method
 The Petersen method consists of two samples from a closed population and is, thus, the simplest of the broad array of mark-recapture techniques for estimating animal abundance. The population and sampling scheme for the two samples ($i=1,2$) of the Petersen method are represented in `r figcaps("PetersenScheme",display="cite")`. The large squares just to the left of the "i=" vertical lines represent the population just before the $i$th sample is taken. The large square just after the "i=1" vertical line represents the population just after the first sample was taken. Thus, under the assumption that the population is closed, the population immediately after the first sample is the same as the population immediately before the second sample. The samples are represented by the small grey boxes just above each "i=" vertical line.
 
-![Petersen Scheme](Petersen_Scheme.jpg)
+![](Petersen_Scheme.jpg)
 
 `r figcaps("PetersenScheme")`
 

@@ -132,7 +132,7 @@ title: Modules
           <ul>
             <li><a href="MarkRecap/RG2.html" target="_blank">Pre-Lecture Readings</a></li>
             <li><a href="MarkRecap/CE2a.html" target="_blank">Class Exercise</a></li>
-            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html" target="_blank">#2</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html" target="_blank">XC</a></li>
+            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html" target="_blank">#2</a> (data also availale <a href="http://derekogle.com/fishR/data/byTopic#capture-recapture" target="_blank">here</a>), <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html" target="_blank">XC</a></li>
           </ul>
       </ul>
     </div>

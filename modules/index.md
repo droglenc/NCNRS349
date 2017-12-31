@@ -150,12 +150,7 @@ title: Modules
   <div id="cDepletion" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Readings</li>
-          <ul>
-            <li><a href="Depletion/BKG.html" target="_blank">Ogle Notes</a></li>
-            <li><a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Chapter 10</li>
-            <li><a href="Depletion/Popeetal-2010-Box11-1.pdf" target="_blank">Rosenberger (Box 11.1)</a> in Pope <i>et al.</i> (2010) (the <a href="http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf" target="_blank">complete chapter</a>)</li>
-          </ul>
+        <li><a href="Depletions/RG.html" target="_blank">Pre-Lecture Readings</a></li>
         <li><a href="Depletion/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html" target="_blank">Homework</a></li>
       </ul>
@@ -174,11 +169,7 @@ title: Modules
   <div id="cAge" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Readings</li>
-          <ul>
-            <li><a href="Age/BKG.html" target="_blank">Ogle Notes</a></li>
-            <li><a href="http://derekogle.com/IFAR/" target="_blank">IFAR</a> Sections 5.1-5.4</li>
-          </ul>
+        <li><a href="Age/RG.html" target="_blank">Pre-Lecture Readings</a></li>
         <li><a href="Age/PPT.pptx">Lecture Slides</a></li>
         <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html" target="_blank">#1</a> (<i>don't do Question 4</i>), <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_B.html" target="_blank">#2</a>, <a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_C.html" target="_blank">XC</a></li>
       </ul>
@@ -196,12 +187,7 @@ title: Modules
   <div id="cMortalityTotal" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Readings</li>
-          <ul>
-            <li><a href="Mortality/BKG.html" target="_blank">Ogle Notes</a></li>
-            <li><a href="Mortality/Miranda-Bettolli-2006-Sect6-1-3.pdf" target="_blank">Miranda and Bettolli (2006) Sections 6.1-6.3</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a>)</li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 11.1 & 11.2</li>
-          </ul>
+        <li><a href="Mortality/RG.html" target="_blank">Pre-Lecture Readings</a></li>
         <li><a href="Mortality/PPT.pptx">Lecture Slides</a></li>
         <li><a href="Mortality/CE1.html" target="_blank">Class Exercise</a></li>
         <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html" target="_blank">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html" target="_blank">#2</a></li>
@@ -220,13 +206,7 @@ title: Modules
   <div id="cMortalityComponents" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Readings</li>
-          <ul>
-            <li><a href="MortalityComponents/Miranda-Bettolli-2006-Sect6-6.pdf" target="_blank">Miranda and Bettolli (2006) Section 6.6</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a>)</li>
-            <li><a href="MortalityComponents/Miranda-Bettolli-2006-Sect6-8-10.pdf" target="_blank">Miranda and Bettolli (2006) Sections 6.8-6.10</a> (the <a href="http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf" target="_blank">complete chapter</a>)</li>
-            <li><a href="MortalityComponents/Allen-Hightower-2010-Mortality.pdf" target="_blank">Allen and Hightower (2010) Mortality</a> (most of the <a href="http://www.webpages.uidaho.edu/fish510/PDF/Allen%20and%20Hightower%201.pdf" target="_blank">complete chapter</a>)</li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 11.4</li>
-          </ul>
+        <li><a href="MortalityComponents/RG.html" target="_blank">Pre-Lecture Readings</a></li>
         <li><a href="MortalityComponents/PPT.pptx">Lecture Slides</a></li>
       </ul>
     </div>
@@ -244,11 +224,7 @@ title: Modules
   <div id="cGrowth" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Pre-Readings</li>
-          <ul>
-            <li><a href="Growth/BKG.html">Ogle Notes</a></li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 12.1-12.3</li>
-          </ul>
+        <li><a href="Growth/RG.html" target="_blank">Pre-Lecture Readings</a></li>
         <li><a href="Growth/PPT.pptx">Lecture Slides</a></li>
         <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_B.html">#2</a></li>
       </ul>
@@ -266,11 +242,7 @@ title: Modules
   <div id="cRecruitment" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Pre-Readings</li>
-          <ul>
-            <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Sections 4.1-4.4 (<i>not the boxes</i>)</a></li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.1</li>
-          </ul>
+        <li><a href="Recruitment/RG.html" target="_blank">Pre-Lecture Readings</a></li>
         <li><a href="Recruitment/PPT.pptx">Lecture Slides</a></li>
         <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_B.html">XC</a></li>
       </ul>
@@ -288,11 +260,7 @@ title: Modules
   <div id="cSPR" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Pre-Readings</li>
-          <ul>
-            <li><a href="Recruitment/Maceina-Pereira-2007.pdf">Maceina and Pereira (2007) Section 4.5 (<i>not the boxes</i>)</a></li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Section 13.2</li>
-          </ul>
+        <li><a href="SPR/RG.html" target="_blank">Pre-Lecture Readings</a></li>
         <li><a href="SPR/PPT.pptx">Lecture Slides</a></li>
         <li><a href="SPR/Cases/SPR.html">Class Exercise</a></li>
       </ul>
@@ -310,12 +278,7 @@ title: Modules
   <div id="cSizeStrux" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Pre-Readings</li>
-          <ul>
-            <li><a href="SizeStructure/BKG.html">Ogle's Notes</a></li>
-            <li><a href="http://www.bassresource.com/fish_biology/catch_release.html">Anderson's "Catch & Release or Selective Harvest"</a></li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Chapter 6</li>
-          </ul>
+        <li><a href="SizeStructure/RG.html" target="_blank">Pre-Lecture Readings</a></li>
         <li><a href="SizeStructure/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/SizeStrux_SaginawYP.html">Homework</a></li>
         <li>Case Studies</li>
@@ -339,12 +302,7 @@ title: Modules
   <div id="cCondition" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li>Pre-Readings</li>
-          <ul>
-            <li><a href="Condition/BKG.html">Ogle's Notes</a></li>
-            <li><a href="http://snr.unl.edu/necoopunit/downloads/Publications/Kevin%20Pope%20publ/chapter10.pdf">Pope and Kruse (2007) 10.1-10.3, 10.6 & 10.7 (<i>not the boxes</i>)</a></li>
-            <li><a href="http://derekogle.com/IFAR/">IFAR</a> Sections 7.1-7.4, Chapter 8</li>
-          </ul>
+        <li><a href="SizeStructure/RG.html" target="_blank">Pre-Lecture Readings</a></li>
         <li><a href="Condition/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/Inch_ConditionBluegill.html">Homework</a></li>
       </ul>

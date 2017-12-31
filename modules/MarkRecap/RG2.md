@@ -20,15 +20,15 @@ subtitle: Mark-Recapture
     * What precautions do fisheries technicians take to attempt to have a "closed" populations?
     * What are common behaviors of fish that lead to a violation of the assumption of equal catchability?
 
-\ 
+<br>
 
-1. Read [Section 8.3.1 in Hayes *et al.*](Hayesetal-2007-Sect8-3part.pdf) (the [complete reading](http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf") and consider the items below.
+1. Read [Section 8.3.1 in Hayes *et al.*](Hayesetal-2007-Sect8-3part.pdf) (the [complete reading](http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf")) and consider the items below.
     * What are the six assumptions for the Petersen (and related) methods?
     * What is the equation for the Chapman Modification of the Petersen method?
     * Define N-hat, n<sub>1</sub>, n<sub>2</sub>, and m<sub>2</sub>.
     * What criteria are used to determine when the normal approximation can be used to develop confidence intervals for N?
 
-\ 
+<br>
 
 1. Read Section 9.2 in *Introductory Fisheries Analyses with R* and consider the items below.
     * What is the equation for the Chapman Modification of the Petersen method?

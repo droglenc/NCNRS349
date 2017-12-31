@@ -132,7 +132,7 @@ title: Modules
           <ul>
             <li><a href="MarkRecap/RG2.html">Pre-Lecture Readings</a></li>
             <li><a href="MarkRecap/CE2a.html">Class Exercise</a></li>
-            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a> (data also availale <a href="http://derekogle.com/fishR/data/byTopic#capture-recapture">here</a>), <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html">XC</a></li>
+            <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a> (data also available <a href="http://derekogle.com/fishR/data/byTopic#capture-recapture">here</a>), <a href="http://derekogle.com/IFAR/exercises/MarkRecap_WIYOYWalleye.html">XC</a></li>
           </ul>
       </ul>
     </div>
@@ -150,7 +150,7 @@ title: Modules
   <div id="cDepletion" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="Depletions/RG.html">Pre-Lecture Readings</a></li>
+        <li><a href="Depletion/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="Depletion/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Homework</a></li>
       </ul>

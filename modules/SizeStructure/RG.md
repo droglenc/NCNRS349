@@ -22,5 +22,9 @@ subtitle: Size Structure
     * What statistical test is used to compare the distribution of lengths between groups of fish? What R function is used to perform this test?
     * What statistical test is used to compare the frequency of individuals in Gabelhouse length categories between groups of fish? What R function is used to perform this test?
 1. Read [Anderson's "Catch & Release or Selective Harvest"](catch_release_Anderson.pdf) and consider the items below.
-    * W
+    * What is a PSD? How is it calculated?
+    * What characteristics might describe a population (of, say, Bluegill) that has a PSD of less than 10?
+    * What is a PSD for a Bluegill population that "in balance."
+    * What is selective harvest? Why might a fish manager develop a regulation to promote selective harvest?
+
 ----

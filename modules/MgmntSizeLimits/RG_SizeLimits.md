@@ -15,7 +15,7 @@ subtitle: Size/Length Limits
     * Describe population characteristics (density, growth, etc.) for when a minimum, protected slot, or maximum length limit should be implemented.
     * Explain why the author suggests that length limits should be applied on a lake-specific rather than state-wide basis.  Why is this seldom followed in practice?
     * List and describe factors that may create obstacles to the success of length limit regulations?
-1. Read [Managing Bass Fisheries with Size Limits (Allen)](http://www.bassresource.com/fish_biology/selective_harvest.html) and consider the following items.
+1. Read [Managing Bass Fisheries with Size Limits (Allen)](Allen_Size_Limits.pdf) and consider the following items.
     * What are the three factors that typically determine the success or failure of a length limit?  Define each.  Explain how each of these items may affect your determination to use one of the length limits or not? [For example, which of these items or combination of these items generally leads to a successful application of a protected slot length limit?]
     * Describe how the author's beliefs have about strict catch-and-release have changed over time.
     * How has the strict catch-and-release ethic of most black bass anglers affected manager's ability to manage fish poplations?

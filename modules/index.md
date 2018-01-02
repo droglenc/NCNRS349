@@ -43,7 +43,7 @@ title: Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtProcess">Management Process</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMgmtProcess">Management Process</a>
     </h4>
   </div>
   <div id="cMgmtProcess" class="panel-collapse collapse">
@@ -62,7 +62,7 @@ title: Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtTools">Management Tools Introduction</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMgmtTools">Management Tools Introduction</a>
     </h4>
   </div>
   <div id="cMgmtTools" class="panel-collapse collapse">
@@ -314,7 +314,7 @@ title: Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtBagLimits">Bag/Creel Limits</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMgmtBagLimits">Bag/Creel Limits</a>
     </h4>
   </div>
   <div id="cMgmtBagLimits" class="panel-collapse collapse">
@@ -337,7 +337,7 @@ title: Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtSizeLimits">Size Limits</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMgmtSizeLimits">Size Limits</a>
     </h4>
   </div>
   <div id="cMgmtSizeLimits" class="panel-collapse collapse">
@@ -371,7 +371,7 @@ title: Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtCWH">Coarse Woody Habitat</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMgmtCWH">Coarse Woody Habitat</a>
     </h4>
   </div>
   <div id="cMgmtCWH" class="panel-collapse collapse">
@@ -399,7 +399,7 @@ title: Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtIQs">Individual Quotas</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMgmtIQs">Individual Quotas</a>
     </h4>
   </div>
   <div id="cMgmtIQs" class="panel-collapse collapse">
@@ -428,7 +428,7 @@ title: Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtClosures">Closures</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMgmtClosures">Closures</a>
     </h4>
   </div>
   <div id="cMgmtClosures" class="panel-collapse collapse">
@@ -454,7 +454,7 @@ title: Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion2" href="#cMgmtAdaptive">Adaptive Management</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cMgmtAdaptive">Adaptive Management</a>
     </h4>
   </div>
   <div id="cMgmtAdaptive" class="panel-collapse collapse">

@@ -21,4 +21,4 @@ ruffe2 <- RuffeSLRH92 %>%
   mutate(logL=log(length),logW=log(weight))
 
 
-# Script created at 2018-01-02 13:47:51
+# Script created at 2018-01-02 16:16:08

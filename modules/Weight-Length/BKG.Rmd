@@ -87,7 +87,7 @@ The required data for examining the length-weight relationship for a sample of f
 
 Three types of length measurements are common in the fisheries literature `r figcaps("LengthMeasures",display="cite")`.  *Total length* (TL) is the length from the most anterior to the most posterior point with the tail of the fish compressed to exhibit the longest possible length.  *Fork length* (FL) is the length from the most anterior point to the anterior notch in the fork of the tail.  For fish without a forked tail, the fork and total lengths are the same.  The *standard length* (SL) is the length from the most anterior point to the posterior end of the caudal peduncle.  Total length is the most common measurement in fisheries studies, as this is the measurement used in management decisions such as setting minimum lengths.
 
-![Length Measurements](Length_Measures.png)
+![](Length_Measures.png)
 
 `r figcaps("LengthMeasures")`
 
@@ -95,7 +95,7 @@ Three types of length measurements are common in the fisheries literature `r fig
 
 Length measurements are often taken with the aid of a measuring board where the measuring "stick" is embedded into the bottom board and one end of this board is fit with a vertical end piece.  The fish to be measured is placed on the bottom board such that the anterior point of the fish is against the vertical end piece and the measurement can be read directly from the embedded measuring stick (`r figcaps("LengthWeightMeasure",display="cite")`).  Length measurements are subject to very little measurement error [@GutreuterKrzoska1994].
 
-![Length Measurements](LengthWeightMeasure.png)
+![](LengthWeightMeasure.png)
 
 `r figcaps("LengthWeightMeasure")`
 
@@ -147,7 +147,6 @@ A test of whether the fish in a population exhibit isometric growth or not can b
 
 * $H_{0}:\beta=3 \quad \Rightarrow H_{0}:$ "Isometric growth"
 * $H_{A}:\beta\neq3 \quad \Rightarrow H_{A}:$ "Allometric growth"'
-\end{Itemize}
 
 Hypothesis tests regarding model parameters can be obtained with a t-test using
 

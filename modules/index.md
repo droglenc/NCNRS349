@@ -292,6 +292,23 @@ title: Modules
   </div>
 </div>
 
+<!-- #### Weight-Length Relationships #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cWeightLength">Weight-Length Relationships</a>
+    </h4>
+  </div>
+  <div id="cWeightLength" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="Weight-Length/RG.html">Pre-Lecture Readings</a></li>
+        <li><a href="Weight-Length/PPT.pptx">Lecture Slides</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <!-- #### CONDITION #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -302,7 +319,7 @@ title: Modules
   <div id="cCondition" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="SizeStructure/RG.html">Pre-Lecture Readings</a></li>
+        <li><a href="Condition/RG.html">Pre-Lecture Readings</a></li>
         <li><a href="Condition/PPT.pptx">Lecture Slides</a></li>
         <li><a href="http://derekogle.com/IFAR/exercises/Inch_ConditionBluegill.html">Homework</a></li>
       </ul>

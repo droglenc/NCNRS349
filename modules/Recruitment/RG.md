@@ -6,7 +6,7 @@ subtitle: Stock-Recruitment
 
 ----
 
-1. Read [Maceina and Pereira (2007) Sections 4.1-4.4](Maceina-Pereira-2007.pdf) (*not the boxes*) and consider the items below.
+1. Read [Maceina and Pereira (2007) Sections 4.1-4.4](Maceina-Pereira-2007_41_44.pdf) (complete chapter [is here](Maceina-Pereira-2007.pdf)) and consider the items below.
     * What is the distribution of recruitment rates in many marine systems? Describe what this distribution looks like and what it means for recruitment rates?
     * What (generically) is a primary cause of recruitment variability?
     * What is recruitment overfishing?

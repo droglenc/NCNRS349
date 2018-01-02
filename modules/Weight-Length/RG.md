@@ -21,6 +21,13 @@ subtitle: Weight-Length Relationships
     * How does one check whether the assumptions of a linear regression have been met or not?
     * What does it mean about fish shape over time if the slope parameter is equal to 3? If it is not equal to 3?
 1. Read [Pope and Kruse (2007) Sections 10.1](Pope-Kruse-2007_10_1.pdf) (*the complete chapter [is here](Pope-Kruse-2007.pdf)*) and consider the items below.
-    * 
+    * What are the two things the weight-length relationships have historically been used for?
+    * Weight-length data follows what kind of function for most fish species?
+    * Demonstrate how this function is transformed to a linear function?
+    * What type of values does the b parameter usually take?
+    * What value of b is indicative of allometric growth?
+    * Define allometric growth?
+    * What kinds of "things" can impart a bias in the weight-length relationship?
+    * How does one check whether the assumptions of a linear regression have been met or not?
 
 ----

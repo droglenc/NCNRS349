@@ -17,10 +17,10 @@ Note that some of the more distant dates are subject to change.
 <!---
 --->
 <tr><td>W 10-Jan</td>
-    <td><a href="Syllabus-Current">Syllabus</a></td>
-    <td>--</td></tr>
+    <td><a href="Syllabus-Current">Syllabus</a><br><a href="../modules/ClassIntro/CE1.html">Read Class Intro Exercise</a></td>
+    <td><a href="../modules/ClassPrep/HW.html">Class Prep HW</a></td></tr>
 <tr><td>F 12-Jan</td>
-    <td></td>
+    <td>Management Process</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
@@ -28,7 +28,7 @@ Note that some of the more distant dates are subject to change.
     <td colspan="2"><span style="color:coral">NO CLASS (Martin Luther King Jr. Day)</span></td></tr>
 <tr><td>T 16-Jan</td>
     <td></td>
-    <td>--</td></tr>
+    <td><a href="../modules/ClassIntro/HW.html">Class Intro HW</a></td></tr>
 <tr><td>W 17-Jan</td>
     <td></td>
     <td>--</td></tr>

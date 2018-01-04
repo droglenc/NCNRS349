@@ -198,11 +198,11 @@ Note that some of the more distant dates are subject to change.
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 16-Apr</td>
-    <td colspan="2">Final Exam Work</tr>
+    <td colspan="2">Final Exam Work</td></tr>
 <tr><td>T 17-Apr</td>
-    <td colspan="2">Final Exam Work</tr>
+    <td colspan="2">Final Exam Work</td></tr>
 <tr><td>W 18-Apr</td>
-    <td colspan="2">Final Exam Work</tr>
+    <td colspan="2">Final Exam Work</td></tr>
 <tr><td>F 20-Apr</td>
     <td colspan="2"><span style="color:red">Final Exam Due at Noon</span></td></tr>
 </table>

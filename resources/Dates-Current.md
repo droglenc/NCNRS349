@@ -202,7 +202,7 @@ Note that some of the more distant dates are subject to change.
 
 <tr><td>M 16-Apr</td>
     <td>Course Review</td>
-    <td>--</tr>
+    <td>--</td></tr>
 <tr><td>T 17-Apr</td>
     <td>Course Review</td>
     <td>--</td></tr>

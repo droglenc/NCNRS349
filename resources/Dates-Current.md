@@ -44,7 +44,7 @@ Note that some of the more distant dates are subject to change.
     <td></td>
     <td>--</td></tr>
 <tr><td>W 24-Jan</td>
-    <td></td>
+    <td>Guest Speaker -- Brad Ray</td>
     <td>--</td></tr>
 <tr><td>F 26-Jan</td>
     <td></td>
@@ -66,7 +66,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 5-Feb</td>
-    <td></td>
+    <td><br>Lake Superior Fisheries Management Plan Advisory Panel meeting</td>
     <td>--</td></tr>
 <tr><td>T 6-Feb</td>
     <td></td>
@@ -136,7 +136,7 @@ Note that some of the more distant dates are subject to change.
     <td></td>
     <td>--</td></tr>
 <tr><td>W 14-Mar</td>
-    <td></td>
+    <td>Guest Speaker -- Zach Lawson</td>
     <td>--</td></tr>
 <tr><td>F 16-Mar</td>
     <td></td>

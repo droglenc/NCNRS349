@@ -27,14 +27,14 @@ Note that some of the more distant dates are subject to change.
 <tr><td>M 15-Jan</td>
     <td colspan="2"><span style="color:coral">NO CLASS (Martin Luther King Jr. Day)</span></td></tr>
 <tr><td>T 16-Jan</td>
-    <td></td>
+    <td>Management Tools</td>
     <td><a href="../modules/ClassIntro/HW.html">Class Intro HW</a></td></tr>
 <tr><td>W 17-Jan</td>
-    <td></td>
-    <td>--</td></tr>
+    <td>Foundational Models</td>
+    <td><a href="../modules/MgmntProcess/HW.html">Mgmt Process HW</a></td></tr>
 <tr><td>F 19-Jan</td>
-    <td></td>
-    <td>--</td></tr>
+    <td>CPUE</td>
+    <td><a href="../modules/MgmntTools/HW.html">Mgmt Tools HW</a></td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 22-Jan</td>
@@ -96,6 +96,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td>M 19-Feb</td>
     <td></td>
     <td>--</td></tr>
+<tr><td>M 20-Feb</td>
     <td colspan="2"><span style="color:red">First Exam</span></td></tr>
 <tr><td>W 21-Feb</td>
     <td></td>

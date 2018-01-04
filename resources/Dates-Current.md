@@ -96,9 +96,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td>M 19-Feb</td>
     <td></td>
     <td>--</td></tr>
-<tr><td>T 20-Feb</td>
-    <td></td>
-    <td>--</td></tr>
+    <td colspan="2"><span style="color:red">First Exam</span></td></tr>
 <tr><td>W 21-Feb</td>
     <td></td>
     <td>--</td></tr>
@@ -176,8 +174,7 @@ Note that some of the more distant dates are subject to change.
     <td></td>
     <td>--</td></tr>
 <tr><td>T 3-Apr</td>
-    <td></td>
-    <td>--</td></tr>
+    <td colspan="2"><span style="color:red">Second Exam</span></td></tr>
 <tr><td>W 4-Apr</td>
     <td></td>
     <td>--</td></tr>
@@ -201,14 +198,11 @@ Note that some of the more distant dates are subject to change.
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 16-Apr</td>
-    <td>Course Review</td>
-    <td>--</td></tr>
+    <td colspan="2">Final Exam Work</tr>
 <tr><td>T 17-Apr</td>
-    <td>Course Review</td>
-    <td>--</td></tr>
+    <td colspan="2">Final Exam Work</tr>
 <tr><td>W 18-Apr</td>
-    <td>Course Review</td>
-    <td>--</td></tr>
+    <td colspan="2">Final Exam Work</tr>
 <tr><td>F 20-Apr</td>
-    <td colspan="2"><span style="color:red">Final Quiz</span></td></tr>
+    <td colspan="2"><span style="color:red">Final Exam Due at Noon</span></td></tr>
 </table>

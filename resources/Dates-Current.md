@@ -4,53 +4,211 @@ title: Important Dates
 css: /css/syllabus.css
 ---
 
-## Assignment Due Dates
-<dl class="dl-horizontal">
-<dt>12-Apr</dt><dd>Third <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
-</dl>
+<div class="alert alert-info">
+For each class period ("Date"), the module to prepare for is shown under "Preparation." Any items that should be turned in on that date are under "Items Due." All of these dates will be announced in class.
+</div>
 
+<div class="alert alert-warning">
+Note that some of the more distant dates are subject to change.
+</div>
+
+<table width="100%">
+<tr><th width="18%">Date</th><th width="36%">Preparation</th><th width="46%">Items Due</th></tr>
 <!---
-<dt>11-Jan</dt><dd><a href="../modules/ClassIntro/HW.html">Class Pre-Requisite HW</a></dd>
-<dt>25-Jan</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Abundance/MarkRecap/CE2.html">Mark-Recap Class Exercise</a></dd>
-<dt>27-Jan</dt><dd>Mark-Recap HW <a href="http://derekogle.com/IFAR/exercises/MarkRecap_URBrownTrout.html">#1</a> and <a href="http://derekogle.com/IFAR/exercises/MarkRecap_UNSPRainbowTrout.html">#2</a></dd>
-<dt>30-Jan</dt><dd><a href="http://derekogle.com/IFAR/exercises/Depletion_LKLargemouth.html">Depletion HW</a></dd>
-<dt>3-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/LORockBass_ALK_A.html">Age-Length Key #1 & #2 HW</a></dd>
-<dt>6-Feb</dt><dd><a href="http://derekogle.com/NCNRS349/modules/Mortality/CE1.html">Total Mortality CE</a></dd>
-<dt>8-Feb</dt><dd>Total Mortality <a href="http://derekogle.com/IFAR/exercises/Mortality_LSKBLakeTrout.html">#1</a> & <a href="http://derekogle.com/IFAR/exercises/Mortality_LSSRLakeTrout.html">#2</a> HW</a></dd>
-<dt>13-Feb</dt><dd>First <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
-<dt>15-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">Growth HW #1</a></dd>
-<dt>27-Feb</dt><dd><a href="http://derekogle.com/IFAR/exercises/Recruitment_ELWalleye_A.html">Stock-Recruitment HW #1</a></dd>
-<dt>13-Mar</dt><dd>Second <a href="Syllabus-Current.html#reflections---news-item">News Item Reflection</a></dd>
-
 --->
+<tr><td>W 10-Jan</td>
+    <td><a href="Syllabus-Current">Syllabus</a></td>
+    <td>--</td></tr>
+<tr><td>F 12-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
 
----- 
+<tr><td>M 15-Jan</td>
+    <td colspan="2"><span style="color:coral">NO CLASS (Martin Luther King Jr. Day)</span></td></tr>
+<tr><td>T 16-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 17-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 19-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
 
-## Exam Dates
-<dl class="dl-horizontal">
-<dt>21-Apr (noon)</dt><dd>Final Exam</dd>
-</dl>
+<tr><td>M 22-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 23-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 24-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 26-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
 
+<tr><td>M 29-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 30-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 31-Jan</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 2-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
 
-<!---
-<dt>20-Feb</dt><dd>First Exam</dd>
-<dt>13-Apr</dt><dd>Spring Hearings (11-Apr) Reflection</a></dd>
-<dt>29-Feb</dt><dd><a href="Syllabus-Current.html#reflections---papers">First Paper Reflection</a></dd>
-<dt>24-Feb</dt><dd>AFS (<a href="http://www.wi-afs.org/AnnualMeetings.aspx">info</a>) XC Reflections</a></dd>
-<dt>24-Mar</dt><dd>Second Exam</dd>
---->
+<tr><td>M 5-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 6-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 7-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 9-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
 
----- 
+<tr><td>M 12-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 13-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 14-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 16-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
 
-## Cancelled Classes
-<dl class="dl-horizontal">
-<dt>1-Mar</dt><dd>NO CLASS (Dr. Ogle at AFS Conference)</dd>
-<dt>6-Mar</dt><dd>NO CLASS (Mid-Session Break)</dd>
-<dt>8-Mar</dt><dd>NO CLASS (Mid-Session Break)</dd>
-<dt>10-Mar</dt><dd>NO CLASS (Mid-Session Break)</dd>
-<dt>14-Apr</dt><dd>NO CLASS (Good Friday)</dd>
-</dl>
+<tr><td>M 19-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 20-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 21-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 23-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
 
-<!---
-<dt>16-Jan</dt><dd>NO CLASS (Please participate in <a href="https://www.northland.edu/event/martin-luther-king-jr-day-2017/" target="_blank">Martin Luther King, Jr. Day Activities</a>)</dd>
---->
+<tr><td>M 26-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 27-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 28-Feb</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 2-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
+
+<tr><td>M 5-Mar</td>
+    <td colspan="2"><span style="color:coral">NO CLASS (Mid-Session)</span></td></tr>
+<tr><td>M 6-Mar</td>
+    <td colspan="2"><span style="color:coral">NO CLASS (Mid-Session)</span></td></tr>
+<tr><td>M 7-Mar</td>
+    <td colspan="2"><span style="color:coral">NO CLASS (Mid-Session)</span></td></tr>
+<tr><td>M 9-Mar</td>
+    <td colspan="2"><span style="color:coral">NO CLASS (Mid-Session)</span></td></tr>
+<tr><td></td><td></td><td></td></tr>
+
+<tr><td>M 12-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 13-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 14-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 16-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
+
+<tr><td>M 19-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 20-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 21-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 23-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
+
+<tr><td>M 26-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 27-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 28-Mar</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 30-Mar</td>
+    <td colspan="2"><span style="color:coral">NO CLASS (Good Friday)</span></td></tr>
+<tr><td></td><td></td><td></td></tr>
+
+<tr><td>M 2-Apr</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 3-Apr</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 4-Apr</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 6-Apr</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
+
+<tr><td>M 9-Apr</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>T 10-Apr</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>W 11-Apr</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td>F 13-Apr</td>
+    <td></td>
+    <td>--</td></tr>
+<tr><td></td><td></td><td></td></tr>
+
+<tr><td>M 16-Apr</td>
+    <td>Course Review</td>
+    <td>--</tr>
+<tr><td>T 17-Apr</td>
+    <td>Course Review</td>
+    <td>--</td></tr>
+<tr><td>W 18-Apr</td>
+    <td>Course Review</td>
+    <td>--</td></tr>
+<tr><td>F 20-Apr</td>
+    <td colspan="2"><span style="color:red">Final Quiz</span></td></tr>
+</table>

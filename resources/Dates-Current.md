@@ -41,19 +41,19 @@ Note that some of the more distant dates are subject to change.
     <td>Mark-Recapture Capture Histories</td>
     <td><a href="../modules/MgmntTools/HW.html">Mgmt Tools HW</a></td></tr>
 <tr><td>T 23-Jan</td>
-    <td>Read Mark-Recapture Exercise</td>
+    <td><a href="http://derekogle.com/NCNRS349/modules/MarkRecap/CE2a.html">Read Mark-Recapture Exercise</a></td>
     <td>--</td></tr>
 <tr><td>W 24-Jan</td>
     <td>Speaker -- Brad Ray</td>
     <td>--</td></tr>
 <tr><td>F 26-Jan</td>
     <td>Depletion</td>
-    <td>Mark-Recapture HW<br>Ray Reflection</td></tr>
+    <td>Mark-Recapture Exercise</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 29-Jan</td>
     <td></td>
-    <td>--</td></tr>
+    <td>Mark-Recapture HW<br>Ray Reflection</td></tr>
 <tr><td>T 30-Jan</td>
     <td></td>
     <td>--</td></tr>

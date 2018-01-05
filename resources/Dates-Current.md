@@ -48,18 +48,18 @@ Note that some of the more distant dates are subject to change.
     <td>--</td></tr>
 <tr><td>F 26-Jan</td>
     <td>Depletion</td>
-    <td>Mark-Recapture Exercise</td></tr>
+    <td>Mark-Recapture Exercise<br>Ray Reflection</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 29-Jan</td>
     <td></td>
-    <td>Mark-Recapture HW<br>Ray Reflection</td></tr>
+    <td>--</td></tr>
 <tr><td>T 30-Jan</td>
     <td></td>
     <td>--</td></tr>
 <tr><td>W 31-Jan</td>
     <td></td>
-    <td>--</td></tr>
+    <td>Mark-Recapture HW<br>Depletion HW</td></tr>
 <tr><td>F 2-Feb</td>
     <td></td>
     <td>--</td></tr>
@@ -96,7 +96,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td>M 19-Feb</td>
     <td></td>
     <td>--</td></tr>
-<tr><td>M 20-Feb</td>
+<tr><td>T 20-Feb</td>
     <td colspan="2"><span style="color:red">First Exam</span></td></tr>
 <tr><td>W 21-Feb</td>
     <td></td>

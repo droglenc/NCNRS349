@@ -91,7 +91,7 @@ A variety of assignments (e.g., homeworks (as described below), preparation chec
 
 Assignments not handed in at the beginning of the class period will be considered late. Late assignments will not be accepted. The lowest approximately 20% of assignment grades will be excluded when computing your overall grade. **If there is any indication, whether I can confirm it or not, that you have not worked alone on an assignment (except for those where you were asked to work as part of a group), then you will receive a 0 for that assignment and will be warned of further penalties for subsequent offenses.**
 
-**Homeworks and Exercise Write-ups. --** Several homeworks and exercises will be assigned per major module. **PRINTED** assignments are **due at the beginning of the class period on the assigned due date** (announced in class and on the [Dates page](Dates-Current)). Each assigment is worth 10 points and will be graded in two parts. The first part is an assessment of completeness and formatting (each assignment should follow [the expectations outlined here](hwformat)) according to the following rubric.
+**Homeworks and Exercise Write-ups. --** Several homeworks and exercises will be assigned per major module. **PRINTED** assignments are **due at the beginning of the class period on the assigned due date** (announced in class and on the [Dates page](Dates-Current)). Each assigment is worth 10 points and will be graded in two parts. The first part is an assessment of completeness and formatting (each assignment should follow [the expectations outlined here](hwformat) and my [scientific writing tips](writing-tips.html)) according to the following rubric.
 
 <div class="container-fluid">
   <table class="table table-bordered">

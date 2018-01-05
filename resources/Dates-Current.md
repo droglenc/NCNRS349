@@ -44,7 +44,7 @@ Note that some of the more distant dates are subject to change.
     <td></td>
     <td>--</td></tr>
 <tr><td>W 24-Jan</td>
-    <td>Guest Speaker -- Brad Ray</td>
+    <td>Speaker -- Brad Ray</td>
     <td>--</td></tr>
 <tr><td>F 26-Jan</td>
     <td></td>
@@ -137,7 +137,7 @@ Note that some of the more distant dates are subject to change.
     <td></td>
     <td>--</td></tr>
 <tr><td>W 14-Mar</td>
-    <td>Guest Speaker -- Zach Lawson</td>
+    <td>Speaker -- Zach Lawson</td>
     <td>--</td></tr>
 <tr><td>F 16-Mar</td>
     <td></td>
@@ -177,7 +177,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td>T 3-Apr</td>
     <td colspan="2"><span style="color:red">Second Exam</span></td></tr>
 <tr><td>W 4-Apr</td>
-    <td></td>
+    <td> Speaker -- Mike Seider</td>
     <td>--</td></tr>
 <tr><td>F 6-Apr</td>
     <td></td>

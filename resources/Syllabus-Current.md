@@ -9,7 +9,7 @@ css: /css/syllabus.css
 
 * Class [Description](#description) and [Learning Outcomes](#learning-outcomes)
 * [Instructor](#instructor) and [Tutors](#tutors)
-* [Grading](#grading) -- [Homework](#homework), [Exams](#exams), [Reflections-News Item](#reflections---news-item)
+* [Grading](#grading) -- [Assignments](#assignments), [Exams](#exams)
 * [Professionalism](#professionalism) -- [Attendance](#attendance), [Participation](#participation), [Expectations](#expectations), [Conduct & Integrity](#classroom-conduct-and-academic-integrity)
 * [Accommodations](#accommodations)
 
@@ -44,7 +44,7 @@ At the end of this class you will be able to ...
 <tr><th><a href="http://derekogle.com" target="_blank">Dr. Derek H. Ogle</a><br>Professor of Mathematical Sciences<br> & Natural Resources</th></tr>
 <tr><th><img src="../img/DerekOgle1.jpg"></th></tr>
 <tr style="vertical-align:top"><td>CSE228; 682-1300<br><a href="mailto:dogle@northland.edu">dogle@northland.edu</a><br>
-<a href="https://www.surveymonkey.com/r/KC87PJW" target="_blank">Anonymous Feedback / Suggestions</a></td></tr>
+<a href="https://www.surveymonkey.com/r/F79NT66" target="_blank">Anonymous Feedback / Suggestions</a></td></tr>
 <tr style="vertical-align:top"><td>Office Hours:<br>
 MWF 900-950; WF 1500-1600<br>By Appointment</td></tr>
 </table>
@@ -106,17 +106,17 @@ Assignments not handed in at the beginning of the class period will be considere
 
 The second part, also worth 5 points, is an assessment of the quality of the work. In this part, only some (approximately half) of the questions will be assessed. Answer keys will be [posted online](homework-keys) so that you may check your work.
 
-**Preparation Checks. --** You should prepare for each class period by reading the reading for the module indicated on the [Dates page](Dates-Current) and announced at the end of the previous class period. A preparation guide is provided for each module to help you identify key concepts in the reading and videos ([here's an example](../modules/modules/CPE/RG.html){:target="_blank"}). You should prepare your own **hand-written**[^1] answers or notes to each question on the preparation guide. Periodically I will ask you turn in your preparation notes. Each of these will be worth 5 points and will generally be graded according to completness and thoroughness.
+**Preparation Checks. --** You should prepare for each class period by reading the reading for the module indicated on the [Dates page](Dates-Current) and announced at the end of the previous class period. A preparation guide is provided for each module to help you identify key concepts in the reading and videos ([here's an example](../modules/CPE/RG.html){:target="_blank"}). You should prepare your own **hand-written**[^1] answers or notes to each question on the preparation guide. Periodically I will ask you turn in your preparation notes. Each of these will be worth 5 points and will generally be graded according to completness and thoroughness.
 
 **Other Assignments. --** Specifics for other assignments will be provided with the assignment.
 
 
 #### Exams
-Exams dates are shown on the [Dates page](Dates-Current.html). Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition. You will not be allowed to make up an exam missed without my prior approval. The final exam will not be given early.
+Exams dates are shown on the [Dates page](Dates-Current.html). The higher of your two mid-term grades will be worth more than the lower grade (see [grade calculator above)(#grading)). Make-up exams will be provided only if you have a fixed commitment of sufficient importance that was set before the beginning of the semester or a verifiable medical condition. You will not be allowed to make up an exam missed without my prior approval. The final exam will not be given early.
 
 
 #### Extra Credit
-I will offer limited opportunities for extra credit throughout the semester. Generally these opportunities will be related to your reflections from attending presentations, meetings, etc. related to fisheries science and management that are outside of the class. Examples would be attending the AFS Conference in late Feb and the Conservation Congress hearings in early April.
+Limited opportunities for extra credit will be offered throughout the semester. Generally these opportunities will be related to your reflections from attending presentations, meetings, etc. related to fisheries science and management that are outside of the class. Examples would be attending the [Midwest Fish & Wildlife Conference](http://www.midwestfw.org/index.html) in late January and the [Conservation Congress spring hearings](http://dnr.wi.gov/about/wcc/springhearing.html) in early April.
 
 
 ### Incomplete Grades
@@ -125,12 +125,12 @@ Under [Northland College policy](https://my.northland.edu/student-policies/acade
 ## Professionalism
 
 #### Attendance
-For most students, achievement is strongly positively related to attendance. I will take attendance each day but attendance will not factor into your final grade with the following exception. At the end of the semester I may, at my discretion, decide to eliminate one or more of your homework or exam grades. Your attendance record will be one item considered when I make that decision.
+For most students, achievement is strongly positively related to attendance. I will take attendance each day but attendance will not factor into your final grade with the following exception. At the end of the semester I may, at my discretion, decide to eliminate some o your homework or exam grades. Your attendance record will be one item considered when I make that decision.
 
 <img class="img-right" src="../img/studying.jpg">
 
 #### Participation
-As a general rule-of-thumb[^2], students are expected to spend between 2-3 hours of time outside of class for each hour in class. This course meets for 4.5 hours per week and, thus, you should dedicate between 9 and 13.5 hours of time outside of class to preparing for class, completing homework and other assessments, and studying for exams. The work required for this course can be completed within this expected amount of time, **if that time is quality-time** (i.e., without distraction). If you feel that you are spending an inordinate amount of time on some assignments because you are "stuck," then start your assignments early so that you can stop (and do other things) and make plans to see [me](#instructor) for help.
+As a general rule-of-thumb[^2], students are expected to spend between 2-3 hours of time outside of class for each hour in class. This course meets for 5 hours per week and, thus, you should dedicate between 10 and 15 hours of time outside of class to preparing for class, completing homework and other assessments, and studying for exams. As this is an upper-level course, these should be considered as the minimum time required to fully learn the course material. I do believe that the work required for this course can be completed within this expected amount of time, **if that time is quality-time** (i.e., without distraction). If you feel that you are spending an inordinate amount of time on some assignments because you are "stuck," then start your assignments early so that you can stop (and do other things) and make plans to see [me](#instructor) for help.
 
 #### Expectations
 This is a 300-level science course that is required in only one major; thus, you either selected that major or this course and I assume then that this subject is of great interest to you. This course is intense (both in quantity and quality of work) and I expect that you will appreciate that and honor that with considerable effort. I expect that you are conversant with topics from the three prerequisite courses (Ecology, Ichthyology, and Introductory Statistics). Additionally, I expect that you have reached a high-level of intellectual maturity by this stage of your academic career and, thus, will act professionally at all times, ask good and synthesizing questions, and communicate effectively, both orally and [in writing](writing-tips.html). Finally, I expect you to work hard, but have fun doing that work.

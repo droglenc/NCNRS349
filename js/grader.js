@@ -1,6 +1,6 @@
-//**********************************************************************************
-//**  Rounds the value x to dcml decimal places                                   **
-//**********************************************************************************
+//**********************************************************************
+//**  Rounds the value x to dcml decimal places                       **
+//**********************************************************************
 function roundDec(x, dcml)  {
 	var dvsr = Math.pow (10,dcml);
 	var num = Math.round(x*dvsr)/dvsr;
@@ -8,18 +8,17 @@ function roundDec(x, dcml)  {
 	return (num);
 }
 
-//**********************************************************************************
-//**  Sets weights for assessment components                                      **
-//**********************************************************************************
+//**********************************************************************
+//**  Sets weights for assessment components                          **
+//**********************************************************************
 function get_wghts() {
-  HW_WT = 0.30;
-  MT1_WT = 0.20;	MT2_WT = 0.15;	FNL_WT = 0.25;
-  REFL_PAPERS_WT = 0.10;
+  HW_WT = 0.25;
+  MT1_WT = 0.25;	MT2_WT = 0.20;	FNL_WT = 0.30;
 }
 
-//**********************************************************************************
-//**  Computes the final grade                                                    **
-//**********************************************************************************
+//**********************************************************************
+//**  Computes the final grade                                        **
+//**********************************************************************
 function find_grade(form, pts, outof) {
 	form.SCORE.value = roundDec((pts/outof)*100,1);
 	curr_sc = roundDec(pts/outof,2);
@@ -57,11 +56,6 @@ function calc_grade(form) {
 	if (temp!=="") {
 		if (temp > 1) {temp=temp/100};
 		pts += FNL_WT*temp;	outof += FNL_WT;
-	}
-	temp = form.REFL_PAPERS_SC.value;
-	if (temp!=="") {
-		if (temp > 1) {temp=temp/100};
-		pts += REFL_PAPERS_WT*temp;	outof += REFL_PAPERS_WT;
 	}
 	find_grade(form, pts, outof);
 }

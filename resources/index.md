@@ -7,7 +7,7 @@ title: Resources
 1. [fishR Website](http://derekogle.com/fishR/){:target="_blank"}
 1. [Data Files (on fishR)](http://derekogle.com/fishR/data/){:target="_blank"}
 1. **Homework Answer Keys**
-    * XXX
+    * [Class Introduction](../modules/ClassIntro/HW_Key)
 1. **Software Installation Links**
     * R -- [Windows](http://derekogle.com/IFAR/supplements/installations/InstallRWin.html){:target="_blank"} / [Mac OS](http://derekogle.com/IFAR/supplements/installations/InstallRMac.html){:target="_blank"}
     * RStudio -- [Windows](http://derekogle.com/IFAR/supplements/installations/InstallRStudioWin.html){:target="_blank"} / [Mac OS](http://derekogle.com/IFAR/supplements/installations/InstallPackagesRMac.html){:target="_blank"}

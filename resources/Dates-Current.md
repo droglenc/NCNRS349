@@ -43,7 +43,7 @@ Note that some of the more distant dates are subject to change.
     <td><a href="http://derekogle.com/NCNRS349/modules/MarkRecap/CE2a.html">Read Mark-Recapture Exercise</a></td>
     <td>--</td></tr>
 <tr><td>W 24-Jan</td>
-    <td>Speaker -- Brad Ray</td>
+    <td>Speaker -- Dr. Brad Ray</td>
     <td>--</td></tr>
 <tr><td>F 26-Jan</td>
     <td>Depletion</td>
@@ -51,13 +51,12 @@ Note that some of the more distant dates are subject to change.
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 29-Jan</td>
-    <td></td>
-    <td>--</td></tr>
+    <td colspan="2"><span style="color:coral">NO CLASS (Dr. Ogle at AFS Meeting)</span></td></tr>
 <tr><td>T 30-Jan</td>
-    <td></td>
+    <td><a href="../modules/aaaSpeakers/RG_Cooper.html">Speaker -- Dr. Matt Cooper</a></td>
     <td>--</td></tr>
 <tr><td>W 31-Jan</td>
-    <td></td>
+    <td>Age-Length Key</td>
     <td>Mark-Recapture HW<br>Depletion HW</td></tr>
 <tr><td>F 2-Feb</td>
     <td></td>

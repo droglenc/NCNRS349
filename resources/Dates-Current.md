@@ -22,7 +22,7 @@ Note that some of the more distant dates are subject to change.
     <td>Management Process</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
---->
+
 <tr><td>M 15-Jan</td>
     <td colspan="2"><span style="color:coral">NO CLASS (Martin Luther King Jr. Day)</span></td></tr>
 <tr><td>T 16-Jan</td>
@@ -35,6 +35,7 @@ Note that some of the more distant dates are subject to change.
     <td>CPUE</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
+--->
 
 <tr><td>M 22-Jan</td>
     <td>Mark-Recapture Capture Histories</td>

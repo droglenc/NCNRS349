@@ -44,7 +44,7 @@ Note that some of the more distant dates are subject to change.
     <td><a href="http://derekogle.com/NCNRS349/modules/MarkRecap/CE2a.html">Read Mark-Recapture Exercise</a></td>
     <td>--</td></tr>
 <tr><td>W 24-Jan</td>
-    <td>Speaker -- <a href="../modules/aaaSpeakers/Lake Superior Fisheries Manageme Plan Process.pptx">Dr. Brad Ray</a></td>
+    <td>Speaker -- <a href="../modules/aaaSpeakers/Lake Superior Fisheries Management Plan Process.pptx">Dr. Brad Ray</a></td>
     <td>--</td></tr>
 <tr><td>F 26-Jan</td>
     <td>Depletion</td>

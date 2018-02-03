@@ -5,6 +5,24 @@ title: Modules
 
 <div class="panel-group" id="accordion1">
 
+
+<!-- #### GUEST SPEAKERS #### -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cSpeakers">Class Preparation</a>
+    </h4>
+  </div>
+  <div id="cSpeakers" class="panel-collapse collapse">
+    <div class="panel-body">
+      <ul>
+        <li><a href="aaaSpeakers/Lake Superior Fisheries Management Plan Process.pptx">Brad Ray Slides</a></li>
+        <li><a href="aaaSpeakers/RG_Cooper.html">Matt Cooper Guide and Slides</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <!-- #### CLASS PREPARATION #### -->
 <div class="panel panel-default">
   <div class="panel-heading">

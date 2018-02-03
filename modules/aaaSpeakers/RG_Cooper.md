@@ -6,7 +6,7 @@ subtitle: Guest Speaker Dr. Matt Cooper
 
 ----
 
-1. Read [Trebitz and Hoffman (2015)](Trebitz_Hoffman_TAFS2015.pdf) and be prepared to discuss the items below. [*Dr. Cooper's slides will [be here]() following his presentation.*]
+1. Read [Trebitz and Hoffman (2015)](Trebitz_Hoffman_TAFS2015.pdf) and be prepared to discuss the items below. [*Dr. Cooper's slides will [be here](Great Lakes CW Jan 30 2018.pptx) following his presentation.*]
 
     **Coastal Wetland Support for Great Lakes Fisheries ...**
     * What big question/idea is being addressed in the paper?

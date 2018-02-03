@@ -15,8 +15,6 @@ Note that some of the more distant dates are subject to change.
 <table width="100%">
 <tr><th width="18%">Date</th><th width="36%">Preparation</th><th width="46%">Items Due</th></tr>
 <!---
---->
-
 <tr><td>W 10-Jan</td>
     <td><a href="Syllabus-Current">Syllabus</a><br><a href="../modules/ClassIntro/CE1.html">Read Class Intro Exercise</a></td>
     <td><a href="../modules/ClassPrep/HW.html">Class Prep HW</a></td></tr>
@@ -61,9 +59,11 @@ Note that some of the more distant dates are subject to change.
     <td>Age-Length Key</td>
     <td>Mark-Recapture HW<br>Depletion HW</td></tr>
 <tr><td>F 2-Feb</td>
-    <td></td>
+    <td>Mortality</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
+--->
+
 
 <tr><td>M 5-Feb</td>
     <td><br>Lake Superior Fisheries Management Plan Advisory Panel meeting</td>

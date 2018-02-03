@@ -1,0 +1,54 @@
+---
+layout: page
+title: Homework Key
+subtitle: Depletion
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: false
+    lib_dir: zlibs
+---
+
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Depletion/")
+source("../../rhelpers/rhelpers.R")
+modHTML("HW_Key")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE}
+library(FSA)
+library(dplyr)
+source("../../rhelpers/knitr_setup.R")
+```
+
+----
+
+## Lake Guntersville Largemouth Bass
+```{r LGLMB, echo=FALSE, results='hide', message=FALSE}
+d <- data.frame(ct=c(23,12,13,14,9,7),
+                ft=rep(1,6)) %>%
+  mutate(CPE=ct/ft)
+depl1 <- depletion(d$ct,d$ft,method="Leslie")
+summary(depl1)
+confint(depl1)
+```
+```{r echo=FALSE, results='hide'}
+sum3 <- summary(depl1)
+Nhat <- sum3["No","Estimate"]
+q <- sum3["q","Estimate"]
+ci3 <- confint(depl1)
+```
+
+1. A total of `r d$CPE[1]` fish were caught per hour in the first sample.
+1. The catchability coefficient (q) is estimated to be `r formatC(q,format="f",digits=3)` with a 95% confidence interval from `r formatC(ci3["q","95% LCI"],format="f",digits=3)` to `r formatC(ci3["q","95% UCI"],format="f",digits=3)`. Thus, it is estimated that `r formatC(q*100,format="f",digits=1)`% of the Largemouth Bass (*Micropterus salmoides*) in the enclosures would be captured with one hour (i.e., one unit) of electrofishing effort. This value is the same as that reported in Maceina *et al.* (1995).
+1. The initial population size (N<sub>0</sub>) is estimated to be `r formatC(Nhat,format="f",digits=0)` with a 95% confidence interval from `r formatC(ci3["No","95% LCI"],format="f",digits=0)` to `r formatC(ci3["No","95% UCI"],format="f",digits=0)`. This value is the same as that reported in Maceina *et al.* (1995).
+1. One would expect to catch `r formatC(q,format="f",digits=3)`&times;`r formatC(Nhat,format="f",digits=1)`&times;1 = `r formatC(q*Nhat,format="f",digits=1)` fish in the first hour of sampling.
+1. To compute the expected catch for the second sample, one must first reduce the original population size by the number of fish removed with the first sample (i.e., N<sub>0</sub>-N<sub>0</sub>&times;q&times;1) and then multiply that times q&times;1. Thus, the expected catch for the second sample is (`r formatC(Nhat,format="f",digits=1)`-`r formatC(q*Nhat,format="f",digits=1)`)&times;`r formatC(q,format="f",digits=3)`&times;1 = `r formatC(q*Nhat-q^2*Nhat,format="f",digits=1)` fish.
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<LGLMB>>
+```
+

@@ -1,0 +1,90 @@
+---
+layout: page
+title: Homework Key
+subtitle: Mark-Recapture
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<hr />
+<div id="ugly-river-brown-trout" class="section level2">
+<h2>Ugly River Brown Trout</h2>
+<ol>
+<li>M=43, n=123, m=16, N is unknown</li>
+<li>The estimated aboundance of Brown Trout (<em>Salmo trutta</em>) in this section of the Ugly River is 320 fish with a 95% confidence interval from 210 to 502.</li>
+<li>The binomial distribution was used to construct the confidence intervals because more than 10% of the fish in the second sample were recaptured (i.e., 13.0).</li>
+</ol>
+<div id="r-appendix" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>mr1 &lt;- mrClosed(43,123,16,method=&quot;Chapman&quot;)
+summary(mr1)
+confint(mr1,verbose=TRUE)</code></pre>
+<hr />
+</div>
+</div>
+<div id="upper-niagara-springs-pond-rainbow-trout" class="section level2">
+<h2>Upper Niagara Springs Pond Rainbow Trout</h2>
+<ol>
+<li>A total of 63 fish were captured in the first but not the second sample, 99 fish were captured in the second but not the first sample, and 11 fish were captured in both samples.</li>
+<li>M=74, n=110, m=11</li>
+<li>The estimated aboundance of Rainbow Trout (<em>Oncorhynchus mykss</em>) greater than 100 mm in Upper Niagara Springs Pond is 693 fish with a 95% confidence interval from 402 to 1282.</li>
+<li>The Poisson distribution was used to construct the confidence intervals because 11 (&lt;50) fish, but not greater than 10% of the fish (i.e., 10.0), in the second sample were recaptured.</li>
+</ol>
+<div id="r-appendix-1" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>data(RBTroutUNSP)
+ch1 &lt;- capHistSum(RBTroutUNSP)
+mr2 &lt;- mrClosed(ch1,method=&quot;Chapman&quot;)
+summary(mr2)
+confint(mr2,verbose=TRUE)</code></pre>
+<hr />
+</div>
+</div>
+<div id="wisconsin-yoy-walleye" class="section level2">
+<h2>Wisconsin YOY Walleye</h2>
+<ol>
+<li>The estimated aboundance of YOY Walleye (<em>Sander vitreus</em>) in Pine Lake is 3280 fish with a 95% confidence interval from 2832 to 3898.</li>
+<li>The number of recaptured fish in the third sample appears too large (see Figure below) and suggests a potential problem with the assumptions for the Schnabel method, likely an increased catchability on that sample.</li>
+</ol>
+<p><img src="HW_Key_files/figure-html/unnamed-chunk-8-1.png" width="336" /></p>
+<div id="r-appendix-2" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>mr3 &lt;- mrClosed(n=c(321,412,178,415,367),
+                m=c( NA, 45, 55, 93,113),
+                R=c(321,412,178,415, NA),method=&quot;Schnabel&quot;)
+summary(mr3)
+confint(mr3,verbose=TRUE)</code></pre>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -8,6 +8,8 @@ title: Resources
 1. [Data Files (on fishR)](http://derekogle.com/fishR/data/){:target="_blank"}
 1. **Homework Answer Keys**
     * [Class Introduction](../modules/ClassIntro/HW_Key)
+    * [Mark-Recapture](../modules/MarkRecap/HW_Key.html)
+    * [Depletion](../modules/Depletion/HW_Key.html)
 1. **Software Installation Links**
     * R -- [Windows](http://derekogle.com/IFAR/supplements/installations/InstallRWin.html){:target="_blank"} / [Mac OS](http://derekogle.com/IFAR/supplements/installations/InstallRMac.html){:target="_blank"}
     * RStudio -- [Windows](http://derekogle.com/IFAR/supplements/installations/InstallRStudioWin.html){:target="_blank"} / [Mac OS](http://derekogle.com/IFAR/supplements/installations/InstallPackagesRMac.html){:target="_blank"}

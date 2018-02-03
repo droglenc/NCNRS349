@@ -10,7 +10,7 @@ title: Modules
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion1" href="#cSpeakers">Class Preparation</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cSpeakers">Guest Speakers</a>
     </h4>
   </div>
   <div id="cSpeakers" class="panel-collapse collapse">

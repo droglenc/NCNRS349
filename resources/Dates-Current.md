@@ -66,10 +66,10 @@ Note that some of the more distant dates are subject to change.
 
 
 <tr><td>M 5-Feb</td>
-    <td>Mortality<br>Lake Superior Fisheries Management Plan Advisory Panel meeting</td>
+    <td>Mortality</td>
     <td>--</td></tr>
 <tr><td>T 6-Feb</td>
-    <td>Mortality Exercise</td>
+    <td>Mortality Exercise<br>Lake Superior Fisheries Management Plan Advisory Panel meeting</td>
     <td>--</td></tr>
 <tr><td>W 7-Feb</td>
     <td>Mortality Components</td>

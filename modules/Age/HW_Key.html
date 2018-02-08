@@ -1,0 +1,108 @@
+---
+layout: page
+title: Homework Key
+subtitle: Age-Length Key
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<hr />
+<div id="lake-ontario-rock-bass-a" class="section level2">
+<h2>Lake Ontario Rock Bass A</h2>
+<ol>
+<li>There are 135 fish that were aged and 1153 fish that were not aged.</li>
+<li>xxx
+<ol>
+<li>There were 10 fish in the 180-mm category in the aged sample.</li>
+<li>There were 24 age-7 fish in the aged sample.</li>
+<li>The proportion of fish in the 140-mm TL category that were age-4 was 0.9.</li>
+<li>The proportion of fish in the 200-mm TL category that were age-8 was 0.1.</li>
+</ol></li>
+<li>xxx
+<ol>
+<li>The proportion of fish in the 210-mm TL category that should be assigned age-5 was 0.1.</li>
+<li>Of 30 Rock Bass in the 180-mm TL category, 12 should be assigned age-5.</li>
+<li>This age-length key is pretty “clean.” There are some anomolies with age-8 and age-9 fish near 200 mm and age-11 fish from 230 to 270 mm, but these proportions are fairly small.</li>
+</ol></li>
+<li>Did not do.</li>
+</ol>
+</div>
+<div id="lake-ontario-rock-bass-b" class="section level2">
+<h2>Lake Ontario Rock Bass B</h2>
+<ol>
+<li>Completed above.</li>
+<li>xxx
+<ol>
+<li>There were 264 age-5 fish after applying the age-length key.</li>
+<li>There were 8 age-11 fish after applying the age-length key.</li>
+<li>xxx</li>
+<li>There were 43 total fish in the 150-mm TL category.</li>
+<li>The mean TL of age-5 fish is 187.4 mm.</li>
+<li>xxx</li>
+</ol></li>
+<li>Should not have gotten the exact same results, but they should be close. They are different because of the randomization, but they are similar because little is randomized.</li>
+</ol>
+<div id="r-appendix" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>df &lt;- read.csv(&quot;https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/RockBassLO2.csv&quot;) %&gt;%
+  mutate(lcat10=lencat(tl,w=10))
+aged &lt;- filterD(df,!is.na(age))
+unaged &lt;- filterD(df,is.na(age))
+
+aged.ld &lt;- xtabs(~lcat10,data=aged)
+aged.ad &lt;- xtabs(~age,data=aged)
+
+alk.raw &lt;- xtabs(~lcat10+age,data=aged)
+alk &lt;- prop.table(alk.raw,margin=1)
+
+alkPlot(alk)
+
+unaged &lt;- alkIndivAge(alk,age~lcat10,data=unaged)
+df2 &lt;- rbind(aged,unaged)
+
+all.ld &lt;- xtabs(~lcat10,data=df2)
+all.ad &lt;- xtabs(~age,data=df2)
+
+hist(~age,data=df2,w=1,xlab=&quot;Age (yrs)&quot;)
+
+all.ls &lt;- group_by(df2,age) %&gt;%
+  summarize(mnlen=mean(tl)) %&gt;%
+  as.data.frame()
+
+plot(tl~age,data=df2,ylab=&quot;Total Length (mm)&quot;,xlab=&quot;Age (yrs)&quot;,
+     pch=19,col=col2rgbt(&quot;black&quot;,1/20))
+lines(mnlen~age,data=all.ls,col=&quot;blue&quot;,lwd=2)</code></pre>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

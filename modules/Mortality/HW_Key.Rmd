@@ -1,0 +1,234 @@
+---
+layout: page
+title: Homework Key
+subtitle: Mortality
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: false
+    lib_dir: zlibs
+---
+
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Mortality/")
+source("../../rhelpers/rhelpers.R")
+modHTML("HW_Key")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE}
+library(FSA)
+library(magrittr)
+library(dplyr)
+source("../../rhelpers/knitr_setup.R")
+```
+
+----
+
+## Keewenaw Bay Lake Trout
+
+```{r KBLT, echo=FALSE, results="hide", fig.show="hide"}
+d <- data.frame(age=3:14,ct=c(5,18,21,10,45,109,95,63,42,25,13,4)) %>%
+  mutate(logct=log(ct))
+plot(logct~age,data=d,pch=19)
+
+## With 9-13
+cc1 <- catchCurve(ct~age,data=d,ages2use=9:13)
+sum1 <- cbind(summary(cc1),confint(cc1))
+plot(cc1)
+cc1w <- catchCurve(ct~age,data=d,ages2use=9:13,weighted=TRUE)
+sum1w <- cbind(summary(cc1w),confint(cc1w))
+cr1 <- chapmanRobson(ct~age,data=d,ages2use=9:13)
+sum1cr <- cbind(summary(cr1),confint(cr1))
+plot(cr1)
+
+## With 8-13
+cc2 <- catchCurve(ct~age,data=d,ages2use=8:13)
+sum2 <- cbind(summary(cc2),confint(cc2))
+plot(cc2)
+cc2w <- catchCurve(ct~age,data=d,ages2use=8:13,weighted=TRUE)
+sum2w <- cbind(summary(cc2w),confint(cc2w))
+cr2 <- chapmanRobson(ct~age,data=d,ages2use=8:13)
+sum2cr <- cbind(summary(cr2),confint(cr2))
+plot(cr2)
+
+## With 9-14
+cc3 <- catchCurve(ct~age,data=d,ages2use=9:14)
+sum3 <- cbind(summary(cc3),confint(cc3))
+plot(cc3)
+cc3w <- catchCurve(ct~age,data=d,ages2use=9:14,weighted=TRUE)
+sum3w <- cbind(summary(cc3w),confint(cc3w))
+cr3 <- chapmanRobson(ct~age,data=d,ages2use=9:14)
+sum3cr <- cbind(summary(cr3),confint(cr3))
+plot(cr3)
+
+## With 8-14
+cc4 <- catchCurve(ct~age,data=d,ages2use=8:14)
+sum4 <- cbind(summary(cc4),confint(cc4))
+plot(cc4)
+cc4w <- catchCurve(ct~age,data=d,ages2use=8:14,weighted=TRUE)
+sum4w <- cbind(summary(cc4w),confint(cc4w))
+cr4 <- chapmanRobson(ct~age,data=d,ages2use=8:14)
+sum4cr <- cbind(summary(cr4),confint(cr4))
+plot(cr4)
+```
+
+#### With 9-13
+1. This is a longitudinal catch-curve.
+1. Ages 9-13.
+1. XXX
+    1. Z=`r sum1w["Z","Estimate"]` (CI: `r sum1w["Z","95% LCI"]`,`r sum1w["Z","95% UCI"]`)
+    1. A=`r sum1w["A","Estimate"]` (CI: `r sum1w["A","95% LCI"]`,`r sum1w["A","95% UCI"]`)
+    1. S=`r 100-sum1w["A","Estimate"]` (CI: `r 100-sum1w["A","95% UCI"]`,`r 100-sum1w["A","95% LCI"]`)
+1. XXX
+    1. Z=`r sum1cr["Z","Estimate"]` (CI: `r sum1cr["Z","95% LCI"]`,`r sum1cr["Z","95% UCI"]`)
+    1. A=`r 100-sum1cr["S","Estimate"]` (CI: `r 100-sum1cr["S","95% UCI"]`,`r 100-sum1cr["S","95% LCI"]`)
+    1. S=`r sum1cr["S","Estimate"]` (CI: `r sum1cr["S","95% LCI"]`,`r sum1cr["S","95% LCI"]`)
+    1. A=1-e<sup>-Z</sup>
+
+
+#### With 8-13
+1. This is a longitudinal catch-curve.
+1. Ages 8-13.
+1. XXX
+    1. Z=`r sum2w["Z","Estimate"]` (CI: `r sum2w["Z","95% LCI"]`,`r sum2w["Z","95% UCI"]`)
+    1. A=`r sum2w["A","Estimate"]` (CI: `r sum2w["A","95% LCI"]`,`r sum2w["A","95% UCI"]`)
+    1. S=`r 100-sum2w["A","Estimate"]` (CI: `r 100-sum2w["A","95% UCI"]`,`r 100-sum2w["A","95% LCI"]`)
+1. XXX
+    1. Z=`r sum2cr["Z","Estimate"]` (CI: `r sum2cr["Z","95% LCI"]`,`r sum2cr["Z","95% UCI"]`)
+    1. A=`r 100-sum2cr["S","Estimate"]` (CI: `r 100-sum2cr["S","95% UCI"]`,`r 100-sum2cr["S","95% LCI"]`)
+    1. S=`r sum2cr["S","Estimate"]` (CI: `r sum2cr["S","95% LCI"]`,`r sum2cr["S","95% LCI"]`)
+1. A=1-e<sup>-Z</sup>
+
+
+#### With 9-14
+1. This is a longitudinal catch-curve.
+1. Ages 9-14.
+1. XXX
+    1. Z=`r sum3w["Z","Estimate"]` (CI: `r sum3w["Z","95% LCI"]`,`r sum3w["Z","95% UCI"]`)
+    1. A=`r sum3w["A","Estimate"]` (CI: `r sum3w["A","95% LCI"]`,`r sum3w["A","95% UCI"]`)
+    1. S=`r 100-sum3w["A","Estimate"]` (CI: `r 100-sum3w["A","95% UCI"]`,`r 100-sum3w["A","95% LCI"]`)
+1. XXX
+    1. Z=`r sum3cr["Z","Estimate"]` (CI: `r sum3cr["Z","95% LCI"]`,`r sum3cr["Z","95% UCI"]`)
+    1. A=`r 100-sum3cr["S","Estimate"]` (CI: `r 100-sum3cr["S","95% UCI"]`,`r 100-sum3cr["S","95% LCI"]`)
+    1. S=`r sum3cr["S","Estimate"]` (CI: `r sum3cr["S","95% LCI"]`,`r sum3cr["S","95% LCI"]`)
+
+1. A=1-e<sup>-Z</sup>
+
+
+
+#### With 8-14
+1. This is a longitudinal catch-curve.
+1. Ages 8-14.
+1. XXX
+    1. Z=`r sum4w["Z","Estimate"]` (CI: `r sum4w["Z","95% LCI"]`,`r sum4w["Z","95% UCI"]`)
+    1. A=`r sum4w["A","Estimate"]` (CI: `r sum4w["A","95% LCI"]`,`r sum4w["A","95% UCI"]`)
+    1. S=`r 100-sum4w["A","Estimate"]` (CI: `r 100-sum4w["A","95% UCI"]`,`r 100-sum4w["A","95% LCI"]`)
+1. XXX
+    1. Z=`r sum4cr["Z","Estimate"]` (CI: `r sum4cr["Z","95% LCI"]`,`r sum4cr["Z","95% UCI"]`)
+    1. A=`r 100-sum4cr["S","Estimate"]` (CI: `r 100-sum4cr["S","95% UCI"]`,`r 100-sum4cr["S","95% LCI"]`)
+    1. S=`r sum4cr["S","Estimate"]` (CI: `r sum4cr["S","95% LCI"]`,`r sum4cr["S","95% LCI"]`)
+1. A=1-e<sup>-Z</sup>
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<KBLT>>
+```
+
+----
+
+## Stannard Rock Lake Trout
+```{r echo=FALSE, results='hide', fig.show='hide',warning=FALSE}
+d <- data.frame(age=6:14,
+                yr63=c(129,339,331,192, 70, 16,0.5,0.5,0.5),
+                yc63=c( 45, NA, NA, NA,491,163,117, 18,  7),
+                yc54=c( NA, NA, NA,192, 63, 39, 5,0.5, 0.5),
+                yc67=c(101,733,1517,1560,1031,445,300,NA,NA)) %>%
+  mutate(log54=log(yc54),log67=log(yc67))
+d
+
+## 1963 Capture year
+cc63 <- catchCurve(yr63~age,data=d,ages2use=8:11,weighted=TRUE)
+sum63 <- cbind(summary(cc63),confint(cc63))
+plot(cc63)
+cr63 <- chapmanRobson(yr63~age,data=d,ages2use=8:11)
+sum63cr <- cbind(summary(cr63),confint(cr63))
+
+## 1963 Year-Class
+cc63yc <- catchCurve(yc63~age,data=d,ages2use=10:14,weighted=TRUE)
+sum63yc <- cbind(summary(cc63yc),confint(cc63yc))
+plot(cc63yc)
+cr63yc <- chapmanRobson(yc63~age,data=d,ages2use=10:14)
+sum63yccr <- cbind(summary(cr63yc),confint(cr63yc))
+
+## 1954 Year-Class
+cc54yc <- catchCurve(yc54~age,data=d,ages2use=9:14,weighted=TRUE)
+sum54yc <- cbind(summary(cc54yc),confint(cc54yc))
+plot(cc54yc)
+cr54yc <- chapmanRobson(yc54~age,data=d,ages2use=9:14)
+sum54yccr <- cbind(summary(cr54yc),confint(cr54yc))
+
+## 1967 Year-Class
+cc67yc <- catchCurve(yc67~age,data=d,ages2use=9:12,weighted=TRUE)
+sum67yc <- cbind(summary(cc67yc),confint(cc67yc))
+plot(cc67yc)
+cr67yc <- chapmanRobson(yc67~age,data=d,ages2use=9:12)
+sum67yccr <- cbind(summary(cr67yc),confint(cr67yc))
+
+## 1954 to 1967 Comparison
+### Using ages 9-14
+d2 <- stack(d,select=c(yc54,yc67))
+names(d2) <- c("ct","grp")
+d2 %<>% mutate(age=c(6:14,6:14),logct=log(ct)) %>%
+  filterD(age>=9,age<=14)
+
+lm1 <- lm(logct~age*grp,data=d2)
+anova(lm1)
+fitPlot(lm1)
+
+### Using ages 9-12
+d3 <- filterD(d2,age<=12)
+lm2 <- lm(logct~age*grp,data=d3)
+anova(lm2)
+fitPlot(lm2)
+```
+
+1. 1956 year-class.
+1. Shown below.
+```{r echo=FALSE}
+d[,1:5]
+```
+1. 
+    1. 1963 Capture Year
+        1. Cross-sectional
+        1. Ages 8-11
+        1. Z=`r sum63["Z","Estimate"]` (CI: `r sum63["Z","95% LCI"]`,`r sum63["Z","95% UCI"]`)
+        1. A=`r sum63["A","Estimate"]`
+        1. Z=`r sum63cr["Z","Estimate"]` (CI: `r sum63cr["Z","95% LCI"]`,`r sum63cr["Z","95% UCI"]`)
+        1. A=`r 100-sum63cr["S","Estimate"]`
+1. 
+    1. 1963 Year-Class
+        1. Longitudinal
+        1. Ages 9-12
+        1. Z=`r sum63yc["Z","Estimate"]` (CI: `r sum63yc["Z","95% LCI"]`,`r sum63yc["Z","95% UCI"]`)
+        1. A=`r sum63yc["A","Estimate"]`
+        1. Z=`r sum63yccr["Z","Estimate"]` (CI: `r sum63yccr["Z","95% LCI"]`,`r sum63yccr["Z","95% UCI"]`)
+        1. A=`r 100-sum63yccr["S","Estimate"]`
+1. 
+    1. 1954 Year-Class
+        1. Longitudinal
+        1. Ages 9-12
+        1. Z=`r sum54yc["Z","Estimate"]` (CI: `r sum54yc["Z","95% LCI"]`,`r sum54yc["Z","95% UCI"]`)
+        1. A=`r sum54yc["A","Estimate"]`
+        1. Z=`r sum54yccr["Z","Estimate"]` (CI: `r sum54yccr["Z","95% LCI"]`,`r sum54yccr["Z","95% UCI"]`)
+        1. A=`r 100-sum54yccr["S","Estimate"]`
+1. 
+    1. 1967 Year-Class
+        1. Longitudinal
+        1. Ages 9-12
+        1. Z=`r sum67yc["Z","Estimate"]` (CI: `r sum67yc["Z","95% LCI"]`,`r sum67yc["Z","95% UCI"]`)
+        1. A=`r sum67yc["A","Estimate"]`
+        1. Z=`r sum67yccr["Z","Estimate"]` (CI: `r sum67yccr["Z","95% LCI"]`,`r sum67yccr["Z","95% UCI"]`)
+        1. A=`r 100-sum67yccr["S","Estimate"]`
+

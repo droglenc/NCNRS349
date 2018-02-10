@@ -62,8 +62,6 @@ Note that some of the more distant dates are subject to change.
     <td>Mortality</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
---->
-
 
 <tr><td>M 5-Feb</td>
     <td>Mortality</td>
@@ -72,38 +70,39 @@ Note that some of the more distant dates are subject to change.
     <td>Mortality Exercise<br>Lake Superior Fisheries Management Plan Advisory Panel meeting</td>
     <td>--</td></tr>
 <tr><td>W 7-Feb</td>
-    <td>Mortality Components</td>
+    <td>Mortality Work Day</td>
     <td>Age-Length Key HW</td></tr>
 <tr><td>F 9-Feb</td>
-    <td>Growth</td>
+    <td>Mortality Components</td>
     <td>Mortality HW</td></tr>
 <tr><td></td><td></td><td></td></tr>
+--->
 
 <tr><td>M 12-Feb</td>
-    <td></td>
+    <td>Spawning Potential Ratio</td>
     <td>--</td></tr>
 <tr><td>T 13-Feb</td>
-    <td></td>
+    <td>SPR Exercise</td>
     <td>--</td></tr>
 <tr><td>W 14-Feb</td>
-    <td></td>
+    <td>Stock-Recruitment</td>
     <td>--</td></tr>
 <tr><td>F 16-Feb</td>
-    <td></td>
+    <td>Growth</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 19-Feb</td>
-    <td></td>
+    <td>Work Day</td>
     <td>--</td></tr>
 <tr><td>T 20-Feb</td>
     <td colspan="2"><span style="color:red">First Exam</span></td></tr>
 <tr><td>W 21-Feb</td>
     <td></td>
-    <td>--</td></tr>
+    <td>Stock-Recruitment HW</td></tr>
 <tr><td>F 23-Feb</td>
     <td></td>
-    <td>--</td></tr>
+    <td>Growth HW</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 26-Feb</td>

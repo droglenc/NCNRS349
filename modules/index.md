@@ -231,20 +231,19 @@ title: Modules
   </div>
 </div>
 
-
-<!-- #### GROWTH #### -->
+<!-- #### SPAWNING POTENTIAL RATIO #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion1" href="#cGrowth">Growth</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cSPR">Spawning Potential Ratio</a>
     </h4>
   </div>
-  <div id="cGrowth" class="panel-collapse collapse">
+  <div id="cSPR" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="Growth/RG.html">Pre-Lecture Readings</a></li>
-        <li><a href="Growth/PPT.pptx">Lecture Slides</a></li>
-        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_B.html">#2</a></li>
+        <li><a href="SPR/RG.html">Pre-Lecture Readings</a></li>
+        <li><a href="SPR/PPT.pptx">Lecture Slides</a></li>
+        <li><a href="SPR/Cases/SPR.html">Class Exercise</a></li>
       </ul>
     </div>
   </div>
@@ -268,19 +267,19 @@ title: Modules
   </div>
 </div>
 
-<!-- #### SPAWNING POTENTIAL RATIO #### -->
+<!-- #### GROWTH #### -->
 <div class="panel panel-default">
   <div class="panel-heading">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion1" href="#cSPR">Spawning Potential Ratio</a>
+      <a data-toggle="collapse" data-parent="#accordion1" href="#cGrowth">Growth</a>
     </h4>
   </div>
-  <div id="cSPR" class="panel-collapse collapse">
+  <div id="cGrowth" class="panel-collapse collapse">
     <div class="panel-body">
       <ul>
-        <li><a href="SPR/RG.html">Pre-Lecture Readings</a></li>
-        <li><a href="SPR/PPT.pptx">Lecture Slides</a></li>
-        <li><a href="SPR/Cases/SPR.html">Class Exercise</a></li>
+        <li><a href="Growth/RG.html">Pre-Lecture Readings</a></li>
+        <li><a href="Growth/PPT.pptx">Lecture Slides</a></li>
+        <li>Homework -- <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_A.html">#1</a>, <a href="http://derekogle.com/IFAR/exercises/AKSlimySculpins_Growth_B.html">#2</a></li>
       </ul>
     </div>
   </div>

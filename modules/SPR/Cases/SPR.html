@@ -23,7 +23,10 @@ css: /css/codebox.css
 <div id="motivation" class="section level2">
 <h2>Motivation</h2>
 <p>One method of controlling some invasive species is to develop extract-and-kill fisheries for those fish. It has been suggested that such a method could use commercial fishers on the Mississippi River to control invasive <a href="https://en.wikipedia.org/wiki/Silver_carp">Silver Carp (<em>Hypophthalmichthys molitrix</em>)</a>. For example, <a href="http://www.reabic.net/journals/mbi/2015/3/MBI_2015_Seibert_etal.pdf">it has been proposed</a> that commercial fishers could be paid for the biomass of Silver Carp that they removed from the Mississippi River. An open question, though, is whether commercial fishers can remove enough Silver Carp to effectively reduce the population (while still making it worth their while commercially). One way to answer this question is to determine if commericial fishers could realistically force the SPR below 0.20, a value that would lead to recruitment over-fishing and, in theory, a collapse of the population.</p>
-<p><img src="SilverCarpInNet.jpg" alt="SilverCarp" /></p>
+<div class="figure">
+<img src="SilverCarpInNet.jpg" alt="SilverCarp" />
+<p class="caption">SilverCarp</p>
+</div>
 <p> </p>
 </div>
 <div id="create-a-model" class="section level2">
@@ -37,14 +40,17 @@ is vulnerable to harvest by commercial fishers for total lengths between 200 and
 has an instantaneous natural mortality of 0.25,
 </li>
 <li>
+has a fecundity-length relationshop that follows this equation (<i>round to whole numbers</i>) – <span class="math inline">\(Fecundity=e^{9+0.005*TL}\)</span>.
+<li>
 has a maturity schedule that follows this equation (<i>round to three decimals</i>) – <span class="math inline">\(PR(mature)=\frac{1}{1+e^{15-0.04*TL}}\)</span>, and
 </li>
-<li>
-has a fecundity-length relationshop that follows this equation (<i>round to whole numbers</i>) – <span class="math inline">\(Fecundity=e^{9+0.005*TL}\)</span>.
 </ul>
 <p>Use this information to create a spreadsheet model that can be used to compute the SPR under various levels of instantaneous fishing mortality (<span class="math inline">\(F\)</span>) and gear selectivities. Your model should model lengths as the center of 50-mm length categories (e.g., use 225 mm to represent the 200-250 mm category) and be flexible enough for you to input different values of <span class="math inline">\(F\)</span> and selectivities to see the effect on SPR.</p>
 <p>Your spreadsheet might look like that below.</p>
-<p><img src="ExExcel.jpg" alt="ExExcel" /></p>
+<div class="figure">
+<img src="ExExcel.jpg" alt="ExExcel" />
+<p class="caption">ExExcel</p>
+</div>
 <p> </p>
 </div>
 <div id="scenarios" class="section level2">
@@ -85,7 +91,10 @@ The fishers can expend enough effort to reach <span class="math inline">\(F=1.0\
 <li>
 If the fish were to mature somewhat later (e.g., change the slope for the maturity schedule from 0.04 to 0.025), then is it more or less difficult for the fishers to drive the population towards recruitment over-fishing. Explain (biologically/ecologically) your observation.
 </ol>
-<p><img src="AsianCarpJumping.jpg" alt="AsianCarp" /></p>
+<div class="figure">
+<img src="AsianCarpJumping.jpg" alt="AsianCarp" />
+<p class="caption">AsianCarp</p>
+</div>
 <hr />
 <style>
 img[alt="SilverCarp"], img[alt="AsianCarp"] { 
@@ -100,10 +109,9 @@ img[alt="ExExcel"] {
   margin: 0 auto;
 }
 </style>
-<div class="references">
+</div>
 
-</div>
-</div>
+
 
 
 </div>
@@ -111,9 +119,13 @@ img[alt="ExExcel"] {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
+
 
 </script>
 
@@ -122,7 +134,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

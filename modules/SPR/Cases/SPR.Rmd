@@ -13,7 +13,7 @@ output:
 ```{r echo=FALSE, eval=FALSE}
 # First line renders an appropriate HTML file for the webpage
 # RUN MANUALLY (following using Knit HTML button)
-setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Recruitment/Cases/")
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/SPR/Cases/")
 source("../../../rhelpers/Rhelpers.R")
 modHTML("SPR",need2render=FALSE)
 ```
@@ -56,8 +56,8 @@ Suppose that a population of Silver Carp ...
 <ul>
   <li>is vulnerable to harvest by commercial fishers for total lengths between 200 and 900 mm,</li>
   <li>has an instantaneous natural mortality of 0.25,</li>
-  <li>has a maturity schedule that follows this equation (<i>round to three decimals</i>) -- $PR(mature)=\frac{1}{1+e^{15-0.04*TL}}$, and</li>
   <li>has a fecundity-length relationshop that follows this equation (<i>round to whole numbers</i>) -- $Fecundity=e^{9+0.005*TL}$.
+  <li>has a maturity schedule that follows this equation (<i>round to three decimals</i>) -- $PR(mature)=\frac{1}{1+e^{15-0.04*TL}}$, and</li>
 </ul>
 
 Use this information to create a spreadsheet model that can be used to compute the SPR under various levels of instantaneous fishing mortality ($F$) and gear selectivities.  Your model should model lengths as the center of 50-mm length categories (e.g., use 225 mm to represent the 200-250 mm category) and be flexible enough for you to input different values of $F$ and selectivities to see the effect on SPR.

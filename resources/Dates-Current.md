@@ -88,7 +88,7 @@ Note that some of the more distant dates are subject to change.
     <td>Stock-Recruitment</td>
     <td>--</td></tr>
 <tr><td>F 16-Feb</td>
-    <td>Growth</td>
+    <td>Work Day</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
@@ -96,9 +96,9 @@ Note that some of the more distant dates are subject to change.
     <td>Work Day</td>
     <td>--</td></tr>
 <tr><td>T 20-Feb</td>
-    <td colspan="2"><span style="color:red">First Exam</span></td></tr>
+    <td colspan="2"><span style="color:red">First Exam</span> (<a href="Exam1_Guide.html">Study Guide</a></td></tr>
 <tr><td>W 21-Feb</td>
-    <td></td>
+    <td>Growth</td>
     <td>Stock-Recruitment HW</td></tr>
 <tr><td>F 23-Feb</td>
     <td></td>

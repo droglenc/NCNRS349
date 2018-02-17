@@ -76,7 +76,6 @@ Note that some of the more distant dates are subject to change.
     <td>Mortality Components</td>
     <td>Mortality HW</td></tr>
 <tr><td></td><td></td><td></td></tr>
---->
 
 <tr><td>M 12-Feb</td>
     <td>Spawning Potential Ratio</td>
@@ -91,6 +90,7 @@ Note that some of the more distant dates are subject to change.
     <td>Work Day</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
+--->
 
 <tr><td>M 19-Feb</td>
     <td>Work Day</td>

@@ -98,22 +98,22 @@ Note that some of the more distant dates are subject to change.
 <tr><td>T 20-Feb</td>
     <td colspan="2"><span style="color:red">First Exam</span> (<a href="Exam1_Guide.html">Study Guide</a>)</td></tr>
 <tr><td>W 21-Feb</td>
-    <td>Growth</td>
-    <td>Stock-Recruitment HW</td></tr>
+    <td>Work Day</td>
+    <td>--</td></tr>
 <tr><td>F 23-Feb</td>
-    <td></td>
-    <td>Growth HW</td></tr>
+    <td>Growth</td>
+    <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 26-Feb</td>
-    <td></td>
-    <td>--</td></tr>
+    <td>Growth</td>
+    <td>Stock-Recruitment HW</td></tr>
 <tr><td>T 27-Feb</td>
     <td></td>
     <td>--</td></tr>
 <tr><td>W 28-Feb</td>
     <td></td>
-    <td>--</td></tr>
+    <td>Growth HW</td></tr>
 <tr><td>F 2-Mar</td>
     <td></td>
     <td>--</td></tr>

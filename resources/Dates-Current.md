@@ -90,7 +90,6 @@ Note that some of the more distant dates are subject to change.
     <td>Work Day</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
---->
 
 <tr><td>M 19-Feb</td>
     <td>Work Day</td>
@@ -104,12 +103,13 @@ Note that some of the more distant dates are subject to change.
     <td>Growth</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
+--->
 
 <tr><td>M 26-Feb</td>
     <td>Growth</td>
     <td>Stock-Recruitment HW</td></tr>
 <tr><td>T 27-Feb</td>
-    <td></td>
+    <td><a href="../modules/SizeStructure/Cases/Whittlesey.html">Whittlesey Creek Case Study (Do Prep)</a></td>
     <td>--</td></tr>
 <tr><td>W 28-Feb</td>
     <td></td>

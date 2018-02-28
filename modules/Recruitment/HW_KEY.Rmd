@@ -17,9 +17,11 @@ source("../../rhelpers/rhelpers.R")
 modHTML("HW_Key")
 ```
 
-```{r setup, echo=-(1:2), results='hide', message=FALSE, warning=FALSE}
+```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 source("../../rhelpers/knitr_setup.R")
 options(show.signif.stars=FALSE)
+```
+```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 library(FSA)
 library(FSAdata)
 library(nlstools)
@@ -37,11 +39,18 @@ ind <- srFuns(type="independence")
 
 ## Escanaba Lake Walleye
 
-```{r RickerMultFit, echo=FALSE, results='hide', warning=FALSE}
+```{r RickerMultFit1, echo=FALSE, results='hide', warning=FALSE}
 ## Multiplicative Model
 svR <- srStarts(age0~age5,data=WalleyeEL,type="Ricker")
 srR <- nls(logage0~log(rckr(age5,a,b)),data=WalleyeEL,start=svR)
+```
+```{r RickerMultFit2, echo=FALSE, eval=FALSE}
 bootR <- nlsBoot(srR)
+```
+```{r echo=FALSE, results='hide', warning=FALSE}
+load("bootR.Rdata")
+```
+```{r RickerMultFit3, echo=FALSE, results='hide', warning=FALSE, message=FALSE}
 cbind(estimates=coef(srR),confint(srR),confint(bootR))
 tmp <- apply(bootR$coefboot,MARGIN=1,FUN=rckr,S=mnS)
 predMeanR <- c(Estimate=rckr(mnS,a=coef(srR)),quantile(tmp,c(0.025,0.975)))
@@ -94,7 +103,9 @@ legend("topright",c("Ricker","Independence"),lwd=2,lty=1:2,bty="n")
 #### R Appendix
 ```{r eval=FALSE, prompt=FALSE}
 <<setup>>
-<<RickerMultFit>>
+<<RickerMultFit1>>
+<<RickerMultFit2>>
+<<RickerMultFit3>>
 <<IndepMultFit>>
 <<Test>>
 <<fitPlot>>

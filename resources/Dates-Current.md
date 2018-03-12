@@ -134,7 +134,7 @@ Note that some of the more distant dates are subject to change.
     <td>--</td></tr>
 <tr><td>T 13-Mar</td>
     <td><a href="../modules/SizeStructure/Cases/GoeddeCoble.html">Goedde &amp; Coble Case Study</a> (Do Prep)</td>
-    <td>--</td></tr>
+    <td><a href="../modules/SizeStructure/Cases/LakeLouiseBG.html">Bluegill Gear Bias Case Study</a></td></tr>
 <tr><td>W 14-Mar</td>
     <td>Weight-Length</td>
     <td>--</td></tr>

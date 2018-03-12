@@ -103,7 +103,6 @@ Note that some of the more distant dates are subject to change.
     <td>Growth</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
---->
 
 <tr><td>M 26-Feb</td>
     <td>Growth</td>
@@ -128,6 +127,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td>M 9-Mar</td>
     <td colspan="2"><span style="color:coral">NO CLASS (Mid-Session)</span></td></tr>
 <tr><td></td><td></td><td></td></tr>
+--->
 
 <tr><td>M 12-Mar</td>
     <td></td>
@@ -139,12 +139,12 @@ Note that some of the more distant dates are subject to change.
     <td></td>
     <td>--</td></tr>
 <tr><td>F 16-Mar</td>
-    <td>Speaker -- Zach Lawson</td>
+    <td></td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 19-Mar</td>
-    <td></td>
+    <td>Speaker -- Zach Lawson</td>
     <td>--</td></tr>
 <tr><td>T 20-Mar</td>
     <td></td>
@@ -176,7 +176,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td>T 3-Apr</td>
     <td colspan="2"><span style="color:red">Second Exam</span></td></tr>
 <tr><td>W 4-Apr</td>
-    <td> Speaker -- Mike Seider</td>
+    <td></td>
     <td>--</td></tr>
 <tr><td>F 6-Apr</td>
     <td></td>
@@ -184,7 +184,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 9-Apr</td>
-    <td></td>
+    <td>Speaker -- Mike Seider</td>
     <td>--</td></tr>
 <tr><td>T 10-Apr</td>
     <td></td>

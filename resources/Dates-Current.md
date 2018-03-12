@@ -130,30 +130,30 @@ Note that some of the more distant dates are subject to change.
 --->
 
 <tr><td>M 12-Mar</td>
-    <td></td>
+    <td>Size Structure</td>
     <td>--</td></tr>
 <tr><td>T 13-Mar</td>
-    <td></td>
+    <td><a href="../modules/SizeStructure/Cases/GoeddeCoble.html">Goedde &amp; Coble Case Study</a> (Do Prep)</td>
     <td>--</td></tr>
 <tr><td>W 14-Mar</td>
-    <td></td>
+    <td>Weight-Length</td>
     <td>--</td></tr>
 <tr><td>F 16-Mar</td>
-    <td></td>
-    <td>--</td></tr>
+    <td>Condition</td>
+    <td>Size Structure HW</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 19-Mar</td>
     <td>Speaker -- Zach Lawson</td>
     <td>--</td></tr>
 <tr><td>T 20-Mar</td>
-    <td></td>
-    <td>--</td></tr>
+    <td>Bag Limits</td>
+    <td>Lawson Reflection<br>Condition HW</td></tr>
 <tr><td>W 21-Mar</td>
-    <td></td>
+    <td>Bag Limits Readings</td>
     <td>--</td></tr>
 <tr><td>F 23-Mar</td>
-    <td></td>
+    <td>Size Limits</td>
     <td>--</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
@@ -184,13 +184,13 @@ Note that some of the more distant dates are subject to change.
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 9-Apr</td>
-    <td>Speaker -- Mike Seider</td>
+    <td></td>
     <td>--</td></tr>
 <tr><td>T 10-Apr</td>
     <td></td>
     <td>--</td></tr>
 <tr><td>W 11-Apr</td>
-    <td></td>
+    <td>Speaker -- Mike Seider</td>
     <td>--</td></tr>
 <tr><td>F 13-Apr</td>
     <td></td>

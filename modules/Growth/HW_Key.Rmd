@@ -1,0 +1,150 @@
+---
+layout: page
+title: Homework Key
+subtitle: Growth
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: false
+    lib_dir: zlibs
+---
+
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/Growth/")
+source("../../rhelpers/rhelpers.R")
+modHTML("HW_Key")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+source("../../rhelpers/knitr_setup.R")
+options(show.signif.stars=FALSE)
+```
+```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+library(FSA)
+library(FSAdata)
+library(nlstools)
+library(dplyr)
+library(magrittr)
+
+data(SculpinALTER)
+vbTyp <- vbFuns("Typical")
+```
+
+----
+
+## Alaskan Slimy Sculpin A
+
+```{r TypicalFit1, echo=FALSE, results='hide', warning=FALSE}
+svTyp <- vbStarts(tl~age,data=SculpinALTER,type="Typical")
+fitTyp <- nls(tl~vbTyp(age,Linf,K,t0),data=SculpinALTER,start=svTyp)
+```
+```{r TypicalFit2, eval=FALSE, echo=FALSE, results='hide', warning=FALSE}
+bootTyp <- nlsBoot(fitTyp)
+```
+```{r echo=FALSE, results='hide', warning=FALSE}
+load("bootTyp.Rdata")
+```
+```{r TypicalFit3, echo=FALSE, results='hide', warning=FALSE}
+estsTyp <- cbind(Est=coef(fitTyp),confint(bootTyp))
+p3Typ <- apply(bootTyp$coefboot,MARGIN=1,FUN=vbTyp,t=3)
+p3Typ <- c(Est=vbTyp(3,coef(fitTyp)),quantile(p3Typ,c(0.025,0.975)))
+halfLinf <- log(2)/coef(fitTyp)[["K"]]
+```
+
+1. The plot is shown below. The data show a fairly obvious curve, a fairly obious asymptote, no fish less than age-1 are shown, and there is considerable variable in length at each age.
+1. The plot is shown below.
+1. The residual plot is shown below. There is a slight heteroscedasticity, no nonlinear, and approximate normality of the residuals.
+1. The typical von Bertalanffy equation is $E(L|t)=`r formatC(estsTyp["Linf","Est"],format="f",digits=1)`(1-e^{-`r formatC(estsTyp["K","Est"],format="f",digits=2)`(t+`r formatC(-1*estsTyp["t0","Est"],format="f",digits=2)`)})$.
+1. The asymptotic mean length of Slimy Sculpins is `r formatC(estsTyp["Linf","Est"],format="f",digits=1)`. The Brody growth coefficent, or the rate at which the mean length approaches the asymptotic mean length, is `r formatC(estsTyp["K","Est"],format="f",digits=2)`. The age at which the mean length is zero (i.e,. the x-intercept) is `r formatC(estsTyp["t0","Est"],format="f",digits=2)`.
+1. The 95% confidence interval for the asymptotic mean length is `r formatC(estsTyp["Linf","95% LCI"],format="f",digits=1)` to `r formatC(estsTyp["Linf","95% UCI"],format="f",digits=1)`, for the Brody growth coefficient is `r formatC(estsTyp["K","95% LCI"],format="f",digits=2)` to `r formatC(estsTyp["K","95% UCI"],format="f",digits=2)`, and for the x-intercept is `r formatC(estsTyp["t0","95% LCI"],format="f",digits=2)` to `r formatC(estsTyp["t0","95% UCI"],format="f",digits=2)`. The intervals for the asymptotic mean length and Brody growth coefficient are quite wide.
+1. The predicted mean length at age-3 is `r formatC(p3Typ["Est"],format="f",digits=1)` (with 95% confidence interval from `r formatC(p3Typ["2.5%"],format="f",digits=1)` to `r formatC(p3Typ["97.5%"],format="f",digits=1)`). This interval is fairly narrow because it is a confidence (rather than prediction) interval and age-3 is a well-represented age in the data.
+1. Slimy Sculpins will have reached half of their asymptotic length at age `r formatC(halfLinf,format="f",digits=2)`.
+
+```{r fitPlotA, echo=FALSE}
+x <- seq(0,5,length.out=199)
+pTyp <- vbTyp(x,Linf=coef(fitTyp))
+xlmts <- range(c(x,SculpinALTER$age))
+ylmts <- range(c(pTyp,SculpinALTER$tl))
+plot(tl~age,data=SculpinALTER,xlab="Age", ylab="Total Length (mm)",xlim=xlmts,
+     ylim=ylmts,pch=19,col=rgb(0,0,0,1/3))
+lines(pTyp~x,lwd=2)
+LCI <- UCI <- numeric(length(x))
+for(i in 1:length(x)) {
+  tmp <- apply(bootTyp$coefboot,MARGIN=1,FUN=vbTyp,t=x[i]) 
+  LCI[i] <- quantile(tmp,0.025) 
+  UCI[i] <- quantile(tmp,0.975)
+}
+ylmts <- range(c(pTyp,LCI,UCI,SculpinALTER$tl))
+lines(UCI~x,lwd=2,lty="dashed")
+lines(LCI~x,lwd=2,lty="dashed")
+```
+```{r residPlotA, echo=FALSE}
+residPlot(fitTyp)
+```
+
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<setup>>
+<<TypicalFit1>>
+<<TypicalFit2>>
+<<TypicalFit3>>
+<<fitPlotA>>
+<<residPlotA>>
+```
+
+## Alaskan Slimy Sculpin B
+
+```{r OriginalFit1, echo=FALSE, results='hide', warning=FALSE}
+vbOrig <- vbFuns("Original")
+svOrig <- vbStarts(tl~age,data=SculpinALTER,type="Original")
+fitOrig <- nls(tl~vbOrig(age,Linf,K,L0),data=SculpinALTER,start=svOrig)
+```
+```{r OriginalFit2, eval=FALSE, echo=FALSE, results='hide', warning=FALSE}
+bootOrig <- nlsBoot(fitOrig)
+```
+```{r echo=FALSE, results='hide', warning=FALSE}
+load("bootOrig.Rdata")
+```
+```{r OriginalFit3, echo=FALSE, results='hide', warning=FALSE}
+estsOrig <- cbind(Est=coef(fitOrig),confint(bootOrig))
+p3Orig <- apply(bootOrig$coefboot,MARGIN=1,FUN=vbOrig,t=3)
+p3Orig <- c(Est=vbOrig(3,coef(fitOrig)),quantile(p3Orig,c(0.025,0.975)))
+```
+
+1. The plot is shown below.
+1. The residual plot is shown below. There is a slight heteroscedasticity, no nonlinear, and approximate normality of the residuals.
+1. The typical von Bertalanffy equation is $E(L|t)=`r formatC(estsOrig["Linf","Est"],format="f",digits=1)`-(`r formatC(estsOrig["Linf","Est"],format="f",digits=1)`-`r formatC(estsOrig["L0","Est"],format="f",digits=1)`)(1-e^{-`r formatC(estsOrig["K","Est"],format="f",digits=2)`t})$.
+1. The asymptotic mean length of Slimy Sculpins is `r formatC(estsOrig["Linf","Est"],format="f",digits=1)`. The Brody growth coefficent, or the rate at which the mean length approaches the asymptotic mean length, is `r formatC(estsOrig["K","Est"],format="f",digits=2)`. The mean length at age-0 is (i.e., the y-intercept) is `r formatC(estsOrig["L0","Est"],format="f",digits=1)`.
+1. The common parameter estimates from the typical and the original parameterizations of the von Bertalanffy are the same. This is because a parameterization is the same model, just with different parameters.
+1. The predicted mean length at age-3 is `r formatC(p3Orig["Est"],format="f",digits=1)` (with 95% confidence interval from `r formatC(p3Orig["2.5%"],format="f",digits=1)` to `r formatC(p3Orig["97.5%"],format="f",digits=1)`). This prediction is the same as that from fitting the typical model (within rounding for the confidence intervals).
+
+```{r fitPlotB, echo=FALSE}
+x <- seq(0,5,length.out=199)
+pOrig <- vbOrig(x,Linf=coef(fitOrig))
+xlmts <- range(c(x,SculpinALTER$age))
+ylmts <- range(c(pTyp,SculpinALTER$tl))
+plot(tl~age,data=SculpinALTER,xlab="Age", ylab="Total Length (mm)",xlim=xlmts,
+     ylim=ylmts,pch=19,col=rgb(0,0,0,1/3))
+lines(pOrig~x,lwd=2)
+LCI <- UCI <- numeric(length(x))
+for(i in 1:length(x)) {
+  tmp <- apply(bootOrig$coefboot,MARGIN=1,FUN=vbOrig,t=x[i]) 
+  LCI[i] <- quantile(tmp,0.025) 
+  UCI[i] <- quantile(tmp,0.975)
+}
+ylmts <- range(c(pOrig,LCI,UCI,SculpinALTER$tl))
+lines(UCI~x,lwd=2,lty="dashed")
+lines(LCI~x,lwd=2,lty="dashed")
+```
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<OriginalFit1>>
+<<OriginalFit2>>
+<<OriginalFit3>>
+<<fitPlotB>>
+```
+

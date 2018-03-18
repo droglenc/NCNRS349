@@ -150,50 +150,41 @@ Note that some of the more distant dates are subject to change.
     <td>Bag Limits Exercise</td>
     <td>Lawson Reflection<br>Condition HW</td></tr>
 <tr><td>W 21-Mar</td>
-    <td>Bag Limits Reading Discussion</td>
-    <td>--</td></tr>
+    <td colspan="2">Bag Limits Reading</td></tr>
 <tr><td>F 23-Mar</td>
-    <td>Size Limits</td>
-    <td>--</td></tr>
+    <td colspan="2">Size Limits</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 26-Mar</td>
-    <td>Minimum Length Exercise</td>
-    <td>--</td></tr>
+    <td colspan="2">Minimum Length Exercise</td></tr>
 <tr><td>T 27-Mar</td>
-    <td>Size Limits Readings (BLG, Crappie)<br>
-    Protected Slot Exercise</td>
-    <td>--</td></tr>
+    <td colspan="2">Size Limits Readings (BLG, Crappie)<br>
+    Protected Slot Exercise</td></tr>
 <tr><td>W 28-Mar</td>
-    <td>Size Limits Readings (YEP, SMB)</td>
-    <td>--</td></tr>
+    <td colspan="2">Size Limits Readings (YEP, SMB)</td></tr>
 <tr><td>F 30-Mar</td>
     <td colspan="2"><span style="color:coral">NO CLASS (Good Friday)</span></td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 2-Apr</td>
-    <td>Review Day</td>
-    <td>--</td></tr>
+    <td colspan="2">Review Day</td></tr>
 <tr><td>T 3-Apr</td>
     <td colspan="2"><span style="color:red">Second Exam</span></td></tr>
 <tr><td>W 4-Apr</td>
-    <td>CWH Readings</td>
-    <td>--</td></tr>
+    <td colspan="2">CWH Readings</td></tr>
 <tr><td>F 6-Apr</td>
-    <td>Quotas Readings</td>
-    <td>--</td></tr>
+    <td colspan="2">Quotas Readings</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 9-Apr</td>
-    <td>Adaptive Management Readings</td>
-    <td>--</td></tr>
+    <td colspan="2">Adaptive Management Readings</td></tr>
 <tr><td>T 10-Apr</td>
     <td colspan="2">Final Exam Work</td></tr>
 <tr><td>W 11-Apr</td>
-    <td>Speaker -- Mike Seider</td>
-    <td>--</td></tr>
+    <td colspan="2">Speaker -- Mike Seider</td></tr>
 <tr><td>F 13-Apr</td>
-    <td colspan="2">Final Exam Work</td></tr>
+    <td>Final Exam Work</td>
+    <td>Seider Reflection</td></tr>
 <tr><td></td><td></td><td></td></tr>
 
 <tr><td>M 16-Apr</td>

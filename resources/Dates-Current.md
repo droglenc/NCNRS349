@@ -147,10 +147,10 @@ Note that some of the more distant dates are subject to change.
     <td>Speaker -- Zach Lawson</td>
     <td>--</td></tr>
 <tr><td>T 20-Mar</td>
-    <td>Bag Limits</td>
+    <td>Bag Limits Exercise </td>
     <td>Lawson Reflection<br>Condition HW</td></tr>
 <tr><td>W 21-Mar</td>
-    <td>Bag Limits Readings</td>
+    <td>Bag Limits Reading Discussion</td>
     <td>--</td></tr>
 <tr><td>F 23-Mar</td>
     <td>Size Limits</td>

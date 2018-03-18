@@ -19,9 +19,9 @@ subtitle: Size/Length Limits
     * What are the three factors that typically determine the success or failure of a length limit?  Define each.  Explain how each of these items may affect your determination to use one of the length limits or not? [For example, which of these items or combination of these items generally leads to a successful application of a protected slot length limit?]
     * Describe how the author's beliefs have about strict catch-and-release have changed over time.
     * How has the strict catch-and-release ethic of most black bass anglers affected manager's ability to manage fish poplations?
-1. Read [Weighing the Effects of Length Limits (Gangl, 2013)](http://gf.nd.gov/magazines/may-2013/weighing-effects-length-limits) and consider the following items.
+1. Read [Weighing the Effects of Length Limits (Gangl, 2013)](Gangl_SizeLimits.pdf) and consider the following items.
     * What are the factors that typically determine the success or failure of a length limit?  Explain how each of these items may affect your determination to use one of the length limits or not?
     * What other considerations led the biologists to not implement length limits in the areas considered?
-1. Read [Bass Length Limits (Oklahoma Wildlife Department)](http://www.wildlifedepartment.com/fishing/fishid/bass_length_limits.pdf) and consider the following items.
+1. Read [Bass Length Limits (Oklahoma Wildlife Department)](OK_bass_length_limits.pdf) and consider the following items.
     * Compare "selective harvest" to "catch and release."
     * Describe population characteristics (density, growth, etc.) from when a minimum or protected slot should be implemented.

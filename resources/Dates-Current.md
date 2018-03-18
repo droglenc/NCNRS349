@@ -127,7 +127,6 @@ Note that some of the more distant dates are subject to change.
 <tr><td>M 9-Mar</td>
     <td colspan="2"><span style="color:coral">NO CLASS (Mid-Session)</span></td></tr>
 <tr><td></td><td></td><td></td></tr>
---->
 
 <tr><td>M 12-Mar</td>
     <td>Size Structure</td>
@@ -142,6 +141,7 @@ Note that some of the more distant dates are subject to change.
     <td>Condition</td>
     <td>Size Structure HW</td></tr>
 <tr><td></td><td></td><td></td></tr>
+--->
 
 <tr><td>M 19-Mar</td>
     <td>Speaker -- Zach Lawson</td>

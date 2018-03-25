@@ -141,7 +141,6 @@ Note that some of the more distant dates are subject to change.
     <td>Condition</td>
     <td>Size Structure HW</td></tr>
 <tr><td></td><td></td><td></td></tr>
---->
 
 <tr><td>M 19-Mar</td>
     <td>Speaker -- Zach Lawson</td>
@@ -154,6 +153,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td>F 23-Mar</td>
     <td colspan="2">Size Limits</td></tr>
 <tr><td></td><td></td><td></td></tr>
+--->
 
 <tr><td>M 26-Mar</td>
     <td colspan="2">Minimum Length Exercise</td></tr>
@@ -169,7 +169,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td>M 2-Apr</td>
     <td colspan="2">Review Day</td></tr>
 <tr><td>T 3-Apr</td>
-    <td colspan="2"><span style="color:red">Second Exam</span></td></tr>
+    <td colspan="2"><span style="color:red">Second Exam</span> (<a href="Exam2_Guide.html">Study Guide</a>)</td></tr>
 <tr><td>W 4-Apr</td>
     <td colspan="2">CWH Readings</td></tr>
 <tr><td>F 6-Apr</td>

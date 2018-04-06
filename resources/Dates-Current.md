@@ -164,7 +164,6 @@ Note that some of the more distant dates are subject to change.
 <tr><td>F 30-Mar</td>
     <td colspan="2"><span style="color:coral">NO CLASS (Good Friday)</span></td></tr>
 <tr><td></td><td></td><td></td></tr>
---->
 
 <tr><td>M 2-Apr</td>
     <td colspan="2">Work/Review Day</td></tr>
@@ -175,6 +174,7 @@ Note that some of the more distant dates are subject to change.
 <tr><td>F 6-Apr</td>
     <td colspan="2">Quotas Readings</td></tr>
 <tr><td></td><td></td><td></td></tr>
+--->
 
 <tr><td>M 9-Apr</td>
     <td colspan="2">Adaptive Management Readings</td></tr>

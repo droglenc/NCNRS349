@@ -32,12 +32,17 @@ modHTML <- function(f,need2render=TRUE) {
   r <- readLines(paste0(f,".Rmd"))
   # Remove everything before the line (blank) after the last mention of
   # Derek H. Ogle in the HTML file
-  tmp <- which(grepl("<em>Derek H. Ogle</em>",h))
+  tmp <- which(grepl("Derek H. Ogle",h))
   h <- h[-(1:(tmp[length(tmp)]+1))]
   # there may be a </div> left at the top, if so delete it
-  tmp1 <- grep("</div>",h)[1]   # where is first </div>
-  tmp2 <- grep("<div",h)[1]     # where is first <div
-  if (tmp1<tmp2) h <- h[-(1:tmp1)]     # remove before if </div> if it is before a <div
+  tmp1 <- grep("</div>",h)         # where are </div>
+  tmp2 <- grep("<div",h)[1]        # where is first <div
+  # remove before </div> if it is before a <div
+  if (is.na(tmp2)) {
+    h <- h[-tmp1]
+  } else {
+    if (tmp1[1]<tmp2) h <- h[-(1:tmp1[1])]
+  }
   # Get the layout, title, subtitle, author, and css from RMD file
   tmp <- c(which(grepl("layout:",r)),which(grepl("title:",r)),which(grepl("author:",r)),which(grepl("css:",r)))
   r <- r[tmp]

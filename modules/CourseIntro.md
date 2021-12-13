@@ -6,7 +6,7 @@ css: /css/modules.css
 
 ## Preparation for Class
 
-* [Reading](XXX){:target="_blank"} (~5 pages) and the [Reading Guide](prep/ANOVA1Assumptions)
+* Read or listen to the media reports linked to in the background of the Class Exercise below. Use these to come to class with general background information about the Lake Mille Lacs Walleye fishery.
 
 ## Practice
 

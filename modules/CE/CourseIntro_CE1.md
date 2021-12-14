@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Homework
+title: Exercise
 subtitle: Class Introduction
 css: "/css/modules.css"
 ---

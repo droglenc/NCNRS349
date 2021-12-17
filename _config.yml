@@ -17,7 +17,7 @@ avatar: "/img/NRS349Logo.jpg"
 navbar-links:
   Resources: "resources"
   Syllabus: "resources/Syllabus-Current"
-  Dates: "resources/Dates-Current"
+  Modules: "resources/Dates-Current"
 
 # --- Footer options --- #
 author:

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Class Exercise
-subtitle: Class Introduction
+subtitle: Mark-Recapture II
 css: /css/modules.css
 ---
 

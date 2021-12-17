@@ -22,7 +22,7 @@ modHTML("MarkRecapture_Notes",need2render=FALSE)
 if (require(FSA)) purl2("MarkRecapture_Notes.Rmd",topnotes="")
 ```
 
-```{r echo=FALSE, results='hide', message=FALSE, warnings=FALSE}
+```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### ##
 # ===== BEGIN -- THIS CAN BE IGNORED =========================
 # Setup of knitr

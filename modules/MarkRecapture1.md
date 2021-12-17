@@ -6,7 +6,7 @@ css: /css/modules.css
 
 ## Preparation for Class
 
-* Read [Section 9.2 in Ogle (2016)](RESOURCES/Ogle_MarkRecapture.pdf) and [Section 8.3 of Hayes (2007)](RESOURCES/Hayesetal-2007-Sect8-3part.pdf) (the complete chapter [is here](http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf)) and prepare answers to [these questions](PREP/MarkRecapture1)
+* Read [Section 9.2 in Ogle (2016)](RESOURCES/Ogle_MarkRecapture.pdf) and [Section 8.3 of Hayes et al. (2007)](RESOURCES/Hayesetal-2007-Sect8-3part.pdf) (the complete chapter [is here](https://cals.ncsu.edu/applied-ecology/wp-content/uploads/sites/4/2019/01/Hayes_et_al_2007.pdf)) and prepare answers to [these questions](PREP/MarkRecapture1)
 
 ## Practice
 

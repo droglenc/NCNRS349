@@ -20,4 +20,4 @@ css: /css/modules.css
 
 ----
 
-[^1]: Skip Section 5.2.3.
+[^1]: Don't spend much time with the R code or statistics in Section 5.2.3, just try to get the idea of what a smoothed ALK is trying to accomplish.

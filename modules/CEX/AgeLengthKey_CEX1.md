@@ -16,9 +16,9 @@ Researchers at the [Center for Quantitative Fisheries Ecology at Old Dominion Un
     1. What proportion of fish in the 31 in TL category are age 11?
 1. Construct an **observed** age-length key from the table above (using R). From these results answer the following questions.
     1. What proportion of fish in the 30 in TL category should be assigned age 10?
-    1. How many of fourty fish in the 25 mm TL category should be assigned age 5?
+    1. How many of forty fish in the 25 mm TL category should be assigned age 5?
     1. Construct a plot of the **observed** age-length key. Are there any potential anomalies in the plot that would suggest that a smoothed age-length key could be appropriate?
-1. Use the semi-random age assignment technique from Isermann and Knight (2005) and the **observed** age-length key to assign ages to the unaged fish in the length-sample. Combine the age-sample and the age-assigned length-sample into a single data frame, add a variable to this data.frame that contains the 1 inch TL categories, and use the combined data frame to answer the following questions.
+1. Use the semi-random age assignment technique from Isermann and Knight (2005) and the **observed** age-length key to assign ages to the unaged fish in the length-sample. Combine the age-sample and the age-assigned length-sample into a single data frame, add a variable to this data.frame that contains the 1 inch TL categories (if necessary), and use the combined data frame to answer the following questions (*note that you will need to compute a variety of summaries to answer the following questions*).
     1. How many fish are estimated to be age 8?
     1. How many fish are estimated to be age 14?
     1. Plot the age distribution for all fish.

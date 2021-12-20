@@ -10,7 +10,7 @@ css: /css/modules.css
 
 ## Practice
 
-* [Class Exercise](CEX/Depletion_CEX1)
+* [Class Exercise](CEX/Depletion_CEX1) ... [code will be posted](CEX/CODES/Depletion.R)
 * [Assignment](CE/Depletion_CE1)
 
 ## Archive

@@ -1,0 +1,212 @@
+---
+layout: page
+title: Mortality I Notes
+author: Derek H. Ogle
+css: /css/codebox.css
+csl: ../../rhelpers/american-fisheries-society.csl
+bibliography: ../../rhelpers/NRS349.bib
+output: 
+  html_document: 
+    fig_width: 3.5
+    fig_height: 3.5
+    self_contained: no
+---
+```{r echo=FALSE, eval=FALSE}
+# First line renders an appropriate HTML file for the webpage
+# Second line makes the script file
+# RUN BOTH MANUALLY (following using Knit HTML button)
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/RESOURCES/")
+source("../../rhelpers/Rhelpers.R")
+modHTML("Mortality1_Notes",need2render=FALSE)
+if (require(FSA)) purl2("Mortality1_Notes.Rmd",topnotes="")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+# ===== BEGIN -- THIS CAN BE IGNORED =========================
+# Setup of knitr
+source("../../rhelpers/knitr_setup.R")
+# declare packages used
+rqrd <- c("FSA","captioner","knitr")
+library(FSA)
+# setup figure, table, and equation captioning
+library(captioner)
+
+figcaps <- captioner(prefix="Figure")
+figcaps("CatchCurveModel","Ideal plots of catch versus age (Left) and the natural log of catch versus age (Right) for a single cohort of fish.  The right graph is called a longitudinal catch curve.  The change in $log(C_{t})$ for a unit change in $t$ is emphasized on the catch curve to reinforce the idea that the slope of the idealized catch curve is $Z$.")
+figcaps("CatchCurveIdeal","Idealized catch curve (plot of the natural log of catch versus age) illustrating the ascending, domed, and descending portions.  The red dotted line represents the idealized catch curve if all age-classes were fully recruited to the fishery.")
+
+tblcaps <- captioner(prefix="Table")
+tblcaps("CatchCurveCross","The hypothetical catch of fish by age and capture year.  The longitudinal catch of the 2002 and the partial 2006 year-classes of fish are shown by the two sets of diagonal cells highlighted in dark grey.  The cross-sectional catch in the 2009 capture year is shown by the column of cells highlighted in light grey.  All data were modeled with Equation 2 assuming that $N_{0}=500$, $Z=-log(0.7)$, and $v=0.1$.")
+
+eqncaps <- captioner(prefix="Equation")
+eqncaps("ModExpModel")
+eqncaps("CatchCurveExpModel")
+eqncaps("CatchCurveModel")
+eqncaps("CatchCurveExpModel2")
+eqncaps("CatchCurveModel2")
+# ===== END -- THIS CAN BE IGNORED ===========================
+```
+
+Mortality is a key component to understanding the population dynamics of fish species.  Total mortality is often estimated from the sequential decline observed in cohorts of fish.  The catch curve regression and Chapman-Robson methods used to analyze this decline are collectively called catch-curve methods and form the topic of these notes.
+
+\ 
+
+# Data Requirements
+In a population that is closed to emigration or immigration, the annual mortality rate ($A$) between two times is equal to the number of deaths during the time period divided by the population size at the start of the time period, or
+
+$$ A = \frac{N_{t}-N_{t+1}}{N_{t}} = 1-\frac{N_{t+1}}{N_{t}} $$
+
+Unfortunately, it is usually not possible to know the number of fish in a population.  However, if the catch of fish ($C$) is proportional to the size of the population, i.e., $C_{t}=vN_{t}$, then algebra quickly shows that
+
+$$ A = \frac{C_{t}-C_{t+1}}{C_{t}} = 1-\frac{C_{t+1}}{C_{t}} $$
+
+Thus, the mortality of a cohort of fish can be estimated from knowing the catches of fish at various times.  In many fisheries, fisheries scientists "record time" by estimating the age of fish.  Thus, the number of fish captured at varous ages, i.e., catch-at-age data, can be used to estimate mortality rates of fish populations.
+
+In the statistical literature, longitudinal data is data that occurs when multiple samples are taken from the same group of individuals over time.  The catches of fish from the same cohort over time is an example of longitudinal data.  Longitudinal fisheries data takes many years to collect, which can be very costly and impart a long time-lag in management decisions.
+
+Catch data from a single year across many cohorts of fish will be identical to longitudinal data of a single cohort if each cohort sampled began with the same number of fish (i.e., recruitment is constant) and if the mortality rate is constant across all ages and years.  For example, the catches-at-age of the hypothetical 2002 and 2006 cohorts is shown on diagonals in `r tblcaps("CatchCurveCross",display="cite")` and are equal to the catch-at-age for fish in the 2009 capture year.  The catch in a single year is called cross-sectional data because it "crosses" several cohorts of fish.
+
+\ 
+
+`r tblcaps("CatchCurveCross")`
+ 
+<table style="width:80%">
+<tr><th></th><th colspan="12"><b>Capture Year</b></th></tr>
+<tr><td><b>Age</b></td><td><b>2002</b></td><td><b>2003</b></td><td><b>2004</b></td><td><b>2005</b></td><td><b>2006</b></td><td><b>2007</b></td><td><b>2008</b></td><td><b>2009</b></td><td><b>2010</b></td><td><b>2011</b></td><td><b>2012</b></td><td><b>2013</b></td></tr>
+<tr><td>0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td><td>50.0</td></tr>
+<tr><td>1</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td><td>35.0</td></tr>
+<tr><td>2</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td><td>24.5</td></tr>
+<tr><td>3</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td><td>17.1</td></tr>
+<tr><td>4</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td><td>12.0</td></tr>
+<tr><td>5</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td><td> 8.4</td></tr>
+<tr><td>6</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td><td> 5.9</td></tr>
+<tr><td>7</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td><td> 4.1</td></tr>
+<tr><td>8</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td><td> 2.9</td></tr>
+<tr><td>9</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td><td> 2.0</td></tr>
+<tr><td>10</td><td>1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td><td> 1.4</td></tr>
+</table>
+
+\ 
+
+# Catch Curve Regression Methods
+
+Annual mortality can be estimated from catch data for two ages as shown above.  However, fisheries scientists prefer estimates that are more synthetic, i.e., based on more ages.  The two most common methods for computing synthetic estimates of mortality rates are the catch-curve regression and Chapman-Robson methods.  The regression method is discussed in this section.
+
+### Regression Model
+
+The decline in individuals with age can be theoretically modeled with a modified continuous exponential population model.  Because the population is closed with the exception of mortality, the instantaneous population growth rate parameter in the exponential population model is replaced with an instantaneous total mortality parameter ($Z$).  Thus, the modified model is
+
+$$ N_{t} = N_{0}e^{-Zt} \quad \quad \text{`r paste0("(",eqncaps("ModExpModel",display="num"),")")`} $$
+
+where $N_{t}$ is the population size at time $t$ and $N_{0}$ is the initial population size.
+
+The catch of fish at age $t$ is proportional to the number of fish of age $t$, or $C_{t}=vN_{t}$, as mentioned previously.[^1]  This is rearranged to show that the relationship between population size and catch is $N_{t}=\frac{C_{t}}{v}$ and substituted into `r eqncaps("ModExpModel",display="cite")` to reveal
+
+$$ \frac{C_{t}}{v} = N_{0}e^{-Zt} \quad \quad \text{    }  $$
+$$ C_{t} = vN_{0}e^{-Zt} \quad \quad \text{`r paste0("(",eqncaps("CatchCurveExpModel",display="num"),")")`}  $$
+
+In contrast to `r eqncaps("ModExpModel",display="cite")` the variables in `r eqncaps("CatchCurveExpModel",display="cite")` (catch-at-age, $C_{t}$, and age, $t$) are directly observable.  The shape of `r eqncaps("CatchCurveExpModel",display="cite")` (`r figcaps("CatchCurveModel",display="cite")`-Left) follows the expected exponential decline.  As is typical with exponential models, natural logarithms of both sides of `r eqncaps("CatchCurveExpModel",display="cite")` yields
+
+$$ log(C_{t}) = log(vN_{0})-Zt \quad \quad \text{`r paste0("(",eqncaps("CatchCurveModel",display="num"),")")`}  $$
+
+which is in the form of a linear equation with $log(C_{t})$ on the y-axis and $t$ on the x-axis (`r figcaps("CatchCurveModel",display="cite")`-Right).  Of great interest in `r eqncaps("CatchCurveModel",display="cite")` is that the negative of the slope is $Z$.  Thus, the negative of the slope of the linear regression between $log(C_{t})$ and $t$ is an integrative measure of the instantaneous total mortality rate experienced by this cohort of fish over time.
+
+```{r echo=FALSE, fig.width=3.5, fig.height=3.5, par1=TRUE}
+No <- 500
+S <- 0.7
+z <- -log(S)
+v <- 0.1
+sd.v <- 0.005
+t <- 0:10
+Nt.d <- No*exp(-z*t)              #deterministic population
+Ct.d <- v*Nt.d                    #deterministic catch
+set.seed(20)
+v.s <- rnorm(length(t),v,sd.v)
+Ct.s <- v.s*Nt.d
+
+plot(t,Ct.d,type="l",xlab="Age / Time",ylab="Catch",lwd=3)
+lnCt.d <- log(Ct.d)
+plot(t,lnCt.d,type="l",xlab="Age / Time",ylab="log(Catch)",lwd=3)
+lines(c(2,2,3),c(lnCt.d[3],lnCt.d[3]-z,lnCt.d[4]),col="red",lty=3,lwd=2)
+text(1.5,lnCt.d[3]-z/2,"-Z",col="red"); text(2.5,lnCt.d[4]-z/2,"1",col="red")
+lines(c(6,6,7),c(lnCt.d[7],lnCt.d[7]-z,lnCt.d[8]),col="red",lty=3,lwd=2)
+text(5.5,lnCt.d[7]-z/2,"-Z",col="red"); text(6.5,lnCt.d[8]-z/2,"1",col="red")
+```
+
+`r figcaps("CatchCurveModel")`
+
+\ 
+
+`r eqncaps("ModExpModel",display="cite")` can also be recast by assuming that catch-at-age ($C_{t}$) is proportional to the number-at-age and the amount of effort expended to catch those fish (i.e., $E_{t}$).  Thus, $C_{t}=qE_{t}N_{t}$, where $q$ represents a constant proportion of the population captured by one unit of effort.  This model can be rearranged to show that the relationship between population size and catch-per-unit-effort is $N_{t}=\frac{1}{q}\frac{C_{t}}{E_{t}}$.  This is substituted into `r eqncaps("ModExpModel",display="cite")` and simplified to reveal
+
+$$ \frac{1}{q}\frac{C_{t}}{E_{t}} = N_{0}e^{-Zt} \quad \quad \quad \quad \text{    } $$
+
+$$ \frac{C_{t}}{E_{t}} = qN_{0}e^{-Zt} \quad \quad \text{`r paste0("(",eqncaps("CatchCurveExpModel2",display="num"),")")`} $$
+
+Again, the variables in `r eqncaps("CatchCurveExpModel2",display="cite")` (catch-per-unit-effort, $\frac{C_{t}}{E_{t}}$, and age, $t$) are directly observable.  Furthermore, natural logarithms of both sides of `r eqncaps("CatchCurveExpModel2",display="cite")` yields
+
+$$ log(\frac{C_{t}}{E_{t}}) = log(qN_{0})-Zt \quad \quad \text{`r paste0("(",eqncaps("CatchCurveModel2",display="num"),")")`} $$
+
+which again is in the form of a linear equation with $log(\frac{C_{t}}{E_{t}})$ on the y-axis and $t$ on the x-axis.  Thus, the negative of the slope of the regression between $log(\frac{C_{t}}{E_{t}})$ and $t$ is also an integrative measure of the instantaneous total mortality rate experienced by this cohort of fish over time.  In other words, the y-axis variable can be either catch or catch-per-unit-effort data.  The specifics of this regression methodology are discussed in @Ogle2016.
+
+### Characteristics
+All catch curves have three regions of interest: an ascending left limb, a domed middle portion, and a descending right limb (`r figcaps("CatchCurveIdeal", display="cite")`).  The ascending left limb represents age-classes of fish that are not yet fully vulnerable to the gear used in the fishery.  Fish in these age-classes are said to have "not fully recruited to the fishery."  The catches of fish in these age-classes are not useful for estimating the total mortality rate.
+
+```{r echo=FALSE, par1=TRUE}
+q <- c(0.1,0.35,0.75,0.9,0.95,1,1,1,1,1,1)
+Ct.d.q <- q*Ct.d
+lnCt.d.q <- log(Ct.d.q)
+plot(t,lnCt.d,type="l",xlab="Age / Time",ylab="log(Catch)",lwd=3,lty=3,col="red")
+lines(t,lnCt.d.q,lwd=3)
+abline(v=1.5,lty=3)
+abline(v=3.5,lty=3)
+text(0.75,0.5,"Asc")
+text(2.5,0.5,"Dome")
+text(6,0.5,"Descending")
+lines(c(5,5,6),c(lnCt.d[6],lnCt.d[6]-z,lnCt.d[7]),col="red",lty=3,lwd=2)
+text(4.5,lnCt.d[6]-z/2,"-Z",col="red")
+text(5.5,lnCt.d[7]-z/2,"1",col="red")
+lines(c(8,8,9),c(lnCt.d[9],lnCt.d[9]-z,lnCt.d[10]),col="red",lty=3,lwd=2)
+text(7.5,lnCt.d[9]-z/2,"-Z",col="red")
+text(8.5,lnCt.d[10]-z/2,"1",col="red")
+```
+
+`r figcaps("CatchCurveIdeal")`
+
+The domed portion of the catch-curve generally consists of age-classes of fish that are nearly, but not completely, recruited to the fishery.  The relative width of the domed portion provides some insight into the rate of recruitment.  For example, a very sharply pointed dome indicates that the fish recruit rather "quickly".[^2]  In contrast, a relatively rounded dome shows that fish recruit to the exploited phase of the population more slowly, perhaps requiring several years before the mean size of fish in that year-class is sufficiently large to ensure capture upon encounter with the gear.  Fish in age-classes in the domed portion of the catch curve are also excluded from use when estimating $Z$.  Despite the exclusion of age-classes in the ascending limb and domed portion of the catch curve it is, however, imperative to have some animals from these age-classes in your sample, so that you can identify the important descending limb of the catch curve.
+
+The descending left limb of the catch curve represents the regular decline of fully-recruited individuals in the fishery.  Thus, $Z$ can be estimated by applying the concept of `r eqncaps("CatchCurveModel",display="cite")` to the catches of fish in the ages corresponding only to the descending portion of the catch curve.  There is some debate about how the descending limb is defined in practice.  Additionally, the portion of the descending limb corresponding to the older ages is often poorly represented in the catch data because these individuals are relatively rare.  At times, some catch data for older ages may be ignored.  
+
+@Smithetal2012 suggested that a weighted regression (discussed in @Ogle2016) with **all age-classes older than and including the age with the maximum catch should be used**.
+
+
+### Instantaneous vs. Annual Mortality Rates
+The instantaneous mortality rate ($Z$) that is estimated via the catch curve method is a measure of (i) how much the natural log of number of individuals declines annually or (ii) how much the actual number of individuals declines in an imperceptibly short period of time (i.e., in an "instant").  The instantaneous mortality rate has some very useful mathematical properties, but providing a practical interpretation of its meaning is difficult -- e.g., what does it mean if the log number of individuals declines by 0.693 or if the population changes by 0.693 in a "millisecond" of time?  Fortunately, the instantanous mortality rate can be easily converted to an annual mortality rate ($A$), the proportion of the population that suffers mortality in a given year, with
+
+\[ A = 1-e^{-Z} \]
+
+Thus, a $Z$ of 0.693 corresponds to an $A$ of $1-e^{-0.693}$ or `r formatC(1-exp(-0.693),format="f",digits=3)`.  Thus, this largely uninterpretable value of $Z$ corresponds to an annual mortality rate of `r formatC(100*(1-exp(-0.693)),format="f",digits=1)`%.  In other words, an average of `r formatC(100*(1-exp(-0.693)),format="f",digits=1)`% of the population dies on an annual basis.  
+
+## Calculations in R
+
+Methods for performing these calculations in R are described in Sections 11.1 and 11.2 of @Ogle2016.[^IFARScripts]
+
+\ 
+
+--------------------------------------------------------------
+
+```{r echo=FALSE, results='asis'}
+reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="BKG.R",RMarkdown="BKG.Rmd"))
+```
+
+--------------------------------------------------------------
+
+\ 
+
+## References
+
+[^IFARScripts]: Scripts for these calculations [are here](http://derekogle.com/IFAR/scripts/).
+
+[^1]: The $v$ represents a constant proportion of the population that is "vulnerable" to the fishery.
+
+[^2]: This may be something similar to the specification of "knife-edge" selection that may suggest that the fish grow rapidly relative to the time or scale of the x-axis.

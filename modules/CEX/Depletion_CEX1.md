@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Class Exercise
-subtitle: Class Introduction
+subtitle: Depletion/Removal
 css: /css/modules.css
 ---
 

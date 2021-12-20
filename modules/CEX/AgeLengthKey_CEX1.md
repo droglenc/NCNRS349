@@ -30,8 +30,6 @@ Researchers at the [Center for Quantitative Fisheries Ecology at Old Dominion Un
     1. How many fish are estimated to be age 8?
     1. How many fish are estimated to be age 14?
     1. Plot the age distribution for all fish.
-1. Use the "classical" method to estimate the mean length-at-age (with standard deviations) for all sampled fish.
-    1. What is the mean TL of age-9 fish?
-    1. Plot the length-at-age with the mean length-at-age superimposed for all fish.
+1. Use the "classical" method to estimate the mean length-at-age (with standard deviations) for all sampled fish. What is the mean TL of age-9 fish?
 1. Compare your results to someone else's results (or repeat the steps above). Did you both get the *exact* same results? Why or why not? If not, how different were they?
 1. Compare your results using the "classical" method here to your results from using the Isermann and Knight (2005) method above.

@@ -10,7 +10,7 @@ css: /css/modules.css
 
 ## Practice
 
-* [Class Exercise](CEX/AgeLengthKey_CEX1)
+* [Class Exercise](CEX/AgeLengthKey_CEX1) ... [code will be posted](CEX/CODES/AgeLengthKey.R)
 * [Assignment](CE/AgeLengthKey_CE1)
 
 ## Archive

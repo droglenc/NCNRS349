@@ -10,9 +10,9 @@ The population biology of Lake Superior [Lake Trout](https://en.wikipedia.org/wi
 1. Is this an example of a cross-sectional or longitudinal catch curve?
 1. Plot log(catch) versus age. Which ages best represent the descending portion of the catch curve? Explain.
 1. Using the catch-curve regression method, find the following (with 95% confidence intervals):
-    1. Instantaneous total mortality rate.
-    1. Annual total mortality rate.
-    1. Annual survival rate.
+    a. Instantaneous total mortality rate.
+    a. Annual total mortality rate.
+    a. Annual survival rate.
 1. Mathematically show how to convert the instantaneous mortality rate to an annual mortality rate.
 
 &nbsp;

@@ -6,7 +6,7 @@ css: /css/modules.css
 ---
 
 ## Hypothetical Class Data
-The hypothetical "Real Data" discussed in class showed catches for age-0 to age-5 fish of 77, 111, 126, 104, 81, and 64. Enter these data into a data frame and compute the instantaneous and annual mortality rates.
+The hypothetical "Real Data" discussed in class lecture showed catches for age-0 to age-5 fish of 77, 111, 126, 104, 81, and 64. Enter these data into a data frame and compute the instantaneous and annual mortality rates.
 
 &nbsp;
 

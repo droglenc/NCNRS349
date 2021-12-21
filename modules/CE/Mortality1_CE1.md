@@ -24,7 +24,7 @@ The population biology of Lake Superior [Lake Trout](https://en.wikipedia.org/wi
 | Year | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VI | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII | &nbsp;&nbsp;&nbsp;&nbsp;VIII | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IX | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XI | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII | &nbsp;&nbsp;&nbsp;&nbsp;XIII | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XIV |
 |:----:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1959 | 64 | 219 | 241 | 121 | 33 | 9 | 1 | 0.5 | 1 |
-| .... | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| .... | . | . | . | . | . | . | . | . | . |
 | 1963 | 129 | 339 | 331 | 192 | 70 | 16 | 0.5 | 0.5 | 0.5 |
 | 1964 | 149 | 524 | 515 | 201 | 63 | 18 | 2 | 0.5 | 0.5 |
 | 1965 | 75 | 379 | 501 | 328 | 133 | 39 | 11 | 1 | 0.5 |
@@ -32,7 +32,7 @@ The population biology of Lake Superior [Lake Trout](https://en.wikipedia.org/wi
 | 1967 | 63 | 368 | 287 | 130 | 55 | 19 | 6 | 0.5 | 0.5 |
 | 1968 | 50 | 215 | 259 | 141 | 55 | 18 | 5 | 1 | 0.5 |
 | 1969 | 45 | 150 | 153 | 76 | 23 | 6 | 0.5 | 0.5 | 0.5 |
-| .... | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| .... | . | . | . | . | . | . | . | . | . |
 | 1973 | 101 | 759 | 1268 | 1116 | 491 | 141 | 40 | 4 | 0.5 |
 | 1974 | 151 | 733 | 1114 | 1092 | 571 | 163 | 50 | 9 | 5 |
 | 1975 | 109 | 901 | 1517 | 1606 | 1076 | 342 | 117 | 12 | 7 |
@@ -44,13 +44,14 @@ The population biology of Lake Superior [Lake Trout](https://en.wikipedia.org/wi
 Use these results to answer the following questions.
   
 1. What year-class of fish is represented by the 339 age-VII fish caught in 1963?
-1. Show the data frame of catches and corresponding ages that would be used to estimate the instantaneous total mortality rates for the following situations.
+1. Show the data frame of catches and corresponding ages for groups of fish.
     1. For fish captured in 1963.
     1. For fish of the 1963 year-class.
     1. The *earliest* year-class that is **fully** represented for ages IX through XII.
     1. The *latest* year-class that is **fully** represented for ages IX through XII.
 1. For each data frame created above, identify whether the data represent a cross-sectional or longitudinal catch curve?
-1. For the **last two** data frames created above ...
+1. For the third data frame created above (*earliest* year class).
     1. Estimate, with 95% confidence interval, the instantaneous total mortality rate using the catch-curve regression method for ages IX through XII.
     1. Estimate, with 95% confidence interval, the instantaneous total mortality rate using the catch-curve regression method. Carefully interpret this result for ages IX through XII.
-    1. Do you think the instantaneous mortality rates calculated for these two year classes are statistically significantly different? Provide reasoning.
+1. Repeat the previous question for last data frame created above (*latest* year class).
+1. Do you think the instantaneous mortality rates calculated for the *earliest* and *latest* year classes are statistically significantly different? Provide reasoning.

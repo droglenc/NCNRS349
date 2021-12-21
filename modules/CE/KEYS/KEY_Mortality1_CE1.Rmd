@@ -1,0 +1,154 @@
+---
+layout: page
+title: Homework Key
+subtitle: Mortality
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: false
+    lib_dir: zlibs
+---
+
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/CE/")
+source("../../rhelpers/rhelpers.R")
+modHTML("KEY_Mortality1_CE1")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE}
+library(FSA)
+library(tidyverse)
+library(ggplot2)
+source("../../rhelpers/knitr_setup.R")
+```
+
+----
+
+## Keewenaw Bay Lake Trout
+
+```{r KBLT, echo=FALSE, results="hide", fig.show="hide"}
+d <- data.frame(age=3:14,ct=c(5,18,21,10,45,109,95,63,42,25,13,4))
+
+ggplot(data=d,mapping=aes(x=age,y=ct)) +
+  geom_point() +
+  scale_y_continuous(trans="log") +
+  theme_bw()
+
+## With 9-13
+cc1 <- catchCurve(ct~age,data=d,ages2use=9:13)
+sum1 <- cbind(summary(cc1),confint(cc1))
+plot(cc1)
+cc1w <- catchCurve(ct~age,data=d,ages2use=9:13,weighted=TRUE)
+sum1w <- cbind(summary(cc1w),confint(cc1w))
+
+## With 8-13
+cc2 <- catchCurve(ct~age,data=d,ages2use=8:13)
+sum2 <- cbind(summary(cc2),confint(cc2))
+plot(cc2)
+cc2w <- catchCurve(ct~age,data=d,ages2use=8:13,weighted=TRUE)
+sum2w <- cbind(summary(cc2w),confint(cc2w))
+
+## With 9-14
+cc3 <- catchCurve(ct~age,data=d,ages2use=9:14)
+sum3 <- cbind(summary(cc3),confint(cc3))
+plot(cc3)
+cc3w <- catchCurve(ct~age,data=d,ages2use=9:14,weighted=TRUE)
+sum3w <- cbind(summary(cc3w),confint(cc3w))
+
+## With 8-14
+cc4 <- catchCurve(ct~age,data=d,ages2use=8:14)
+sum4 <- cbind(summary(cc4),confint(cc4))
+plot(cc4)
+cc4w <- catchCurve(ct~age,data=d,ages2use=8:14,weighted=TRUE)
+sum4w <- cbind(summary(cc4w),confint(cc4w))
+```
+
+#### With 9-13
+1. This is a longitudinal catch-curve.
+1. Ages 9-13.
+1. Answers are below.
+    1. Z=`r sum1w["Z","Estimate"]` (CI: `r sum1w["Z","95% LCI"]`,`r sum1w["Z","95% UCI"]`)
+    1. A=`r sum1w["A","Estimate"]` (CI: `r sum1w["A","95% LCI"]`,`r sum1w["A","95% UCI"]`)
+    1. S=`r 100-sum1w["A","Estimate"]` (CI: `r 100-sum1w["A","95% UCI"]`,`r 100-sum1w["A","95% LCI"]`)
+1. A=1-e<sup>-Z</sup>=1-e<sup>-`sum1w["Z","Estimate"]`</sup>=`1-exp(-sum1w["Z","Estimate"])`
+
+#### With 8-13
+1. This is a longitudinal catch-curve.
+1. Ages 8-13.
+1. Answers are below.
+    1. Z=`r sum2w["Z","Estimate"]` (CI: `r sum2w["Z","95% LCI"]`,`r sum2w["Z","95% UCI"]`)
+    1. A=`r sum2w["A","Estimate"]` (CI: `r sum2w["A","95% LCI"]`,`r sum2w["A","95% UCI"]`)
+    1. S=`r 100-sum2w["A","Estimate"]` (CI: `r 100-sum2w["A","95% UCI"]`,`r 100-sum2w["A","95% LCI"]`)
+1. A=1-e<sup>-Z</sup>=1-e<sup>-`sum2w["Z","Estimate"]`</sup>=`1-exp(-sum2w["Z","Estimate"])`
+
+#### With 9-14
+1. This is a longitudinal catch-curve.
+1. Ages 9-14.
+1. Answers are below.
+    1. Z=`r sum3w["Z","Estimate"]` (CI: `r sum3w["Z","95% LCI"]`,`r sum3w["Z","95% UCI"]`)
+    1. A=`r sum3w["A","Estimate"]` (CI: `r sum3w["A","95% LCI"]`,`r sum3w["A","95% UCI"]`)
+    1. S=`r 100-sum3w["A","Estimate"]` (CI: `r 100-sum3w["A","95% UCI"]`,`r 100-sum3w["A","95% LCI"]`)
+1. A=1-e<sup>-Z</sup>=1-e<sup>-`sum3w["Z","Estimate"]`</sup>=`1-exp(-sum3w["Z","Estimate"])`
+
+#### With 8-14
+1. This is a longitudinal catch-curve.
+1. Ages 8-14.
+1. Answers are below.
+    1. Z=`r sum4w["Z","Estimate"]` (CI: `r sum4w["Z","95% LCI"]`,`r sum4w["Z","95% UCI"]`)
+    1. A=`r sum4w["A","Estimate"]` (CI: `r sum4w["A","95% LCI"]`,`r sum4w["A","95% UCI"]`)
+    1. S=`r 100-sum4w["A","Estimate"]` (CI: `r 100-sum4w["A","95% UCI"]`,`r 100-sum4w["A","95% LCI"]`)
+1. A=1-e<sup>-Z</sup>=1-e<sup>-`sum4w["Z","Estimate"]`</sup>=`1-exp(-sum4w["Z","Estimate"])`
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<KBLT>>
+```
+
+----
+
+## Stannard Rock Lake Trout
+```{r echo=FALSE, results='hide', fig.show='hide',warning=FALSE}
+d <- data.frame(age=6:14,
+                yr63=c(129,339,331,192, 70, 16,0.5,0.5,0.5),
+                yc63=c( 45, NA, NA, NA,491,163,117, 18,  7),
+                yc54=c( NA, NA, NA,192, 63, 39, 5,0.5, 0.5),
+                yc67=c(101,733,1517,1560,1031,445,300,NA,NA)) %>%
+  mutate(log54=log(yc54),log67=log(yc67))
+d
+
+## 1963 Capture year
+cc63 <- catchCurve(yr63~age,data=d,ages2use=8:11,weighted=TRUE)
+sum63 <- cbind(summary(cc63),confint(cc63))
+plot(cc63)
+
+## 1963 Year-Class
+cc63yc <- catchCurve(yc63~age,data=d,ages2use=10:14,weighted=TRUE)
+sum63yc <- cbind(summary(cc63yc),confint(cc63yc))
+plot(cc63yc)
+
+## 1954 Year-Class
+cc54yc <- catchCurve(yc54~age,data=d,ages2use=9:14,weighted=TRUE)
+sum54yc <- cbind(summary(cc54yc),confint(cc54yc))
+plot(cc54yc)
+
+## 1967 Year-Class
+cc67yc <- catchCurve(yc67~age,data=d,ages2use=9:12,weighted=TRUE)
+sum67yc <- cbind(summary(cc67yc),confint(cc67yc))
+plot(cc67yc)
+```
+
+1. 1956 year-class.
+1. Shown below.
+```{r echo=FALSE}
+d[,1:5]
+```
+1. Data for the 1963 capture year is **cross-sectional**, whereas data for the 1963, 1954, and 1967 year-classes are all **longitudinal**.
+1. Answers for the 1954 year-class:
+    1. Z=`r sum54yc["Z","Estimate"]` (CI: `r sum54yc["Z","95% LCI"]`,`r sum54yc["Z","95% UCI"]`)
+    1. A=`r sum54yc["A","Estimate"]` (CI: `r sum54yc["A","95% LCI"]`,`r sum54yc["A","95% UCI"]`)
+1. Answers for the 1967 year-class:
+    1. Z=`r sum67yc["Z","Estimate"]` (CI: `r sum67yc["Z","95% LCI"]`,`r sum67yc["Z","95% UCI"]`)
+    1. A=`r sum67yc["A","Estimate"]` (CI: `r sum67yc["A","95% LCI"]`,`r sum67yc["A","95% UCI"]`)
+1. Difficult to tell as the CI for 1954 captures the estimated from 1967 but the opposite is not true. Would be best to perform an IVR with both sets of data.

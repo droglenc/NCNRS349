@@ -6,7 +6,8 @@ library(ggplot2)
 hyp <- data.frame(age=0:5,
                   ct=c(77,111,126,104,81,64))
 ggplot(data=hyp,mapping=aes(x=age,y=ct)) +
-  geom_bar(stat="identity") +
+  geom_point() +
+  scale_y_continuous(trans="log") +
   theme_bw()
 
 cc1 <- catchCurve(ct~age,data=hyp,ages2use=2:5,weighted=TRUE)
@@ -45,16 +46,12 @@ lenatage <- snap1amod %>%
   summarize(n=n(),
             mntl=mean(len),
             sdtl=sd(len))
+
 ggplot(data=lenatage,mapping=aes(x=age,y=n)) +
-  geom_bar(stat="identity") +
-  scale_x_continuous(name="Age") +
-  scale_y_continuous(name="Frequency of Fish",expand=expansion(c(0,0.05))) +
+  geom_point() +
+  scale_y_continuous(trans="log") +
   theme_bw()
 
-cc1 <- catchCurve(n~age,data=lenatage,ages2use=2:20,weighted=TRUE)
+cc1 <- catchCurve(n~age,data=lenatage,ages2use=2:18,weighted=TRUE)
 cbind(Est=coef(cc1),confint(cc1))
 plot(cc1)
-
-cc2 <- catchCurve(n~age,data=lenatage,ages2use=2:18)
-cbind(Est=coef(cc2),confint(cc2))
-plot(cc2)

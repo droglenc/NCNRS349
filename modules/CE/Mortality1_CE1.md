@@ -24,14 +24,16 @@ The population biology of Lake Superior [Lake Trout](https://en.wikipedia.org/wi
 | Year | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VI | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VII | &nbsp;&nbsp;&nbsp;&nbsp;VIII | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IX | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XI | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XII | &nbsp;&nbsp;&nbsp;&nbsp;XIII | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XIV |
 |:----:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1959 | 64 | 219 | 241 | 121 | 33 | 9 | 1 | 0.5 | 1 |
-| *1963* | 129 | 339 | 331 | 192 | 70 | 16 | 0.5 | 0.5 | 0.5 |
+| .... | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| 1963 | 129 | 339 | 331 | 192 | 70 | 16 | 0.5 | 0.5 | 0.5 |
 | 1964 | 149 | 524 | 515 | 201 | 63 | 18 | 2 | 0.5 | 0.5 |
 | 1965 | 75 | 379 | 501 | 328 | 133 | 39 | 11 | 1 | 0.5 |
 | 1966 | 149 | 488 | 459 | 172 | 64 | 22 | 5 | 0.5 | 0.5 |
 | 1967 | 63 | 368 | 287 | 130 | 55 | 19 | 6 | 0.5 | 0.5 |
 | 1968 | 50 | 215 | 259 | 141 | 55 | 18 | 5 | 1 | 0.5 |
 | 1969 | 45 | 150 | 153 | 76 | 23 | 6 | 0.5 | 0.5 | 0.5 |
-| *1973* | 101 | 759 | 1268 | 1116 | 491 | 141 | 40 | 4 | 0.5 |
+| .... | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| 1973 | 101 | 759 | 1268 | 1116 | 491 | 141 | 40 | 4 | 0.5 |
 | 1974 | 151 | 733 | 1114 | 1092 | 571 | 163 | 50 | 9 | 5 |
 | 1975 | 109 | 901 | 1517 | 1606 | 1076 | 342 | 117 | 12 | 7 |
 | 1976 | 53 | 604 | 1204 | 1560 | 1146 | 396 | 156 | 18 | 10 |

@@ -6,7 +6,7 @@ css: /css/modules.css
 
 ## Preparation for Class
 
-* Read [Sections 11.1 and 11.2](RESOURCES/Ogle_Mortality.pdf)[^1] and [Miranda and Bettolli (2006) Sections 6.1-6.3](Miranda-Bettolli-2006-Sect6-1-3.pdf) ([here is the complete reading](http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf)) and prepare answers to [these questions](PREP/Mortality1)
+* Read [Sections 11.1 and 11.2 in Ogle (2016)](RESOURCES/Ogle_Mortality.pdf)[^1] and [Miranda and Bettolli (2006) Sections 6.1-6.3](RESOURCES/Miranda-Bettolli-2006-Sect6-1-3.pdf)[^2] ([here is the complete reading](http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf)) and prepare answers to [these questions](PREP/Mortality1)
 
 ## Practice
 
@@ -20,4 +20,5 @@ css: /css/modules.css
 
 ----
 
-[^1]: Skip Section 11.2.2.
+[^1]: Skip Sections 11.2.2, 11.2.3.2, and 11.2.4.
+[^2]: Skip Section 6.3.3.

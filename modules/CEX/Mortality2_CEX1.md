@@ -52,5 +52,9 @@ Each simulation below should use a maximum age of 15, a starting age for the cha
 1. What could cause a catch curve constructed from real catch-at-age data to be concave?
 1. What could cause a catch curve constructed from real catch-at-age data to be v-shaped upward?
 1. What could cause a catch curve constructed from real catch-at-age data to be offset a constant amount upward?
-1. Construct the following two situations -- (i) a steady 50% greater Z and (ii) the same but including a 10% CV for the Z. Do you observe the same "shape" in the descending limbs of the catch curve in both of these simulations? Explain any differences that you observe.
+
+### Take Home
+
+{:start="15"}
+1. Simulate the following two situations -- (i) a steady 50% greater Z and (ii) the same but including a 10% CV for the Z (perhaps re-randomize this a few times). Do you observe the same "shape" in the descending limbs of the catch curve in both of these simulations? Explain any differences that you observe.
 1. How easy do you think it would be to diagnose the specific assumption violation given a non-linear descending limb on a catch curve constructed from real catch-at-age data? Explain.

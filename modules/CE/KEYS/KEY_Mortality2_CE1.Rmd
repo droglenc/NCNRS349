@@ -1,0 +1,44 @@
+---
+layout: page
+title: Homework Key
+subtitle: Mortality
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: false
+    lib_dir: zlibs
+---
+
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/CE/")
+source("../../rhelpers/rhelpers.R")
+modHTML("KEY_Mortality2_CE1")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE}
+library(FSA)
+library(tidyverse)
+library(ggplot2)
+source("../../rhelpers/knitr_setup.R")
+```
+
+----
+
+## Estimates of M
+1. Northern Pike: 10 estimates, median is 0.36, mean is 0.4 
+1. Arctic Charr: 12 estimates, median is 0.18, mean is 0.181
+1. Black Crappie: 6 estimates, median is 0.55, mean is 0.577
+
+## Estimates of A
+1. Northern Pike: `r 1-exp(-(0.4))` 
+1. Arctic Charr: `r 1-exp(-(0.181+0.1))`
+1. Black Crappie: `r 1-exp(-(0.577+0.6))`
+
+```{r A, eval=FALSE}
+1-exp(-(0.4))        # NOP
+1-exp(-(0.181+0.1))  # Charr
+1-exp(-(0.577+0.6))  # BKC
+```
+

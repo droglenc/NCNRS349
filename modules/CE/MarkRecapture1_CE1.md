@@ -2,6 +2,7 @@
 layout: page
 title: Exercise
 subtitle: Mark-Recapture I
+css: /css/modules.css
 ---
 
 ## Ugly River Brown Trout

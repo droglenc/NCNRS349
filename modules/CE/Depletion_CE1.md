@@ -2,6 +2,7 @@
 layout: page
 title: Exercise
 subtitle: CPUE
+css: /css/modules.css
 ---
 
 ## Lake Guntersville Largemouth Bass

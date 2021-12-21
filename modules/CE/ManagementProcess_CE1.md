@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Exercise
-subtitle: Management Introduction
+subtitle: Management Process
+css: /css/modules.css
 ---
 
 [Krueger and Decker (2010)](../RESOURCES/KruegerDecker_2010_Process.pdf) outlined the fisheries management process. You are assigned one (or part of one) of the following fisheries management plans.

@@ -2,6 +2,7 @@
 layout: page
 title: Exercise
 subtitle: Management Tools
+css: /css/modules.css
 ---
 
 Find an example of each regulation type below in one of the regional (Northern, Southwest, Southcentral, and Southeast) Alaska [Sport Fishing](http://www.adfg.alaska.gov/index.cfm?adfg=fishregulations.sport) regulations.  Specifically document each of your examples with a screen capture image.

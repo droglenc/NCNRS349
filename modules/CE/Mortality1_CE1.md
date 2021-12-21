@@ -2,6 +2,7 @@
 layout: page
 title: Exercise
 subtitle: Mortality I
+css: /css/modules.css
 ---
 
 ## Keewenaw Bay (Lake Superior) Lake Trout

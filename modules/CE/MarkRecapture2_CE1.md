@@ -2,6 +2,7 @@
 layout: page
 title: Exercise
 subtitle: Mark-Recapture II
+css: /css/modules.css
 ---
 
 ## Summarizing Assumption Violations

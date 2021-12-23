@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Exercise
-subtitle: CPUE
+subtitle: Depletion
 css: /css/modules.css
 ---
 

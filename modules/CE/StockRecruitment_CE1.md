@@ -15,6 +15,6 @@ Load these data into R to answer the following questions.
 1. Fit the following recruitment functions to these data, assuming a multiplicative error structure. Show your results by expressing the equation of the recruitment function with the parameters replaced by their estimated values.
     1. Density-independence.
     1. Ricker.
-1. Construct a single plot that shows how well each recruitment function fits these data. Show confidence bands for the Ricker recruitment function.
+1. Construct a single plot that shows how well each recruitment function fits these data.
 1. Estimate recruitment for the mean stock level with each recruitment function. How variable are the results among models?
-1. Determine if the density-dependent parameter is statistically significant in the Ricker model. Describe what proportion of variability in recruitment is explained by the Ricker model.
+1. Determine if the density-dependent parameter is statistically significant in the Ricker model.

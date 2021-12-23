@@ -1,6 +1,6 @@
 ---
 layout: page
-title: StockRecruitment/Removal Methods
+title: Stock-Recruitment
 css: /css/modules.css
 ---
 
@@ -17,4 +17,3 @@ css: /css/modules.css
 ## Archive
 
 * [Lecture Slides](PPT/StockRecruitment.pptx)
-* [Old Ogle Notes](RESOURCES/StockRecruitment)

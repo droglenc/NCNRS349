@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reading Guide
+title: Preparation Guide
 subtitle: Mortality I
 ---
 

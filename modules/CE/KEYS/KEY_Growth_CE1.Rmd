@@ -1,0 +1,97 @@
+---
+layout: page
+title: Homework Key
+subtitle: Growth
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: false
+    lib_dir: zlibs
+---
+
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/CE/")
+source("../../rhelpers/rhelpers.R")
+modHTML("KEY_Growth_CE1")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+source("../../rhelpers/knitr_setup.R")
+options(show.signif.stars=FALSE)
+```
+```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+library(FSA)
+library(tidyverse)
+library(ggplot2)
+library(nlstools)
+
+sculp <- read.csv("https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/SculpinALTER.csv")
+vbTyp <- vbFuns("Typical")
+```
+
+----
+
+## Alaskan Slimy Sculpin I
+
+```{r TypicalFit1, echo=FALSE, results='hide', warning=FALSE}
+svTyp <- vbStarts(tl~age,data=SculpinALTER,type="Typical")
+fitTyp <- nls(tl~vbTyp(age,Linf,K,t0),data=SculpinALTER,start=svTyp)
+bootTyp <- nlsBoot(fitTyp)
+estsTyp <- cbind(Est=coef(fitTyp),confint(bootTyp))
+p3Typ <- apply(bootTyp$coefboot,MARGIN=1,FUN=vbTyp,t=3)
+p3Typ <- c(Est=vbTyp(3,coef(fitTyp)),quantile(p3Typ,c(0.025,0.975)))
+halfLinf <- log(2)/coef(fitTyp)[["K"]]
+```
+
+1. The plot is shown below. The data show a fairly obvious curve, a fairly obvious asymptote, no fish less than age-1 are shown, and there is considerable variability in length at each age.
+1. The plot is shown below.
+1. The typical von Bertalanffy equation is $E(L|t)=`r formatC(estsTyp["Linf","Est"],format="f",digits=1)`(1-e^{-`r formatC(estsTyp["K","Est"],format="f",digits=2)`(t+`r formatC(-1*estsTyp["t0","Est"],format="f",digits=2)`)})$.
+1. The asymptotic mean length of Slimy Sculpins is `r formatC(estsTyp["Linf","Est"],format="f",digits=1)`. The Brody growth coefficent, or the rate at which the mean length approaches the asymptotic mean length, is `r formatC(estsTyp["K","Est"],format="f",digits=2)`. The age at which the mean length is zero (i.e,. the x-intercept) is `r formatC(estsTyp["t0","Est"],format="f",digits=2)`.
+1. The 95% confidence interval for the asymptotic mean length is `r formatC(estsTyp["Linf","95% LCI"],format="f",digits=1)` to `r formatC(estsTyp["Linf","95% UCI"],format="f",digits=1)`, for the Brody growth coefficient is `r formatC(estsTyp["K","95% LCI"],format="f",digits=2)` to `r formatC(estsTyp["K","95% UCI"],format="f",digits=2)`, and for the x-intercept is `r formatC(estsTyp["t0","95% LCI"],format="f",digits=2)` to `r formatC(estsTyp["t0","95% UCI"],format="f",digits=2)`. The intervals for the asymptotic mean length and Brody growth coefficient are quite wide.
+1. The predicted mean length at age-3 is `r formatC(p3Typ["Est"],format="f",digits=1)` (with 95% confidence interval from `r formatC(p3Typ["2.5%"],format="f",digits=1)` to `r formatC(p3Typ["97.5%"],format="f",digits=1)`). This interval is fairly narrow because it is a confidence (rather than prediction) interval and age-3 is a well-represented age in the data.
+1. Slimy Sculpins will have reached half of their asymptotic length at age `r formatC(halfLinf,format="f",digits=2)`.
+
+```{r fitPlotA, echo=FALSE}
+x <- seq(0,5,length.out=199)
+pTyp <- vbTyp(x,Linf=coef(fitTyp))
+pdf <- data.frame(age=x,ptl=pTyp)
+
+ggplot() +
+  geom_point(data=sculp,mapping=aes(x=age,y=tl),color=col2rgbt("black",1/3)) +
+  geom_line(data=pdf,mapping=aes(x=age,y=ptl),color="blue",size=1) +
+  scale_x_continuous(name="Otolith Age (yrs)") +
+  scale_y_continuous(name="Total Length (mm)") +
+  theme_bw()
+```
+
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<setup>>
+<<fitPlotA>>
+```
+
+## Alaskan Slimy Sculpin II
+
+```{r GQFit1, echo=FALSE, results='hide', warning=FALSE}
+vbGQ <- vbFuns("GallucciQuinn")
+svGQ <- vbStarts(tl~age,data=sculp,type="GallucciQuinn")
+fitGQ <- nls(tl~vbGQ(age,omega,K,t0),data=sculp,start=svGQ)
+bootGQ <- nlsBoot(fitGQ)
+estsGQ <- cbind(Est=coef(fitGQ),confint(bootGQ))
+p3GQ <- apply(bootGQ$coefboot,MARGIN=1,FUN=vbGQ,t=3)
+p3GQ <- c(Est=vbGQ(3,coef(fitGQ)),quantile(p3GQ,c(0.025,0.975)))
+```
+
+1. The plot is shown below.
+1. The Gallucci-Quinn von Bertalanffy equation is $E(L|t)=\frac{`r formatC(estsGQ["omega","Est"],format="f",digits=2)`}{`r formatC(estsGQ["K","Est"],format="f",digits=2)`}(1-e^{-`r formatC(estsGQ["K","Est"],format="f",digits=2)`(t-`r formatC(estsGQ["t0","Est"],format="f",digits=2)`)})$.
+1. The growth of Slimy Sculpins near t~0~ is is `r formatC(estsGQ["omega","Est"],format="f",digits=22)` mm/yr. The Brody growth coefficent, or the rate at which the mean length approaches the asymptotic mean length, is `r formatC(estsGQ["K","Est"],format="f",digits=2)`. The age at which the mean length is zero (i.e,. the x-intercept) is `r formatC(estsGQ["t0","Est"],format="f",digits=2)`.
+1. The common parameter estimates between the two parameterizations of the von Bertalanffy are the same. This is because a parameterization is the same model, just with different parameters.
+1. The predicted mean length at age-3 is `r formatC(p3Orig["Est"],format="f",digits=1)` (with 95% confidence interval from `r formatC(p3Orig["2.5%"],format="f",digits=1)` to `r formatC(p3Orig["97.5%"],format="f",digits=1)`). This prediction is the same as that from fitting the typical model (within rounding for the confidence intervals).
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<GQFit1>>
+```

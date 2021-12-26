@@ -10,7 +10,7 @@ Fish length is likely the information most commonly collected by fisheries biolo
 
 ![Measuring](../RESOURCES/Measure.jpg)
 
-\ 
+&nbsp;
 
 #### Setting
 Whittlesey Creek is a tributary to Chequamegon Bay of Lake Superior. This stream has been severely degraded by past land use practices including clear-cut logging and channelization to drain wetlands for farming. The "Coaster" Brook Trout (*Salvelinus fontinalis*), a lake-dwelling stream-spawning form of Brook Trout, was largely extirpated from southern Lake Superior and the Whittlesey Creek watershed due to over-fishing and habitat degradation. In 1999, the U.S., Fish and Wildlife Service established the [Whittlesey Creek National Wildlife Refuge](http://www.fws.gov/refuge/whittlesey_creek/) with a primary goal of reestablishing a population of Coaster Brook Trout in Whittlesey Creek. That effort has included experimental introductions of Brook Trout at various life stages and much work to restore habitat.
@@ -19,10 +19,10 @@ In July, 2011 a quarter-mile stretch of the lower Whittlesey Creek was modified 
 
 ![Electrofishing](../RESOURCES/EFish.jpg)
 
-\ 
+&nbsp;
 
 #### Data
-Data from the sampling collected by the students were stored in `Sheet1` of [`Whittlesey2011.xlsx`](../RESOURCES/Whittlesey2011.xlsx). The variables in this data set are defined as follows,
+Data from the sampling collected by the students were stored in `Sheet1` of [Whittlesey2011.xlsx](../RESOURCES/Whittlesey2011.xlsx). The variables in this data set are defined as follows,
 
 * `study`: The name of the study.
 * `netID`: A unique label for each day of sampling.
@@ -34,7 +34,7 @@ Data from the sampling collected by the students were stored in `Sheet1` of [`Wh
 * `recap`: Indicates if the fish was previously clipped (i.e., a "recapture"; =1) or not. All fish in the marking run could not possibly be a recaptured fish.
 * `notes`: Any specific notes about that particular fish.
 
-\ 
+&nbsp;
 
 ## Preparation
 Prior to beginning this case study you should:
@@ -42,14 +42,14 @@ Prior to beginning this case study you should:
 * Research basic life history characteristics -- especially growth (length-at-age), reproduction and spawning characteristics, and obligation of migratory patterns -- of Coho Salmon, Rainbow Trout, and Slimy Sculpin. A good source is [*Fishes of Wisconsin*](http://digital.library.wisc.edu/1711.dl/EcoNatRes.FishesWI).
 * You should open the Excel file described above and save `Sheet1` as a CSV file. Then create a script that reads the CSV file into an object in R and displays the structure and a few rows of the data.frame.
 
-\ 
+&nbsp;
 
 ## Analysis Questions
 
 1. What would you expect a length frequency histogram to look like for a fish species that reproduces only once per year during a very narrow range of time, shows exceptional growth throughout life, and has a maximum age of 5 years? You should provide a rough drawing and short paragraph of explanation.
 1. Construct separate length frequency histograms for each species (combine data from both days) in the Whittlesey Creek data set. Make sure to choose bin widths that make sense for each species and to properly label all axes.
 
-\ 
+&nbsp;
 
 ## Interpretation Questions
 

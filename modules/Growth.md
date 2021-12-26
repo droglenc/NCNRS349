@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Growth/Removal Methods
+title: Growth
 css: /css/modules.css
 ---
 
@@ -10,7 +10,7 @@ css: /css/modules.css
 
 ## Practice
 
-* [Class Exercise I](CEX/Growth_CEX1) ... [code will be posted](CEX/CODES/Growth.R)
+* [Class Exercise](CEX/Growth_CEX1) ... [code will be posted](CEX/CODES/Growth.R)
 * [Assignment](CE/Growth_CE1)
 
 ## Archive

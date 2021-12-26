@@ -9,7 +9,7 @@ css: /css/modules.css
   <div class="panel-body">This Case is a modification of Case 16 by <a href="http://www.sdstate.edu/nrm/people/willis.cfm">Dr. David Willis</a> from <a href="https://fisheries.org/shop/55062p"><i>Case Studies in Fisheries Conservation & Management: Applied Critical Thinking & Problem Solving</i></a>. Much of the text is exactly as it appeared in the original Case chapter, though slightly rearranged.</div>
 </div>
 
-----
+&nbsp;
 
 ## Background
 #### Motivation
@@ -24,12 +24,12 @@ In this case study, you will explore the differential size structure of Bluegill
 &nbsp;
 
 #### Data
-[Lake Louise](http://gfp.sd.gov/state-parks/directory/lake-louise/) is a 45-ha impoundment located in Hand County, South Dakota. The maximum depth is 6.5 m with a mean depth of 2.7 m. Fish were sampled with trap nets that had 1.2- X 1.5-m frames, dual throats, and 19-mm bar mesh. Night electrofishing was undertaken with pulsed DC electricity at approximately 250 V and 8 A. Samples were collected in late May at a water temperature of 23$^{o}$C.
+[Lake Louise](https://gfp.sd.gov/parks/detail/lake-louise-recreation-area/) is a 45-ha impoundment located in Hand County, South Dakota. The maximum depth is 6.5 m with a mean depth of 2.7 m. Fish were sampled with trap nets that had 1.2- X 1.5-m frames, dual throats, and 19-mm bar mesh. Night electrofishing was undertaken with pulsed DC electricity at approximately 250 V and 8 A. Samples were collected in late May at a water temperature of 23^o^C.
 
-The total length (TL; mm) of each Bluegill was recorded for fish captured in both gears in [LakeLouiseBG.csv](https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/LakeLouiseBG.csv)). The variables in this data frame are defined as follows,
+Total length (TL; mm) of each Bluegill was recorded for fish captured in both gears in [LakeLouiseBG.csv](https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/LakeLouiseBG.csv)). The variables in this data frame are defined as follows,
 
 * `len`: The TL (mm) of the sampled fish.
-* `gear`: A factor indicating the gear used to capture the fish. Choices are `A` and `B` (described later).
+* `gear`: The gear used to capture the fish. Choices are `A` and `B` (described later).
 
 &nbsp;
 
@@ -43,11 +43,9 @@ Prior to beginning this case study you should:
 &nbsp;
 
 ## Analysis Questions
-Construct length-frequency histograms and summary statistics separately for each gear using the same x-axis limits on each graph. Additionally, plot the cumulative distribution function for each gear and compute the Kolmogorov-Smirnov test of the differences between the two distributions.
+Use the collected data to answer the following questions.
 
-Use these results to answer the following questions.
-
-1. Is there a significant difference in the distribution of lengths between the two gears? If so, describe the difference. Use two different types of graphics to present your results.
-1. Is there a significant difference in the mean or median lengths between the two gears?
-1. Identify which gear -- trap nets or electrofishing -- that corresponds to gear `A` and gear `B`, respectively. Explain your reasoning for your choices.
+1. Is there a significant difference in the *distribution* of lengths between the two gears? If so, describe the difference. Use two different types of graphics to present your results.
+1. Is there a significant difference in mean length between the two gears?
+1. Identify which gear -- trap nets or electrofishing -- corresponds to gear `A` and gear `B`, respectively. Explain your reasoning for your choices.
 1. Explain at least two different conclusions you might have made if you had used one gear exclusively over the other. How might this have impacted a management decision.

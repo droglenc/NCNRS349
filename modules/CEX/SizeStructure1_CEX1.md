@@ -22,7 +22,7 @@ In July, 2011 a quarter-mile stretch of the lower Whittlesey Creek was modified 
 &nbsp;
 
 #### Data
-Data from the sampling collected by the students were stored in `Sheet1` of [Whittlesey2011.xlsx](../RESOURCES/Whittlesey2011.xlsx). The variables in this data set are defined as follows,
+Data from the sampling collected by the students were stored in [Whittlesey2011.csv](https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/Whittlesey2011.csv). The variables in this data set are defined as follows,
 
 * `study`: The name of the study.
 * `netID`: A unique label for each day of sampling.
@@ -40,7 +40,7 @@ Data from the sampling collected by the students were stored in `Sheet1` of [Whi
 Prior to beginning this case study you should:
 
 * Research basic life history characteristics -- especially growth (length-at-age), reproduction and spawning characteristics, and obligation of migratory patterns -- of Coho Salmon, Rainbow Trout, and Slimy Sculpin. A good source is [*Fishes of Wisconsin*](http://digital.library.wisc.edu/1711.dl/EcoNatRes.FishesWI).
-* You should open the Excel file described above and save `Sheet1` as a CSV file. Then create a script that reads the CSV file into an object in R and displays the structure and a few rows of the data.frame.
+* You should create a script that reads the CSV file into an object in R and displays the structure and a few rows of the data.frame.
 
 &nbsp;
 

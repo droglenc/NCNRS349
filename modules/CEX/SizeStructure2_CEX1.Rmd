@@ -1,0 +1,153 @@
+---
+layout: page
+title: Effects of Angling on a Previously Unexploited Wisconsin Fish Community
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: no
+---
+
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/CEX/")
+source("../../rhelpers/rhelpers.R")
+modHTML("SizeStructure2_CEX1")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE}
+source("../../rhelpers/knitr_setup.R")
+```
+
+----
+
+<div class="panel panel-primary">
+  <div class="panel-heading">Special Note</div>
+  <div class="panel-body">This Case is a modification of Case 4 by <a href="http://www.sdstate.edu/nrm/people/willis.cfm">Dr. David Willis</a> from <a href="https://fisheries.org/shop/55062p"><i>Case Studies in Fisheries Conservation & Management: Applied Critical Thinking & Problem Solving</i></a>.  Much of the text is exactly as it appeared in the original Case chapter, though slightly rearranged.</div>
+</div>
+
+&nbsp;
+
+## Background
+#### Motivation
+The effect of angling on fish population size structure is dependent on a myriad of factors, such as population abundance, the amount of angling effort, the size of the water body, and even differential vulnerability of different fish species.  The opportunity to study unexploited populations can be extremely valuable, including situations where subsequent angler harvest is then assessed.  Data sets for unexploited populations tend to be relatively rare.  Information on unexploited populations can provide our profession with valuable examples of just what is possible when a population is not exploited.  That way, realistic (i.e., feasible) management objectives might be set for various harvest regulations that fishery biologist might select.  In this case study, you will explore the effects of angling on a previously unexploited fish community in a small Wisconsin Lake.
+
+&nbsp;
+
+#### Setting
+Mid Lake (4.7 ha; <a href="http://dnr.wi.gov/lakes/maps/DNR/0263900a.pdf">map</a>) is one of a series of small lakes in <a href="http://dnr.wi.gov/topic/parks/name/hartman/">Hartman Creek State Park</a>, Wisconsin.  The maximum lake depth is 1.8 m and given the relatively clear water that allowed light penetration to the entire lake bottom, submergent vegetation growth was abundant throughout the lake.  The fish community in Mid Lake included Bluegill (*Lepomis macrochirus*), Largemouth Bass (*Micropterus salmoides*), Northern Pike (*Esox lucius*), Pumpkinseed (*Lepomis gibbosus*), and Yellow Perch (*Perca flavescens*).
+
+The lake was closed to all fishing from 1938 to 1976.  On 1-May-1976, anglers were permitted to harvest any fish species, with seasons extending from early May through February.  There was no length limits on harvested fish, and daily creel limits were liberal (five per day for Largemouth Bass, five per day for Northern Pike, and 50 per day for panfish).  Random stratified creel surveys indicated angling effort of 230 hours/ha in 1976 and 62 hours/ha in 1979.
+
+#### Data
+Fish populations were surveyed over a 6-year period.  Samples in 1974-1976 represented unfished populations (i.e,. "pre-angling""), whereas samples in 1977-1979 were from fished populations (i.e., "post-angling"").  Electrofishing samples were collected every spring and fyke nets were set in 1976 and 1979.  Electrofishing was carried out at night with a 230-volt direct- or alternating-current shocker with the entire perimeter of the lake traversed each time.  The six fyke nets (856 to 1,000 net-hours in each sampling year) were of 5-cm stretched mesh with leads of 12 to 18 m.  Captured fish were measured (total length (TL), mm), weighed (g), and finclipped; scale samples were collected, and the fish were released.  Ages were determined for Bluegills, Pumpkinseeds, Yellow Perch, and Largemouth Bass from 1974 through 1978 and from Yellow Perch in 1979.
+
+&nbsp;
+
+----
+
+## Analysis & Interpretation Questions I
+Length- and age-frequency plots, as well as proportional size distribution of quality- (PSD), preferred- (PSD-P), and memorable-length fish, for Bluegill, Pumpkinseed, Yellow Perch, and Largemouth Bass from the **PRE-ANGLING** period are shown below.
+
+```{r fig.width=7.5, fig.height=15, echo=FALSE, message=FALSE, warning=FALSE}
+library(FSA)
+library(tidyverse)
+library(ggplot2)
+library(patchwork)
+
+d <- read.csv("https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/GoeddeCobleData.csv") %>%
+  mutate(species=plyr::mapvalues(species,
+                                 from=c("BLG","LMB","PKS","YEP","NOP"),
+                                 to=c("Bluegill","Largemouth Bass",
+                                      "Pumpkinseed","Yellow Perch",
+                                      "Northern Pike")),
+         gcat=psdAdd(len,species),
+         species=factor(species,levels=c("Bluegill","Pumpkinseed","Yellow Perch",
+                                         "Largemouth Bass","Northern Pike")))
+
+clrs <- c(substock="white",stock="gray80",quality="gray60",preferred="gray40",
+          memorable="gray20",trophy="gray10")
+
+tmp1 <- droplevels(filter(d,period=="pre"))
+tmp2 <- droplevels(filter(tmp1,gcat!="substock"))
+
+tbl <- xtabs(~species+gcat,data=tmp2)
+iPSDs <- prop.table(tbl,margin=1)*100
+PSDs <- t(apply(iPSDs,MARGIN=1,FUN=rcumsum))
+lPSDs <- as.data.frame(PSDs) %>%
+  select(-stock) %>%
+  mutate(lbl=paste0("PSD-Q=",formatC(quality,format="f",digits=0),"\n",
+                    "PSD-P=",formatC(preferred,format="f",digits=0),"\n",
+                    "PSD-M=",formatC(memorable,format="f",digits=0)))
+
+bg_l_pre <- ggplot(data=filter(tmp1,species=="Bluegill"),
+                   mapping=aes(x=len,fill=gcat)) +
+  geom_histogram(binwidth=10,boundary=0,color="black") +
+  scale_x_continuous(name="Total Length (mm)",limits=c(0,NA),
+                     expand=expansion(mult=0.01)) +
+  scale_y_continuous(name="Frequency",expand=expansion(mult=c(0,0.03))) +
+  scale_fill_manual(values=clrs) +
+  theme_bw() +
+  theme(legend.position="none") +
+  labs(title="Bluegill Pre-Angling")
+
+bg_l_pre2 <- bg_l_pre +
+  annotate(geom="label",x=-Inf,y=Inf,hjust=-0.05,vjust=1.05,
+           label=lPSDs["Bluegill","lbl"])
+
+bg_a_pre <- ggplot(data=filter(tmp1,species=="Bluegill"),
+                   mapping=aes(x=age)) +
+  geom_histogram(binwidth=1,boundary=0,color="black") +
+  scale_x_continuous(name="Age (years)",breaks=seq(0,15,1)) +
+  scale_y_continuous(name="Frequency",expand=expansion(mult=c(0,0.03))) +
+  theme_bw() +
+  theme(panel.grid.minor.x=element_blank())
+
+pks_l_pre <- bg_l_pre %+% filter(tmp1,species=="Pumpkinseed") +
+  labs(title="Pumpkinseed Pre-Angling")
+pks_l_pre2 <- pks_l_pre +
+  annotate(geom="label",x=-Inf,y=Inf,hjust=-0.05,vjust=1.05,
+           label=lPSDs["Pumpkinseed","lbl"])
+pks_a_pre <- bg_a_pre %+% filter(tmp1,species=="Pumpkinseed")
+
+yp_l_pre <- bg_l_pre %+% filter(tmp1,species=="Yellow Perch") +
+  labs(title="Yellow Perch Pre-Angling")
+yp_l_pre2 <- yp_l_pre +
+  annotate(geom="label",x=-Inf,y=Inf,hjust=-0.05,vjust=1.05,
+           label=lPSDs["Yellow Perch","lbl"])
+yp_a_pre <- bg_a_pre %+% filter(tmp1,species=="Yellow Perch")
+
+lmb_l_pre <- bg_l_pre %+% filter(tmp1,species=="Largemouth Bass") +
+  geom_histogram(binwidth=25,boundary=0,color="black") +
+  labs(title="Largemouth Bass Pre-Angling")
+lmb_l_pre2 <- lmb_l_pre +
+  annotate(geom="label",x=-Inf,y=Inf,hjust=-0.05,vjust=1.05,
+           label=lPSDs["Largemouth Bass","lbl"])
+lmb_a_pre <- bg_a_pre %+% filter(tmp1,species=="Largemouth Bass")
+
+nop_l_pre <- lmb_l_pre %+% filter(tmp1,species=="Northern Pike") +
+  labs(title="Northern Pike Pre-Angling")
+nop_l_pre2 <- nop_l_pre +
+  annotate(geom="label",x=-Inf,y=Inf,hjust=-0.05,vjust=1.05,
+           label=lPSDs["Northern Pike","lbl"])
+
+(bg_l_pre2 + bg_a_pre) / (pks_l_pre2 + pks_a_pre) / (yp_l_pre2 + yp_a_pre) / (lmb_l_pre2 + lmb_a_pre)
+```
+
+Use these results to answer the following questions.
+
+1. Assess (i.e., make a summary interpretation) the length- and age-frequency histograms for Bluegill, Pumpkinseed, Yellow Perch, and Largemouth Bass from Mid Lake prior to angler exploitation.
+1. Predict the likely effects of angler exploitation on **size**-structure after angling has been allowed for one year. Why do you expect such changes?
+1. Predict the likely effects of angler exploitation on **age**-structure after angling has been allowed for one year. Why do you expect such changes?
+1. What percent decline in population abundance (i.e., number of fish) would you predict for each species?  Why do you expect such changes?
+
+&nbsp;
+
+----
+
+<div class="text-center">
+<ul class="pagination pagination-lg">
+  <li><a href="index.html">^</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="SizeStructure2_CEX2.html">2</a></li>
+</ul>

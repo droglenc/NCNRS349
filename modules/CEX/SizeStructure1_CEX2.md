@@ -6,7 +6,7 @@ css: /css/modules.css
 
 <div class="panel panel-primary">
   <div class="panel-heading">Special Note</div>
-  <div class="panel-body">This Case is a modification of Case 16 by <a href="http://www.sdstate.edu/nrm/people/willis.cfm">Dr. David Willis</a> from <a href="https://fisheries.org/shop/55062p"><i>Case Studies in Fisheries Conservation & Management: Applied Critical Thinking & Problem Solving</i></a>. Much of the text is exactly as it appeared in the original Case chapter, though slightly rearranged.</div>
+  <div class="panel-body">This Case is a modification of Case 16 by <a href="https://magazine.outdoornebraska.gov/2014/01/dr-willis/">Dr. David Willis</a> from <a href="https://fisheries.org/shop/55062p"><i>Case Studies in Fisheries Conservation & Management: Applied Critical Thinking & Problem Solving</i></a>. Much of the text is exactly as it appeared in the original Case chapter, though slightly rearranged.</div>
 </div>
 
 &nbsp;

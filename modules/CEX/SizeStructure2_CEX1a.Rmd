@@ -12,7 +12,7 @@ output:
 # Renders an appropriate HTML file for the webpage
 setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/CEX/")
 source("../../rhelpers/rhelpers.R")
-modHTML("SizeStructure2_CEX2")
+modHTML("SizeStructure2_CEX1a")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}

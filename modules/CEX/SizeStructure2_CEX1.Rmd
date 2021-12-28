@@ -149,5 +149,5 @@ Use these results to answer the following questions.
 <ul class="pagination pagination-lg">
   <li><a href="index.html">^</a></li>
   <li class="active"><a href="#">1</a></li>
-  <li><a href="SizeStructure2_CEX2.html">2</a></li>
+  <li><a href="SizeStructure2_CEX1a.html">2</a></li>
 </ul>

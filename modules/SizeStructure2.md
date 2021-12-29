@@ -11,8 +11,8 @@ css: /css/modules.css
 ## Practice
 
 * [Class Exercise I](CEX/SizeStructure2_CEX1)
-* [Class Exercise II](CEX/SizeStructure2_CEX2) ... [code will be posted](CEX/CODES/SizeStructure2_CE2.R)
-* [Assignment](CE/SizeStructure2_CE1)
+* [Class Exercise II](CEX/SizeStructure2_CEX2) ... [code will be posted](CEX/CODES/SizeStructure2.R)
+* [Assignment](CE/SizeStructure2_CE1) ... [key will be posted]()
 
 ## Archive
 

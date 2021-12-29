@@ -1,0 +1,71 @@
+---
+layout: page
+title: Homework Key
+subtitle: Size-Structure
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: false
+    lib_dir: zlibs
+---
+
+```{r echo=FALSE, eval=FALSE}
+# Renders an appropriate HTML file for the webpage
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/CE/")
+source("../../rhelpers/rhelpers.R")
+modHTML("KEY_SizeStructure_CE1")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+source("../../rhelpers/knitr_setup.R")
+options(show.signif.stars=FALSE)
+```
+```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+library(FSA)
+library(tidyverse)
+library(ggplot2)
+
+yp <- read.csv("https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/YPerchSB1.csv") %>%
+  mutate(lcat10=lencat(tl,w=1),
+         gcat=psdAdd(tl,species="Yellow Perch",unit="cm"))
+str(yp)
+
+ypin <- filter(yp,loc=="inner")
+ypout <- filter(yp,loc=="outer")
+
+freq <- xtabs(~loc+lcat10,data=yp)
+
+psdin <- psdCalc(~tl,data=ypin,species="Yellow Perch",
+                 what="traditional",units="cm")
+psdout <- psdCalc(~tl,data=ypout,species="Yellow Perch",
+                 what="traditional",units="cm")
+```
+
+----
+
+## Saginaw Bay Yellow Perch
+1. The histogram and frequency tables for both locations are below. The population of Yellow Perch in the outer portion of Saginaw Bay seems to be mostly greater than 15 cm, with a high concentration of fish between 15 and 20 cm.
+```{r hist, echo=FALSE, warning=FALSE}
+ggplot(data=yp,mapping=aes(x=tl,fill=loc)) +
+  geom_histogram(binwidth=1,boundary=0,color="black") +
+  scale_x_continuous(name="Total Length (cm)",breaks=seq(5,30,5)) +
+  scale_y_continuous(name="Frequency",expand=expansion(mult=c(0,0.03))) +
+  theme_bw() +
+  theme(legend.position="none") +
+  facet_wrap(vars(loc),scale="free_y",ncol=1)
+```
+```{r echo=FALSE}
+freq
+```
+
+{:start="2"}
+1. The PSD-Q for Yellow Perch from outer Saginaw Bay is `r psdout["PSD-Q","Estimate"]` with a 95% confidence interval from `r psdout["PSD-Q","95% LCI"]` to `r psdout["PSD-Q","95% UCI"]`.
+1. The PSD-P for Yellow Perch from outer Saginaw Bay is `r psdout["PSD-P","Estimate"]` with a 95% confidence interval from `r psdout["PSD-P","95% LCI"]` to `r psdout["PSD-P","95% UCI"]`.
+1. More of the stock-size fish in outer Saginaw Bay are of quality and preferred size than the stock-size fisn in inner Saginaw Bay. Thus, generally, the size structure in outer Saginaw Bay is generally towards larger fish than the size structure for inner Saginaw Bay.
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<setup>>
+<<hist>>
+```

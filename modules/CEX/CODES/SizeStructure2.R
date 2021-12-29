@@ -24,5 +24,7 @@ ggplot(data=ypin,mapping=aes(x=tl)) +
 
 ( freq2 <- xtabs(~gcat,data=droplevels(filter(ypin,gcat!="substock"))) )
 
-( psd_incs <- prop.table(freq2) )
+( psd_incs <- prop.table(freq2)*100 )
 ( psds <- rcumsum(psd_incs) )
+
+psdCalc(~tl,data=ypin,species="Yellow Perch",what="traditional",units="cm")

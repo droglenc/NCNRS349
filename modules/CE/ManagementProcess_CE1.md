@@ -15,7 +15,7 @@ css: /css/modules.css
     * **XXX** -- Focus on Goal I
     * **XXX** -- Focus on Goal II
     * **XXX** -- Focus on Goal III
-* [Fish Species Management Plan for Alligator Gar in Illinois](https://www.dnr.illinois.gov/news/documents/algplan.pdf)
+* **XXX** -- [Fish Species Management Plan for Alligator Gar in Illinois](https://www.dnr.illinois.gov/news/documents/algplan.pdf)
 
 These plans may use slightly different terminology than what was introduced by Krueger and Decker (2010). Thus, you should, in two pages or less, ...
 

@@ -1,12 +1,12 @@
 library(FSA)
-library(titdyverse)
+library(tidyverse)
 library(ggplot2)
 
 bg <- read.csv("https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/LakeLouiseBG.csv")
 str(bg)
 
 ggplot(data=bg,mapping=aes(x=len,fill=gear)) +
-  geom_histogram(binwidth=10,color="black") +
+  geom_histogram(binwidth=10,boundary=0,color="black") +
   scale_x_continuous(name="Total Length (mm)",breaks=seq(60,240,20)) +
   scale_y_continuous(name="Frequency",expand=expansion(mult=c(0,0.03))) +
   theme_bw() +

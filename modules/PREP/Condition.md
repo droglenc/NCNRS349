@@ -32,7 +32,6 @@ Read [Pope and Kruse (2007) Sections 10.1](RESOURCES/Pope-Kruse-2007_10_1.pdf) (
 1. What value of b is indicative of allometric growth?
 1. Define allometric growth?
 1. What kinds of "things" can impart a bias in the weight-length relationship?
-1. How does one check whether the assumptions of a linear regression have been met or not?
 
 ----
 
@@ -63,5 +62,3 @@ Read [Pope and Kruse (2007) Sections 10.1, 10.3, 10.6, & 10.7](RESOURCES/Pope-Kr
 1. What is the formula for a relative weight?
 1. What value of W<sub>r</sub> represents fish in "good condition"?
 1. What abiotic and biotic factors have been found to be related to fish condition?
-
-----

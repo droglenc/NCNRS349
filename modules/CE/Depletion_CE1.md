@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exercise
+title: Assignment
 subtitle: Depletion
 css: /css/modules.css
 ---

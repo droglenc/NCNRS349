@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exercise
+title: Assignment
 subtitle: Age-Length Key
 css: /css/modules.css
 ---

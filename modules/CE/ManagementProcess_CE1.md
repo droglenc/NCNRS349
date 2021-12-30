@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exercise
+title: Assignment
 subtitle: Management Process
 css: /css/modules.css
 ---

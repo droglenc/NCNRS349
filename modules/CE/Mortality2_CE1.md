@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exercise
+title: Assignment
 subtitle: Mortality II
 css: /css/modules.css
 ---

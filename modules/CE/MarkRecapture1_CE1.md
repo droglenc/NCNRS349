@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exercise
+title: Assignment
 subtitle: Mark-Recapture I
 css: /css/modules.css
 ---

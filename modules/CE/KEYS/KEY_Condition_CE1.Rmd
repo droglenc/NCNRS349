@@ -82,7 +82,7 @@ g08 <- ggplot(data=bg08,mapping=aes(x=gcat,y=wr)) +
     1. There could be a difference in sampling times between the two years. For example, fish in 2007 could have been sampled prior to or during the spawning season before individuals had released their gametes, whereas the sample in 2008 could have been later, after spawning.
 
 #### R Appendix
-```{r eval=FALSE, prompt=FALSE}
+```{r eval=FALSE, prompt=FALSE, fig.width=7, fig.height=3.5}
 <<Setup>>
 <<Cond2007>>
 <<Cond2008>>

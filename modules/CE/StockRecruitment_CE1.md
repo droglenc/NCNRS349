@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exercise
+title: Assignment
 subtitle: Stock-Recruitment
 css: /css/modules.css
 ---

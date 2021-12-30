@@ -1,9 +1,21 @@
 ---
 layout: page
-title: Reading Guide
+title: Preparation Guide
 subtitle: Mortality II
+css: /css/modules.css
 ---
 
+Read [this](NOTES/Mortality2), [Sections 11.2.4 in Ogle (2016)](RESOURCES/Ogle_Mortality.pdf) and re-read [end of Section 6.3.2 (about assumptions) in Miranda and Bettolli (2006)](RESOURCES/Miranda-Bettolli-2006-Sect6-1-3.pdf)] and answer the following questions.
+
+1. What are the assumptions of a catch curve model for estimating Z?
+1. What assumption about recruitment is made for a catch curve? Is this a realistic assumption? How do modest violations of this assumption affect the estimates of Z?
+1. How large of a sample is needed for a catch curve analysis?
+
+----
+
+Read [Sections 11.4 in Ogle (2016)](RESOURCES/Ogle_Mortality.pdf), [Section 6.6 in Miranda and Bettolli (2006)](Miranda-Bettolli-2006-Sect6-6.pdf), [Allen and Hightower (2010) Mortality](Allen-Hightower-2010-Mortality.pdf) (most of the [complete chapter](http://www.webpages.uidaho.edu/fish510/PDF/Allen%20and%20Hightower%201.pdf)), and [Sections 6.8-6.10 in Miranda and Bettolli (2006)](Miranda-Bettolli-2006-Sect6-8-10.pdf) and answer the following questions.
+
+{:start="4"}
 1. Define Z, F, M, and &mu;.
 1. What is the relationship between Z, F, and M?
 1. Explain what is meant by "meta-analysis to estimate M, F, or Z."

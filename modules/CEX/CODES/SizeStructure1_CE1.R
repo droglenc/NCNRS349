@@ -2,7 +2,7 @@ library(FSA)
 library(tidyverse)
 library(ggplot2)
 
-wc <- read.csv("https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/Whittlesey2011.csv")
+wc <- read.csv("https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/CE/Whittlesey2011.csv")
 str(wc)
 
 ## Species1

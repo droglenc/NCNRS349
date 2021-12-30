@@ -1,0 +1,409 @@
+---
+layout: page
+title: Weight-Length and Condition Notes
+author: Derek H. Ogle
+css: /css/codebox.css
+---
+
+
+<div id="weight-length-relationships" class="section level1">
+<h1>Weight-Length Relationships</h1>
+<p>Modeling the relationship between length and weight of a species of fish has been considered a routine analysis for which the results do not warrant publication <span class="citation">(Froese 2006)</span> or has been scorned as being of little value <span class="citation">(Hilborn and Walters 2001)</span>. However, the recent review of methods and the meta-analysis of a large number of length-weight relationships by <span class="citation">Froese (2006)</span> demonstrated that a synthetic analysis of length-weight relationships for a species can provide important insights into the ecology of that species.</p>
+<p>The relationship between the length and weight of a fish is used by fisheries researchers and managers for two main purposes <span class="citation">(Le Cren 1951)</span>. First, the relationship is used to predict the weight from the length of a fish. This is particularly useful for computing the biomass of a sample of fish from the length-frequency of that sample. Second, the parameter estimates of the relationship for a population of fish can be compared to average parameters for the region, parameter estimates from previous years, or parameter estimates among groups of fish to identify the relative condition or robustness of the population. By convention, this second purpose is usually generically referred to as describing the <em>condition</em> of the species.</p>
+<div id="weight-length-data" class="section level3">
+<h3>Weight-Length Data</h3>
+<p>The required data for examining the length-weight relationship for a sample of fish is measurements of the length (<span class="math inline">\(L\)</span>) and weight (<span class="math inline">\(W\)</span>) of individual fish at the time of capture (e.g., Table 1). Any other data about individual fish, such as month or year of capture, are of capture, etc. can also be recorded.</p>
+<p> </p>
+<p>Table 1: Length and weight measurements for a portion of Ruffe from the St. Louis River Harbor, 1992.</p>
+<table style="width:80%">
+<tr>
+<td>
+<b>month</b>
+</td>
+<td>
+<b>day</b>
+</td>
+<td>
+<b>year</b>
+</td>
+<td>
+<b>individual</b>
+</td>
+<td>
+<b>length</b>
+</td>
+<td>
+<b>weight</b>
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+23
+</td>
+<td>
+1992
+</td>
+<td>
+1
+</td>
+<td>
+90
+</td>
+<td>
+9.3
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+23
+</td>
+<td>
+1992
+</td>
+<td>
+2
+</td>
+<td>
+128
+</td>
+<td>
+32.5
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+23
+</td>
+<td>
+1992
+</td>
+<td>
+3
+</td>
+<td>
+112
+</td>
+<td>
+19.0
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+23
+</td>
+<td>
+1992
+</td>
+<td>
+4
+</td>
+<td>
+68
+</td>
+<td>
+4.4
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+23
+</td>
+<td>
+1992
+</td>
+<td>
+5
+</td>
+<td>
+56
+</td>
+<td>
+2.1
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+23
+</td>
+<td>
+1992
+</td>
+<td>
+6
+</td>
+<td>
+58
+</td>
+<td>
+2.8
+</td>
+</tr>
+<tr>
+<td>
+<span class="math inline">\(\vdots\)</span>}
+</td>
+<td>
+<span class="math inline">\(\vdots\)</span>
+</td>
+<td>
+<span class="math inline">\(\vdots\)</span>
+</td>
+<td>
+<span class="math inline">\(\vdots\)</span>
+</td>
+<td>
+<span class="math inline">\(\vdots\)</span>
+</td>
+<td>
+<span class="math inline">\(\vdots\)</span>
+</td>
+</tr>
+</table>
+<p> </p>
+<p>Three types of length measurements are common in the fisheries literature Figure 1. <em>Total length</em> (TL) is the length from the most anterior to the most posterior point with the tail of the fish compressed to exhibit the longest possible length. <em>Fork length</em> (FL) is the length from the most anterior point to the anterior notch in the fork of the tail. For fish without a forked tail, the fork and total lengths are the same. The <em>standard length</em> (SL) is the length from the most anterior point to the posterior end of the caudal peduncle. Total length is the most common measurement in fisheries studies, as this is the measurement used in management decisions such as setting minimum lengths.</p>
+<p><img src="Length_Measures.png" /></p>
+<p>Figure 1: Demonstration of total, fork, and standard length measurements on a Bluegill.</p>
+<p> </p>
+<p>Length measurements are often taken with the aid of a measuring board where the measuring “stick” is embedded into the bottom board and one end of this board is fit with a vertical end piece. The fish to be measured is placed on the bottom board such that the anterior point of the fish is against the vertical end piece and the measurement can be read directly from the embedded measuring stick (Figure 2). Length measurements are subject to very little measurement error <span class="citation">(Gutreuter and Krzoska 1994)</span>.</p>
+<p><img src="LengthWeightMeasure.png" /></p>
+<p>Figure 2: Field measurements of length (left) and weight with a spring scale (right).</p>
+<p> </p>
+<p>Two common weight measurements are used. The usual body weight is the weight of the fish as it was captured, whereas the dressed weight is the weight of the fish with the gills and entrails removed. Dressed weight is usually only used when measurements are reported from a commercial fishery.</p>
+<p>Weight measurements can be made in the field on fresh specimens or in the lab on fresh-frozen specimens. Weight measurements in the field can be taken with tared spring or electronic balances (Figure 2). However, field measurements can be extremely variable due to differences in fish surface wetness, boat movements, wind, and other adverse environmental conditions <span class="citation">(Gutreuter and Krzoska 1994)</span>. Substantial variability in weight measurements can occur when fish weigh less than 10% of a scale’s capacity <span class="citation">(Gutreuter and Krzoska 1994)</span>. Thus, multiple sizes of scales should be taken into the field <span class="citation">(Blackwell et al. 2000)</span>. <span class="citation">Wege and Anderson (1978)</span>} suggest that the accuracy of the scale should be $$1% of a fish’s body weight for use in relative weight calculations. Weight measurements on frozen fish were roughly 1-9% lighter than the measurements on the same fish when fresh, whereas length measurements were roughly 1-4% shorter on frozen then fresh fish for a variety of species (reviewed in <span class="citation">Ogle (2009)</span>).</p>
+</div>
+<div id="weight-length-model" class="section level3">
+<h3>Weight-Length Model</h3>
+<p>The relationship between the length and weight of a sample of fish tends to have two important characteristics. First, the relationship is not linear . This can be explained intuitively by thinking of length as a linear measure and weight as being related to volume. Thus, as the organism adds a linear amount of length, it is adding a disk of volume with a commensurate weight. Second, the variability in weight increases as the length of the fish increases (i.e., the scatter of the points increases from left-to-right in Figure 3. Thus, variability in weight among shorter fish is less then variability in weight among longer fish. Unfortunately, because of these two characteristics, length-weight data tends to violate the linearity and homoscedasticity (i.e., “constant variance”) assumptions of simple linear regression.</p>
+<p><img src="Condition_files/figure-html/unnamed-chunk-4-1.png" width="336" /></p>
+<p>Figure 3: Length and weight of Ruffe from the St. Louis River Harbor, 1992.</p>
+<p> </p>
+<p>These characteristics of length-weight data suggest that a two-parameter power function with a multiplicative error term should be used to model the length-weight relationship. Specifically, the model typically used is</p>
+<p><span class="math display">\[ W_{i} = aL_{i}^{b}e^{\epsilon_{i}} \quad \quad \text{(1)} \]</span></p>
+<p>where <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are constants and <span class="math inline">\(\epsilon_{i}\)</span> is the multiplicative error term for the <span class="math inline">\(i\)</span>th fish. The length-weight model Equation 1 can be <em>transformed</em> to a linear model by taking the natural logarithms<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> of both sides and simplifying,</p>
+<p><span class="math display">\[ log(W_{i}) = log(a) + blog(L_{i}) + \epsilon_{i} \quad \quad \text{(1)} \]</span></p>
+<p>Thus, with <span class="math inline">\(y=log(W)\)</span>, <span class="math inline">\(x=log(L)\)</span>, slope=<span class="math inline">\(b\)</span>, and intercept=<span class="math inline">\(log(a)\)</span>, Equation 2 is in the form of a linear model. In addition to linearizing the model, this transformation has the added benefit of making the errors additive and stabilizing the variances about the model (i.e., making the scatter around the line nearly constant for all length measurements; Figure 4). With this linearization and stabilization, the usual linear regression methods can be used to fit the relationship between <span class="math inline">\(log(W)\)</span> and <span class="math inline">\(log(L)\)</span>.</p>
+<p><img src="Condition_files/figure-html/unnamed-chunk-5-1.png" width="336" /></p>
+<p>Figure 4: Natural log transformed total length and weight of Ruffe from the St. Louis River Harbor, 1992. Note that the “flaring” of the values in the lower-left corner of the plot is due to minimum weight limitations of the measuring scale.</p>
+<p> </p>
+<p>It should be noted that, with the example in Figure 4, the variability on the log scale appears greater for ``small’’ fish. This is because the scale used to measure these fish lacked the required precision to distinguish weights of small fish over a wide length range. It is apparent that fish with a log weight of less than -0.5 should be eliminated from this analysis because of scale imprecision for these fish.</p>
+</div>
+<div id="special-inferences-about-slope" class="section level3">
+<h3>Special Inferences about Slope</h3>
+<p>If a fish grows without changing its shape or its density then the fish is said to exhibit <em>isometric</em> growth. In this case, the volume of the fish is proportional to any linear measure of its size. If weight is taken as a surrogate of volume (which requires assuming a constant density) and length as the linear measure, then the modeled relationship between length and weight, Equation 1, will have <span class="math inline">\(b=3\)</span> under isometric growth. Isometric growth in fish is rare <span class="citation">McGurk (1985)</span>. If a fish changes shape or density as it grows, then <span class="math inline">\(b\neq3\)</span> in Equation 1, and the fish is said to exhibit <em>allometric</em> growth. If <span class="math inline">\(b&gt;3\)</span> then the fish tends to become more “plumper” as the fish increases in length <span class="citation">(Blackwell et al. 2000)</span>.</p>
+<p>A test of whether the fish in a population exhibit isometric growth or not can be obtained by noting that <span class="math inline">\(b\)</span> is the estimated slope from fitting the transformed length-weight model. The slope is generically labeled with <span class="math inline">\(\beta\)</span> such that the test for allometry can be translated into the following statistical hypotheses:</p>
+<ul>
+<li><span class="math inline">\(H_{0}:\beta=3 \quad \Rightarrow H_{0}:\)</span> “Isometric growth”</li>
+<li><span class="math inline">\(H_{A}:\beta\neq3 \quad \Rightarrow H_{A}:\)</span> “Allometric growth”’</li>
+</ul>
+<p>Hypothesis tests regarding model parameters can be obtained with a t-test using</p>
+<p><span class="math display">\[ t = \frac{\hat{\beta}-\beta_{0}}{SE_{\hat{\beta}}} \]</span></p>
+<p>where <span class="math inline">\(\hat{\beta}\)</span>, <span class="math inline">\(SE_{\hat{\beta}}\)</span> and the df are from the linear regression results and <span class="math inline">\(\beta_{0}\)</span> is the specified value in the <span class="math inline">\(H_{0}\)</span>. Nearly all statistical packages, R included, print the <span class="math inline">\(t\)</span> and corresponding <span class="math inline">\(p-value\)</span> for <span class="math inline">\(H_{0}:\beta=0\)</span> by default, but not for any hypothesized value other than zero. Thus, the test statistic and p-value for the test of isometry must often be calculated “by hand.”</p>
+<p> </p>
+</div>
+</div>
+<div id="body-condition" class="section level1">
+<h1>Body Condition</h1>
+<p>Condition is a measure of the physical health of a population of fish based on the fish’s relative plumpness or fatness. Most often condition is computed by comparing the actual weight of a fish to some expectation of weight based on the length of the fish. In other words, measuring the condition of a particular fish is an exercise in determining if it weighs more or less than would be expected based on its length. An overall measure of condition for an entire population is obtained by averaging the condition of all fish in a sample.</p>
+<p>The utility of measuring fish conditions was summarized by <span class="citation">Blackwell et al. (2000)</span> in the following manner:</p>
+<blockquote>
+<p>Fish condition can be extremely important to fisheries managers. Plump fish may be indicators of favorable environmental conditions (e.g., habitat conditions, ample prey availability), whereas thin fish may indicate less favorable environmental conditions. Thus, being able to monitor fish well-being can be extremely useful for fisheries biologists who must make management recommendations concerning fish populations.</p>
+</blockquote>
+<p>There are at least eight metrics of condition <span class="citation">(Bolger and Connolly 1989)</span> of which three are commonly used by fisheries managers <span class="citation">(Blackwell et al. 2000)</span>. These three measures are introduced below and discussed within the context of four properties that should be evident in all condition metrics <span class="citation">(Murphy et al. 1990)</span>. Those four properties are (1) consistency – similar statistical properties and meaning regardless of species or length; (2) tractability – analysis by standard statistical methods; (3) efficiency – relative precision from small samples; and (4) robustness – relative insensitivity to variations in the way the data was collected and analyzed.</p>
+<div id="fultons-condition-factor" class="section level3">
+<h3>Fulton’s Condition Factor</h3>
+<p>Fulton’s condition factor is calculated with</p>
+<p><span class="math display">\[ K = \frac{W}{L^{3}}*constant \]</span></p>
+<p>where the constant is simply a scaling factor that is equal to <span class="math inline">\(100000\)</span> if metric units are used (i.e., grams and millimeters) or <span class="math inline">\(10000\)</span> if English units are used (i.e., pounds and inches).{^1] Fulton’s condition factor <em>assumes isometric growth</em>.[^2] If a fish stock does not exhibit isometric growth, which is often the case, then <span class="math inline">\(K\)</span> tends to differ depending on the length of the fish, violating the consistency property. Furthermore, comparing <span class="math inline">\(K\)</span> between species is problematic because both species would need to exhibit isometric growth for the comparison to be valid. Because of these limitations, Fulton’s condition factor should be avoided.</p>
+</div>
+<div id="lecrens-relative-condition-factor" class="section level3">
+<h3>LeCren’s Relative Condition Factor</h3>
+<p>The relative condition factor, introduced by <span class="citation">Le Cren (1951)</span>, is calculated with</p>
+<p><span class="math display">\[ Kn = \frac{W}{W&#39;} \]</span></p>
+<p>where <span class="math inline">\(W&#39;\)</span> is the predicted length-specific mean weight for the population under study [<span class="citation">Blackwell et al. (2000)</span>}. The average <span class="math inline">\(Kn\)</span> across all lengths and species is 1.0 [<span class="citation">Anderson and Neumann (1996)</span>}. Thus, <span class="math inline">\(Kn\)</span> is consistent across lengths. <span class="citation">Bolger and Connolly (1989)</span>, however, show that <span class="math inline">\(Kn\)</span> comparisons are restricted to species or regions that have the same slope (<span class="math inline">\(b\)</span>) in the length-weight relationship. Thus, <span class="math inline">\(W&#39;\)</span> is generally predicted from length-weight equations developed for a population (perhaps from several years of data) or for a region.</p>
+</div>
+<div id="relative-weight" class="section level3">
+<h3>Relative Weight</h3>
+<p>The relative weight, introduced by <span class="citation">Wege and Anderson (1978)</span>, is calculated with</p>
+<p><span class="math display">\[ Wr = \frac{W}{Ws}*100 \quad \quad \text{(3)} \]</span></p>
+<p>where <span class="math inline">\(Ws\)</span> is a ``standard weight’’ for fish of the same length. In simplistic terms, a standard weight equation for a particular species is a length-weight relationship designed to predict the 75th percentile[^3] mean weight for a given value of length.[^4] Standard weight equations have been developed for a wide variety of species.[^5] It should be noted that the standard weight equations have been developed for either metric or English unit measurements but that the <span class="math inline">\(log_{10}\)</span> rather than the <span class="math inline">\(log_{e}\)</span> transformation is used. <span class="citation">Blackwell et al. (2000)</span> suggest that regional or population-specific <span class="math inline">\(Ws\)</span> equations should NOT be developed. If regional or population-specific analysis is desired then <span class="math inline">\(Kn\)</span> should be used.</p>
+<p>Recent trends, following the work of <span class="citation">Gerow et al. (2005)</span>, have resulted in standard weight equations that are quadratic rather than linear. Examples of the use of quadratic standard weight equations can be found in <span class="citation">Ogle and Winfield (2009)</span> and <span class="citation">Cooney and Kwak (2010)</span>. While use of these types of standard weight equations is not illustrated in this vignette, their use is a simple and straightforward modification of what is demonstrated here.</p>
+<p>The relative weight measure has become the most popular measure of condition <span class="citation">(Blackwell et al. 2000)</span>. This popularity is partly due to the fact that relative weight summaries have been used as a surrogate measure of the general “health” of the fish (<span class="citation">Brown and Murphy (1991)</span>, <span class="citation">Neumann and Murphy (1992)</span>, <span class="citation">Jonas et al. (1996)</span>, <span class="citation">Brown and Murphy (2004)</span>, <span class="citation">Kaufman et al. (2007)</span>, <span class="citation">Rennie and Verdon (2008)</span>}; but also see <span class="citation">Copeland et al. (2008)</span>) as well as the environment (<span class="citation">Liao et al. (1995)</span>, <span class="citation">Blackwell et al. (2000)</span>, <span class="citation">Rennie and Verdon (2008)</span>). Thus, relative weight summaries may be used as an indirect means for evaluating ecological relationships and the effects of management strategies (<span class="citation">Murphy et al. (1991)</span>, <span class="citation">Blackwell et al. (2000)</span>). In addition, <span class="citation">Murphy et al. (1990)</span> found the distributions of <span class="math inline">\(Wr\)</span> values to typically be symmetric (but not normal). Because t-tests and analysis of variance tests are relatively robust to departures from normality, as long as the distribution is symmetric, typical parametric inferential statistics can be used with <span class="math inline">\(Wr\)</span> values.</p>
+<p>It should be noted, though, that Gerow (<span class="citation">Gerow et al. (2004)</span>, <span class="citation">Gerow et al. (2005)</span>, and <span class="citation">Gerow (2010)</span>) has been critical of the idea that traditionally developed standard weight equations produce relative weight values that are not dependent on the length of the fish.</p>
+</div>
+<div id="comparisons-among-length-categories" class="section level3">
+<h3>Comparisons Among Length Categories</h3>
+<p>A measure of overall condition using <span class="math inline">\(Wr\)</span> should not be computed without first determining if the <span class="math inline">\(Wr\)</span> values differ across fish lengths <span class="citation">(Blackwell et al. 2000)</span>. In particular, <span class="citation">Murphy et al. (1991)</span> suggested that <span class="math inline">\(Wr\)</span> values should first be summarized within the usual five-cell length categories of <span class="citation">Gabelhouse (1984)</span>.[^6] Use of the five-cell model can be problematic at times because of small sample sizes in the larger length categories. Thus, other authors have summarized by 25- or 50-mm length categories. The mean <span class="math inline">\(Wr\)</span> values in the length categories are then tested with analysis of variance methods to determine if differences exist among the length categories. Adjacent length categories that are statistically equal can then be pooled together. If no statistical differences among categories exist, then all length categories can be pooled and an overall measure of condition for the population can be computed. Relative weights should be reported as whole numbers <span class="citation">(Blackwell et al. 2000)</span>.</p>
+<hr />
+</div>
+<div id="reproducibility-information" class="section level2">
+<h2>Reproducibility Information</h2>
+<ul>
+<li><strong>Compiled Date:</strong> Wed Dec 29 2021</li>
+<li><strong>Compiled Time:</strong> 9:17:20 PM</li>
+<li><strong>R Version:</strong> R version 4.1.2 (2021-11-01)</li>
+<li><strong>System:</strong> Windows, x86_64-w64-mingw32/x64 (64-bit)</li>
+<li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>
+<li><strong>Required Packages:</strong> FSA, FSAdata, captioner, knitr, dplyr, magrittr and their dependencies (car, dunn.test, ellipsis, evaluate, generics, glue, graphics, grDevices, highr, lifecycle, lmtest, methods, pillar, plotrix, R6, rlang, sciplot, stats, stringr, tibble, tidyselect, tools, utils, vctrs, withr, xfun, yaml)</li>
+<li><strong>Other Packages:</strong> captioner_2.2.3.9000, dplyr_1.0.7, FSA_0.9.1.9000, FSAdata_0.3.8, knitr_1.36, magrittr_2.0.1</li>
+<li><strong>Loaded-Only Packages:</strong> assertthat_0.2.1, bslib_0.3.1, compiler_4.1.2, crayon_1.4.2, DBI_1.1.1, digest_0.6.28, ellipsis_0.3.2, evaluate_0.14, fansi_0.5.0, fastmap_1.1.0, generics_0.1.1, glue_1.5.0, highr_0.9, htmltools_0.5.2, jquerylib_0.1.4, jsonlite_1.7.2, lifecycle_1.0.1, pillar_1.6.4, pkgconfig_2.0.3, purrr_0.3.4, R6_2.5.1, rlang_0.4.12, rmarkdown_2.11, sass_0.4.0, stringi_1.7.5, stringr_1.4.0, tibble_3.1.6, tidyselect_1.1.1, tools_4.1.2, utf8_1.2.2, vctrs_0.3.8, xfun_0.28, yaml_2.2.1</li>
+<li><strong>Links:</strong> <a href="Condition.R">Script</a> / <a href="Condition.Rmd">RMarkdown</a></li>
+</ul>
+<hr />
+<p> </p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2 class="unnumbered">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-AndersonNeumann1996" class="csl-entry">
+Anderson, R. O., and R. M. Neumann. 1996. Length, weight, and associated structural indices. in, Murphy, B.R. and D.W. Willis, editors Fisheries Techniques, second edition, American Fisheries Society, Bethesda, Maryland:447–481.
+</div>
+<div id="ref-Blackwelletal2000" class="csl-entry">
+Blackwell, B. G., M. L. Brown, and D. W. Willis. 2000. Relative weight (<span>W</span>r) status and current use in fisheries assessment and management. Reviews in Fisheries Science 8:1–44.
+</div>
+<div id="ref-BolgerConnolly1989" class="csl-entry">
+Bolger, T., and P. L. Connolly. 1989. The selection of suitable indices for the measurement and analysis of fish condition. Journal of Fish Biology 34:171–182.
+</div>
+<div id="ref-BrownMurphy1991" class="csl-entry">
+Brown, M. L., and B. R. Murphy. 1991. Relationship of relative weight (<span>W</span>r) to proximate composition of juvenile <span>S</span>triped <span>B</span>ass and hybrid <span>S</span>triped <span>B</span>ass. Transactions of the American Fisheries Society 120:509–518.
+</div>
+<div id="ref-BrownMurphy2004" class="csl-entry">
+Brown, M. L., and B. R. Murphy. 2004. Seasonal dynamics of direct and indirect condition indices in relation to energy allocation in <span>L</span>argemouth <span>B</span>ass <em>micropterus salmoides</em> (<span>L</span>acepede). Ecology of Freshwater Fish 13:23–36.
+</div>
+<div id="ref-CooneyKwak2010" class="csl-entry">
+Cooney, P. B., and T. J. Kwak. 2010. Development of standard weight equations for <span>C</span>aribbean and <span>G</span>ulf of <span>M</span>exico amphidromous fishes. North American Journal of Fisheries Management 30:1203–1209.
+</div>
+<div id="ref-Copelandetal2008" class="csl-entry">
+Copeland, T., B. R. Murphy, and J. J. Ney. 2008. Interpretation of relative weight in three populations of wild <span>B</span>luegills: <span>A</span> cautionary tale. North American Journal of Fisheries Management 28:386–377.
+</div>
+<div id="ref-Froese2006" class="csl-entry">
+Froese, R. 2006. Cube law, condition factor and weight-length relationships: <span>H</span>istory, meta-analysis and recommendations. Journal of Applied Ichthyology 22:241–253.
+</div>
+<div id="ref-Gabelhouse1984" class="csl-entry">
+Gabelhouse, D. W. 1984. A length-categorization system to assess fish stocks. North American Journal of Fisheries Management 4:273–285.
+</div>
+<div id="ref-Gerow2010" class="csl-entry">
+Gerow, K. G. 2010. Biases with the regression line percentile method and the fallacy of a single standard weight. North American Journal of Fisheries Management 30:679–690.
+</div>
+<div id="ref-Gerowetal2005" class="csl-entry">
+Gerow, K. G., R. C. Anderson-Sprecher, and W. A. Hubert. 2005. A new method to compute standard-weight equations that reduces length-related bias. North American Journal of Fisheries Management 25:1288–1300.
+</div>
+<div id="ref-Gerowetal2004" class="csl-entry">
+Gerow, K. G., W. A. Hubert, and R. C. Anderson-Sprecher. 2004. An alternative approach to detection of length-related biases in standard weight equations. North American Journal of Fisheries Management 24:903–910.
+</div>
+<div id="ref-GutreuterKrzoska1994" class="csl-entry">
+Gutreuter, S., and D. J. Krzoska. 1994. Quantifying precision of <em>in situ</em> length and weight measurements of fish. North American Journal of Fisheries Management 14:318–322.
+</div>
+<div id="ref-HilbornWalters2001" class="csl-entry">
+Hilborn, R., and C. J. Walters. 2001. Quantitative fisheries stock assessment: Choice, dynamics, &amp; uncertainty. Page 570Second. Chapman &amp; Hall, New York, NY.
+</div>
+<div id="ref-Jonasetal1996" class="csl-entry">
+Jonas, J. L., C. E. Kraft, and T. L. Margenau. 1996. Assessment of seasonal changes in energy density and condition in age-0 and age-1 <span>M</span>uskellunge. Transactions of the American Fisheries Society 125:203–210.
+</div>
+<div id="ref-Kaufmanetal2007" class="csl-entry">
+Kaufman, S. D., T. A. Johnston, W. C. Leggett, M. D. Moles, J. M. Casselman, and A. I. Schulte-Hostedde. 2007. Relationships between body condition indices and proximate composition in adult <span>W</span>alleyes. Transactions of the American Fisheries Society 136:1566–1576.
+</div>
+<div id="ref-LeCren1951" class="csl-entry">
+Le Cren, E. D. 1951. The length-weight relationship and seasonal cycle in gonad weight and condition in the <span>P</span>erch (<em><span>P</span>erca flavescens</em>). Journal of Animal Ecology 20:201–219.
+</div>
+<div id="ref-Liaoetal1995" class="csl-entry">
+Liao, H., C.L. Pierce, D. H. Wahl, J. B. Rasmussen, and W. C. Leggett. 1995. Relative weight (<span>W</span>r) as a field assessment tool: <span>R</span>elationships with growth, prey biomass, and environmental conditions. Transactions of the American Fisheries Society 124:387–400.
+</div>
+<div id="ref-McGurk1985" class="csl-entry">
+McGurk, M. D. 1985. Effects of net capture on the postpreservation morphometry, dry weight, and condition factor of <span>P</span>acific herring larvae. Transactions of the American Fisheries Society 114:348–355.
+</div>
+<div id="ref-Murphyetal1990" class="csl-entry">
+Murphy, B. R., M. L. Brown, and T. A. Springer. 1990. Evaluation of the relative weight (<span>W</span>r) index, with new applications to <span>W</span>alleye. North American Journal of Fisheries Management 10:85–97.
+</div>
+<div id="ref-Murphyetal1991" class="csl-entry">
+Murphy, B. R., D. W. Willis, and T. A. Springer. 1991. The relative weight index in fisheries management: <span>S</span>tatus and needs. Fisheries (Bethesda) 16(2):30–38.
+</div>
+<div id="ref-NeumannMurphy1992" class="csl-entry">
+Neumann, R. M., and B. R. Murphy. 1992. Seasonal relationships of relative weight to body composition in <span>W</span>hite <span>C</span>rappie <em><span>P</span>omoxis annularis</em> <span>R</span>afinesque. Aquaculture Research 23:243–251.
+</div>
+<div id="ref-Ogle2009" class="csl-entry">
+Ogle. 2009. The effect of freezing on the length and weight measurements of ruffe (<em><span>G</span>ymnocephalus cernuus</em>). Fisheries Research 99:244–247.
+</div>
+<div id="ref-OgleWinfield2009" class="csl-entry">
+Ogle, D. H., and I. J. Winfield. 2009. Ruffe length-weight relationships with a proposed standard weight equation. North American Journal of Fisheries Management 29:850–858.
+</div>
+<div id="ref-RennieVerdon2008" class="csl-entry">
+Rennie, M. D., and R. Verdon. 2008. Development and evaluation of condition indices for the <span>L</span>ake <span>W</span>hitefish. North American Journal of Fisheries Management 28:1270–1293.
+</div>
+<div id="ref-WegeAnderson1978" class="csl-entry">
+Wege, G. W., and R. O. Anderson. 1978. Relative weight (<span>W</span>r): <span>A</span> new index of condition for <span>L</span>argemouth <span>B</span>ass. Pages 79–91 <em>in</em> G. D. Novinger and J. G. Dillard, editors. New approaches to the management of small impoundments. American Fisheries Society.
+</div>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Natural logarithms are used throughout this course and will be referred to simply as “logarithms” and will be abbreviated with “log.”<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+---
+layout: page
+title: Weight-Length and Condition Notes
+author: Derek H. Ogle
+css: /css/codebox.css
+csl: ../../../rhelpers/american-fisheries-society.csl
+bibliography: ../../../rhelpers/NRS349.bib
+output: 
+  html_document: 
+    fig_width: 3.5
+    fig_height: 3.5
+    self_contained: no
+---
+```{r echo=FALSE, eval=FALSE}
+# First line renders an appropriate HTML file for the webpage
+# Second line makes the script file
+# RUN BOTH MANUALLY (following using Knit HTML button)
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/PREP/NOTES/")
+source("../../../rhelpers/Rhelpers.R")
+modHTML("Condition",need2render=FALSE)
+if (require(FSA)) purl2("Condition.Rmd",topnotes="")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+# ===== BEGIN -- THIS CAN BE IGNORED =========================
+# Setup of knitr
+source("../../../rhelpers/knitr_setup.R")
+# declare packages used
+rqrd <- c("FSA","FSAdata","captioner","knitr","dplyr","magrittr")
+library(FSA)
+library(FSAdata)
+library(dplyr)
+library(magrittr)
+# setup figure, table, and equation captioning
+library(captioner)
+
+figcaps <- captioner(prefix="Figure")
+figcaps("LengthMeasures","Demonstration of total, fork, and standard length measurements on a Bluegill.")
+figcaps("LengthWeightMeasure","Field measurements of length (left) and weight with a spring scale (right).")
+figcaps("RuffeRawLW","Length and weight of Ruffe from the St. Louis River Harbor, 1992.")
+figcaps("RuffeTransLW",'Natural log transformed total length and weight of Ruffe from the St. Louis River Harbor, 1992. Note that the "flaring" of the values in the lower-left corner of the plot is due to minimum weight limitations of the measuring scale.')
+
+tblcaps <- captioner(prefix="Table")
+tblcaps("LWDataEx","Length and weight measurements for a portion of Ruffe from the St. Louis River Harbor, 1992.")
+
+eqncaps <- captioner(prefix="Equation")
+eqncaps("LWModel")
+eqncaps("LWTransformModel")
+eqncaps("RelativeWeight")
+# ===== END -- THIS CAN BE IGNORED ===========================
+```
+
+```{r echo=FALSE}
+data(RuffeSLRH92)
+ruffe2 <- RuffeSLRH92 %>%
+  filter(!is.na(weight),!is.na(length)) %>%
+  mutate(logL=log(length),logW=log(weight))
+```
+
+# Weight-Length Relationships
+Modeling the relationship between length and weight of a species of fish has been considered a routine analysis for which the results do not warrant publication [@Froese2006] or has been scorned as being of little value [@HilbornWalters2001]. However, the recent review of methods and the meta-analysis of a large number of length-weight relationships by @Froese2006 demonstrated that a synthetic analysis of length-weight relationships for a species can provide important insights into the ecology of that species.
+
+The relationship between the length and weight of a fish is used by fisheries researchers and managers for two main purposes [@LeCren1951]. First, the relationship is used to predict the weight from the length of a fish. This is particularly useful for computing the biomass of a sample of fish from the length-frequency of that sample. Second, the parameter estimates of the relationship for a population of fish can be compared to average parameters for the region, parameter estimates from previous years, or parameter estimates among groups of fish to identify the relative condition or robustness of the population. By convention, this second purpose is usually generically referred to as describing the *condition* of the species.
+
+
+### Weight-Length Data
+The required data for examining the length-weight relationship for a sample of fish is measurements of the length ($L$) and weight ($W$) of individual fish at the time of capture (e.g., `r tblcaps("LWDataEx",display="cite")`). Any other data about individual fish, such as month or year of capture, are of capture, etc. can also be recorded.
+
+\ 
+
+`r tblcaps("LWDataEx")`
+ 
+<table style="width:80%">
+<tr><td><b>month</b></td><td><b>day</b></td><td><b>year</b></td><td><b>individual</b></td><td><b>length</b></td><td><b>weight</b></td></tr>
+<tr><td>4</td><td>23</td><td>1992</td><td>1</td><td>90</td><td>9.3</td></tr>
+<tr><td>4</td><td>23</td><td>1992</td><td>2</td><td>128</td><td>32.5</td></tr>
+<tr><td>4</td><td>23</td><td>1992</td><td>3</td><td>112</td><td>19.0</td></tr>
+<tr><td>4</td><td>23</td><td>1992</td><td>4</td><td>68</td><td>4.4</td></tr>
+<tr><td>4</td><td>23</td><td>1992</td><td>5</td><td>56</td><td>2.1</td></tr>
+<tr><td>4</td><td>23</td><td>1992</td><td>6</td><td>58</td><td>2.8</td></tr>
+<tr><td>$\vdots$}</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td><td>$\vdots$</td></tr>
+</table>
+
+\ 
+
+Three types of length measurements are common in the fisheries literature `r figcaps("LengthMeasures",display="cite")`. *Total length* (TL) is the length from the most anterior to the most posterior point with the tail of the fish compressed to exhibit the longest possible length. *Fork length* (FL) is the length from the most anterior point to the anterior notch in the fork of the tail. For fish without a forked tail, the fork and total lengths are the same. The *standard length* (SL) is the length from the most anterior point to the posterior end of the caudal peduncle. Total length is the most common measurement in fisheries studies, as this is the measurement used in management decisions such as setting minimum lengths.
+
+![](Length_Measures.png)
+
+`r figcaps("LengthMeasures")`
+
+\ 
+
+Length measurements are often taken with the aid of a measuring board where the measuring "stick" is embedded into the bottom board and one end of this board is fit with a vertical end piece. The fish to be measured is placed on the bottom board such that the anterior point of the fish is against the vertical end piece and the measurement can be read directly from the embedded measuring stick (`r figcaps("LengthWeightMeasure",display="cite")`). Length measurements are subject to very little measurement error [@GutreuterKrzoska1994].
+
+![](LengthWeightMeasure.png)
+
+`r figcaps("LengthWeightMeasure")`
+
+\ 
+
+Two common weight measurements are used. The usual body weight is the weight of the fish as it was captured, whereas the dressed weight is the weight of the fish with the gills and entrails removed. Dressed weight is usually only used when measurements are reported from a commercial fishery.
+
+Weight measurements can be made in the field on fresh specimens or in the lab on fresh-frozen specimens. Weight measurements in the field can be taken with tared spring or electronic balances (`r figcaps("LengthWeightMeasure",display="cite")`). However, field measurements can be extremely variable due to differences in fish surface wetness, boat movements, wind, and other adverse environmental conditions [@GutreuterKrzoska1994]. Substantial variability in weight measurements can occur when fish weigh less than 10% of a scale's capacity [@GutreuterKrzoska1994]. Thus, multiple sizes of scales should be taken into the field [@Blackwelletal2000]. @WegeAnderson1978} suggest that the accuracy of the scale should be $\pm$1% of a fish's body weight for use in relative weight calculations. Weight measurements on frozen fish were roughly 1-9% lighter than the measurements on the same fish when fresh, whereas length measurements were roughly 1-4% shorter on frozen then fresh fish for a variety of species (reviewed in @Ogle2009).
+
+### Weight-Length Model
+The relationship between the length and weight of a sample of fish tends to have two important characteristics. First, the relationship is not linear \figrefp{fig:RuffeRawLW}. This can be explained intuitively by  thinking of length as a linear measure and weight as being related to volume. Thus, as the organism adds a linear amount of length, it is adding a disk of volume with a commensurate weight. Second, the variability in weight increases as the length of the fish increases (i.e., the scatter of the points increases from left-to-right in `r figcaps("RuffeRawLW",display="cite")`. Thus, variability in weight among shorter fish is less then variability in weight among longer fish. Unfortunately, because of these two characteristics, length-weight data tends to violate the linearity and homoscedasticity (i.e., "constant variance") assumptions of simple linear regression.
+
+```{r echo=FALSE, par1=TRUE}
+plot(weight~length,data=ruffe2,pch=19,
+     xlab="Total Length (mm)",ylab="Weight (g)",xlim=c(0,200),cex=0.5)
+```
+
+`r figcaps("RuffeRawLW")`
+
+\ 
+
+These characteristics of length-weight data suggest that a two-parameter power function with a multiplicative error term should be used to model the length-weight relationship. Specifically, the model typically used is
+
+$$ W_{i} = aL_{i}^{b}e^{\epsilon_{i}} \quad \quad \text{`r paste0("(",eqncaps("LWModel",display="num"),")")`} $$
+
+where $a$ and $b$ are constants and $\epsilon_{i}$ is the multiplicative error term for the $i$th fish. The length-weight model `r eqncaps("LWModel",display="cite")` can be *transformed* to a linear model by taking the natural logarithms[^1] of both sides and simplifying,
+
+$$ log(W_{i}) = log(a) + blog(L_{i}) + \epsilon_{i} \quad \quad \text{`r paste0("(",eqncaps("LWModel",display="num"),")")`} $$
+
+Thus, with $y=log(W)$, $x=log(L)$, slope=$b$, and intercept=$log(a)$, `r eqncaps("LWTransformModel",display="cite")` is in the form of a linear model. In addition to linearizing the model, this transformation has the added benefit of making the errors additive and stabilizing the variances about the model (i.e., making the scatter around the line nearly constant for all length measurements;  `r figcaps("RuffeTransLW",display="cite")`). With this linearization and stabilization, the usual linear regression methods can be used to fit the relationship between $log(W)$ and $log(L)$.
+
+```{r echo=FALSE, par1=TRUE}
+plot(logW~logL,data=ruffe2,pch=19,
+     xlab="log Total Length (mm)",ylab="log Weight (g)",cex=0.5)
+```
+
+`r figcaps("RuffeTransLW")`
+
+\ 
+
+It should be noted that, with the example in `r figcaps("RuffeTransLW",display="cite")`, the variability on the log scale appears greater for ``small'' fish. This is because the scale used to measure these fish lacked the required precision to distinguish weights of small fish over a wide length range. It is apparent that fish with a log weight of less than -0.5 should be eliminated from this analysis because of scale imprecision for these fish.
+
+### Special Inferences about Slope
+If a fish grows without changing its shape or its density then the fish is said to  exhibit *isometric* growth. In this case, the volume of the fish is proportional to any linear measure of its size. If weight is taken as a surrogate of volume (which requires assuming a constant density) and length as the linear measure, then the modeled relationship between length and weight, `r eqncaps("LWModel",display="cite")`, will have $b=3$ under isometric growth. Isometric growth in fish is rare [@BolgerConnolly1989, @McGurk1985]. If a fish changes shape or density as it grows, then $b\neq3$ in `r eqncaps("LWModel",display="cite")`, and the fish is said to exhibit *allometric* growth. If $b>3$ then the fish tends to become more "plumper" as the fish increases in length [@Blackwelletal2000].
+
+A test of whether the fish in a population exhibit isometric growth or not can be obtained by noting that $b$ is the estimated slope from fitting the transformed length-weight model. The slope is generically labeled with $\beta$ such that the test for allometry can be translated into the following statistical hypotheses:
+
+* $H_{0}:\beta=3 \quad \Rightarrow H_{0}:$ "Isometric growth"
+* $H_{A}:\beta\neq3 \quad \Rightarrow H_{A}:$ "Allometric growth"'
+
+Hypothesis tests regarding model parameters can be obtained with a t-test using
+
+$$ t = \frac{\hat{\beta}-\beta_{0}}{SE_{\hat{\beta}}} $$
+
+where $\hat{\beta}$, $SE_{\hat{\beta}}$ and the df are from the linear regression results and $\beta_{0}$ is the specified value in the $H_{0}$. Nearly all statistical packages, R included, print the $t$ and corresponding $p-value$ for $H_{0}:\beta=0$ by default, but not for any hypothesized value other than zero. Thus, the test statistic and p-value for the test of isometry must often be calculated "by hand."
+
+\ 
+
+# Body Condition
+
+Condition is a measure of the physical health of a population of fish based on the fish's relative plumpness or fatness. Most often condition is computed by comparing the actual weight of a fish to some expectation of weight based on the length of the fish. In other words, measuring the condition of a particular fish is an exercise in determining if it weighs more or less than would be expected based on its length. An overall measure of condition for an entire population is obtained by averaging the condition of all fish in a sample.
+
+The utility of measuring fish conditions was summarized by @Blackwelletal2000 in the following manner:
+
+> Fish condition can be extremely important to fisheries managers. Plump fish may be indicators of favorable environmental conditions (e.g., habitat conditions, ample prey availability), whereas thin fish may indicate less favorable environmental conditions. Thus, being able to monitor fish well-being can be extremely useful for fisheries biologists who must make management recommendations concerning fish populations.
+
+There are at least eight metrics of condition [@BolgerConnolly1989] of which three are commonly used by fisheries managers [@Blackwelletal2000]. These three measures are introduced below and discussed within the context of four properties that should be evident in all condition metrics [@Murphyetal1990]. Those four properties are (1) consistency -- similar statistical properties and meaning regardless of species or length; (2) tractability -- analysis by standard statistical methods; (3) efficiency -- relative precision from small samples; and (4) robustness -- relative insensitivity to variations in the way the data was collected and analyzed.
+
+### Fulton's Condition Factor
+
+Fulton's condition factor is calculated with
+
+$$ K = \frac{W}{L^{3}}*constant $$
+
+where the constant is simply a scaling factor that is equal to $100000$ if metric units are used (i.e., grams and millimeters) or $10000$ if English units are used (i.e., pounds and inches).{^1]  Fulton's condition factor *assumes isometric growth*.[^2]  If a fish stock does not exhibit isometric growth, which is often the case, then $K$ tends to differ depending on the length of the fish, violating the consistency property. Furthermore, comparing $K$ between species is problematic because both species would need to exhibit isometric growth for the comparison to be valid. Because of these limitations, Fulton's condition factor should be avoided.
+
+### LeCren's Relative Condition Factor
+
+The relative condition factor, introduced by @LeCren1951, is calculated with
+
+$$ Kn = \frac{W}{W'} $$
+
+where $W'$ is the predicted length-specific mean weight for the population under study [@Blackwelletal2000}. The average $Kn$ across all lengths and species is 1.0 [@AndersonNeumann1996}. Thus, $Kn$ is consistent across lengths. @BolgerConnolly1989, however, show that $Kn$ comparisons are restricted to species or regions that have the same slope ($b$) in the length-weight relationship. Thus, $W'$ is generally predicted from length-weight equations developed for a population (perhaps from several years of data) or for a region.
+
+### Relative Weight
+
+The relative weight, introduced by @WegeAnderson1978, is calculated with
+
+$$ Wr = \frac{W}{Ws}*100 \quad \quad \text{`r paste0("(",eqncaps("RelativeWeight",display="num"),")")`} $$
+
+where $Ws$ is a ``standard weight'' for fish of the same length. In simplistic terms, a standard weight equation for a particular species is a length-weight relationship designed to predict the 75th percentile[^3] mean weight for a given value of length.[^4]  Standard weight equations have been developed for a wide variety of species.[^5]  It should be noted that the standard weight equations have been developed for either metric or English unit measurements but that the $log_{10}$ rather than the $log_{e}$ transformation is used. @Blackwelletal2000 suggest that regional or population-specific $Ws$ equations should NOT be developed. If regional or population-specific analysis is desired then $Kn$ should be used.
+
+Recent trends, following the work of @Gerowetal2005, have resulted in standard weight equations that are quadratic rather than linear. Examples of the use of quadratic standard weight equations can be found in @OgleWinfield2009 and @CooneyKwak2010. While use of these types of standard weight equations is not illustrated in this vignette, their use is a simple and straightforward modification of what is demonstrated here.
+
+The relative weight measure has become the most popular measure of condition [@Blackwelletal2000]. This popularity is partly due to the fact that relative weight summaries have been used as a surrogate measure of the general "health" of the fish (@BrownMurphy1991, @NeumannMurphy1992, @Jonasetal1996, @BrownMurphy2004, @Kaufmanetal2007, @RennieVerdon2008}; but also see @Copelandetal2008) as well as the environment (@Liaoetal1995, @Blackwelletal2000, @RennieVerdon2008). Thus, relative weight summaries may be used as an indirect means for evaluating ecological relationships and the effects of management strategies (@Murphyetal1991, @Blackwelletal2000). In addition, @Murphyetal1990 found the distributions of $Wr$ values to typically be symmetric (but not normal). Because t-tests and analysis of variance tests are relatively robust to departures from normality, as long as the distribution is symmetric, typical parametric inferential statistics can be used with $Wr$ values.
+
+It should be noted, though, that Gerow (@Gerowetal2004, @Gerowetal2005, and @Gerow2010) has been critical of the idea that traditionally developed standard weight equations produce relative weight values that are not dependent on the length of the fish.
+
+### Comparisons Among Length Categories
+A measure of overall condition using $Wr$ should not be computed without first determining if the $Wr$ values differ across fish lengths [@Blackwelletal2000]. In particular, @Murphyetal1991 suggested that $Wr$ values should first be summarized within the usual five-cell length categories of @Gabelhouse1984.[^6]  Use of the five-cell model can be problematic at times because of small sample sizes in the larger length categories. Thus, other authors have summarized by 25- or 50-mm length categories. The mean $Wr$ values in the length categories are then tested with analysis of variance methods to determine if differences exist among the length categories. Adjacent length categories that are statistically equal can then be pooled together. If no statistical differences among categories exist, then all length categories can be pooled and an overall measure of condition for the population can be computed. Relative weights should be reported as whole numbers [@Blackwelletal2000].
+
+--------------------------------------------------------------
+
+```{r echo=FALSE, results='asis'}
+reproInfo(rqrdPkgs=rqrd,out="markdown",
+          links=c(Script="Condition.R",RMarkdown="Condition.Rmd"))
+```
+
+--------------------------------------------------------------
+
+\ 
+
+## References
+
+[^1]: Natural logarithms are used throughout this course and will be referred to simply as "logarithms" and will be abbreviated with "log".

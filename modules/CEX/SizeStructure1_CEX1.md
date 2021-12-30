@@ -8,7 +8,7 @@ css: /css/modules.css
 #### Motivation
 Fish length is likely the information most commonly collected by fisheries biologists and managers. While length is usually not the only information collected by a fisheries biologist, summaries of length information can provide the biologist with a wealth of information on population parameters such as age distributions, growth rates, and mortality rates; the basic biology of the animal; and the effect of management regulations on the fish population. Thus, summarizing length data and then interpreting those summaries is an important task performed by fisheries biologists.
 
-![Measuring](../RESOURCES/Measure.jpg)
+![Measuring](Measure.jpg)
 
 &nbsp;
 
@@ -17,7 +17,7 @@ Whittlesey Creek is a tributary to Chequamegon Bay of Lake Superior. This stream
 
 In July, 2011 a quarter-mile stretch of the lower Whittlesey Creek was modified with the addition of [large woody debris with attached "root balls."](http://www.fondriest.com/news/natural-stream-restoration-rebuilds-habitats-in-great-lakes-basin.htm) The goal of this project was to alter the morphology of this section of the stream to provide better habitat and water conditions for Brook Trout. In May, 2011 a group of Northland College students conducted two days of sampling with electrofishing gear in order to provide baseline information about the fish populations in this section of the stream. Their sampling yielded eight total Brook Trout but relatively larger numbers of Coho Salmon (*Oncorhynchus kisutch*), Rainbow Trout (*Oncorhynchus mykiss*), and sculpins (primarily Slimy Sculpin (*Cottus cognatus*), but some Mottled Sculpin (*Cottus bairdii*)). Data from the catches of Coho Salmon, Rainbow Trout, and sculpins will be analyzed in this case study.
 
-![Electrofishing](../RESOURCES/EFish.jpg)
+![Electrofishing](EFish.jpg)
 
 &nbsp;
 

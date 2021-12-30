@@ -19,14 +19,14 @@ Various sampling gears may be differentially effective for different species, an
 
 In this case study, you will explore the differential size structure of Bluegills captured by two common sampling gears -- electrofishing and trap nets (also known as modified fyke nets).
 
-![Fykenet](../RESOURCES/FykeNet.jpg)
+![Fykenet](FykeNet.jpg)
 
 &nbsp;
 
 #### Data
 [Lake Louise](https://gfp.sd.gov/parks/detail/lake-louise-recreation-area/) is a 45-ha impoundment located in Hand County, South Dakota. The maximum depth is 6.5 m with a mean depth of 2.7 m. Fish were sampled with trap nets that had 1.2- X 1.5-m frames, dual throats, and 19-mm bar mesh. Night electrofishing was undertaken with pulsed DC electricity at approximately 250 V and 8 A. Samples were collected in late May at a water temperature of 23^o^C.
 
-Total length (TL; mm) of each Bluegill was recorded for fish captured in both gears in [LakeLouiseBG.csv](https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/LakeLouiseBG.csv)). The variables in this data frame are defined as follows,
+Total length (TL; mm) of each Bluegill was recorded for fish captured in both gears in [LakeLouiseBG.csv](https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/CEX/LakeLouiseBG.csv)). The variables in this data frame are defined as follows,
 
 * `len`: The TL (mm) of the sampled fish.
 * `gear`: The gear used to capture the fish. Choices are `A` and `B` (described later).
@@ -36,7 +36,7 @@ Total length (TL; mm) of each Bluegill was recorded for fish captured in both ge
 ## Preparation
 Prior to beginning this case study you should:
 
-* Read [Laarman and Ryckman (1982)](../RESOURCES/Laarman_Ryckman_1982.pdf) and [Schultz and Haines (2005)](../RESOURCES/Schultz_Haines_2005.pdf). Both of these papers deal with length-related biases for sampling Bluegills (the latter article deals with other species as well). As you read these articles, concentrate on the gear bias for 8-cm and longer Bluegills (Bluegills smaller than this length are not reliably sampled by these gears).
+* Read [Laarman and Ryckman (1982)](Laarman_Ryckman_1982.pdf) and [Schultz and Haines (2005)](Schultz_Haines_2005.pdf). Both of these papers deal with length-related biases for sampling Bluegills (the latter article deals with other species as well). As you read these articles, concentrate on the gear bias for 8-cm and longer Bluegills (Bluegills smaller than this length are not reliably sampled by these gears).
 * Be familiar with methods of comparing distributions of fish length (e.g., see Section 6.4.1 of the [IFAR book](http://derekogle.com/IFAR/)).
 * You should create a script that reads the CSV file into an object in R and displays the structure and a few rows of the data.frame.
 

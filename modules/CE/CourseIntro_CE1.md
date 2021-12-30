@@ -14,7 +14,7 @@ css: "/css/modules.css"
 <br>
 
 ## Lake Mille Lacs Walleye
-The Minnesota DNR convened a blue-ribbon panel to determine whether the data available from Lake Mille Lacs supported a variety of hypotheses about why the fish population declined. The report from the blue-ribbon panel is available [here in long form](../RESOURCES/MilleLacs_Report.pdf) or [here as a summarized set of presentation slides](../RESOURCES/MilleLacs_Report_Presentation.pdf). Use these resources to answer the questions below.
+The Minnesota DNR convened a blue-ribbon panel to determine whether the data available from Lake Mille Lacs supported a variety of hypotheses about why the fish population declined. The report from the blue-ribbon panel is available [here in long form](MilleLacs_Report.pdf) or [here as a summarized set of presentation slides](MilleLacs_Report_Presentation.pdf). Use these resources to answer the questions below.
 
 1. How did regulations managing the harvest of Walleye (*Sander vitreus*) change around 2000?
 1. What were two abiotic and three biotic factors that may affect Walleye populations that changed dramatically in the late 1990s or early to mid 2000s?

@@ -30,7 +30,7 @@ library(tidyverse)
 library(ggplot2)
 library(patchwork)
 
-d <- read.csv("https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/GoeddeCobleData.csv") %>%
+d <- read.csv("https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/CEX/GoeddeCobleData.csv") %>%
   mutate(species=plyr::mapvalues(species,
                                  from=c("BLG","LMB","PKS","YEP","NOP"),
                                  to=c("Bluegill","Largemouth Bass",

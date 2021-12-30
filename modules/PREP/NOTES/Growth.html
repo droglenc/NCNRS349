@@ -1,0 +1,823 @@
+---
+layout: page
+title: Growth (von Bertalanffy) Notes
+author: Derek H. Ogle
+css: /css/codebox.css
+---
+
+
+<p>Growth of individual organisms within a population is generally characterized by an expression which is representative of individual growth of an “average” animal in the population. Individual growth is treated as an increase in either length or weight with increasing age. Several functions (or models) have been used to model the mean length or weight of fishes. One function, the von Bertalanffy growth function (VBGF), is the most popular and is the focus of this module.</p>
+<p> </p>
+<div id="size-at-age-data" class="section level1">
+<h1>Size-at-Age Data</h1>
+<p>The raw data for size-at-age modeling consists of the measurement of size, either length or weight, and the assignment of age to individual fish at the time the fish was captured. This is called <em>length-at-capture</em>, <em>weight-at-capture</em>, and <em>age-at-capture</em> data. An example<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> of this type of data for length and age is shown in Table 1-Left and in Figure 1.</p>
+<p> </p>
+<p>Table 1: Length-at-age for a portion of a sample of male Atlantic Croakers (left) and average length-at-age (right) for all male Atlantic Croakers in 1999.</p>
+<div class="row">
+<div class="col-sm-4">
+<table class="table" style="width:75%">
+<thead>
+<tr>
+<th colspan="3">
+Individual Data
+</th>
+</tr>
+<tr>
+<td>
+Indiv
+</td>
+<td>
+Age
+</td>
+<td>
+Length
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+1
+</td>
+<td>
+248
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+2
+</td>
+<td>
+210
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+2
+</td>
+<td>
+225
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+2
+</td>
+<td>
+236
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+2
+</td>
+<td>
+240
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+2
+</td>
+<td>
+245
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+2
+</td>
+<td>
+255
+</td>
+</tr>
+<tr>
+<td>
+8
+</td>
+<td>
+2
+</td>
+<td>
+258
+</td>
+</tr>
+<tr>
+<td>
+9
+</td>
+<td>
+2
+</td>
+<td>
+263
+</td>
+</tr>
+<tr>
+<td>
+10
+</td>
+<td>
+2
+</td>
+<td>
+270
+</td>
+</tr>
+<tr>
+<td>
+11
+</td>
+<td>
+2
+</td>
+<td>
+292
+</td>
+</tr>
+<tr>
+<td>
+<span class="math inline">\(\vdots\)</span>
+</td>
+<td>
+<span class="math inline">\(\vdots\)</span>
+</td>
+<td>
+<span class="math inline">\(\vdots\)</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-sm-4">
+<table class="table" style="width:75%">
+<thead>
+<tr>
+<th colspan="2">
+Summarized Data
+</th>
+</tr>
+<tr>
+<td>
+Avg Age
+</td>
+<td>
+Avg Length
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+248.0
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+248.4
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+281.8
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+298.3
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+328.2
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+345.9
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+332.5
+</td>
+</tr>
+<tr>
+<td>
+8
+</td>
+<td>
+344.3
+</td>
+</tr>
+<tr>
+<td>
+9
+</td>
+<td>
+370.8
+</td>
+</tr>
+<tr>
+<td>
+10
+</td>
+<td>
+327.0
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><img src="Growth_files/figure-html/unnamed-chunk-4-1.png" width="336" /></p>
+<p>Figure 1: Length-at-age of male Atlantic Croaker. Red lines are the average length-at-age.</p>
+<p> </p>
+<p>Historical methods for estimating the parameters of growth models used the <em>average</em> length or weight at each observed age for the sample (Table 1-Right) rather than the original data recorded for each individual. The historical methods should no longer be used because high-speed computers can easily perform the calculations or iterations necessary for fitting the growth models to individual at-capture data. In addition, the historical methods lost important information about individual variability. The historical method is carefully discussed in <span class="citation">Ricker (1975)</span>.</p>
+<p>It is also common to use “back-calculation” techniques to reconstruct data for growth analyses. This type of data is called <em>retrospective size-at-age data</em> <span class="citation">(Jones 2000)</span>. Growth data generated in this way is generally inappropriate for the simple modeling techniques developed in this vignette because the back-calculated measurements are serially correlated (i.e., the techniques described here require independent observations). The problems created by serially-correlated data and techniques for handling serially-correlated data are described in <span class="citation">Jones (2000)</span>.</p>
+<p> </p>
+</div>
+<div id="typical-von-bertalanffy-growth-model" class="section level1">
+<h1>“Typical” von Bertalanffy Growth Model</h1>
+<div id="the-model-and-parameters" class="section level2">
+<h2>The Model and Parameters</h2>
+<p>There are many versions or parameterizations of the VBGF (see <a href="#other-parameterizations-of-the-vbgf">this section</a>). The most common version is due to <span class="citation">Beverton (1954)</span> and <span class="citation">Beverton and Holt (1957)</span>, who modified the original version introduced by von Bertalanffy <span class="citation">(Cailliet et al. 2006)</span>. This model will be termed the “typical” version of the VBGF throughout this module. The typical VBGF is represented by<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p><span class="math display">\[ E[L|t] = L_{\infty}\left(1-e^{-K(t-t_{0})}\right) \quad \quad \text{(1)}  \]</span></p>
+<p>where</p>
+<ul>
+<li><span class="math inline">\(E[L|t]\)</span> is the expected or average length at time (or age) t,</li>
+<li><span class="math inline">\(L_{\infty}\)</span> is the asymptotic average length,</li>
+<li><span class="math inline">\(K\)</span> is the so-called Brody growth rate coefficient (units are yr<span class="math inline">\(^{-1}\)</span>), and</li>
+<li><span class="math inline">\(t_{0}\)</span> is a modeling artificat that is said to represent the time or age when the average length was zero.</li>
+</ul>
+<p>The parameters of Equation 1 have strict meanings that have been misunderstood in past work. The following items address some of these misunderstandings.</p>
+<ul>
+<li><p><span class="math inline">\(L_{\infty}\)</span> is <em>not</em> the maximum length of the animal. Rather <span class="math inline">\(L_{\infty}\)</span> is the asymptote for the model of <em>average</em> length-at-age <span class="citation">(Francis 1988)</span>. As with any average, some individuals will be larger than average; thus, some animals will be larger than <span class="math inline">\(L_{\infty}\)</span>. This is illustrated in Figure 2.</p></li>
+<li><p>Furthermore, <span class="citation">Francis (1988)</span> argues that <span class="math inline">\(L_{\infty}\)</span> only has meaning in fish populations where “mortality is low enough to allow fish to reach an age at which the mean length (virtually) ceases to increase.”</p></li>
+<li><p><span class="math inline">\(K\)</span> is <em>not</em> a growth rate <span class="citation">(Ricker 1975)</span>. The units of <span class="math inline">\(K\)</span> can be seen by algebraically solving Equation 1 for <span class="math inline">\(K\)</span>,</p></li>
+</ul>
+<p><span class="math display">\[ 1-\frac{E[L|t]}{L_{\infty}} = -e^{-K(t-t_{o})} \]</span> <span class="math display">\[ log\left(\frac{1-E[L|t]}{L_{\infty}}\right) = -K(t-t_{o}) \]</span> <span class="math display">\[ K = \frac{log\left(\frac{L_{\infty}-E[L|t]}{L_{\infty}}\right)}{t-t_{o}} \]</span></p>
+<ul style="list-style-type:none">
+<li>
+to notice that the units in the numerator disappear. Thus, the units of <span class="math inline">\(K\)</span> are in <span class="math inline">\(time^{-1}\)</span> rather than a change in length for a unit time as required by a growth rate.
+</li>
+</ul>
+<ul>
+<li><span class="citation">Schnute and Fournier (1980)</span> offer two related interpretations of the meaning of <span class="math inline">\(K\)</span>. First, <span class="math inline">\(K\)</span> “measures the exponential rate of approach to the asymptotic size.” Second, the value <span class="math inline">\(e^{-K}\)</span> is “the fixed fraction by which the annual growth increment is multiplied each year.” This last definition is seen by the relation</li>
+</ul>
+<p><span class="math display">\[ E[L|t=i+2]-E[L|t=i+1] = e^{-K}(E[L|t=i+1]-E[L|t=i]) \quad \quad \text{(2)}  \]</span></p>
+<ul style="list-style-type:none">
+<li>
+where, because <span class="math inline">\(K&gt;0\)</span>, the quantity <span class="math inline">\(e^{-K}\)</span> is a decimal. Thus, each succeeding growth increment is a constant fraction of the current growth increment indicating that growth slows as the fish gets older.
+</li>
+</ul>
+<ul>
+<li><p><span class="math inline">\(t_{0}\)</span>, despite its definition above, is a modeling artifact and not a biological parameter <span class="citation">(Schnute and Fournier 1980)</span>. The <span class="math inline">\(t_{0}\)</span> parameter is included in Equation 1 to adjust or “correct” the model for the initial size of the animal as most of the models do not pass through the origin. This is illustrated in Figure 2. <span class="citation">Beverton (1954)</span> said “It must be remembered that the constant <span class="math inline">\(t_{0}\)</span> is largely artificial, insofar as it defines the age at which the organism would be of zero length if it grew throughout life with the same pattern of growth as in the post-larval stage.” In addition, <span class="citation">Beverton and Holt (1957)</span> stated that “in practice, the constant <span class="math inline">\(t_{0}\)</span> must be regarded as quite artificial.”</p></li>
+<li><p>The estimation and interpretation of <span class="math inline">\(t_{0}\)</span> is further complicated by the fact that the value of <span class="math inline">\(t_{0}\)</span> is generally an extrapolation <span class="citation">(Francis 1988)</span> – e.g., Figure 2.</p></li>
+<li><p><span class="math inline">\(L_{\infty}\)</span>, <span class="math inline">\(K\)</span>, and <span class="math inline">\(t_{0}\)</span> are highly related (or correlated). This can be seen in the solution for <span class="math inline">\(K\)</span> above where <span class="math inline">\(K\)</span> depends on the values of <span class="math inline">\(L_{\infty}\)</span> and <span class="math inline">\(t_{0}\)</span>. For example, with all else held constant, <span class="math inline">\(K\)</span> will be larger for smaller values of <span class="math inline">\(L_{\infty}\)</span>. This dependency among parameters causes problems in model fitting and interpretation <span class="citation">(Ratkowsky 1986)</span>. Some of the other VBGF parameterizations (see <a href="#other-parameterizations-of-the-vbgf">this section</a>) have parameters that are much less correlated.</p></li>
+</ul>
+<p><img src="Growth_files/figure-html/unnamed-chunk-5-1.png" width="336" /><img src="Growth_files/figure-html/unnamed-chunk-5-2.png" width="336" /></p>
+<p>Figure 2: Example of the typical parameterization of the VBGF fit to size-at-age Atlantic Croaker data. The plot on the left is the fitted model expressed over the observed ages and lengths of the data. The plot on the right is the same fitted model but expressed over a range of ages and lengths that allow illustrating the meaning of <span class="math inline">\(L_{\infty}\)</span> and <span class="math inline">\(t_{0}\)</span>.</p>
+<p> </p>
+</div>
+</div>
+<div id="other-parameterizations-of-the-vbgf" class="section level1">
+<h1>Other Parameterizations of the VBGF</h1>
+<div id="the-models-and-their-parameters" class="section level2">
+<h2>The Models and Their Parameters</h2>
+<p>A model can often be cast into a different parameterization where the model is functionally the same – i.e., predictions are exactly the same – but it has different parameters. Different parameterizations of models are created for a variety of reasons but two important reasons are that the re-parameterized model (i) has parameters for which the interpretation meets some need and (ii) has parameters that are less correlated. Each parameterization can ultimately be shown to be equivalent via albegra. The VBGF has been cast in at least five different parameterizations, each of which is discussed in this section.</p>
+<div id="original-model-parameterization" class="section level4">
+<h4>Original Model Parameterization</h4>
+<p>The VBGF first proposed by von Bertalanffy <span class="citation">(Cailliet et al. 2006)</span> is</p>
+<p><span class="math display">\[ E[L|t] = L_{\infty} - \left (L_{\infty} - L_{0}\right)e^{-Kt} \quad \quad \text{(3)}  \]</span></p>
+<p>where most items are defined as for Equation 1 and <span class="math inline">\(L_{0}\)</span> is the mean length at time zero (i.e., birth).<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Visualizations for the parameters are shown in Figure 3. This parameterization of the VBGF, despite being the model proposed by von Bertalanffy, has been relatively (as compared to the typical VBGF) rarely used in the literature. However, <span class="citation">Cailliet et al. (2006)</span> recommended its use with chondrychthians.</p>
+<p><img src="Growth_files/figure-html/unnamed-chunk-6-1.png" width="336" /><img src="Growth_files/figure-html/unnamed-chunk-6-2.png" width="336" /></p>
+<p>Figure 3: Example of the “original” parameterization of the VBGF fit to size-at-age Atlantic Croaker data. The plot on the left is the fitted model expressed over the observed ages and lengths of the data. The plot on the right is the same fitted model but expressed over a range of ages and lengths that allows for illustrating the meaning of <span class="math inline">\(L_{\infty}\)</span> and <span class="math inline">\(L_{0}\)</span>.</p>
+<p> </p>
+</div>
+<div id="gallucci-and-quinn-1979-parameterization" class="section level4">
+<h4>Gallucci and Quinn (1979) Parameterization</h4>
+<p><span class="citation">Gallucci and Quinn II (1979)</span> noted that comparisons of “growth” between two groups should involve both <span class="math inline">\(K\)</span> and <span class="math inline">\(L_{\infty}\)</span>. However, because of the generally high correlation between these two parameters, simultaneous hypothesis tests of these two parameters are compromised and difficult to interpret. To aid comparison between two groups, <span class="citation">Gallucci and Quinn II (1979)</span> introduced a new parameter, <span class="math inline">\(\omega=KL_{\infty}\)</span> which, by solving this quantity for <span class="math inline">\(L_{\infty}\)</span> and substituting into Equation 1, yields yet another reparameterization of the VBGF,</p>
+<p><span class="math display">\[ E[L|t] = \frac{\omega}{K}\left(1-e^{-K(t-t_{0})}\right) \quad \quad \text{(4)}  \]</span></p>
+<p><span class="citation">Gallucci and Quinn II (1979)</span> state that <span class="math inline">\(\omega\)</span> can be thought of as a growth rate because the units are in length-per-time and, in fact, it is representative of the growth rate near <span class="math inline">\(t_{o}\)</span>. Furthermore, they claim that <span class="math inline">\(\omega\)</span> is the appropriate parameter to use when comparing populations because of its statistical robustness.</p>
+</div>
+<div id="mooij-et-al.-1999-parameterization" class="section level4">
+<h4>Mooij <em>et al.</em> (1999) Parameterization</h4>
+<p><span class="citation">Mooij et al. (1999)</span> applied the same concept as <span class="citation">Gallucci and Quinn II (1979)</span> to Equation 3 rather than Equation 1 to yield the following parameterization,</p>
+<p><span class="math display">\[ E[L|t] = L_{\infty}-(L_{\infty}-L_{0})e^{-\frac{\omega}{L_{\infty}}t} \quad \quad \text{(5)}  \]</span></p>
+<p>The parameters of this model are interpreted as before with the exception that <span class="math inline">\(\omega\)</span> is representative of the growth rate near <span class="math inline">\(L_{0}\)</span>.</p>
+</div>
+<div id="schnute-parameterization" class="section level4">
+<h4>Schnute Parameterization</h4>
+<p>All previous parameterizations have two major difficulties – (1) highly correlated parameters and (2) some parameters that are largely extrapolations (the “positions” of <span class="math inline">\(L_\infty\)</span>, <span class="math inline">\(L_{0}\)</span>, and <span class="math inline">\(t_{0}\)</span> are rarely represented in the data). The VBGF parameterizations shown in this, and the next, section are largely based on “expected values” at known ages and, thus, largely alleviate these difficulties <span class="citation">(Ratkowsky 1986)</span>. The so-called “Schnute” parameterization (from <span class="citation">Quinn II and Deriso (1999)</span>) of the VBGF is,</p>
+<p><span class="math display">\[ E[L|t] = L_{1} + (L_{3}-L_{1})\frac{1-e^{-K(t-t_{1})}}{1-e^{-K(t_{3}-t_{1})}} \quad \quad \text{(6)}  \]</span></p>
+<p>where <span class="math inline">\(L_{1}\)</span> is the average length at the youngest age, <span class="math inline">\(t_{1}\)</span>, and <span class="math inline">\(L_{3}\)</span> is the average length at the oldest age, <span class="math inline">\(t_{3}\)</span>, <em>in the sample</em>.</p>
+<p>It is important to note that this parameterization is not more or less parsimonious then any of the previous parameterizations as it still has three parameters – <span class="math inline">\(L_{1}\)</span>, <span class="math inline">\(L_{3}\)</span>, and <span class="math inline">\(K\)</span> (note that <span class="math inline">\(t_{1}\)</span> and <span class="math inline">\(t_{3}\)</span> are constants). However, it does have two major advantages over the previous parameterizations. First, the parameters in this parameterization are less correlated than the parameters in other parameterizations (<span class="citation">Gallucci and Quinn II (1979)</span> and see <a href="#parameterization-comparisons">this section</a>) and, thus, more stable. Second, this parameterization is directly comparable to the general growth model developed by <span class="citation">Schnute (1981)</span>. The major drawback of this parameterization is that comparison to results in the literature or from previous studies is difficult, as the typical parameterization is far more prevalent. <span class="citation">Schnute and Fournier (1980)</span> did show, however, that the point estimate of <span class="math inline">\(L_{\infty}\)</span> and <span class="math inline">\(t_{0}\)</span> can be obtained from the parameters in the Schnute parameterization as follows,</p>
+<p><span class="math display">\[ L_{\infty} = \frac{L_{3}-L_{1}e^{-K(t_{3}-t_{1})}}{1-e^{-K(t_{3}-t_{1})}} \]</span> <span class="math display">\[ t_{0} = t_{1} + \frac{1}{K}ln\left(\frac{L_{3}-L_{1}}{L_{3}-L_{1}e^{-K(t_{3}-t_{1})}}\right) \]</span></p>
+<p>A common mistake in the interpretation of the Schnute parameterization is to equate <span class="math inline">\(L_{2}\)</span> and <span class="math inline">\(L_{\infty}\)</span>. However, <span class="math inline">\(L_{2} \neq L_{\infty}\)</span> as <span class="math inline">\(L_{\infty}\)</span> is the average size at the theoretical maximum age and <span class="math inline">\(L_{2}\)</span> is the average size at the maximum age *in the sample}. Thus, <span class="math inline">\(L_{2}\leq L_{\infty}\)</span> because the maximum age in the sample is either less than or equal to the theoretical maximum age (Figure 4).</p>
+<p><img src="Growth_files/figure-html/unnamed-chunk-7-1.png" width="336" /></p>
+<p>Figure 4: Example of the Schnute parameterization of the VBGF fit to size-at-age Atlantic Croaker data expressed over a range of ages and lengths that allow illustrating the meaning of <span class="math inline">\(L_{1}\)</span> and <span class="math inline">\(L_{2}\)</span>. In addition, the blue lines correspond to <span class="math inline">\(L_{\infty}\)</span> from Figure 2 and <span class="math inline">\(L_{0}\)</span> from Figure 3 for comparative purposes.</p>
+<p> </p>
+</div>
+<div id="francis-1988-parameterization" class="section level4">
+<h4>Francis (1988) Parameterization</h4>
+<p><span class="citation">Francis (1988)</span> provided yet another parameterization of the VBGF in his paper comparing the fit of VBGFs to length-at-age data and to tag-recapture data. His basic argument was that the meanings of <span class="math inline">\(L_{\infty}\)</span> and <span class="math inline">\(K\)</span> depend on which type of data (and corresponding model) is being fit and that this is an undesirable property. He proposed the following parameterization as a correction to this problem,</p>
+<p><span class="math display">\[ E[L|t] = L_{1} + \left(L_{3} - L_{1}\right)\frac{1-r^{2\frac{t-t_{1}}{t_{3}-t_{1}}}}{1-r^2} \quad \quad \text{(8)}  \]</span></p>
+<p>where</p>
+<p><span class="math display">\[ r = \frac{L_{3}-L_{2}}{L_{2}-L_{1}} \]</span></p>
+<p>where <span class="math inline">\(L_{1}\)</span>, <span class="math inline">\(L_{2}\)</span>, and <span class="math inline">\(L_{3}\)</span> are the mean lengths at ages <span class="math inline">\(t_{1}\)</span>, <span class="math inline">\(t_{2}\)</span>,and <span class="math inline">\(t_{3}\)</span>, respectivly. The <span class="math inline">\(t_{1}\)</span> and <span class="math inline">\(t_{3}\)</span> are arbitrary reference ages (and <span class="math inline">\(t_{2}\)</span> is half-way between each) but are generally a relatively young (i.e., <span class="math inline">\(t_{1}\)</span>) and old (i.e., <span class="math inline">\(t_{3}\)</span>) age. Note that <span class="math inline">\(r\)</span> is used to simplify the presentation and is not a new parameter. The resultant parameters from this model are effectively the predicted mean lengths-at-age for the three chosen ages (Figure 5).</p>
+<p><img src="Growth_files/figure-html/unnamed-chunk-8-1.png" width="336" /></p>
+<p>Figure 5: Example of the Francis parameterization of the VBGF fit to size-at-age Atlantic Croaker data expressed over a range of ages and lengths that allow illustrating the meaning of <span class="math inline">\(L_{1}\)</span>, <span class="math inline">\(L_{2}\)</span>, and <span class="math inline">\(L_{3}\)</span>. Note that the arbitrary ages chosen were <span class="math inline">\(t_{1}\)</span>=2 and <span class="math inline">\(t_{3}\)</span>=9.</p>
+<p> </p>
+<p><span class="citation">Francis (1988)</span> showed that point estimates of the typical parameters could be derived from these modified parameters as follows,</p>
+<p><span class="math display">\[ L_{\infty} = L_{1} + \frac{L_{3}-L_{1}}{1-r^{2}} \]</span> <span class="math display">\[ K = \frac{-2log(r)}{t_{3}-t_{1}} \]</span> <span class="math display">\[ t_{0} = t_{1} + \frac{1}{K}log\left(\frac{L_{\infty}-L_{1}}{L_{\infty}}\right) \]</span></p>
+<p> </p>
+</div>
+</div>
+<div id="parameterization-comparisons" class="section level2">
+<h2>Parameterization Comparisons</h2>
+<p>As noted previously, the different parameterizations of the VBGF are the same model with different parameters (Figure 6). Estimates of parameters that appear in more than one of the parameterizations will be the same among the parameterizations (Table 2). The parameterizations based on expected values (i.e., Schnute and Francis) will generally require fewer iterations to converge when fitting and will result in lower correlations among parameter estimates (Table 2).</p>
+<p> </p>
+<p>Table 2: Parameter estimates and model results from fitting different parameterizations of the VBGF to the male Atlantic Croaker data. Note that <span class="math inline">\(L_{1}\)</span>, <span class="math inline">\(L_{2}\)</span>, and <span class="math inline">\(L_{3}\)</span> are not comparable between parmaterizations; <span class="math inline">\(L_{1}\)</span>, <span class="math inline">\(L_{2}\)</span>, and <span class="math inline">\(L_{3}\)</span> correspond to ages 2, 5.5, and 9 in the Francis parameterization; “iters” is the number of iterations to convergence; and <span class="math inline">\(r_{max}\)</span> and <span class="math inline">\(r_{mean}\)</span> are the maximum and average absolute value of correlation coefficients among the three parameters.</p>
+<!-- html table generated in R 4.1.2 by xtable 1.8-4 package -->
+<!-- Wed Dec 29 21:03:05 2021 -->
+<table border='0' style='width:80%'>
+<tr>
+<th>
+Models
+</th>
+<th>
+<span class="math inline">\(L_{0}\)</span>
+</th>
+<th>
+<span class="math inline">\(L_{\infty}\)</span>
+</th>
+<th>
+<span class="math inline">\(K\)</span>
+</th>
+<th>
+<span class="math inline">\(t_{0}\)</span>
+</th>
+<th>
+<span class="math inline">\(\omega\)</span>
+</th>
+<th>
+<span class="math inline">\(L_{1}\)</span>
+</th>
+<th>
+<span class="math inline">\(L_{2}\)</span>
+</th>
+<th>
+<span class="math inline">\(L_{3}\)</span>
+</th>
+<th>
+SE
+</th>
+<th>
+iters
+</th>
+<th>
+<span class="math inline">\(r_{max}\)</span>
+</th>
+<th>
+<span class="math inline">\(r_{mean}\)</span>
+</th>
+</tr>
+<tr>
+<td align="center">
+Typical
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+366
+</td>
+<td align="center">
+0.31
+</td>
+<td align="center">
+-1.71
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.97
+</td>
+<td align="center">
+0.93
+</td>
+</tr>
+<tr>
+<td align="center">
+Original
+</td>
+<td align="center">
+153
+</td>
+<td align="center">
+366
+</td>
+<td align="center">
+0.31
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.95
+</td>
+<td align="center">
+0.89
+</td>
+</tr>
+<tr>
+<td align="center">
+Gallucci Quinn
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+0.31
+</td>
+<td align="center">
+-1.71
+</td>
+<td align="center">
+115.3
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+1.00
+</td>
+<td align="center">
+0.98
+</td>
+</tr>
+<tr>
+<td align="center">
+Mooij
+</td>
+<td align="center">
+153
+</td>
+<td align="center">
+366
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+115.3
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.93
+</td>
+<td align="center">
+0.89
+</td>
+</tr>
+<tr>
+<td align="center">
+Schnute
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+0.31
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+210
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+357
+</td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.83
+</td>
+<td align="center">
+0.71
+</td>
+</tr>
+<tr>
+<td align="center">
+Francis
+</td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+<ul>
+<li></td>
+<td align="center">
+253
+</td>
+<td align="center">
+329
+</td>
+<td align="center">
+354
+</td>
+<td align="center">
+33
+</td>
+<td align="center">
+4
+</td>
+<td align="center">
+0.08
+</td>
+<td align="center">
+0.05
+</td>
+</tr>
+</table></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><img src="Growth_files/figure-html/unnamed-chunk-11-1.png" width="336" /></p>
+<p>Figure 6: Fits of the typical (blue), Schnute (red), and Francis (green) parameterizations of the VBGF to size-at-age Atlantic Croaker data (auto-generated starting values were used for all parameterizations). Note that the results of all fits are identical and, thus, the fitted lines are directly on top of each other. Different colors and different line widths were used to illustrate this point but may not be readily apparent on the screen or printed page.</p>
+<p> </p>
+<hr />
+</div>
+<div id="reproducibility-information" class="section level2">
+<h2>Reproducibility Information</h2>
+<ul>
+<li><strong>Compiled Date:</strong> Wed Dec 29 2021</li>
+<li><strong>Compiled Time:</strong> 9:03:07 PM</li>
+<li><strong>R Version:</strong> R version 4.1.2 (2021-11-01)</li>
+<li><strong>System:</strong> Windows, x86_64-w64-mingw32/x64 (64-bit)</li>
+<li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>
+<li><strong>Required Packages:</strong> FSA, FSAdata, captioner, dplyr, knitr, xtable and their dependencies (car, dunn.test, ellipsis, evaluate, generics, glue, graphics, grDevices, highr, lifecycle, lmtest, magrittr, methods, pillar, plotrix, R6, rlang, sciplot, stats, stringr, tibble, tidyselect, tools, utils, vctrs, withr, xfun, yaml)</li>
+<li><strong>Other Packages:</strong> captioner_2.2.3.9000, dplyr_1.0.7, FSA_0.9.1.9000, FSAdata_0.3.8, gdata_2.18.0, knitr_1.36, xtable_1.8-4</li>
+<li><strong>Loaded-Only Packages:</strong> assertthat_0.2.1, bslib_0.3.1, compiler_4.1.2, crayon_1.4.2, DBI_1.1.1, digest_0.6.28, ellipsis_0.3.2, evaluate_0.14, fansi_0.5.0, fastmap_1.1.0, generics_0.1.1, glue_1.5.0, gtools_3.9.2, highr_0.9, htmltools_0.5.2, jquerylib_0.1.4, jsonlite_1.7.2, lifecycle_1.0.1, magrittr_2.0.1, pillar_1.6.4, pkgconfig_2.0.3, purrr_0.3.4, R6_2.5.1, rlang_0.4.12, rmarkdown_2.11, sass_0.4.0, stringi_1.7.5, stringr_1.4.0, tibble_3.1.6, tidyselect_1.1.1, tools_4.1.2, utf8_1.2.2, vctrs_0.3.8, xfun_0.28, yaml_2.2.1</li>
+<li><strong>Links:</strong> <a href="Growth.R">Script</a> / <a href="Growth.Rmd">RMarkdown</a></li>
+</ul>
+<hr />
+<p> </p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2 class="unnumbered">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Beverton1954" class="csl-entry">
+Beverton, R. J. H. 1954. Notes on the use of theoretical models in the study of the dynamics of exploited fish populations. Miscellaneous Contribution, United States Fishery Laboratory, Beaufort, North Carolina.
+</div>
+<div id="ref-BevertonHolt1957" class="csl-entry">
+Beverton, R. J. H., and S. J. Holt. 1957. On the dynamics of exploited fish populations. Page 533. United Kingdom Ministry of Agriculture; Fisheries.
+</div>
+<div id="ref-Cailletetal2006" class="csl-entry">
+Cailliet, G. M., W. D. Smith, H. F. Mollet, and K. J. Goldman. 2006. Age and growth studies of chondrichthyan fishes: <span>T</span>he need for consistency in terminology, verification, validation, and growth function fitting. Environmental Biology of Fish 77:211–228.
+</div>
+<div id="ref-Francis1988" class="csl-entry">
+Francis, R. I. C. C. 1988. Are growth parameters estimated from tagging and age-length data comparable? Canadian Journal of Fisheries and Aquatic Sciences 45:936–942.
+</div>
+<div id="ref-GallucciQuinn1979" class="csl-entry">
+Gallucci, V. F., and T. J. Quinn II. 1979. Reparameterizing, fitting, and testing a simple growth model. Transactions of the American Fisheries Society 108:14–25.
+</div>
+<div id="ref-Jones2000" class="csl-entry">
+Jones, C. M. 2000. Fitting growth curves to retrospective size-at-age data. Fisheries Research 46:123–129.
+</div>
+<div id="ref-Mooijetal1999" class="csl-entry">
+Mooij, W. M., J. M. V. Rooij, and S. Wijnhoven. 1999. Analysis and comparison of fish growth from small samples of length-at-age data: <span>D</span>etection of sexual dimorphism in <span>E</span>urasian <span>P</span>erch as an example. Transactions of the American Fisheries Society 128:483–490.
+</div>
+<div id="ref-QuinnDeriso1999" class="csl-entry">
+Quinn II, T. J., and R. B. Deriso. 1999. Quantitative fish dynamics. Oxford University Press, Oxford, UK.
+</div>
+<div id="ref-Ratkowsky1986" class="csl-entry">
+Ratkowsky, D. A. 1986. Statistical properties of alternative parameterizations of the von <span>B</span>ertalanffy growth curve. Canadian Journal of Fisheries and Aquatic Sciences 43:742–747.
+</div>
+<div id="ref-Ricker1975" class="csl-entry">
+Ricker, W. E. 1975. Computation and interpretation of biological statistics of fish populations. Bulletin of the Fisheries Research Board of Canada.
+</div>
+<div id="ref-Schnute1981" class="csl-entry">
+Schnute, J. 1981. A versatile growth model with statistically stable parameters. Canadian Journal of Fisheries and Aquatic Sciences 38:1128–1140.
+</div>
+<div id="ref-SchnuteFournier1980" class="csl-entry">
+Schnute, J., and D. Fournier. 1980. A new approach to length-frequency analysis: <span>G</span>rowth structure. Canadian Journal of Fisheries and Aquatic Sciences 37:1337–1351.
+</div>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The remainder of this vignette will focus on length data only.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>A weight specific version essentially raises the length-specific version to the power of <span class="math inline">\(b\)</span>, the allometric relation term from the regression of weight on length (i.e., <span class="math inline">\(W=aL^B\)</span>) – i.e., <span class="math inline">\(E[W|t] = \left(W_{\infty}\left(1-e^{-K(t-t_{0})}\right)\right)^{b}\)</span>.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p><span class="citation">Cailliet et al. (2006)</span> notes that <span class="math inline">\(L_{0}\)</span>=<span class="math inline">\(L_{\infty}(1-e^{kt_{0}})\)</span>.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

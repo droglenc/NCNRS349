@@ -4,16 +4,11 @@ title: Growth
 css: /css/modules.css
 ---
 
-## Preparation for Class
+## [Preparation for Class](PREP/Growth)
 
-* Read [Section 12.1-12.3 in Ogle (2016)](RESOURCES/Ogle_Growth.pdf) and prepare answers to [these questions](PREP/Growth)
+## [Lecture Slides](PPT/Growth.pptx)
 
 ## Practice
 
 * [Class Exercise](CEX/Growth_CEX1) ... [code will be posted](CEX/CODES/Growth.R)
 * [Assignment](CE/Growth_CE1)
-
-## Archive
-
-* [Lecture Slides](PPT/Growth.pptx)
-* [Old Ogle Notes](RESOURCES/Growth_Notes)

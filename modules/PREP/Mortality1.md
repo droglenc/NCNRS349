@@ -19,7 +19,7 @@ Read [this](NOTES/Mortality1) and answer the following questions. [*Note that th
 
 ----
 
-Read [Miranda and Bettolli (2006) Sections 6.1-6.3](Miranda-Bettolli-2006-Sect6-1-3.pdf)[^2] (the [complete reading](http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf)) and answer the following questions.
+Read [Miranda and Bettolli (2006) Sections 6.1-6.3](RESOURCES/Miranda-Bettolli-2006-Sect6-1-3.pdf)[^2] (the [complete reading](http://s3.amazonaws.com/file-storage.INDIVIDUAL-ACTIVITIES-CooperativeResearchUnits.digitalmeasures.usgs.edu/pbettoli/intellcont/chapter6-1.pdf)) and answer the following questions.
 
 {:start="10"}
 1. What is "mortality"?

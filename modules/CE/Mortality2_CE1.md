@@ -5,7 +5,7 @@ subtitle: Mortality II
 css: /css/modules.css
 ---
 
-## Meta-Analysitical Estimates of M
+## Meta-Analytical Estimates of M
 As noted in the readings M can be estimated from other population dynamics parameters (some of which we have not yet learned). This [online tool](https://connect.fisheries.noaa.gov/natural-mortality-tool/) provides meta-analytic estimates of M based on a wide variety of relationships and estimated of population dynamics parameters supplied by the user. The tool will also combined the individual estimates into an overall composite estimate.
 
 Use this tool to generate meta-analytic estimates of M for the following situations. For each situation, report how many estimates of M were obtained and the mean and median composite estimate of M. For each situation make sure to include the (*correctly spelled*) species' scientific name in the appropriate box of the tool.

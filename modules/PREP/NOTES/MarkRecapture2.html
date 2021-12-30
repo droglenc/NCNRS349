@@ -1,0 +1,110 @@
+---
+layout: page
+title: Mark-Recapture II Notes
+author: Derek H. Ogle
+css: /css/codebox.css
+---
+
+
+<div id="assumptions-of-petersen-related-methods" class="section level1">
+<h1>Assumptions of Petersen &amp; Related Methods</h1>
+<p>Before specifically adressing the assumptions of the Petersen and related methods it is important to note that these estimates refer only to the catchable portion or the portion of the population fully recruited to the gear. For example, if the population of northern pike studied was restricted to that part of the population longer than 450 mm because of the gear used to collect the samples, then the estimates of abundance refer only to that part of the population larger than 450 mm. In general, the population estimate only refers to the population extant at the time of the first sample, except under very specific conditions which are outlined below.</p>
+<p>The Petersen and related methods depend on meeting five assumptions <span class="citation">(Seber 1982)</span>:</p>
+<ul>
+<li>The population is physically (i.e., no immigration or emigration) and demographically (i.e., no recruitment or mortality) closed (so that <span class="math inline">\(N\)</span> is constant over the time of sampling).</li>
+<li>Marks or tags are neither lost nor missed</li>
+<li>Marked individuals returned to the population mix randomly with unmarked individuals.</li>
+<li>All individuals within a sample have an equal probability of capture.</li>
+<li>Individual behavior or vulnerability does not change after being marked.</li>
+</ul>
+<p>Fisheries personnel attempt to control the first assumption by having a very short period between the first and second samples. However, there are several ways in which the first assumption can be violated without adversely affecting the usability of the Petersen estimate <span class="citation">(Seber 1982)</span>. If fish die while being marked and before being released, then the Petersen estimate will refer to the size of the population <strong>after</strong> the marked fish from the first sample are released. Mortality between the first and second sample will not affect the Petersen estimate of initial population size if the rate of mortality is the <strong>same</strong> for both marked and unmarked individuals (i.e., so the proportion of marked animals in the population is not affected). Recruitment of new individuals to the population will completely invalidate the Petersen method as an estimator of the initial population size. However, if there is no mortality along with the recruitment, then the Petersen method will provide a valid estimate of the population size at the time of the <strong>second</strong> sample. <span class="citation">Seber (1982 p. 73)</span> provides a statistical test to detect recruitment between the two samples.</p>
+<p>The second assumption is difficult to assure because it is impossible to take a strict random sample in most real situations. If all fish are equally catchable then a random sample can be approximated by sampling areas at random with constant effort <span class="citation">(Krebs 1999)</span>. Systematic sampling is often used to select animals but this relies on the assumption that marked and unmarked animals mix uniformly through the population.</p>
+<p>Unequal catchability between marked and unmarked fish may arise from three general causes <span class="citation">(Eberhardt 1969)</span>:</p>
+<ul>
+<li>The behavior of individuals in the vicinity of the trap.</li>
+<li>Learning by animals already caught (i.e., trap-shy or trap-happiness).</li>
+<li>Unequal opportunity to be caught because of trap positions.</li>
+</ul>
+<p>Statistical tests exist (see <span class="citation">Krebs (1999)</span>) to identify certain forms of unequal catchability, but all of these tests rely on more than two samples from the population. Thus, in a Petersen type study, the biologist must take care to design fish collections that minimize these difficulties.</p>
+<p>Finally, violations of the last two assumptions result in the possible underestimation of the proportion of marked animals in the second sample which leads to overestimation of the population size. The fourth assumption can be tested by “double-marking” a portion of the marked animals. For example, the northern pike in Harding Lake were marked with a numbered floy tag and a partial fin-clip. The proportion of lost-tags can be estimated from the recaptured fish and a correction applied to the population estimate.</p>
+<p> </p>
+<hr />
+<div id="reproducibility-information" class="section level2">
+<h2>Reproducibility Information</h2>
+<ul>
+<li><strong>Compiled Date:</strong> Wed Dec 29 2021</li>
+<li><strong>Compiled Time:</strong> 6:39:05 PM</li>
+<li><strong>R Version:</strong> R version 4.1.2 (2021-11-01)</li>
+<li><strong>System:</strong> Windows, x86_64-w64-mingw32/x64 (64-bit)</li>
+<li><strong>Base Packages:</strong> base, datasets, graphics, grDevices, methods, stats, utils</li>
+<li><strong>Required Packages:</strong> FSA, captioner, knitr and their dependencies (car, dplyr, dunn.test, evaluate, graphics, grDevices, highr, lmtest, methods, plotrix, sciplot, stats, stringr, tools, utils, withr, xfun, yaml)</li>
+<li><strong>Other Packages:</strong> FSA_0.9.1.9000, knitr_1.36</li>
+<li><strong>Loaded-Only Packages:</strong> bslib_0.3.1, compiler_4.1.2, digest_0.6.28, evaluate_0.14, fastmap_1.1.0, htmltools_0.5.2, jquerylib_0.1.4, jsonlite_1.7.2, magrittr_2.0.1, R6_2.5.1, rlang_0.4.12, rmarkdown_2.11, sass_0.4.0, stringi_1.7.5, stringr_1.4.0, tools_4.1.2, xfun_0.28, yaml_2.2.1</li>
+<li><strong>Links:</strong> <a href="MarkRecapture2.R">Script</a> / <a href="MarkRecapture2.Rmd">RMarkdown</a></li>
+</ul>
+<hr />
+<p> </p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2 class="unnumbered">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Eberhardt1969" class="csl-entry">
+Eberhardt, L. L. 1969. Population estimates from recapture frequencies. Journal of Wildlife Management 33:28–39.
+</div>
+<div id="ref-Krebs1999" class="csl-entry">
+Krebs, C. J. 1999. Ecological methodologySecond. Addison-Welsey Educational Publishing, Menlo Park, CA.
+</div>
+<div id="ref-Seber1982" class="csl-entry">
+Seber, G. A. F. 1982. The estimation of animal abundanceSecond. Edward Arnold.
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

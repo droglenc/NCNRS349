@@ -4,16 +4,11 @@ title: Mark-Recapture II
 css: /css/modules.css
 ---
 
-## Preparation for Class
+## [Preparation for Class](PREP/MarkRecapture2)
 
-* Read [Section 9.2.3 in Ogle (2016)](RESOURCES/Ogle_MarkRecapture.pdf) and [Section 8.3 of Hayes et al. (2007)](RESOURCES/Hayesetal-2007-Sect8-3part.pdf) (the complete chapter [is here](https://cals.ncsu.edu/applied-ecology/wp-content/uploads/sites/4/2019/01/Hayes_et_al_2007.pdf)) and prepare answers to [these questions](PREP/MarkRecapture2)
+## [Lecture Slides](PPT/MarkRecapture2.pptx)
 
 ## Practice
 
 * [Class Exercise](CEX/MarkRecapture2_CEX1)
 * [Assignment](CE/MarkRecapture2_CE1)
-
-## Archive
-
-* [Lecture Slides](PPT/MarkRecapture2.pptx)
-* [Old Ogle Notes](RESOURCES/MarkRecapture_Notes)

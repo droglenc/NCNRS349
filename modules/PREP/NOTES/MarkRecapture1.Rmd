@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Mark-Recapture Notes
+title: Mark-Recapture I Notes
 author: Derek H. Ogle
 css: /css/codebox.css
-csl: ../../rhelpers/american-fisheries-society.csl
-bibliography: ../../rhelpers/NRS349.bib
+csl: ../../../rhelpers/american-fisheries-society.csl
+bibliography: ../../../rhelpers/NRS349.bib
 output: 
   html_document: 
     fig_width: 3.5
@@ -16,17 +16,17 @@ output:
 # First line renders an appropriate HTML file for the webpage
 # Second line makes the script file
 # RUN BOTH MANUALLY (following using Knit HTML button)
-setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/RESOURCES/")
-source("../../rhelpers/Rhelpers.R")
-modHTML("MarkRecapture_Notes",need2render=FALSE)
-if (require(FSA)) purl2("MarkRecapture_Notes.Rmd",topnotes="")
+setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/PREP/NOTES/")
+source("../../../rhelpers/Rhelpers.R")
+modHTML("MarkRecapture1",need2render=FALSE)
+if (require(FSA)) purl2("MarkRecapture1.Rmd",topnotes="")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### ##
 # ===== BEGIN -- THIS CAN BE IGNORED =========================
 # Setup of knitr
-source("../../rhelpers/knitr_setup.R")
+source("../../../rhelpers/knitr_setup.R")
 # declare packages used
 rqrd <- c("FSA","captioner","knitr")
 library(FSA)
@@ -141,42 +141,13 @@ is nearly unbiased if $m\geq7$.
 
 Confidence intervals for $N$ from these modified estimators use techniques similar to those described for the Petersen method. However, the binomial and normal confidence intervals for the ratio $\frac{m}{n}$ must be converted to a confidence interval for $m$ by multiplying the endpoints by $n$. The endpoints of the confidence interval for $m$ are then substituted into `r eqncaps("Chapman",display="cite")` or `r eqncaps("Bailey",display="cite")` to obtain confidence intervals for $N$.
 
-### Assumptions of Petersen & Related Methods
-
-Before specifically adressing the assumptions of the Petersen and related methods it is important to note that these estimates refer only to the catchable portion or the portion of the population fully recruited to the gear. For example, if the population of northern pike studied was restricted to that part of the population longer than 450 mm because of the gear used to collect the samples, then the estimates of abundance refer only to that part of the population larger than 450 mm. In general, the population estimate only refers to the population extant at the time of the first sample, except under very specific conditions which are outlined below.
-
-The Petersen and related methods depend on meeting five assumptions [@Seber1982]:
-
-* The population is physically (i.e., no immigration or emigration) and demographically (i.e., no recruitment or mortality) closed (so that $N$ is constant over the time of sampling).
-* Marks or tags are neither lost nor missed
-* Marked individuals returned to the population mix randomly with unmarked individuals.
-* All individuals within a sample have an equal probability of capture.
-* Individual behavior or vulnerability does not change after being marked.
-
-Fisheries personnel attempt to control the first assumption by having a very short period between the first and second samples. However, there are several ways in which the first assumption can be violated without adversely affecting the usability of the Petersen estimate [@Seber1982]. If fish die while being marked and before being released, then the Petersen estimate will refer to the size of the population **after** the marked fish from the first sample are released. Mortality between the first and second sample will not affect the Petersen estimate of initial population size if the rate of mortality is the **same** for both marked and unmarked individuals (i.e., so the proportion of marked animals in the population is not affected). Recruitment of new individuals to the population will completely invalidate the Petersen method as an estimator of the initial population size. However, if there is no mortality along with the recruitment, then the Petersen method will provide a valid estimate of the population size at the time of the **second** sample. @Seber1982 [p.73] provides a statistical test to detect recruitment between the two samples.
-
-The second assumption is difficult to assure because it is impossible to take a strict random sample in most real situations. If all fish are equally catchable then a random sample can be approximated by sampling areas at random with constant effort [@Krebs1999]. Systematic sampling is often used to select animals but this relies on the assumption that marked and unmarked animals mix uniformly through the population.
-
-Unequal catchability between marked and unmarked fish may arise from three general causes [@Eberhardt1969]:
-
-* The behavior of individuals in the vicinity of the trap.
-* Learning by animals already caught (i.e., trap-shy or trap-happiness).
-* Unequal opportunity to be caught because of trap positions.
-
-Statistical tests exist (see @Krebs1999) to identify certain forms of unequal catchability, but all of these tests rely on more than two samples from the population. Thus, in a Petersen type study, the biologist must take care to design fish collections that minimize these difficulties.
-
-Finally, violations of the last two assumptions result in the possible underestimation of the proportion of marked animals in the second sample which leads to overestimation of the population size. The fourth assumption can be tested by "double-marking" a portion of the marked animals. For example, the northern pike in Harding Lake were marked with a numbered floy tag and a partial fin-clip. The proportion of lost-tags can be estimated from the recaptured fish and a correction applied to the population estimate.
-
-### Calculations in R
-
-Methods for performing the Petersen and related methods in R are described in Section 9.2 of @Ogle2016.[^IFARScripts]
-
 \ 
 
 --------------------------------------------------------------
 
 ```{r echo=FALSE, results='asis'}
-reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="BKG.R",RMarkdown="BKG.Rmd"))
+reproInfo(rqrdPkgs=rqrd,out="markdown",
+          links=c(Script="MarkRecapture1.R",RMarkdown="MarkRecapture1.Rmd"))
 ```
 
 --------------------------------------------------------------
@@ -189,4 +160,3 @@ reproInfo(rqrdPkgs=rqrd,out="markdown",links=c(Script="BKG.R",RMarkdown="BKG.Rmd
 [^2]: The most traditional notation uses $C=n_{\cdot 1}$, and $R=n_{11}$. We do not use this notation in order to maintain continuity with subsequent mark-recapture methods.
 [^3]: Exact confidence intervals for $N$ can generally be derived from the hypergeometric distribution underlying the likelihood function. Unfortunately, there is no simple cumulative distribution for the hypergeometric distribution.
 [^4]: @Ricker1975 modified the Chapman estimator by ignoring the "-1" at the end of the right-hand-side of `r eqncaps("Chapman",display="cite")`. His argument was that subtracting one is of no practical importance in the estimate. While this argument is understandable, subtracting one to get the exact result proposed by Chapman is not onerous. Therefore, I suggest using the full estimator as proposed by @Chapman1951.
-[^IFARScripts]: Scripts for these calculations [are here](http://derekogle.com/IFAR/scripts/).

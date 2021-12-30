@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Reading Guide
+title: Preparation Guide
 subtitle: Stock-Recruitment
+css: /css/modules.css
 ---
 
-**From Ogle (2016)**
+Read [Section 13.1 in Ogle (2016)](RESOURCES/Ogle_Recruitment.pdf) and answer the following questions.
+
 1. What are two characteristics of most stock-recruitment (SR) data sets?
 1. What are the two primary stock-recruitment (SR) functions (i.e., both are named after prominent fisheries scientists)?
 1. In both SR functions, what does &alpha; and &beta; represent?
@@ -16,9 +18,11 @@ subtitle: Stock-Recruitment
 1. What function extracts confidence intervals for the parameters from the results above?
 1. How can one determine if the density-dependent parameter in a SR function is statistically significant?
 
-<br><br>
+----
 
-**From Maceina and Pereira (2007)**
+Read [Maceina and Pereira (2007) Sections 4.1-4.4](RESOURCES/Maceina-Pereira-2007_41_44.pdf) (complete chapter [is here](RESOURCES/Maceina-Pereira-2007.pdf)) and answer the following questions
+
+{:start="11"}
 1. What is the distribution of recruitment rates in many marine systems? Describe what this distribution looks like and what it means for recruitment rates?
 1. What (generically) is a primary cause of recruitment variability?
 1. What is recruitment overfishing?

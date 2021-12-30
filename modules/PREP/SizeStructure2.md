@@ -2,9 +2,10 @@
 layout: page
 title: Preparation Guide
 subtitle: Size Structure II
+css: /css/modules.css
 ---
 
-**From Ogle (2016)**
+Read [Section 6.3, 6.4.2, and 6.5 in Ogle (2016)](RESOURCES/Ogle_SizeStructure.pdf) and answer the following questions.
 
 1. What is a proportional size distribution (PSD) indice?
 1. What are the five Gabelhouse length categories?
@@ -15,7 +16,11 @@ subtitle: Size Structure II
 1. What statistical test is used to compare the distribution of lengths between groups of fish? What R function is used to perform this test?
 1. What statistical test is used to compare the frequency of individuals in Gabelhouse length categories between groups of fish? What R function is used to perform this test?
 
-**From Anderson's "Catch & Release or Selective Harvest"**
+----
+
+Read [Anderson's "Catch & Release or Selective Harvest"](RESOURCES/catch_release_Anderson.pdf) and answer the following questions.
+
+{:start="9"}
 1. What is a PSD? How is it calculated?
 1. What characteristics might describe a population (of, say, Bluegill) that has a PSD of less than 10?
 1. What is a PSD for a Bluegill population that "in balance."

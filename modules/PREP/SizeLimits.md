@@ -40,7 +40,7 @@ Read [Weighing the Effects of Length Limits (Gangl, 2013)](RESOURCES/Gangl_SizeL
 
 ----
 
-Read [Bass Length Limits (Oklahoma Wildlife Department)](OK_bass_length_limits.pdf) and consider the following items.
+Read [Bass Length Limits (Oklahoma Wildlife Department)](RESOURCES/OK_bass_length_limits.pdf) and consider the following items.
 
 {:start="13"}
 1. Compare "selective harvest" to "catch and release."

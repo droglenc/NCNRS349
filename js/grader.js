@@ -12,8 +12,11 @@ function roundDec(x, dcml)  {
 //**  Sets weights for assessment components                          **
 //**********************************************************************
 function get_wghts() {
-  HW_WT = 0.25;
-  MT1_WT = 0.25;	MT2_WT = 0.20;	FNL_WT = 0.30;
+  ATT_WT = 0.20;
+  PREP_WT = 0.10;
+  HW_WT = 0.20;
+  EXM1_WT = 0.25;
+  EXM2_WT = 0.25;
 }
 
 //**********************************************************************
@@ -37,25 +40,30 @@ function find_grade(form, pts, outof) {
 function calc_grade(form) {
 	get_wghts();
 	pts = 0; outof=0;
+	temp = form.ATT_SC.value;
+	if (temp!=="") {
+		if (temp > 1) {temp=temp/100};
+		pts += ATT_WT*temp;	outof += ATT_WT;
+	}
+	temp = form.PREP_SC.value;
+	if (temp!=="") {
+		if (temp > 1) {temp=temp/100};
+		pts += PREP_WT*temp;	outof += PREP_WT;
+	}
 	temp = form.HW_SC.value;
 	if (temp!=="") {
 		if (temp > 1) {temp=temp/100};
 		pts += HW_WT*temp;	outof += HW_WT;
 	}
-	temp = form.MT1_SC.value;
+	temp = form.EXM1_SC.value;
 	if (temp!=="") {
 		if (temp > 1) {temp=temp/100};
-		pts += MT1_WT*temp;	outof += MT1_WT;
+		pts += EXM1_WT*temp;	outof += EXM1_WT;
 	}
-	temp = form.MT2_SC.value;
+	temp = form.EXM2_SC.value;
 	if (temp!=="") {
 		if (temp > 1) {temp=temp/100};
-		pts += MT2_WT*temp;	outof += MT2_WT;
-	}
-	temp = form.FNL_SC.value;
-	if (temp!=="") {
-		if (temp > 1) {temp=temp/100};
-		pts += FNL_WT*temp;	outof += FNL_WT;
+		pts += EXM2_WT*temp;	outof += EXM2_WT;
 	}
 	find_grade(form, pts, outof);
 }

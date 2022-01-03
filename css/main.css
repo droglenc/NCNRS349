@@ -65,6 +65,11 @@ hr.small {
   background-size: cover;
 }
 
+.main-explain-area p {
+  font-weight: 600;
+  font-size: 140%;
+}
+
 .hideme {
   display: none;
 }

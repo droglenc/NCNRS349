@@ -76,13 +76,13 @@ An overall grade will be computed from the module preparation guide answers and 
 <!-- if the assessment weights change then you must change the values in get_wghts() in the grader.js file -->
 
 <form name="GRADECALC">
-<table class="grader" width="70%">
+<table class="grader" width="80%">
 <tr><th width="15%"></th>
-<th width="20%">Class<br>Engagement</th>
-<th width="20%">Preparation<br>Guides</th>
-<th width="20%">Module<br>Assignments</th>
-<th width="20%">First<br>Exam</th>
-<th width="20%">Second<br>Exam</th>
+<th width="17%">Class<br>Engagement</th>
+<th width="17%">Preparation<br>Guides</th>
+<th width="17%">Module<br>Assignments</th>
+<th width="17%">First<br>Exam</th>
+<th width="17%">Second<br>Exam</th>
 </tr>
 
 <tr style="vertical-align:bottom"><th>Weight</th>
@@ -101,9 +101,18 @@ An overall grade will be computed from the module preparation guide answers and 
 </tr>
 
 <tr><th colspan="3">Overall: <input type="text" name="SCORE" size="4"></th>
-<th colspan="2">Grade: <input type="text" name="GRADE" size="2"></th></tr>
+<th colspan="3">Grade: <input type="text" name="GRADE" size="2"></th></tr>
 </table>
 </form>
+
+Your letter grade will be assigned from your overall percentage (rounded to a whole number) and the table below.
+
+<table class="tg">
+  <tr><td></td><td>A 92-100</td><td>A- 90-91</td></tr>
+  <tr><td>B+ 87-89</td><td>B  82-86</td><td>B- 80-81</td></tr>
+  <tr><td>C+ 77-79</td><td>C  70-76</td><td></td></tr>
+  <tr><td>D+ 67-69</td><td>D  60-66</td><td>F   0-59</td></tr>
+</table>
 
 &nbsp;
 

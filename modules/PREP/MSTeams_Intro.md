@@ -23,7 +23,7 @@ If possible, use the Teams app rather than Teams through the web browser. If you
 &nbsp;
 
 ## Joining the Team
-In Teams, follow these steps to join the MTH207 team.
+In Teams, follow these steps to join the NRS349 team.
 
 1. Select "Teams" on the left side of the app. If you are already in a team, then you may need to select the link that says "< All Teams" to return to your list of teams.
 1. Now select the "Join or Create Team" button.
@@ -36,7 +36,7 @@ In Teams, follow these steps to join the MTH207 team.
 ![MSTeams Join](RESOURCES/zimgs/MSTeams_JoinCode.JPG)
 
 {:start="4"}
-1. Press the "Join team" button in that tile (it will appear when the code is entered). You should then be part of the Team and it should look similar to the screen below.
+1. Press the "Join team" button in that tile (it will appear when the code is entered). You should then be part of the Team and it should look similar to the screen below (but with a different course name and semester).
 
 ![MSTeams Landing](RESOURCES/zimgs/MSTeams_LandingPage.JPG)
 
@@ -88,7 +88,7 @@ The video below has a few more hints on how to use Teams for class.
 &nbsp;
 
 ## Receiving Notifications of Questions
-By default, you will not received notifications of questions from other students and my answers in the channels described above. To get these you must specifically tell Team to notify you as described in the following steps.
+By default, you will not receive notifications of questions from other students and my answers in the channels described above. To get these you must specifically tell Teams to notify you as described in the following steps.
 
 * Select a channel from which you want to be notified.
 * Select the three "dots" on the far right side of that channel

@@ -15,7 +15,7 @@ The following apps should be initiated before the first day of class.
 
 If you plan to use your own computer to run R/RStudio then you should complete the following items before the first day of class. Note the required version numbers below. If you have previously installed these softwares then you may need to update them. If you plan to use the college computers you do not need to do the next four items.
 
-* Install R (*at least v 4.0.0*) ... [for Windows](https://cran.r-project.org/bin/windows/base/R-4.0.3-win.exe) ... [for Macs](https://cran.r-project.org/bin/macosx/R-4.0.3.pkg) ... *just accept defaults*
+* Install R (*at least v 4.0.0*) ... [for Windows](https://cran.r-project.org/bin/windows/base/R-4.1.2-win.exe) ... [for Macs](https://cran.r-project.org/bin/macosx/base/R-4.1.2.pkg) ... *just accept defaults*
 * Install RStudio (*at least v 1.3.0*) ... [Choose Windows/Mac here](https://rstudio.com/products/rstudio/download/#download){:target="_blank"} ... *just accept defaults*
 * Install FSA (*at least v 0.9.1*) ... in RStudio, select the "Packages" tab in one of the panes (likely lower right), press the "Install" button, type "FSA" (without the quotes) under "Packages" in the dialog box, press the "Install" button, and be patient as several packages are installed. 
 * Install FSASim ... copy-and-paste the following three lines into the "Console" of RStudio (and hit return)
@@ -43,7 +43,7 @@ Contact me if you have any issues with any of the above items.
 ## Understand the Homework Format
 I have very specific expectations for your homework assignment reports. These expectations and requirements are described below. [A document that demonstrates several of these expectations is here](RESOURCES/HWFormat_Example.pdf){:target="_blank"} (note the comments in "balloons").
 
-1. Each document should be typed, converted to a PDF, and submitted to the proper item on [GradeScope](../).
+1. Each document should be typed, converted to a PDF, and submitted to the proper item on [GradeScope](../../).
 1. Long hand-calculations can be made in a hand-written appendix that is included in your PDF document to submit (perhaps take a picture of it and then insert that picture into your document before making the PDF).
 1. Each document should include the following statement along with your signature -- "*I have neither given nor received unauthorized aid in completing this work, nor have I presented someone else's work as my own.*"
 1. Your document should "look nice." This means that you should include spaces that increase readability (e.g., between a paragraph and a table). In addition, you should not use "non-standard" fonts -- the most common of which is "comic sans." Scientific presentations require a "serious" font which is likely one of "Times New Roman", "Arial", "Calibri", or "Helvetica." The one exception to this is the use of the "Courier" for results from R/RStudio (see below).

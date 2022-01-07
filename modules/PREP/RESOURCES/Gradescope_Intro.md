@@ -5,7 +5,7 @@ subtitle: Getting Organized
 css: "/css/modules.css"
 ---
 
-A few days ago you should have received a welcome e-mail from me via Gradescope.com that will describe how you can activate a Gradescope account and access the pages where you will upload your completed preparation checks and module assignments. You should make sure to follow the directions contained in that e-mail. If you do not still have that e-mail you can also access Gradescope from the [quick link on the class homepage](../../){:target="_blank"} (you will need to email me for the access code (as [described here](https://www.gradescope.com/#help-center-item-student-adding-a-course){:target="_blank"})). Let me know if you have any questions.
+A few days ago you should have received a welcome e-mail from me via Gradescope.com that will describe how you can activate a Gradescope account and access the pages where you will upload your completed preparation checks and module assignments. You should make sure to follow the directions contained in that e-mail. If you do not still have that e-mail you can also access Gradescope from the [quick link on the class homepage](../../../){:target="_blank"} (you will need to email me for the access code (as [described here](https://www.gradescope.com/#help-center-item-student-adding-a-course){:target="_blank"})). Let me know if you have any questions.
 
 Assignments **must** be converted to a PDF for uploading to Gradescope. While it is possible to submit images to GradeScope this will generally be problematic as we get into more involved modules. Thus, please figure out how to generate PDFs for your documents (see below).
 

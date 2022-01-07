@@ -28,17 +28,17 @@ In Teams, follow these steps to join the MTH207 team.
 1. Select "Teams" on the left side of the app. If you are already in a team, then you may need to select the link that says "< All Teams" to return to your list of teams.
 1. Now select the "Join or Create Team" button.
 
-![MSTeams Join](../zimgs/MSTeams_JoinButton.JPG)
+![MSTeams Join](RESOURCES/zimgs/MSTeams_JoinButton.JPG)
 
 {:start="3"}
 1. In the "Join a team with a code" tile (the second tile) enter the code "7sx0592" (without quotes) into the box that says "Enter code".
 
-![MSTeams Join](../zimgs/MSTeams_JoinCode.JPG)
+![MSTeams Join](RESOURCES/zimgs/MSTeams_JoinCode.JPG)
 
 {:start="4"}
 1. Press the "Join team" button in that tile (it will appear when the code is entered). You should then be part of the Team and it should look similar to the screen below.
 
-![MSTeams Landing](../zimgs/MSTeams_LandingPage.JPG)
+![MSTeams Landing](RESOURCES/zimgs/MSTeams_LandingPage.JPG)
 
 &nbsp;
 
@@ -51,33 +51,33 @@ The NRS349 Team currently has three main channels as seen in the screenshot abov
 
 In each channel you can start a new conversation (i.e., question) by pressing the "New Conversation" button.
 
-![MSTeams New Conversation](../zimgs/MSTeams_NewConversation.JPG)
+![MSTeams New Conversation](RESOURCES/zimgs/MSTeams_NewConversation.JPG)
 
 You can also contribute to previous conversation by replying to previous messages.
 
-![MSTeams Reply Conversation](../zimgs/MSTeams_ReplyConversation.JPG)
+![MSTeams Reply Conversation](RESOURCES/zimgs/MSTeams_ReplyConversation.JPG)
 
 I have Teams organized so that I will get notified when you post a question. Thus, I hope that this will be an efficient way to ask me questions outside of class and a way so that other students can learn from the answers.
 
 <!----
 For "official" office hours, I will open up a meeting at the appointed time (see the syllabus). When you go to the "Office Hours" channel you will see a banner that will give you an option to "Join" the ongoing meeting.
 
-![MSTeams Join Meeting](../zimgs/MSTeams_JoinMeeting.JPG)
+![MSTeams Join Meeting](RESOURCES/zimgs/MSTeams_JoinMeeting.JPG)
 
 In an ensuing dialog box you will be asked to identify your audio and video sources. For many systems these will be appropriately selected by default. Once you have selected the settings for your system you can press the "Join now" button.
 
-![MSTeams Join Settings](../zimgs/MSTeams_JoinSettings.JPG)
+![MSTeams Join Settings](RESOURCES/zimgs/MSTeams_JoinSettings.JPG)
 ---->
 
 If you would like to "meet" with me outside of official office hours then send me a message and if I am available I will set up a meeting on Teams.
 
 If you are using the Teams app, you will be able to show me your screen by pressing "Share Content" button which is right next to the red "Leave" button in the upper-right corner of the Teams meeting window.
 
-![MSTeams Share Content Button](../zimgs/MSTeams_ShareContentButton.JPG)
+![MSTeams Share Content Button](RESOURCES/zimgs/MSTeams_ShareContentButton.JPG)
 
 When you do this you will then need to select which window or screen to share. I find it is easier to share a screen rather than just a window.
 
-![MSTeams Share Content Screen](../zimgs/MSTeams_ShareContentScreen.JPG)
+![MSTeams Share Content Screen](RESOURCES/zimgs/MSTeams_ShareContentScreen.JPG)
 
 When you are finished with the meeting just press the red "Leave" button in the upper-right corner.
 
@@ -93,7 +93,7 @@ By default, you will not received notifications of questions from other students
 * Select a channel from which you want to be notified.
 * Select the three "dots" on the far right side of that channel
 
-![MSTeams Notifications](../zimgs/MSTeams_Notifications.JPG)
+![MSTeams Notifications](RESOURCES/zimgs/MSTeams_Notifications.JPG)
 
 * Select "Channel Notifications"
 * Select "All Activity" such that a checkbox will be shown for that item.

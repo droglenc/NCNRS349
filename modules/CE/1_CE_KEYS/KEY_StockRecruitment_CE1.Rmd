@@ -11,14 +11,13 @@ output:
 ---
 
 ```{r echo=FALSE, eval=FALSE}
-# Renders an appropriate HTML file for the webpage
-setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/CE/")
-source("../../rhelpers/rhelpers.R")
-modHTML("KEY_StockRecruitment_CE1")
+## Renders an appropriate HTML file and moves to CE directory
+source("modules/CE/1_CE_KEYS/zzz_modHTML_CEKeys.R")
+modHTML_CEKeys("KEY_StockRecruitment_CE1")
 ```
 
-```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
-source("../../rhelpers/knitr_setup.R")
+```{r echo=FALSE, results='hide', message=FALSE}
+source("../../../rhelpers/knitr_setup.R")
 options(show.signif.stars=FALSE)
 ```
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}

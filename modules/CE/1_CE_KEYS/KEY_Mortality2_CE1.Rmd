@@ -11,20 +11,14 @@ output:
 ---
 
 ```{r echo=FALSE, eval=FALSE}
-# Renders an appropriate HTML file for the webpage
-setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/CE/")
-source("../../rhelpers/rhelpers.R")
-modHTML("KEY_Mortality2_CE1")
+## Renders an appropriate HTML file and moves to CE directory
+source("modules/CE/1_CE_KEYS/zzz_modHTML_CEKeys.R")
+modHTML_CEKeys("KEY_Mortality2_CE1")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}
-library(FSA)
-library(tidyverse)
-library(ggplot2)
-source("../../rhelpers/knitr_setup.R")
+source("../../../rhelpers/knitr_setup.R")
 ```
-
-----
 
 ## Estimates of M
 1. Northern Pike: 10 estimates, median is 0.36, mean is 0.4 

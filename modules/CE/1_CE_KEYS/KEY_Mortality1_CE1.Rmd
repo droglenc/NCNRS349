@@ -11,24 +11,22 @@ output:
 ---
 
 ```{r echo=FALSE, eval=FALSE}
-# Renders an appropriate HTML file for the webpage
-setwd("C:/aaaWork/Web/GitHub/NCNRS349/modules/CE/")
-source("../../rhelpers/rhelpers.R")
-modHTML("KEY_Mortality1_CE1")
+## Renders an appropriate HTML file and moves to CE directory
+source("modules/CE/1_CE_KEYS/zzz_modHTML_CEKeys.R")
+modHTML_CEKeys("KEY_Mortality1_CE1")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}
-library(FSA)
-library(tidyverse)
-library(ggplot2)
-source("../../rhelpers/knitr_setup.R")
+source("../../../rhelpers/knitr_setup.R")
 ```
-
-----
 
 ## Keewenaw Bay Lake Trout
 
 ```{r KBLT, echo=FALSE, results="hide", fig.show="hide"}
+library(FSA)
+library(tidyverse)
+library(ggplot2)
+
 d <- data.frame(age=3:14,ct=c(5,18,21,10,45,109,95,63,42,25,13,4))
 
 ggplot(data=d,mapping=aes(x=age,y=ct)) +

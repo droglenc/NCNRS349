@@ -5,17 +5,13 @@ subtitle: Management Process
 css: /css/modules.css
 ---
 
-[Krueger and Decker (2010)](../RESOURCES/KruegerDecker_2010_Process.pdf) outlined the fisheries management process. You are assigned one (or part of one) of the following fisheries management plans.
+[Krueger and Decker (2010)](KruegerDecker_2010_Process.pdf) outlined the fisheries management process. You are assigned one (or part of one) of the following fisheries management plans.
 
-* **XXX** -- [Leech Lake Management Plan, 2016-20](http://files.dnr.state.mn.us/fisheries/largelakes/leech/leechmp.pdf).
+* **Grueneis and Sims** -- [Leech Lake Management Plan, 2016-20](http://files.dnr.state.mn.us/fisheries/largelakes/leech/leechmp.pdf).
 * [Fisheries Management Plan for the Minnesota Waters of Lake Superior (2016)](http://files.dnr.state.mn.us/publications/fisheries/special_reports/181.pdf).
-    * **XXX** -- Focus on Lean Lake Trout
-    * **XXX** -- Focus on Rainbow Trout
-* [Lake Superior Fisheries Management Plan, 2020-2029](https://widnr.widen.net/s/wtwwsnnqqr).
-    * **XXX** -- Focus on Goal I
-    * **XXX** -- Focus on Goal II
-    * **XXX** -- Focus on Goal III
-* **XXX** -- [Fish Species Management Plan for Alligator Gar in Illinois](https://www.dnr.illinois.gov/news/documents/algplan.pdf)
+    * **Maier and Scott** -- Focus on Lean Lake Trout (Chapter 6)
+    * **Lanhart and Palmi** -- Focus on Rainbow Trout (Chapter 8)
+* **Goodson & Schmit** -- [Fish Species Management Plan for Alligator Gar in Illinois](https://www.dnr.illinois.gov/news/documents/algplan.pdf)
 
 These plans may use slightly different terminology than what was introduced by Krueger and Decker (2010). Thus, you should, in two pages or less, ...
 

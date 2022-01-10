@@ -24,15 +24,13 @@ Read[^1] [Krueger and Decker 2010](RESOURCES/KruegerDecker_2010_Process.pdf) to 
 
 ----
 
-Watch[^2] one of the following videos and be prepared (bring notes) to briefly summarize its contents in class.
+Watch one (the one with your name) of the following videos and be prepared (bring notes) to briefly summarize its contents in class.
 
-* **XXX** -- [“Lifting Nets: Gurnoe Decision”](https://youtu.be/ZmcdaUtLU1E) [~5 mins]
-* **XXX** -- [“Crossing the Line: Tribble Brothers”](https://youtu.be/KSpEGhWR44Q) [~5 mins]
-* **XXX** -- [“Place of the Pike: Ginoozhekaaning”](https://www.youtube.com/watch?v=VBIzPnETBkQ) [~7 mins]
-* **XXX** -- [“Gathering the Pieces: The Jondreau Decision”](https://www.youtube.com/watch?v=q5TmLyWyFM0) [~7 mins]
+* **Palmi and Scott** -- [“Lifting Nets: Gurnoe Decision”](https://youtu.be/ZmcdaUtLU1E) [~5 mins]
+* **Goodson and Simms** -- [“Crossing the Line: Tribble Brothers”](https://youtu.be/KSpEGhWR44Q) [~5 mins]
+* **Lanhart and Schmit** -- [“Place of the Pike: Ginoozhekaaning”](https://www.youtube.com/watch?v=VBIzPnETBkQ) [~7 mins]
+* **Grueneis and Maier** -- [“Gathering the Pieces: The Jondreau Decision”](https://www.youtube.com/watch?v=q5TmLyWyFM0) [~7 mins]
 
 ----
 
 [^1]: Focus your efforts on Sections 2.1, 2.2, 2.4, 2.5, and 2.8
-
-[^2]: You will be assigned one of the videos to watch and summarize.

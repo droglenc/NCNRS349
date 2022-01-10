@@ -10,7 +10,7 @@ css: /css/modules.css
 
 ## Practice
 
-* [Class Exercise](CEX/CourseIntro)
+* [Class Exercise](CEX/CourseIntro_CEX1)
 * [Assignment](CE/CourseIntro_CE1) ... [ANSWER KEY](CE/KEY_CourseIntro_CE1)
 
 ## Archive

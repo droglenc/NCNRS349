@@ -46,7 +46,6 @@ In addition, this course is designed to contribute, in part, to meeting the foll
 * Understand behavioral characteristics of an organism and how this influences population dynamics,
 * Understand interactions among ecological, social and economic systems,
 * Develop problem solving and critical thinking skills necessary to manage natural resources,
-* Develop a management plan,
 * Demonstrate ability to make management recommendations,
 * Understand Adaptive Management principles,
 * Work effectively in groups,
@@ -172,7 +171,7 @@ Module assignments should be prepared as described in the ["Getting Organized" m
 I will grade 50-100% of each module assignment "for content" (i.e., whether the work is done correctly or not). Questions that I do not grade "for content" will be graded "for completeness" (i.e., whether the work was done completely or not). You will receive a short e-mail from me when your graded assignment is available on GradeScope. You are expected to review your grade and comments ([how-to video here](https://youtu.be/TOHCkI12mh0){:target="_blank"}) to better learn the material and to improve on future assignments. Detailed answer keys will be made available on the module webpage.
 
 ### Exams
-*Philosophy*: Exams will be used to assess your understanding of module concepts. A detailed study guide will be given to you approximately one week before the exam and the class period before the exam will serve as a "prep day" where you can review material with me and other students in the class. Exam dates are shown on the [Modules page](../modules/). Make-up exams will only be given in very rare circumstances.
+*Philosophy*: Exams will be used to assess your understanding of module concepts. A detailed study guide will be given to you approximately one week before the exam and the class period before the exam will serve as a "prep day" where you can review material with me and other students in the class. Exam dates are shown on the [Modules page](../modules/). Make-up exams will be given only in rare circumstances (*please communicate openly and early with me if a situation arises where you may need a make-up exam*).
 
 &nbsp;
 
@@ -181,13 +180,13 @@ I will grade 50-100% of each module assignment "for content" (i.e., whether the 
 Module preparation guide answers and assignments not submitted by the due date time will generally not be accepted. However, I will accept up to two late assignments as long as they are sent to me (as a PDF) before I post the assignment answer key (which I often due immediately after the assignment is due).
 
 #### Monitoring Your Grade
-Grades on individual module preparation guides and assignments can be found on the class Gradescope page ([quick link on class homepage](../){:target="_blank"}). I will update your percentage grades for the Preparation Guides, Module Assignments, and Attendance on mycourses.northland.edu ([quick link on class homepage](../)) periodically (I will send you a message when I do), which will then show your grade as of that time. You can also compute your overall grade at any time by entering your percentage scores in the table above for completed assessments. To project your future grade, also include percentages for future assessments.
+Grades on individual module preparation guides and assignments can be found on the class Gradescope page ([quick link on class homepage](../){:target="_blank"}). I will update your percentage grades for the Preparation Guides, Engagement, Module Assignments, and Exams on mycourses.northland.edu ([quick link on class homepage](../)) periodically (I will send you a message when I do), which will then show your grade as of that time. You can also compute your overall grade at any time by entering your percentage scores in the [table above](#grading) for completed assessments. To project your future grade, also include percentages for future assessments.
 
 #### Incomplete Grades
 An incomplete grade will be given ONLY in extreme circumstances that are beyond your control, such as a major illness, and will ONLY be given if you have successfully completed the entire course except for the final exam. This is in accordance with [Northland College policy](https://my.northland.edu/student-policies/academic-policies/#grades){:target="_blank"} (scroll down to "Incomplete Grades").
 
 #### Midterm Grades
-I will submit a "midterm grade" for you approximately half-way through the semester. This grade will by my best guess at your lowest possible final grade. I assign this "worst-case" midterm grade because I believe that it is better to know the worst rather than the best-case scenario at that point of the semester and the material at the end of the semester is a little more difficult than the material at the beginning of the semester. Of course, see me if you have questions about your midterm grade.
+I will submit a "midterm grade" for you approximately half-way through the semester. This grade will by my best guess at your lowest possible final grade. I assign this "worst-case" midterm grade because mid-term grades have no meaning beyond letting you know where you stand in the class and I believe that it is better to know the worst rather than the best-case scenario at that point. Of course, see me if you have questions about your midterm grade.
 
 #### Working Together
 You may **WORK TOGETHER** on module preparations and assignments but you must **INDEPENDENTLY PRODUCE** what you turn in. In other words, you may discuss assignments together and even make plans for how to answer the questions or perform the calculations together, but the calculations must be your own and your written answers must be in your own words. It is also fine to compare *independently produced* answers as long as you discuss how to correct incorrect answers rather than just copying another person's answer. Also, note that one need not copy verbatim someone else's work to violate this policy; i.e., a slight change to someone else's answer is not acceptable.
@@ -195,8 +194,6 @@ You may **WORK TOGETHER** on module preparations and assignments but you must **
 Copying the work of a student from a previous semester is also a violation of this policy.
 
 If I suspect that you are violating this policy then I will follow the [College's Academic Integrity Statement & Policy](https://my.northland.edu/student-policies/academic-policies/#academic-integrity){:target="_blank"}. Note that the penalty for non-compliance can range from a zero on the assignment to failure of the course.
-
-You can **NOT** work together on the **Capstone Assignment.** Failure to meet this policy will result in a zero for the capstone assignment.
 
 Please let me know if you have any questions or concerns about this policy.
 
@@ -219,9 +216,9 @@ My intent is to create a classroom environment where learning can occur. One par
 Finally, note that the [College's Academic Integrity Statement & Policy](https://my.northland.edu/student-policies/academic-policies/#academic-integrity){:target="_blank"} will be followed in this course. Please make sure that you are familiar with its content.
 
 ### Work Outside of Class
-As a general rule-of-thumb[^studytime], you are expected to spend 2-3 hours of time outside of class for each hour in class. For this course, you will meet for 4 hours per week and, thus, you should dedicate between 8 and 12 hours of time outside of class time preparing for class, completing assignments, reviewing your work, and asking questions or for help. **The work required for this course can be completed within this expected amount of time, if that time is without distraction**. If monitoring your phone/device is distracting you from getting your work done then you may consider the aid of apps (e.g., [Forest](https://www.forestapp.cc/)) designed to reduce distractions from devices.[^DistractionAids]  
+As a general rule-of-thumb[^studytime], you are expected to spend 2-3 hours of time outside of class for each hour in class. For this course, you will meet for 4 hours per week and, thus, you should dedicate between 8 and 12 hours of time outside of class time preparing for class, completing assignments, reviewing your work, and asking questions or for help. **The work required for this course can be completed within this expected amount of time, if that time is without distraction**. If monitoring your phone/device is distracting you from getting your work done then you may consider the aid of apps (e.g., [Forest](https://www.forestapp.cc/){:target="_blank"}) designed to reduce distractions from devices.[^DistractionAids]  
 
-If you feel that you are spending too much time on some assignments or preparations, then start your work earlier so that you can stop (and do other things) and make plans to [seek help](#assistance)).
+If you feel that you are spending too much time on some assignments or preparations, then start your work earlier so that you can stop (and do other things) and make plans to [seek help](#assistance).
 
 ---
 
@@ -237,7 +234,7 @@ As you are aware, the circumstances surrounding COVID-19 are ever-changing. Thus
 
 It is my hope that we can maintain a face-to-face classroom for the entire session. You can help with this by doing the following things related to our class.
 
-- Get vaccinated.
+- Get vaccinated (and boosted).
 - Monitor your temperature and check for symptoms of COVID-19 as described under "DAILY SELF CHECKS" on [this page](https://www.northland.edu/about/reopening-plan/#beahviors-that-reduce-spread){:target="_blank"}. If your temperature is elevated or you have symptoms please don't come to class, notify the [Office of Health Services](https://www.northland.edu/dir/jennifer-newago/){:target="_blank"}, and notify me. **Being cautious about your health and the health of others will be considered an "excused" absence and will not count against your attendance grade** (as long as you communicate with me).
 - Thoroughly [wash your hands](https://www.northland.edu/about/reopening-plan/#hand-hygiene){:target="_blank"} prior to entering the classroom.
 - Please [properly wear your mask](https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/proper-mask-wearing-coronavirus-prevention-infographic){:target="_blank"} at all times when entering the building and the classroom. This is in compliance with [Northland's face covering policy](https://www.northland.edu/about/covid-plan/#beahviors-that-reduce-spread){:target="_blank"}. &#x1F637;

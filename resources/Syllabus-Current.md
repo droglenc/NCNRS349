@@ -126,7 +126,7 @@ Absences for school sponsored events (e.g., special sessions of other courses, a
 ### Preparation Guides
 *Philosophy*: I want you to have some background in the topic before you come to class; thus, you will be asked to prepare for material prior to class. This percentage and the grading process described below acknowledges your effort for this work.
 
-You should prepare (neatly) **hand-written**,[^WriteNotType] answers to the "Preparation Guide" provided for each module's preparatory material. Your "Preparation Guide" answers will be turned in via GradeScope ([quick link on class homepage](../){:target="_blank"}) **by 11:59 pm (1 minute before midnight) on the day before the module is covered in class** (see [Modules page](Dates-Current.html)). The "assignment" on Gradescope will have the module name and "-- prep" suffix. I will grade your answers according to the following rubric.
+You should prepare (neatly) **hand-written**,[^WriteNotType] answers to the "Preparation Guide" provided for each module's preparatory material. Your "Preparation Guide" answers will be turned in via GradeScope ([quick link on class homepage](../){:target="_blank"}) **by 11:30 am on the day the module is covered in class** (see [Modules page](Dates-Current.html)). The "assignment" on Gradescope will have the module name and "-- prep" suffix. I will grade your answers according to the following rubric.
 
 <div class="container-fluid">
   <table class="table table-bordered">
@@ -142,7 +142,7 @@ You should prepare (neatly) **hand-written**,[^WriteNotType] answers to the "Pre
 ### Module Assignments
 *Philosophy*: The material in this courses is best learned with practice. In this class, practice is your work on module assignments. The percentage for this assessment is intermediate to "give you credit" for this work and to motivate you do do well on the assignments, but to not incur a deep penalty if your work is not perfectly correct as these are the first chances you will have to apply your developing skills and knowledge.
 
-Module assignments should be prepared as described in the ["Getting Organized" module](){:target="_blank"} for handing in on GradeScope ([quick link on class homepage](../){:target="_blank"}). The assignment on Gradescope will have the module name and "-- assignment" suffix and is **due by 10 am on the day of the class period after the class period dedicated to the module**.
+Module assignments should be prepared as described in the ["Getting Organized" module](){:target="_blank"} for handing in on GradeScope ([quick link on class homepage](../){:target="_blank"}). The assignment on Gradescope will have the module name and "-- assignment" suffix and is **due by 1130 am on the day of the class period after the class period dedicated to the module**.
 
 I will grade 50-100% of each module assignment "for content" (i.e., whether the work is done correctly or not). Questions that I did not grade "for content" will be graded "for completeness" (i.e., whether the work was done completely or not). You will receive a short e-mail from me when your graded assignment is available on GradeScope. You are expected to review your grade and comments ([how-to video here](https://youtu.be/TOHCkI12mh0){:target="_blank"}) to better learn the material and to improve on future assignments. Detailed answer keys will be made available on the module webpage.
 

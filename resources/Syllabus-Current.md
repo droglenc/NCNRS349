@@ -8,10 +8,14 @@ css: /css/syllabus.css
 <SCRIPT SRC="../js/grader.js"></SCRIPT>
 
 * [Catalog Description](#catalog-description) and [Learning Outcomes](#learning-outcomes)
-* [Instructor](#instructor) and [Tutors](#tutors)
-* [Grading](#grading) -- [Assignments](#assignments), [Exams](#exams)
-* [Professionalism](#professionalism) -- [Attendance](#attendance), [Participation](#participation), [Expectations](#expectations), [Conduct & Integrity](#classroom-conduct-and-academic-integrity)
-* [Accommodations](#accommodations)
+* [Assistance](#assistance) -- [Instructor](#instructor--derek-ogle), [Accommodations](#accommodations), and [Academic Alerts](#academic-alerts)
+* [Course Workflow](#course-workflow)
+* [Grading](#grading)
+    * [Engagement](#engagement), [Preparation Guides](#preparation-guides), [Assignments](#module-assignments), [Exams](#exams)
+    * [Late Work](#late-work), [Incompletes](#incomplete-grades), [Midterm Grades](#midterm-grades), [Working Together](working-together)
+* [Expectations](#expectations)
+* [Title IX](#title-ix-statement)
+* [COVID-19](#covid-19-statement)
 
 ----
 
@@ -46,7 +50,7 @@ I will answer to "Derek", "Doctor Ogle", "Professor Ogle", or "Doctor Professor 
 
 I am committed to your doing well in this course and see it as my responsibility to help you both in and out of the designated class period. There are several good ways to get help from me.
 
-- Attend class. In class I will expand on the most important parts of the preparation readings, demonstrate how to perform specific analyses, and work through examples and case studies that are similar to the homework assignments. In some periods there will be time for you to to work on the module assignments.
+- Attend class. In class I will expand on the most important parts of the preparation materials, demonstrate how to perform specific analyses, and work through examples and case studies that are similar to the homework assignments. In some periods there will be time for you to to work on the module assignments.
 - Ask questions on MS Teams. Simply start a new conversation (see [quick links on course homepage](../)) with your question and I will answer it ASAP. Other students may also answer your question.
 - I will hold in-person help hours on Monday, Wednesday, and Friday from 1-2pm and Tuesday and Thursday from 2-3pm. I can also setup a virtual meeting through Teams at others times upon request.
 - I will also try to respond to email queries ASAP.
@@ -62,11 +66,11 @@ If I observe you "struggling" with the course early in the semester then I may i
 ----
 
 ## Course Workflow
-This course is composed of daily modules (see link in upper-right) of material. The following is a general workflow that will be followed for each module.
+This course is composed of daily modules of material (see link in upper-right). The following is a general workflow that will be followed for each module.
 
-1. **Prepare Module Material** -- A detailed reading and some pertinent videos are provided for each module. **You will need to engage thoroughly with these materials**. By this, I mean that you need to be focused (i.e., not distracted) while reading and you need to think hard about concepts that don't make sense to you after your first read. **A cursory reading likely will not be adequate.** Please ask questions you have about the preparatory materials on the "Questions - Preparation Guide" Teams channel or during help hours ([quick links on class homepage](../){:target="_blank"}). See grading section below for a related assignment.
+1. **Prepare Module Material** -- A detailed reading and some pertinent videos are provided for each module. **You will need to engage thoroughly with these materials**. By this, I mean that you need to be focused (i.e., not distracted) while reading and you need to think hard about concepts that don't make sense to you after your first read. **A cursory reading likely will not be adequate.** Please ask questions you have about the preparatory materials on the "Questions - Preparation Guide" Teams channel ([quick link on class homepage](../){:target="_blank"}) or during help hours. See grading section below for a related assignment.
 1. **Class Time** -- During class I will generally present a short lecture that will attempt to clarify and cement the major concepts from the preparatory materials. In addition, I will demonstrate how to perform analyses and we will work on example analyses and case studies and discuss case studies and readings together. In some class periods there will be some time for you to get started on the module assignment (see next). 
-1. **Module Assignment** -- Most modules will have an assignment that is designed for you to gain experience with the module topic. Some assignments will be started in class but all assignments will require some time outside of class to complete. Please ask questions you have about the module assignment on the "Questions - Module Assignment" Teams channel or during help hours ([quick links on class homepage](../){:target="_blank"}). The assignment will be prepared and turned in as described in the grading section below.
+1. **Module Assignment** -- Most modules will have an assignment that is designed for you to gain experience with the module topic. Some assignments will be started in class but all assignments will require some time outside of class to complete. Please ask questions you have about the module assignment on the "Questions - Module Assignment" Teams channel ([quick link on class homepage](../){:target="_blank"}) or during help hours. The assignment will be prepared and turned in as described in the grading section below.
 
 ----
 
@@ -78,23 +82,23 @@ An overall grade will be computed from the module preparation guide answers and 
 <form name="GRADECALC">
 <table class="grader" width="80%">
 <tr><th width="15%"></th>
-<th width="17%">Class<br>Engagement</th>
 <th width="17%">Preparation<br>Guides</th>
+<th width="17%">Class<br>Engagement</th>
 <th width="17%">Module<br>Assignments</th>
 <th width="17%">First<br>Exam</th>
 <th width="17%">Second<br>Exam</th>
 </tr>
 
 <tr style="vertical-align:bottom"><th>Weight</th>
-<th>20%<br><img src="../img/bar5.JPG" width="15" height="20"></th>
 <th>10%<br><img src="../img/bar5.JPG" width="15" height="10"></th>
+<th>20%<br><img src="../img/bar5.JPG" width="15" height="20"></th>
 <th>20%<br><img src="../img/bar5.JPG" width="15" height="20"></th>
 <th>25%<br><img src="../img/bar5.JPG" width="15" height="25"></th>
 <th>25%<br><img src="../img/bar5.JPG" width="15" height="25"></th></tr>
 
 <tr><th>Percent</th>
-<td><input type="text" name="ATT_SC" size="3" tabindex="1" onchange="calc_grade(this.form)"></td>
-<td><input type="text" name="PREP_SC" size="3" tabindex="2" onchange="calc_grade(this.form)"></td>
+<td><input type="text" name="PREP_SC" size="3" tabindex="1" onchange="calc_grade(this.form)"></td>
+<td><input type="text" name="ATT_SC" size="3" tabindex="2" onchange="calc_grade(this.form)"></td>
 <td><input type="text" name="HW_SC" size="3" tabindex="3" onchange="calc_grade(this.form)"></td>
 <td><input type="text" name="EXM1_SC" size="3" tabindex="4" onchange="calc_grade(this.form)"></td>
 <td><input type="text" name="EXM2_SC" size="3" tabindex="5" onchange="calc_grade(this.form)"></td>

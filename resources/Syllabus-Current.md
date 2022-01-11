@@ -38,6 +38,27 @@ At the end of this class you will be able to ...
 1. Explain the purposes, strengths and limitations for a variety of management tools (including length limits, bag limits, closed seasons, refuges, stocking, ITQs, and catch shares).
 1. Make management recommendations that are founded on sound ecological reasoning and knowledge of fish biology, fisheries science results, and adaptive management principles. 
 
+In addition, this course is designed to contribute, in part, to meeting the following Intended Learning Outcomes for the Natural Resources program:
+
+* Demonstrate knowledge of theories and concepts that serve as a foundation for natural resource management,
+* Demonstrate understanding of descriptive statistics,
+* Understand the role that abiotic processes play in the function of ecosystems and management of natural resources,
+* Understand behavioral characteristics of an organism and how this influences population dynamics,
+* Understand interactions among ecological, social and economic systems,
+* Develop problem solving and critical thinking skills necessary to manage natural resources,
+* Develop a management plan,
+* Demonstrate ability to make management recommendations,
+* Understand Adaptive Management principles,
+* Work effectively in groups,
+* Work effectively independently,
+* Demonstrate professional workplace behavior (preparedness, perseverance, punctuality),
+* Demonstrate foundational quantitative skills necessary to manage natural resources,
+* Model population dynamics,
+* Read the primary literature to learn about a topic,
+* Manage data and information appropriately,
+* Demonstrate the ability to interpret graphs and tabular data, and
+* Generate appropriate graphs and tables.
+
 ----
 
 ## Assistance
@@ -125,10 +146,10 @@ Your letter grade will be assigned from your overall percentage (rounded to a wh
 
 Engagement will be graded on a 0-10 basis. If you attend, pay attention, work diligently, ask questions (when you have them), participate in discussion, and are focused the entire class period then you will earn full credit. However, if you do not attend class, you come substantially late, leave substantially early, don't participate in the work or dicussion, or are otherwise unfocused during the class period then you will receive no or only partial credit.
 
-Absences for school sponsored events (e.g., special sessions of other courses, athletics) will be excused. Other planned absences (e.g., family events, doctor's appointments) *cleared with me in advanced* will be excused. Please see the [COVID-19 section](#covid-19-statement) below with respect to missing class due to illness. Excused absences will **not** negatively impact your attendance grade.
+Absences for school sponsored events (e.g., special sessions of other courses, athletics) will be excused. Other planned absences (e.g., family events, doctor's appointments) *cleared with me in advance* will be excused. Please see the [COVID-19 section](#covid-19-statement) below with respect to missing class due to illness. Excused absences will **not** negatively impact your attendance grade.
 
 ### Preparation Guides
-*Philosophy*: I want you to have some background in the topic before you come to class; thus, you will be asked to prepare for material prior to class. This percentage and the grading process described below acknowledges your effort for this work.
+*Philosophy*: I want you to have some background on the topic at-hand before you come to class; thus, you will be asked to prepare for material prior to class. This percentage and the grading process described below acknowledges your effort for this work.
 
 You should prepare (neatly) **hand-written**,[^WriteNotType] answers to the "Preparation Guide" provided for each module's preparatory material. Your "Preparation Guide" answers will be turned in via GradeScope ([quick link on class homepage](../){:target="_blank"}) **by 11:30 am on the day the module is covered in class** (see [Modules page](Dates-Current.html)). The "assignment" on Gradescope will have the module name and "-- prep" suffix. I will grade your answers according to the following rubric.
 
@@ -146,12 +167,12 @@ You should prepare (neatly) **hand-written**,[^WriteNotType] answers to the "Pre
 ### Module Assignments
 *Philosophy*: The material in this courses is best learned with practice. In this class, practice is your work on module assignments. The percentage for this assessment is intermediate to "give you credit" for this work and to motivate you do do well on the assignments, but to not incur a deep penalty if your work is not perfectly correct as these are the first chances you will have to apply your developing skills and knowledge.
 
-Module assignments should be prepared as described in the ["Getting Organized" module](){:target="_blank"} for handing in on GradeScope ([quick link on class homepage](../){:target="_blank"}). The assignment on Gradescope will have the module name and "-- assignment" suffix and is **due by 1130 am on the day of the class period after the class period dedicated to the module**.
+Module assignments should be prepared as described in the ["Getting Organized" module](../modules/PREP/GetOrganized.html#understand-the-homework-format){:target="_blank"} for handing in on GradeScope ([quick link on class homepage](../){:target="_blank"}). The assignment on Gradescope will have the module name and "-- assignment" suffix and is **due by 1130 am on the day of the class period after the class period dedicated to the module**.[^AssnDueDate]
 
-I will grade 50-100% of each module assignment "for content" (i.e., whether the work is done correctly or not). Questions that I did not grade "for content" will be graded "for completeness" (i.e., whether the work was done completely or not). You will receive a short e-mail from me when your graded assignment is available on GradeScope. You are expected to review your grade and comments ([how-to video here](https://youtu.be/TOHCkI12mh0){:target="_blank"}) to better learn the material and to improve on future assignments. Detailed answer keys will be made available on the module webpage.
+I will grade 50-100% of each module assignment "for content" (i.e., whether the work is done correctly or not). Questions that I do not grade "for content" will be graded "for completeness" (i.e., whether the work was done completely or not). You will receive a short e-mail from me when your graded assignment is available on GradeScope. You are expected to review your grade and comments ([how-to video here](https://youtu.be/TOHCkI12mh0){:target="_blank"}) to better learn the material and to improve on future assignments. Detailed answer keys will be made available on the module webpage.
 
 ### Exams
-*Philosophy*: Exams will be used to assess your understanding of module concepts. A detailed study guide will be given to you approximately a week before the exam and the class period before the exam will serve as a "prep day" where you can review material with me and other students in the class. Days of exams are shown on the [Modules page](../modules/). Make-up exams will only be given in very rare circumstances.
+*Philosophy*: Exams will be used to assess your understanding of module concepts. A detailed study guide will be given to you approximately one week before the exam and the class period before the exam will serve as a "prep day" where you can review material with me and other students in the class. Exam dates are shown on the [Modules page](../modules/). Make-up exams will only be given in very rare circumstances.
 
 &nbsp;
 
@@ -234,3 +255,5 @@ It is my hope that we can maintain a face-to-face classroom for the entire sessi
 [^DistractionAids]: Also see the following resources for other apps that may help you eliminate distractions from your devices ... [here](https://georgehalachev.com/2019/01/15/7-apps-that-will-help-you-beat-procrastination/){:target="_blank"}, [here](https://www.careercontessa.com/advice/best-apps-chronic-procrastinator/){:target="_blank"}, [here](https://highschoolhints.com/6-apps-that-will-stop-your-procrastinating/){:target="_blank"}, or [here](https://remotebliss.com/procrastination-apps/){:target="_blank"}.
 
 [^WriteNotType]: [See this for some evidence](https://www.npr.org/2016/04/17/474525392/attention-students-put-your-laptops-away){:target="_blank"}.
+
+[^AssnDueDate]: For example, the assignment for the module covered on Tuesday is due at 1130 am on Thursday, and the module covered on Thursday is due at 1130 am on the following Tuesday.

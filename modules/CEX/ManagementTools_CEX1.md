@@ -4,7 +4,7 @@ title: Class Exercise
 subtitle: Management Tools
 ---
 
-Find an example of each regulation type below in the Wisconsin [Hook and Line Fishing](http://dnr.wi.gov/topic/fishing/regulations/hookline.html) or [Trout Fishing](https://dnr.wisconsin.gov/topic/Fishing/regulations/troutregs.html) regulations.  Specifically document each of your examples with a screen capture image.
+Find an example of each regulation type below in the Wisconsin [Hook and Line Fishing](http://dnr.wi.gov/topic/fishing/regulations/hookline.html){:target="_blank"} or [Trout Fishing](https://dnr.wisconsin.gov/topic/Fishing/regulations/troutregs.html){:target="_blank"} regulations. Document each of your examples with a screen capture image.
 
 1. Daily bag/creel limit (general).
 1. Daily bag/creel limit (as a special regulation).

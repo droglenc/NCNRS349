@@ -5,7 +5,7 @@ subtitle: Management Tools
 css: /css/modules.css
 ---
 
-Find an example of each regulation type below in one of the regional (Northern, Southwest, Southcentral, and Southeast) Alaska [Sport Fishing](http://www.adfg.alaska.gov/index.cfm?adfg=fishregulations.sport) regulations.  Specifically document each of your examples with a screen capture image.
+Find an example of each regulation type below in one of the regional (Northern, Southwest, Southcentral, and Southeast) Alaska [Sport Fishing](http://www.adfg.alaska.gov/index.cfm?adfg=fishregulations.sport){:target="_blank"} regulations. Document each of your examples with a screen capture image.
 
 1. Daily bag/creel limit (*as a special regulation*).
 1. Seasonal/annual bag limit.

@@ -5,7 +5,7 @@ subtitle: Management Process
 css: /css/modules.css
 ---
 
-Read[^1] [Krueger and Decker 2010](RESOURCES/KruegerDecker_2010_Process.pdf) to answer the following questions.
+Read [Krueger and Decker 2010](RESOURCES/KruegerDecker_2010_Process.pdf){:target="_blank"} to answer the following questions. [*Focus your efforts on Sections 2.1, 2.2, 2.4, 2.5, and 2.8.*]
 
 1. How do the authors define fisheries management?
 1. What is a stakeholder?
@@ -26,11 +26,7 @@ Read[^1] [Krueger and Decker 2010](RESOURCES/KruegerDecker_2010_Process.pdf) to 
 
 Watch one (the one with your name) of the following videos and be prepared (bring notes) to briefly summarize its contents in class.
 
-* **Palmi and Scott** -- [“Lifting Nets: Gurnoe Decision”](https://youtu.be/ZmcdaUtLU1E) [~5 mins]
-* **Goodson and Simms** -- [“Crossing the Line: Tribble Brothers”](https://youtu.be/KSpEGhWR44Q) [~5 mins]
-* **Lanhart and Schmit** -- [“Place of the Pike: Ginoozhekaaning”](https://www.youtube.com/watch?v=VBIzPnETBkQ) [~7 mins]
-* **Grueneis and Maier** -- [“Gathering the Pieces: The Jondreau Decision”](https://www.youtube.com/watch?v=q5TmLyWyFM0) [~7 mins]
-
-----
-
-[^1]: Focus your efforts on Sections 2.1, 2.2, 2.4, 2.5, and 2.8
+* **Palmi and Scott** -- [“Lifting Nets: Gurnoe Decision”](https://youtu.be/ZmcdaUtLU1E){:target="_blank"} [~5 mins]
+* **Goodson and Simms** -- [“Crossing the Line: Tribble Brothers”](https://youtu.be/KSpEGhWR44Q){:target="_blank"} [~5 mins]
+* **Lanhart and Schmit** -- [“Place of the Pike: Ginoozhekaaning”](https://www.youtube.com/watch?v=VBIzPnETBkQ){:target="_blank"} [~7 mins]
+* **Grueneis and Maier** -- [“Gathering the Pieces: The Jondreau Decision”](https://www.youtube.com/watch?v=q5TmLyWyFM0){:target="_blank"} [~7 mins]

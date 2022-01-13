@@ -8,7 +8,5 @@ css: /css/modules.css
 
 ## [Lecture Slides](PPT/ManagementProcess.pptx)
 
-## Practice
-
-* [Assignment](CE/ManagementProcess_CE1)
+## [Assignment](CE/ManagementProcess_CE1)
 

@@ -6,7 +6,7 @@ css: /css/modules.css
 
 ## Preparation for Class
 
-* Read or listen to the media reports linked to in the background of the Class Exercise below. Use these to come to class with general background information about the Lake Mille Lacs Walleye fishery.
+* Read or listen to the media reports linked to in the background of the Class Exercise below. Use these to come to class with general background information about the Lake Mille Lacs Walleye fishery. [*There are no guide questions to turn in on GradeScope for this preparation.*]
 
 ## Practice
 

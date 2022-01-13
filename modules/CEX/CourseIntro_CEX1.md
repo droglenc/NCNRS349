@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Class Exercise
-subtitle: Class Introduction
+subtitle: Course Introduction
 css: /css/modules.css
 ---
 

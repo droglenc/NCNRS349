@@ -11,8 +11,7 @@ library(FSA)
 library(captioner)
 
 figcaps <- captioner(prefix="Figure")
-figcaps("LeslieModelFig","Idealized plot of the decline in the index of abundance with increasing cumulative catch.  Visual representations of the catchability coefficient, $q$, and initial population size, $N_{0}$ are shown.")
-figcaps("DeLuryModelFig","Idealized plot of the decline in the natural logarithm of CPE with increasing cumulative effort.  Visual representations of the catchability coefficient, $q$, and model intercept are shown.")
+figcaps("LeslieModelFig","Idealized plot of the decline in the index of abundance with increasing cumulative catch. Visual representations of the catchability coefficient, $q$, and initial population size, $N_{0}$ are shown.")
 
 eqncaps <- captioner(prefix="Equation")
 eqncaps("LesliePopnModel")
@@ -20,11 +19,6 @@ eqncaps("CPEDefn")
 eqncaps("LeslieModel1")
 eqncaps("LeslieNOSE")
 eqncaps("LeslieModel2")
-eqncaps("DeLuryPopnFrac")
-eqncaps("DeLuryPopnModel")
-eqncaps("DeLuryModel1")
-eqncaps("DeLuryModel2")
-eqncaps("DeLuryModel3")
 eqncaps("KPassIteration")
 eqncaps("KPassIterationCS")
 # ===== END -- THIS CAN BE IGNORED ===========================
@@ -71,29 +65,7 @@ text(4,p[1]+(p[2]-p[1])/2,"q",col="red",pos=4)
 # ===== END -- LESLIE MODEL FIGURE ===========================
 ##############################################################
 
-##############################################################
-# ===== BEGIN -- DELURY MODEL FIGURE =========================
-par(mar=c(3.05,3.55,0.65,0.15),xaxs="i",yaxs="i")
-lm.delury1 <- lm(log(CPE)~E,data=df)
-q <- -coef(lm.delury1)[2]
-qN0 <- exp(coef(lm.delury1)[1])
-N0 <- qN0/q
-plot(log(CPE)~E,data=df,ylab="log(CPE)",xlab=expression(Cumulative~~Effort~~(E[t-1])),
-     ylim=c(min(log(CPE)),0.05),pch=16,cex=1.2,xaxt="n",yaxt="n",xpd=TRUE)
-# Add axis labels
-axis(2,max(log(df$CPE)),expression(log(qN[0])),col.axis="red")
-axis(1,0,col.axis="red")
-# Add fitted line
-abline(lm.delury1,lwd=2,col="gray50")
-# Add demo of q
-p <- predict(lm.delury1,data.frame(E=c(3,4)))
-lines(c(3,4,4),c(p[1],p[1],p[2]),lwd=2,col="red")
-text(3.5,p[1],"1",col="red",pos=3)
-text(4,p[1]+(p[2]-p[1])/2,"q",col="red",pos=4)
-# ===== END -- DELURY MODEL FIGURE ===========================
-##############################################################
-
           links=c(Script="Depletion.R",RMarkdown="Depletion.Rmd"))
 
 
-# Script created at 2021-12-29 18:25:42
+# Script created at 2022-01-16 15:40:55

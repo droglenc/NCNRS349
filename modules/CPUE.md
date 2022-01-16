@@ -8,6 +8,4 @@ css: /css/modules.css
 
 ## [Lecture Slides](PPT/CPUE.pptx)
 
-## Practice
-
-* [Assignment](CE/CPUE_CE1)
+## [Assignment](CE/CPUE_CE1)

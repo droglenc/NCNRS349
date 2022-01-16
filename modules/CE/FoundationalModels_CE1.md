@@ -29,7 +29,7 @@ make_Expo <- function(t,N0,r) {
 }
 ```
 
-The following code can then be used to model population abundance at three values of r (assuming a starting abundance of N~0~=5).
+The following code can then be used to model population abundance at three values of r (assuming a starting abundance of <sub>0</sub>=5).
 
 ```
 NE <- make_Expo(t=0:20,N0=5,r=c(0.2,0.3,0.4))
@@ -76,7 +76,7 @@ make_Logistic <- function(t,N0,r,K) {
 }
 ```
 
-The following code can then be used to model population abundance at three values of r and three values of K (assuming a starting abundance of N~0~=5).
+The following code can then be used to model population abundance at three values of r and three values of K (assuming a starting abundance of N<sub>0</sub>=5).
 
 ```
 NL <- make_Logistic(t=0:20,N0=5,r=c(0.2,0.3,0.4),K=c(25,50,100))

@@ -8,4 +8,4 @@ css: /css/modules.css
 
 ## [Lecture Slides](PPT/FoundationalModels.pptx)
 
-## [Practice](CE_FoundationalModels_CE1)
+## [Practice](CE/FoundationalModels_CE1)

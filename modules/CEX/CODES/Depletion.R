@@ -1,6 +1,4 @@
 library(FSA)
-library(tidyverse)
-library(ggplot2)
 
 # Ruffe Extirpation
 ## Enter data
@@ -23,4 +21,3 @@ rmvlm <- removal(c(1477,133,46),method="Moran")
 rmvls <- removal(c(1477,133,46),method="Schnute")
 teststat <- 2*(rmvlm$min.nlogLH-rmvls$min.nlogLH)     # Moran - Schnute
 ( pvalue <- pchisq(teststat,df=1,lower.tail=FALSE) )
-

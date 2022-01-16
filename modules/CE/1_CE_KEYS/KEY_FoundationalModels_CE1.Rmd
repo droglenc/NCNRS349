@@ -1,0 +1,97 @@
+---
+layout: page
+title: Homework Key
+subtitle: Foundational Models
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: false
+    lib_dir: zlibs
+---
+
+```{r echo=FALSE, eval=FALSE}
+## Renders an appropriate HTML file and moves to CE directory
+source("modules/CE/1_CE_KEYS/zzz_modHTML_CEKeys.R")
+modHTML_CEKeys("KEY_FoundationalModels_CE1")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE}
+source("../../../rhelpers/knitr_setup.R")
+```
+
+## Exponential Model
+```{r Expo, echo=FALSE, results='hide', message=FALSE}
+library(tidyverse)
+
+make_Expo <- function(t,N0,r) {
+  N <- NULL
+  for (i in seq_along(r)) {
+    tmp <- c(t[1],r[i],N0)
+    N <- rbind(N,tmp)
+    for (j in seq_along(t)[-1]) {
+      tmp <- c(t[j],r[i],N[nrow(N),3]*(1+r[i]))
+      N <- rbind(N,tmp)
+    }
+  }
+  
+  N <- data.frame(N) %>%
+    rename(t=V1,r=V2,N=tmp) %>%
+    mutate(r=factor(r))
+  N
+}
+
+NE <- make_Expo(t=0:20,N0=5,r=c(0.2,0.3,0.4))
+
+ggplot(data=NE,mapping=aes(x=t,y=N,color=r)) +
+  geom_line(size=1) +
+  theme_bw()
+```
+
+1. Each model scenario result shows a generally increasing increasing abundance over time. The results look like one half of a parabola.
+1. Population abundance increases more quickly as r is increased.
+1. These results are unrealistic for most populations of organisms as eventually the organisms will out-strip their resources and, thus, cannot continue to increase in abundance forever.
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<Expo>>
+```
+
+## Logistic Model
+```{r Logistic, echo=FALSE, results='hide', message=FALSE}
+make_Logistic <- function(t,N0,r,K) {
+  N <- NULL
+  for (i in seq_along(r)) {
+    for (j in seq_along(K)) {
+      tmp <- c(t[1],r[i],K[j],N0)
+      N <- rbind(N,tmp)
+      for (k in seq_along(t)[-1]) {
+        NN <- N[nrow(N),4]
+        tmp <- c(t[k],r[i],K[j],NN+NN*r[i]*(1-NN/K[j]))
+        N <- rbind(N,tmp)
+      }
+    }
+  }
+  
+  N <- data.frame(N) %>%
+    rename(t=V1,r=V2,K=V3,N=tmp) %>%
+    mutate(r=factor(r),K=factor(K))
+  N
+}
+
+NL <- make_Logistic(t=0:20,N0=5,r=c(0.2,0.3,0.4),K=c(25,50,100))
+
+ggplot(data=NL,mapping=aes(x=t,y=N,color=r,linetype=K)) +
+  geom_line(size=1) +
+  theme_bw()
+```
+
+1. Each model scenario result shows a generally increasing abundance over time initially but that increase will slow and eventually flatten out (no time-to-time increases) as the abundance approaches K, the carrying capacity. The results look like an S-shaped curve.
+1. Population abundance will generally reach a higher level as K is increased.
+1. Population abundance increases more quickly initial as r is increased. In other words, the carrying capacity will be reached more quickly.
+1. These results are semi-realistic for most populations of organisms most organisms are limited by resources. However, populations are impacted by other factors and also experience random variation. Thus, these models are not perfectly realistic.
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<Logistic>>
+```

@@ -21,5 +21,5 @@ css: /css/modules.css
 
 1. What is the best estimate and 95% confidence interval for the probability of capture during each electrofishing pass.
 1. What is the best estimate and 95% confidence interval for the population size? How does your estimate compare to the estimate published in Pritchard et al. (2021)?
-1. Pritchard et al. (2021)] estimated a "capture efficiency." Use your results to show and then describe what they mean by this.
+1. Pritchard et al. (2021) estimated a "capture efficiency." Use your results to show and then describe what they mean by this.
 1. Is there evidence that the probability of capture differed after the first pass?

@@ -6,13 +6,9 @@ css: /css/modules.css
 ---
 
 ## Whittlesey Creek Coho Salmon
-Use one of the four following sets of data sheets[^1] to find M, n, and m, and then use the Chapman modified Lincoln-Petersen method by hand and with R to estimate N.
+Use one of the four following sets of data sheets to find M, n, and m, and then use the Chapman modified Lincoln-Petersen method by hand and with R to estimate N.
 
-* 2014 Data -- [Marking Run](Wickstrom14_MarkRun.pdf), [Recapture Run](Wickstrom14_RecapRun.pdf)
-* 2015 Data -- [Marking Run](Wickstrom15_MarkRun.pdf), [Recapture Run](Wickstrom15_RecapRun.pdf)
-* 2016 Data -- [Marking Run](Wickstrom16_MarkRun.pdf), [Recapture Run](Wickstrom16_RecapRun.pdf)
-* 2017 Data -- [Marking Run](Wickstrom17_MarkRun.pdf), [Recapture Run](Wickstrom16_RecapRun.pdf)
-
-----
-
-[^1]: You will be assigned a year in class.
+* **Lanhart, Scott** -- 2014 Data: [Marking Run](Wickstrom14_MarkRun.pdf), [Recapture Run](Wickstrom14_RecapRun.pdf)
+* **Palmi, Schmit** -- 2015 Data: [Marking Run](Wickstrom15_MarkRun.pdf), [Recapture Run](Wickstrom15_RecapRun.pdf)
+* **Goodson, Grueneis** -- 2016 Data: [Marking Run](Wickstrom16_MarkRun.pdf), [Recapture Run](Wickstrom16_RecapRun.pdf)
+* **Maier, Sims** -- 2017 Data: [Marking Run](Wickstrom17_MarkRun.pdf), [Recapture Run](Wickstrom17_RecapRun.pdf)

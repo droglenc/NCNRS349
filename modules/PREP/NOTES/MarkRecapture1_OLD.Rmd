@@ -53,6 +53,12 @@ The size of a population can be estimated by capturing individuals from the popu
 
 The Petersen method, which relies on only one sample of potentially marked fish, can be extended to a series of samples. These extended methods, called the Schnabel and Schumacher-Eschmeyer methods, require at least one sample where fish are marked and then multiple samples of potentially marked fish. However, these methods are most often used when the unmarked fish in the subsequent samples are marked and returned, along with the previously marked fish, to the population. Thus, these methods can be used with multiple marking and multiple "recapturing" samples.
 
+### Some Notational Conventions
+
+The discusson below requires counting the frequency of individuals with each capture history. These frequencies are typically symbolized with a lower-case "n" and the capture history string as a subscript. For example, $n_{10100}$ represents the number of fish captured in the first and third sample periods but not in any other sample period.
+
+This terminology is extended to represent other frequencies by including a "dot" (i.e., $\cdot$) in any part of the subscript that is "summed across."  For example, $n_{\cdot\cdot1\cdot\cdot}$ represents the frequency of fish that were captured in the third sample (i.e., a "1" in the third sample position) and either were or were not captured in any of the other samples. In other words, $n_{\cdot\cdot1\cdot\cdot}$ represents the total number of fish captured in the third sample. Traditionally, this value is also referred to as $n_{3}$, where the subscript now represents the sample number and not a capture history type. As another example, $n_{\cdot101\cdot}$ represents the number of fish captured in the fourth sample that were *last* captured in the second sample. These and other counts will have specific symbols when used in the context of the specific methods below.
+
 \ 
 
 ----
@@ -70,17 +76,13 @@ The Petersen method consists of two samples from a closed population and is, thu
 
 The population initially consists of all unmarked animals. All fish in the first sample are then marked and returned to the population. The first sample does not necessarily need to be a random sample of the population although the assumptions for the second sample are more likely to be met if it is. In addition, the fish can receive a batch mark, i.e., each fish does not need to be uniquely identified.[^1] The second sample must be a random sample from the entire population of marked and unmarked  individuals such that each fish, whether marked or unmarked, has the same chance of being captured. This also implies that the marked fish mix randomly with the unmarked fish in the population (`r figcaps("PetersenScheme",display="cite")`). Each fish in this second sample is examined to determine if it has the mark from the first sample or not.
 
-In capture history format a 0 is used to show that a fish was not captured during that sampling event and a 1 is used if the fish was captured in that event. For example, $n_{11}$ is the number of fish captured in both sampling events whereas $n_{01}$ is the number of fish captured in the second sample event that were NOT captured in the first sampling event. In addition, $n_{1\cdot}$ is the number of fish caught in the first sampling event, regardless of whether they were or were not caught in the second sampling event. In other words, the $\cdot$ is a place holder for either a 0 or a 1. With this notation the summary data for a Petersen estimate can be shown in the format of capture histories (`r tblcaps("PetersenDataMatrix",display="cite")`).
+The summary data for a Petersen estimate can be shown in the format of capture histories (`r tblcaps("PetersenDataMatrix",display="cite")`). However, the more traditional notation of $N=n_{\cdot\cdot}$, $M=n_{1\cdot}$, $n=n_{\cdot 1}$, and $m=n_{11}$ for ease of comparison to other sources will be used throughout these notes.[^2] Remember that the capitalized symbols refer to the population (i.e., $N$ is number of fish in the population, $M$ is the number of marked fish in the population) whereas the lower-case letters refer to the second sample (i.e., $n$ is the number of fish captured in the second sample, $m$ is the number of marked fish captured in the second sample). The meaning of the symbols used in the Petersen method are shown in `r tblcaps("PetersenNotation",display="cite")`.
 
 \ 
 
 `r tblcaps("PetersenDataMatrix")`
 
 ![](Petersen_Data_Matrix.png)
-
-\ 
-
-The more traditional notation of of a Petersen estimate is to replace the following capture history symbols with $N=n_{\cdot\cdot}$, $M=n_{1\cdot}$, $n=n_{\cdot 1}$, and $m=n_{11}$. For ease of comparison to other sources these symbols will be used throughout these notes.[^2] Remember that the capitalized symbols refer to the population (i.e., $N$ is number of fish in the population, $M$ is the number of marked fish in the population) whereas the lower-case letters refer to the second sample (i.e., $n$ is the number of fish captured in the second sample, $m$ is the number of marked fish captured in the second sample). The meaning of the symbols used in the Petersen method are shown in `r tblcaps("PetersenNotation",display="cite")`.
 
 \ 
 
@@ -125,11 +127,11 @@ The confidence interval is then constructed in the usual way with $\frac{m}{n}\p
 The Poisson approximation operates similarly, except that it uses computer algorithms of the Poisson distribution to construct a confidence interval for $m$, the endpoints of which are then substituted back into `r eqncaps("Petersen",display="cite")` to derive the confidence interval for $N$.
 
 ### Modifications of the Petersen Method
-The Petersen estimator of $N$ is, unfortunately, biased, especially for small samples. @Chapman1951 showed that when $M+n \geq N$ that
+The Petersen method of estimating abundance is the best asymptotically normal estimator as $N$ approaches infinity but, unfortunately, it is biased, especially for small samples. @Chapman1951 showed that when $M+n \geq N$ that
 
 $$  \hat{N} = \frac{(M+1)(n+1)}{(m+1)}-1 \quad \quad \text{`r paste0("(",eqncaps("Chapman",display="num"),")")`} $$
 
-is an exactly unbiased estimator of $N$.[^4] If $M+n < N$, then @RobsonRegier1964 showed that the bias of `r eqncaps("Chapman",display="cite")` is less than 2\% if $\frac{Mn}{N}>4$. Unfortunately, $N$ is usually unknown. However, @RobsonRegier1964 note that if $m\geq7$ then there is a 95\% chance that $\frac{Mn}{N}>4$ and the bias of `r eqncaps("Chapman",display="cite")` can be considered negligible [@Seber1982]. Thus, a given study should be designed so that enough fish are marked and the second sample is large enough to ensure that more than seven marked fish are recaptured.
+is an exactly unbiased estimator of $N$.[^4]  If $M+n < N$, then @RobsonRegier1964 showed that the bias of `r eqncaps("Chapman",display="cite")` is less than 2\% if $\frac{Mn}{N}>4$. Unfortunately, $N$ is usually unknown. However, @RobsonRegier1964 note that if $m\geq7$ then there is a 95\% chance that $\frac{Mn}{N}>4$ and the bias of `r eqncaps("Chapman",display="cite")` can be considered negligible [@Seber1982]. Thus, a given study should be designed so that enough fish are marked and the second sample is large enough to ensure that more than seven marked fish are recaptured.
 
 A final modification was proposed by @Bailey1951 and @Bailey1952. Bailey's method is appropriate if the second sample of fish is collected with replacement (i.e., an individual may be counted more than once). This type of sampling happens most often if the tagged fish are simply observed rather than captured. Bailey showed that `r eqncaps("Petersen",display="cite")` is biased under these conditions and that his modified estimator,
 

@@ -22,6 +22,15 @@ source("../../../rhelpers/knitr_setup.R")
 
 ## Observations
 
+1. The initial N can be reliably estimated only if the assumption violation is that there is mortality on both marked and unmarked fish.
+1. The final N can be reliably estimated when the assumption violations are mortality on unmarked fish only or recruitment into the population.
+1. There is no assumption violation that allows both the initial and final populations to be reliably estimated.
+1. The following things should be done to minimize assumption violations:
+    a. The marking and recapture run should be relatively close in time to minimize mortality, recruitment, emigration, and immigration.
+    a. Technicians must pay attention so that all marked fish that are captured are observed and so that marks/tags are properly affixed.
+    a. Steps should be taken to assure that the marked fish mix into the population as a whole (so don't release fish next to the net).
+    a. Marks/Tags and the handling of fish should have as little affect on the behavior and survival of the fish as possible (i.e., handle them quickly and carefully).
+
 ```{r echo=FALSE, message=FALSE}
 tibble::tribble(
   ~Situation,~N_Initial,~N_Final,

@@ -30,4 +30,4 @@ Read [Section 9.2 in Ogle (2016)](RESOURCES/Ogle_MarkRecapture.pdf){:target="_bl
 
 ----
 
-[^1]: The [complete reading is here](http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf).
+[^1]: The [complete reading is here](http://www4.ncsu.edu/~tkwak/Hayes_et_al_2007.pdf){:target="_blank"}.

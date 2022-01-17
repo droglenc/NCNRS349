@@ -48,4 +48,4 @@ Read [Rosenberger's Box 11.1](RESOURCES/Popeetal-2010-Box11-1.pdf){:target="_bla
 
 ----
 
-[^1]: The complete chapter [is here](http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf).
+[^1]: The complete chapter [is here](http://www.fs.fed.us/rm/pubs_other/rmrs_2010_pope_k001.pdf){:target="_blank"}.

@@ -6,7 +6,7 @@ css: /css/modules.css
 ---
 
 ## Summarizing Assumption Violations
-Use your results from [the class exercise](../CEX/MarkRecapture2_CEX1) to provide answers to the following questions.
+Use your results from [the class exercise](../CEX/MarkRecapture2_CEX1){:target="_blank"} to provide answers to the following questions.
 
 1. Which assumption violations allow the biologist to still reliably estimate the *initial* population abundance?
 1. Which assumption violations allow the biologist to still reliably estimate the *final* population abundance?

@@ -17,4 +17,4 @@ Read [this](http://alexei.nfshost.com/PopEcol/lec5/explog.html){:target="_blank"
 
 ----
 
-[^1]: If you are looking for more information, consult your Ecology book or [this](http://vlab.amrita.edu/?sub=3&brch=65&sim=174&cnt=1) and [this](http://vlab.amrita.edu/?sub=3&brch=65&sim=1110&cnt=1).
+[^1]: If you are looking for more information, consult your Ecology book or [this](http://vlab.amrita.edu/?sub=3&brch=65&sim=174&cnt=1){:target="_blank"} and [this](http://vlab.amrita.edu/?sub=3&brch=65&sim=1110&cnt=1){:target="_blank"}.

@@ -11,12 +11,12 @@ For each situation below, identify whether you think that the INITIAL population
 1. Marked individuals lose their mark (or tag) before the second sample.
 1. Marked and unmarked individuals suffer mortality (at the same rate) before the second sample.
 1. **M**arked, but not unmarked, individuals suffer mortality before the second sample.
-1. Unmarked, but not marked, individuals suffer mortality before the second sample.
-1. **I**ndividuals recruit (or migrate) into the population between the first and second samples.
-1. Marked individuals show a higher catchability in the second sample (i.e., "trap happy") compared to unmarked individuals.
-1. Marked individuals show a lower catchability in the second sample (i.e., "trap shy") compared to unmarked individuals.
-1. Technicians do not notice some marked fish in the second sample.
-1. Marked fish are released next to the nets used to take the second sample.
+1. **Un**marked, but not marked, individuals suffer mortality before the second sample.
+1. Individuals recruit (or migrate) into the population between the first and second samples.
+1. **M**arked individuals show a higher catchability in the second sample (i.e., "trap happy") compared to unmarked individuals.
+1. **M**arked individuals show a lower catchability in the second sample (i.e., "trap shy") compared to unmarked individuals.
+1. Technicians do not notice some **m**arked fish in the second sample.
+1. **M**arked fish are released next to the nets used to take the second sample.
 
 &nbsp;
 

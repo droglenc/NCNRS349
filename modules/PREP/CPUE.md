@@ -26,5 +26,5 @@ Read [Section 7.1 in Hubert & Fabrizio (2007)](HubertFabrizio-2007-Sect7-1.pdf){
 
 ----
 
-[^1]: The complete chapter [is here](http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff).
-[^2]: The complete chapter [is here](HubertFabrizio-2007.pdf).
+[^1]: The complete chapter [is here](http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1110&context=ncfwrustaff){:target="_blank"}.
+[^2]: The complete chapter [is here](HubertFabrizio-2007.pdf){:target="_blank"}.

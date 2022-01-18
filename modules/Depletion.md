@@ -11,4 +11,4 @@ css: /css/modules.css
 ## Practice
 
 * [Class Exercise](CEX/Depletion_CEX1) ... [code will be posted](CEX/CODES/Depletion.R)
-* [Assignment](CE/Depletion_CE1)
+* [Assignment](CE/Depletion_CE1) ... [ANSWER KEY](CE/KEY_Depletion_CE1)

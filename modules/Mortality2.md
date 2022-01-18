@@ -11,4 +11,4 @@ css: /css/modules.css
 ## Practice
 
 * [Class Exercise](CEX/Mortality2_CEX1)
-* [Assignment](CE/Mortality2_CE1)
+* [Assignment](CE/Mortality2_CE1) ... [ANSWER KEY](CE/KEY_Mortality2_CE1)

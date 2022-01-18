@@ -8,4 +8,4 @@ css: /css/modules.css
 
 ## [Lecture Slides](PPT/CPUE.pptx)
 
-## [Assignment](CE/CPUE_CE1)
+## [Assignment](CE/CPUE_CE1) ... [ANSWER KEY](CE/KEY_CPUE_CE1)

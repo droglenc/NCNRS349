@@ -8,6 +8,7 @@ str(sb)
 sb <- mutate(sb,lcat=lencat(tl,w=1,as.fact=TRUE))  ## as.fact is important!!
 headtail(sb)
 
+## separate into age- and length-samples
 sba <- filter(sb,!is.na(age))
 sbl <- filter(sb,is.na(age))
 

@@ -11,4 +11,4 @@ css: /css/modules.css
 ## Practice
 
 * [Class Exercise](CEX/MarkRecapture1_CEX1) ... [code will be posted](CEX/CODES/MarkRecapture1.R)
-* [Assignment](CE/MarkRecapture1_CE1)
+* [Assignment](CE/MarkRecapture1_CE1) ... [ANSWER KEY](CE/KEY_MarkRecapture1_CE1)

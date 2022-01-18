@@ -11,4 +11,4 @@ css: /css/modules.css
 ## Practice
 
 * [Class Exercise](CEX/AgeLengthKey_CEX1) ... [code will be posted](CEX/CODES/AgeLengthKey.R)
-* [Assignment](CE/AgeLengthKey_CE1)
+* [Assignment](CE/AgeLengthKey_CE1) ... [ANSWER KEY](CE/KEY_AgeLengthKey_CE1)

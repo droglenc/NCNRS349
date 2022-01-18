@@ -11,4 +11,4 @@ css: /css/modules.css
 ## Practice
 
 * [Class Exercise](CEX/Condition_CEX1) ... [code will be posted](CEX/CODES/Condition.R)
-* [Assignment](CE/Condition_CE1)
+* [Assignment](CE/Condition_CE1) ... [ANSWER KEY](CE/KEY_Condition_CE1)

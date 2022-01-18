@@ -11,4 +11,4 @@ css: /css/modules.css
 ## Practice
 
 * [Class Exercise](CEX/ManagementTools_CEX1)
-* [Assignment](CE/ManagementTools_CE1)
+* [Assignment](CE/ManagementTools_CE1) ... [ANSWER KEY](CE/KEY_ManagementTools_CE1)

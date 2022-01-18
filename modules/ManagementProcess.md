@@ -8,5 +8,5 @@ css: /css/modules.css
 
 ## [Lecture Slides](PPT/ManagementProcess.pptx)
 
-## [Assignment](CE/ManagementProcess_CE1)
+## [Assignment](CE/ManagementProcess_CE1) ... [ANSWER KEY](CE/KEY_ManagementProcess_CE1)
 

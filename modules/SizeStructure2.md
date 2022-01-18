@@ -12,4 +12,4 @@ css: /css/modules.css
 
 * [Class Exercise I](CEX/SizeStructure2_CEX1)
 * [Class Exercise II](CEX/SizeStructure2_CEX2) ... [code will be posted](CEX/CODES/SizeStructure2.R)
-* [Assignment](CE/SizeStructure2_CE1) ... [key will be posted]()
+* [Assignment](CE/SizeStructure2_CE1) ... [ANSWER KEY](CE/KEY_SizeStructure2_CE1)

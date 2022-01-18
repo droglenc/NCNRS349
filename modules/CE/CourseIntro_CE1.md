@@ -8,7 +8,7 @@ css: "/css/modules.css"
 ----
 
 <div class="alert alert-warning">
-  <strong>Note</strong> Your answers to the questions below should follow the <a href="../../resources/hwformat" target="_blank">expectations for homework found here</a>.
+  <strong>Note</strong> Your answers to the questions below should follow the <a href="../modules/PREP/GetOrganized.html#understand-the-homework-format" target="_blank">expectations for homework found here</a>.
 </div>
 
 <br>

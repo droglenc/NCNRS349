@@ -11,7 +11,7 @@ You are assigned one (or part of one) of the following fisheries management plan
 * [Fisheries Management Plan for the Minnesota Waters of Lake Superior (2016)](http://files.dnr.state.mn.us/publications/fisheries/special_reports/181.pdf){:target="_blank"}.
     * **Maier and Scott** -- Focus on Lean Lake Trout (Chapter 6)
     * **Lanhart and Palmi** -- Focus on Rainbow Trout (Chapter 8)
-* **Goodson & Schmit** -- [Fish Species Management Plan for Alligator Gar in Illinois](https://www.dnr.illinois.gov/news/documents/algplan.pdf){:target="_blank"}
+* **Goodson and Schmit** -- [Fish Species Management Plan for Alligator Gar in Illinois](https://www.dnr.illinois.gov/news/documents/algplan.pdf){:target="_blank"}
 
 These plans may use slightly different terminology than what was introduced by [Krueger and Decker (2010)](KruegerDecker_2010_Process.pdf){:target="_blank"} and discussed in class. Thus, you should, in two pages or less, ...
 

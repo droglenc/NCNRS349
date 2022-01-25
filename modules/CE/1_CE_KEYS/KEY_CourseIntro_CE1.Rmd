@@ -29,8 +29,7 @@ The Minnesota DNR convened a blue-ribbon panel to determine whether the data ava
     * A switch to protected slot limits in 2003.
 1. What were two abiotic and three biotic factors that may affect Walleye populations that changed dramatically in the late 1990s or early to mid 2000s?
     * Abiotic: (i) mean annual temperature in northern Minnesota has increased ~1.5<sup>o</sup>C since 1980 and (ii) water clarity has increased 1.5-fold since the mid-1990s.
-    * Biotic: (i) Potential Walleye competitors and predators have increased since the mid- to late-1990s, (ii) important Walleye prey have decreased, (iii) invasive Zebra mussels (*Dreissena polymorpha*) and spiny water fleas (*Bythotrephes longimanus*) were first detected in 2005 and 2009, respectively, and (iv) zooplankton biomass has 
-been low since 2012.
+    * Biotic: (i) Potential Walleye competitors and predators have increased since the mid- to late-1990s, (ii) important Walleye prey have decreased, (iii) invasive Zebra mussels (*Dreissena polymorpha*) and spiny water fleas (*Bythotrephes longimanus*) were first detected in 2005 and 2009, respectively, and (iv) zooplankton biomass has been low since 2012.
 1. What were the four working hypotheses that the blue-ribbon panel addressed?
     * Too few spawners, possibly as a result of overharvest,
     * low egg production and/or survival to first fall,
@@ -68,3 +67,4 @@ been low since 2012.
     * Evaluate gear biases over time.
 1. What recommendations did the panel make for fisheries management?
     * Manage fishing mortality.
+    * Avoid stocking.

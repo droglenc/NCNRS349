@@ -29,9 +29,8 @@ d <- readxl::read_excel("Dates_349.xlsx",sheet="W22") %>%
 ```
 
 <div class="alert alert-info">
-For each class period ("Date"), the module to prepare for is shown under "Topic." Some of the more distant dates are subject to change.
+Past dates/modules are shown at the bottom of the page.
 </div>
-
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 ## Get only future dates

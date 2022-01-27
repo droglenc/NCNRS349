@@ -16,7 +16,7 @@ Read [Boxes 6.3 & 6.4 in Hubert *et al.* (2012)](RESOURCES/Hubertetal-2012-BOXES
 
 ----
 
-Read [Section 7.1 in Hubert & Fabrizio (2007)](HubertFabrizio-2007-Sect7-1.pdf){:target="_blank"}[^2] and answer the following questions.
+Read [Section 7.1 in Hubert & Fabrizio (2007)](RESOURCES/HubertFabrizio-2007-Sect7-1.pdf){:target="_blank"}[^2] and answer the following questions.
 
 {:start="8"}
 1. Describe how measures of effort may differ between types of gears. Include specific examples for common types of gears such as gillnets, fyke nets, seines, and electrofishing.

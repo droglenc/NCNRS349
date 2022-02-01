@@ -10,7 +10,7 @@ Calculate CPUE for the situations below. Choose a scale of effort that "makes se
 
 1. Suppose that 67 Channel Catfish (*Ictalurus punctatus*) were caught in seven hoop nets set for only one night (each).
 1. Suppose that 337 Cisco (*Coregonus artedi*) were caught in 650 m of gillnet set for two nights.
-1. Supposed that 146 age-1 Yellow Perch (*Perca flavescens*) were caught in three trawl tows that lasted 7, 6, and 6 minutes, respectively. 
+1. Suppose that 146 age-1 Yellow Perch (*Perca flavescens*) were caught in three trawl tows that lasted 7, 6, and 6 minutes, respectively. 
 
 &nbsp;
 

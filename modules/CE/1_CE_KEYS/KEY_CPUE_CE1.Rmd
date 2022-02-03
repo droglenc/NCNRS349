@@ -22,13 +22,13 @@ source("../../../rhelpers/knitr_setup.R")
 
 ## Calculate CPUE
 1. The CPE of Channel Catfish is `r round(67/7,1)` fish per hoop net per night (=$\frac{67}{7}$).
-1. The CPE of Cisco is `round(337/650/2*100,1)` fish per 100 m of gillnet per night (=$\frac{337}{650 \times 2} \times 100$).
-1. The CPE of age-1 Yellow Perch is `round(146/19*10,1)` fish per 10 mins of trawling (=$\frac{146}{7+6+6} \times 10$).
+1. The CPE of Cisco is `r round(337/650/2*100,1)` fish per 100 m of gillnet per night (=$\frac{337}{650 \times 2} \times 100$).
+1. The CPE of age-1 Yellow Perch is `r round(146/19*10,1)` fish per 10 mins of trawling (=$\frac{146}{7+6+6} \times 10$).
 
 &nbsp;
 
 ## Problems with CPUE Data
-1. The conceptual relationship between CPUE and N is $\frac{C_{t}}{E_{t}}=qN_{t}$ where $C_{t}$ is the catch at time t, $E_{t}$ is the effort expended at time t, $N_{t}$ is the population abundance at time t, and $q$ is the catchability coefficient. Note then that $\frac{C_{t}}{E_{t}}$ is the catch per unit of effort. This relationship is a line with a slope of $q$ and a y-intercept of 0.
+1. The conceptual relationship between CPUE and N is $\frac{C_{t}}{f_{t}}=qN_{t}$ where $C_{t}$ is the catch at time t, $f_{t}$ (or $E_{t}$ in the reading) is the effort expended at time t, $N_{t}$ is the population abundance at time t, and $q$ is the catchability coefficient. Note then that $\frac{C_{t}}{f_{t}}$ is the catch per unit of effort. This relationship is a line with a slope of $q$ and a y-intercept of 0.
 1. The five main problems with CPUE data as identified by Maunder et al. (2006) are described below.
     a. "Efficiency of a fleet" -- catchability may increase over time as the fleet becomes more efficient due to new and better gear or learning more about how to catch the stock of fish.
     a. "Targeting by a fleet" -- catchability may change if the fishery switches target species; i.e., catchability for the previously targeted species will decline and catchability for the newly targeted species will increase.

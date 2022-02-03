@@ -1,0 +1,80 @@
+---
+layout: page
+title: Homework Key
+subtitle: CPUE
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<div id="calculate-cpue" class="section level2">
+<h2>Calculate CPUE</h2>
+<ol>
+<li>The CPE of Channel Catfish is 9.6 fish per hoop net per night (=<span class="math inline">\(\frac{67}{7}\)</span>).</li>
+<li>The CPE of Cisco is 25.9 fish per 100 m of gillnet per night (=<span class="math inline">\(\frac{337}{650 \times 2} \times 100\)</span>).</li>
+<li>The CPE of age-1 Yellow Perch is 76.8 fish per 10 mins of trawling (=<span class="math inline">\(\frac{146}{7+6+6} \times 10\)</span>).</li>
+</ol>
+<p> </p>
+</div>
+<div id="problems-with-cpue-data" class="section level2">
+<h2>Problems with CPUE Data</h2>
+<ol>
+<li>The conceptual relationship between CPUE and N is <span class="math inline">\(\frac{C_{t}}{f_{t}}=qN_{t}\)</span> where <span class="math inline">\(C_{t}\)</span> is the catch at time t, <span class="math inline">\(f_{t}\)</span> (or <span class="math inline">\(E_{t}\)</span> in the reading) is the effort expended at time t, <span class="math inline">\(N_{t}\)</span> is the population abundance at time t, and <span class="math inline">\(q\)</span> is the catchability coefficient. Note then that <span class="math inline">\(\frac{C_{t}}{f_{t}}\)</span> is the catch per unit of effort. This relationship is a line with a slope of <span class="math inline">\(q\)</span> and a y-intercept of 0.</li>
+<li>The five main problems with CPUE data as identified by Maunder et al. (2006) are described below.
+<ol style="list-style-type: lower-alpha">
+<li>“Efficiency of a fleet” – catchability may increase over time as the fleet becomes more efficient due to new and better gear or learning more about how to catch the stock of fish.</li>
+<li>“Targeting by a fleet” – catchability may change if the fishery switches target species; i.e., catchability for the previously targeted species will decline and catchability for the newly targeted species will increase.</li>
+<li>“Environmental factors” – Environmental factors such as changes in temperature, wind patterns, or currents may affect catchability.</li>
+<li>“Dynamics of the fleet” – Changes in the dynamics of the fishery may cause the relationship between CPUE and N to be nonlinear. For example, if fishers expand their spatial range then this may impact the CPUE-abundance relationship.</li>
+<li>“Management influence” – Management decisions can affect the CPUE-abundance relationship. For example, closing seasons or restricting effort allocations when quotas are nearly met will impact catchability.</li>
+</ol></li>
+</ol>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

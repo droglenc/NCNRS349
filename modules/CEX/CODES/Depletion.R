@@ -14,10 +14,11 @@ plot(les)
 
 
 # Crayfish Abundance
-rmvl <- removal(c(1477,133,46))
+cray <- c(1477,133,46)
+rmvl <- removal(cray)
 (res2 <- cbind(Est=summary(rmvl),confint(rmvl)) )
 
-rmvlm <- removal(c(1477,133,46),method="Moran")
-rmvls <- removal(c(1477,133,46),method="Schnute")
+rmvlm <- removal(cray,method="Moran")
+rmvls <- removal(cray,method="Schnute")
 teststat <- 2*(rmvlm$min.nlogLH-rmvls$min.nlogLH)     # Moran - Schnute
 ( pvalue <- pchisq(teststat,df=1,lower.tail=FALSE) )

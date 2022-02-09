@@ -21,7 +21,7 @@ Read [this](NOTES/MarkRecapture1){:target="_blank"} and [Section 8.3.1 in Hayes 
 
 Read [Section 9.2 in Ogle (2016)](RESOURCES/Ogle_MarkRecapture.pdf){:target="_blank"} and answer the following questions.
 
-{:start="13"}
+{:start="10"}
 1. What R function is used to compute the Petersen (or related) estimate of abundance?
 1. What argument must be included to specifically use the Chapman modification of the Petersen method?
 1. This function can accept "data" in two ways. What are those two ways?

@@ -22,10 +22,12 @@ source("../../../rhelpers/knitr_setup.R")
 
 ## Lake Guntersville Largemouth Bass
 ```{r LGLMB, echo=FALSE, results='hide', message=FALSE}
+library(FSA)
+library(tidyverse)
 d <- data.frame(ct=c(23,12,13,14,9,7),
                 ft=rep(1,6)) %>%
   mutate(CPE=ct/ft)
-depl1 <- depletion(d$ct,d$ft,method="Leslie")
+depl1 <- depletion(d$ct,d$ft,method="Leslie",Ricker.mod=TRUE)
 summary(depl1)
 confint(depl1)
 ```
@@ -33,14 +35,15 @@ confint(depl1)
 sum3 <- summary(depl1)
 Nhat <- sum3["No","Estimate"]
 q <- sum3["q","Estimate"]
+prem <- 1-exp(-q)
 ci3 <- confint(depl1)
 ```
 
 1. A total of `r d$CPE[1]` fish were caught per hour in the first sample.
-1. The catchability coefficient (q) is estimated to be `r formatC(q,format="f",digits=3)` with a 95% confidence interval from `r formatC(ci3["q","95% LCI"],format="f",digits=3)` to `r formatC(ci3["q","95% UCI"],format="f",digits=3)`. Thus, it is estimated that `r formatC(q*100,format="f",digits=1)`% of the Largemouth Bass (*Micropterus salmoides*) in the enclosures would be captured with one hour (i.e., one unit) of electrofishing effort. This value is the same as that reported in Maceina *et al.* (1995).
+1. The catchability coefficient (q) is estimated to be `r formatC(q,format="f",digits=3)` with a 95% confidence interval from `r formatC(ci3["q","95% LCI"],format="f",digits=3)` to `r formatC(ci3["q","95% UCI"],format="f",digits=3)`. Thus, it is estimated that approximately `r formatC(q*100,format="f",digits=1)`% of the Largemouth Bass (*Micropterus salmoides*) in the enclosures would be captured with one hour (i.e., one unit) of electrofishing effort. This value is the same as that reported in Maceina *et al.* (1995).
 1. The initial population size (N<sub>0</sub>) is estimated to be `r formatC(Nhat,format="f",digits=0)` with a 95% confidence interval from `r formatC(ci3["No","95% LCI"],format="f",digits=0)` to `r formatC(ci3["No","95% UCI"],format="f",digits=0)`. This value is the same as that reported in Maceina *et al.* (1995).
-1. One would expect to catch `r formatC(q,format="f",digits=3)`&times;`r formatC(Nhat,format="f",digits=1)`&times;1 = `r formatC(q*Nhat,format="f",digits=1)` fish in the first hour of sampling.
-1. To compute the expected catch for the second sample, one must first reduce the original population size by the number of fish removed with the first sample (i.e., N<sub>0</sub>-N<sub>0</sub>&times;q&times;1) and then multiply that times q&times;1. Thus, the expected catch for the second sample is (`r formatC(Nhat,format="f",digits=1)`-`r formatC(q*Nhat,format="f",digits=1)`)&times;`r formatC(q,format="f",digits=3)`&times;1 = `r formatC(q*Nhat-q^2*Nhat,format="f",digits=1)` fish.
+1. One would expect to catch `r formatC(Nhat,format="f",digits=0)`&times;(1-e$^{`r formatC(q,format="f",digits=3)`}$)&times;1 = `r formatC(prem*Nhat,format="f",digits=1)` fish in the first hour of sampling.
+1. To compute the expected catch for the second sample, one must first reduce the original population size by the number of fish removed with the first sample (i.e., N<sub>0</sub>-N<sub>0</sub>&times;(1-e<sup>-q</sup>)&times;1) and then multiply that times (1-e<sup>-q</sup>)&times;1. Thus, the expected catch for the second sample is (`r formatC(Nhat,format="f",digits=0)`-`r formatC(prem*Nhat,format="f",digits=0)`)&times;`r formatC(prem,format="f",digits=3)`&times;1 = `r formatC(prem*Nhat-prem^2*Nhat,format="f",digits=1)` fish.
 
 #### R Appendix
 ```{r eval=FALSE, prompt=FALSE}
@@ -72,3 +75,8 @@ n <- sum(ct)
 1. The initial population size (N<sub>0</sub>) is estimated to be `r formatC(Nhat,format="f",digits=0)` with a 95% confidence interval from `r formatC(ci4["No","95% LCI"],format="f",digits=0)` to `r formatC(ci4["No","95% UCI"],format="f",digits=0)`. This value is the same as that reported in Pritchard *et al.* (2021).
 1. Capture efficiency is the percentage of the estimated number of Bullhead at the site (`r formatC(Nhat,format="f",digits=0)`) that were captured in the three electrofishing passes (`r n`) -- i.e., $100\frac{`r n`}{`r formatC(Nhat,format="f",digits=0)`}$=`r formatC(100*n/Nhat,format="f",digits=0)`%. This is the same value as reported in Pritchard *et al.* (2021).
 1. There is sufficient evidence to conclude that the probability of capture differed after the first of the three electrofishing passes (`r kPvalue(pvalue,latex=FALSE)`).
+
+#### R Appendix
+```{r eval=FALSE, prompt=FALSE}
+<<BH>>
+```

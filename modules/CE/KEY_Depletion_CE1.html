@@ -1,0 +1,99 @@
+---
+layout: page
+title: Homework Key
+subtitle: Depletion
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<div id="lake-guntersville-largemouth-bass" class="section level2">
+<h2>Lake Guntersville Largemouth Bass</h2>
+<ol>
+<li>A total of 23 fish were caught per hour in the first sample.</li>
+<li>The catchability coefficient (q) is estimated to be 0.203 with a 95% confidence interval from 0.043 to 0.364. Thus, it is estimated that approximately 20.3% of the Largemouth Bass (<em>Micropterus salmoides</em>) in the enclosures would be captured with one hour (i.e., one unit) of electrofishing effort. This value is the same as that reported in Maceina <em>et al.</em> (1995).</li>
+<li>The initial population size (N<sub>0</sub>) is estimated to be 110 with a 95% confidence interval from 57 to 164. This value is the same as that reported in Maceina <em>et al.</em> (1995).</li>
+<li>One would expect to catch 110×(1-e<span class="math inline">\(^{0.203}\)</span>)×1 = 20.3 fish in the first hour of sampling.</li>
+<li>To compute the expected catch for the second sample, one must first reduce the original population size by the number of fish removed with the first sample (i.e., N<sub>0</sub>-N<sub>0</sub>×(1-e<sup>-q</sup>)×1) and then multiply that times (1-e<sup>-q</sup>)×1. Thus, the expected catch for the second sample is (110-20)×0.184×1 = 16.6 fish.</li>
+</ol>
+<div id="r-appendix" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>library(FSA)
+library(tidyverse)
+d &lt;- data.frame(ct=c(23,12,13,14,9,7),
+                ft=rep(1,6)) %&gt;%
+  mutate(CPE=ct/ft)
+depl1 &lt;- depletion(d$ct,d$ft,method=&quot;Leslie&quot;,Ricker.mod=TRUE)
+summary(depl1)
+confint(depl1)</code></pre>
+<p> </p>
+</div>
+</div>
+<div id="benthic-fish-in-a-headwater-stream" class="section level2">
+<h2>Benthic Fish in a Headwater Stream</h2>
+<ol>
+<li>The probability of capture (p) is estimated to be 0.455 with a 95% confidence interval from 0.363 to 0.547.</li>
+<li>The initial population size (N<sub>0</sub>) is estimated to be 287 with a 95% confidence interval from 255 to 319. This value is the same as that reported in Pritchard <em>et al.</em> (2021).</li>
+<li>Capture efficiency is the percentage of the estimated number of Bullhead at the site (287) that were captured in the three electrofishing passes (241) – i.e., <span class="math inline">\(100\frac{241}{287}\)</span>=84%. This is the same value as reported in Pritchard <em>et al.</em> (2021).</li>
+<li>There is sufficient evidence to conclude that the probability of capture differed after the first of the three electrofishing passes (p=0.0217).</li>
+</ol>
+<div id="r-appendix-1" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>ct &lt;- c(138,55,48)
+rem1 &lt;- removal(ct)
+summary(rem1)
+confint(rem1)
+M1 &lt;- removal(ct,method=&quot;Moran&quot;)
+S1 &lt;- removal(ct,method=&quot;Schnute&quot;)
+teststat &lt;- 2*(M1$min.nlogLH-S1$min.nlogLH)
+pvalue &lt;- pchisq(teststat,df=1,lower.tail=FALSE)</code></pre>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

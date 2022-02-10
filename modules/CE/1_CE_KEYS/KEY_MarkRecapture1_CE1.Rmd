@@ -34,7 +34,7 @@ ci <- confint(mr1)
 
 1. M=43, n=123, m=16, N is unknown
 1. The estimated abundance of Brown Trout (*Salmo trutta*) in this section of the Ugly River is `r formatC(mr1$N,format="f",digits=0)` fish with a 95% confidence interval from `r formatC(ci[1,"95% LCI"],format="f",digits=0)` to `r formatC(ci[1,"95% UCI"],format="f",digits=0)`.
-1. The estimate is one fish lower than the published result (likely due to rounding), but the confidence interval is dramatically different (the authors used the Poisson approximation rather than the binomial approximation).
+1. The estimate is not the same as the published result because they did not use the Chapman modification. The confidence interval is very different (the authors used the Poisson approximation rather than the binomial approximation).
 1. The binomial distribution was used to construct the confidence intervals because more than 10% of the fish in the second sample were recaptured (i.e., `r formatC(mr1$m/mr1$n*100,format="f",digits=1)`).
 
 #### R Appendix

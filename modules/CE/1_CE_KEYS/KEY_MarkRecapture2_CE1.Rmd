@@ -45,3 +45,13 @@ tibble::tribble(
   "Released Near Net","Under","Under"
 )
 ```
+
+## Lake Huron Sea Lamprey
+The population estimates appears to match that of Begstedt *et al.* at 639 thousand fish. The confidence intervals are not the same as the Poisson method was used here but not in their paper.
+
+#### R Code and Results
+```{r}
+library(FSA)
+mr1 <- mrClosed(M=555,n=47154,m=40,method="Chapman")
+cbind(summary(mr1),confint(mr1,verbose=TRUE))
+```

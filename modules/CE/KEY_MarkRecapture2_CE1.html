@@ -1,0 +1,99 @@
+---
+layout: page
+title: Homework Key
+subtitle: Mark-Recapture II
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<div id="observations" class="section level2">
+<h2>Observations</h2>
+<ol>
+<li>The initial N can be reliably estimated only if the assumption violation is that there is mortality on both marked and unmarked fish.</li>
+<li>The final N can be reliably estimated when the assumption violations are mortality on unmarked fish only or recruitment into the population.</li>
+<li>There is no assumption violation that allows both the initial and final populations to be reliably estimated.</li>
+<li>The following things should be done to minimize assumption violations:
+<ol style="list-style-type: lower-alpha">
+<li>The marking and recapture run should be relatively close in time to minimize mortality, recruitment, emigration, and immigration.</li>
+<li>Technicians must pay attention so that all marked fish that are captured are observed and so that marks/tags are properly affixed.</li>
+<li>Steps should be taken to assure that the marked fish mix into the population as a whole (so don’t release fish next to the net).</li>
+<li>Marks/Tags and the handling of fish should have as little affect on the behavior and survival of the fish as possible (i.e., handle them quickly and carefully).</li>
+</ol></li>
+</ol>
+<pre><code># A tibble: 9 x 3
+  Situation            N_Initial N_Final
+  &lt;chr&gt;                &lt;chr&gt;     &lt;chr&gt;  
+1 Lose mark            Over      Over   
+2 Mortality (same)     OK        Over   
+3 Mortality (Marked)   Over      Over   
+4 Mortality (Unmarked) Under     OK     
+5 Recruitment          Over      OK     
+6 Trap Happy           Under     Under  
+7 Trap Shy             Over      Over   
+8 Missed Mark          Over      Over   
+9 Released Near Net    Under     Under  </code></pre>
+</div>
+<div id="lake-huron-sea-lamprey" class="section level2">
+<h2>Lake Huron Sea Lamprey</h2>
+<p>The population estimates appears to match that of Begstedt <em>et al.</em> at 639 thousand fish. The confidence intervals are not the same as the Poisson method was used here but not in their paper.</p>
+<div id="r-code-and-results" class="section level4">
+<h4>R Code and Results</h4>
+<pre class="r"><code>&gt; library(FSA)</code></pre>
+<pre><code>## FSA v0.9.1.9000. See citation(&#39;FSA&#39;) if used in publication.
+## Run fishR() for related website and fishR(&#39;IFAR&#39;) for related book.</code></pre>
+<pre class="r"><code>&gt; mr1 &lt;- mrClosed(M=555,n=47154,m=40,method=&quot;Chapman&quot;)
+&gt; cbind(summary(mr1),confint(mr1,verbose=TRUE))</code></pre>
+<pre><code>The Poisson (exact method) distribution was used.</code></pre>
+<pre><code>          N 95% LCI 95% UCI
+[1,] 639467  472666  886450</code></pre>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

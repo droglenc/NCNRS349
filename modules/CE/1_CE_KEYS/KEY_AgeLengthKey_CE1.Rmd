@@ -1,0 +1,102 @@
+---
+layout: page
+title: Homework Key
+subtitle: Condition
+author: Derek H. Ogle
+css: /css/modules.css
+output:
+  html_document:
+    self_contained: false
+    lib_dir: zlibs
+---
+
+```{r echo=FALSE, eval=FALSE}
+## Renders an appropriate HTML file and moves to CE directory
+source("modules/CE/1_CE_KEYS/zzz_modHTML_CEKeys.R")
+modHTML_CEKeys("KEY_AgeLengthKey_CE1")
+```
+
+```{r echo=FALSE, results='hide', message=FALSE}
+source("../../../rhelpers/knitr_setup.R")
+```
+
+## Lake Ontario Rock Bass
+```{r Setup, echo=FALSE, results='hide', message=FALSE, fig.show='hide'}
+library(FSA)
+library(tidyverse)
+library(ggplot2)
+
+rb <- read.csv("https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/RockBassLO2.csv") %>%
+  mutate(lcat10=lencat(tl,w=10,as.fact=TRUE))
+rba <- filter(rb,!is.na(age))
+rbl <- filter(rb,is.na(age))
+
+## Summary tables for aged sample
+xtabs(~lcat10,data=rba)
+xtabs(~age,data=rba)
+
+## Make ALK
+agelendist <- xtabs(~lcat10+age,data=rba)
+alk <- prop.table(agelendist ,margin=1)
+alkPlot(alk)
+
+## Apply the ALK
+rblmod <- alkIndivAge(alk,age~tl,data=rbl)
+headtail(rbl)
+headtail(rblmod)
+
+## Combine two dfs with ages and compute some summaries
+rbamod <- rbind(rba,rblmod)
+
+(agedist <- xtabs(~age,data=rbamod))
+
+(lendist <- xtabs(~lcat10,data=rbamod))
+
+lenatage <- rbamod %>%
+  group_by(age) %>%
+  summarize(n=n(),
+            mntl=mean(tl),
+            sdtl=sd(tl))
+lenatage
+
+ggplot(data=rbamod,mapping=aes(x=age)) +
+  geom_bar() +
+  scale_x_continuous(name="Age") +
+  scale_y_continuous(name="Frequency of Fish",expand=expansion(c(0,0.05))) +
+  theme_bw()
+
+ggplot() +
+  geom_point(data=rbamod,mapping=aes(x=age,y=tl),color=col2rgbt("black",1/10)) +
+  geom_line(data=lenatage,mapping=aes(x=age,y=mntl),color="blue",size=1) +
+  scale_x_continuous(name="Age") +
+  scale_y_continuous(name="Total length (mm)") +
+  theme_bw()
+
+```
+```{r echo=FALSE, results="hide"}
+aged.ld <- xtabs(~lcat10,data=rba)
+aged.ad <- xtabs(~age,data=rba)
+```
+
+1. There are `r nrow(rba)` fish that were aged and `r nrow(rbl)` fish that were not aged.
+1. Answers are below.
+    1. There were `r aged.ld[["180"]]` fish in the 180-mm category in the aged sample.
+    1. There were `r aged.ad[["7"]]` age-7 fish in the aged sample.
+    1. The proportion of fish in the 140-mm TL category that were age-4 was `r alk["140","4"]`.
+    1. The proportion of fish in the 200-mm TL category that were age-8 was `r alk["200","8"]`.
+1. Answers are below
+    1. The proportion of fish in the 210-mm TL category that should be assigned age-5 was `r alk["210","5"]`.
+    1. Of 30 Rock Bass in the 180-mm TL category, `r 30*alk["180","5"]` should be assigned age-5.
+    1. This age-length key is pretty "clean." There are some anomolies with age-8 and age-9 fish near 200 mm and age-11 fish from 230 to 270 mm, but these proportions are fairly small.
+1. Answers are below
+    1. There were `r agedist[["5"]]` age-5 fish after applying the age-length key.
+    1. There were `r agedist[["11"]]` age-11 fish after applying the age-length key.
+    1. The age distribution is shown in the second plot below.
+    1. There were `r lendist[["150"]]` total fish in the 150-mm TL category.
+    1. The mean TL of age-5 fish is `r formatC(lenatage$mntl[lenatage$age==5],format="f",digits=1)` mm.
+    1. The length-at-age plot is shown in the third plot below.
+
+#### R Appendix
+```{r prompt=FALSE, results='hide', fig.show='asis', warning=FALSE, message=FALSE,fig.width=4.5, fig.height=3.5}
+<<Setup>>
+```

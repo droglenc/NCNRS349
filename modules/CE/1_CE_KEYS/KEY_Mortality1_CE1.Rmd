@@ -143,7 +143,6 @@ plot(cc67yc)
 d[,1:5]
 ```
 
-{:start="3"}
 1. Data for the 1963 capture year is **cross-sectional**, whereas data for the 1963, 1954, and 1967 year-classes are all **longitudinal**.
 1. Answers for the 1954 year-class:
     1. Z=`r sum54yc["Z","Estimate"]` (CI: `r sum54yc["Z","95% LCI"]`,`r sum54yc["Z","95% UCI"]`)
@@ -151,4 +150,4 @@ d[,1:5]
 1. Answers for the 1967 year-class:
     1. Z=`r sum67yc["Z","Estimate"]` (CI: `r sum67yc["Z","95% LCI"]`,`r sum67yc["Z","95% UCI"]`)
     1. A=`r sum67yc["A","Estimate"]` (CI: `r sum67yc["A","95% LCI"]`,`r sum67yc["A","95% UCI"]`)
-1. Difficult to tell as the CI for 1954 captures the estimated from 1967 but the opposite is not true. Would be best to perform an IVR with both sets of data.
+1. Difficult to tell as the CI for 1954 captures the estimated value from 1967 but the opposite is not true. Would be best to perform an IVR with both sets of data.

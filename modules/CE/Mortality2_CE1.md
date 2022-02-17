@@ -6,7 +6,7 @@ css: /css/modules.css
 ---
 
 ## Meta-Analytical Estimates of M
-As noted in the readings M can be estimated from other population dynamics parameters (some of which we have not yet learned). This [online tool](https://connect.fisheries.noaa.gov/natural-mortality-tool/) provides meta-analytic estimates of M based on a wide variety of relationships and estimated of population dynamics parameters supplied by the user. The tool will also combined the individual estimates into an overall composite estimate.
+As noted in the readings M can be estimated from other population dynamics parameters (some of which we have not yet learned). This [online tool](https://connect.fisheries.noaa.gov/natural-mortality-tool/) provides meta-analytic estimates of M based on a wide variety of relationships and estimates of population dynamics parameters supplied by the user. The tool will also combine the individual estimates into an overall composite estimate.
 
 Use this tool to generate meta-analytic estimates of M for the following situations. For each situation, report how many estimates of M were obtained and the mean and median composite estimate of M. For each situation make sure to include the (*correctly spelled*) species' scientific name in the appropriate box of the tool.
 
@@ -20,4 +20,4 @@ Use the **mean** composite estimate of M from above with the following assumptio
 {:start="4"}
 1. Assume that the population of Northern Pike is unexploited.
 1. Assume that the population of Arctic Charr are exposed to an artisinal subsistence fishery with F=0.1.
-1. Assume that the population of Black Crappie is a population recreational fishery with F=0.6.
+1. Assume that the population of Black Crappie is a popular recreational fishery with F=0.6.

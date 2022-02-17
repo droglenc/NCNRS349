@@ -1,0 +1,176 @@
+---
+layout: page
+title: Homework Key
+subtitle: Mortality
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<div id="keewenaw-bay-lake-trout" class="section level2">
+<h2>Keewenaw Bay Lake Trout</h2>
+<div id="with-9-13" class="section level4">
+<h4>With 9-13</h4>
+<ol>
+<li>This is a longitudinal catch-curve.</li>
+<li>Ages 9-13.</li>
+<li>Answers are below.
+<ol>
+<li>Z=0.4818402 (CI: 0.3877375,0.575943)</li>
+<li>A=38.2354266 (CI: 32.1409544,43.7825496)</li>
+<li>S=61.7645734 (CI: 56.2174504,67.8590456)</li>
+</ol></li>
+<li>A=1-e<sup>-Z</sup>=1-e<sup>-0.4818402</sup>=0.3823543</li>
+</ol>
+</div>
+<div id="with-8-13" class="section level4">
+<h4>With 8-13</h4>
+<ol>
+<li>This is a longitudinal catch-curve.</li>
+<li>Ages 8-13.</li>
+<li>Answers are below.
+<ol>
+<li>Z=0.4163626 (CI: 0.3026487,0.5300766)</li>
+<li>A=34.0558914 (CI: 26.1141358,41.144013)</li>
+<li>S=65.9441086 (CI: 58.855987,73.8858642)</li>
+</ol></li>
+<li>A=1-e<sup>-Z</sup>=1-e<sup>-0.4163626</sup>=0.3405589</li>
+</ol>
+</div>
+<div id="with-9-14" class="section level4">
+<h4>With 9-14</h4>
+<ol>
+<li>This is a longitudinal catch-curve.</li>
+<li>Ages 9-14.</li>
+<li>Answers are below.
+<ol>
+<li>Z=0.5649092 (CI: 0.3923675,0.7374509)</li>
+<li>A=43.1588249 (CI: 32.4544167,52.1668328)</li>
+<li>S=56.8411751 (CI: 47.8331672,67.5455833)</li>
+</ol></li>
+<li>A=1-e<sup>-Z</sup>=1-e<sup>-0.5649092</sup>=0.4315882</li>
+</ol>
+</div>
+<div id="with-8-14" class="section level4">
+<h4>With 8-14</h4>
+<ol>
+<li>This is a longitudinal catch-curve.</li>
+<li>Ages 8-14.</li>
+<li>Answers are below.
+<ol>
+<li>Z=0.4892748 (CI: 0.3334172,0.6451323)</li>
+<li>A=38.6929156 (CI: 28.3528805,47.5406879)</li>
+<li>S=61.3070844 (CI: 52.4593121,71.6471195)</li>
+</ol></li>
+<li>A=1-e<sup>-Z</sup>=1-e<sup>-0.4892748</sup>=0.3869292</li>
+</ol>
+</div>
+<div id="r-appendix" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>library(FSA)
+library(tidyverse)
+library(ggplot2)
+
+d &lt;- data.frame(age=3:14,ct=c(5,18,21,10,45,109,95,63,42,25,13,4))
+
+ggplot(data=d,mapping=aes(x=age,y=ct)) +
+  geom_point() +
+  scale_y_continuous(trans=&quot;log&quot;) +
+  theme_bw()
+
+## With 9-13
+cc1 &lt;- catchCurve(ct~age,data=d,ages2use=9:13)
+sum1 &lt;- cbind(summary(cc1),confint(cc1))
+plot(cc1)
+cc1w &lt;- catchCurve(ct~age,data=d,ages2use=9:13,weighted=TRUE)
+sum1w &lt;- cbind(summary(cc1w),confint(cc1w))
+
+## With 8-13
+cc2 &lt;- catchCurve(ct~age,data=d,ages2use=8:13)
+sum2 &lt;- cbind(summary(cc2),confint(cc2))
+plot(cc2)
+cc2w &lt;- catchCurve(ct~age,data=d,ages2use=8:13,weighted=TRUE)
+sum2w &lt;- cbind(summary(cc2w),confint(cc2w))
+
+## With 9-14
+cc3 &lt;- catchCurve(ct~age,data=d,ages2use=9:14)
+sum3 &lt;- cbind(summary(cc3),confint(cc3))
+plot(cc3)
+cc3w &lt;- catchCurve(ct~age,data=d,ages2use=9:14,weighted=TRUE)
+sum3w &lt;- cbind(summary(cc3w),confint(cc3w))
+
+## With 8-14
+cc4 &lt;- catchCurve(ct~age,data=d,ages2use=8:14)
+sum4 &lt;- cbind(summary(cc4),confint(cc4))
+plot(cc4)
+cc4w &lt;- catchCurve(ct~age,data=d,ages2use=8:14,weighted=TRUE)
+sum4w &lt;- cbind(summary(cc4w),confint(cc4w))</code></pre>
+<hr />
+</div>
+</div>
+<div id="stannard-rock-lake-trout" class="section level2">
+<h2>Stannard Rock Lake Trout</h2>
+<ol>
+<li>1956 year-class.</li>
+<li>Shown below.</li>
+</ol>
+<pre><code>  age  yr63 yc63  yc54 yc67
+1   6 129.0   45    NA  101
+2   7 339.0   NA    NA  733
+3   8 331.0   NA    NA 1517
+4   9 192.0   NA 192.0 1560
+5  10  70.0  491  63.0 1031
+6  11  16.0  163  39.0  445
+7  12   0.5  117   5.0  300
+8  13   0.5   18   0.5   NA
+9  14   0.5    7   0.5   NA</code></pre>
+<p>{:start=“3”} 1. Data for the 1963 capture year is <strong>cross-sectional</strong>, whereas data for the 1963, 1954, and 1967 year-classes are all <strong>longitudinal</strong>. 1. Answers for the 1954 year-class: 1. Z=1.1282516 (CI: 0.5329046,1.7235986) 1. A=67.6401456 (CI: 41.3102216,82.1577078) 1. Answers for the 1967 year-class: 1. Z=0.5789745 (CI: 0.3128332,0.8451158) 1. A=43.9527174 (CI: 26.8628131,57.0492383) 1. Difficult to tell as the CI for 1954 captures the estimated from 1967 but the opposite is not true. Would be best to perform an IVR with both sets of data.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

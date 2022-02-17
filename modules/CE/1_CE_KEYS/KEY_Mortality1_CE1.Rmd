@@ -70,7 +70,7 @@ sum4w <- cbind(summary(cc4w),confint(cc4w))
     1. Z=`r sum1w["Z","Estimate"]` (CI: `r sum1w["Z","95% LCI"]`,`r sum1w["Z","95% UCI"]`)
     1. A=`r sum1w["A","Estimate"]` (CI: `r sum1w["A","95% LCI"]`,`r sum1w["A","95% UCI"]`)
     1. S=`r 100-sum1w["A","Estimate"]` (CI: `r 100-sum1w["A","95% UCI"]`,`r 100-sum1w["A","95% LCI"]`)
-1. A=1-e<sup>-Z</sup>=1-e<sup>-`sum1w["Z","Estimate"]`</sup>=`1-exp(-sum1w["Z","Estimate"])`
+1. A=1-e<sup>-Z</sup>=1-e<sup>-`r sum1w["Z","Estimate"]`</sup>=`r 1-exp(-sum1w["Z","Estimate"])`
 
 #### With 8-13
 1. This is a longitudinal catch-curve.
@@ -79,7 +79,7 @@ sum4w <- cbind(summary(cc4w),confint(cc4w))
     1. Z=`r sum2w["Z","Estimate"]` (CI: `r sum2w["Z","95% LCI"]`,`r sum2w["Z","95% UCI"]`)
     1. A=`r sum2w["A","Estimate"]` (CI: `r sum2w["A","95% LCI"]`,`r sum2w["A","95% UCI"]`)
     1. S=`r 100-sum2w["A","Estimate"]` (CI: `r 100-sum2w["A","95% UCI"]`,`r 100-sum2w["A","95% LCI"]`)
-1. A=1-e<sup>-Z</sup>=1-e<sup>-`sum2w["Z","Estimate"]`</sup>=`1-exp(-sum2w["Z","Estimate"])`
+1. A=1-e<sup>-Z</sup>=1-e<sup>-`r sum2w["Z","Estimate"]`</sup>=`r 1-exp(-sum2w["Z","Estimate"])`
 
 #### With 9-14
 1. This is a longitudinal catch-curve.
@@ -88,7 +88,7 @@ sum4w <- cbind(summary(cc4w),confint(cc4w))
     1. Z=`r sum3w["Z","Estimate"]` (CI: `r sum3w["Z","95% LCI"]`,`r sum3w["Z","95% UCI"]`)
     1. A=`r sum3w["A","Estimate"]` (CI: `r sum3w["A","95% LCI"]`,`r sum3w["A","95% UCI"]`)
     1. S=`r 100-sum3w["A","Estimate"]` (CI: `r 100-sum3w["A","95% UCI"]`,`r 100-sum3w["A","95% LCI"]`)
-1. A=1-e<sup>-Z</sup>=1-e<sup>-`sum3w["Z","Estimate"]`</sup>=`1-exp(-sum3w["Z","Estimate"])`
+1. A=1-e<sup>-Z</sup>=1-e<sup>-`r sum3w["Z","Estimate"]`</sup>=`r 1-exp(-sum3w["Z","Estimate"])`
 
 #### With 8-14
 1. This is a longitudinal catch-curve.
@@ -97,7 +97,7 @@ sum4w <- cbind(summary(cc4w),confint(cc4w))
     1. Z=`r sum4w["Z","Estimate"]` (CI: `r sum4w["Z","95% LCI"]`,`r sum4w["Z","95% UCI"]`)
     1. A=`r sum4w["A","Estimate"]` (CI: `r sum4w["A","95% LCI"]`,`r sum4w["A","95% UCI"]`)
     1. S=`r 100-sum4w["A","Estimate"]` (CI: `r 100-sum4w["A","95% UCI"]`,`r 100-sum4w["A","95% LCI"]`)
-1. A=1-e<sup>-Z</sup>=1-e<sup>-`sum4w["Z","Estimate"]`</sup>=`1-exp(-sum4w["Z","Estimate"])`
+1. A=1-e<sup>-Z</sup>=1-e<sup>-`r sum4w["Z","Estimate"]`</sup>=`r 1-exp(-sum4w["Z","Estimate"])`
 
 #### R Appendix
 ```{r eval=FALSE, prompt=FALSE}
@@ -142,6 +142,8 @@ plot(cc67yc)
 ```{r echo=FALSE}
 d[,1:5]
 ```
+
+{:start="3"}
 1. Data for the 1963 capture year is **cross-sectional**, whereas data for the 1963, 1954, and 1967 year-classes are all **longitudinal**.
 1. Answers for the 1954 year-class:
     1. Z=`r sum54yc["Z","Estimate"]` (CI: `r sum54yc["Z","95% LCI"]`,`r sum54yc["Z","95% UCI"]`)

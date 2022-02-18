@@ -36,6 +36,8 @@ The following are possible questions for the midterm exam.
 -	Explain which assumption of depletion/removal methods is most commonly violated.  Why?
 -	Summarize Rosenberger’s (2010) argument.
 
+- SCALES, OTOS, etc.
+
 -	Compute an age-length key from a two-way table.
 -	Identify proportions and number of fish that will be assigned a certain age from an age-length key according to the Isermann-Knight method.
 -	Describe how an age-length-key is used in the Isermann-Knight method.

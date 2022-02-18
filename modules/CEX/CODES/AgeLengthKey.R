@@ -13,7 +13,7 @@ sba <- filter(sb,!is.na(age))
 sbl <- filter(sb,is.na(age))
 
 ## age distributions in age sample (and the ALK)
-(agelendist <- xtabs(~lcat+age,data=sb))
+(agelendist <- xtabs(~lcat+age,data=sba))
 print(agelendist,zero.print="-")            # aesthetic trick
 alk <- prop.table(agelendist,margin=1)
 print(round(alk,digits=2),zero.print="-")   # aesthetic trick

@@ -44,8 +44,8 @@ The following are possible questions for the midterm exam.
 1. Interpret Z and A
 1. Compute A from Z, Z from A
 1. Look at two plots and identify the one with the higher mortality rate
-1. Assumptions? How does shape of catch-curve change if assumptions are violated?
+1. <s>How does shape of catch-curve change if assumptions are violated?</s>
 1. Describe the “limbs” of a catch curve and explain why they appear the way they do.
-1. Describe ways in which F and M can be estimated.
-1. Compute the exploitation rate from mark-recapture results
+1. <s>Describe ways in which F and M can be estimated.</s>
+1. <s>Compute the exploitation rate from mark-recapture results.</s>
 1. Compute A from estimates of F and M.

@@ -51,7 +51,7 @@ Use these results to answer the following questions.
     1. The *latest* year-class that is **fully** represented for ages IX through XII.
 1. For each data frame created above, identify whether the data represent a cross-sectional or longitudinal catch curve?
 1. For the third data frame created above (*earliest* year class).
-    1. Estimate, with 95% confidence interval, the instantaneous total mortality rate using the catch-curve regression method for ages IX through XII.
-    1. Estimate, with 95% confidence interval, the instantaneous total mortality rate using the catch-curve regression method. Carefully interpret this result for ages IX through XII.
+    1. Estimate, with 95% confidence interval, the **instantaneous** total mortality rate using the catch-curve regression method for ages IX through XII.
+    1. Estimate, with 95% confidence interval, the **annual** total mortality rate using the catch-curve regression method for ages IX through XII. Carefully interpret this result.
 1. Repeat the previous question for last data frame created above (*latest* year class).
 1. Do you think the instantaneous mortality rates calculated for the *earliest* and *latest* year classes are statistically significantly different? Provide reasoning.

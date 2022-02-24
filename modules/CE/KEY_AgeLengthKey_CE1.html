@@ -1,0 +1,138 @@
+---
+layout: page
+title: Homework Key
+subtitle: Condition
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<div id="lake-ontario-rock-bass" class="section level2">
+<h2>Lake Ontario Rock Bass</h2>
+<ol>
+<li>There are 135 fish that were aged and 1153 fish that were not aged.</li>
+<li>Answers are below.
+<ol>
+<li>There were 10 fish in the 180-mm category in the aged sample.</li>
+<li>There were 24 age-7 fish in the aged sample.</li>
+<li>The proportion of fish in the 140-mm TL category that were age-4 was 0.9.</li>
+<li>The proportion of fish in the 200-mm TL category that were age-8 was 0.1.</li>
+</ol></li>
+<li>Answers are below
+<ol>
+<li>The proportion of fish in the 210-mm TL category that should be assigned age-5 was 0.1.</li>
+<li>Of 30 Rock Bass in the 180-mm TL category, 12 should be assigned age-5.</li>
+<li>This age-length key is pretty “clean.” There are some anomolies with age-8 and age-9 fish near 200 mm and age-11 fish from 230 to 270 mm, but these proportions are fairly small.</li>
+</ol></li>
+<li>Answers are below
+<ol>
+<li>There were 263 age-5 fish after applying the age-length key.</li>
+<li>There were 6 age-11 fish after applying the age-length key.</li>
+<li>The age distribution is shown in the second plot below.</li>
+<li>There were 43 total fish in the 150-mm TL category.</li>
+<li>The mean TL of age-5 fish is 187.5 mm.</li>
+<li>The length-at-age plot is shown in the third plot below.</li>
+</ol></li>
+</ol>
+<div id="r-appendix" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>library(FSA)
+library(tidyverse)
+library(ggplot2)
+
+rb &lt;- read.csv(&quot;https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/RockBassLO2.csv&quot;) %&gt;%
+  mutate(lcat10=lencat(tl,w=10,as.fact=TRUE))
+rba &lt;- filter(rb,!is.na(age))
+rbl &lt;- filter(rb,is.na(age))
+
+## Summary tables for aged sample
+xtabs(~lcat10,data=rba)
+xtabs(~age,data=rba)
+
+## Make ALK
+agelendist &lt;- xtabs(~lcat10+age,data=rba)
+alk &lt;- prop.table(agelendist ,margin=1)
+alkPlot(alk)</code></pre>
+<p><img src="KEY_AgeLengthKey_CE1_files/figure-html/unnamed-chunk-4-1.png" width="432" /></p>
+<pre class="r"><code>## Apply the ALK
+rblmod &lt;- alkIndivAge(alk,age~tl,data=rbl)
+headtail(rbl)
+headtail(rblmod)
+
+## Combine two dfs with ages and compute some summaries
+rbamod &lt;- rbind(rba,rblmod)
+
+(agedist &lt;- xtabs(~age,data=rbamod))
+
+(lendist &lt;- xtabs(~lcat10,data=rbamod))
+
+lenatage &lt;- rbamod %&gt;%
+  group_by(age) %&gt;%
+  summarize(n=n(),
+            mntl=mean(tl),
+            sdtl=sd(tl))
+lenatage
+
+ggplot(data=rbamod,mapping=aes(x=age)) +
+  geom_bar() +
+  scale_x_continuous(name=&quot;Age&quot;) +
+  scale_y_continuous(name=&quot;Frequency of Fish&quot;,expand=expansion(c(0,0.05))) +
+  theme_bw()</code></pre>
+<p><img src="KEY_AgeLengthKey_CE1_files/figure-html/unnamed-chunk-4-2.png" width="432" /></p>
+<pre class="r"><code>ggplot() +
+  geom_point(data=rbamod,mapping=aes(x=age,y=tl),color=col2rgbt(&quot;black&quot;,1/10)) +
+  geom_line(data=lenatage,mapping=aes(x=age,y=mntl),color=&quot;blue&quot;,size=1) +
+  scale_x_continuous(name=&quot;Age&quot;) +
+  scale_y_continuous(name=&quot;Total length (mm)&quot;) +
+  theme_bw()</code></pre>
+<p><img src="KEY_AgeLengthKey_CE1_files/figure-html/unnamed-chunk-4-3.png" width="432" /></p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

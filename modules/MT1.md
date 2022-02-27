@@ -8,7 +8,7 @@ The following are possible questions for the midterm exam.
 
 1. Scientific names of Walleye, Lake Trout, Brook Trout, Coho Salmon, Sockeye Salmon, Brown Trout, Bluegill, Largemouth Bass, Northern Pike, Arctic Charr, Black Crappie, Sea Lamprey
 1. Define all symbols including:
-    a. N<sub>0</sub>, q, Z, F, M, A, S, u, v, m, n, C<sub>t</sub>, f<sub>t</sub>, N<sub>t</sub>, r
+    a. N<sub>0</sub>, q, Z, F, M, A, S, <s>u<s>, <s>v<s>, <s>m<s>, <s>n<s>, C<sub>t</sub>, f<sub>t</sub>, N<sub>t</sub>, r
     a. M,n,m from mark-recapture
 1. Identify different types of fishing regulations (e.g., minimum size, hartvest slot, bag limit, gear restrictions, etc.)
 1. Describe a conceptual model of a stock (i.e., what things effect stock abundance and biomass)

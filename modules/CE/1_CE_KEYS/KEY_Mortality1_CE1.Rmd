@@ -22,7 +22,7 @@ source("../../../rhelpers/knitr_setup.R")
 
 ## Keewenaw Bay Lake Trout
 
-```{r KBLT, echo=FALSE, results="hide", fig.show="hide"}
+```{r KBLT, echo=FALSE, results="hide", message=FALSE, fig.show="hide"}
 library(FSA)
 library(tidyverse)
 library(ggplot2)
@@ -64,7 +64,7 @@ sum4w <- cbind(summary(cc4w),confint(cc4w))
 ```
 
 #### With 9-13
-1. This is a longitudinal catch-curve.
+1. This is a cross-sectional catch-curve.
 1. Ages 9-13.
 1. Answers are below.
     1. Z=`r sum1w["Z","Estimate"]` (CI: `r sum1w["Z","95% LCI"]`,`r sum1w["Z","95% UCI"]`)
@@ -73,7 +73,7 @@ sum4w <- cbind(summary(cc4w),confint(cc4w))
 1. A=1-e<sup>-Z</sup>=1-e<sup>-`r sum1w["Z","Estimate"]`</sup>=`r 1-exp(-sum1w["Z","Estimate"])`
 
 #### With 8-13
-1. This is a longitudinal catch-curve.
+1. This is a cross-sectional catch-curve.
 1. Ages 8-13.
 1. Answers are below.
     1. Z=`r sum2w["Z","Estimate"]` (CI: `r sum2w["Z","95% LCI"]`,`r sum2w["Z","95% UCI"]`)
@@ -82,7 +82,7 @@ sum4w <- cbind(summary(cc4w),confint(cc4w))
 1. A=1-e<sup>-Z</sup>=1-e<sup>-`r sum2w["Z","Estimate"]`</sup>=`r 1-exp(-sum2w["Z","Estimate"])`
 
 #### With 9-14
-1. This is a longitudinal catch-curve.
+1. This is a cross-sectional catch-curve.
 1. Ages 9-14.
 1. Answers are below.
     1. Z=`r sum3w["Z","Estimate"]` (CI: `r sum3w["Z","95% LCI"]`,`r sum3w["Z","95% UCI"]`)
@@ -91,7 +91,7 @@ sum4w <- cbind(summary(cc4w),confint(cc4w))
 1. A=1-e<sup>-Z</sup>=1-e<sup>-`r sum3w["Z","Estimate"]`</sup>=`r 1-exp(-sum3w["Z","Estimate"])`
 
 #### With 8-14
-1. This is a longitudinal catch-curve.
+1. This is a cross-sectional catch-curve.
 1. Ages 8-14.
 1. Answers are below.
     1. Z=`r sum4w["Z","Estimate"]` (CI: `r sum4w["Z","95% LCI"]`,`r sum4w["Z","95% UCI"]`)
@@ -127,7 +127,7 @@ sum63yc <- cbind(summary(cc63yc),confint(cc63yc))
 plot(cc63yc)
 
 ## 1954 Year-Class
-cc54yc <- catchCurve(yc54~age,data=d,ages2use=9:14,weighted=TRUE)
+cc54yc <- catchCurve(yc54~age,data=d,ages2use=9:12,weighted=TRUE)
 sum54yc <- cbind(summary(cc54yc),confint(cc54yc))
 plot(cc54yc)
 

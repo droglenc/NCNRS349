@@ -36,29 +36,21 @@ ifit <- nls(log(recruits)~log(isr(stock,a)),data=nim,start=isv)
 extraSS(ifit,com=rfit)  ## Significant (p<0.05)
 
 ## Make a comparison plot
-### stock values (for stock values from 0 to ~maximum stock size)
-s <- seq(0,1050,length.out=500)
-### Predicted recruits for each model
-rr <- rsr(s,a=coef(rfit))
-ir <- isr(s,a=coef(ifit))
-preds <- data.frame(s=s,rr=rr,ir=ir)
-headtail(preds)
-
-## Make the plot
-ggplot() +
-  geom_line(data=preds,mapping=aes(x=s,y=rr),color="red",size=1) +
-  geom_line(data=preds,mapping=aes(x=s,y=ir),color="gray30",size=1) +
-  geom_point(data=nim,mapping=aes(x=stock,y=recruits)) +
+ggplot(data=nim,mapping=aes(x=stock,y=recruits)) +
+  geom_point() +
+  stat_function(fun=rsr,args=list(a=coef(rfit)),color="red",size=1) +
+  stat_function(fun=isr,args=list(a=coef(ifit)),color="black",size=1) +
   scale_x_continuous(name="Number of age-1+ Crappie per hectare",
-                     expand=expansion(mult=c(0,0.02))) +
+                     limits=c(0,NA),expand=expansion(mult=c(0,0.01))) +
   scale_y_continuous(name="Number of age-0+ Crappie per hectare",
-                     expand=expansion(mult=c(0,0.02))) +
+                     limits=c(0,NA),expand=expansion(mult=c(0,0.01))) +
   theme_bw()
 
-## Predict at Sp for both models
+## Predictions
+# Predict at Sp for both models
 rsr(Sp,a=coef(rfit))
 isr(Sp,a=coef(ifit))
 
-## Predict at S=200 for both models
+# Predict at S=200 for both models
 rsr(200,a=coef(rfit))
 isr(200,a=coef(ifit))

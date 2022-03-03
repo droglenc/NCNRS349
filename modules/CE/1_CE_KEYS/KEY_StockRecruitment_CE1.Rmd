@@ -23,11 +23,10 @@ options(show.signif.stars=FALSE)
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 library(FSA)
 library(tidyverse)
-library(ggplot2)
 
 wae <- read.csv("https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/WalleyeEL.csv")
 
-mnS <- mean(wae$age5)
+mnS <- round(mean(wae$age5))   #1178
 rckr <- srFuns(type="Ricker")
 ind <- srFuns(type="independence")
 
@@ -54,21 +53,23 @@ predMeanI <- ind(mnS,a=coef(srI))
 1. The relationship between the abundance of age-0 and age-5 fish is weak at best (see figure further below). I do not expect the Ricker stock-recruitment model to fit well.
 1. The equation for the density independent model is R=`r formatC(coef(srI)[["a"]],format="f",digits=2)`S. The equation for the Ricker model is R=`r formatC(coef(srR)[["a"]],format="f",digits=2)`S*exp(-`r formatC(coef(srR)[["b"]],format="f",digits=5)`S).
 1. The figure is shown further below.
-1. The estimated recruitment at the mean stock level of `r formatC(mnS,format="f",digits=0)` is `r formatC(predMeanI,format="f",digits=0)` for the independence model and `r formatC(predMeanR[["Estimate"]],format="f",digits=0)` (95% CI: `r formatC(predMeanR[["2.5%"]],format="f",digits=0)`,`r formatC(predMeanR[["97.5%"]],format="f",digits=0)`) for the Ricker model.
-1. The density-dependent Ricker model fits the data significantly better than then density-independent model (`r kPvalue(test[1,"Pr(>F)"])`).
+1. The estimated recruitment at the mean stock level of `r formatC(mnS,format="f",digits=0)` is `r formatC(predMeanI,format="f",digits=0)` for the independence model and `r formatC(predMeanR[["Estimate"]],format="f",digits=0)` for the Ricker model.
+1. The density-dependent Ricker model fits the data significantly better than the density-independent model (`r kPvalue(test[1,"Pr(>F)"])`).
 
 ```{r fitPlot, echo=FALSE, warning=FALSE}
-x <- seq(0,3000,length.out=499)     # many S for prediction
-pRR <- rckr(x,a=coef(srR))          # predicted mean R for Ricker
-pIR <- ind(x,a=coef(srI))           # predicted mean R for independence model
+x <- seq(0,3020,length.out=499)     # many S for prediction
+pRR <- rckr(x,a=coef(srR))          # pred mean R for Ricker
+pIR <- ind(x,a=coef(srI))           # pred mean R for indep model
 preds <- data.frame(s=x,pRR=pRR,pIR=pIR)
 
 ggplot() +
   geom_line(data=preds,mapping=aes(x=s,y=pRR),color="red",size=1) +
   geom_line(data=preds,mapping=aes(x=s,y=pIR),color="gray30",size=1) +
   geom_point(data=wae,mapping=aes(x=age5,y=age0)) +
-  scale_x_continuous(name="Number of age-5 Walleye") +
-  scale_y_continuous(name="Number of age-0 Walleye") +
+  scale_x_continuous(name="Number of age-5 Walleye",
+                     expand=expansion(mult=c(0,0.05))) +
+  scale_y_continuous(name="Number of age-0 Walleye",
+                     expand=expansion(mult=c(0,0.05))) +
   theme_bw()
 ```
 

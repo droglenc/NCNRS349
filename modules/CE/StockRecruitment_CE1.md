@@ -16,5 +16,5 @@ Load these data into R to answer the following questions.
     1. Density-independence.
     1. Ricker.
 1. Construct a single plot that shows how well each recruitment function fits these data.
-1. Estimate recruitment for the mean stock level with each recruitment function. How variable are the results among models?
+1. Estimate recruitment for the mean stock level (=1178 age-5+ fish) with each recruitment function. How variable are the results among models?
 1. Determine if the density-dependent parameter is statistically significant in the Ricker model.

@@ -18,7 +18,7 @@ Fit the typical parameterization of the von Bertalanffy growth function (VBGF).
 {:start="2"}
 1. Plot TL versus age and superimpose the best-fit VBGF. Comment on model fit.
 1. Write the equation for the typical VBGF with parameters replaced by their estimated values.
-1. How realistic do the point estimates of L~&infty;~, K, and t~0~ seem?
+1. How realistic do the point estimates of L<sub>&infty;</sub>, K, and t<sub>0</sub> seem?
 1. Carefully interpret the meaning of each parameter.
 1. Construct 95% bootstrapped confidence intervals for each parameter. Comment on the widths of these confidence intervals. What explains this?
 1. Predict the mean TL, with 95% confidence interval, for an age-3 Slimy Sculpin. Comment on the width of this confidence interval. What explains this?
@@ -32,5 +32,5 @@ Fit Gallucci and Quinn parameterization of the von Bertalanffy model.
 {:start="9"}
 1. Write the equation for this VBGF with parameters replaced by their estimated values.
 1. Carefully interpret the meaning of each parameter?
-1. How does the estimate of K and t~0~ from fitting this parameterization compare to that from the typical VBGF fit above. Explain your observation.
-1. Show how the estimate of &omega; in this parameterization can be computer from parameter estimates in the typical parameterization.
+1. How does the estimate of K and t<sub>0<sub> from fitting this parameterization compare to that from the typical VBGF fit above. Explain your observation.
+1. Show how the estimate of &omega; in this parameterization can be calculated from parameter estimates in the typical parameterization.

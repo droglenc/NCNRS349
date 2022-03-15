@@ -11,6 +11,6 @@ Both the Beverton-Holt and Ricker stock-recruitment curves have two parameters, 
 The `srSim()` function in the `FSAsim` package can be used to create a graphic that shows the number of recruits (R) or the number of recruits per spawner (R/S) versus the number of spawners (S). This plot will have R<sub>p</sub> and, for the Ricker curve, S<sub>p</sub> labeled. A gear box allows you to choose values of a and b for each model to see how it affects the model curve, R<sub>p</sub>, and, possibly, S<sub>p</sub>. Use this function to answer the following questions. [*Note that no arguments to `srSim()` are needed to show the Beverton-Holt model, but you must include `type="Ricker"` to show the Ricker model.*]
 
 1. How does changing a in the Beverton-Holt model effect R<sub>p</sub>?
-1. How does changing B in the Beverton-Holt model effect R<sub>p</sub>?
+1. How does changing b in the Beverton-Holt model effect R<sub>p</sub>?
 1. How does changing a in the Ricker model effect R<sub>p</sub> and S<sub>p</sub>?
-1. How does changing B in the Ricker model effect R<sub>p</sub> and S<sub>p</sub>?
+1. How does changing b in the Ricker model effect R<sub>p</sub> and S<sub>p</sub>?

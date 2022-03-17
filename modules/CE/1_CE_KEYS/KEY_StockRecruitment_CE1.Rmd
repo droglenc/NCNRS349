@@ -52,8 +52,8 @@ predMeanI <- ind(1178,a=coef(srI))
 1. The relationship between the abundance of age-0 and age-5+ fish is weak at best (see figure further below). I do not expect the Ricker stock-recruitment model to fit well.
 1. The equation for the density independent model is R=`r formatC(coef(srI)[["a"]],format="f",digits=2)`S. The equation for the Ricker model is R=`r formatC(coef(srR)[["a"]],format="f",digits=2)`S*exp(-`r formatC(coef(srR)[["b"]],format="f",digits=5)`S).
 1. The figure is shown further below.
-1. The estimated recruitment at the mean stock level of 1178 fish is `r formatC(predMeanI,format="f",digits=0)` for the independence model and `r formatC(predMeanR[["Estimate"]],format="f",digits=0)` for the Ricker model.
-1. The density-dependent Ricker model fits the data significantly better than the density-independent model (`r kPvalue(test[1,"Pr(>F)"])`).
+1. The estimated recruitment at the mean stock level of 1178 fish is `r formatC(predMeanI,format="f",digits=0)` for the independence model and `r formatC(predMeanR,format="f",digits=0)` for the Ricker model.
+1. The density-dependent Ricker model fits the data significantly better than the density-independent model (`r kPvalue(test[1,"Pr(>F)"],latex=FALSE)`).
 
 ```{r fitPlot, echo=FALSE, warning=FALSE}
 ggplot(data=wae,mapping=aes(x=age5,y=age0)) +

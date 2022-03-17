@@ -1,0 +1,103 @@
+---
+layout: page
+title: Homework Key
+subtitle: Stock-Recruitment
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<hr />
+<div id="escanaba-lake-walleye" class="section level2">
+<h2>Escanaba Lake Walleye</h2>
+<ol>
+<li>The abundance of age-0 fish are the recruits and the abundance of age-5+ fish is the spawning stock.</li>
+<li>The relationship between the abundance of age-0 and age-5+ fish is weak at best (see figure further below). I do not expect the Ricker stock-recruitment model to fit well.</li>
+<li>The equation for the density independent model is R=7.36S. The equation for the Ricker model is R=26.53S*exp(-0.00109S).</li>
+<li>The figure is shown further below.</li>
+<li>The estimated recruitment at the mean stock level of 1178 fish is 8665 for the independence model and 8669 for the Ricker model.</li>
+<li>The density-dependent Ricker model fits the data significantly better than the density-independent model (p=0.0006).</li>
+</ol>
+<p><img src="KEY_StockRecruitment_CE1_files/figure-html/fitPlot-1.png" width="672" /></p>
+<div id="r-appendix" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>library(FSA)
+library(tidyverse)
+
+wae &lt;- read.csv(&quot;https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/WalleyeEL.csv&quot;)
+
+rckr &lt;- srFuns(type=&quot;Ricker&quot;)
+ind &lt;- srFuns(type=&quot;independence&quot;)
+
+## Multiplicative Ricker Model
+svR &lt;- srStarts(age0~age5,data=wae,type=&quot;Ricker&quot;)
+srR &lt;- nls(log(age0)~log(rckr(age5,a,b)),data=wae,start=svR)
+cbind(estimates=coef(srR),confint(srR))
+predMeanR &lt;- rckr(1178,a=coef(srR))
+
+## Independence Model
+svI &lt;- srStarts(age0~age5,data=wae,type=&quot;independence&quot;)
+srI &lt;- nls(log(age0)~log(ind(age5,a)),data=wae,start=svI)
+c(estimates=coef(srI),confint(srI))
+predMeanI &lt;- ind(1178,a=coef(srI))
+
+( test &lt;- extraSS(srI,com=srR) )
+ggplot(data=wae,mapping=aes(x=age5,y=age0)) +
+  stat_function(fun=rckr,args=list(a=coef(srR)),color=&quot;red&quot;,size=1) +
+  stat_function(fun=ind,args=list(a=coef(srI)),color=&quot;black&quot;,size=1) +
+  geom_point(data=wae,mapping=aes(x=age5,y=age0)) +
+  scale_x_continuous(name=&quot;Number of age-5 Walleye&quot;,
+                     limits=c(0,NA),expand=expansion(mult=c(0,0.05))) +
+  scale_y_continuous(name=&quot;Number of age-0 Walleye&quot;,
+                     limits=c(0,NA),expand=expansion(mult=c(0,0.05))) +
+  theme_bw()</code></pre>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

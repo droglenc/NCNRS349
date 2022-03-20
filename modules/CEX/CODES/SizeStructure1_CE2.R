@@ -1,8 +1,7 @@
 library(FSA)
 library(tidyverse)
-library(ggplot2)
 
-bg <- read.csv("https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/LakeLouiseBG.csv")
+bg <- read.csv("https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/CEX/LakeLouiseBG.csv")
 str(bg)
 
 ggplot(data=bg,mapping=aes(x=len,fill=gear)) +
@@ -19,8 +18,9 @@ ggplot(data=bg,mapping=aes(x=len,color=gear)) +
   scale_y_continuous(name="Cumulative Density",expand=expansion(mult=0)) +
   theme_bw()
 
+ksTest(len~as.factor(gear),data=bg)
+
 Summarize(len~gear,data=bg,digits=1)
 
 t.test(len~gear,data=bg)
 
-ksTest(len~as.factor(gear),data=bg)

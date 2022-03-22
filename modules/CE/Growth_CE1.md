@@ -28,7 +28,7 @@ Fit the typical parameterization of the von Bertalanffy growth function (VBGF).
 ## Alaskan Slimy Sculpins II
 Fit Gallucci and Quinn parameterization of the von Bertalanffy model.
 
-{:start="9"}
+{:start="8"}
 1. Write the equation for this VBGF with parameters replaced by their estimated values.
 1. Carefully interpret the meaning of each parameter.
 1. How does the estimate of K and t<sub>0</sub> from fitting this parameterization compare to that from the typical VBGF fit above. Explain your observation.

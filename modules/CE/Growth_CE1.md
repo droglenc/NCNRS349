@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Assignment
-subtitle: Stock-Recruitment
+subtitle: Growth
 css: /css/modules.css
 ---
 

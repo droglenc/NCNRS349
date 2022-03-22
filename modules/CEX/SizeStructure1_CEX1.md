@@ -22,7 +22,7 @@ In July, 2011 a quarter-mile stretch of the lower Whittlesey Creek was modified 
 &nbsp;
 
 #### Data
-Data from the sampling collected by the students were stored in [Whittlesey2011.csv](https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/RESOURCES/Whittlesey2011.csv). The variables in this data set are defined as follows,
+Data from the sampling collected by the students were stored in [Whittlesey2011.csv](https://raw.githubusercontent.com/droglenc/NCNRS349/gh-pages/modules/CE/Whittlesey2011.csv). The variables in this data set are defined as follows,
 
 * `study`: The name of the study.
 * `netID`: A unique label for each day of sampling.

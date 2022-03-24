@@ -1,6 +1,5 @@
 library(FSA)
 library(tidyverse)
-library(ggplot2)
 
 yp <- read.csv("https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/YPerchSB1.csv")
 str(yp)
@@ -12,7 +11,7 @@ ypin <- yp %>%
   mutate(lcat10=lencat(tl,w=1),
          gcat=psdAdd(tl,species="Yellow Perch",unit="cm"))
 
-head(ypin)
+peek(ypin)
 
 ( freq <- xtabs(~lcat10,data=ypin) )
 

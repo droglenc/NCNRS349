@@ -12,23 +12,8 @@ Engage with the following resources.
 
 And prepare answers to the following items.
 
-1. Define or describe the following terms.
-    a. Geoduck
-    a. Open Access
-    a. Limited Entry
-    a. Individual Quotas
-    a. TAC
-1. Describe specific events in the history of the British Columbia Geoduck fishery; specifically address these years.
-    a. 1976
-    a. 1977
-    a. 1979-80
-    a. 1983
-    a. 1984-88
-    a. 1989-publication date
+1. Define or describe the following terms -- Geoduck, Open Access, Limited Entry, Individual Quotas, and TAC.
+1. Describe specific events in the history of the British Columbia Geoduck fishery; specifically address these years -- 1976, 1977, 1979-80, 1983, 1984-88, and 1989-publication date.
 1. What were the characteristics of the British Columbia Geoduck fishery in 1988 that prompted industry to ask for IQs?
-1. Describe results for the following figures.
-    a. Figure 2.1 
-    a. Figure 2.5 
-    a. Figure 2.6
-    a. Figure 2.7
+1. Describe results for the following figures -- Figure 2.1, Figure 2.5, Figure 2.6, and Figure 2.7.
 1. Summarize the impact of IQs on the British Columbia Geoduck fishery.

@@ -24,7 +24,6 @@ source("../../../rhelpers/knitr_setup.R")
 ```{r Setup, echo=FALSE, results='hide', message=FALSE}
 library(FSA)
 library(tidyverse)
-library(ggplot2)
 library(patchwork)
 
 df <- read.csv("https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/InchLake2.csv")

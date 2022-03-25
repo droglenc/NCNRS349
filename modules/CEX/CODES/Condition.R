@@ -1,11 +1,10 @@
 library(FSA)
 library(tidyverse)
-library(ggplot2)
 
 ## Get Data
 df <- read.csv("https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/InchLake2.csv")
 str(df)
-headtail(df)
+peek(df)
 unique(df$species)
 unique(df$year)
 
@@ -30,6 +29,7 @@ ggplot(data=lmb,mapping=aes(x=loglen,y=logwt)) +
   theme_bw()
 
 lwr <- lm(logwt~loglen,data=lmb)
+cbind(Est=coef(lwr),confint(lwr))
 
 ggplot(data=lmb,mapping=aes(x=loglen,y=logwt)) +
   geom_point() +
@@ -51,7 +51,7 @@ lmb <- filter(df,species=="Largemouth Bass",length>=150) %>%
          wr=weight/ws*100,
          gcat=psdAdd(length,species="Largemouth Bass"))
 
-headtail(lmb)
+peek(lmb)
 
 lmb08 <- filter(lmb,year==2008)
 

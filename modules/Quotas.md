@@ -7,7 +7,7 @@ css: /css/modules.css
 ## Preparation for Class
 
 * [Prepare for a discussion about the Geoduck fishery](PREP/Quotas_Geoduck).
-* [Prepare for a discussion about the Halibut fishery](PREP/Quotas_Geoduck).
+* [Prepare for a discussion about the Halibut fishery](PREP/Quotas_Halibut).
 
 ## Class Work
 

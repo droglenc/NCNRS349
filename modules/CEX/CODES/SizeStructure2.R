@@ -8,18 +8,20 @@ psdVal("Yellow Perch",unit="cm")
 
 ypin <- yp %>%
   filter(loc=="inner") %>%
-  mutate(lcat10=lencat(tl,w=1),
+  mutate(lcat1=lencat(tl,w=1),
          gcat=psdAdd(tl,species="Yellow Perch",unit="cm"))
 
 peek(ypin)
 
-( freq <- xtabs(~lcat10,data=ypin) )
+( freq <- xtabs(~lcat1,data=ypin) )
 
 ggplot(data=ypin,mapping=aes(x=tl)) +
   geom_histogram(binwidth=1,boundary=0,color="black",fill="gray50") +
   scale_x_continuous(name="Total Length (cm)",breaks=seq(5,30,5)) +
   scale_y_continuous(name="Frequency",expand=expansion(mult=c(0,0.03))) +
   theme_bw()
+
+( freq2 <- xtabs(~gcat,data=ypin) )
 
 ( freq2 <- xtabs(~gcat,data=droplevels(filter(ypin,gcat!="substock"))) )
 

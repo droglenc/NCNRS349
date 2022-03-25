@@ -6,17 +6,16 @@ css: /css/modules.css
 
 The following are possible questions for the final exam.
 
-1. Define all symbols including --
-  a. Rp, Sp, a, b, L<sub>&infin;</sub>, K, t<sub>0</sub>, L<sub>0</sub>, &omega; PSD, PSD-X, PSD-X-Y
+1. Define all symbols including Rp, Sp, a, b, L<sub>&infin;</sub>, K, t<sub>0</sub>, L<sub>0</sub>, &omega; PSD, PSD-X, PSD-X-Y
 1. Be able to quickly describe what each major analytical topic discussed in class is used for (e.g., von Bertalanffy model is used to model growth, catch curve is used to assess mortality).
 1. What is recruitment? How is it defined? What are some examples?
 1. Define density-independence and density-dependence as it relates to stock-recruit relationships. Draw the relationship of S/R vs S and R vs S.
 1. Completely compare and contrast the Beverton-Holt and Ricker stock-recruit models. Define their parameters, identify their shapes, recognize parameters in the equations, identify effects of reduced number of stock on number of recruits.
-1. Compute Rp and Sp (if appropriate) from estimates of a and b, identify the effect of increases/decreased a, b values on Rp and Sp.
+1. Compute Rp and Sp (if appropriate) from estimates of a and b, identify the effect of increased/decreased a, b values on Rp and Sp.
 1. Identify the shape of a von Bertalanffy growth model, recognize parameters in their equations, understand what model parameters represent.
 1. Explain common misinterpretations of L<sub>&infin;</sub> and K?
 1. What does a larger/smaller K mean in a von Bertalanffy model? Larger/smaller L<sub>&infin;</sub>?
-1. Calculate and explain what &omega; is in the Gallucci and Quinn version of the von B?
+1. Calculate and explain what &omega; is in the Gallucci and Quinn version of the von B.
 1. Explain what forces serve to shape a length frequency.
 1. Discuss how you would statistically test if two length frequency distributions are similar or not.
 1. Construct (roughly) a cumulative frequency distribution from a length frequency distribution.

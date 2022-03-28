@@ -23,7 +23,7 @@ Read [Sections 7.1-7.4 in Ogle (2016)](RESOURCES/Ogle_WeightLength.pdf) and answ
 
 ----
 
-Read [Pope and Kruse (2007) Sections 10.1](RESOURCES/Pope-Kruse-2007_10_1.pdf) (*the complete chapter [is here](RESOURCES/Pope-Kruse-2007.pdf)*) and answer the following questions
+Read [Pope and Kruse (2007) pages 424-425](RESOURCES/Pope-Kruse-2007.pdf) and answer the following questions
 
 1. What are the two things the weight-length relationships have historically been used for?
 1. Weight-length data follows what kind of function for most fish species?

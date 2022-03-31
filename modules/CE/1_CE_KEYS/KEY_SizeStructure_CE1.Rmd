@@ -45,7 +45,8 @@ psdout <- psdCalc(~tl,data=ypout,species="Yellow Perch",
 ----
 
 ## Saginaw Bay Yellow Perch
-1. The histogram and frequency tables for both locations are below. The population of Yellow Perch in the outer portion of Saginaw Bay seems to be mostly greater than 15 cm, with a high concentration of fish between 15 and 20 cm.
+1. The histogram and frequency tables for both locations are below. The population of Yellow Perch in the outer portion of Saginaw Bay seems to have a msall peak near 12 cm, but to be mostly greater than 15 cm, with a high concentration of fish between 15 and 20 cm and a gradual decline after that.
+
 ```{r hist, echo=FALSE, warning=FALSE}
 ggplot(data=yp,mapping=aes(x=tl,fill=loc)) +
   geom_histogram(binwidth=1,boundary=0,color="black") +

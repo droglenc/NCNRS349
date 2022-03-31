@@ -38,7 +38,7 @@ ggplot(data=lmb,mapping=aes(x=loglen,y=logwt)) +
   scale_y_continuous(name="log Weight (g)") +
   theme_bw()
 
-( p <- predict(lwr,data.frame(loglen=log10(275))) )
+( p <- predict(lwr,data.frame(loglen=log10(c(100,275,300)))) )
 10^p
 
 
@@ -55,7 +55,7 @@ peek(lmb)
 
 lmb08 <- filter(lmb,year==2008)
 
-Summarize(wr~gcat,data=lmb08)
+Summarize(wr~gcat,data=lmb08,digits=1)
 
 ggplot(data=lmb08,mapping=aes(x=gcat,y=wr)) +
   stat_summary(fun=mean,geom="point") +

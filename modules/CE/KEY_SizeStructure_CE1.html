@@ -1,0 +1,101 @@
+---
+layout: page
+title: Homework Key
+subtitle: Size-Structure
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<hr />
+<div id="saginaw-bay-yellow-perch" class="section level2">
+<h2>Saginaw Bay Yellow Perch</h2>
+<ol>
+<li>The histogram and frequency tables for both locations are below. The population of Yellow Perch in the outer portion of Saginaw Bay seems to be mostly greater than 15 cm, with a high concentration of fish between 15 and 20 cm. <img src="KEY_SizeStructure_CE1_files/figure-html/hist-1.png" width="672" /></li>
+</ol>
+<pre><code>       lcat10
+loc       5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24
+  inner   9  15  13   6  12  66  80  94 130 131 113 136 112  92  89  34  31  19   6  11
+  outer   3   3  11  27  15  29  37  28  23  13  67  69  89  94 109  43  43  30  26  25
+       lcat10
+loc      25  26  27  28  29
+  inner   5   3   3   0   0
+  outer  23  20  17  11   9</code></pre>
+<p>{:start=“2”} 1. The PSD-Q for Yellow Perch from outer Saginaw Bay is 35 with a 95% confidence interval from 30 to 39. 1. The PSD-P for Yellow Perch from outer Saginaw Bay is 11 with a 95% confidence interval from 8 to 14. 1. More of the stock-size fish in outer Saginaw Bay are of quality and preferred size than the stock-size fisn in inner Saginaw Bay. Thus, generally, the size structure in outer Saginaw Bay is generally towards larger fish than the size structure for inner Saginaw Bay.</p>
+<div id="r-appendix" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>library(FSA)
+library(tidyverse)
+library(ggplot2)
+
+yp &lt;- read.csv(&quot;https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/YPerchSB1.csv&quot;) %&gt;%
+  mutate(lcat10=lencat(tl,w=1),
+         gcat=psdAdd(tl,species=&quot;Yellow Perch&quot;,unit=&quot;cm&quot;))
+str(yp)
+
+ypin &lt;- filter(yp,loc==&quot;inner&quot;)
+ypout &lt;- filter(yp,loc==&quot;outer&quot;)
+
+freq &lt;- xtabs(~loc+lcat10,data=yp)
+
+psdin &lt;- psdCalc(~tl,data=ypin,species=&quot;Yellow Perch&quot;,
+                 what=&quot;traditional&quot;,units=&quot;cm&quot;)
+psdout &lt;- psdCalc(~tl,data=ypout,species=&quot;Yellow Perch&quot;,
+                 what=&quot;traditional&quot;,units=&quot;cm&quot;)
+ggplot(data=yp,mapping=aes(x=tl,fill=loc)) +
+  geom_histogram(binwidth=1,boundary=0,color=&quot;black&quot;) +
+  scale_x_continuous(name=&quot;Total Length (cm)&quot;,breaks=seq(5,30,5)) +
+  scale_y_continuous(name=&quot;Frequency&quot;,expand=expansion(mult=c(0,0.03))) +
+  theme_bw() +
+  theme(legend.position=&quot;none&quot;) +
+  facet_wrap(vars(loc),scale=&quot;free_y&quot;,ncol=1)</code></pre>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

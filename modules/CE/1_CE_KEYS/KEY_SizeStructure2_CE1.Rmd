@@ -13,7 +13,7 @@ output:
 ```{r echo=FALSE, eval=FALSE}
 ## Renders an appropriate HTML file and moves to CE directory
 source("modules/CE/1_CE_KEYS/zzz_modHTML_CEKeys.R")
-modHTML_CEKeys("KEY_SizeStructure_CE1")
+modHTML_CEKeys("KEY_SizeStructure2_CE1")
 ```
 
 ```{r echo=FALSE, results='hide', message=FALSE}

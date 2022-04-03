@@ -1,0 +1,96 @@
+---
+layout: page
+title: Homework Key
+subtitle: Condition
+author: Derek H. Ogle
+css: /css/modules.css
+---
+
+
+<div id="inch-lake-bluegill" class="section level2">
+<h2>Inch Lake Bluegill</h2>
+<ol>
+<li>The mean relative weight did differ among Gabelhouse length categories for Bluegill captured in 2007 (0.00004). The graphic is shown below on the left.</li>
+<li>The mean relative weight did differ among Gabelhouse length categories for Bluegill captured in 2008 (0.00000). The graphic is shown below on the right.</li>
+<li>Observations
+<ol>
+<li>Shorter fish are generally skinnier than larger fish in both years (or, alternatively, fish become less skinny as they get longer).</li>
+<li>General decline in condition from 2007 to 2008, especially among quality and preferred size fish.</li>
+<li>Fish of all lengths are generally in “poorer” condition than the “standard” used to derive the relative weights.</li>
+</ol></li>
+<li>Plausible explanations.
+<ol>
+<li>Shorter fish may be subject to more density-dependent competition than longer fish. Perhaps shorter fish are initially high in density but intense predation leaves few larger fish that face less competition.</li>
+<li>Growing conditions could have been reduced in 2008 perhaps due to a reduction in prey or a higher density of Bluegill (especially the larger sized Bluegill).</li>
+<li>There could be a difference in sampling times between the two years. For example, fish in 2007 could have been sampled prior to or during the spawning season before individuals had released their gametes, whereas the sample in 2008 could have been later, after spawning.</li>
+</ol></li>
+</ol>
+<div id="r-appendix" class="section level4">
+<h4>R Appendix</h4>
+<pre class="r"><code>library(FSA)
+library(tidyverse)
+library(patchwork)
+
+df &lt;- read.csv(&quot;https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/InchLake2.csv&quot;)
+wsVal(&quot;Bluegill&quot;)
+bg &lt;- df %&gt;%
+  filter(species==&quot;Bluegill&quot;) %&gt;%
+  mutate(length=length*25.4,
+         ws=10^(-5.374+3.316*log10(length)),
+         wr=weight/ws*100,
+         gcat=psdAdd(length,species=&quot;Bluegill&quot;)) %&gt;%
+  filter(length&gt;=80)
+
+bg07 &lt;- bg %&gt;% filter(year==2007)  
+bg08 &lt;- bg %&gt;% filter(year==2008)
+g07 + g08</code></pre>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

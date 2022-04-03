@@ -35,6 +35,7 @@ ypin <- filter(yp,loc=="inner")
 ypout <- filter(yp,loc=="outer")
 
 freq <- xtabs(~loc+lcat10,data=yp)
+freq
 
 psdin <- psdCalc(~tl,data=ypin,species="Yellow Perch",
                  what="traditional",units="cm")
@@ -46,8 +47,14 @@ psdout <- psdCalc(~tl,data=ypout,species="Yellow Perch",
 
 ## Saginaw Bay Yellow Perch
 1. The histogram and frequency tables for both locations are below. The population of Yellow Perch in the outer portion of Saginaw Bay seems to have a msall peak near 12 cm, but to be mostly greater than 15 cm, with a high concentration of fish between 15 and 20 cm and a gradual decline after that.
+1. The PSD-Q for Yellow Perch from outer Saginaw Bay is `r psdout["PSD-Q","Estimate"]` with a 95% confidence interval from `r psdout["PSD-Q","95% LCI"]` to `r psdout["PSD-Q","95% UCI"]`.
+1. The PSD-P for Yellow Perch from outer Saginaw Bay is `r psdout["PSD-P","Estimate"]` with a 95% confidence interval from `r psdout["PSD-P","95% LCI"]` to `r psdout["PSD-P","95% UCI"]`.
+1. More of the stock-size fish in outer Saginaw Bay are of quality and preferred size than the stock-size fisn in inner Saginaw Bay. Thus, generally, the size structure in outer Saginaw Bay is generally towards larger fish than the size structure for inner Saginaw Bay.
 
-```{r hist, echo=FALSE, warning=FALSE}
+#### R Appendix
+```{r prompt=FALSE, warning=FALSE}
+<<setup>>
+
 ggplot(data=yp,mapping=aes(x=tl,fill=loc)) +
   geom_histogram(binwidth=1,boundary=0,color="black") +
   scale_x_continuous(name="Total Length (cm)",breaks=seq(5,30,5)) +
@@ -55,18 +62,4 @@ ggplot(data=yp,mapping=aes(x=tl,fill=loc)) +
   theme_bw() +
   theme(legend.position="none") +
   facet_wrap(vars(loc),scale="free_y",ncol=1)
-```
-```{r echo=FALSE}
-freq
-```
-
-{:start="2"}
-1. The PSD-Q for Yellow Perch from outer Saginaw Bay is `r psdout["PSD-Q","Estimate"]` with a 95% confidence interval from `r psdout["PSD-Q","95% LCI"]` to `r psdout["PSD-Q","95% UCI"]`.
-1. The PSD-P for Yellow Perch from outer Saginaw Bay is `r psdout["PSD-P","Estimate"]` with a 95% confidence interval from `r psdout["PSD-P","95% LCI"]` to `r psdout["PSD-P","95% UCI"]`.
-1. More of the stock-size fish in outer Saginaw Bay are of quality and preferred size than the stock-size fisn in inner Saginaw Bay. Thus, generally, the size structure in outer Saginaw Bay is generally towards larger fish than the size structure for inner Saginaw Bay.
-
-#### R Appendix
-```{r eval=FALSE, prompt=FALSE}
-<<setup>>
-<<hist>>
 ```

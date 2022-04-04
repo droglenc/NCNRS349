@@ -40,7 +40,7 @@ bg07 <- bg %>% filter(year==2007)
 bg08 <- bg %>% filter(year==2008)
 ```
 ```{r cond2007, echo=FALSE, results='hide'}
-Summarize(wr~gcat,data=bg07)
+Summarize(wr~gcat,data=bg07,digits=1)
 aov07 <- lm(wr~gcat,data=bg07)
 anova(aov07)
 
@@ -53,7 +53,7 @@ g07 <- ggplot(data=bg07,mapping=aes(x=gcat,y=wr)) +
   labs(title="2007")
 ```
 ```{r cond2008, echo=FALSE, results='hide'}
-Summarize(wr~gcat,data=bg08)
+Summarize(wr~gcat,data=bg08,digits=1)
 aov08 <- lm(wr~gcat,data=bg08)
 anova(aov08)
 
@@ -78,9 +78,9 @@ g08 <- ggplot(data=bg08,mapping=aes(x=gcat,y=wr)) +
     1. There could be a difference in sampling times between the two years. For example, fish in 2007 could have been sampled prior to or during the spawning season before individuals had released their gametes, whereas the sample in 2008 could have been later, after spawning.
 
 #### R Appendix
-```{r eval=FALSE, prompt=FALSE, fig.width=7, fig.height=3.5}
+```{r prompt=FALSE, warning=FALSE, fig.width=7, fig.height=3.5}
 <<Setup>>
-<<Cond2007>>
-<<Cond2008>>
+<<cond2007>>
+<<cond2008>>
 g07 + g08
 ```

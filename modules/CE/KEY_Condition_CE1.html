@@ -32,8 +32,10 @@ library(tidyverse)
 library(patchwork)
 
 df &lt;- read.csv(&quot;https://raw.githubusercontent.com/droglenc/FSAdata/master/data-raw/InchLake2.csv&quot;)
-wsVal(&quot;Bluegill&quot;)
-bg &lt;- df %&gt;%
+wsVal(&quot;Bluegill&quot;)</code></pre>
+<pre><code>    species  units   type ref measure method min.TL    int slope         source
+26 Bluegill metric linear  75      TL  Other     80 -5.374 3.316 Hillman (1982)</code></pre>
+<pre class="r"><code>bg &lt;- df %&gt;%
   filter(species==&quot;Bluegill&quot;) %&gt;%
   mutate(length=length*25.4,
          ws=10^(-5.374+3.316*log10(length)),
@@ -43,7 +45,48 @@ bg &lt;- df %&gt;%
 
 bg07 &lt;- bg %&gt;% filter(year==2007)  
 bg08 &lt;- bg %&gt;% filter(year==2008)
+Summarize(wr~gcat,data=bg07,digits=1)</code></pre>
+<pre><code>       gcat  n mean   sd  min   Q1 median   Q3   max
+1     stock 24 80.0 18.8 45.8 68.5   84.8 92.5 116.2
+2   quality 38 89.8  7.5 71.2 85.0   90.9 95.3 101.6
+3 preferred 21 96.3  5.0 88.3 92.0   97.3 99.7 103.4</code></pre>
+<pre class="r"><code>aov07 &lt;- lm(wr~gcat,data=bg07)
+anova(aov07)</code></pre>
+<pre><code>Analysis of Variance Table
+
+Response: wr
+          Df Sum Sq Mean Sq F value    Pr(&gt;F)
+gcat       2   3064 1532.00  11.425 4.319e-05
+Residuals 80  10727  134.09                  </code></pre>
+<pre class="r"><code>g07 &lt;- ggplot(data=bg07,mapping=aes(x=gcat,y=wr)) +
+  stat_summary(fun=mean,geom=&quot;point&quot;) +
+  stat_summary(fun.data=mean_cl_normal,geom=&quot;errorbar&quot;,width=0.1) +
+  scale_x_discrete(name=&quot;Length Category&quot;) +
+  scale_y_continuous(name=&quot;Relative Weight&quot;,limits=c(65,100)) +
+  theme_bw() +
+  labs(title=&quot;2007&quot;)
+Summarize(wr~gcat,data=bg08,digits=1)</code></pre>
+<pre><code>       gcat  n mean   sd  min   Q1 median   Q3  max
+1     stock 24 72.7 16.8 43.5 55.1   78.2 86.0 96.8
+2   quality 28 86.4  5.3 78.6 82.7   86.0 89.9 99.7
+3 preferred 25 90.4  4.5 82.0 87.8   90.3 94.0 98.3</code></pre>
+<pre class="r"><code>aov08 &lt;- lm(wr~gcat,data=bg08)
+anova(aov08)</code></pre>
+<pre><code>Analysis of Variance Table
+
+Response: wr
+          Df Sum Sq Mean Sq F value    Pr(&gt;F)
+gcat       2 4223.8 2111.91  20.135 1.043e-07
+Residuals 74 7761.7  104.89                  </code></pre>
+<pre class="r"><code>g08 &lt;- ggplot(data=bg08,mapping=aes(x=gcat,y=wr)) +
+  stat_summary(fun=mean,geom=&quot;point&quot;) +
+  stat_summary(fun.data=mean_cl_normal,geom=&quot;errorbar&quot;,width=0.1) +
+  scale_x_discrete(name=&quot;Length Category&quot;) +
+  scale_y_continuous(name=&quot;Relative Weight&quot;,limits=c(65,100)) +
+  theme_bw() +
+  labs(title=&quot;2008&quot;)
 g07 + g08</code></pre>
+<p><img src="KEY_Condition_CE1_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
 </div>
 

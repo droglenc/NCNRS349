@@ -14,5 +14,5 @@ css: /css/modules.css
 
 * Discuss Christensen *et al.* (1996)[.](DISCUSSIONS/READING_Christensenetal_1996.pptx)
 * Discuss Sass *et al.* (2006)[.](DISCUSSIONS/READING_Sassetal_2006.pptx)
+* [Watch this](https://youtu.be/7kURYFYxuSc) and [this](https://youtu.be/5HtUh3Lo3ho)
 * [Watch this](https://www.youtube.com/watch?v=HdrvwXUNaDg)
-
